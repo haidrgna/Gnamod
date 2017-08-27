@@ -1081,35 +1081,25 @@ Mesh files no longer used:
 	<!--use_action class="LiftUpTerrain" delay="1" use_time="..." gain_health="-5"gain_stamina="-20" gain_food="0" gain_water="10" gain_sickness="15" condition_raycast_block="77,78,79,80" sound_start="player_drinking" /-->
 </item>
 
-<item id="76" name="handTest">
-	<property name="CreativeMode" value="None"/>
-	<property name="Material" value="organic"/>
-	<property name="Canhold" value="false"/>
-	<property name="HoldType" value="9"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="Candrop" value="false"/>
-	<property class="Action0"> <!-- AttackAction -->
-		<property name="Class" value="Launcher"/>
-		<property name="Delay" value="0.8"/>
-<!--		<property name="Crosshair_min_distance" value="29"/>
-		<property name="Crosshair_max_distance" value="34"/> -->
-		<property name="Auto_fire" value="true"/>
-		<property name="Infinite_ammo" value="true"/>
-		<!-- <property name="Range" value="200"/> -->
-		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="rocket"/>
-		<property name="Rays_spread" value="0.095"/>
-		<property name="Reload_time" value="2"/>
-		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="m136_fire"/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="m136_reload"/>
-		<property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
-		<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
-	</property>
-</item>
+  <item id="76" name="handSuicide">
+    <property name="Extends" value="handMaster"/>
+    <property name="IsDeveloper" value="true"/>
+    <property class="Action0">
+      <property name="Class" value="Melee"/>
+      <property name="Sphere" value="0.4"/>
+      <property name="DamageEntity" value="20"/>
+      <property name="DamageBlock" value="100"/>
+      <property name="Buff" value="burningSmall,infection,stunned"/>
+      <property name="Buff_chance" value="0.2,0.07,0.3"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="1"/>
+      <property name="Use_time" value="..."/>
+      <property name="Buff" value="SuicideBomber"/>
+      <property name="Buff_chance" value="1"/>
+    </property>
+  </item>
 
 <item id="76" name="handZombie">
 	<property name="Extends" value="handMaster"/>
@@ -9499,7 +9489,7 @@ Mesh files no longer used:
 </item>
 
 
-<!--
+
 <item id="1501" name="superWrench">
 	<property name="Extends" value="wrench"/>
 	<property name="CustomIcon" value="wrench"/>
@@ -9627,5 +9617,5 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="1"/>
 	</property>
 </item>
--->
+
 </items>

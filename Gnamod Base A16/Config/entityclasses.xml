@@ -87,7 +87,7 @@
 -->
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= TEMPLATES +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- BASIC ZOMBIES 					                        *** Default Zombies that all others parent from for basic properties. *** -->
-<entity_class name="aZombieTemplate">
+<entity_class name="zombieTemplate">
 <!-- Type and Faction -->
 <property name="EntityType"                         value="Zombie"/>
 <property name="Class"                              value="EntityZombie"/>
@@ -207,7 +207,7 @@
 </entity_class>
 
 <!-- FERAL ZOMBIES                                  *** Always runs, has more HP, harder to dismember and stronger base hand. *** -->
-<entity_class name="aZombieTemplateFeral"           extends="aZombieTemplate">
+<entity_class name="zombieTemplateFeral"           extends="zombieTemplate">
 <!-- Statistics -->
 <property name="MaxHealth"                          value="500"/>
 <property name="HandItem"                           value="handZombie02Feral"/>
@@ -255,7 +255,7 @@
 </entity_class>
 
 <!-- RADIATED ZOMBIES                               *** Default radiated zonbies, they glow in the dark and are overall tougher. They are not faster but have a special radiated hand. *** -->
-<entity_class name="aZombieTemplateRad"             extends="aZombieTemplate">
+<entity_class name="zombieTemplateRad"              extends="zombieTemplate">
 <!-- Statistics -->
 <property name="MaxHealth"                          value="500"/>
 <property name="HandItem"                           value="handZombie02Feral"/>
@@ -300,7 +300,7 @@
 </entity_class>
 
 <!-- FERAL RADIATED ZOMBIES                         *** The most badass zombies, they are fast, super strong and have a powerful hand. *** -->
-<entity_class name="aZombieTemplateRadFeral"        extends="aZombieTemplateRad">
+<entity_class name="zombieTemplateRadFeral"        extends="zombieTemplateRad">
 <!-- Statistics -->
 <property name="MaxHealth"                          value="750"/>
 <property name="HandItem"                           value="handZombie02Feral"/>
@@ -322,7 +322,7 @@
 
 <!-- ============================== ZOMBIE BOE ======================================================================================================================================================================= -->
 <!-- Basic Zombie Boe -->
-<entity_class name="zombieBoeIntimidator"           extends="aZombieTemplate">
+<entity_class name="zombieBoeIntimidator"           extends="zombieTemplate">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -347,7 +347,7 @@
 <entity_class name="zombieBoeHater"                 extends="zombieBoeIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Boe -->
-<entity_class name="zombieBoeFeral"                 extends="aZombieTemplateFeral">
+<entity_class name="zombieBoeFeral"                 extends="zombieTemplateFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -363,7 +363,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Boe -->
-<entity_class name="zombieBoeRadIntimidator"        extends="aZombieTemplateRad">
+<entity_class name="zombieBoeRadIntimidator"        extends="zombieTemplateRad">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -389,7 +389,7 @@
 <entity_class name="zombieBoeRadHater"              extends="zombieBoeRadIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Boe -->
-<entity_class name="zombieBoeRadFeral"              extends="aZombieTemplateRadFeral">
+<entity_class name="zombieBoeRadFeral"              extends="zombieTemplateRadFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -406,7 +406,7 @@
 
 <!-- ============================== ZOMBIE JOE ======================================================================================================================================================================= -->  
 <!-- Basic Zombie Joe -->
-<entity_class name="zombieJoeLimper"                extends="aZombieTemplate">
+<entity_class name="zombieJoeLimper"                extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -425,18 +425,18 @@
 <entity_class name="zombieJoeHater"                 extends="zombieJoeLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Joe -->
-<entity_class name="zombieJoeFeral"                 extends="aZombieTemplateFeral">
+<entity_class name="zombieJoeFeral"                 extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
 <!-- Feral Eyes -->
-<property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_eye"/>
+<property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
 </entity_class>
 
 <!-- Radiated Zombie Joe -->
-<entity_class name="zombieJoeRadLimper"             extends="aZombieTemplateRad">
+<entity_class name="zombieJoeRadLimper"             extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
@@ -457,10 +457,9 @@
 <entity_class name="zombieJoeRadHater"              extends="zombieJoeRadLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Joe -->
-<entity_class name="zombieJoeRadFeral"              extends="aZombieTemplateRadFeral">
+<entity_class name="zombieJoeRadFeral"              extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
-<!--<property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_rad"/> -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -470,7 +469,7 @@
   
 <!-- ============================== ZOMBIE MOE ======================================================================================================================================================================= -->  
 <!-- Basic Zombie Moe -->
-<entity_class name="zombieEdgarSwagger"             extends="aZombieTemplate">
+<entity_class name="zombieEdgarSwagger"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardMoeRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -499,7 +498,7 @@
 <entity_class name="zombieEdgarHater"               extends="zombieEdgarSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Moe -->
-<entity_class name="zombieEdgarFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieEdgarFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardMoeRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -519,7 +518,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Moe -->
-<entity_class name="zombieEdgarRadSwagger"            extends="aZombieTemplateRad">
+<entity_class name="zombieEdgarRadSwagger"            extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardMoeRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -550,7 +549,7 @@
 <entity_class name="zombieEdgarRadHater"            extends="zombieEdgarRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Moe -->
-<entity_class name="zombieEdgarRadFeral"              extends="aZombieTemplateRadFeral">
+<entity_class name="zombieEdgarRadFeral"              extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardMoeRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -571,7 +570,7 @@
 
 <!-- ============================== ZOMBIE YO ======================================================================================================================================================================== -->  
 <!-- Basic Zombie Yo -->  
-<entity_class name="zombieYoLimper"                 extends="aZombieTemplate">
+<entity_class name="zombieYoLimper"                 extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <property name="TintMaterial3"                      value="23,17,13"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -590,7 +589,7 @@
 <entity_class name="zombieYoHater"                  extends="zombieYoLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Yo -->
-<entity_class name="zombieYoFeral"                  extends="aZombieTemplateFeral">
+<entity_class name="zombieYoFeral"                  extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_eye"/>
@@ -600,7 +599,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Yo -->
-<entity_class name="zombieYoRadLimper"              extends="aZombieTemplateRad">
+<entity_class name="zombieYoRadLimper"              extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -621,7 +620,7 @@
 <entity_class name="zombieYoRadHater"               extends="zombieYoRadLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Yo -->
-<entity_class name="zombieYoRadFeral"               extends="aZombieTemplateRadFeral">
+<entity_class name="zombieYoRadFeral"               extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -632,7 +631,7 @@
 
 <!-- ============================== ZOMBIE STEVE ===================================================================================================================================================================== -->  
 <!-- Basic Zombie Steve -->    
-<entity_class name="zombieSteveFlailer"             extends="aZombieTemplate">
+<entity_class name="zombieSteveFlailer"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <property name="TintMaterial2"                      value="36,38,45"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -651,7 +650,7 @@
 <entity_class name="zombieSteveHater"               extends="zombieSteveFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Steve -->
-<entity_class name="zombieSteveFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieSteveFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_eye"/>
@@ -661,7 +660,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Steve -->
-<entity_class name="zombieSteveRadFlailer"          extends="aZombieTemplateRad">
+<entity_class name="zombieSteveRadFlailer"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -681,7 +680,7 @@
 <entity_class name="zombieSteveRadHater"            extends="zombieSteveRadFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Steve -->
-<entity_class name="zombieSteveRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieSteveRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
@@ -692,7 +691,7 @@
 
 <!-- ============================== ZOMBIE BUSINESSMAN =============================================================================================================================================================== -->  
 <!-- Basic Zombie Businessman -->      
-<entity_class name="zombieClarkeWalker"             extends="aZombieTemplate">
+<entity_class name="zombieClarkeWalker"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <property name="TintMaterial1"                      value="36,38,45"/>
 <property name="LootListOnDeath"                    value="89"/>
@@ -712,7 +711,7 @@
 <entity_class name="zombieClarkeHater"              extends="zombieClarkeWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie BusinessMan -->
-<entity_class name="zombieClarkeFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieClarkeFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
@@ -722,7 +721,7 @@
 </entity_class>
 
 <!-- Radiated Zombie BusinessMan -->
-<entity_class name="zombieClarkeRadWalker"          extends="aZombieTemplateRad">
+<entity_class name="zombieClarkeRadWalker"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -742,7 +741,7 @@
 <entity_class name="zombieClarkeRadHater"           extends="zombieClarkeRadWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie BusinessMan -->
-<entity_class name="zombieClarkeRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieClarkeRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -753,7 +752,7 @@
 
 <!-- ============================== ZOMBIE SKATER =================================================================================================================================================================== -->  
 <!-- Basic Zombie Skater -->
-<entity_class name="zombieEugeneIntimidator"        extends="aZombieTemplate">
+<entity_class name="zombieEugeneIntimidator"        extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <property name="LootListOnDeath"                    value="80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -772,7 +771,7 @@
 <entity_class name="zombieEugeneHater"              extends="zombieEugeneIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Skateboarder -->
-<entity_class name="zombieEugeneFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieEugeneFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
@@ -782,7 +781,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Skateboarder -->
-<entity_class name="zombieEugeneRadIntimidator"     extends="aZombieTemplateRad">
+<entity_class name="zombieEugeneRadIntimidator"     extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -802,7 +801,7 @@
 <entity_class name="zombieEugeneRadHater"           extends="zombieEugeneRadIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Skateboarder -->
-<entity_class name="zombieEugeneRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieEugeneRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
@@ -813,7 +812,7 @@
 
 <!-- ============================== ZOMBIE UTILITY WORKER =========================================================================================================================================================== -->  
 <!-- Basic Zombie Utility Worker -->
-<entity_class name="zombieBobFlailer"            extends="aZombieTemplate">
+<entity_class name="zombieBobFlailer"               extends="zombieTemplate">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -840,7 +839,7 @@
 <entity_class name="zombieBobHater"                 extends="zombieBobFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie UtilityWorker -->
-<entity_class name="zombieBobFeral"                 extends="aZombieTemplateFeral">
+<entity_class name="zombieBobFeral"                 extends="zombieTemplateFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -859,7 +858,7 @@
 </entity_class>
 
 <!-- Radiated Zombie UtilityWorker -->
-<entity_class name="zombieBobRadFlailer"            extends="aZombieTemplateRad">
+<entity_class name="zombieBobRadFlailer"            extends="zombieTemplateRad">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -888,7 +887,7 @@
 <entity_class name="zombieBobRadHater"              extends="zombieBobRadFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie UtilityWorker -->
-<entity_class name="zombieBobRadFeral"              extends="aZombieTemplateRadFeral">
+<entity_class name="zombieBobRadFeral"              extends="zombieTemplateRadFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -908,7 +907,7 @@
   
 <!-- ============================== ZOMBIE OLD TIMER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Old Timer -->
-<entity_class name="zombieClintMoaner"              extends="aZombieTemplate">
+<entity_class name="zombieClintMoaner"              extends="zombieTemplate">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -933,7 +932,7 @@
 <entity_class name="zombieClintHater"               extends="zombieClintMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie OldTimer -->
-<entity_class name="zombieClintFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieClintFeral"               extends="zombieTemplateFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -950,7 +949,7 @@
 </entity_class>
 
 <!-- Radiated Zombie OldTimer -->
-<entity_class name="zombieClintRadMoaner"           extends="aZombieTemplateRad">
+<entity_class name="zombieClintRadMoaner"           extends="zombieTemplateRad">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -977,7 +976,7 @@
 <entity_class name="zombieClintRadHater"            extends="zombieClintRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie OldTimer -->
-<entity_class name="zombieClintRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieClintRadFeral"            extends="zombieTemplateRadFeral">
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 <property name="SoundAttack"                        value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -995,7 +994,7 @@
 
 <!-- ============================== ZOMBIE FARMER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Farmer -->
-<entity_class name="zombieDeanFlailer"                   extends="aZombieTemplate">
+<entity_class name="zombieDeanFlailer"              extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardFarmerRagdoll"/>
 <property name="HandItem"                           value="handZombieStrong"/>
 <property name="MaxHealth"                          value="400"/>
@@ -1018,7 +1017,7 @@
 <entity_class name="zombieDeanHater"                extends="zombieDeanFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Farmer -->
-<entity_class name="zombieDeanFeral"                extends="aZombieTemplateFeral">
+<entity_class name="zombieDeanFeral"                extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFarmerRagdoll"/>
 <property name="HandItem"                           value="handZombieStrongFeral"/>
 <property name="MaxHealth"                          value="800"/>
@@ -1032,7 +1031,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Farmer -->
-<entity_class name="zombieDeanRadMoaner"            extends="aZombieTemplateRad">
+<entity_class name="zombieDeanRadMoaner"            extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardFarmerRagdoll"/>
 <property name="HandItem"                           value="handZombieStrongFeral"/>
 <property name="MaxHealth"                          value="400"/>
@@ -1056,7 +1055,7 @@
 <entity_class name="zombieDeanRadHater"             extends="zombieDeanRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Farmer -->
-<entity_class name="zombieDeanRadFeral"             extends="aZombieTemplateRadFeral">
+<entity_class name="zombieDeanRadFeral"             extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFarmerRagdoll"/>
 <property name="HandItem"                           value="handZombieStrongFeral"/>
 <property name="MaxHealth"                          value="1200"/>
@@ -1071,7 +1070,7 @@
 
 <!-- ============================== ZOMBIE SPIDER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Spider -->       
-<entity_class name="zombieSpiderFlailer"            extends="aZombieTemplate">
+<entity_class name="zombieSpiderFlailer"            extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSpiderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Spider_Zombie/spiderroam"/>
 <property name="SoundAlert"                         value="Enemies/Spider_Zombie/spideralert"/>
@@ -1097,7 +1096,7 @@
 <entity_class name="zombieSpiderHater"              extends="zombieSpiderFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Spider -->
-<entity_class name="zombieSpiderFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieSpiderFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSpiderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Spider_Zombie/spiderroam"/>
 <property name="SoundAlert"                         value="Enemies/Spider_Zombie/spideralert"/>
@@ -1115,7 +1114,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Spider -->
-<entity_class name="zombieSpiderRadFlailer"         extends="aZombieTemplateRad">
+<entity_class name="zombieSpiderRadFlailer"         extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSpiderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Spider_Zombie/spiderroam"/>
 <property name="SoundAlert"                         value="Enemies/Spider_Zombie/spideralert"/>
@@ -1143,7 +1142,7 @@
 <entity_class name="zombieSpiderRadHater"           extends="zombieSpiderRadFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Spider -->
-<entity_class name="zombieSpiderRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieSpiderRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSpiderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Spider_Zombie/spiderroam"/>
 <property name="SoundAlert"                         value="Enemies/Spider_Zombie/spideralert"/>
@@ -1162,7 +1161,7 @@
 
 <!-- ============================== ZOMBIE HAZMAT ================================================================================================================================================================== -->  
 <!-- Basic Zombie Hazmat -->      
-<entity_class name="zombieHazmatWalker"             extends="aZombieTemplate">
+<entity_class name="zombieHazmatWalker"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardHazmatRagdoll"/>
 <property name="HandItem"                           value="handZombieHazMat"/>
 <property name="LootListOnDeath"                    value="65"/>
@@ -1182,7 +1181,7 @@
 <entity_class name="zombieHazmatHater"              extends="zombieHazmatWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Hazmat -->
-<entity_class name="zombieHazmatFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieHazmatFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHazmatRagdoll"/>
 <property name="HandItem"                           value="handZombieHazMat"/>
 <property name="LootListOnDeath"                    value="65"/>
@@ -1194,7 +1193,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Hazmat -->
-<entity_class name="zombieHazmatRadWalker"          extends="aZombieTemplateRad">
+<entity_class name="zombieHazmatRadWalker"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHazmatRagdoll"/>
 <property name="HandItem"                           value="handZombieHazMat"/>
 <property name="LootListOnDeath"                    value="65"/>
@@ -1216,7 +1215,7 @@
 <entity_class name="zombieHazmatRadHater"           extends="zombieHazmatRadWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Hazmat -->
-<entity_class name="zombieHazmatRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieHazmatRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHazmatRagdoll"/>
 <property name="HandItem"                           value="handZombieHazMat"/>
 <property name="LootListOnDeath"                    value="65"/>
@@ -1229,7 +1228,7 @@
 
 <!-- ============================== ZOMBIE BURNT ================================================================================================================================================================== -->  
 <!-- Basic Zombie Burnt -->     
-<entity_class name="zombieCrispyFlailer"            extends="aZombieTemplate">
+<entity_class name="zombieCrispyFlailer"            extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/ZombieStandardBurntRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Burnt_Zombie/zombieburntroam"/>
 <property name="SoundAlert"                         value="Enemies/Burnt_Zombie/zombieburntalert"/>
@@ -1256,7 +1255,7 @@
 <entity_class name="zombieCrispyHater"               extends="zombieCrispyFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Burnt -->
-<entity_class name="zombieCrispyFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieCrispyFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/ZombieStandardBurntRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Burnt_Zombie/zombieburntroam"/>
 <property name="SoundAlert"                         value="Enemies/Burnt_Zombie/zombieburntalert"/>
@@ -1275,7 +1274,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Burnt -->
-<entity_class name="zombieCrispyRadFlailer"         extends="aZombieTemplateRad">
+<entity_class name="zombieCrispyRadFlailer"         extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/ZombieStandardBurntRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Burnt_Zombie/zombieburntroam"/>
 <property name="SoundAlert"                         value="Enemies/Burnt_Zombie/zombieburntalert"/>
@@ -1305,7 +1304,7 @@
 <entity_class name="zombieCrispyRadHater"            extends="zombieCrispyRadFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Burnt -->
-<entity_class name="zombieCrispyRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieCrispyRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/ZombieStandardBurntRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Burnt_Zombie/zombieburntroam"/>
 <property name="SoundAlert"                         value="Enemies/Burnt_Zombie/zombieburntalert"/>
@@ -1325,7 +1324,7 @@
 
 <!-- ============================== ZOMBIE FOOTBALLPLAYER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Football Player -->      
-<entity_class name="zombieJerryFlailer"             extends="aZombieTemplate">
+<entity_class name="zombieJerryFlailer"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardFootballRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1356,7 +1355,7 @@
 <entity_class name="zombieJerryHater"               extends="zombieJerryFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Football Player -->
-<entity_class name="zombieJerryFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieJerryFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFootballRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1377,7 +1376,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Football Player -->
-<entity_class name="zombieJerryRadFlailer"          extends="aZombieTemplateRad">
+<entity_class name="zombieJerryRadFlailer"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardFootballRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1408,7 +1407,7 @@
 <entity_class name="zombieJerryRadHater"            extends="zombieJerryRadFlailer">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Football Player -->
-<entity_class name="zombieJerryRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieJerryRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFootballRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1430,7 +1429,7 @@
 
 <!-- ============================== ZOMBIE SOLDIER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Soldier -->      
-<entity_class name="zombieRyanIntimidator"          extends="aZombieTemplate">
+<entity_class name="zombieRyanIntimidator"          extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSoldierRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1457,7 +1456,7 @@
 <entity_class name="zombieRyanHater"                extends="zombieRyanIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Soldier -->
-<entity_class name="zombieRyanFeral"                extends="aZombieTemplateFeral">
+<entity_class name="zombieRyanFeral"                extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSoldierRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1477,7 +1476,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Soldier -->
-<entity_class name="zombieRyanRadIntimidator"       extends="aZombieTemplateRad">
+<entity_class name="zombieRyanRadIntimidator"       extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSoldierRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1507,7 +1506,7 @@
 <entity_class name="zombieRyanRadHater"             extends="zombieRyanRadIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Soldier -->
-<entity_class name="zombieRyanRadFeral"             extends="aZombieTemplateRadFeral">
+<entity_class name="zombieRyanRadFeral"             extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSoldierRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1528,7 +1527,7 @@
 
 <!-- ============================== ZOMBIE ARLENE ================================================================================================================================================================== -->  
 <!-- Basic Zombie Arlene -->        
-<entity_class name="zombieArleneMoaner"             extends="aZombieTemplate">
+<entity_class name="zombieArleneMoaner"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardArleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1556,7 +1555,7 @@
 <entity_class name="zombieArleneHater"              extends="zombieArleneMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Arlene -->
-<entity_class name="zombieArleneFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieArleneFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardArleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1575,7 +1574,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Arlene -->
-<entity_class name="zombieArleneRadMoaner"          extends="aZombieTemplateRad">
+<entity_class name="zombieArleneRadMoaner"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardArleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1604,7 +1603,7 @@
 <entity_class name="zombieArleneRadHater"           extends="zombieArleneRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Arlene -->
-<entity_class name="zombieArleneRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieArleneRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardArleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1624,7 +1623,7 @@
 
 <!-- ============================== ZOMBIE DARLENE ================================================================================================================================================================== -->  
 <!-- Basic Zombie Darlene -->     
-<entity_class name="zombieDarleneMoaner"            extends="aZombieTemplate">
+<entity_class name="zombieDarleneMoaner"            extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardDarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1652,7 +1651,7 @@
 <entity_class name="zombieDarleneHater"             extends="zombieDarleneMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Darlene -->
-<entity_class name="zombieDarleneFeral"             extends="aZombieTemplateFeral">
+<entity_class name="zombieDarleneFeral"             extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardDarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1671,7 +1670,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Darlene -->
-<entity_class name="zombieDarleneRadMoaner"         extends="aZombieTemplateRad">
+<entity_class name="zombieDarleneRadMoaner"         extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardDarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1700,7 +1699,7 @@
 <entity_class name="zombieDarleneRadHater"          extends="zombieDarleneRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Darlene -->
-<entity_class name="zombieDarleneRadFeral"          extends="aZombieTemplateRadFeral">
+<entity_class name="zombieDarleneRadFeral"          extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardDarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1720,7 +1719,7 @@
 
 <!-- ============================== ZOMBIE MARLENE ================================================================================================================================================================== -->  
 <!-- Basic Zombie Marlene -->
-<entity_class name="zombieMarleneLimper"            extends="aZombieTemplate">
+<entity_class name="zombieMarleneLimper"            extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardMarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1748,7 +1747,7 @@
 <entity_class name="zombieMarleneHater"             extends="zombieMarleneLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Marlene -->
-<entity_class name="zombieMarleneFeral"             extends="aZombieTemplateFeral">
+<entity_class name="zombieMarleneFeral"             extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardMarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1767,7 +1766,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Marlene -->
-<entity_class name="zombieMarleneRadLimper"         extends="aZombieTemplateRad">
+<entity_class name="zombieMarleneRadLimper"         extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardMarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1797,7 +1796,7 @@
 <entity_class name="zombieMarleneRadHater"          extends="zombieMarleneRadLimper">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Marlene -->
-<entity_class name="zombieMarleneRadFeral"          extends="aZombieTemplateRadFeral">
+<entity_class name="zombieMarleneRadFeral"          extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardMarleneRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -1817,7 +1816,7 @@
 
 <!-- ============================== ZOMBIE NURSE ================================================================================================================================================================== -->  
 <!-- Basic Zombie Nurse -->
-<entity_class name="zombieLillyWalker"                    extends="aZombieTemplate">
+<entity_class name="zombieLillyWalker"              extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardNurseRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1844,7 +1843,7 @@
 <entity_class name="zombieLillyHater"               extends="zombieLillyWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Nurse -->
-<entity_class name="zombieLillyFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieLillyFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardNurseRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1862,7 +1861,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Nurse -->
-<entity_class name="zombieLillyRadWalker"                 extends="aZombieTemplateRad">
+<entity_class name="zombieLillyRadWalker"                 extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardNurseRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1890,7 +1889,7 @@
 <entity_class name="zombieLillyRadHater"            extends="zombieLillyRadWalker">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Nurse -->
-<entity_class name="zombieLillyRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieLillyRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardNurseRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1909,7 +1908,7 @@
 
 <!-- ============================== ZOMBIE CHEERLEADER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Cheerleader -->    
-<entity_class name="zombieClaireMoaner"             extends="aZombieTemplate">
+<entity_class name="zombieClaireMoaner"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardCheerleaderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1937,7 +1936,7 @@
 <entity_class name="zombieClaireHater"              extends="zombieClaireMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Cheerleader -->
-<entity_class name="zombieClaireFeral"              extends="aZombieTemplateFeral">
+<entity_class name="zombieClaireFeral"              extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardCheerleaderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1956,7 +1955,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Cheerleader -->
-<entity_class name="zombieClaireRadMoaner"          extends="aZombieTemplateRad">
+<entity_class name="zombieClaireRadMoaner"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardCheerleaderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -1985,7 +1984,7 @@
 <entity_class name="zombieClaireRadHater"           extends="zombieClaireRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Cheerleader -->
-<entity_class name="zombieClaireRadFeral"           extends="aZombieTemplateRadFeral">
+<entity_class name="zombieClaireRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardCheerleaderRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
@@ -2005,7 +2004,7 @@
 
 <!-- ============================== ZOMBIE SCREAMER ================================================================================================================================================================== -->  
 <!-- Basic Zombie SCREAMER -->    
-<entity_class name="zombieAnnaMoaner"               extends="aZombieTemplate">
+<entity_class name="zombieAnnaMoaner"               extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardScreamerRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
 <property name="SoundAlert"                         value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
@@ -2031,7 +2030,7 @@
 <entity_class name="zombieAnnaHater"                extends="zombieAnnaMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Screamer -->
-<entity_class name="zombieAnnaFeral"                extends="aZombieTemplateFeral">
+<entity_class name="zombieAnnaFeral"                extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardScreamerRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
 <property name="SoundAlert"                         value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
@@ -2049,7 +2048,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Screamer -->
-<entity_class name="zombieAnnaRadMoaner"            extends="aZombieTemplateRad">
+<entity_class name="zombieAnnaRadMoaner"            extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardScreamerRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
 <property name="SoundAlert"                         value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
@@ -2077,7 +2076,7 @@
 <entity_class name="zombieAnnaRadHater"             extends="zombieAnnaRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Screamer -->
-<entity_class name="zombieAnnaRadFeral"             extends="aZombieTemplateRadFeral">
+<entity_class name="zombieAnnaRadFeral"             extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardScreamerRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
 <property name="SoundAlert"                         value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
@@ -2096,7 +2095,7 @@
   
 <!-- ============================== ZOMBIE STRIPPER ================================================================================================================================================================== -->  
 <!-- Basic Zombie Stripper -->
-<entity_class name="zombieCrystalMoaner"            extends="aZombieTemplate">
+<entity_class name="zombieCrystalMoaner"            extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardStripperRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2123,7 +2122,7 @@
 <entity_class name="zombieCrystalHater"             extends="zombieCrystalMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Stripper -->
-<entity_class name="zombieCrystalFeral"             extends="aZombieTemplateFeral">
+<entity_class name="zombieCrystalFeral"             extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardStripperRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2142,7 +2141,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Stripper -->
-<entity_class name="zombieCrystalRadMoaner"         extends="aZombieTemplateRad">
+<entity_class name="zombieCrystalRadMoaner"         extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardStripperRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2171,7 +2170,7 @@
 <entity_class name="zombieCrystalRadHater"          extends="zombieCrystalRadMoaner">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Radiated Zombie Stripper -->
-<entity_class name="zombieCrystalRadFeral"          extends="aZombieTemplateRadFeral">
+<entity_class name="zombieCrystalRadFeral"          extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardStripperRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2191,7 +2190,7 @@
 
 <!-- ============================== ZOMBIE WIGHT ================================================================================================================================================================== -->  
 <!-- Basic Zombie Wight -->
-<entity_class name="zombieGhoulIntimidator"         extends="aZombieTemplate">
+<entity_class name="zombieGhoulIntimidator"         extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardFeralRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Feral_Zombie/zombieferalroam"/>
 <property name="SoundAlert"                         value="Enemies/Feral_Zombie/zombieferalalert"/>
@@ -2219,7 +2218,7 @@
 <entity_class name="zombieGhoulHater"               extends="zombieGhoulIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
 <!-- Feral Zombie Wight -->
-<entity_class name="zombieGhoulFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieGhoulFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFeralRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Feral_Zombie/zombieferalroam"/>
 <property name="SoundAlert"                         value="Enemies/Feral_Zombie/zombieferalalert"/>
@@ -2240,7 +2239,7 @@
 </entity_class>
 
 <!-- Radiated Zombie Wight -->
-<entity_class name="zombieGhoulRadIntimidator"      extends="aZombieTemplateRad">
+<entity_class name="zombieGhoulRadIntimidator"      extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardFeralRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Feral_Zombie/zombieferalroam"/>
 <property name="SoundAlert"                         value="Enemies/Feral_Zombie/zombieferalalert"/>
@@ -2253,9 +2252,10 @@
 <property name="MaxHealth"                          value="2000"/>
 <property name="LootListOnDeath"                    value="61"/>
 <property name="ExperienceGain"                     value="5251"/>
-<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_rad"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
+<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+<property name="TintMaterial0"                      value="172,242,172"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
@@ -2272,7 +2272,7 @@
 <entity_class name="zombieGhoulRadHater"            extends="zombieGhoulRadIntimidator">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
    
 <!-- Feral Radiated Zombie Wight -->
-<entity_class name="zombieGhoulRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieGhoulRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFeralRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Feral_Zombie/zombieferalroam"/>
 <property name="SoundAlert"                         value="Enemies/Feral_Zombie/zombieferalalert"/>
@@ -2285,9 +2285,10 @@
 <property name="MaxHealth"                          value="2000"/>
 <property name="LootListOnDeath"                    value="61"/>
 <property name="ExperienceGain"                     value="5251"/>
-<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_rad"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
+<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+<property name="TintMaterial0"                      value="172,242,172"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
@@ -2296,7 +2297,7 @@
 
 <!-- ============================== ZOMBIE BIG MOMMA ================================================================================================================================================================== -->  
 <!-- Basic Zombie BIG MOMMA -->
-<entity_class name="zombieBigMommaSwagger"          extends="aZombieTemplate">
+<entity_class name="zombieBigMommaSwagger"          extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2324,7 +2325,7 @@
 <entity_class name="zombieBigMommaWalker"           extends="zombieBigMommaSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieBigMommaHater"            extends="zombieBigMommaSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
 
-<entity_class name="zombieBigMommaPuke"             extends="aZombieTemplate">
+<entity_class name="zombieBigMommaPuke"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2366,7 +2367,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>    
   
-<entity_class name="zombieBigMommaFeral"            extends="aZombieTemplateFeral">
+<entity_class name="zombieBigMommaFeral"            extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2388,7 +2389,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>  
 
-<entity_class name="zombieBigMommaRadSwagger"       extends="aZombieTemplateRad">
+<entity_class name="zombieBigMommaRadSwagger"       extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2418,7 +2419,7 @@
 <entity_class name="zombieBigMommaRadWalker"        extends="zombieBigMommaRadSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieBigMommaRadHater"         extends="zombieBigMommaRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
-<entity_class name="zombieBigMommaRadFeral"         extends="aZombieTemplateRadFeral">
+<entity_class name="zombieBigMommaRadFeral"         extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2441,7 +2442,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class> 
 
-<entity_class name="zombieBigMommaRadPuke"          extends="aZombieTemplateRad">
+<entity_class name="zombieBigMommaRadPuke"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardFatLadyZRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
 <property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
@@ -2487,7 +2488,7 @@
 
 <!-- ============================== ZOMBIE FAT HAWAIIAN ================================================================================================================================================================== -->  
 <!-- Basic Zombie Fat Hawaiian -->  
-<entity_class name="zombieHenrySwagger"             extends="aZombieTemplate">
+<entity_class name="zombieHenrySwagger"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2514,7 +2515,7 @@
 <entity_class name="zombieHenryWalker"              extends="zombieHenrySwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieHenryHater"               extends="zombieHenrySwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
 
-<entity_class name="zombieHenryPuke"                extends="aZombieTemplate">
+<entity_class name="zombieHenryPuke"                extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2553,7 +2554,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>    
   
-<entity_class name="zombieHenryFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieHenryFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2573,7 +2574,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>  
 
-<entity_class name="zombieHenryRadSwagger"          extends="aZombieTemplateRad">
+<entity_class name="zombieHenryRadSwagger"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2601,7 +2602,7 @@
 <entity_class name="zombieHenryRadWalker"           extends="zombieHenryRadSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieHenryRadHater"            extends="zombieHenryRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
-<entity_class name="zombieHenryRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieHenryRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2622,7 +2623,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class> 
 
-<entity_class name="zombieHenryRadPuke"             extends="aZombieTemplateRad">
+<entity_class name="zombieHenryRadPuke"             extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2665,7 +2666,7 @@
 
 <!-- ============================== ZOMBIE BIKER ================================================================================================================================================================== -->
 <!-- Basic Zombie Biker -->  
-<entity_class name="zombieDaveSwagger"              extends="aZombieTemplate">
+<entity_class name="zombieDaveSwagger"              extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="HandItem"                           value="handZombieStrong"/>
 <property name="MaxHealth"                          value="600"/>
@@ -2683,7 +2684,7 @@
 <entity_class name="zombieDaveWalker"               extends="zombieDaveSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieDaveHater"                extends="zombieDaveSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
 
-<entity_class name="zombieDavePuke"                 extends="aZombieTemplate">
+<entity_class name="zombieDavePuke"                 extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2722,7 +2723,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>    
   
-<entity_class name="zombieDaveFeral"                extends="aZombieTemplateFeral">
+<entity_class name="zombieDaveFeral"                extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2742,7 +2743,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>  
 
-<entity_class name="zombieDaveRadSwagger"           extends="aZombieTemplateRad">
+<entity_class name="zombieDaveRadSwagger"           extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2770,7 +2771,7 @@
 <entity_class name="zombieDaveRadWalker"            extends="zombieDaveRadSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieDaveRadHater"             extends="zombieDaveRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
-<entity_class name="zombieDaveRadFeral"             extends="aZombieTemplateRadFeral">
+<entity_class name="zombieDaveRadFeral"             extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2791,7 +2792,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class> 
 
-<entity_class name="zombieDaveRadPuke"              extends="aZombieTemplateRad">
+<entity_class name="zombieDaveRadPuke"              extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2834,7 +2835,7 @@
 
 <!-- ============================== ZOMBIE LUMBERJACK ================================================================================================================================================================== -->
 <!-- Basic Zombie Lumberjack -->
-<entity_class name="zombieJackSwagger"              extends="aZombieTemplate">
+<entity_class name="zombieJackSwagger"              extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSnowRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 <property name="SoundAlert"                         value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -2859,7 +2860,7 @@
 <entity_class name="zombieJackWalker"               extends="zombieJackSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieJackHater"                extends="zombieJackSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
 
-<entity_class name="zombieJackPuke"                 extends="aZombieTemplate">
+<entity_class name="zombieJackPuke"                 extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardSnowRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 <property name="SoundAlert"                         value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -2898,7 +2899,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>    
   
-<entity_class name="zombieJackFeral"                extends="aZombieTemplateFeral">
+<entity_class name="zombieJackFeral"                extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSnowRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 <property name="SoundAlert"                         value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -2917,7 +2918,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class>  
 
-<entity_class name="zombieJackRadSwagger"           extends="aZombieTemplateRad">
+<entity_class name="zombieJackRadSwagger"           extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -2945,7 +2946,7 @@
 <entity_class name="zombieJackRadWalker"            extends="zombieJackRadSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieJackRadHater"             extends="zombieJackRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
-<entity_class name="zombieJackRadFeral"             extends="aZombieTemplateRadFeral">
+<entity_class name="zombieJackRadFeral"             extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSnowRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 <property name="SoundAlert"                         value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -2965,7 +2966,7 @@
 <property name="WalkType"                           value="1"/>
 </entity_class> 
 
-<entity_class name="zombieJackRadPuke"              extends="aZombieTemplateRad">
+<entity_class name="zombieJackRadPuke"              extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSnowRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 <property name="SoundAlert"                         value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -3008,7 +3009,7 @@
 
 <!-- ============================== ZOMBIE FAT COP ================================================================================================================================================================== -->
 <!-- Basic Zombie Fat Cop -->
-<entity_class name="zombieLouisSwagger"             extends="aZombieTemplate">
+<entity_class name="zombieLouisSwagger"             extends="zombieTemplate">
 <property name="Mesh"                               value="Zombies/zombieStandardCopRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -3068,7 +3069,7 @@
 <entity_class name="zombieLouisWalker"              extends="zombieLouisSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieLouisHater"               extends="zombieLouisSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
 
-<entity_class name="zombieLouisFeral"               extends="aZombieTemplateFeral">
+<entity_class name="zombieLouisFeral"               extends="zombieTemplateFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardCopRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -3118,10 +3119,10 @@
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
-<property name="WalkType"                           value="1"/>
+<property name="WalkType"                           value="9"/>
 </entity_class>  
 
-<entity_class name="zombieLouisRadSwagger"          extends="aZombieTemplateRad">
+<entity_class name="zombieLouisRadSwagger"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardCopRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -3170,6 +3171,8 @@
 <property name="ChestExplosionDamageMultiplier"     value="2"/>
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/cop_rad"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
+<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+<property name="TintMaterial0"                      value="172,242,172"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
@@ -3183,7 +3186,7 @@
 <entity_class name="zombieLouisRadWalker"           extends="zombieLouisRadSwagger">  <property name="WalkType" value="7"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>
 <entity_class name="zombieLouisRadHater"            extends="zombieLouisRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>	</entity_class>  
  
-<entity_class name="zombieLouisRadFeral"            extends="aZombieTemplateRadFeral">
+<entity_class name="zombieLouisRadFeral"            extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardCopRagdoll"/>
 <property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 <property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
@@ -3232,25 +3235,27 @@
 <property name="ChestExplosionDamageMultiplier"     value="2"/>
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/cop_rad"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
+<property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+<property name="TintMaterial0"                      value="172,242,172"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
-<property name="WalkType"                           value="1"/>
+<property name="WalkType"                           value="9"/>
 </entity_class> 
 
 <!-- Not Complete or Untested-->
   
-<entity_class name="zombieVolatile"                 extends="aZombieTemplateFeral">
-<property name="Mesh"                               value="Zombies/ZombieStandardBurntRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Burnt_Zombie/zombieburntroam"/>
-<property name="SoundAlert"                         value="Enemies/Burnt_Zombie/zombieburntalert"/>
-<property name="SoundAttack"                        value="Enemies/Burnt_Zombie/zombieburntattack"/>
-<property name="SoundHurt"                          value="Enemies/Burnt_Zombie/zombieburntpain"/>
-<property name="SoundDeath"                         value="Enemies/Burnt_Zombie/zombieburntdeath"/>
-<property name="SoundSense"                         value="Enemies/Burnt_Zombie/zombieburntsense"/>
-<property name="SoundFootstepModifier"              value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
-<property name="HandItem"                           value="handZombieBurning"/>
-<property name="LootListOnDeath"                    value="37"/>
+<entity_class name="zombieVolatileT"                extends="zombieCrispyFeral">
+<property name="HandItem"                           value="handSuicide"/> 
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-2"                           value="BreakDoor"/>
+<property name="AITask-3"                           value="BreakBlock"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
 <!-- Explosion -->
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="Explosion.ParticleIndex"            value="8"/>
@@ -3261,229 +3266,179 @@
 <property name="Explosion.DamageBonus.earth"        value="1"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_eye"/>
-<property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
 </entity_class>
-  
-<!-- TIMID ANIMALS -->
+
+<!-- Basic Non-hostile Animal -->
 <entity_class name="animalTemplateTimid">
-	<property name="Mesh" value="Animals/Stag/STAG"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalStag"/>
-	<property name="Parent" value="Animals"/>
-	<property name="AvatarController" value="GameObjectAnimalAnimation"/>
-	<property name="Weight" value="70"/>
-	<property name="RotateToGround" value="true"/>
-	<property name="IsEntityAnimal" value="true"/>
-	<property name="PhysicsBody" value="Stag"/>
-	<property name="Faction" value="animals"/>
-	<property name="AITask-1" value="Swim"/>
-	<property name="AITask-2" value="RunawayWhenHurt"/>
-	<property name="AITask-3" value="RunawayFromEntity" param1="EntityPlayer"/>
-	<property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie"/>
-	<property name="AITask-5" value="Wander"/>
-	<property name="CanClimbLadders" value="false"/>
-	<property name="MaxHealth" value="75"/>
-	<property name="MaxViewAngle" value="180"/>
-	<property name="WanderSpeed" value="0.7"/>
-	<property name="PanicSpeed" value="2.0"/>
-
-	<!-- Stealth settings -->
-	<property name="SightRange" value="30"/> <!-- distance in m -->
-	<property name="SightScale" value="-2,150"/>
-	<property name="NoiseAlertThreshold" value="20"/> <!-- for awake zombies -->
-	<property name="SmellAlertThreshold" value="20"/> <!-- for awake zombies -->
-
-	<property name="SurfaceCategory" value="organic"/>
-	<property name="ParticleOnDeath" value="blood_death"/>
-	<property name="SoundHurt" value="Animals/stagpain"/>
-	<property name="SoundDeath" value="Animals/stagdeath"/>
-	<property name="TimeStayAfterDeath" value="300"/>
-	<property name="IsEnemyEntity" value="false"/> <!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
-	<property name="ExperienceGain" value="327"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
-	<property name="DeadBodyHitPoints" value="350"/>
-	<drop event="Harvest" name="rawMeat" count="1"/>
+<property name="Mesh"                               value="Animals/Stag/STAG"/>
+<property name="ModelType"                          value="Standard"/>
+<property name="Prefab"                             value="NPC"/>
+<property name="Class"                              value="EntityAnimalStag"/>
+<property name="Parent"                             value="Animals"/>
+<property name="AvatarController"                   value="GameObjectAnimalAnimation"/>
+<property name="Weight"                             value="70"/>
+<property name="RotateToGround"                     value="true"/>
+<property name="IsEntityAnimal"                     value="true"/>
+<property name="PhysicsBody"                        value="Stag"/>
+<property name="Faction"                            value="animals"/>
+<property name="AITask-1"                           value="Swim"/>
+<property name="AITask-2"                           value="RunawayWhenHurt"/>
+<property name="AITask-3"                           value="RunawayFromEntity" param1="EntityPlayer"/>
+<property name="AITask-4"                           value="RunawayFromEntity" param1="EntityZombie"/>
+<property name="AITask-5"                           value="RunawayFromEntity" param1="EntityEnemyAnimal"/>
+<property name="AITask-6"                           value="Wander"/>
+<property name="CanClimbLadders"                    value="false"/>
+<property name="MaxHealth"                          value="75"/>
+<property name="MaxViewAngle"                       value="180"/>
+<property name="WanderSpeed"                        value="0.7"/>
+<property name="PanicSpeed"                         value="2.0"/>
+<!-- Stealth settings -->
+<property name="SightRange"                         value="45"/>
+<property name="SightScale"                         value="-2,150"/>
+<property name="NoiseAlertThreshold"                value="20"/>
+<property name="SmellAlertThreshold"                value="20"/>
+<property name="SurfaceCategory"                    value="organic"/>
+<property name="ParticleOnDeath"                    value="blood_death"/>
+<property name="SoundHurt"                          value="Animals/stagpain"/>
+<property name="SoundDeath"                         value="Animals/stagdeath"/>
+<property name="TimeStayAfterDeath"                 value="300"/>
+<property name="IsEnemyEntity"                      value="false"/>
+<property name="ExperienceGain"                     value="327"/>
+<property name="CorpseBlock"                        value="animalGore"/>
+<property name="CorpseBlockChance"                  value="1"/>
+<property name="DeadBodyHitPoints"                  value="350"/>
 </entity_class>
 
-<entity_class name="animalStag" extends="animalTemplateTimid">
-	<property name="HasRagdoll" value="true"/>
-	<property name="Mesh" value="Animals/Stag/STAG"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalStag"/>
-	<property name="Parent" value="Animals"/>
-	<property name="AvatarController" value="GameObjectAnimalAnimation"/>
-	<property name="Weight" value="70"/>
-	<property name="RotateToGround" value="true"/>
-	<property name="IsEntityAnimal" value="true"/>
-	<property name="PhysicsBody" value="Stag"/>
-	<property name="Faction" value="animals"/>
-	<property name="CanClimbLadders" value="false"/>
-	<property name="MaxHealth" value="150"/>
-	<property name="MaxViewAngle" value="180"/>
-	<property name="WanderSpeed" value="0.7"/>
-	<property name="PanicSpeed" value="2.0"/>
-	<property name="SurfaceCategory" value="organic"/>
-	<property name="ParticleOnDeath" value="blood_death"/>
-	<property name="SoundHurt" value="Animals/stagpain"/>
-	<property name="SoundDeath" value="Animals/stagdeath"/>
-	<property name="TimeStayAfterDeath" value="300"/>
-	<property name="IsEnemyEntity" value="false"/>
-	<property name="ExperienceGain" value="327"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
-	<property name="HasRagdoll" value="true"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="6"/>
-	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="9"/>
-	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4"/>
-</entity_class>
-
-<entity_class name="animalRabbit" extends="animalTemplateTimid">
-	<property name="Mesh" value="Animals/Rabbit/RABBIT"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalRabbit"/>
-	<property name="Parent" value="Animals"/>
-	<property name="Weight" value="10"/>
-	<property name="MaxHealth" value="10"/>
-	<property name="PhysicsBody" value="rabbit"/>
-	<property name="SoundHurt" value="Animals/rabbitpain"/>
-	<property name="SoundDeath" value="Animals/rabbitdeath"/>
-	<property name="PanicSpeed" value="1.5"/>
-	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="173"/>
-	<property name="SwimOffset" value="2"/>
-	<property name="Faction" value="animals"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="DeadBodyHitPoints" value="175"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"/>
-	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
-</entity_class>
-
-<entity_class name="animalChicken" extends="animalTemplateTimid">
-	<property name="Mesh" value="Animals/CHICKEN/chickenPrefab"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalRabbit"/>
-	<property name="Parent" value="Animals"/>
-	<property name="Weight" value="10"/>
-	<property name="MaxHealth" value="10"/>
-	<property name="PhysicsBody" value="chicken"/>
-	<property name="SoundHurt" value="Animals/Chicken/chickenpain"/>
-	<property name="SoundDeath" value="Animals/Chicken/chickendeath"/>
-	<property name="PanicSpeed" value="1"/>
-	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="173"/>
-	<property name="SwimOffset" value="2"/>
-	<property name="Faction" value="animals"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="DeadBodyHitPoints" value="175"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"/>
-	<drop event="Harvest" name="feather" tool_category="Butcher" count="30"/>
-</entity_class>
-
-<entity_class name="animalPig" extends="animalTemplateTimid">
-	<property name="Mesh" value="Animals/Pig/PIG"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalStag"/>
-	<property name="Parent" value="Animals"/>
-	<property name="SoundHurt" value="Animals/pigpain"/>
-	<property name="SoundDeath" value="Animals/pigdeath"/>
-	<property name="PanicSpeed" value="1.2"/>
-	<property name="PhysicsBody" value="pig"/>
-	<property name="ExperienceGain" value="173"/>
-	<property name="SwimOffset" value="0.7"/>
-	<property name="Faction" value="animals"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="MaxHealth" value="150"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/>
-	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
-	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
-</entity_class>
-
-<entity_class name="animalDead" extends="animalTemplateTimid">
-	<property name="HasRagdoll" value="true"/>
-	<property name="Mesh" value="Animals/Stag/STAG"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityAnimalStag"/>
-	<property name="Parent" value="Animals"/>
-	<property name="AvatarController" value="GameObjectAnimalAnimation"/>
-	<property name="Weight" value="70"/>
-	<property name="RotateToGround" value="true"/>
-	<property name="IsEntityAnimal" value="true"/>
-	<property name="PhysicsBody" value="Stag"/>
-	<property name="Faction" value="animals"/>
-	<property name="CanClimbLadders" value="false"/>
-	<property name="MaxHealth" value="1"/>
-	<property name="MaxViewAngle" value="180"/>
-	<property name="WanderSpeed" value="0.7"/>
-	<property name="PanicSpeed" value="2.0"/>
-	<property name="SurfaceCategory" value="organic"/>
-	<property name="ParticleOnDeath" value="blood_death"/>
-	<property name="SoundHurt" value="Animals/stagpain"/>
-	<property name="SoundDeath" value="Animals/stagdeath"/>
-	<property name="TimeStayAfterDeath" value="0"/>
-	<property name="IsEnemyEntity" value="false"/>
-	<property name="ExperienceGain" value="1"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
-	<property name="HasRagdoll" value="true"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="0"/>
-	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="0"/>
-	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="0"/>
-</entity_class>
-
-<!-- HOSTILE ANIMALS -->
+<!-- Basic Hostile Animal -->
 <entity_class name="animalTemplateHostile">
-	<property name="Mesh" value="Zombies/zombieDogPrefab"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityEnemyAnimal"/>
-	<property name="Parent" value="Animals"/>
-	<property name="AvatarController" value="GameObjectAnimalAnimation"/>
-	<property name="Weight" value="300"/>
-	<property name="RotateToGround" value="true"/>
-	<property name="IsEntityAnimal" value="true"/>
-	<property name="IsEnemyEntity" value="true"/> <!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
-	<property name="PhysicsBody" value="bear"/>
-	<property name="Faction" value="animals"/>
-	<property name="AITask-1" value="Swim"/>
-	<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20"/>
-	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20"/>
-	<property name="AITask-4" value="ApproachSpot"/>
-	<property name="AITask-5" value="Wander"/>
-	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
-	<property name="CanClimbLadders" value="false"/>
-	<property name="HandItem" value="handAnimalBear"/>
-	<property name="MaxHealth" value="1200"/>
-	<property name="MaxViewAngle" value="180"/>
-	<property name="WanderSpeed" value="0.25"/>
-	<property name="PanicSpeed" value="2.0"/>
-	<property name="ApproachSpeed" value="1.3"/>
-	<property name="NightWanderSpeed" value="0.25"/>
-	<property name="NightApproachSpeed" value="1.4"/>
-	<property name="MaxTurnSpeed" value="360"/>
-	<property name="IsEnemyEntity" value="true"/>
-
-	<!-- Stealth settings -->
-	<property name="SightRange" value="30"/> <!-- distance in m -->
-	<property name="SightScale" value="-2,150"/>
-	<property name="NoiseAlertThreshold" value="20"/> <!-- for awake zombies -->
-	<property name="SmellAlertThreshold" value="20"/> <!-- for awake zombies -->
-
-	<property name="SurfaceCategory" value="organic"/>
-	<property name="ParticleOnDeath" value="blood_death"/>
-	<property name="TimeStayAfterDeath" value="300"/>
-	<property name="ExperienceGain" value="2509"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
-	<property name="DeadBodyHitPoints" value="350"/>
-	<!-- <drop event="Harvest" name="rawMeat" count="1"/> -->
+<property name="Mesh"                               value="Zombies/zombieDogPrefab"/>
+<property name="ModelType"                          value="Standard"/>
+<property name="Prefab"                             value="NPC"/>
+<property name="Class"                              value="EntityEnemyAnimal"/>
+<property name="Parent"                             value="Animals"/>
+<property name="AvatarController"                   value="GameObjectAnimalAnimation"/>
+<property name="Weight"                             value="300"/>
+<property name="RotateToGround"                     value="true"/>
+<property name="IsEntityAnimal"                     value="true"/>
+<property name="IsEnemyEntity"                      value="true"/>
+<property name="PhysicsBody"                        value="bear"/>
+<property name="Faction"                            value="animals"/>
+<property name="AITask-1"                           value="Swim"/>
+<property name="AITask-2"                           value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20"/>
+<property name="AITask-3"                           value="ApproachAndAttackTarget" param1="EntityNPC" param2="20"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="20"/>
+<property name="AITask-5"                           value="ApproachSpot"/>
+<property name="AITask-6"                           value="Wander"/>
+<property name="AITarget-1"                         value="SetAsTargetIfHurt"/>
+<property name="CanClimbLadders"                    value="false"/>
+<property name="HandItem"                           value="handAnimalBear"/>
+<property name="MaxHealth"                          value="1200"/>
+<property name="MaxViewAngle"                       value="180"/>
+<property name="WanderSpeed"                        value="0.25"/>
+<property name="PanicSpeed"                         value="2.0"/>
+<property name="ApproachSpeed"                      value="1.3"/>
+<property name="NightWanderSpeed"                   value="0.25"/>
+<property name="NightApproachSpeed"                 value="1.4"/>
+<property name="MaxTurnSpeed"                       value="360"/>
+<property name="IsEnemyEntity"                      value="true"/>
+<!-- Stealth settings -->
+<property name="SightRange"                         value="45"/>
+<property name="SightScale"                         value="-2,150"/>
+<property name="NoiseAlertThreshold"                value="20"/>
+<property name="SmellAlertThreshold"                value="20"/>
+<property name="SurfaceCategory"                    value="organic"/>
+<property name="ParticleOnDeath"                    value="blood_death"/>
+<property name="TimeStayAfterDeath"                 value="300"/>
+<property name="ExperienceGain"                     value="2509"/>
+<property name="CorpseBlock"                        value="animalGore"/>
+<property name="CorpseBlockChance"                  value="1"/>
+<property name="DeadBodyHitPoints"                  value="350"/>
 </entity_class>
+
+<!-- ============================== Animal Stag ================================================================================================================================================================== -->
+<entity_class name="animalStag"                     extends="animalTemplateTimid">
+<property name="HasRagdoll"                         value="true"/>
+<property name="Mesh"                               value="Animals/Stag/STAG"/>
+<property name="PhysicsBody"                        value="Stag"/>
+<property name="MaxHealth"                          value="150"/>
+<property name="MaxViewAngle"                       value="360"/>
+<property name="WanderSpeed"                        value="0.7"/>
+<property name="PanicSpeed"                         value="2.0"/>
+<property name="SoundHurt"                          value="Animals/stagpain"/>
+<property name="SoundDeath"                         value="Animals/stagdeath"/>
+<property name="TimeStayAfterDeath"                 value="300"/>
+<property name="ExperienceGain"                     value="500"/>
+<property name="CorpseBlock"                        value="animalGore"/>
+<property name="CorpseBlockChance"                  value="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="6"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="9"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4"/>
+</entity_class>
+
+<!-- ============================== Animal Rabbit ================================================================================================================================================================== -->
+<entity_class name="animalRabbit"                   extends="animalTemplateTimid">
+<property name="HasRagdoll"                         value="true"/>
+<property name="Mesh"                               value="Animals/Rabbit/RABBIT"/>
+<property name="Class"                              value="EntityAnimalRabbit"/>
+<property name="Weight"                             value="10"/>
+<property name="MaxHealth"                          value="50"/>
+<property name="PhysicsBody"                        value="rabbit"/>
+<property name="SoundHurt"                          value="Animals/rabbitpain"/>
+<property name="SoundDeath"                         value="Animals/rabbitdeath"/>
+<property name="PanicSpeed"                         value="1.5"/>
+<property name="CorpseBlockChance"                  value="0"/>
+<property name="ExperienceGain"                     value="250"/>
+<property name="SwimOffset"                         value="2"/>
+<property name="DeadBodyHitPoints"                  value="175"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="2"/>
+</entity_class>
+
+<!-- ============================== Animal Chicken ================================================================================================================================================================== -->
+<entity_class name="animalChicken"                  extends="animalTemplateTimid">
+<property name="Mesh"                               value="Animals/CHICKEN/chickenPrefab"/>
+<property name="Class"                              value="EntityAnimalRabbit"/>
+<property name="Weight"                             value="10"/>
+<property name="MaxHealth"                          value="50"/>
+<property name="PhysicsBody"                        value="chicken"/>
+<property name="SoundHurt"                          value="Animals/Chicken/chickenpain"/>
+<property name="SoundDeath"                         value="Animals/Chicken/chickendeath"/>
+<property name="PanicSpeed"                         value="1"/>
+<property name="CorpseBlockChance"                  value="0"/>
+<property name="ExperienceGain"                     value="250"/>
+<property name="SwimOffset"                         value="2"/>
+<property name="HasRagdoll"                         value="true"/>
+<property name="DeadBodyHitPoints"                  value="175"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="feather"    tool_category="Butcher" count="30"/>
+</entity_class>
+
+<!-- ============================== Animal Pig ================================================================================================================================================================== -->
+<entity_class name="animalPig"                      extends="animalTemplateTimid">
+<property name="Mesh"                               value="Animals/Pig/PIG"/>
+<property name="Class"                              value="EntityAnimalStag"/>
+<property name="SoundHurt"                          value="Animals/Boar/boarpain"/>
+<property name="SoundDeath"                         value="Animals/Boar/boardeath"/>
+<property name="PanicSpeed"                         value="1.2"/>
+<property name="PhysicsBody"                        value="pig"/>
+<property name="ExperienceGain"                     value="250"/>
+<property name="SwimOffset"                         value="0.7"/>
+<property name="HasRagdoll"                         value="true"/>
+<property name="MaxHealth"                          value="150"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="5"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="7"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="6"/>
+</entity_class>
+
+<!-- ============================== Animal Dead ================================================================================================================================================================== -->
+<entity_class name="animalDead"                     extends="animalTemplateTimid">
+<property name="MaxHealth"                          value="1"/>
+</entity_class>
+
+
 
 <entity_class name="animalZombieDog" extends="animalTemplateHostile">
 	<!-- todo extra properties need cleaned up -->
@@ -3604,25 +3559,6 @@
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
 </entity_class>
 
-<entity_class name="animalBearRad" extends="animalBear">
-<property name="ParticleOnSpawn"			value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
-<property name="HandItem"                           value="handZombieCop"/>
-<property name="RightHandJointName"                 value="Jaw"/>
-<property name="ExperienceGain"                     value="2916"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="7"/>
-	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
-	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
-</entity_class>
-
 <entity_class name="animalZombieBear" extends="animalBear">
 	<property name="MaxHealth" value="2400"/>
 	<property name="ExperienceGain" value="2916"/>
@@ -3636,6 +3572,32 @@
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
 </entity_class>
 
+  <entity_class name="animalZombieBearRad" extends="animalZombieBear">
+    <property name="ParticleOnSpawn"			value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+    <property name="Class"                              value="EntityZombieCop"/>
+    <property name="HandItem"                           value="handZombieCop"/>
+    <property name="RightHandJointName"                 value="Jaw"/>
+    <property name="AITask-1"                           value="BreakDoor"/>
+    <property name="AITask-2"                           value="BreakBlock"/>
+    <property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+    <property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
+    <property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
+    <property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+    <property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+    <property name="AITask-8"                           value="ApproachSpot"/>
+    <property name="AITask-9"                           value="Wander"/>
+    <!-- Explosion -->
+    <property name="Explosion.ParticleIndex"            value="8"/>
+    <property name="Explosion.RadiusBlocks"             value="6"/>
+    <property name="Explosion.RadiusEntities"           value="6"/>
+    <property name="Explosion.BlockDamage"              value="500"/>
+    <property name="Explosion.EntityDamage"             value="150"/>
+    <property name="Explosion.DamageBonus.earth"        value="0.5"/>
+    <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="7"/>
+    <drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
+    <drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
+  </entity_class>
+  
 <entity_class name="animalWolf" extends="animalTemplateHostile">
 	<property name="AvatarController" value="AvatarAnimalController"/>
 	<property name="ModelType" value="Standard"/>
@@ -4228,7 +4190,7 @@
 -->
 
 <!--
-<entity_class name="zombieBehemoth" extends="aZombieTemplate">
+<entity_class name="zombieBehemoth" extends="zombieTemplate">
 	<property name="Prefab" value="NPC4m"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
