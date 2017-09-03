@@ -3,9 +3,8 @@
   <world ruleset="vanilla" />
 
   <rulesets>
-    <ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="10000" terrain_generator="vanilla" biome_generator="vanilla">
+    <ruleset name="vanilla" cell_cache_size="8" cell_size="1500" cell_offset="0" generation_distance="12000" terrain_generator="vanilla" biome_generator="vanilla">
       <cell_rule name="default" prob="1"/>
-      <!--<cell_rule name="customHubTest" position="0,1" prob="0"/>-->
     </ruleset>
   </rulesets>
 
@@ -722,7 +721,7 @@
 <property name="sourceModule5"            value="CraterLakes"/>
 <property name="sourceModule6"            value="LakeDelta"/>
 <property name="sourceModule7"            value="Continents"/>
-<property name="sourceModule8"            value="AlienHills"/>
+<property name="sourceModule8"            value="WorldBase"/>
 <property name="sourceModule9"            value="Mountains"/>
 <property name="sourceModule10"           value="WorldBase"/>
 <property name="bounds"                   value="0, 1"/>
@@ -732,7 +731,7 @@
 <!-- Final Scaling-->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="200"/>
+<property name="scale"                    value="250"/>
 <property name="bias"                     value="-1"/>
 </module>
   
@@ -747,200 +746,6 @@
 			
 </terrain_generator>
 </terrain_generators>
-
-<!--
-			<module name="CraterLakesBase2" type="FastRidgedMultifractal" >
-				<property name="frequency" value="0.15"/>
-			</module>
-			
-			<module name="CraterLakesBase2Scaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="CraterLakesBase2"/>
-				<property name="scale" value="0.5"/>
-				<property name="bias" value="0.5"/>
-			</module>
-			
-			<module name="CraterLakes2" type="RidgedMultifractal">
-				<property name="sourceModule" value="CraterLakesBase2Scaled"/>
-				<property name="power" value="10"/>
-				<property name="frequency" value="0.7"/>
-				<property name="roughness" value="5"/>
-			</module>
-			
-			<module name="HillsBase1Base" type="FastBillow">
-				<property name="frequency" value="0.09"/>
-			</module>
-
-			<module name="HillsBase2Base" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.15"/>
-			</module>
-			
-			<module name="HillsBase1Scaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="HillsBase1Base"/>
-				<property name="scale" value="0.45"/>
-				<property name="bias" value="0.50"/>  
-			</module>
-
-			<module name="HillsBase1" type="FastTurbulence">
-				<property name="sourceModule" value="HillsBase1Scaled"/>
-				<property name="power" value="30"/>
-				<property name="frequency" value="0.15"/>
-				<property name="roughness" value="5"/>
-			</module>
-
-			<module name="HillsBase2Scaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="HillsBase2Base"/>
-				<property name="scale" value="0.45"/>
-				<property name="bias" value="0.50"/>  
-			</module>
-			
-			<module name="HillsBase2" type="FastTurbulence">
-				<property name="sourceModule" value="HillsBase2Scaled"/>
-				<property name="power" value="30"/>
-				<property name="frequency" value="0.25"/>
-				<property name="roughness" value="5"/>
-			</module>
-			
-			<module name="MountainBase1Base" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.0025"/>
-			</module>
-
-			<module name="MountainBase2Base" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.0020"/>
-			</module>
-			
-			<module name="MountainBase1Scaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="MountainBase1Base"/>
-				<property name="scale" value="1.20"/>
-				<property name="bias" value="0.55"/>  
-			</module>
-			
-			<module name="MountainBase1" type="FastTurbulence">
-				<property name="sourceModule" value="MountainBase1Scaled"/>
-				<property name="power" value="110"/>
-				<property name="frequency" value="0.60"/>
-				<property name="roughness" value="7"/>
-			</module>
-
-			<module name="MountainBase2Scaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="MountainBase2Base"/>
-				<property name="scale" value="1.00"/>
-				<property name="bias" value="0.45"/>
-			</module>
-
-			<module name="MountainBase2" type="FastTurbulence">
-				<property name="sourceModule" value="MountainBase2Scaled"/>
-				<property name="power" value="100"/>
-				<property name="frequency" value="0.50"/>
-				<property name="roughness" value="5"/>
-			</module>
-			
-			<module name="LandBaseFilter" type="FastNoise" seed_additive="1">
-				<property name="frequency" value="0.4"/>
-			</module>
-
-			<module name="LandBaseA" type="Select">
-				<property name="controlModule" value="LandBaseFilter"/>
-				<property name="sourceModule1" value="CraterLakesBase1"/>
-				<property name="sourceModule2" value="HillsBase1"/>
-				<property name="sourceModule3" value="CraterLakesBase2"/>
-				<property name="sourceModule4" value="HillsBase2"/>
-				<property name="bounds" value="0,1000"/>
-				<property name="edgeFalloff" value="32"/>
-			</module>
-
-			<module name="LandBaseB" type="Select">
-				<property name="controlModule" value="LandBaseFilter"/>
-				<property name="sourceModule1" value="MountainBase1"/>
-				<property name="sourceModule3" value="MountainBase2"/>
-				<property name="sourceModule2" value="HillsBase1"/>
-				<property name="sourceModule4" value="HillsBase2"/>
-				<property name="bounds" value="0,1000"/>
-				<property name="edgeFalloff" value="32"/>
-			</module>
-
-			<module name="LandBaseC" type="Select">
-				<property name="controlModule" value="LandBaseFilter"/>
-				<property name="sourceModule4" value="CraterLakesBase2"/>
-				<property name="sourceModule2" value="CraterLakesBase1"/>
-				<property name="sourceModule3" value="MountainBase2"/>
-				<property name="sourceModule1" value="MountainBase1"/>
-				<property name="bounds" value="0,1000"/>
-				<property name="edgeFalloff" value="32"/>
-			</module>
-			
-			<module name="HillBaseBaseA" type="FastNoise">
-				<property name="frequency" value="1.10"/>
-			</module>
-
-			<module name="HillBaseBaseB" type="FastNoise">
-				<property name="frequency" value="0.90"/>
-			</module>
-
-			<module name="HillBaseBaseC" type="FastNoise">
-				<property name="frequency" value="0.80"/>
-			</module>
-			
-			<module name="HillBaseScaledA" type="ScaleBiasOutput">
-				<property name="sourceModule" value="HillBaseBaseA"/>
-				<property name="scale" value="0.85"/>
-				<property name="bias" value="0.70"/>
-			</module>
-
-			<module name="HillBaseScaledB" type="ScaleBiasOutput">
-				<property name="sourceModule" value="HillBaseBaseB"/>
-				<property name="scale" value="0.80"/>
-				<property name="bias" value="0.65"/>
-			</module>
-
-			<module name="HillBaseScaledC" type="ScaleBiasOutput">
-				<property name="sourceModule" value="HillBaseBaseC"/>
-				<property name="scale" value="0.75"/>
-				<property name="bias" value="0.60"/>
-			</module>
-			
-			<module name="HillBaseA" type="ScaleOutput">
-				<property name="sourceModule" value="HillBaseScaledA"/>
-				<property name="power" value="1"/>
-				<property name="frequency" value="0.250"/>
-				<property name="roughness" value="8"/>
-			</module>
-
-			<module name="HillBaseB" type="ScaleOutput">
-				<property name="sourceModule" value="HillBaseScaledB"/>
-				<property name="power" value="1"/>
-				<property name="frequency" value="0.225"/>
-				<property name="roughness" value="7"/>
-			</module>
-
-			<module name="HillBaseC" type="ScaleOutput">
-				<property name="sourceModule" value="HillBaseScaledC"/>
-				<property name="power" value="1"/>
-				<property name="frequency" value="0.200"/>
-				<property name="roughness" value="6"/>
-			</module>
-
-			<module name="HillBase" type="Select">
-				<property name="controlModule" value="LandBaseFilter"/>
-				<property name="sourceModule1" value="HillBaseA"/>
-				<property name="sourceModule2" value="HillBaseB"/>
-				<property name="sourceModule3" value="HillBaseC"/>
-				<property name="bounds" value="0, 1"/>
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
-
-			<module name="Final" type="Select">
-				<property name="controlModule" value="HillBase"/>
-				<property name="sourceModule1" value="HillBase"/>
-				<property name="sourceModule2" value="WorldBase"/>
-				<property name="sourceModule3" value="LandBaseA"/>
-        <property name="sourceModule3" value="LandBaseB"/>
-        <property name="sourceModule3" value="LandBaseC"/>
-				<property name="bounds" value="0, 1"/>
-				<property name="edgeFalloff" value="0.5"/>
-			</module>
--->
-
-
 
 	<biome_generators>
 		<biome_generator name="vanilla">
@@ -1012,202 +817,34 @@
 			<output module="clampOutput"/>
 		</biome_intensity_generator>
 	</biome_intensity_generators>
-<!-- Vanilla	
-	<biome_spawn_rules>
-		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.1"/>
-			<terrain_generator range="150,175"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.1,0.3"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.4,0.6"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.6,0.7"/>
-			<terrain_generator range="176,255"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.7,0.8"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="plains">
-			<biome_generator range="0.8,1"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,20000"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,-1"/>
-		</biome_spawn_rule>
-		
-	</biome_spawn_rules>
--->
 
-	<biome_spawn_rules>
+<biome_spawn_rules>
+<!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)           -->	
+<biome_spawn_rule name="forest">        <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">        <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">        <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
+<!-- Grassland Overlay (Primary Biome Paint)                                                          -->
+<biome_spawn_rule name="plains">        <terrain_generator range="-60,255"/>          </biome_spawn_rule>
+<!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)              -->
+<biome_spawn_rule name="forest">        <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">     <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
+<biome_spawn_rule name="snow">          <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">   <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">  <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
+<!-- Mountain Paints (Biomes that make up the alpine mountains on the map                             -->
+<biome_spawn_rule name="forest">        <terrain_generator range="90,255"/>           </biome_spawn_rule> 
+<biome_spawn_rule name="pine_forest">   <terrain_generator range="100,255"/>          </biome_spawn_rule>  
+<biome_spawn_rule name="snow">          <terrain_generator range="125,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city">          <terrain_generator range="150,255"/>          </biome_spawn_rule>
+<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                    -->  
+<biome_spawn_rule name="water">         <terrain_generator range="-60,2"/>            </biome_spawn_rule>
+<!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                       -->
+<biome_spawn_rule name="desert">        <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<!-- Water Overlay (Desert requires a new water paint underwater)                                     -->
+<biome_spawn_rule name="water">         <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
+<!-- Radiated Biome Barrier                                                                           -->
+<biome_spawn_rule name="radiated">      <distance_from_center range="10000,12000"/>   </biome_spawn_rule>
 
-		<!-- Primary Biomes -->	
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.00,0.10"/> 	
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.20,0.30"/> 	
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.40,0.50"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.60,0.65"/>
-		</biome_spawn_rule> 
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.85,0.90"/>
-		</biome_spawn_rule> 
-<!-- Remove Later -->
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.10,0.15"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.65,0.70"/>
-		</biome_spawn_rule> 
-
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.70,0.75"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.15,0.20"/> 	
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.30,0.40"/> 
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.50,0.60"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.90,1.00"/> 
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.75,0.85"/>
-		</biome_spawn_rule>
-
-		<!-- Lowlands -->
-
-		<biome_spawn_rule name="pine_forest">
-			<terrain_generator range="80,100"/> 
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="forest">
-			<terrain_generator range="40,80"/> 
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="plains">
-			<terrain_generator range="1,40"/> 
-		</biome_spawn_rule>
-
-		<!-- Wasteland Biomes  -->
-<!--
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.15,0.20"/> 	
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="forest">
-			<biome_generator range="0.30,0.40"/> 
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.50,0.60"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.90,1.00"/> 
-		</biome_spawn_rule>
--->
-		<!-- Mountains -->
-
-		<biome_spawn_rule name="snow">
-			<terrain_generator range="110,125"/>
-		</biome_spawn_rule>
-				
-		<biome_spawn_rule name="pine_forest">
-			<terrain_generator range="90,100"/> 
-		</biome_spawn_rule>
-
-		<!-- Snow Caps -->
-<!--
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.75,0.85"/>
-		</biome_spawn_rule>
--->
-		<biome_spawn_rule name="snow">
-			<terrain_generator range="100,255"/>
-		</biome_spawn_rule>
-
-		<!-- Water -->
-		
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,1"/>
-		</biome_spawn_rule>
-
-		<!-- Deserts -->		
-<!--
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.10,0.15"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.65,0.70"/>
-		</biome_spawn_rule> 
-
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.70,0.75"/>
-		</biome_spawn_rule>
--->
-		<!--  Radiated and Wasteland barriers -->
-<!--
-		<biome_spawn_rule name="snow">
-			<distance_from_center range="8750,9250"/> 
-		</biome_spawn_rule>
-				
-		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="9250,10000"/> 
-		</biome_spawn_rule>
--->
-		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,11000"/> 
-		</biome_spawn_rule>
-
-		<!-- Center Wasteland (Overwrites All) -->
-
-		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="0,50"/> 
-		</biome_spawn_rule>
-
-		<!-- BIOME TEST (REMOVE AFTER USE) 
-	
-		<biome_spawn_rule name="wasteland">
-			<terrain_generator range="-60,255"/> 
-		</biome_spawn_rule>
-		-->
-	</biome_spawn_rules>
+</biome_spawn_rules>
 </rwgmixer>
