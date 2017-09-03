@@ -549,7 +549,7 @@
 -->
 
 <terrain_generators>
-<terrain_generator name="vanilla"         use_old_final="false">
+<terrain_generator                        name="vanilla" use_old_final="false">
 
 <!-- Base Flat Terrain-->
 <module name="Base"                       type="RidgedMultifractal" seed_additive="5">
@@ -736,87 +736,124 @@
 </module>
   
 <!-- Final Processing -->
-<module name="Worldbuilding"              type="ClampOutput">
+<module name="WorldBuilding"              type="ClampOutput">
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
 
 <!-- Final Output-->
-<output module="Worldbuilding"/>
+<output module="WorldBuilding"/>
 			
 </terrain_generator>
 </terrain_generators>
 
-	<biome_generators>
-		<biome_generator name="vanilla">
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008"/>
-				<property name="displacement" value="0.5"/>
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi"/>
-				<property name="bias" value="0.5"/>
-			</module>
+<!-- Biome Distribution -->
+<biome_generators>
+  
+<biome_generator                          name="vanilla">
+<module name="BaseNoise"                  type="Voronoi">
+<property name="frequency"                value="0.00075"/>
+<property name="displacement"             value="0.5"/>
+</module>
+
+<module name="BaseNoiseMod"               type="BiasOutput">
+<property name="sourceModule"             value="BaseNoise"/>
+<property name="bias"                     value="0.55"/>
+</module>
 			
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput"/>
-				<property name="frequency" value="0.25"/>
-				<property name="power" value="8"/>
-				<property name="roughness" value="5"/>
-			</module>
+<module name="BiomeDither"                type="FastTurbulence">
+<property name="sourceModule"             value="BaseNoiseMod"/>
+<property name="frequency"                value="0.25"/>
+<property name="power"                    value="8"/>
+<property name="roughness"                value="5"/>
+</module>
 			
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.0016"/>
-				<property name="power" value="400"/>
-				<property name="roughness" value="1"/>
-			</module>
+<module name="BiomeJiggle"                type="FastTurbulence">
+<property name="sourceModule"             value="BiomeDither"/>
+<property name="frequency"                value="0.0015"/>
+<property name="power"                    value="400"/>
+<property name="roughness"                value="1"/>
+</module>
 			
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle"/>
-				<property name="bounds" value="0,1"/>
-			</module>
+<module name="BiomeBuilding"              type="ClampOutput">
+<property name="sourceModule"             value="BiomeJiggle"/>
+<property name="bounds"                   value="0,1"/>
+</module>
 			
-			<output module="clampOutput"/>
-		</biome_generator>
+<output module="BiomeBuilding"/>
+</biome_generator>
+  
+<biome_generator                          name="test">
+<module name="BaseNoise"                  type="FastNoise">
+<property name="frequency"                value="0.0004"/>
+<property name="displacement"             value="0.5"/>
+</module>
+
+<module name="BaseNoiseMod"               type="BiasOutput">
+<property name="sourceModule"             value="BaseNoise"/>
+<property name="bias"                     value="0.55"/>
+</module>
+			
+<module name="BiomeDither"                type="FastTurbulence">
+<property name="sourceModule"             value="BaseNoiseMod"/>
+<property name="frequency"                value="0.25"/>
+<property name="power"                    value="8"/>
+<property name="roughness"                value="5"/>
+</module>
+			
+<module name="BiomeJiggle"                type="FastTurbulence">
+<property name="sourceModule"             value="BiomeDither"/>
+<property name="frequency"                value="0.0018"/>
+<property name="power"                    value="300"/>
+<property name="roughness"                value="1"/>
+</module>
+			
+<module name="BiomeBuilding"              type="ClampOutput">
+<property name="sourceModule"             value="BiomeJiggle"/>
+<property name="bounds"                   value="0,1"/>
+</module>
+			
+<output module="BiomeBuilding"/>
+</biome_generator>  
+  
+</biome_generators>
+
+<!-- Biome Intensity -->
+<biome_intensity_generators>
+<biome_intensity_generator name="vanilla"> 
+<module name="voronoi" type="Voronoi">
+<property name="frequency" value="0.0008"/>
+<property name="displacement" value="0.5"/>
+<property name="distanceEnabled" value="true"/>
+</module>
+
+<module name="biasOutput" type="BiasOutput">
+<property name="sourceModule" value="voronoi"/>
+<property name="bias" value="0.5"/>
+</module>
 		
-		<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
-	</biome_generators>
-	
-	<biome_intensity_generators>
-		<biome_intensity_generator name="vanilla"> 
-			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008"/>
-				<property name="displacement" value="0.5"/>
-				<property name="distanceEnabled" value="true"/>
-			</module>
-			<module name="biasOutput" type="BiasOutput">
-				<property name="sourceModule" value="voronoi"/>
-				<property name="bias" value="0.5"/>
-			</module>
+<module name="biomeDither" type="FastTurbulence">
+<property name="sourceModule" value="biasOutput"/>
+<property name="frequency" value="0.25"/>
+<property name="power" value="8"/>
+<property name="roughness" value="5"/>
+</module>
 			
-			<module name="biomeDither" type="FastTurbulence">
-				<property name="sourceModule" value="biasOutput"/>
-				<property name="frequency" value="0.25"/>
-				<property name="power" value="8"/>
-				<property name="roughness" value="5"/>
-			</module>
+<module name="biomeJiggle" type="FastTurbulence">
+<property name="sourceModule" value="biomeDither"/>
+<property name="frequency" value="0.0016"/>
+<property name="power" value="400"/>
+<property name="roughness" value="1"/>
+</module>
 			
-			<module name="biomeJiggle" type="FastTurbulence">
-				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.0016"/>
-				<property name="power" value="400"/>
-				<property name="roughness" value="1"/>
-			</module>
+<module name="clampOutput" type="ClampOutput">
+<property name="sourceModule" value="biomeJiggle"/>
+<property name="bounds" value="0,1"/>
+</module>
 			
-			<module name="clampOutput" type="ClampOutput">
-				<property name="sourceModule" value="biomeJiggle"/>
-				<property name="bounds" value="0,1"/>
-			</module>
-			
-			<output module="clampOutput"/>
-		</biome_intensity_generator>
-	</biome_intensity_generators>
+<output module="clampOutput"/>
+</biome_intensity_generator>
+</biome_intensity_generators>
 
 <biome_spawn_rules>
 <!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)           -->	
@@ -845,6 +882,22 @@
 <biome_spawn_rule name="water">         <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
 <!-- Radiated Biome Barrier                                                                           -->
 <biome_spawn_rule name="radiated">      <distance_from_center range="10000,12000"/>   </biome_spawn_rule>
-
+  
+  
+  
+<!--
+<biome_spawn_rule name="city">        <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
+<biome_spawn_rule name="snow">        <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">        <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="plains">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="water">        <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">   <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">        <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
+-->
+  
+  
 </biome_spawn_rules>
 </rwgmixer>
