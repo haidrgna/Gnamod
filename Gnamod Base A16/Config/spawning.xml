@@ -24,132 +24,143 @@
 <spawn maxcount="0" respawndelay="1" time="Day" entitygroup="ZombiesAllMoves" />
 </biome>
 
-<biome name="forest">
-<!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAllMoves" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAllMoves" />
-<!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAllMoves" />
-<!-- Animals -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenland"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Pig"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
-</biome>
-
-<biome name="pine_forest">
-<!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAllMoves" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAllMoves" />
-<!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAllMoves" />
-<!-- Animals -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenland"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Bear"/>
-</biome>
-
+<!-- Grasslands -->
 <biome name="plains">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAllMoves" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAllMoves" />
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesGreen" />
 <!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAllMoves" />
-<!-- Animals (Dead) -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dead" spawnDeadChance="1" />
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesGreen" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesGreen" />
 <!-- Animals -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsDesert"/>
-<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Snake"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RabbitChicken"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Boar"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Pig"/>
 </biome>
 
-<biome name="desert">
+<!-- Dense Forests -->
+<biome name="forest">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAllMoves" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAllMoves" />
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesGreen" />
 <!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAllMoves" />
-<!-- Animals (Dead) -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dead" spawnDeadChance="1" />
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesGreen" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesGreen" />
 <!-- Animals -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsDesert"/>
-<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Snake"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Boar"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
 </biome>
 
-<biome name="wasteland">
+<!-- Wetlands / Marshes -->
+<biome name="water">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesWastelandNight" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesGreen" />
 <!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesGreen" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesGreen" />
 <!-- Animals -->
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dog"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteland"/>
-<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="Vulture"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dead" spawnDeadChance="1" />
-</biome>
-
-<biome name="burnt_forest">
-<!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesBurntForest" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesBurntForest" />
-<!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesBurntForest" />
-<!-- Animals -->
-<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="Vulture"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsSmall"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteland"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Boar"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWaterFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWaterHostile"/>
 <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Snake"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Pig"/>
+</biome>  
+  
+<biome name="pine_forest">
+<!-- Zombies Day -->
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAlpine" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesAlpine" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAlpine" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Bear"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
 </biome>
 
 <biome name="snow">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="SnowZombies" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="SnowZombies" />
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAlpine" />
 <!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="SnowZombies" />
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesAlpine" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAlpine" />
 <!-- Animals -->
 <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Bear"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineHostile"/>
 <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsSnowland"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
 </biome>
 
-<biome name="water">
+<biome name="desert">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
-<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAllMoves" />
-<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAllMoves" />
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesGreen" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesGreen" />
 <!-- Zombies Night (Extra) -->
-<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesRoam" />
-<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAllMoves" />
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesGreen" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesGreen" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Snake"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsDesertFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsDesertHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RabbitChicken"/>
+</biome>
+
+<biome name="wasteland">
+<!-- Zombies Day -->
+<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesWasteland" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesWastelandNight" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesWasteland" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesWastelandNight" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dog"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+</biome>
+
+<biome name="burnt_forest">
+<!-- Zombies Day -->
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesBurn" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesBurn" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesBurn" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesBurn" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesBurn" />
 <!-- Animals -->
 <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsGreenland"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SmallAnimals"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Pig"/>
-<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
 </biome>
+
+<biome name="radiated">
+<!-- Zombies Day -->
+<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
+</biome>
+
+
 
   <!-- Entity spawner classes -->
 

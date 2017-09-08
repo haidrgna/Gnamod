@@ -14,11 +14,11 @@
       <path_material value="asphalt" />
       <path_radius value="10" />
 
-      <hub_rule name="townSmall" prob="0.3"/>
+      <hub_rule name="townSmall" prob="0.2"/>
       <hub_rule name="townLarge" prob="0.3"/>
-      <hub_rule name="citySmall" prob="0.1"/>
-      <hub_rule name="cityLarge" prob="0.1"/>
-      <hub_rule name="rural" prob="0.3"/>
+      <hub_rule name="citySmall" prob="0.2"/>
+      <hub_rule name="cityLarge" prob="0.3"/>
+      <hub_rule name="rural" prob="0.1"/>
 
       <wilderness_rule name="wildernessDefault"/>
     </cell_rule>
@@ -165,9 +165,9 @@
   </hub_rules>
 
   <wilderness_rules>
-    <wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
-      <path_material value="gravel" />
-      <path_radius value="2" />
+    <wilderness_rule name="wildernessDefault" spawn_min_max="15,50">
+      <path_material value="asphalt" />
+      <path_radius value="3" />
       <path_adjust_terrain value="false"/>
       <prefab_rule name="wildernessGroup" prob="1"/>
     </wilderness_rule>
@@ -335,6 +335,7 @@
       <prefab name="fire_station_02" max_count="1"/>
       <prefab rule="skyscrapers" min_count="2"/>
       <prefab name="store_pawn_01" max_count="1" />
+      <prefab name="settlement_trader_04" max_count="1" prob="0.5"/>
     </prefab_rule>
 
     <prefab_rule name="skyscrapers">
@@ -401,8 +402,6 @@
       <prefab name="farm_shed3" />
       <prefab name="farm_shed4" />
       <prefab name="oldwest_stables" />
-      <prefab name="pond02"/>
-      <prefab name="pond01"/>
       <prefab name="water_tower_01" />
       <prefab name="water_tower_02" />
       <prefab name="oldwest_watertower" />
@@ -423,16 +422,16 @@
     </prefab_rule>
 
     <prefab_rule name="wildernessGroup">
-      <prefab rule="traderGroup" min_count="1" max_count="1"/>
+      <prefab rule="traderGroup" max_count="1" prob="0.5"/>
       <prefab name="cabin_01" />
       <prefab name="cabin_02_sm" />
       <prefab name="cabin_03_lg" />
       <prefab name="cabin_04_md" />
       <prefab name="cabin_05_lg" />
       <prefab name="cabin_06_lg" />
-      <prefab name="cabin_snow_hidden_01"/>
+      <prefab name="cabin_snow_hidden_01" prob="0.1"/>
       <prefab name="ranger_station1" />
-      <prefab name="snowy_ski_lodge" />
+      <prefab name="snowy_ski_lodge" prob="0.1"/>
       <prefab name="campsite_01" />
       <prefab name="campsite_02" />
       <prefab name="campsite_03" />
@@ -447,6 +446,8 @@
       <prefab name="cave_02" />
       <prefab name="cave_03" />
       <prefab name="cave_04" />
+      <prefab name="pond02"/>
+      <prefab name="pond01"/>
     </prefab_rule>
 
     <prefab_rule name="detailFillerGroup">
@@ -468,10 +469,10 @@
     </prefab_rule>
 
     <prefab_rule name="traderGroup">
+      <prefab name="settlement_01" />
       <prefab name="settlement_trader_01" />
       <prefab name="settlement_trader_02" />
       <prefab name="settlement_trader_03" />
-      <prefab name="settlement_trader_04" />
       <prefab name="settlement_trader_05" />
     </prefab_rule>
 

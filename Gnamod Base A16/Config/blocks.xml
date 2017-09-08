@@ -1543,7 +1543,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMaster"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -1574,7 +1574,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodMaster"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -2608,7 +2608,9 @@ group desc for stuff like metal siding
 	<property name="CustomIcon" value="lootWastelandHelper"/>
 	<property name="DescriptionKey" value="randomLootSpawnerDesc"/>
 	<property name="Material" value="stone"/>
-	<property name="Texture" value="277"/>
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="16"/>

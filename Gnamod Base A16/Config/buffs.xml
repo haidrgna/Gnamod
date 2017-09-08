@@ -273,7 +273,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 </buff>
 
 <buff id="infection1" duration="9000" actions="debuff(infection)" onexpired="infection2" type="sickness"
-	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics">
+	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics,herbalAntibiotics">
 	<modify id="0" stat="stamina" amount="-0.3" rate="1"/>
 </buff>
 

@@ -1019,15 +1019,15 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <!-- =========================== Generic Items Base Groups ===================================================================================================================================================================================================================================================================================================================== -->
 <!-- Common Trash Groups -->
 <lootgroup name="itemsTrash">			<item name="ironArrowHead" count="1,4" prob="5"/>	<item name="canEmpty" count="1" prob="5"/>		<item name="oldCash" count="1,2" prob="2.5"/>		<item name="cloth" count="1,2" prob="5"/>	<item name="trophy" count="1" prob="5"/>	<item name="brokenGlass" count="1,4" prob="2.5"/>
-						<item name="scrapBrass" count="1,4" prob="5"/>		<item name="fishingWeight" count="1,2" prob="5"/>	<item name="scrapLead"  count="1,4" prob="5"/>		<item name="wood" count="1,10" prob="5"/>	<item name="rockSmall" count="1,4" prob="5"/>	<item name="nail" count="1,5" prob="10"/>
+						<item name="scrapBrass" count="1,4" prob="5"/>		<item name="fishingWeight" count="1,2" prob="1"/>	<item name="scrapLead"  count="1,4" prob="5"/>		<item name="wood" count="1,10" prob="5"/>	<item name="rockSmall" count="1,4" prob="5"/>	<item name="nail" count="1,5" prob="10"/>
 						<item name="feather" count="1,10" prob="5"/>		<item name="casinoCoin" count="1,5" prob="2.5"/>	<item name="femur" prob="5"/>				<item name="candyTin" count="1,2" prob="5"/>	<item group="foodRotten" prob="10"/>		<item group="seedsFood" prob="4"/>
-						<item group="seedsResources" prob="6"/>			<item name="glue" prob="2.5"/>																													</lootgroup>
+						<item group="seedsResources" prob="6"/>			<item name="glue" prob="2.5"/>		<item name="painkillers" prob="1"/>																											</lootgroup>
 <lootgroup name="itemsCommon">			<item name="brokenGlass" count="3,5" prob="2"/>		<item name="scrapPlastics" count="1,2" prob="2"/>	<item name="scrapBrass" count="1,25" prob="2"/>		<item name="trophy" prob="2"/>			<item name="candleStick" prob="2"/>		<item name="doorKnob" prob="2"/>
 						<item name="scrapLead" count="1,25" prob="3"/>		<item name="trophy2" prob="2"/>				<item name="fishingWeight" count="1,5" prob="2"/>	<item name="scrapIron" count="1,25" prob="3"/>	<item name="canEmpty" prob="3"/>		<item name="nail" count="1,15" prob="3"/>
-						<item name="shortMetalPipe" prob="3"/>			<item name="forgedIron" prob="3"/>			<item name="bulletCasing" count="1,8" prob="3"/>	<item name="bulletTip" count="1,8" prob="3"/>	<item name="buckshot" count="1,8" prob="2"/>	<item name="paper" count="1,8" prob="2.5"/>
+						<item name="shortMetalPipe" prob="3"/>			<item name="forgedIron" prob="3"/>			<item name="bulletCasing" count="1,8" prob="2.5"/>	<item name="bulletTip" count="1,8" prob="2.5"/>	<item name="buckshot" count="1,8" prob="2"/>	<item name="paper" count="1,8" prob="2.5"/>
 						<item name="gunPowder" count="1,8" prob="3"/>		<item name="ironArrowHead" count="1,15" prob="3"/>	<item name="steelArrowHead" count="1,15" prob="2"/>	<item name="feather" count="1,15" prob="3"/>	<item name="casinoCoin" count="1,100" prob="2"/><item name="oldCash" count="1,10" prob="2"/>
-						<item name="cloth" count="1,6" prob="3.5"/>		<item name="leather" prob="2"/>				<item name="militaryFiber" count="1,2" prob="1"/>	<item name="glue" count="1,3" prob="3.5"/>	<item name="ductTape" count="1,3" prob="4"/>	<item name="emptyJar" prob="2.5"/>
-						<item name="bottledRiverWater" prob="0.5"/>		<item name="femur" count="1,2" prob="1"/>		<item name="fertilizer" prob="1"/>			<item name="painkillers" prob="3"/>		<item name="oil" count="1,2" prob="3"/>		<item name="electricParts" prob="1"/>
+						<item name="cloth" count="1,6" prob="3.5"/>		<item name="leather" prob="2"/>				<item name="militaryFiber" count="1,2" prob="1"/>	<item name="glue" count="1,3" prob="2.5"/>	<item name="ductTape" count="1,3" prob="4"/>	<item name="emptyJar" prob="2.5"/>
+						<item name="bottledRiverWater" prob="0.5"/>		<item name="femur" count="1,2" prob="1"/>		<item name="fertilizer" prob="1"/>			<item name="painkillers" prob="5"/>		<item name="oil" count="1,2" prob="3"/>		<item name="electricParts" prob="1"/>
 						<item name="electronicParts" prob="1"/>			<item name="mechanicalParts" prob="1"/>			<item group="seedsFood" prob="1"/>			<item group="foodRotten" prob="1.25"/>		<item group="foodPet" prob="2"/>		<item group="clothGeneral" prob="0.5"/>
 						<item group="ammoPrimitive" prob="0.5"/>		<item group="weaponsPrimitive" prob="0.5"/>		<item group="ammoGuns" prob="0.5"/>			<item group="gunsCommon" prob="0.5"/>		<item group="gunsUncommon" prob="0.25"/>	<item group="gunsRare" prob="0.25"/>
 						<item name="paint" count="1,5" prob="0.5"/>
@@ -1216,8 +1216,8 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="cnt33"	count="1"> 	<!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>																																</lootgroup>
 <lootgroup name="cnt34"	count="1"> 	<item group="lootADBase" prob="35"/>			<item group="lootADMedical" prob="10"/>			<item group="lootADFood" prob="12"/>		<item group="lootADGunsAmmo" prob="12"/>	<item group="lootADTools" prob="12"/>			<item group="lootADArmor" prob="12"/>
 					<item group="lootADBuild" prob="2"/>			<item group="lootADStock" prob="5"/>																													</lootgroup>
-<lootgroup name="cnt35"	count="1"> 	<item group="itemsCommon" count="1,2" prob="15"/>	<item name="flashlight02" prob="2.5"/>			<item name="foodHoney" prob="10"/>		<item group="clothCW" prob="15"/>		<item group="clothGeneral" prob="5"/>			<item group="armorMilitaryMisc" prob="2.5"/>
-					<item group="gunsCommon" prob="10"/>			<item group="gunsUncommon" prob="8"/>			<item group="gunsComplete" prob="1"/>		<item group="foodCanned" prob="10"/>		<item group="foodRations" prob="5"/>			<item group="itemsCookware" prob="10"/>
+<lootgroup name="cnt35"	count="1"> 	<item group="itemsCommon" count="1,2" prob="25"/>	<item name="flashlight02" prob="2.5"/>			<item name="foodHoney" prob="8"/>		<item group="clothCW" prob="15"/>		<item group="clothGeneral" prob="6.5"/>			<item group="armorMilitaryMisc" prob="1"/>
+					<item group="gunsCommon" prob="8"/>			<item group="gunsUncommon" prob="5"/>			<item group="gunsComplete" prob="1"/>		<item group="foodCanned" prob="10"/>		<item group="foodRations" prob="5"/>			<item group="itemsCookware" prob="7"/>
 					<item group="medicalBasic" prob="5"/>			<item group="lootHerbal" prob="1"/> 																													</lootgroup>
 <lootgroup name="cnt36"	count="1"> 	<item name="bottledWater" prob="15"/>			<item group="foodCanned" count="1,2" prob="25"/>	<item group="itemsCommon" prob="25"/>		<item group="toolsBasic" prob="10"/>		<item group="medicalBasic" prob="10"/>			<item group="weaponsBackpack" prob="10"/>
 					<item group="gunsCommon" prob="5"/>																																				</lootgroup>
@@ -1322,7 +1322,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt2"	count="2"	prob="35"/>
 <item group="cnt2"	count="3"	prob="5"/>
 <!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/> 																																						    </lootcontainer>
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing66"/> 																																						    </lootcontainer>
 <!-- =========================== CUPBOARDS (OLD HOUSES) ======================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="3"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -1504,7 +1504,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt16"	count="2"	prob="50"/>
 <item group="cnt16"	count="3,4"	prob="10"/>
 <!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>																																						    </lootcontainer>
+<item group="itemsTrash" count="1" loot_prob_template="nothing50"/>																																						    </lootcontainer>
 <!-- =========================== ZOMBIE COP (NORMAL) =========================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="17"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -1569,7 +1569,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt21"	count="2"	prob="35"/>
 <item group="cnt21"	count="3"	prob="5"/>
 <!-- Chance of No Loot -->
-<item group="medicalBasic" count="0,1" loot_prob_template="nothing50"/>																																				    </lootcontainer>
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>																																				    </lootcontainer>
 <!-- =========================== GARAGE BOX ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="22"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -2081,7 +2081,7 @@ loot_quality_template=	"leveledLight">
 <item group="cnt65"	count="2"	prob="19"/>
 <item group="cnt65"	count="3"	prob="1"/>
 <!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>																																					  	    </lootcontainer>
+<item group="medicalBasic" count="0,1" loot_prob_template="nothing50"/>																																					  	    </lootcontainer>
 <!-- =========================== LUMBERJACK ZOMBIE ============================================================================================================================================================================================================================================================================================================================= -->
 <lootcontainer id="66"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
