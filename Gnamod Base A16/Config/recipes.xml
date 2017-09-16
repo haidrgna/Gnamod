@@ -92,20 +92,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Base Recipes =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- ============================== Item Recipes ==================================================================================================================================================================================================================================================================================================================================================== -->
 <!-- Food Recipes -->
-<recipe name="baconAndEggs" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="egg" count="2"/>			<ingredient name="rawMeat" count="1"/>			<ingredient name="animalFat" count="1"/>																</recipe>
-<recipe name="bakedPotato" count="1"		craft_area="campfire" craft_tool="cookingGrill">	<ingredient name="potato" count="1"/>																															</recipe>
-<recipe name="blueberryPie" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="blueberries" count="1"/>		<ingredient name="egg" count="1"/>			<ingredient name="cornMeal" count="1"/>			<ingredient name="bottledWater" count="1"/>		<ingredient name="animalFat" count="1"/>		</recipe>
-<recipe name="charredMeat" count="1"		craft_area="campfire">					<ingredient name="rawMeat" count="1"/>																															</recipe>
-<recipe name="grilledMeat" count="1"		craft_area="campfire" craft_tool="cookingGrill">	<ingredient name="rawMeat" count="2"/>			<ingredient name="animalFat" count="1"/>																							</recipe>
-<recipe name="boiledMeat" count="2"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="rawMeat" count="2"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
-<recipe name="boiledMeat" count="1"		craft_area="campfire">					<ingredient name="rawMeat" count="1"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
-<recipe name="meatStew" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="rawMeat" count="5"/>			<ingredient name="potato" count="5"/>			<ingredient name="corn" count="5"/>			<ingredient name="bottledWater" count="1"/>									</recipe>
-<recipe name="vegetableStew" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="potato" count="5"/>			<ingredient name="corn" count="5"/>			<ingredient name="mushrooms" count="5"/>		<ingredient name="bottledWater" count="1"/>									</recipe>
-<recipe name="cornBread" count="5"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="cornMeal" count="10"/>		<ingredient name="bottledWater" count="1"/>																							</recipe>
-<recipe name="cornOnTheCob" count="5"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="corn" count="5"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
-<recipe name="cornOnTheCob" count="2"		craft_area="campfire">					<ingredient name="corn" count="2"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
-<recipe name="eggboiled" count="5"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="egg" count="5"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
-<recipe name="eggboiled" count="2"		craft_area="campfire">					<ingredient name="egg" count="2"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
+<recipe name="baconAndEggs" count="1"   craft_area="campfire" craft_tool="cookingPot">		<ingredient name="egg" count="2"/>			<ingredient name="rawMeat" count="1"/>			<ingredient name="animalFat" count="1"/>																</recipe>
+<recipe name="bakedPotato" count="1"    craft_area="campfire" craft_tool="cookingGrill">	<ingredient name="potato" count="1"/>																															</recipe>
+<recipe name="blueberryPie" count="1"   craft_area="campfire" craft_tool="cookingPot">		<ingredient name="blueberries" count="1"/>		<ingredient name="egg" count="1"/>			<ingredient name="cornMeal" count="1"/>			<ingredient name="bottledWater" count="1"/>		<ingredient name="animalFat" count="1"/>		</recipe>
+<recipe name="charredMeat" count="1"    craft_area="campfire">					<ingredient name="rawMeat" count="1"/>																															</recipe>
+<recipe name="grilledMeat" count="1"    craft_area="campfire" craft_tool="cookingGrill">	<ingredient name="rawMeat" count="2"/>			<ingredient name="animalFat" count="1"/>																							</recipe>
+<recipe name="boiledMeat" count="2"     craft_area="campfire" craft_tool="cookingPot">		<ingredient name="rawMeat" count="2"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
+<recipe name="boiledMeat" count="1"     craft_area="campfire">					<ingredient name="rawMeat" count="1"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
+<recipe name="meatStew" count="1"       craft_area="campfire" craft_tool="cookingPot">		<ingredient name="rawMeat" count="5"/>			<ingredient name="potato" count="5"/>			<ingredient name="corn" count="5"/>			<ingredient name="bottledWater" count="1"/>									</recipe>
+<recipe name="vegetableStew" count="1"  craft_area="campfire" craft_tool="cookingPot">		<ingredient name="potato" count="5"/>			<ingredient name="corn" count="5"/>			<ingredient name="mushrooms" count="5"/>		<ingredient name="bottledWater" count="1"/>									</recipe>
+<recipe name="cornBread" count="5"      craft_area="campfire" craft_tool="cookingPot">		<ingredient name="cornMeal" count="10"/>		<ingredient name="bottledWater" count="1"/>																							</recipe>
+<recipe name="cornOnTheCob" count="5"   craft_area="campfire" craft_tool="cookingPot">		<ingredient name="corn" count="5"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
+<recipe name="cornOnTheCob" count="2"   craft_area="campfire">					<ingredient name="corn" count="2"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
+<recipe name="eggboiled" count="5"      craft_area="campfire" craft_tool="cookingPot">		<ingredient name="egg" count="5"/>			<ingredient name="bottledWater" count="1"/>																							</recipe>
+<recipe name="eggboiled" count="2"      craft_area="campfire">					<ingredient name="egg" count="2"/>			<ingredient name="canBoiledWater" count="1"/>																							</recipe>
 
 <!-- Drinks and Alcohol Recipes -->
 <recipe name="canBoiledWater" count="1"		craft_area="campfire">					<ingredient name="canMurkyWater" count="1"/>																														</recipe>
@@ -113,6 +113,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="bottledWater" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="snowBall" count="10"/>		<ingredient name="emptyJar" count="1"/>																								</recipe>
 <recipe name="bottledWater" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="bottledRiverWater" count="1"/>																													</recipe>
 <recipe name="bottledRiverWater" count="1">								<ingredient name="snowBall" count="10"/>		<ingredient name="emptyJar" count="1"/>																								</recipe>
+<recipe name="canMurkyWater" count="1">					<ingredient name="snowBall" count="15"/>		<ingredient name="canEmpty" count="1"/>		</recipe>
 <recipe name="foodYuccaJuice" count="1"		craft_area="campfire">					<ingredient name="foodYuccaFruit" count="4"/>		<ingredient name="emptyJar" count="1"/>																								</recipe>
 <recipe name="goldenRodTea" count="1"		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="goldenrodPlant" count="4"/>		<ingredient name="bottledWater" count="1"/>																							</recipe>
 <recipe name="redTea" count="1" 		craft_area="campfire" craft_tool="cookingPot">		<ingredient name="chrysanthemumPlant" count="4"/>	<ingredient name="bottledWater" count="1"/>																							</recipe>
@@ -150,19 +151,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="miningHelmet" count="1"		craft_area="workbench">					<ingredient name="footballHelmetZU" count="1"/>		<ingredient name="flashlight02" count="1"/>			<ingredient name="electricParts" count="8"/>		<ingredient name="ductTape" count="5"/>		<ingredient name="scrapPlastics" count="4"/>		</recipe>
 
 <!-- Plant Fiber Clothing -->
-<recipe name="plantFiberGloves" count="1">								<ingredient name="yuccaFibers" count="10"/>																														</recipe>
-<recipe name="plantFiberHat" count="1">									<ingredient name="yuccaFibers" count="10"/>																														</recipe>
-<recipe name="plantFiberHood" count="1">								<ingredient name="yuccaFibers" count="10"/>																														</recipe>
-<recipe name="plantFiberPants" count="1">								<ingredient name="yuccaFibers" count="20"/>																														</recipe>
-<recipe name="plantFiberShirt" count="1">								<ingredient name="yuccaFibers" count="20"/>																														</recipe>
-<recipe name="plantFiberShoes" count="1">								<ingredient name="yuccaFibers" count="10"/>																														</recipe>
+<recipe name="plantFiberGloves" count="1">								<ingredient name="yuccaFibers" count="10"/>			<!--<ingredient name="cloth" count="1"/>-->																											</recipe>
+<recipe name="plantFiberHat" count="1">									<ingredient name="yuccaFibers" count="10"/>				<!--<ingredient name="cloth" count="1"/>-->																										</recipe>
+<recipe name="plantFiberHood" count="1">								<ingredient name="yuccaFibers" count="10"/>				<!--<ingredient name="cloth" count="1"/>-->																										</recipe>
+<recipe name="plantFiberPants" count="1">								<ingredient name="yuccaFibers" count="20"/>				<!--<ingredient name="cloth" count="2"/>-->																										</recipe>
+<recipe name="plantFiberShirt" count="1">								<ingredient name="yuccaFibers" count="20"/>				<!--<ingredient name="cloth" count="2"/>-->																										</recipe>
+<recipe name="plantFiberShoes" count="1">								<ingredient name="yuccaFibers" count="10"/>				<!--<ingredient name="cloth" count="1"/>-->																										</recipe>
 
 <!-- Cloth Armor Recipes -->
-<recipe name="clothBoots" count="1">									<ingredient name="cloth" count="5"/>			<ingredient name="ductTape" count="1"/>																								</recipe>
-<recipe name="clothGloves" count="1">									<ingredient name="cloth" count="5"/>			<ingredient name="ductTape" count="1"/>																								</recipe>
-<recipe name="clothHat" count="1">									<ingredient name="cloth" count="5"/>			<ingredient name="ductTape" count="1"/>																								</recipe>
-<recipe name="clothJacket" count="1">									<ingredient name="cloth" count="10"/>			<ingredient name="ductTape" count="1"/>																								</recipe>
-<recipe name="clothPants" count="1">									<ingredient name="cloth" count="10"/>			<ingredient name="ductTape" count="1"/>																								</recipe>
+<recipe name="clothBoots" count="1">									<ingredient name="cloth" count="10"/>			<ingredient name="plantFiberShoes" count="1"/>																								</recipe>
+<recipe name="clothGloves" count="1">									<ingredient name="cloth" count="10"/>			<ingredient name="plantFiberGloves" count="1"/>																								</recipe>
+<recipe name="clothHat" count="1">									<ingredient name="cloth" count="10"/>			<ingredient name="plantFiberHood" count="1"/>																								</recipe>
+<recipe name="clothJacket" count="1">									<ingredient name="cloth" count="20"/>			<ingredient name="yuccaFibers" count="20"/>																								</recipe>
+<recipe name="clothPants" count="1">									<ingredient name="cloth" count="20"/>			<ingredient name="yuccaFibers" count="20"/>																								</recipe>
 
 <!-- Hide Armor Recipes -->
 <recipe name="animalHideBoots" count="1">								<ingredient name="animalHide" count="10"/>		<ingredient name="cloth" count="5"/>				<ingredient name="ductTape" count="1"/>																</recipe>
@@ -246,7 +247,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="shovelSteel" count="1"		craft_area="workbench">					<ingredient name="forgedSteel" count="20"/>		<ingredient name="wood" count="10"/>																								</recipe>
 <recipe name="sledgehammer" count="1">									<ingredient name="forgedIron" count="30"/>		<ingredient name="wood" count="10"/>																								</recipe>
 <recipe name="stoneAxe" count="1">									<ingredient name="rockSmall" count="4"/>		<ingredient name="yuccaFibers" count="2"/>			<ingredient name="wood" count="2"/>																</recipe>
-<recipe name="stoneShovel" count="1">									<ingredient name="rockSmall" count="5"/>		<ingredient name="yuccaFibers" count="3"/>			<ingredient name="wood" count="3"/>																</recipe>
+<recipe name="stoneShovel" count="1">									<ingredient name="rockSmall" count="6"/>		<ingredient name="yuccaFibers" count="3"/>			<ingredient name="wood" count="5"/>																</recipe>
 <recipe name="wrench" count="1"			craft_area="workbench">					<ingredient name="forgedSteel" count="12"/>		<ingredient name="mechanicalParts" count="4"/>																							</recipe>
 <recipe name="wireTool" count="1"		craft_area="workbench">					<ingredient name="forgedSteel" count="9"/>		<ingredient name="mechanicalParts" count="3"/>																							</recipe>
 <recipe name="flashlight02" count="1"		craft_area="workbench">					<ingredient name="forgedIron" count="2"/>		<ingredient name="partsNailgun_battery" count="1"/>		<ingredient name="electricParts" count="10"/>		<ingredient name="glue" count="4"/>		<ingredient name="scrapPlastics" count="4"/>		</recipe>
@@ -303,6 +304,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="minibikeSeat" count="1"		craft_area="workbench">					<ingredient name="ductTape" count="4"/>			<ingredient name="leather" count="7"/>				<ingredient name="cottonPlant" count="15"/>		<ingredient name="shortMetalPipe" count="4"/>								</recipe>
 
 <!-- Materials -->
+<recipe name="glue" count="1"			craft_area="campfire" craft_tool="cookingPot">		<ingredient name="femur" count="3"/>			<ingredient name="bottledRiverWater" count="1"/>		</recipe>
 <recipe name="glue" count="1"			craft_area="campfire" craft_tool="beaker">		<ingredient name="femur" count="2"/>			<ingredient name="bottledRiverWater" count="1"/>																						</recipe>
 <recipe name="glue" count="1"			craft_area="chemistryStation">				<ingredient name="femur" count="1"/>			<ingredient name="bottledRiverWater" count="1"/>																						</recipe>
 <recipe name="gunPowder" count="2"		craft_area="campfire" craft_tool="beaker">		<ingredient name="coal" count="3"/>			<ingredient name="potassiumNitratePowder" count="3"/>																						</recipe>
@@ -368,7 +370,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="brickArch" count="1">									<ingredient name="brickBlock" count="1"/>																														</recipe>
 <recipe name="brickWedgeStairs" count="1">								<ingredient name="brickBlock" count="1"/>																														</recipe>
 <recipe name="brickWedgeTipStairs" count="1">								<ingredient name="brickBlock" count="1"/>																														</recipe>
-<!-- Flagstone Blocks -->
+<recipe name="brickGable" count="1">								<ingredient name="brickBlock" count="1"/>																														</recipe>
+
+  
+  <!-- Flagstone Blocks -->
 <recipe name="flagstoneBlock" count="1">								<ingredient name="cobblestones" count="5"/>																														</recipe>
 <recipe name="flagstoneRamp" count="1">									<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
 <recipe name="flagstoneCNRFull" count="1">								<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
@@ -395,6 +400,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="flagstonePyramid" count="1">								<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
 <recipe name="flagstoneWedgeStairs" count="1">								<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
 <recipe name="flagstoneWedgeTipStairs" count="1">							<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
+<recipe name="flagstoneGable" count="1">							<ingredient name="flagstoneBlock" count="1"/>																														</recipe>
+
+  
 <!-- Poured Concrete Blocks -->
 <recipe name="pouredConcreteBlock" count="1">								<ingredient name="concreteMix" count="10"/>																														</recipe>
 <recipe name="pouredConcreteArrowSlitHalf" count="1">							<ingredient name="pouredConcreteBlock" count="1"/>																													</recipe>
@@ -505,8 +513,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="woodStairsBoard" count="1">								<ingredient name="wood" count="15"/>																															</recipe>
 <recipe name="woodStairsBoardRailing" count="1">							<ingredient name="wood" count="15"/>																															</recipe>
 <recipe name="woodWedgeTip" count="1">									<ingredient name="wood" count="10"/>																															</recipe>
+<recipe name="woodGable" count="1">									<ingredient name="wood" count="10"/>																															</recipe>
+  
 
-<!-- Defensive Blocks -->
+  <!-- Defensive Blocks -->
 <recipe name="ironBars" count="1"				craft_area="forge" craft_tool="anvil"	material_based="true">					<ingredient name="unit_iron" count="100"/>		<ingredient name="unit_clay" count="20"/>																</recipe>
 <recipe name="ironBarsCentered" count="1">								<ingredient name="ironBars" count="1"/>																															</recipe>
 <recipe name="keystoneBlock" count="1" 				craft_area="forge" craft_tool="anvil"	material_based="true">					<ingredient name="unit_stone" count="1000"/>		<ingredient name="unit_iron" count="1000"/>			<ingredient name="unit_clay" count="1000"/>								</recipe>
@@ -539,7 +549,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="trapGlassBusinessCTRSheet1x1" count="1"		craft_area="forge"			material_based="true">					<ingredient name="unit_glass" count="20"/>			<ingredient name="unit_stone" count="5"/>		<ingredient name="unit_lead" count="5"/>	<ingredient name="unit_clay" count="3"/>		</recipe>
 
 <!-- Beds -->
-<recipe name="bedroll" count="1">									<ingredient name="cloth" count="20"/>																															</recipe>
+<recipe name="bedroll" count="1">									<ingredient name="cloth" count="20"/> <ingredient name="cottonPlant" count="20"/>	 				<ingredient name="yuccaFibers" count="20"/>																												</recipe>
 <recipe name="bed01" count="1"					craft_area="workbench">			<ingredient name="cloth" count="20"/>			<ingredient name="cottonPlant" count="20"/>			<ingredient name="spring" count="10"/>			<ingredient name="shortMetalPipe" count="10"/>								</recipe>
 <recipe name="bed02" count="1"					craft_area="workbench">			<ingredient name="cloth" count="40"/>			<ingredient name="cottonPlant" count="40"/>			<ingredient name="spring" count="20"/>			<ingredient name="wood" count="20"/>		<ingredient name="shortMetalPipe" count="10"/>		</recipe>
 
@@ -643,8 +653,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="cntMailBox02" count="1">									<ingredient name="cntMailBox01" count="1"/>																														</recipe>
 <recipe name="cntMailBox03" count="1">									<ingredient name="cntMailBox01" count="1"/>																														</recipe>
 <recipe name="cntNightstand" count="1"				craft_area="workbench">			<ingredient name="nail" count="5"/>			<ingredient name="wood" count="20"/>																								</recipe>
-<recipe name="cntSecureStorageChest" count="1">								<ingredient name="nail" count="5"/>			<ingredient name="wood" count="20"/>																								</recipe>
-<recipe name="cntStorageGeneric" count="1">								<ingredient name="nail" count="5"/>			<ingredient name="wood" count="20"/>																								</recipe>
+<recipe name="cntSecureStorageChest" count="1">								<ingredient name="nail" count="4"/>			<ingredient name="wood" count="20"/>																								</recipe>
+<recipe name="cntStorageGeneric" count="1">								<ingredient name="nail" count="4"/>			<ingredient name="wood" count="20"/>																								</recipe>
 <recipe name="cntToilet01" count="1"				craft_area="workbench">			<ingredient name="bucketWater" count="1"/>		<ingredient name="shortMetalPipe" count="2"/>			<ingredient name="mechanicalParts" count="1"/>		<ingredient name="wood" count="4"/>									</recipe>
 <recipe name="cntToilet02" count="1">									<ingredient name="cntToilet01" count="1"/>																														</recipe>
 <recipe name="cntToilet03" count="1">									<ingredient name="cntToilet01" count="1"/>																														</recipe>
@@ -695,5 +705,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- GNAMOD Custom Items or Blocks -->
 <recipe name="StartingKit" count="1">		<!-- Empty Starting Kit Bag -->				<ingredient name="cloth" count="10"/>																															</recipe>
+<recipe name="q_GnamodExpert" count="1">		<!-- Quest Swapping -->				        <ingredient name="q_GnamodBasic" count="1"/>																															</recipe>
 
+  
+  
 </recipes>

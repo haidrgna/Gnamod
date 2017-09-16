@@ -712,7 +712,7 @@
 <property name="edgeFalloff"              value="0.25"/>
 </module>
 
-<!-- Final Selecting-->
+<!-- Final Selecting -->
 <module name="Final"                      type="Select">
 <property name="controlModule"            value="Cliffs"/>
 <property name="sourceModule1"            value="Mountains"/>
@@ -728,7 +728,24 @@
 <property name="bounds"                   value="0, 1"/>
 <property name="edgeFalloff"              value="2.5"/>
 </module>
-  
+
+  <!-- Final Selecting TEST 
+  <module name="Final"                      type="Select">
+    <property name="controlModule"            value="WorldBase"/>
+    <property name="sourceModule1"            value="WorldBase"/>
+    <property name="sourceModule2"            value="WorldBase"/>
+    <property name="sourceModule3"            value="Continents"/>
+    <property name="sourceModule4"            value="WorldBase"/>
+    <property name="sourceModule5"            value="WorldBase"/>
+    <property name="sourceModule6"            value="WorldBase"/>
+    <property name="sourceModule7"            value="Continents"/>
+    <property name="sourceModule8"            value="WorldBase"/>
+    <property name="sourceModule9"            value="WorldBase"/>
+    <property name="sourceModule10"           value="WorldBase"/>
+    <property name="bounds"                   value="0, 1"/>
+    <property name="edgeFalloff"              value="2.5"/>
+  </module>  
+  -->
 <!-- Final Scaling-->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
@@ -857,32 +874,34 @@
 </biome_intensity_generators>
 
 <biome_spawn_rules>
-<!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)           -->	
-<biome_spawn_rule name="forest">        <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">        <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">        <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
-<!-- Grassland Overlay (Primary Biome Paint)                                                          -->
-<biome_spawn_rule name="plains">        <terrain_generator range="-60,255"/>          </biome_spawn_rule>
-<!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)              -->
-<biome_spawn_rule name="forest">        <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">     <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
-<biome_spawn_rule name="snow">          <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
-<biome_spawn_rule name="pine_forest">   <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="burnt_forest">  <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
-<!-- Mountain Paints (Biomes that make up the alpine mountains on the map                             -->
-<biome_spawn_rule name="forest">        <terrain_generator range="90,255"/>           </biome_spawn_rule> 
-<biome_spawn_rule name="pine_forest">   <terrain_generator range="100,255"/>          </biome_spawn_rule>  
-<biome_spawn_rule name="snow">          <terrain_generator range="125,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city">          <terrain_generator range="150,255"/>          </biome_spawn_rule>
-<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                    -->  
-<biome_spawn_rule name="water">         <terrain_generator range="-60,2"/>            </biome_spawn_rule>
-<!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                       -->
-<biome_spawn_rule name="desert">        <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
-<!-- Water Overlay (Desert requires a new water paint underwater)                                     -->
-<biome_spawn_rule name="water">         <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
-<!-- Radiated Biome Barrier                                                                           -->
-<biome_spawn_rule name="radiated">      <distance_from_center range="10000,12000"/>   </biome_spawn_rule>
+<!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)             -->	
+<biome_spawn_rule name="forest">          <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
+<!-- Grassland Overlay (Primary Biome Paint)                                                            -->
+<biome_spawn_rule name="plains">          <terrain_generator range="-60,255"/>          </biome_spawn_rule>
+<!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)                -->
+<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
+<!-- Mountain Paints (Biomes that make up the alpine mountains on the map                               -->
+<biome_spawn_rule name="forest">          <terrain_generator range="90,255"/>           </biome_spawn_rule> 
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="100,255"/>          </biome_spawn_rule>  
+<biome_spawn_rule name="snow">            <terrain_generator range="125,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city">            <terrain_generator range="150,255"/>          </biome_spawn_rule>
+<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      -->  
+<biome_spawn_rule name="water">           <terrain_generator range="-60,2"/>            </biome_spawn_rule>
+<!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                         -->
+<biome_spawn_rule name="desert">          <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<!-- Water Overlay (Desert requires a new water paint underwater)                                       -->
+<biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
+<!-- Urban Ruins Overlay (Paints over all biomes on specific height)                                    
+<biome_spawn_rule name="city_wasteland">  <terrain_generator range="22,26"/>            </biome_spawn_rule> -->
+<!-- Radiated Biome Barrier                                                                             -->
+<biome_spawn_rule name="radiated">        <distance_from_center range="10000,12000"/>   </biome_spawn_rule>
   
   
   
@@ -899,6 +918,8 @@
 <biome_spawn_rule name="city_wasteland">  <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
 -->
   
-  
+<!-- Biome Test 
+<biome_spawn_rule name="city_wasteland">         <terrain_generator range="-60,255"/>           </biome_spawn_rule>  
+  -->
 </biome_spawn_rules>
 </rwgmixer>

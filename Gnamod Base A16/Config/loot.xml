@@ -236,9 +236,14 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <block name="cntDuffle01"	prob="0.04"/>
 <block name="cntSportsBag01"	prob="0.04"/>
 <block name="cntSportsBag02"	prob="0.04"/>
-<block name="cntPurse01"	prob="0.04"/>
-<block name="cntShoppingCart"	prob="0.04"/>
-<block name="shoppingCartEmpty"	prob="0.05"/>
+<block name="cntPurse01"	prob="0.03"/>
+<block name="cntShoppingCart"	prob="0.03"/>
+<block name="shoppingCartEmpty"	prob="0.04"/>
+<block name="cntWashingMachine"	prob="0.005"/>
+<block name="cntTrashCompactor"	prob="0.005"/>
+<block name="cntOven"	prob="0.005"/>
+<block name="cntSuitcase"	prob="0.005"/>
+<block name="cntBin"	prob="0.01"/>
 </placeholder>
 
 <placeholder name="lootYardHelper">
@@ -787,9 +792,9 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <!-- Painting Magazines -->
 <lootgroup name="schemPainting"> 		<item name="paintMagazineDecorations"/>		<item name="paintMagazineFaux"/>	<item name="paintMagazineMasonry"/>	<item name="paintMagazineMetal"/>	<item name="paintMagazineWallCoverings"/>	<item name="paintMagazineWoodAndRoofing"/> 							</lootgroup>
 <!-- Schematic Base Groups -->
-<lootgroup name="schemBasic">			<item name="paper" count="1,5" prob="40"/>	<item name="huntingKnifeBook" prob="10"/>		<item name="pistolBook" prob="15"/>		<item name="pumpShotgunSchematic" prob="10"/>		<item name="crossbowSchematic" prob="15"/>	<item group="schemLeather" prob="10"/>			</lootgroup>
-<lootgroup name="schemCommon">			<item name="paper" count="1,5" prob="30"/>	<item name="huntingRifleSchematic" prob="15"/>		<item name="pumpShotgunSchematic" prob="15"/>	<item name="smgSchematics" prob="7.5"/>			<item name="theEnforcerMagazine" prob="7.5"/>
-						<item name="nailgunSchematic" prob="2.5"/>	<item name="gasCanSchematic" prob="10"/>		<item name="firstAidKitSchematic" prob="10"/>	<item group="schemScrap" prob="2.5"/>																</lootgroup>
+<lootgroup name="schemBasic">			<item name="paper" count="5,15" prob="50"/>	<item name="huntingKnifeBook" prob="10"/>		<item name="pistolBook" prob="10"/>		<item name="pumpShotgunSchematic" prob="5"/>		<item name="crossbowSchematic" prob="5"/>	<item group="schemLeather" prob="10"/>	<item group="schemPainting" prob="5"/> <item group="questTreasureMap" prob="5"/>		</lootgroup>
+<lootgroup name="schemCommon">			<item name="paper" count="5,15" prob="35"/>	<item name="huntingRifleSchematic" prob="15"/>		<item name="pumpShotgunSchematic" prob="15"/>	<item name="smgSchematics" prob="7.5"/>			<item name="theEnforcerMagazine" prob="7.5"/>
+						<item name="nailgunSchematic" prob="2.5"/>	<item name="gasCanSchematic" prob="5"/>		<item name="firstAidKitSchematic" prob="5"/>	<item group="schemScrap" prob="2.5"/>		<item group="schemPainting" prob="4"/> <item group="questTreasureMap" prob="1"/>														</lootgroup>
 <lootgroup name="schemRare">			<item name="ak47Schematic" prob="10"/>		<item name="rocketLauncherSchematic" prob="5"/>		<item name="sniperRifleSchematic" prob="5"/>	<item name="herbalAntibioticsRecipe" prob="2.5"/>	<item name="beerBook" prob="2.5"/>
 						<item name="augerSchematic" prob="7.5"/>	<item name="chainsawSchematic" prob="7.5"/>		<item name="clubSpikedSchematic" prob="7.5"/>	<item name="sledgehammerSchematic" prob="10"/>		<item name="explodingCrossbowBoltSchematic" prob="5"/>
 						<item name="flamingArrowSchematic" prob="5"/>	<item name="shotgunSlugSchematic" prob="5"/>		<item name="minibikesForDumbshits" prob="10"/>	<item name="compoundBowSchematic" prob="7.5"/>		<item group="schemIron" prob="10"/>									</lootgroup>
@@ -1048,11 +1053,11 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="lootBackpacks"		count="all">	<item name="bottledRiverWater" count="0,1"/>		<item group="weaponsBackpack" count="0,1"/>		<item group="lootHousehold" count="1" />		<item group="itemsCookware" count="0,1" />	<item group="gunsCommon" count="0,1"/>		<item group="clothGeneral" count="0,1"/>
 							<item group="armorBackpack"/>																																			</lootgroup>	
 <lootgroup name="lootSafesBasic"	count="all">	<item group="itemsCash" count="1,4"/>			<item group="itemsKeepsafe" count="1"/>			<item group="schemAll" count="0,1"/>																				</lootgroup>
-<lootgroup name="lootNest"		count="all">	<item name="egg" count="1,2"/>				<item name="feather" count="2,5"/>																											</lootgroup>	
+<lootgroup name="lootNest"		count="all">	<item name="egg" count="1,2"/>				<item name="feather" count="3,7"/>																											</lootgroup>	
 <lootgroup name="lootSurvivor"		count="all">	<item group="weaponsBackpack"/>				<item group="gunsComplete"/>				<item group="clothGeneralRS"/>				<item group="armorRS"/>															</lootgroup>
 <lootgroup name="lootFeral" 		count="all">	<item group="gunsComplete" count="0,1" />		<item group="gunsCommon" count="0,1" />			<item group="gunsUncommon" count="0,1" />																			</lootgroup>
 <lootgroup name="lootSoldier" 		count="all">	<item group="gunsComplete"/>				<item group="rocketLauncher" count="0,1"/>		<item group="armorMilitary" count="0,1"/>		<item group="armorMilitaryMisc" count="0,1"/>												</lootgroup>
-<lootgroup name="lootHerbal" 		count="all">	<item name="herbalAntibioticsRecipe" count="0,1"/>	<item name="herbalAntibiotics" count="0,3"/>		<item group="matsRareOres" count="0,1"/>																			</lootgroup>
+<lootgroup name="lootHerbal" 		count="1,3">	<item name="herbalAntibioticsRecipe" prob="20"/>	<item name="herbalAntibiotics" prob="70"/>		<item group="matsRareOres" prob="10"/>																			</lootgroup>
 <lootgroup name="lootToilet" 		count="all">	<item name="bottledRiverWater" count="0,2"/>		<item name="turd" count="0,2"/>				<item group="pistol" count="0,1"/>																				</lootgroup>	
 <lootgroup name="lootPurse">				<item name="bottledWater" prob="2.5"/>			<item name="bottledRiverWater" prob="7.5"/>		<item group="itemsCash" prob="5"/>			<item group="schemBasic" prob="10"/>		<item group="schemCommon" prob="5"/>
 							<item group="medicalBasic" prob="10"/>			<item group="foodCanned" prob="40"/>			<item group="foodRations" prob="20"/>																				</lootgroup>
@@ -1204,7 +1209,7 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="cnt22"	count="1"> 	<item group="matsMisc" count="1,2" prob="70"/>		<item group="blocksElectric" prob="10"/>		<item group="automotiveMinibike" prob="20"/>																					</lootgroup>
 <lootgroup name="cnt23"	count="1"> 	<item group="itemsCommon" count="1,2" prob="50"/>	<item group="ammoGuns" count="1,2" prob="10"/>		<item group="schemAll" prob="10"/>		<item group="medicalBasic" count="1,2" prob="15"/>	<item group="pistol" prob="5"/>			<item name="flashlight02" prob="10"/>			</lootgroup>
 <lootgroup name="cnt24"	count="1"> 	<item group="itemsCommon" count="1,2" prob="40"/>	<item group="ammoGuns" count="1,2" prob="15"/>		<item group="schemAll" prob="10"/>		<item group="medicalBasic" count="1,2" prob="15"/>	<item group="pistol" prob="10"/>		<item name="flashlight02" prob="10"/>			</lootgroup>
-<lootgroup name="cnt25"	count="1"> 	<item name="feather" count="2,6" prob="75"/>		<item group="lootNest" prob="25"/>																													</lootgroup>
+<lootgroup name="cnt25"	count="1"> 	<item name="feather" count="3,7" prob="75"/>		<item group="lootNest" prob="25"/>																													</lootgroup>
 <lootgroup name="cnt26"	count="1"> 	<item name="scrapIron" count="5,15" prob="40"/>		<item name="coal" count="4,12" prob="10"/> 		<item group="itemsCookware" prob="15"/>		<item group="itemsCommon" prob="5"/>		<item group="foodMeat" count="1,2" prob="10"/>		<item group="foodRotten" count="1,2" prob="20"/>	</lootgroup>
 <lootgroup name="cnt27"	count="1"> 	<item name="casinoCoin" count="1,25" prob="5"/>		<item group="itemsCash" prob="45"/>			<item group="nothing" prob="50"/>																						</lootgroup>
 <lootgroup name="cnt28"	count="1"> 	<item name="rottingFlesh" count="1,2" prob="30"/>	<item name="femur" count="1,2" prob="25"/>		<item name="fertilizer" count="1,3" prob="5"/>	<item name="goldNugget" prob="5"/>		<item group="itemsTrash" prob="15"/>			<item group="itemsCommon" prob="10"/>	
@@ -1222,7 +1227,7 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="cnt36"	count="1"> 	<item name="bottledWater" prob="15"/>			<item group="foodCanned" count="1,2" prob="25"/>	<item group="itemsCommon" prob="25"/>		<item group="toolsBasic" prob="10"/>		<item group="medicalBasic" prob="10"/>			<item group="weaponsBackpack" prob="10"/>
 					<item group="gunsCommon" prob="5"/>																																				</lootgroup>
 <lootgroup name="cnt37"	count="1">	<item group="lootBaseZombie" prob="75"/>		<item group="lootStrongZombie" prob="24"/>		<item group="lootSurvivor" prob="1"/>																						</lootgroup>
-<lootgroup name="cnt38"	count="1"> 	<item group="lootBaseZombie" prob="85"/>		<item group="lootFoodZombie" prob="15"/>		<item group="lootStrongZombie" prob="5"/>																					</lootgroup>
+<lootgroup name="cnt38"	count="1"> 	<item group="lootBaseZombie" prob="60"/>		<item group="lootFoodZombie" prob="15"/>		<item group="lootStrongZombie" prob="24.9"/>	 	<item group="lootSurvivor" prob="0.1"/>																			</lootgroup>
 <lootgroup name="cnt39"	count="1">	<item group="lootBaseZombie" prob="50"/>		<item group="lootFoodZombie" prob="25"/>		<item group="lootStrongZombie" prob="24"/>	<item group="lootSurvivor" prob="1"/>																</lootgroup>
 <lootgroup name="cnt40"	count="1"> 	<item group="ammoGuns" prob="85"/>			<item group="ammoBombs" prob="5"/>			<item group="ammoMines" prob="5"/>		<item group="gunsCommon" prob="2"/>		<item group="gunsUncommon" prob="2"/>			<item group="gunsRare" prob="1"/>			</lootgroup>
 <lootgroup name="cnt41"	count="1"> 	<item group="nothing" loot_prob_template="nothing50"/>																																		</lootgroup>
@@ -1256,7 +1261,7 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="cnt63"	count="1"> 	<item name="herbalAntibiotics" count="2,5" prob="25"/>	<item group="lootHerbal" prob="75"/>																													</lootgroup>
 <lootgroup name="cnt64"	count="1"> 	<item name="gasCan" count="25,100" prob="100"/>																																			</lootgroup>
 <lootgroup name="cnt65"	count="1"> 	<item group="lootBaseZombie" prob="50"/>		<item group="lootStrongZombie" prob="4"/>		<item group="lootHazmatZombie" prob="45"/>	<item group="lootSurvivor" prob="1"/>																</lootgroup>
-<lootgroup name="cnt66"	count="1"> 	<item group="lootBaseZombie" prob="20"/>		<item group="lootStrongZombie" prob="29"/>		<item group="lootLumberZombie" prob="50"/>	<item group="lootSurvivor" prob="1"/>																</lootgroup>
+<lootgroup name="cnt66"	count="1"> 	<item group="lootBaseZombie" prob="30"/>		<item group="lootStrongZombie" prob="29"/>		<item group="lootLumberZombie" prob="40"/>	<item group="lootSurvivor" prob="1"/>																</lootgroup>
 <lootgroup name="cnt67"	count="1"> 	<item name="bottledRiverWater" count="1,2" prob="40"/>	<item name="turd" count="1,2" prob="40"/>		<item group="lootToilet" prob="20"/>																						</lootgroup>
 <lootgroup name="cnt68"	count="1"> 	<item group="itemsTrash" prob="38"/>			<item group="itemsCommon" prob="60"/>			<item group="lootHousehold" prob="1"/>		<item group="lootSurvivor" prob="1"/>																</lootgroup>
 <lootgroup name="cnt69"	count="1"> 	<item name="bottledRiverWater" count="1,3" prob="35"/>	<item name="turd" count="1,3" prob="35"/>		<item group="lootToilet" prob="30"/>																						</lootgroup>
@@ -1387,7 +1392,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt7"	count="2"	prob="35"/>
 <item group="cnt7"	count="3"	prob="5"/>
 <!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>																																						    </lootcontainer>
+<item group="medicalPills" count="0,1" loot_prob_template="nothing50"/>																																						    </lootcontainer>
 <!-- =========================== KITCHEN SINKS (OLD HOUSES) ==================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="8"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -1621,7 +1626,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt25"	count="2,3"	prob="30"/>
 <item group="cnt25"	count="3,4"	prob="20"/>
 <!-- Chance of No Loot -->
-<item name="feather" count="1,5" loot_prob_template="nothing33"/>																																				    </lootcontainer>
+<item name="feather" count="3,7" loot_prob_template="nothing33"/>																																				    </lootcontainer>
 <!-- =========================== STOVES (EXPENSIVE HOUSES) ===================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="26"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -1718,7 +1723,7 @@ loot_quality_template=	"leveledLight">
 <item group="cnt37"	count="3"	prob="5"/>
 <!-- Chance of No Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>																																						    </lootcontainer>
-<!-- =========================== BASIC ZOMBIES (FEMALE) ======================================================================================================================================================================================================================================================================================================================== -->
+<!-- =========================== BASIC ZOMBIES (Strong) ======================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="38"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
 sound_open=		"UseActions/open_corpse"
@@ -1873,7 +1878,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt49"	count="2"	prob="39"/>
 <item group="cnt49"	count="3"	prob="1"/>
 <!-- Chance of No Loot -->
-<item group="schemBasic" loot_prob_template="nothing50"/>																																					    </lootcontainer>
+<item group="schemBasic" loot_prob_template="nothing33"/>																																					    </lootcontainer>
 <!-- =========================== WEAPON CRATE ================================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="50"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -2016,7 +2021,7 @@ loot_quality_template=	"leveledNormal">
 <item group="cnt60"	count="2,3"	prob="40"/>
 <item group="cnt60"	count="4"	prob="15"/>
 <!-- Chance of No Loot -->
-<item group="schemCommon" loot_prob_template="nothing50"/>																																					    </lootcontainer>
+<item group="schemCommon" loot_prob_template="nothing33"/>																																					    </lootcontainer>
 <!-- =========================== ZOMBIE WIGHT (GHOUL) ========================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="61"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"
@@ -2354,7 +2359,7 @@ loot_quality_template=	"leveledLight">
 <item group="cnt86"	count="2,3"	prob="40"/>
 <item group="cnt86"	count="4"	prob="15"/>
 <!-- Chance of No Loot -->
-<item group="schemCommon" loot_prob_template="nothing33"/>																																					      </lootcontainer>
+<item group="schemAll" loot_prob_template="nothing33"/>																																					      </lootcontainer>
 <!-- =========================== CAR PARTS SHIPPING CRATE ======================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="87"	count="1"	size="5,5"	open_time="3" 
 destroy_on_close=	"false"

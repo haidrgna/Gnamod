@@ -261,7 +261,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/femur"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
@@ -419,7 +419,7 @@ Mesh files no longer used:
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
 	<property name="Magazine_size" value="15"/>
-	<property name="Magazine_items" value="9mmBullet"/>
+	<property name="Magazine_items" value="9mmBullet,No Ammo,No Ammo,No Ammo"/>
 	<property name="Magazine_item_ray_counts" value="1"/>
 	<property name="Magazine_item_ray_spreads" value="0.85"/>
 	<!-- .85 -->
@@ -470,7 +470,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="5"/> <!-- 5 -->
 		<property name="Crosshair_max_distance" value="6"/> <!-- 6 -->
 		<property name="Magazine_size" value="15"/>
-		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Magazine_items" value="9mmBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0.85"/> <!-- .85 -->
 		<property name="Reload_time" value="2"/>
@@ -532,7 +532,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
 		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
 		<property name="Magazine_size" value="6"/>
-		<property name="Magazine_items" value="44MagBullet"/>
+		<property name="Magazine_items" value="44MagBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0.87"/> <!-- .87 -->
 		<property name="Reload_time" value="4"/>
@@ -588,7 +588,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
 		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
 		<property name="Magazine_size" value="8"/>
-		<property name="Magazine_items" value="shotgunShell"/>
+		<property name="Magazine_items" value="shotgunShell,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="9"/>
 		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
 		<property name="Reload_time" value="2.6"/>
@@ -646,7 +646,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="23"/> <!-- 23 -->
 		<property name="Crosshair_max_distance" value="28"/> <!-- 28 -->
 		<property name="Magazine_size" value="8"/>
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug"/>
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="8, 1"/>
 		<property name="Magazine_item_ray_spreads" value="0.835,0.605"/> <!-- .835 / .605 -->
 		<property name="Reload_time" value="2.6"/>
@@ -707,7 +707,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
 		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="9mmBullet"/>
+		<property name="Magazine_items" value="9mmBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="4.1"/>
@@ -768,7 +768,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
 		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="3.9"/>
@@ -830,7 +830,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.66"/>
@@ -886,7 +886,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
 		<property name="Crosshair_max_distance" value="54"/> <!-- 54 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="762mmBullet"/>
+		<property name="Magazine_items" value="762mmBullet,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.5"/>
@@ -943,7 +943,7 @@ Mesh files no longer used:
 		<property name="Crosshair_max_distance" value="34"/>
 		<!-- <property name="Range" value="200"/> -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="rocket"/>
+		<property name="Magazine_items" value="rocket,No Ammo,No Ammo,No Ammo"/>
 		<property name="Rays_spread" value="0.095"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -984,7 +984,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
 		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="blunderbussAmmo"/>
+		<property name="Magazine_items" value="blunderbussAmmo,No Ammo,No Ammo,No Ammo"/>
 		<property name="Magazine_item_ray_counts" value="10"/>
 		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
 		<property name="Reload_time" value="3.9"/>
@@ -1424,8 +1424,8 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
-		<property name="Delay" value="0.7"/>
-		<property name="Range" value="2"/>
+		<property name="Delay" value="0.85"/>
+		<property name="Range" value="1.8"/>
 		<property name="DamageEntity" value="22"/>
 		<property name="DamageBlock" value="22"/>
 		<property name="Buff" value="bleeding"/>
@@ -2148,7 +2148,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow"/>
+		<property name="Magazine_items" value="arrow,ironArrow,steelArrow,No Ammo"/>
 		<property name="Rays_spread" value="0.017"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2203,7 +2203,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt,No Ammo"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2331,7 +2331,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="DropScale" value="4"/>
 	<property name="EconomicValue" value="17"/>
 	<property class="Attributes">
@@ -2347,7 +2347,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="EconomicValue" value="56"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -2363,7 +2363,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="588"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -2390,7 +2390,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="paper"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="DropScale" value="4"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="6"/>
@@ -2402,7 +2402,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="MFuelBarrel"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="2"/>
 	<property name="EconomicValue" value="83"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="100"/>
@@ -2416,7 +2416,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/arrow_hand"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="wood"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -2539,7 +2539,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="metal"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -2625,7 +2625,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="41"/>
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="90"/>
@@ -2664,7 +2664,7 @@ Mesh files no longer used:
 	<property name="Material" value="MDynamite"/>
 	<property name="CustomIcon" value="tnt"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="71"/>
 	<property name="Explosion.BlockDamage" value="900"/>
 	<property name="Explosion.EntityDamage" value="320"/>
@@ -2699,7 +2699,7 @@ Mesh files no longer used:
 	<property name="DropScale" value="2"/>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="FuelValue" value="60"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/> <!-- STK explosives -->
 	<property name="Explosion.BlockDamage" value="5"/>
 	<property name="Explosion.EntityDamage" value="5"/>
 	<property name="Explosion.ParticleIndex" value="10"/>
@@ -2740,7 +2740,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -2772,7 +2772,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="40"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="RepairAmount" value="300"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -2795,7 +2795,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/clayPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="40"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
@@ -3533,11 +3533,11 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.065,0.11"/>
-		<property name="PunctureProtection" value="0.065,0.11"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
+		<property name="ConcussiveProtection" value="0.06,0.12"/>
+		<property name="PunctureProtection" value="0.06,0.12"/>
+		<property name="FireProtection" value="0.10,0.18"/>
+		<property name="RadiationProtection" value="0.05,0.09"/>
+		<property name="ElectricalProtection" value="0.05,0.09"/>
 		<property name="DegradationMax" value="72,140"/>
 	</property>
 	<property class="UMA">
@@ -3549,7 +3549,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="plantFiberClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/> <!-- redundant because this is the default but it's easier to read -->
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -3617,12 +3617,12 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.125,0.25"/>
-		<property name="PunctureProtection" value="0.125,0.25"/>
-		<property name="FireProtection" value="0.1,0.2"/>
-		<property name="RadiationProtection" value="0.075,0.15"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="100,250"/>
+    <property name="ConcussiveProtection" value="0.08,0.25"/>
+    <property name="PunctureProtection" value="0.08,0.25"/>
+    <property name="FireProtection" value="0.05,0.15"/>
+    <property name="RadiationProtection" value="0.05,0.15"/>
+    <property name="ElectricalProtection" value="0.05,0.1"/>
+		<property name="DegradationMax" value="50,250"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="armor_cloth_feet"/>
@@ -3702,12 +3702,12 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.08,0.35"/>
-		<property name="PunctureProtection" value="0.07,0.3"/>
-		<property name="FireProtection" value="0.05,0.2"/>
-		<property name="RadiationProtection" value="0.05,0.2"/>
-		<property name="ElectricalProtection" value="0.07,0.1"/>
-		<property name="DegradationMax" value="140,350"/>
+    <property name="ConcussiveProtection" value="0.10,0.25"/>
+    <property name="PunctureProtection" value="0.10,0.25"/>
+    <property name="FireProtection" value="0.1,0.2"/>
+    <property name="RadiationProtection" value="0.075,0.15"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+		<property name="DegradationMax" value="100,350"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="armor_hide_boots"/>
@@ -3789,12 +3789,12 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.152,0.38"/>
-		<property name="PunctureProtection" value="0.12,0.3"/>
-		<property name="FireProtection" value="0.12,0.3"/>
+		<property name="ConcussiveProtection" value="0.15,0.40"/>
+		<property name="PunctureProtection" value="0.14,0.35"/>
+		<property name="FireProtection" value="0.14,0.35"/>
 		<property name="RadiationProtection" value="0.08,0.2"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="180,450"/>
+		<property name="ElectricalProtection" value="0.07,0.15"/>
+		<property name="DegradationMax" value="150,450"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="armor_leather_feet"/>
@@ -4330,13 +4330,13 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Degradation" value="100" param1="true"/>
-	<property class="Attributes"> <!-- hideArmor -->
-		<property name="ConcussiveProtection" value="0.07,0.35"/>
-		<property name="PunctureProtection" value="0.06,0.3"/>
-		<property name="FireProtection" value="0.04,0.2"/>
-		<property name="RadiationProtection" value="0.04,0.2"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="140,350"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.15,0.40"/>
+    <property name="PunctureProtection" value="0.14,0.35"/>
+    <property name="FireProtection" value="0.14,0.35"/>
+    <property name="RadiationProtection" value="0.08,0.2"/>
+    <property name="ElectricalProtection" value="0.07,0.15"/>
+    <property name="DegradationMax" value="150,450"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_cowboyhat"/>
@@ -4396,13 +4396,13 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="40"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Encumbrance" value="0.01"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0.08,0.15"/>
+		<property name="PunctureProtection" value="0.08,0.15"/>
+		<property name="FireProtection" value="0.14,0.25"/>
+		<property name="RadiationProtection" value="0.07,0.12"/>
+		<property name="ElectricalProtection" value="0.07,0.12"/>
+		<property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_ballcap"/>
@@ -4415,7 +4415,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="clothClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4433,13 +4433,13 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="40"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Encumbrance" value="0.01"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_skullcap"/>
@@ -4452,7 +4452,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="skullCapDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 
 </item>
@@ -4517,7 +4517,7 @@ Mesh files no longer used:
 	<property name="Degradation" value="250" param1="true"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Encumbrance" value="0.01"/>
-	<property class="Attributes"> <!-- scrapArmor -->
+	<property class="Attributes">
 		<property name="ConcussiveProtection" value="0.228,0.57"/>
 		<property name="PunctureProtection" value="0.18,0.45"/>
 		<property name="FireProtection" value="0.16,0.4"/>
@@ -4550,7 +4550,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Weight" value="120"/>
 	<property name="EconomicValue" value="1000"/>
-	<property class="Attributes"> <!-- ironArmor -->
+	<property class="Attributes">
 		<property name="ConcussiveProtection" value="0.26,0.65"/>
 		<property name="PunctureProtection" value="0.24,0.6"/>
 		<property name="FireProtection" value="0.2,0.5"/>
@@ -4582,7 +4582,7 @@ Mesh files no longer used:
 	<property name="Weight" value="60"/>
 	<property name="EconomicValue" value="400"/>
 	<property name="Encumbrance" value="0"/>
-	<property class="Attributes"> <!-- scrapArmor -->
+	<property class="Attributes">
 		<property name="ConcussiveProtection" value="0.228,0.57"/>
 		<property name="PunctureProtection" value="0.18,0.45"/>
 		<property name="FireProtection" value="0.16,0.4"/>
@@ -4626,12 +4626,12 @@ Mesh files no longer used:
 	<property name="FuelValue" value="16"/>
 	<property name="EconomicValue" value="1600"/>
 	<property name="Degradation" value="250" param1="true"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
 		<property name="DegradationMax" value="120,300"/> <!-- altered -->
 	</property>
 	<property name="Group" value="Clothing"/>
@@ -4652,13 +4652,13 @@ Mesh files no longer used:
 	<property name="Encumbrance" value="0"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="150"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_shades"/>
@@ -4668,6 +4668,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4702,13 +4703,13 @@ Mesh files no longer used:
 	<property name="ImageEffectOnActive" value="NightVision"/>
 	<property name="PlaySoundOnActive" value="nightvision_toggle"/>
 	<property name="Active" value="false"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="120,300"/> <!-- altered -->
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.10,0.25"/>
+    <property name="PunctureProtection" value="0.10,0.25"/>
+    <property name="FireProtection" value="0.1,0.2"/>
+    <property name="RadiationProtection" value="0.075,0.15"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+		<property name="DegradationMax" value="120,300"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_nightvision_goggles"/>
@@ -4788,12 +4789,12 @@ Mesh files no longer used:
 	<property name="FuelValue" value="75"/>
 	<property name="EconomicValue" value="480"/>
 	<property name="EquipSlot" value="Chest"/>
-	<property class="Attributes"> <!-- hideArmor -->
-		<property name="ConcussiveProtection" value="0.07,0.35"/>
-		<property name="PunctureProtection" value="0.06,0.3"/>
-		<property name="FireProtection" value="0.04,0.2"/>
-		<property name="RadiationProtection" value="0.04,0.2"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.10,0.25"/>
+    <property name="PunctureProtection" value="0.10,0.25"/>
+    <property name="FireProtection" value="0.1,0.2"/>
+    <property name="RadiationProtection" value="0.075,0.15"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
 		<property name="DegradationMax" value="140,350"/>
 	</property>
 	<property class="UMA">
@@ -4822,13 +4823,13 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="10"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Encumbrance" value="0"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="gear_bandana"/>
@@ -4840,7 +4841,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="bandanaClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4902,13 +4903,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="clothes_denim_pants"/>
@@ -4921,7 +4922,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="denimClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -4966,7 +4967,6 @@ Mesh files no longer used:
 
 <item id="497" name="tankTopWhite"> <!-- sleevelessClothShirtMaster -->
 	<property name="Insulation" value="-10"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -4977,13 +4977,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="base_chest"/>
@@ -4998,7 +4998,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tankTopClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5072,7 +5072,7 @@ Mesh files no longer used:
 	<property name="Weight" value="15"/>
 	<property name="FuelValue" value="3"/>
 	<property name="EconomicValue" value="60"/>
-	<property class="Attributes"> <!-- clothArmor -->
+	<property class="Attributes">
 		<property name="ConcussiveProtection" value="0.125,0.25"/>
 		<property name="PunctureProtection" value="0.125,0.25"/>
 		<property name="FireProtection" value="0.1,0.2"/>
@@ -5088,7 +5088,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5108,7 +5108,6 @@ Mesh files no longer used:
 
 <item id="509" name="shirt"> <!-- longClothShirtMaster -->
 	<property name="Insulation" value="2"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5119,13 +5118,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="shirt"/>
@@ -5137,7 +5136,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5210,12 +5209,13 @@ Mesh files no longer used:
 	<property name="FuelValue" value="80"/>
 	<property name="Weight" value="90"/>
 	<property name="EconomicValue" value="800"/>
-	<property class="Attributes"> <!-- hideArmor -->
-		<property name="ConcussiveProtection" value="0.07,0.35"/>
-		<property name="PunctureProtection" value="0.06,0.3"/>
-		<property name="FireProtection" value="0.04,0.2"/>
-		<property name="RadiationProtection" value="0.04,0.2"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.15,0.40"/>
+    <property name="PunctureProtection" value="0.14,0.35"/>
+    <property name="FireProtection" value="0.14,0.35"/>
+    <property name="RadiationProtection" value="0.08,0.2"/>
+    <property name="ElectricalProtection" value="0.07,0.15"/>
+    <property name="DegradationMax" value="150,450"/>
 		<property name="DegradationMax" value="140,350"/>
 	</property>
 	<property class="UMA">
@@ -5256,12 +5256,12 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Chest"/>
-	<property class="Attributes"> <!-- clothArmor -->
-		<property name="ConcussiveProtection" value="0.125,0.25"/>
-		<property name="PunctureProtection" value="0.125,0.25"/>
-		<property name="FireProtection" value="0.1,0.2"/>
-		<property name="RadiationProtection" value="0.075,0.15"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.10,0.25"/>
+    <property name="PunctureProtection" value="0.10,0.25"/>
+    <property name="FireProtection" value="0.1,0.2"/>
+    <property name="RadiationProtection" value="0.075,0.15"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
 		<property name="DegradationMax" value="100,250"/>
 	</property>
 	<property class="UMA">
@@ -5275,7 +5275,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="pufferCoatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5337,7 +5337,6 @@ Mesh files no longer used:
 
 <item id="531" name="sweatshirt"> <!-- longClothShirtMaster -->
 	<property name="Insulation" value="5"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5348,13 +5347,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothWarm -->
-		<property name="ConcussiveProtection" value="0.08,0.2"/>
-		<property name="PunctureProtection"   value="0.08,0.2"/>
-		<property name="FireProtection"       value="0.12,0.2"/>
-		<property name="RadiationProtection"  value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax"       value="80,200"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="sweatshirt"/>
@@ -5367,7 +5366,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5418,7 +5417,6 @@ Mesh files no longer used:
 
 <item id="537" name="tshirtWhite"> <!-- sleevelessClothShirtMaster -->
 	<property name="Insulation" value="-5"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5429,13 +5427,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="base_chest"/>
@@ -5450,7 +5448,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tshirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5525,7 +5523,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Chest"/>
-	<property class="Attributes"> <!-- clothArmor -->
+	<property class="Attributes">
 		<property name="ConcussiveProtection" value="0.125,0.25"/>
 		<property name="PunctureProtection" value="0.125,0.25"/>
 		<property name="FireProtection" value="0.1,0.2"/>
@@ -5544,7 +5542,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="jacketGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5723,7 +5721,6 @@ Mesh files no longer used:
 
 <item id="564" name="hoodedSweatshirtWhite"> <!-- hoodedClothShirtMaster -->
 	<property name="Insulation" value="10"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -5734,13 +5731,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothWarm -->
-		<property name="ConcussiveProtection" value="0.08,0.2"/>
-		<property name="PunctureProtection"   value="0.08,0.2"/>
-		<property name="FireProtection"       value="0.12,0.2"/>
-		<property name="RadiationProtection"  value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax"       value="80,200"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="hoody"/>
@@ -5755,7 +5752,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5928,9 +5925,8 @@ Mesh files no longer used:
 </item>
 
 <item id="589" name="overalls"> <!-- warmClothPants -->
-	<property name="Extends" value="denimPants"/>
+	<property name="Extends" value="gothicPants"/>
 	<property name="Insulation" value="3"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property class="UMA">
 		<property name="Mesh" value="clothes_overalls"/>
 		<property name="Overlay0" value="unisex_clothes_overalls"/>
@@ -6007,7 +6003,6 @@ Mesh files no longer used:
 <item id="598" name="suitPantsBlack"> <!-- suitPantsMaster -->
 	<property name="CustomIconTint" value="57,57,57"/>
 	<property name="Insulation" value="2"/>
-	<!-- <property name="Encumbrance" value="0.001"/> -->
 	<property name="Material" value="cloth"/>
 	<property name="RepairTools" value="cloth"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -6018,13 +6013,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property class="Attributes"> <!-- clothGeneric -->
-		<property name="ConcussiveProtection" value="0.065,0.13"/>
-		<property name="PunctureProtection" value="0.065,0.13"/>
-		<property name="FireProtection" value="0.12,0.2"/>
-		<property name="RadiationProtection" value="0.06,0.1"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="72,180"/>
+	<property class="Attributes">
+    <property name="ConcussiveProtection" value="0.08,0.15"/>
+    <property name="PunctureProtection" value="0.08,0.15"/>
+    <property name="FireProtection" value="0.14,0.25"/>
+    <property name="RadiationProtection" value="0.07,0.12"/>
+    <property name="ElectricalProtection" value="0.07,0.12"/>
+    <property name="DegradationMax" value="50,200"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="clothes_suit_pants"/>
@@ -6037,7 +6032,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="denimClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+  <property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -6104,7 +6099,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="10"/>
 </item>
 
@@ -6136,6 +6131,8 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="10"/>
+  <property name="CraftingIngredientExp" value="25"/>
+  <property name="CraftingIngredientTime" value="15"/>
 </item>
 
 <item id="656" name="bandage">
@@ -6170,9 +6167,11 @@ Mesh files no longer used:
 	<property name="Group" value="Science,Basics"/>
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="10"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
+  <property name="CraftingIngredientExp" value="25"/>
+  <property name="CraftingIngredientTime" value="15"/>
 </item>
 
 <item id="657" name="firstAidBandage">
@@ -6186,7 +6185,8 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="firstAidBandageDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="CraftingIngredientExp" value="2"/>
+	<property name="CraftingIngredientExp" value="25"/>
+  <property name="CraftingIngredientTime" value="30"/>
 </item>
 
 <item id="658" name="firstAidKit">
@@ -6269,7 +6269,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="15"/> <!-- STK loot -->
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -6292,7 +6292,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="15"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
@@ -6326,7 +6326,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="15"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
@@ -6360,7 +6360,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="16"/>
 	<property name="EconomicValue" value="140"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="15"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
@@ -6461,7 +6461,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="23"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -6484,7 +6484,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="15"/> <!-- STK food -->
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -6739,7 +6739,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/vegetable_corn"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="15"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -6782,7 +6782,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="11"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="10"/>
@@ -6899,7 +6899,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/meat_rabbit"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -7015,7 +7015,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="10"/>
@@ -7038,7 +7038,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="23"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="8"/>
@@ -7061,7 +7061,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/eggPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="23"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -7169,7 +7169,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
 	<property name="Material" value="plants"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -7264,7 +7264,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="60"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -7469,7 +7469,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Weight" value="5"/>
 	<property name="FuelValue" value="5"/>
-	<property name="Stacknumber" value="1"/> <!-- STK book -->
+	<property name="Stacknumber" value="10"/> <!-- STK book -->
 	<property name="EconomicValue" value="250"/>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="LearnRecipe"/>
@@ -8010,7 +8010,7 @@ Mesh files no longer used:
 	<property name="Material" value="paper"/>
 	<property name="HoldType" value="21"/>
 	<property name="CustomIcon" value="questMaster"/>
-	<property name="Stacknumber" value="50"/> <!-- STK book -->
+	<property name="Stacknumber" value="10"/> <!-- STK book -->
 	<property name="EconomicValue" value="1600"/>
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action1">
@@ -8046,6 +8046,15 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<!-- Gnamod Basic Quests -->
+<item id="1161" name="q_GnamodBasic"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodBasic1"/> </property>
+</item>  
+
+<item id="1162" name="q_GnamodExpert"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodExpert"/> </property>
+</item>    
+  
 <item id="1180" name="qc_silenceofthelambs">
 	<property name="Extends" value="challengeQuestMaster"/>
 	<property class="Action1">
@@ -8223,7 +8232,7 @@ Mesh files no longer used:
 	<property name="RepairTime" value="1"/>
 	<property name="RepairAmount" value="30"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8242,7 +8251,7 @@ Mesh files no longer used:
 	<property name="Material" value="wood"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="50"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8259,7 +8268,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="glass"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
@@ -8270,7 +8279,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="SellableToTrader" value="false"/>
 	<property name="HoldType" value="45"/>
 	<property name="DropScale" value="3"/>
@@ -8285,7 +8294,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="Weight" value="1"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
@@ -8299,7 +8308,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="Miron"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="CraftingIngredientExp" value="10"/>
 	<property name="CraftingIngredientTime" value="10"/>
@@ -8312,7 +8321,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe"/>
 	<property name="HoldType" value="16"/>
 	<property name="Material" value="Miron"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -8321,7 +8330,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/ingotIron"/>
 	<property name="HoldType" value="21"/>
 	<property name="Material" value="Msteel"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="34"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
@@ -8350,7 +8359,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
 	<property name="Material" value="Miron"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8364,7 +8373,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Material" value="leather"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Resources"/>
@@ -8377,7 +8386,7 @@ Mesh files no longer used:
 	<property name="Material" value="leather"/>
 	<property name="RepairAmount" value="80"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="22"/>
 	<property name="Group" value="Resources,Clothing"/>
@@ -8392,7 +8401,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -8406,7 +8415,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -8420,7 +8429,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -8433,7 +8442,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mbrass_scrap"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -8445,7 +8454,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/scrapLeadDroppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -8457,7 +8466,7 @@ Mesh files no longer used:
 	<property name="Material" value="clay"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="6"/>
 	<property name="EconomicBundleSize" value="150"/>
 	<property name="Group" value="Resources"/>
@@ -8470,7 +8479,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Material" value="dirt"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="5000"/>
 	<property name="SellableToTrader" value="false"/>
@@ -8483,7 +8492,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="40"/>
 	<property name="Material" value="snow"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="150"/>
 	<property name="SellableToTrader" value="false"/>
@@ -8506,7 +8515,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="DropScale" value="1"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
@@ -8518,7 +8527,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
 	<property name="Group" value="Building,Resources"/>
@@ -8530,7 +8539,7 @@ Mesh files no longer used:
 	<property name="Material" value="Mconcrete"/>
 	<property name="Weight" value="20"/>
 	<property name="HoldType" value="34"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="9"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="Group" value="Resources"/>
@@ -8540,7 +8549,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
 	<property name="Material" value="MfertilizedFarmland"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="15"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientTime" value="2"/>
@@ -8552,7 +8561,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/cloth"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="RepairAmount" value="50"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
@@ -8566,7 +8575,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="paper"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="15"/>
@@ -8588,7 +8597,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/cloth"/>
 	<property name="Material" value="MmilitaryFiber"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="CraftingIngredientExp" value="10"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property name="RepairTime" value="0.6"/>
@@ -8650,7 +8659,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="2"/>
@@ -8664,7 +8673,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -8679,7 +8688,7 @@ Mesh files no longer used:
 	<property name="Material" value="paper"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="1"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<!--
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8696,7 +8705,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="60"/>
@@ -8715,7 +8724,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="clay"/>
 	<property name="Weight" value="15"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="30"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
@@ -8729,7 +8738,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/featherPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<!-- <property name="CraftingIngredientExp" value="0"/> -->
 	<property name="EconomicValue" value="10"/>
@@ -8742,7 +8751,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8754,7 +8763,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="40"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8766,7 +8775,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
 	<property name="Material" value="coal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="20"/>
 	<property name="DropScale" value="8"/>
 	<property name="EconomicValue" value="10"/>
@@ -8803,7 +8812,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="36"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8814,7 +8823,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/bullet_casingPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8826,7 +8835,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8868,7 +8877,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="151"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -8879,7 +8888,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="77"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -8891,7 +8900,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="50"/>
+	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="600"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
@@ -8914,7 +8923,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/coffeePrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="100"/>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -8925,7 +8934,7 @@ Mesh files no longer used:
 	<property name="Material" value="Msteel"/>
 	<property name="Weight" value="0"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="35"/>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -8936,7 +8945,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="organic"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="2500"/> <!-- STK ammo -->
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8950,7 +8959,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="45"/>
 	<property name="FuelValue" value="20"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property name="Group" value="Food/Cooking"/>
@@ -8962,7 +8971,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="FuelValue" value="20"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="24"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property name="Group" value="Chemicals"/>
@@ -8985,7 +8994,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="500"/>
+	<property name="Stacknumber" value="15"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="CraftingIngredientTime" value="9"/>
 	<!-- DTD-610TL Animation for throwing does not work properly.
@@ -9017,7 +9026,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="60"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="CraftingIngredientTime" value="9"/>
@@ -9092,7 +9101,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/hubcap"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="23"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="10"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
@@ -9107,7 +9116,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/air_filter"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="23"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="Group" value="Tools/Traps"/>
@@ -9117,7 +9126,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/candy_tinPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Tools/Traps"/>
@@ -9127,7 +9136,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/door_knob"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="20"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="Group" value="Resources"/>
@@ -9137,7 +9146,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/candlestick"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="60"/>
 	<property name="EconomicValue" value="120"/>
 	<property name="Group" value="Resources"/>
@@ -9146,7 +9155,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/radiator"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="5"/> <!-- STK loot -->
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="Group" value="Resources"/>
@@ -9157,7 +9166,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="Group" value="Resources"/>
@@ -9166,7 +9175,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/trophy1"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="20"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="Group" value="Resources"/>
@@ -9176,7 +9185,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/trophy3Prefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="48"/>
 	<property name="Group" value="Resources"/>
@@ -9187,7 +9196,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/trophy3Prefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Resources"/>
@@ -9198,7 +9207,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property name="EconomicValue" value="250"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property name="Group" value="Resources"/>
@@ -9223,7 +9232,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/seed_blueberryPrefab"/>
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
@@ -9307,7 +9316,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="20000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -9333,7 +9342,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="10"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="38"/>
 	<property name="Group" value="Resources,Chemicals"/>
 </item>
@@ -9345,7 +9354,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="49"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -9364,7 +9373,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/cooking_grill"/>
 	<property name="Material" value="Miron"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="EconomicValue" value="26"/>
 	<property name="Group" value="Food/Cooking"/>
 </item>
@@ -9384,7 +9393,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="leather"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Stacknumber" value="10"/> <!-- STK resource -->
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="405"/>
 	<property name="Group" value="Resources"/>
@@ -9396,7 +9405,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="Msteel"/>
-	<property name="Stacknumber" value="1"/> <!-- STK loot -->
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="EconomicValue" value="240"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -9420,7 +9429,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="Msteel"/>
 	<property name="Weight" value="30"/>
-	<property name="Stacknumber" value="1"/> <!-- STK loot -->
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="EconomicValue" value="2000"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -9431,7 +9440,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="organic"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="10"/>
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="600"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
@@ -9443,7 +9452,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="30000"/>
+	<property name="Stacknumber" value="50000"/>
 	<property name="Weight" value="1"/>
 	<property name="Group" value="Resources"/>
 	<property name="ResourceUnit" value="true"/>
@@ -9618,4 +9627,19 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<!-- Gnamod Specific Items -->
+<item id="1900" name="No Ammo">
+<property name="CreativeMode" value="Dev"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab" />
+<property name="Material" value="lead" />
+<property name="HoldType" value="45" />
+<property name="Stacknumber" value="250" />
+<property name="Group" value="Ammo/Weapons" />
+<property class="Attributes">
+<property name="GetQualityFromWeapon" value="true" />
+<property name="EntityDamage" value="0" />
+<property name="BlockDamage" value="0" />
+</property>
+</item>
+  
 </items>

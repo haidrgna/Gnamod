@@ -42,7 +42,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsGreenHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="10"/>
 <entity name="animalSnake"            prob="0.5"/>
 <entity name="animalBear"             prob="0.5"/>
@@ -60,7 +60,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsWaterHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="4"/>
 <entity name="animalSnake"            prob="12"/>
 <entity name="animalBear"             prob="0.5"/>
@@ -78,7 +78,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsAlpineHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="2"/>
 <entity name="animalSnake"            prob="0"/>
 <entity name="animalBear"             prob="6"/>
@@ -96,7 +96,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsDesertHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="2"/>
 <entity name="animalSnake"            prob="18"/>
 <entity name="animalBear"             prob="0"/>
@@ -114,7 +114,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsBurntHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="6"/>
 <entity name="animalSnake"            prob="8"/>
 <entity name="animalBear"             prob="3"/>
@@ -132,7 +132,7 @@
 </entitygroup>
   
 <entitygroup name="AnimalsWasteHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalBoar"             prob="12"/>
 <entity name="animalSnake"            prob="3"/>
 <entity name="animalBear"             prob="0"/>
@@ -143,7 +143,7 @@
 <!-- RADIATED WASTELAND BASE GROUPS (80% Animals) -->
 <!--
 <entitygroup name="AnimalsRadHostile">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalZombieBearRad"    prob="1"/>
 <entity name="animalZombieDogRad"     prob="1"/>
 <entity name="animalDireWolfRad"      prob="1"/>
@@ -160,7 +160,7 @@
 </entitygroup>
 
 <entitygroup name="Bear">
-<entity name="invisibleAnimalHostile" prob="95"/>
+<entity name="invisibleAnimalEnemy" prob="95"/>
 <entity name="animalBear"             prob="4.9"/>
 <entity name="animalZombieBear"       prob="0.1"/>
 </entitygroup>
@@ -181,18 +181,18 @@
 </entitygroup>
 
 <entitygroup name="Wolf">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalWolf"             prob="18"/>
 <entity name="animalDireWolf"         prob="2"/>
 </entitygroup>
 
 <entitygroup name="Vulture">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalZombieVulture"    prob="20"/>
 </entitygroup>
 
 <entitygroup name="Snake">
-<entity name="invisibleAnimalHostile" prob="80"/>
+<entity name="invisibleAnimalEnemy" prob="80"/>
 <entity name="animalSnake"            prob="10"/>
 </entitygroup>
 
@@ -217,13 +217,13 @@
 <entity name="zombieArleneSwagger"    prob="1.1"/> <entity name="zombieArleneIntimidator"     prob="1.1"/> <entity name="zombieArleneMoaner"    prob="1.1"/> <entity name="zombieArleneCrawler"     prob="0.45"/> <entity name="zombieArleneLimper"   prob="1.1"/> <entity name="zombieArleneFlailer"   prob="1.1"/> <entity name="zombieArleneWalker"    prob="1.1"/> <entity name="zombieArleneClimber"   prob="0.84"/> <entity name="zombieArleneHater"    prob="1.1"/> <entity name="zombieArleneFeral"   prob="0.01"/>
 <entity name="zombieDarleneSwagger"   prob="1.1"/> <entity name="zombieDarleneIntimidator"    prob="1.1"/> <entity name="zombieDarleneMoaner"   prob="1.1"/> <entity name="zombieDarleneCrawler"    prob="0.45"/> <entity name="zombieDarleneLimper"  prob="1.1"/> <entity name="zombieDarleneFlailer"  prob="1.1"/> <entity name="zombieDarleneWalker"   prob="1.1"/> <entity name="zombieDarleneClimber"  prob="0.84"/> <entity name="zombieDarleneHater"   prob="1.1"/> <entity name="zombieDarleneFeral"  prob="0.01"/>
 <entity name="zombieMarleneSwagger"   prob="1.1"/> <entity name="zombieMarleneIntimidator"    prob="1.1"/> <entity name="zombieMarleneMoaner"   prob="1.1"/> <entity name="zombieMarleneCrawler"    prob="0.45"/> <entity name="zombieMarleneLimper"  prob="1.1"/> <entity name="zombieMarleneFlailer"  prob="1.1"/> <entity name="zombieMarleneWalker"   prob="1.1"/> <entity name="zombieMarleneClimber"  prob="0.84"/> <entity name="zombieMarleneHater"   prob="1.1"/> <entity name="zombieMarleneFeral"  prob="0.01"/>
-<entity name="zombieLillySwagger"     prob="1.1"/> <entity name="zombieLillyIntimidator"      prob="1.1"/> <entity name="zombieLillyMoaner"     prob="1.1"/> <entity name="zombieLillyCrawler"      prob="0.45"/> <entity name="zombieLillyLimper"    prob="1.1"/> <entity name="zombieLillyFlailer"    prob="1.1"/> <entity name="zombieLillyWalker"     prob="1.1"/> <entity name="zombieLillyClimber"    prob="0.84"/> <entity name="zombieLillyHater"     prob="1.1"/> <entity name="zombieLillyFeral"    prob="0.01"/>
+<entity name="zombieLillySwagger"     prob="1.5"/> <entity name="zombieLillyIntimidator"      prob="1.5"/> <entity name="zombieLillyMoaner"     prob="1.5"/> <entity name="zombieLillyCrawler"      prob="0.60"/> <entity name="zombieLillyLimper"    prob="1.5"/> <entity name="zombieLillyFlailer"    prob="1.5"/> <entity name="zombieLillyWalker"     prob="1.5"/> <entity name="zombieLillyClimber"    prob="1.14"/> <entity name="zombieLillyHater"     prob="1.5"/> <entity name="zombieLillyFeral"    prob="0.01"/>
 <entity name="zombieClaireSwagger"    prob="1.1"/> <entity name="zombieClaireIntimidator"     prob="1.1"/> <entity name="zombieClaireMoaner"    prob="1.1"/> <entity name="zombieClaireCrawler"     prob="0.45"/> <entity name="zombieClaireLimper"   prob="1.1"/> <entity name="zombieClaireFlailer"   prob="1.1"/> <entity name="zombieClaireWalker"    prob="1.1"/> <entity name="zombieClaireClimber"   prob="0.84"/> <entity name="zombieClaireHater"    prob="1.1"/> <entity name="zombieClaireFeral"   prob="0.01"/>
 <entity name="zombieCrystalSwagger"   prob="1.1"/> <entity name="zombieCrystalIntimidator"    prob="1.1"/> <entity name="zombieCrystalMoaner"   prob="1.1"/> <entity name="zombieCrystalCrawler"    prob="0.45"/> <entity name="zombieCrystalLimper"  prob="1.1"/> <entity name="zombieCrystalFlailer"  prob="1.1"/> <entity name="zombieCrystalWalker"   prob="1.1"/> <entity name="zombieCrystalClimber"  prob="0.84"/> <entity name="zombieCrystalHater"   prob="1.1"/> <entity name="zombieCrystalFeral"  prob="0.01"/>
 <!-- Special -->
 <entity name="zombieAnnaSwagger"      prob="0.00"/> <entity name="zombieAnnaIntimidator"      prob="0.00"/> <entity name="zombieAnnaMoaner"     prob="0.00"/> <entity name="zombieAnnaCrawler"      prob="0.0"/> <entity name="zombieAnnaLimper"      prob="0.00"/> <entity name="zombieAnnaFlailer"    prob="0.00"/> <entity name="zombieAnnaWalker"     prob="0.00"/> <entity name="zombieAnnaClimber"    prob="0.0"/> <entity name="zombieAnnaHater"       prob="0.00"/> <entity name="zombieAnnaFeral"    prob="0.00"/>
 <entity name="zombieCrispySwagger"    prob="0.55"/> <entity name="zombieCrispyIntimidator"    prob="0.55"/> <entity name="zombieCrispyMoaner"   prob="0.55"/> <entity name="zombieCrispyCrawler"    prob="0.2"/> <entity name="zombieCrispyLimper"    prob="0.55"/> <entity name="zombieCrispyFlailer"  prob="0.55"/> <entity name="zombieCrispyWalker"   prob="0.55"/> <entity name="zombieCrispyClimber"  prob="0.4"/> <entity name="zombieCrispyHater"     prob="0.59"/> <entity name="zombieCrispyFeral"  prob="0.01"/>
-<entity name="zombieJerrySwagger"     prob="0.55"/> <entity name="zombieJerryIntimidator"     prob="0.55"/> <entity name="zombieJerryMoaner"    prob="0.55"/> <entity name="zombieJerryCrawler"     prob="0.2"/> <entity name="zombieJerryLimper"     prob="0.55"/> <entity name="zombieJerryFlailer"   prob="0.55"/> <entity name="zombieJerryWalker"    prob="0.55"/> <entity name="zombieJerryClimber"   prob="0.4"/> <entity name="zombieJerryHater"      prob="0.59"/> <entity name="zombieJerryFeral"   prob="0.01"/>
+<entity name="zombieJerrySwagger"     prob="0.15"/> <entity name="zombieJerryIntimidator"     prob="0.15"/> <entity name="zombieJerryMoaner"    prob="0.15"/> <entity name="zombieJerryCrawler"     prob="0.05"/> <entity name="zombieJerryLimper"    prob="0.15"/> <entity name="zombieJerryFlailer"   prob="0.15"/> <entity name="zombieJerryWalker"    prob="0.15"/> <entity name="zombieJerryClimber"   prob="0.1"/> <entity name="zombieJerryHater"      prob="0.19"/> <entity name="zombieJerryFeral"   prob="0.01"/>
 <entity name="zombieRyanSwagger"      prob="0.55"/> <entity name="zombieRyanIntimidator"      prob="0.55"/> <entity name="zombieRyanMoaner"     prob="0.55"/> <entity name="zombieRyanCrawler"      prob="0.2"/> <entity name="zombieRyanLimper"      prob="0.55"/> <entity name="zombieRyanFlailer"    prob="0.55"/> <entity name="zombieRyanWalker"     prob="0.55"/> <entity name="zombieRyanClimber"    prob="0.4"/> <entity name="zombieRyanHater"       prob="0.59"/> <entity name="zombieRyanFeral"    prob="0.01"/>
 <!-- Big Mean-->
 <entity name="zombieBigMommaSwagger"  prob="0.75"/> <entity name="zombieBigMommaIntimidator"  prob="0.75"/> <entity name="zombieBigMommaMoaner" prob="0.75"/> <entity name="zombieBigMommaFlailer"  prob="0.75"/> <entity name="zombieBigMommaWalker" prob="0.75"/> <entity name="zombieBigMommaPuke"   prob="0.7"/> <entity name="zombieBigMommaHater"   prob="0.79"/> <entity name="zombieBigMommaFeral"  prob="0.01"/>
@@ -231,7 +231,7 @@
 <entity name="zombieDaveSwagger"      prob="0.75"/> <entity name="zombieDaveIntimidator"      prob="0.75"/> <entity name="zombieDaveMoaner"     prob="0.75"/> <entity name="zombieDaveFlailer"      prob="0.75"/> <entity name="zombieDaveWalker"     prob="0.75"/> <entity name="zombieDavePuke"       prob="0.7"/> <entity name="zombieDaveHater"       prob="0.79"/> <entity name="zombieDaveFeral"      prob="0.01"/>
 <entity name="zombieJackSwagger"      prob="0.00"/> <entity name="zombieJackIntimidator"      prob="0.00"/> <entity name="zombieJackMoaner"     prob="0.00"/> <entity name="zombieJackFlailer"      prob="0.00"/> <entity name="zombieJackWalker"     prob="0.00"/> <entity name="zombieJackPuke"       prob="0.0"/> <entity name="zombieJackHater"       prob="0.00"/> <entity name="zombieJackFeral"      prob="0.00"/>
 <!-- Cop -->
-<entity name="zombieLouisSwagger"     prob="0.15"/>  <entity name="zombieLouisIntimidator"    prob="0.15"/> <entity name="zombieLouisMoaner"    prob="0.15"/> <entity name="zombieLouisFlailer"     prob="0.15"/> <entity name="zombieLouisWalker"    prob="0.2"/> <entity name="zombieLouisHater"      prob="0.19"/> <entity name="zombieLouisFeral"      prob="0.01"/>
+<entity name="zombieLouisSwagger"     prob="0.15"/> <entity name="zombieLouisIntimidator"    prob="0.15"/> <entity name="zombieLouisMoaner"    prob="0.15"/> <entity name="zombieLouisFlailer"     prob="0.15"/> <entity name="zombieLouisWalker"    prob="0.2"/> <entity name="zombieLouisHater"      prob="0.19"/> <entity name="zombieLouisFeral"      prob="0.01"/>
 <!-- Ghoul-->
 <entity name="zombieGhoulSwagger"     prob="0.1"/> <entity name="zombieGhoulIntimidator"      prob="0.1"/> <entity name="zombieGhoulMoaner"     prob="0.1"/> <entity name="zombieGhoulLimper"       prob="0.1"/> <entity name="zombieGhoulFlailer"    prob="0.1"/> <entity name="zombieGhoulWalker"     prob="0.1"/> <entity name="zombieGhoulClimber"   prob="0.19"/> <entity name="zombieGhoulHater"      prob="0.2"/> <entity name="zombieGhoulFeral"     prob="0.01"/> 
 </entitygroup>  
@@ -252,19 +252,19 @@
 <entity name="zombieArleneSwagger"    prob="1.1"/> <entity name="zombieArleneIntimidator"     prob="1.1"/> <entity name="zombieArleneMoaner"    prob="1.1"/> <entity name="zombieArleneCrawler"     prob="0.45"/> <entity name="zombieArleneLimper"   prob="1.1"/> <entity name="zombieArleneFlailer"   prob="1.1"/> <entity name="zombieArleneWalker"    prob="1.1"/> <entity name="zombieArleneClimber"   prob="0.84"/> <entity name="zombieArleneHater"    prob="1.1"/> <entity name="zombieArleneFeral"   prob="0.01"/>
 <entity name="zombieDarleneSwagger"   prob="1.1"/> <entity name="zombieDarleneIntimidator"    prob="1.1"/> <entity name="zombieDarleneMoaner"   prob="1.1"/> <entity name="zombieDarleneCrawler"    prob="0.45"/> <entity name="zombieDarleneLimper"  prob="1.1"/> <entity name="zombieDarleneFlailer"  prob="1.1"/> <entity name="zombieDarleneWalker"   prob="1.1"/> <entity name="zombieDarleneClimber"  prob="0.84"/> <entity name="zombieDarleneHater"   prob="1.1"/> <entity name="zombieDarleneFeral"  prob="0.01"/>
 <entity name="zombieMarleneSwagger"   prob="1.1"/> <entity name="zombieMarleneIntimidator"    prob="1.1"/> <entity name="zombieMarleneMoaner"   prob="1.1"/> <entity name="zombieMarleneCrawler"    prob="0.45"/> <entity name="zombieMarleneLimper"  prob="1.1"/> <entity name="zombieMarleneFlailer"  prob="1.1"/> <entity name="zombieMarleneWalker"   prob="1.1"/> <entity name="zombieMarleneClimber"  prob="0.84"/> <entity name="zombieMarleneHater"   prob="1.1"/> <entity name="zombieMarleneFeral"  prob="0.01"/>
-<entity name="zombieLillySwagger"     prob="1.1"/> <entity name="zombieLillyIntimidator"      prob="1.1"/> <entity name="zombieLillyMoaner"     prob="1.1"/> <entity name="zombieLillyCrawler"      prob="0.45"/> <entity name="zombieLillyLimper"    prob="1.1"/> <entity name="zombieLillyFlailer"    prob="1.1"/> <entity name="zombieLillyWalker"     prob="1.1"/> <entity name="zombieLillyClimber"    prob="0.84"/> <entity name="zombieLillyHater"     prob="1.1"/> <entity name="zombieLillyFeral"    prob="0.01"/>
+<entity name="zombieLillySwagger"     prob="1.5"/> <entity name="zombieLillyIntimidator"      prob="1.5"/> <entity name="zombieLillyMoaner"     prob="1.5"/> <entity name="zombieLillyCrawler"      prob="0.60"/> <entity name="zombieLillyLimper"    prob="1.5"/> <entity name="zombieLillyFlailer"    prob="1.5"/> <entity name="zombieLillyWalker"     prob="1.5"/> <entity name="zombieLillyClimber"    prob="1.14"/> <entity name="zombieLillyHater"     prob="1.5"/> <entity name="zombieLillyFeral"    prob="0.01"/>
 <entity name="zombieClaireSwagger"    prob="1.1"/> <entity name="zombieClaireIntimidator"     prob="1.1"/> <entity name="zombieClaireMoaner"    prob="1.1"/> <entity name="zombieClaireCrawler"     prob="0.45"/> <entity name="zombieClaireLimper"   prob="1.1"/> <entity name="zombieClaireFlailer"   prob="1.1"/> <entity name="zombieClaireWalker"    prob="1.1"/> <entity name="zombieClaireClimber"   prob="0.84"/> <entity name="zombieClaireHater"    prob="1.1"/> <entity name="zombieClaireFeral"   prob="0.01"/>
 <entity name="zombieCrystalSwagger"   prob="1.1"/> <entity name="zombieCrystalIntimidator"    prob="1.1"/> <entity name="zombieCrystalMoaner"   prob="1.1"/> <entity name="zombieCrystalCrawler"    prob="0.45"/> <entity name="zombieCrystalLimper"  prob="1.1"/> <entity name="zombieCrystalFlailer"  prob="1.1"/> <entity name="zombieCrystalWalker"   prob="1.1"/> <entity name="zombieCrystalClimber"  prob="0.84"/> <entity name="zombieCrystalHater"   prob="1.1"/> <entity name="zombieCrystalFeral"  prob="0.01"/>
 <!-- Special -->
 <entity name="zombieAnnaSwagger"      prob="0.00"/> <entity name="zombieAnnaIntimidator"      prob="0.00"/> <entity name="zombieAnnaMoaner"     prob="0.00"/> <entity name="zombieAnnaCrawler"      prob="0.0"/> <entity name="zombieAnnaLimper"      prob="0.00"/> <entity name="zombieAnnaFlailer"    prob="0.00"/> <entity name="zombieAnnaWalker"     prob="0.00"/> <entity name="zombieAnnaClimber"    prob="0.0"/> <entity name="zombieAnnaHater"       prob="0.00"/> <entity name="zombieAnnaFeral"    prob="0.00"/>
-<entity name="zombieCrispySwagger"    prob="0.00"/> <entity name="zombieCrispyIntimidator"    prob="0.00"/> <entity name="zombieCrispyMoaner"   prob="0.00"/> <entity name="zombieCrispyCrawler"    prob="0.0"/> <entity name="zombieCrispyLimper"    prob="0.00"/> <entity name="zombieCrispyFlailer"  prob="0.00"/> <entity name="zombieCrispyWalker"   prob="0.00"/> <entity name="zombieCrispyClimber"  prob="0.0"/> <entity name="zombieCrispyHater"     prob="0.00"/> <entity name="zombieCrispyFeral"  prob="0.00"/>
-<entity name="zombieJerrySwagger"     prob="0.55"/> <entity name="zombieJerryIntimidator"     prob="0.55"/> <entity name="zombieJerryMoaner"    prob="0.55"/> <entity name="zombieJerryCrawler"     prob="0.2"/> <entity name="zombieJerryLimper"     prob="0.55"/> <entity name="zombieJerryFlailer"   prob="0.55"/> <entity name="zombieJerryWalker"    prob="0.55"/> <entity name="zombieJerryClimber"   prob="0.4"/> <entity name="zombieJerryHater"      prob="0.59"/> <entity name="zombieJerryFeral"   prob="0.01"/>
+<entity name="zombieCrispySwagger"    prob="0.00"/> <entity name="zombieCrispyIntimidator"    prob="0.00"/> <entity name="zombieCrispyMoaner"   prob="0.00"/> <entity name="zombieCrispyCrawler"    prob="0.0"/> <entity name="zombieCrispyLimper"    prob="0.00"/> <entity name="zombieCrispyFlailer"  prob="0.55"/> <entity name="zombieCrispyWalker"   prob="0.00"/> <entity name="zombieCrispyClimber"  prob="0.0"/> <entity name="zombieCrispyHater"     prob="0.00"/> <entity name="zombieCrispyFeral"  prob="0.00"/>
+<entity name="zombieJerrySwagger"     prob="0.15"/> <entity name="zombieJerryIntimidator"     prob="0.15"/> <entity name="zombieJerryMoaner"    prob="0.15"/> <entity name="zombieJerryCrawler"     prob="0.05"/> <entity name="zombieJerryLimper"    prob="0.15"/> <entity name="zombieJerryFlailer"   prob="0.15"/> <entity name="zombieJerryWalker"    prob="0.15"/> <entity name="zombieJerryClimber"   prob="0.1"/> <entity name="zombieJerryHater"      prob="0.19"/> <entity name="zombieJerryFeral"   prob="0.01"/>
 <entity name="zombieRyanSwagger"      prob="0.55"/> <entity name="zombieRyanIntimidator"      prob="0.55"/> <entity name="zombieRyanMoaner"     prob="0.55"/> <entity name="zombieRyanCrawler"      prob="0.2"/> <entity name="zombieRyanLimper"      prob="0.55"/> <entity name="zombieRyanFlailer"    prob="0.55"/> <entity name="zombieRyanWalker"     prob="0.55"/> <entity name="zombieRyanClimber"    prob="0.4"/> <entity name="zombieRyanHater"       prob="0.59"/> <entity name="zombieRyanFeral"    prob="0.01"/>
 <!-- Big Mean-->
 <entity name="zombieBigMommaSwagger"  prob="0.75"/> <entity name="zombieBigMommaIntimidator"  prob="0.75"/> <entity name="zombieBigMommaMoaner" prob="0.75"/> <entity name="zombieBigMommaFlailer"  prob="0.75"/> <entity name="zombieBigMommaWalker" prob="0.75"/> <entity name="zombieBigMommaPuke"   prob="0.7"/> <entity name="zombieBigMommaHater"   prob="0.79"/> <entity name="zombieBigMommaFeral"  prob="0.01"/>
 <entity name="zombieHenrySwagger"     prob="0.75"/> <entity name="zombieHenryIntimidator"     prob="0.75"/> <entity name="zombieHenryMoaner"    prob="0.75"/> <entity name="zombieHenryFlailer"     prob="0.75"/> <entity name="zombieHenryWalker"    prob="0.75"/> <entity name="zombieHenryPuke"      prob="0.7"/> <entity name="zombieHenryHater"      prob="0.79"/> <entity name="zombieHenryFeral"     prob="0.01"/>
 <entity name="zombieDaveSwagger"      prob="0.75"/> <entity name="zombieDaveIntimidator"      prob="0.75"/> <entity name="zombieDaveMoaner"     prob="0.75"/> <entity name="zombieDaveFlailer"      prob="0.75"/> <entity name="zombieDaveWalker"     prob="0.75"/> <entity name="zombieDavePuke"       prob="0.7"/> <entity name="zombieDaveHater"       prob="0.79"/> <entity name="zombieDaveFeral"      prob="0.01"/>
-<entity name="zombieJackSwagger"      prob="30"/> <entity name="zombieJackIntimidator"      prob="30"/> <entity name="zombieJackMoaner"     prob="30"/> <entity name="zombieJackFlailer"      prob="30"/> <entity name="zombieJackWalker"     prob="30"/> <entity name="zombieJackPuke"       prob="30"/> <entity name="zombieJackHater"       prob="30"/> <entity name="zombieJackFeral"      prob="1"/>
+<entity name="zombieJackSwagger"      prob="10"/> <entity name="zombieJackIntimidator"      prob="10"/> <entity name="zombieJackMoaner"     prob="15"/> <entity name="zombieJackFlailer"      prob="10"/> <entity name="zombieJackWalker"     prob="10"/> <entity name="zombieJackPuke"       prob="10"/> <entity name="zombieJackHater"       prob="10"/> <entity name="zombieJackFeral"      prob="0.5"/>
 <!-- Cop -->
 <entity name="zombieLouisSwagger"     prob="0.15"/>  <entity name="zombieLouisIntimidator"    prob="0.15"/> <entity name="zombieLouisMoaner"    prob="0.15"/> <entity name="zombieLouisFlailer"     prob="0.15"/> <entity name="zombieLouisWalker"    prob="0.2"/> <entity name="zombieLouisHater"      prob="0.19"/> <entity name="zombieLouisFeral"      prob="0.01"/>
 <!-- Ghoul-->
@@ -287,13 +287,13 @@
 <entity name="zombieArleneSwagger"    prob="1.1"/> <entity name="zombieArleneIntimidator"     prob="1.1"/> <entity name="zombieArleneMoaner"    prob="1.1"/> <entity name="zombieArleneCrawler"     prob="0.45"/> <entity name="zombieArleneLimper"   prob="1.1"/> <entity name="zombieArleneFlailer"   prob="1.1"/> <entity name="zombieArleneWalker"    prob="1.1"/> <entity name="zombieArleneClimber"   prob="0.84"/> <entity name="zombieArleneHater"    prob="1.1"/> <entity name="zombieArleneFeral"   prob="0.01"/>
 <entity name="zombieDarleneSwagger"   prob="1.1"/> <entity name="zombieDarleneIntimidator"    prob="1.1"/> <entity name="zombieDarleneMoaner"   prob="1.1"/> <entity name="zombieDarleneCrawler"    prob="0.45"/> <entity name="zombieDarleneLimper"  prob="1.1"/> <entity name="zombieDarleneFlailer"  prob="1.1"/> <entity name="zombieDarleneWalker"   prob="1.1"/> <entity name="zombieDarleneClimber"  prob="0.84"/> <entity name="zombieDarleneHater"   prob="1.1"/> <entity name="zombieDarleneFeral"  prob="0.01"/>
 <entity name="zombieMarleneSwagger"   prob="1.1"/> <entity name="zombieMarleneIntimidator"    prob="1.1"/> <entity name="zombieMarleneMoaner"   prob="1.1"/> <entity name="zombieMarleneCrawler"    prob="0.45"/> <entity name="zombieMarleneLimper"  prob="1.1"/> <entity name="zombieMarleneFlailer"  prob="1.1"/> <entity name="zombieMarleneWalker"   prob="1.1"/> <entity name="zombieMarleneClimber"  prob="0.84"/> <entity name="zombieMarleneHater"   prob="1.1"/> <entity name="zombieMarleneFeral"  prob="0.01"/>
-<entity name="zombieLillySwagger"     prob="1.1"/> <entity name="zombieLillyIntimidator"      prob="1.1"/> <entity name="zombieLillyMoaner"     prob="1.1"/> <entity name="zombieLillyCrawler"      prob="0.45"/> <entity name="zombieLillyLimper"    prob="1.1"/> <entity name="zombieLillyFlailer"    prob="1.1"/> <entity name="zombieLillyWalker"     prob="1.1"/> <entity name="zombieLillyClimber"    prob="0.84"/> <entity name="zombieLillyHater"     prob="1.1"/> <entity name="zombieLillyFeral"    prob="0.01"/>
+<entity name="zombieLillySwagger"     prob="1.5"/> <entity name="zombieLillyIntimidator"      prob="1.5"/> <entity name="zombieLillyMoaner"     prob="1.5"/> <entity name="zombieLillyCrawler"      prob="0.60"/> <entity name="zombieLillyLimper"    prob="1.5"/> <entity name="zombieLillyFlailer"    prob="1.5"/> <entity name="zombieLillyWalker"     prob="1.5"/> <entity name="zombieLillyClimber"    prob="1.14"/> <entity name="zombieLillyHater"     prob="1.5"/> <entity name="zombieLillyFeral"    prob="0.01"/>
 <entity name="zombieClaireSwagger"    prob="1.1"/> <entity name="zombieClaireIntimidator"     prob="1.1"/> <entity name="zombieClaireMoaner"    prob="1.1"/> <entity name="zombieClaireCrawler"     prob="0.45"/> <entity name="zombieClaireLimper"   prob="1.1"/> <entity name="zombieClaireFlailer"   prob="1.1"/> <entity name="zombieClaireWalker"    prob="1.1"/> <entity name="zombieClaireClimber"   prob="0.84"/> <entity name="zombieClaireHater"    prob="1.1"/> <entity name="zombieClaireFeral"   prob="0.01"/>
 <entity name="zombieCrystalSwagger"   prob="1.1"/> <entity name="zombieCrystalIntimidator"    prob="1.1"/> <entity name="zombieCrystalMoaner"   prob="1.1"/> <entity name="zombieCrystalCrawler"    prob="0.45"/> <entity name="zombieCrystalLimper"  prob="1.1"/> <entity name="zombieCrystalFlailer"  prob="1.1"/> <entity name="zombieCrystalWalker"   prob="1.1"/> <entity name="zombieCrystalClimber"  prob="0.84"/> <entity name="zombieCrystalHater"   prob="1.1"/> <entity name="zombieCrystalFeral"  prob="0.01"/>
 <!-- Special -->
 <entity name="zombieAnnaSwagger"      prob="0.00"/> <entity name="zombieAnnaIntimidator"      prob="0.00"/> <entity name="zombieAnnaMoaner"     prob="0.00"/> <entity name="zombieAnnaCrawler"      prob="0.0"/> <entity name="zombieAnnaLimper"      prob="0.00"/> <entity name="zombieAnnaFlailer"    prob="0.00"/> <entity name="zombieAnnaWalker"     prob="0.00"/> <entity name="zombieAnnaClimber"    prob="0.0"/> <entity name="zombieAnnaHater"       prob="0.00"/> <entity name="zombieAnnaFeral"    prob="0.00"/>
-<entity name="zombieCrispySwagger"    prob="22"/> <entity name="zombieCrispyIntimidator"    prob="22"/> <entity name="zombieCrispyMoaner"   prob="22"/> <entity name="zombieCrispyCrawler"    prob="22"/> <entity name="zombieCrispyLimper"    prob="22"/> <entity name="zombieCrispyFlailer"  prob="22"/> <entity name="zombieCrispyWalker"   prob="22"/> <entity name="zombieCrispyClimber"  prob="22"/> <entity name="zombieCrispyHater"     prob="22"/> <entity name="zombieCrispyFeral"  prob="22"/>
-<entity name="zombieJerrySwagger"     prob="0.55"/> <entity name="zombieJerryIntimidator"     prob="0.55"/> <entity name="zombieJerryMoaner"    prob="0.55"/> <entity name="zombieJerryCrawler"     prob="0.2"/> <entity name="zombieJerryLimper"     prob="0.55"/> <entity name="zombieJerryFlailer"   prob="0.55"/> <entity name="zombieJerryWalker"    prob="0.55"/> <entity name="zombieJerryClimber"   prob="0.4"/> <entity name="zombieJerryHater"      prob="0.59"/> <entity name="zombieJerryFeral"   prob="0.01"/>
+<entity name="zombieCrispySwagger"    prob="15"/> <entity name="zombieCrispyIntimidator"    prob="15"/> <entity name="zombieCrispyMoaner"   prob="15"/> <entity name="zombieCrispyCrawler"    prob="5"/> <entity name="zombieCrispyLimper"    prob="15"/> <entity name="zombieCrispyFlailer"  prob="15"/> <entity name="zombieCrispyWalker"   prob="15"/> <entity name="zombieCrispyClimber"  prob="15"/> <entity name="zombieCrispyHater"     prob="15"/> <entity name="zombieCrispyFeral"  prob="0.5"/>
+<entity name="zombieJerrySwagger"     prob="0.15"/> <entity name="zombieJerryIntimidator"     prob="0.15"/> <entity name="zombieJerryMoaner"    prob="0.15"/> <entity name="zombieJerryCrawler"     prob="0.05"/> <entity name="zombieJerryLimper"    prob="0.15"/> <entity name="zombieJerryFlailer"   prob="0.15"/> <entity name="zombieJerryWalker"    prob="0.15"/> <entity name="zombieJerryClimber"   prob="0.1"/> <entity name="zombieJerryHater"      prob="0.19"/> <entity name="zombieJerryFeral"   prob="0.01"/>
 <entity name="zombieRyanSwagger"      prob="0.55"/> <entity name="zombieRyanIntimidator"      prob="0.55"/> <entity name="zombieRyanMoaner"     prob="0.55"/> <entity name="zombieRyanCrawler"      prob="0.2"/> <entity name="zombieRyanLimper"      prob="0.55"/> <entity name="zombieRyanFlailer"    prob="0.55"/> <entity name="zombieRyanWalker"     prob="0.55"/> <entity name="zombieRyanClimber"    prob="0.4"/> <entity name="zombieRyanHater"       prob="0.59"/> <entity name="zombieRyanFeral"    prob="0.01"/>
 <!-- Big Mean-->
 <entity name="zombieBigMommaSwagger"  prob="0.75"/> <entity name="zombieBigMommaIntimidator"  prob="0.75"/> <entity name="zombieBigMommaMoaner" prob="0.75"/> <entity name="zombieBigMommaFlailer"  prob="0.75"/> <entity name="zombieBigMommaWalker" prob="0.75"/> <entity name="zombieBigMommaPuke"   prob="0.7"/> <entity name="zombieBigMommaHater"   prob="0.79"/> <entity name="zombieBigMommaFeral"  prob="0.01"/>

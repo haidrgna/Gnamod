@@ -1,141 +1,37 @@
-<!--BIOMES.XML
-
-Rules for each biome generation and operation.
-
-
-	WEATHER CONTROL
-
-The weather sections within each biome are restrictions
-to the "global" weather condition running across the
-entire world.	For example, if the global weather says
-the precipitation of the world is 20 and your biome
-does not have any restrictions that allow below 50 for
-precipitation, then your biome will have the lowest possible
-precipitation allowed within its restrictions defined in this
-file.
-
-Temperature is different.	It is the base temperature
-of the biome to subtract from the global temperature.
-The final temperature is effected by rain, wind, clouds,
-and angle of the sun (each of these will only subtract
-from the temperature).
-
-Format & location:
 <worldgeneration>
-	<biome name="" biomemapcolor="">
-	<weather>
-			<'Condition' min="" max="" prob=""/>
-			<'Condition' min="" max="" prob=""/>
-			<'Condition' min="" max="" prob=""/>
-	<weather/>
-	<biome/>
-<worldgeneration/>
-
-Example:
-	<weather>
-	<Fog min="0" max="0" prob="0.1"/>
-	<Fog min="20" max="30" prob="0.95"/>
-	<weather/>
-"This would mean there's a total probability of 1.05,
-by adding all the 'prob' values of the 'Fog' conditions.
-There's a 9.5% chance there will be a 0 fog condition and
-a 90.5% chance the fog condition will be between 20 and 30.
-This is because 0.1, from the first line, is 9.5% of 1.05,
-the total probability of the fog conditions; and 0.95, from
-the second line, is 90.5% of the total fog condition
-probability of 1.05."
-
-Note: It may be easier to visuallize your control if you make
-sure all your probability values for each condition add up to 1.
-
-Options:
-	Temperature
-	Fog
-	CloudThickness
-	Precipitation
-	Wind
-
-Description of Options:
-	Temperature
-		Values are in fahrenheit and subtract the temperature in
-		this biome from the global temperature.
-	Fog
-		Values are between 0 and 100.	The result is used to determine
-		whether or not to use the "Foggy" Environment spectrums for
-		lighting and fog intensities.	If there is a Spectrum Condition
-		defined in the WeatherManager prefab that checks for a "Fog"
-		condition, the result of this Weather Control will be checked
-		against for the biome.
-	CloudThickness
-		Values are between 0 and 100.	0 restricts any clouds from
-		showing up in the sky.	100 allows for the thickest clouds in
-		the sky.
-	Precipitation
-		Values are between 0 and 100.	Values restrict a biome to allow
-		the min and max intensity of rain in the biome.	BUT!!!	The
-		result is dependant on CloudThickness as well.	Clouds must
-		be above 70 thickness in order for rain to be possible in the biome.
-	Wind
-		Values are between 0 and 100.	0 restricts the biome to no
-		possible wind, and 100 allows the windiest conditions in the biome.
-
-
-Subbiomes:
-<decorations> are now optional, as you can see in the "ore sub biomes".
-If you do not declare them, the decorations of the main biome are used.
--->
-
-<worldgeneration>
-
-<!-- Weather definitions here -->
+<!-- Global Weather -->
 <weather>
-	<property class="Foggy">
-		<property name="Spectrum" value="foggy" />
-		<property name="Temperature" value="-10" />
-		<property name="AmbientSound" value="..." />
-		<property name="ParticleEffect" value="..." /></property>
-	<property class="Rainy">
-		<property name="Spectrum" value="rainy" />
-		<property name="Temperature" value="-15" />
-		<property name="AmbientSound" value="..." />
-		<property name="ParticleEffect" value="..." /></property>
+<property                         class="Foggy">
+<property name="Spectrum"         value="foggy"/>
+<property name="Temperature"      value="-10"/>
+<property name="AmbientSound"     value="..."/>
+<property name="ParticleEffect"   value="..."/>
+</property>
+
+<property                         class="Rainy">
+<property name="Spectrum"         value="rainy"/>
+<property name="Temperature"      value="-15"/>
+<property name="AmbientSound"     value="..."/>
+<property name="ParticleEffect"   value="..."/>
+</property>
 </weather>
 
-
-<!-- All biome definitions here -->
+<!-- World Biomes -->
 <biomes>
-	<!-- Mapping from biome name to id number as it is saved in the world chunks -->
-	<biomemap id="01" name="snow"/>
-	<biomemap id="02" name="forest"/>
-	<biomemap id="03" name="pine_forest"/>
-	<biomemap id="04" name="plains"/>
-	<biomemap id="05" name="desert"/>
-	<biomemap id="06" name="water"/>
-	<biomemap id="07" name="radiated"/>
-	<biomemap id="08" name="wasteland"/>
-	<biomemap id="09" name="burnt_forest"/>
-	<biomemap id="10" name="city"/>
-	<biomemap id="11" name="city_wasteland"/>
-	<biomemap id="12" name="wasteland_hub"/>
-	<biomemap id="13" name="caveFloor"/>
-	<biomemap id="14" name="caveCeiling"/>
-	<!--
-	Decoration Parameters:
-		boundingboxdelta (int): defines the number of blocks which are added to the size of prefab for a boundingbox in order to find a valid location
-			negative means overlap with other objects possible; positive means more free space around
-		boundingboxdelta="1" surfaceoffset="0"
-			+numbers do not work
-		surfaceoffset (int): defines the number of blocks which is added to the groundlevel of the prefab
-			negative means the object will be placed in the ground; positive means the object will hover in the air
-		prob (float): [0;1] (0.2 e.g. means 20%)
-		cluster (int): probability to have similar neigbourblocks. 0: almost solid ore vein; 1: default; 2: sparse distribution
-	Resource Parameters:
-		rwgGenerationType (string): defines the type of allowed resouce generation
-			Possible values are 'noise', 'caves', 'all'
-			noise - Uses regular perlin noise calculations for resources like in Navezgane
-			caves - Uses cave resource nodes instead of noise
-			all - Will use both noise based generation AND cave node generation.
-	-->
+<biomemap id="01" name="snow"/>
+<biomemap id="02" name="forest"/>
+<biomemap id="03" name="pine_forest"/>
+<biomemap id="04" name="plains"/>
+<biomemap id="05" name="desert"/>
+<biomemap id="06" name="water"/>
+<biomemap id="07" name="radiated"/>
+<biomemap id="08" name="wasteland"/>
+<biomemap id="09" name="burnt_forest"/>
+<biomemap id="10" name="city"/>
+<biomemap id="11" name="city_wasteland"/>
+<biomemap id="12" name="wasteland_hub"/>
+<biomemap id="13" name="caveFloor"/>
+<biomemap id="14" name="caveCeiling"/>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= SNOW FLATS BIOME           +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="city" biomemapcolor="#FFFFFF">
@@ -162,10 +58,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.15"/>
-<Wind             min="25"    max="50"    prob="0.70"/>
+<Wind             min="0"     max="0"     prob="0.50"/>
+<Wind             min="0"     max="50"    prob="0.30"/>
 <Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="75"    max="100"   prob="0.10"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
 </weather>
@@ -262,10 +158,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.65"/>
-<Wind             min="25"    max="50"    prob="0.20"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.60"/>
+<Wind             min="0"     max="50"    prob="0.30"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="14"/>
 </weather>
@@ -292,9 +188,9 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeSnowyDeadBush"                    prob="0.002"/>
 <decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
 <decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.003"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0002"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0003"/>
+<decoration type="block" blockname="snowberry3Harvest"                    prob="0.002"/>
+<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0001"/>
+<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.004"/>
 <decoration type="block" blockname="mushroom01"                           prob="0.00005"/>
 <decoration type="block" blockname="mushroom02"                           prob="0.00005"/>
 <!-- Trees -->
@@ -311,14 +207,14 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPine20m"                  prob="0.05"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0007"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0005"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0005"/>
+<decoration type="block" blockname="rockResource"                         prob="0.0015"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.0015"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
@@ -343,6 +239,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.01"/>
 <decoration type="block" blockname="treeSnowyDeadBush"                    prob="0.002"/>
 <decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
+<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0004"/>
 <decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.001"/>
 <decoration type="block" blockname="snowberry3Harvest"                    prob="0.003"/>
 <!-- Trees -->
@@ -359,14 +256,14 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPine20m"                  prob="0.03"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0009"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock05"                               prob="0.004"/>
 <decoration type="block" blockname="rock06"                               prob="0.004"/>
 <decoration type="block" blockname="rock07"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.00025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.00025"/>
+<decoration type="block" blockname="rockResource"                         prob="0.0005"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.0005"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
@@ -402,10 +299,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.65"/>
-<Wind             min="25"    max="50"    prob="0.20"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.65"/>
+<Wind             min="0"     max="50"    prob="0.25"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -447,7 +344,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeJuniper6m"                        prob="0.00005"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0045"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
@@ -500,7 +397,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeJuniper6m"                        prob="0.0005"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0009"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
@@ -594,10 +491,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.45"/>
-<Wind             min="25"    max="50"    prob="0.40"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.65"/>
+<Wind             min="0"     max="50"    prob="0.25"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -614,8 +511,8 @@ If you do not declare them, the decorations of the main biome are used.
 
 <decorations>
 <!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.25"/>
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.15"/>
+<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.22"/>
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.13"/>
 <decoration type="block" blockname="forestFlower"                         prob="0.001"/>
 <decoration type="block" blockname="treeAzalea"                           prob="0.003"/>
 <decoration type="block" blockname="treePlainsTree2"                      prob="0.009"/>
@@ -637,7 +534,7 @@ If you do not declare them, the decorations of the main biome are used.
 
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootPlainsHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.008"/>
@@ -665,8 +562,8 @@ If you do not declare them, the decorations of the main biome are used.
 
 <decorations>
 <!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.20"/>
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.10"/>
+<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.18"/>
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.07"/>
 <decoration type="block" blockname="forestFlower"                         prob="0.003"/>
 <decoration type="block" blockname="treePlainsTree2"                      prob="0.009"/>
 <decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.010"/>
@@ -675,7 +572,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="plantedCotton3Harvest"                prob="0.005"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootPlainsHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
@@ -761,10 +658,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.55"/>
-<Wind             min="25"    max="50"    prob="0.30"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.65"/>
+<Wind             min="0"     max="50"    prob="0.25"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -787,11 +684,11 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.0005"/>
 <decoration type="block" blockname="snowberry3Harvest"                    prob="0.0005"/>
 <decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0001"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0075"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0009"/>
+<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.010"/>
+<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0003"/>
 <decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0004"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.0001"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.0001"/>
+<decoration type="block" blockname="mushroom01"                           prob="0.00005"/>
+<decoration type="block" blockname="mushroom02"                           prob="0.00005"/>
 <!-- Trees -->
 <decoration type="block" blockname="treeJuniper6m"                        prob="0.00015"/>
 <decoration type="block" blockname="treeMountainPine8m"                   prob="0.00025"/>
@@ -802,14 +699,14 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPine20m"                  prob="0.00065"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0007"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0025"/>
+<decoration type="block" blockname="rockResource"                         prob="0.003"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.003"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="rock_form02"                              prob="0.00015"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0015"/>
@@ -838,7 +735,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPineDry"                  prob="0.050"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0004"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0007"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
@@ -879,18 +776,18 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPine13m"                  prob="0.035"/>
 <decoration type="block" blockname="treeMountainPine16m"                  prob="0.035"/>
 <decoration type="block" blockname="treeMountainPine19m"                  prob="0.045"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.055"/>
+<decoration type="block" blockname="treeMountainPineDry"                  prob="0.005"/>
 <decoration type="block" blockname="treeMountainPine20m"                  prob="0.065"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0005"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0005"/>
+<decoration type="block" blockname="rockResource"                         prob="0.0015"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.0015"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="rock_form02"                              prob="0.00005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0005"/>
@@ -926,10 +823,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.15"/>
 <Precipitation    min="75"    max="100"   prob="0.15"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.70"/>
-<Wind             min="25"    max="50"    prob="0.15"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.55"/>
+<Wind             min="0"     max="50"    prob="0.35"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="10"/>
 </weather>
@@ -962,9 +859,8 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeCactus05"                         prob="0.007"/>
 <decoration type="block" blockname="treeCactus06"                         prob="0.009"/>
 <!-- Lootcontainers -->
-<decoration type="block" blockname="lootDesertHelper"                     prob="0.015"/>
+<decoration type="block" blockname="lootDesertHelper"                     prob="0.005"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.0001"/>
 </decorations>
 </subbiome>
@@ -1024,7 +920,6 @@ If you do not declare them, the decorations of the main biome are used.
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootDesertHelper"                     prob="0.0005"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.0001"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
@@ -1043,7 +938,7 @@ If you do not declare them, the decorations of the main biome are used.
 <terrain class="Desert"/>
 <spectrum name="desert"/>
 </biome>  
-<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= SWAMP BIOME                +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= WETLANDS BIOME             +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="water" biomemapcolor="#0063ff">
 <!-- Weather -->
 <weather>
@@ -1068,10 +963,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.45"/>
-<Wind             min="25"    max="50"    prob="0.40"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.65"/>
+<Wind             min="0"     max="50"    prob="0.25"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -1110,7 +1005,7 @@ If you do not declare them, the decorations of the main biome are used.
 
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootStreetHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.001"/>
 <!-- Rocks & Stones -->
@@ -1153,10 +1048,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.45"/>
-<Wind             min="25"    max="50"    prob="0.40"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.45"/>
+<Wind             min="0"     max="50"    prob="0.35"/>
+<Wind             min="50"    max="75"    prob="0.19"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -1233,8 +1128,8 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.020"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
+<decoration type="block" blockname="cntTreeStump"                         prob="0.0001"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
@@ -1316,10 +1211,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.45"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.45"/>
-<Wind             min="25"    max="50"    prob="0.40"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.65"/>
+<Wind             min="0"     max="50"    prob="0.25"/>
+<Wind             min="50"    max="75"    prob="0.09"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="3"/>
 </weather>
@@ -1338,6 +1233,7 @@ If you do not declare them, the decorations of the main biome are used.
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.07"/>
 <decoration type="block" blockname="treeDeadShrub"                        prob="0.0025"/>
+<decoration type="block" blockname="treePlainsTree2"                      prob="0.009"/>
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.02"/>
 <decoration type="block" blockname="plantedCoffee3Harvest"                prob="0.0001"/>
 <!-- Trees -->
@@ -1350,7 +1246,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="treeMountainPineDry"                  prob="0.15"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootBurntForestHelper"                prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.05"/>
 <!-- Misc -->
 <decoration type="block" blockname="emberPile1"                           prob="0.00025"/>
@@ -1381,7 +1277,7 @@ If you do not declare them, the decorations of the main biome are used.
 <decoration type="block" blockname="cntTrashPile08"                       prob="0.0035"/>
 <!-- Misc -->
 <decoration type="block" blockname="cntCar03SedanDamage2"                 prob="0.00025"/>
-<decoration type="block" blockname="tire"                                 prob="0.001"/>
+<decoration type="block" blockname="tire"                                 prob="0.0005"/>
 <decoration type="block" blockname="cinderBlocks01"                       prob="0.0005"/>
 <decoration type="block" blockname="cinderBlocks02"                       prob="0.0005"/>
 <decoration type="block" blockname="cinderBlocks03"                       prob="0.0005"/>
@@ -1484,10 +1380,10 @@ If you do not declare them, the decorations of the main biome are used.
 <Precipitation    min="50"    max="75"    prob="0.25"/>
 <Precipitation    min="75"    max="100"   prob="0.35"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="25"    prob="0.45"/>
-<Wind             min="25"    max="50"    prob="0.40"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="0"     prob="0.45"/>
+<Wind             min="0"     max="50"    prob="0.35"/>
+<Wind             min="50"    max="75"    prob="0.19"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="14"/>
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="14"/>
@@ -1579,72 +1475,244 @@ If you do not declare them, the decorations of the main biome are used.
 <terrain class="hills" />
 <spectrum name="radiated" />
 </biome>    
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= CITY WASTELAND BIOME       +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
+<biome name="city_wasteland" biomemapcolor="#c0c0c0">
+<!-- Weather -->
+<weather>
+<!-- ===== Temperature ============================ -->
+<Temperature      min="15"    max="35"    prob="0.10"/>
+<Temperature      min="10"    max="15"    prob="0.20"/>
+<Temperature      min="-25"   max="10"    prob="0.50"/>
+<Temperature      min="-40"   max="-25"   prob="0.20"/>
+<!-- ===== Fog ==================================== -->
+<Fog              min="0"     max="0"     prob="0.70"/>
+<Fog              min="0"     max="50"    prob="0.10"/>
+<Fog              min="50"    max="75"    prob="0.10"/>
+<Fog              min="75"    max="100"   prob="0.10"/>
+<!-- ===== Clouds ================================= -->
+<CloudThickness   min="0"     max="0"     prob="0.20"/>
+<CloudThickness   min="0"     max="50"    prob="0.10"/>
+<CloudThickness   min="50"    max="70"    prob="0.10"/>
+<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<!-- ===== Precipitation ========================== -->
+<Precipitation    min="0"     max="0"     prob="0.05"/>
+<Precipitation    min="25"    max="50"    prob="0.25"/>
+<Precipitation    min="50"    max="75"    prob="0.25"/>
+<Precipitation    min="75"    max="100"   prob="0.45"/>
+<!-- ===== Winds ================================== -->
+<Wind             min="0"     max="0"     prob="0.45"/>
+<Wind             min="0"     max="50"    prob="0.35"/>
+<Wind             min="50"    max="75"    prob="0.19"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
+<!-- ===== Particles ============================== -->
+</weather>
+<!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.40"> <!-- Buildings -->
+<layers>
+<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
+<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
+<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.0025"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<!-- Prefabs-->
+<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.30"/>
   
-  <!-- #00FF00 -->
+<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.20"/>  
+  
+<decoration type="prefab" name="waste_rubble_highway_01"                  prob="0.0025"/>
+<decoration type="prefab" name="street_light_01"                          prob="0.00025"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00025"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.00015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
+</subbiome>
+    
+<subbiome prob="0.05"> <!-- Desolate -->
+<layers>
+<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
+<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+</layers>
 
-	<!-- City Main Biome Gravestown -->
-	<biome name="city_wasteland" biomemapcolor="#c0c0c0" >
-		<weather>
-			<Temperature min="5" max="15" prob="1"/>
-			<Fog min="10" max="40" prob="1"/>
-			<CloudThickness min="10" max="70" prob="0.1"/>
-			<CloudThickness min="70" max="100" prob="0.9"/>
-			<Precipitation min="100" max="100" prob="1"/>
-			<Wind min="10" max="20" prob="0.9"/>
-			<Wind min="20" max="100" prob="0.1"/>
-		</weather>
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.05"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rock01"                               prob="0.001"/>
+<decoration type="block" blockname="rock02"                               prob="0.001"/>
+<decoration type="block" blockname="rock04"                               prob="0.001"/>
+<decoration type="block" blockname="rockResource"                         prob="0.001"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
+<decoration type="block" blockname="cinderBlocks01"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks02"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks03"                       prob="0.006"/>
+<!-- Prefabs-->
+<decoration type="prefab" name="street_light_01"                          prob="0.00125"/>
+<decoration type="prefab" name="sign_slow"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_25"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_35"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_45"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_55"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_stop"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_stop_4way"                           prob="0.00025"/>
+<decoration type="prefab" name="mp_waste_pile_01"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_02"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_03"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_04"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_05"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_cover_01"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_cover_02"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_hole_asphalt_01"                 prob="0.00005"/>
+<decoration type="prefab" name="mp_waste_hole_rock_01"                    prob="0.0005"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00075"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
+</subbiome>     
+<!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<layers>                <layer filluptorg="60" blockname="water" />
+<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="concrete"          cluster="0" prob="0.10"    rwgGenerationType="all"/> </layer>
+<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
+<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+</layers>
 
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre -->
-			<layers>
-				<layer depth="3" blockname="asphalt" /> <layer depth="4" blockname="dirt" > <resource blockname="gravelPlusLead" cluster="1" prob="0.811" rwgGenerationType="all" /> <resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" /> </layer>
-				<layer depth="1" blockname="stone" > <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
-				<layer depth="*" blockname="stone" > <resource blockname="leadOre" cluster="1" prob="0.1030" rwgGenerationType="all" /> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="3" blockname="bedrock" />
-			</layers>
-		</subbiome>
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: coalOre -->
-			<layers>
-				<layer depth="3" blockname="asphalt" /> <layer depth="4" blockname="dirt" > <resource blockname="gravelPlusCoal" cluster="1" prob="0.811" rwgGenerationType="all" /> <resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" /> </layer>
-				<layer depth="1" blockname="stone" > <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
-				<layer depth="*" blockname="stone" > <resource blockname="coalOre" cluster="1" prob="0.1030" rwgGenerationType="all" /> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="3" blockname="bedrock" />
-			</layers>
-		</subbiome>
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: potassiumNitrate -->
-			<layers>
-				<layer depth="3" blockname="asphalt" /> <layer depth="4" blockname="dirt" > <resource blockname="gravelPlusPotassium" cluster="1" prob="0.811" rwgGenerationType="all" /> <resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" /> </layer>
-				<layer depth="1" blockname="stone" > <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
-				<layer depth="*" blockname="stone" > <resource blockname="potassiumNitrate" cluster="1" prob="0.1030" rwgGenerationType="all" /> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="3" blockname="bedrock" />
-			</layers>
-		</subbiome>
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.025"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Trees -->
+<decoration type="block" blockname="treeDeadTree02"                       prob="0.00012"/>
+<decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rock01"                               prob="0.001"/>
+<decoration type="block" blockname="rock02"                               prob="0.001"/>
+<decoration type="block" blockname="rock04"                               prob="0.001"/>
+<decoration type="block" blockname="rockResource"                         prob="0.001"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
+<decoration type="block" blockname="cinderBlocks01"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks02"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks03"                       prob="0.006"/>
+<!-- Prefabs -->
+<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.25"/>
+  
+<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_highway_01"                  prob="0.00125"/>
+<decoration type="prefab" name="street_light_01"                          prob="0.00125"/>
+<decoration type="prefab" name="sign_slow"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_25"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_35"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_45"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_55"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_stop"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_stop_4way"                           prob="0.00025"/>
+<decoration type="prefab" name="mp_waste_cover_01"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_cover_02"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_hole_asphalt_01"                 prob="0.00005"/>
+<decoration type="prefab" name="mp_waste_hole_rock_01"                    prob="0.0005"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00025"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.00015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
 
-		<!-- Block layers: city_wasteland (Gravestown), Local ore: potassiumNitrate -->
-		<layers>
-			<layer filluptorg="60" blockname="water" />
-			<layer depth="3" blockname="asphalt" />
-			<layer depth="4" blockname="dirt" > <resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" /> <resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" /> </layer>
-			<layer depth="*" blockname="stone" >
-				<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
-				<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" />
-				<resource blockname="silverOre"  cluster="1" prob="0.00030" rwgGenerationType="all" />
-				<resource blockname="goldOre"    cluster="1" prob="0.00020" rwgGenerationType="all" />
-				<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
-			</layer>
-			<layer depth="1" blockname="stone" > <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
-			<layer depth="10" blockname="stone" >
-				<resource blockname="potassiumNitrate" cluster="1" prob="0.1130" rwgGenerationType="all" />
-				<resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" />
-				<resource blockname="silverOre"  cluster="1" prob="0.00030" rwgGenerationType="all" />
-				<resource blockname="goldOre"    cluster="1" prob="0.00020" rwgGenerationType="all" />
-				<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
-			</layer>
-			<layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
-			<layer depth="3" blockname="bedrock" />
-		</layers>
-		<spectrum name="wasteland" />
-		<decorations></decorations>
-		<terrain class="Mountains" />
-	</biome>
-	<!-- Wasteland Hub Biome Random Gen -->
-	<biome name="wasteland_hub" biomemapcolor="#a0a0a0" >
+<terrain class="Wasteland" />
+<spectrum name="wasteland" />
+</biome>
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED FOREST BIOME      +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
+<biome name="wasteland_hub" biomemapcolor="#a0a0a0" >
 		<weather>
 			<Temperature min="5" max="15" prob="1"/>
 			<Fog min="0" max="0" prob=".8"/>
@@ -1782,8 +1850,8 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Wasteland" />
 	</biome>
-
-	<biome name="caveFloor" biomemapcolor="#a1a1a1" >
+<!-- Cave Biomes -->
+<biome name="caveFloor" biomemapcolor="#a1a1a1" >
 		<!-- Decorations Main: Cave Floor -->
 		<decorations>
 			<decoration type="prefab" name="rg_cave_spawn_01" prob="0.005" rotatemax="7"/>
@@ -1800,8 +1868,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
 		</decorations>
 	</biome>
-
-	<biome name="caveCeiling" biomemapcolor="#a2a2a2" >
+<biome name="caveCeiling" biomemapcolor="#a2a2a2" >
 		<!-- Decorations Main: Cave Ceiling -->
 		<decorations>
 			<decoration type="block" blockname="cobweb" prob="0.12" rotatemax="7"/>
@@ -1812,108 +1879,127 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="stalactite04" prob="0.02" rotatemax="7"/>
 		</decorations>
 	</biome>
-
-
 </biomes>
 
-
-
-
-
-
-
-<!-- Street Parameters:
-	surfaceoffset(int): defines the number of blocks which is added to the toplevel of the street tile
-					negative means the tile will be placed in the ground; positive means the tile will be above the ground
-	smoothness(int): defines the number of blocks which are tolerated in height difference.
-				value can be from 0 to 100 where 0 means no change of landscape and 100 builds even road level across whole level
-				(much more than 2 is probably not reasonable) -->
 <pois>
-	<!--poi name="Road Concrete" poimapcolor="#3a3020" prefab="road_concrete" surfaceoffset="0" /><poi name="Road Asphalt" poimapcolor="#272f48" prefab="road_asphalt" surfaceoffset="0" /><poi name="Road Gravel" poimapcolor="#806f52" prefab="road_gravel" surfaceoffset="0" /><poi name="crossing" poimapcolor="#f6ff0f" prefab="street_crossing" /><poi name="Water" poimapcolor="#0063ff" prefab="water_7_wide" surfaceoffset="0" /-->
-	<!--<poi name="Water" poimapcolor="#0063ff" blockname="water" ypos="56" old water set method/-->
-	<!--<poi name="Water" poimapcolor="#0063ff" prefab="water" ypos="56"/>-->
-	<poi name="City Asphalt" poimapcolor="#3d3f47" blockname="asphalt">
-		<decal texture="0" face="0" prob="0.001" /> <!-- 0 == 500 -->
-		<decal texture="1" face="0" prob="0.001" /> <!-- 1 == 501 -->
-		<decal texture="2" face="0" prob="0.001" />
-		<decal texture="3" face="0" prob="0.001" />
-		<decal texture="4" face="0" prob="0.001" />
-		<decal texture="5" face="0" prob="0.001" />
-		<decal texture="6" face="0" prob="0.001" />
-		<decal texture="7" face="0" prob="0.001" />
-		<decal texture="8" face="0" prob="0.001" />
-		<decal texture="9" face="0" prob="0" />
-		<decal texture="10" face="0" prob="0" />
-		<decal texture="11" face="0" prob="0.001" />
-		<decal texture="12" face="0" prob="0.001" />
-		<decal texture="13" face="0" prob="0.001" />
-		<decal texture="14" face="0" prob="0.001" />
-		<decal texture="15" face="0" prob="0.001" />
-		<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7"/>
-		<blockontop blockname="randomCarsHelper" prob="0.0015" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
-		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="rock01" prob="0.0007" />
-		<blockontop blockname="rock02" prob="0.0007" />
-		<blockontop blockname="rock04"  prob="0.0007" />
-	</poi>
-	<poi name="Country Road Asphalt" poimapcolor="#272f48" blockname="asphalt">
-		<decal texture="0" face="0" prob="0.005" />
-		<decal texture="1" face="0" prob="0.005" />
-		<decal texture="2" face="0" prob="0.005" />
-		<decal texture="3" face="0" prob="0.005" />
-		<decal texture="4" face="0" prob="0.005" />
-		<decal texture="5" face="0" prob="0.005" />
-		<decal texture="6" face="0" prob="0.005" />
-		<decal texture="7" face="0" prob="0.005" />
-		<decal texture="8" face="0" prob="0.005" />
-		<decal texture="9" face="0" prob="0" />
-		<decal texture="10" face="0" prob="0" />
-		<decal texture="11" face="0" prob="0.005" />
-		<decal texture="12" face="0" prob="0.005" />
-		<decal texture="13" face="0" prob="0.005" />
-		<decal texture="14" face="0" prob="0.005" />
-		<decal texture="15" face="0" prob="0.005" />
-		<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7"/>
-		<blockontop blockname="randomCarsHelper" prob="0.0015" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
-		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="rock01" prob="0.0007" />
-		<blockontop blockname="rock02" prob="0.0007" />
-		<blockontop blockname="rock04" prob="0.0007" />
-		<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
-	</poi>
-	<poi name="Road Gravel" poimapcolor="#806f52" blockname="gravel" >
-		<decal texture="0" face="0" prob="0.005" />
-		<decal texture="1" face="0" prob="0.005" />
-		<decal texture="2" face="0" prob="0.005" />
-		<decal texture="3" face="0" prob="0.005" />
-		<decal texture="4" face="0" prob="0.005" />
-		<decal texture="5" face="0" prob="0.005" />
-		<decal texture="6" face="0" prob="0.005" />
-		<decal texture="7" face="0" prob="0.005" />
-		<decal texture="8" face="0" prob="0.005" />
-		<decal texture="9" face="0" prob="0" />
-		<decal texture="10" face="0" prob="0" />
-		<decal texture="11" face="0" prob="0.005" />
-		<decal texture="12" face="0" prob="0.005" />
-		<decal texture="13" face="0" prob="0.005" />
-		<decal texture="14" face="0" prob="0.005" />
-		<decal texture="15" face="0" prob="0.005" />
-		<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7"/>
-		<blockontop blockname="treeBrownGrassDiagonal" rotatemax="3" prob="0.05" />
-		<blockontop blockname="randomCarsHelper" prob="0.0005" rotatemax="3"/>
-		<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
-	</poi>
-	<poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
-	<poi name="WaterDesert" poimapcolor="#002868" blockname="water" blockbelow="sand" yposfill="44"/>
-	<poi name="WaterHills" poimapcolor="#5d9bfd" blockname="water" blockbelow="sand" yposfill="73"/>
-	<poi name="WaterMountains" poimapcolor="#a3c7fe" blockname="water" blockbelow="sand" yposfill="78"/>
-	<poi name="Sand" poimapcolor="#c6b9a2" blockname="sand"/>
-	<poi name="Empty" poimapcolor="#f6ff00" />
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= CITY ROADS                 +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
+<poi name="City Asphalt" poimapcolor="#3d3f47" blockname="asphalt">
+<decal texture="0"  face="0" prob="0.001"/>
+<decal texture="1"  face="0" prob="0.001"/>
+<decal texture="2"  face="0" prob="0.001"/>
+<decal texture="3"  face="0" prob="0.001"/>
+<decal texture="4"  face="0" prob="0.001"/>
+<decal texture="5"  face="0" prob="0.001"/>
+<decal texture="6"  face="0" prob="0.001"/>
+<decal texture="7"  face="0" prob="0.001"/>
+<decal texture="8"  face="0" prob="0.001"/>
+<decal texture="9"  face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.001"/>
+<decal texture="12" face="0" prob="0.001"/>
+<decal texture="13" face="0" prob="0.001"/>
+<decal texture="14" face="0" prob="0.001"/>
+<decal texture="15" face="0" prob="0.001"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0018"/>
+<blockontop blockname="randomCarsHelper"        prob="0.0025"/>
+<blockontop blockname="tire"                    prob="0.0015"/>
+<blockontop blockname="mineHubcap"              prob="0.00005"/>
+<blockontop blockname="hubcapNoMine"            prob="0.00145"/>
+<blockontop blockname="garbage_decor1"          prob="0.0005"/>
+<blockontop blockname="garbage_decor2"          prob="0.0005"/>
+<blockontop blockname="garbage_decor3"          prob="0.0005"/>
+<blockontop blockname="rock01"                  prob="0.0007"/>
+<blockontop blockname="rock02"                  prob="0.0007"/>
+<blockontop blockname="rock04"                  prob="0.0007"/>
+<blockontop blockname="treeBrownGrassDiagonal"  prob="0.01"/>
+<blockontop blockname="tv_fallen"               prob="0.00005"/>
+<blockontop blockname="driftwood"               prob="0.0002"/>
+<blockontop blockname="driftwood2"              prob="0.0002"/>
+<blockontop blockname="barbedFence"             prob="0.0002"/>
+<blockontop blockname="destroyedStone"          prob="0.025"  offset="-1"/>
+<blockontop blockname="asphalt"                 prob="0.80"   offset="-2"/>
+</poi>
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= COUNTRY ROADS              +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->    
+<poi name="Country Road Asphalt" poimapcolor="#272f48" blockname="asphalt" >
+<decal texture="0"  face="0" prob="0.005"/>
+<decal texture="1"  face="0" prob="0.005"/>
+<decal texture="2"  face="0" prob="0.005"/>
+<decal texture="3"  face="0" prob="0.005"/>
+<decal texture="4"  face="0" prob="0.005"/>
+<decal texture="5"  face="0" prob="0.005"/>
+<decal texture="6"  face="0" prob="0.005"/>
+<decal texture="7"  face="0" prob="0.005"/>
+<decal texture="8"  face="0" prob="0.005"/>
+<decal texture="9"  face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.005"/>
+<decal texture="12" face="0" prob="0.005"/>
+<decal texture="13" face="0" prob="0.005"/>
+<decal texture="14" face="0" prob="0.005"/>
+<decal texture="15" face="0" prob="0.005"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0018"/>
+<blockontop blockname="randomCarsHelper"        prob="0.0025"/>
+<blockontop blockname="tire"                    prob="0.001"/>
+<blockontop blockname="mineHubcap"              prob="0.00005"/>
+<blockontop blockname="hubcapNoMine"            prob="0.00145"/>
+<blockontop blockname="garbage_decor1"          prob="0.0005"/>
+<blockontop blockname="garbage_decor2"          prob="0.0005"/>
+<blockontop blockname="garbage_decor3"          prob="0.0005"/>
+<blockontop blockname="rock01"                  prob="0.0007"/>
+<blockontop blockname="rock02"                  prob="0.0007"/>
+<blockontop blockname="rock04"                  prob="0.0007"/>
+<blockontop blockname="treeBrownGrassDiagonal"  prob="0.01"/>
+<blockontop blockname="tv_fallen"               prob="0.00005"/>
+<blockontop blockname="driftwood"               prob="0.0002"/>
+<blockontop blockname="driftwood2"              prob="0.0002"/>
+<blockontop blockname="barbedFence"             prob="0.0002"/>
+<blockontop blockname="destroyedStone"          prob="0.025"  offset="-1"/>
+<blockontop blockname="asphalt"                 prob="0.80"   offset="-2"/>
+</poi>
+<!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= POI ROADS                  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
+<poi name="Road Gravel" poimapcolor="#806f52" blockname="gravel" smoothness="10" >
+<decal texture="0"  face="0" prob="0.005"/>
+<decal texture="1"  face="0" prob="0.005"/>
+<decal texture="2"  face="0" prob="0.005"/>
+<decal texture="3"  face="0" prob="0.005"/>
+<decal texture="4"  face="0" prob="0.005"/>
+<decal texture="5"  face="0" prob="0.005"/>
+<decal texture="6"  face="0" prob="0.005"/>
+<decal texture="7"  face="0" prob="0.005"/>
+<decal texture="8"  face="0" prob="0.005"/>
+<decal texture="9"  face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.005"/>
+<decal texture="12" face="0" prob="0.005"/>
+<decal texture="13" face="0" prob="0.005"/>
+<decal texture="14" face="0" prob="0.005"/>
+<decal texture="15" face="0" prob="0.005"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0018"/>
+<blockontop blockname="randomCarsHelper"        prob="0.0025"/>
+<blockontop blockname="tire"                    prob="0.001"/>
+<blockontop blockname="mineHubcap"              prob="0.00001"/>
+<blockontop blockname="hubcapNoMine"            prob="0.00099"/>
+<blockontop blockname="garbage_decor1"          prob="0.0005"/>
+<blockontop blockname="garbage_decor2"          prob="0.0005"/>
+<blockontop blockname="garbage_decor3"          prob="0.0005"/>
+<blockontop blockname="rock01"                  prob="0.0007"/>
+<blockontop blockname="rock02"                  prob="0.0007"/>
+<blockontop blockname="rock04"                  prob="0.0007"/>
+<blockontop blockname="treeBrownGrassDiagonal"  prob="0.01"/>
+<blockontop blockname="tv_fallen"               prob="0.00005"/>
+<blockontop blockname="driftwood"               prob="0.0002"/>
+<blockontop blockname="driftwood2"              prob="0.0002"/>
+<blockontop blockname="barbedFence"             prob="0.0002"/>
+<blockontop blockname="destroyedStone"          prob="0.025"  offset="-1"/>
+<blockontop blockname="asphalt"                 prob="0.80"   offset="-2"/>
+</poi>
+
+<poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
+<poi name="WaterDesert" poimapcolor="#002868" blockname="water" blockbelow="sand" yposfill="44"/>
+<poi name="WaterHills" poimapcolor="#5d9bfd" blockname="water" blockbelow="sand" yposfill="73"/>
+<poi name="WaterMountains" poimapcolor="#a3c7fe" blockname="water" blockbelow="sand" yposfill="78"/>
+<poi name="Sand" poimapcolor="#c6b9a2" blockname="sand"/>
+<poi name="Empty" poimapcolor="#f6ff00" />
 </pois>
+
 </worldgeneration>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gnamod Base A16", "Gnamod Base A16", "{368D8A8A-D2DD-4C28-8673-70E712DDEE7F}"
 EndProject
@@ -14,12 +14,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{F4973C
 		Gnamod Base A16\Config\entitygroups.xml = Gnamod Base A16\Config\entitygroups.xml
 		Gnamod Base A16\Config\gamestages.xml = Gnamod Base A16\Config\gamestages.xml
 		Gnamod Base A16\Config\items.xml = Gnamod Base A16\Config\items.xml
-		Gnamod Base A16\Config\Localization - Quest.txt = Gnamod Base A16\Config\Localization - Quest.txt
 		Gnamod Base A16\Config\Localization.txt = Gnamod Base A16\Config\Localization.txt
 		Gnamod Base A16\Config\loot.xml = Gnamod Base A16\Config\loot.xml
 		Gnamod Base A16\Config\quests.xml = Gnamod Base A16\Config\quests.xml
 		Gnamod Base A16\Config\recipes.xml = Gnamod Base A16\Config\recipes.xml
 		Gnamod Base A16\Config\rwgmixer.xml = Gnamod Base A16\Config\rwgmixer.xml
+		Gnamod Base A16\Config\sounds.xml = Gnamod Base A16\Config\sounds.xml
 		Gnamod Base A16\Config\spawning.xml = Gnamod Base A16\Config\spawning.xml
 	EndProjectSection
 EndProject
@@ -42,13 +42,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gnamod Nomad A16", "Gnamod 
 	ProjectSection(SolutionItems) = preProject
 		Gnamod Nomad A16\biomes.xml = Gnamod Nomad A16\biomes.xml
 		Gnamod Nomad A16\recipes.xml = Gnamod Nomad A16\recipes.xml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XUI", "XUI", "{80418FBB-BD82-4E59-AEB1-D4620977E4E4}"
-	ProjectSection(SolutionItems) = preProject
-		Gnamod Base A16\Config\XUi\controls.xml = Gnamod Base A16\Config\XUi\controls.xml
-		Gnamod Base A16\Config\XUi\styles.xml = Gnamod Base A16\Config\XUi\styles.xml
-		Gnamod Base A16\Config\XUi\windows.xml = Gnamod Base A16\Config\XUi\windows.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vanilla Base", "Vanilla Base", "{8CB5D6AD-B6E1-4AF3-9788-430D41710431}"
@@ -563,7 +556,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F4973C1A-7B64-451D-A042-3E31A095FDE7} = {368D8A8A-D2DD-4C28-8673-70E712DDEE7F}
 		{3657383E-2177-494B-AC76-09D56FFE33E4} = {368D8A8A-D2DD-4C28-8673-70E712DDEE7F}
-		{80418FBB-BD82-4E59-AEB1-D4620977E4E4} = {F4973C1A-7B64-451D-A042-3E31A095FDE7}
 		{3C4175A2-CD0B-4CD3-9C87-E10D8CCB8B0D} = {8CB5D6AD-B6E1-4AF3-9788-430D41710431}
 		{10763CE2-2BA8-4D4A-8DAF-D8853DC27287} = {8CB5D6AD-B6E1-4AF3-9788-430D41710431}
 	EndGlobalSection
