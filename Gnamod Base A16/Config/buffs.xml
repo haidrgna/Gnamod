@@ -590,8 +590,18 @@ This requires a 50+ food bar:
     <modify id="1" stat="speedmodifier" modifyValue="2.0"/>
     <modify id="2" stat="health" setValue="20"/>
   </buff>
-  
-<buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
+
+  <buff id="SuicideBurn" duration="0" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
+    <modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>
+    <modify id="1" stat="speedmodifier" modifyValue="5.0"/>
+    <modify id="2" stat="health" setValue="20"/>
+  </buff>
+
+  <buff id="ZombieBurning" duration="15" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="ZombieBurning">
+    <modify id="0" stat="health" amount="40" rate="3" />
+  </buff>
+
+  <buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
 	<modify id="0" stat="health" amount="40" rate="3" />
 </buff>
 

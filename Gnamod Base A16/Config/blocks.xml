@@ -627,6 +627,14 @@ tbnsew:
 	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
 </block>
 
+<block id="36" name="tDirt">
+<property name="Extends" value="destroyedStone"/>
+<property name="CustomIcon" value="dirt"/>
+<property name="Texture" value="2,570,570,570,570,570"/>
+<drop event="Destroy" name="VolatileTurd" count="1"/>
+<drop event="Fall" name="blobBomb" count="1" prob="0.001" stick_chance="0"/>
+</block>  
+  
 <block id="37" name="grassFromDirt">
 	<property name="Extends" value="dirt"/>
 	<property name="CreativeMode" value="None"/>

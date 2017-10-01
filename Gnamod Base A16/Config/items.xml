@@ -9641,5 +9641,141 @@ Mesh files no longer used:
 <property name="BlockDamage" value="0" />
 </property>
 </item>
-  
+
+  <item id="1901" name="FlamingTurd">
+    <property name="Class" value="ItemClassTimeBomb"/>
+    <property name="Material" value="organic"/>
+    <property name="Meshfile" value="Items/Crafting/clayPrefab"/>
+    <property name="HoldType" value="40"/>
+    <property name="DropScale" value="2"/>
+    <property name="ThrowableDecoy" value="true"/>
+    <property name="Stacknumber" value="50"/>
+    <property name="Explosion.BlockDamage" value="5"/>
+    <property name="Explosion.EntityDamage" value="5"/>
+    <property name="Explosion.ParticleIndex" value="10"/>
+    <property name="Explosion.RadiusBlocks" value="8"/>
+    <property name="Explosion.RadiusEntities" value="8"/>
+    <property name="Explosion.RadiusBuffs" value="5"/>
+    <property name="Explosion.BlastPower" value="70"/>
+    <property name="Explosion.DamageBonus.stone" value="0.1"/>
+    <property name="Explosion.DamageBonus.metal" value="0"/>
+    <property name="Explosion.DamageBonus.earth" value="0"/>
+    <property name="Explosion.DamageBonus.water" value="0"/>
+    <property name="Explosion.DamageBonus.wood" value="6"/>
+    <property name="FuseTime" value="20000"/>
+    <property name="Explosion.Buff" value="burningMolotov"/>
+    <property name="Explosion.Buff_chance" value="1"/>
+    <property name="ExplodeOnHit" value="true"/>
+    <property class="Action0">
+      <property name="Class" value="ThrowAway"/>
+      <property name="Delay" value="1.2"/>
+      <property name="Explosion.ParticleIndex" value="7"/>
+      <property name="Throw_strength_default" value="14"/>
+      <property name="Throw_strength_max" value="25"/>
+      <property name="Max_strain_time" value="1.5"/>
+      <property name="Sound_start" value="swoosh"/>
+    </property>
+    <property name="EconomicValue" value="41"/>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="CustomIcon" value="turd"/>
+    <property name="CustomIconTint" value="ffa0a0"/>
+  </item>
+
+    <item id="1902" name="ExplodingTurd">
+    <property name="Class" value="ItemClassTimeBomb"/>
+    <property name="Material" value="organic"/>
+    <property name="Meshfile" value="Items/Crafting/clayPrefab"/>
+    <property name="HoldType" value="40"/>
+    <property name="DropScale" value="2"/>
+    <property name="ThrowableDecoy" value="true"/>
+    <property name="Stacknumber" value="50"/>
+<property name="Explosion.BlockDamage" value="50"/>
+  <property name="Explosion.EntityDamage" value="500"/>
+  <property name="Explosion.ParticleIndex" value="1"/>
+  <property name="Explosion.RadiusBlocks" value="5"/>
+    <property name="Explosion.RadiusEntities" value="10"/>
+    <property name="Explosion.BlastPower" value="70"/>
+    <property name="FuseTime" value="20000"/>
+    <property name="ExplodeOnHit" value="true"/>
+    <property class="Action0">
+      <property name="Class" value="ThrowAway"/>
+      <property name="Delay" value="1.2"/>
+      <property name="Explosion.ParticleIndex" value="7"/>
+      <property name="Throw_strength_default" value="14"/>
+      <property name="Throw_strength_max" value="25"/>
+      <property name="Max_strain_time" value="1.5"/>
+      <property name="Sound_start" value="swoosh"/>
+    </property>
+    <property name="EconomicValue" value="41"/>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="CustomIcon" value="turd"/>
+    <property name="CustomIconTint" value="ffa0a0"/>
+  </item>
+
+  <item id="1903" name="VolatileTurd">
+    <property name="Class" value="ItemClassTimeBomb"/>
+    <property name="Material" value="organic"/>
+    <property name="Meshfile" value="Items/Crafting/clayPrefab"/>
+    <property name="HoldType" value="40"/>
+    <property name="DropScale" value="2"/>
+    <property name="ThrowableDecoy" value="true"/>
+    <property name="Stacknumber" value="50"/>
+    <property name="Explosion.BlockDamage" value="1500"/>
+    <property name="Explosion.EntityDamage" value="320"/>
+    <property name="Explosion.ParticleIndex" value="1"/>
+    <property name="Explosion.RadiusBlocks" value="25"/>
+    <property name="Explosion.RadiusEntities" value="5"/>
+    <property name="Explosion.BlastPower" value="70"/>
+    <property name="FuseTime" value="20000"/>
+    <property name="ExplodeOnHit" value="true"/>
+    <property class="Action0">
+      <property name="Class" value="ThrowAway"/>
+      <property name="Delay" value="1.2"/>
+      <property name="Explosion.ParticleIndex" value="7"/>
+      <property name="Throw_strength_default" value="14"/>
+      <property name="Throw_strength_max" value="25"/>
+      <property name="Max_strain_time" value="1.5"/>
+      <property name="Sound_start" value="swoosh"/>
+    </property>
+    <property name="EconomicValue" value="41"/>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="CustomIcon" value="turd"/>
+    <property name="CustomIconTint" value="ffa0a0"/>
+  </item>
+
+  <item id="1904" name="blobBomb">
+    <property name="Class" value="ItemClassTimeBomb"/>
+    <property name="Material" value="organic"/>
+    <property name="Meshfile" value="Items/Crafting/clayPrefab"/>
+    <property name="HoldType" value="40"/>
+    <property name="DropScale" value="2"/>
+    <property name="ThrowableDecoy" value="true"/>
+    <property name="Stacknumber" value="50"/>
+    <property name="Explosion.BlockDamage" value="5000"/>
+    <property name="Explosion.EntityDamage" value="1"/>
+    <property name="Explosion.ParticleIndex" value="1"/>
+    <property name="Explosion.RadiusBlocks" value="7"/>
+    <property name="Explosion.RadiusEntities" value="0"/>
+    <property name="Explosion.BlastPower" value="70"/>
+    <property name="FuseTime" value="20000"/>
+    <property name="ExplodeOnHit" value="true"/>
+    <property class="Action0">
+      <property name="Class" value="ThrowAway"/>
+      <property name="Delay" value="1.2"/>
+      <property name="Explosion.ParticleIndex" value="7"/>
+      <property name="Throw_strength_default" value="14"/>
+      <property name="Throw_strength_max" value="25"/>
+      <property name="Max_strain_time" value="1.5"/>
+      <property name="Sound_start" value="swoosh"/>
+    </property>
+    <property name="EconomicValue" value="41"/>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="CustomIcon" value="turd"/>
+    <property name="CustomIconTint" value="ffa0a0"/>
+  </item>
+
 </items>
