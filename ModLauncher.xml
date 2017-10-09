@@ -33,12 +33,31 @@ base 7 Days to Die game. This means that the mod is purely XML based and tries t
 			<ReleaseNotes>https://7daystodie.com/forums/showthread.php?58754-Gnamod-Ultra-Nomad-Mode-A15</ReleaseNotes>
 			<Excludes>
 				<Exclude>Gnamod Nomad A16</Exclude>
+        <Exclude>Gnamod Beta A16</Exclude>
+        <Exclude>Gnamod Specials</Exclude>
 				<Exclude>Vanilla Base</Exclude>
 			</Excludes>
 			<Downloads>
 				<Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
 			</Downloads>
 		</Server>
+
+    <Server Name="Gnamod Beta" Logo="">
+      <Description>
+Gnamod as it is being developed.
+      </Description>
+      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?58754-Gnamod-Ultra-Nomad-Mode-A15</ReleaseNotes>
+      <Excludes>
+        <Exclude>Gnamod Nomad A16</Exclude>
+        <Exclude>Gnamod Base A16</Exclude>
+        <Exclude>Gnamod Specials</Exclude>
+        <Exclude>Vanilla Base</Exclude>
+      </Excludes>
+      <Downloads>
+        <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
+      </Downloads>
+    </Server>
+    
 <!--
 		<Server Name="HordeMode" Logo="">
 			<Description>
