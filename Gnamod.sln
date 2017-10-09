@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gnamod Base A16", "Gnamod Base A16", "{368D8A8A-D2DD-4C28-8673-70E712DDEE7F}"
 EndProject
@@ -561,6 +561,40 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volatile World", "Volatile 
 		Gnamod Special\Voltatile World\biomes.xml = Gnamod Special\Voltatile World\biomes.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gnamod Beta", "Gnamod Beta", "{B3201408-CE0D-4D1F-8B11-886AD2AD9E9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{4191C850-C235-453B-9C59-8679A0F7CBCB}"
+	ProjectSection(SolutionItems) = preProject
+		Gnamod Beta A16\Config\biomes.xml = Gnamod Beta A16\Config\biomes.xml
+		Gnamod Beta A16\Config\blocks.xml = Gnamod Beta A16\Config\blocks.xml
+		Gnamod Beta A16\Config\buffs.xml = Gnamod Beta A16\Config\buffs.xml
+		Gnamod Beta A16\Config\entityclasses.xml = Gnamod Beta A16\Config\entityclasses.xml
+		Gnamod Beta A16\Config\entitygroups.xml = Gnamod Beta A16\Config\entitygroups.xml
+		Gnamod Beta A16\Config\items.xml = Gnamod Beta A16\Config\items.xml
+		Gnamod Beta A16\Config\Localization.txt = Gnamod Beta A16\Config\Localization.txt
+		Gnamod Beta A16\Config\loot.xml = Gnamod Beta A16\Config\loot.xml
+		Gnamod Beta A16\Config\quests.xml = Gnamod Beta A16\Config\quests.xml
+		Gnamod Beta A16\Config\recipes.xml = Gnamod Beta A16\Config\recipes.xml
+		Gnamod Beta A16\Config\rwgmixer.xml = Gnamod Beta A16\Config\rwgmixer.xml
+		Gnamod Beta A16\Config\sounds.xml = Gnamod Beta A16\Config\sounds.xml
+		Gnamod Beta A16\Config\spawning.xml = Gnamod Beta A16\Config\spawning.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{0D2EA3D2-371A-441C-86B3-B033FA37B201}"
+	ProjectSection(SolutionItems) = preProject
+		Gnamod Beta A16\Prefabs\cabin_snow_hidden_01.xml = Gnamod Beta A16\Prefabs\cabin_snow_hidden_01.xml
+		Gnamod Beta A16\Prefabs\cave_01.xml = Gnamod Beta A16\Prefabs\cave_01.xml
+		Gnamod Beta A16\Prefabs\cave_02.xml = Gnamod Beta A16\Prefabs\cave_02.xml
+		Gnamod Beta A16\Prefabs\cave_03.xml = Gnamod Beta A16\Prefabs\cave_03.xml
+		Gnamod Beta A16\Prefabs\cave_04.xml = Gnamod Beta A16\Prefabs\cave_04.xml
+		Gnamod Beta A16\Prefabs\settlement_01.xml = Gnamod Beta A16\Prefabs\settlement_01.xml
+		Gnamod Beta A16\Prefabs\settlement_trader_01.xml = Gnamod Beta A16\Prefabs\settlement_trader_01.xml
+		Gnamod Beta A16\Prefabs\settlement_trader_02.xml = Gnamod Beta A16\Prefabs\settlement_trader_02.xml
+		Gnamod Beta A16\Prefabs\settlement_trader_03.xml = Gnamod Beta A16\Prefabs\settlement_trader_03.xml
+		Gnamod Beta A16\Prefabs\settlement_trader_04.xml = Gnamod Beta A16\Prefabs\settlement_trader_04.xml
+		Gnamod Beta A16\Prefabs\settlement_trader_05.xml = Gnamod Beta A16\Prefabs\settlement_trader_05.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -572,6 +606,8 @@ Global
 		{10763CE2-2BA8-4D4A-8DAF-D8853DC27287} = {8CB5D6AD-B6E1-4AF3-9788-430D41710431}
 		{C4CCF6DF-B19A-4E06-8EA1-11A14517868A} = {5EBD9E26-A46B-40C1-8A48-0BAAA2554CA3}
 		{DAFC5504-3A29-4551-B917-0FC330F6DF18} = {5EBD9E26-A46B-40C1-8A48-0BAAA2554CA3}
+		{4191C850-C235-453B-9C59-8679A0F7CBCB} = {B3201408-CE0D-4D1F-8B11-886AD2AD9E9F}
+		{0D2EA3D2-371A-441C-86B3-B033FA37B201} = {B3201408-CE0D-4D1F-8B11-886AD2AD9E9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}
