@@ -23,20 +23,24 @@ Server Name=""
   link in the list after the first link.
 ********************************************************************************************************************** -->
 <Servers>
-	<ServerGroup Name="Gnamod" Logo="" Description="Haidrgna Gnamod Mods with various combinations!">
+	<ServerGroup Name="Gnamod" Logo="" Description="Haidrgna Gnamod Alpha 16 Mods! Here you will find all Gnamod mods that come out for Alpha 16.">
 		<Server Name="Gnamod" Logo="">
 			<Description>
 Welcome Survivors to Gnamod,
 So what is Gnamod exactly? That is hard to explain in a short sentence, but I will give it a try: Gnamod is a collection of mods that aims to enhance the ' Vanilla' Experience of the 
 base 7 Days to Die game. This means that the mod is purely XML based and tries to remain as close as possible to the survival gameplay that the game already offers.
 			</Description>
-			<ReleaseNotes>https://7daystodie.com/forums/showthread.php?58754-Gnamod-Ultra-Nomad-Mode-A15</ReleaseNotes>
+			<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 			<Excludes>
 				<Exclude>Gnamod Nomad A16</Exclude>
         <Exclude>Gnamod Beta A16</Exclude>
-        <Exclude>Gnamod Specials</Exclude>
+        <Exclude>Gnamod Special</Exclude>
 				<Exclude>Vanilla Base</Exclude>
-			</Excludes>
+        <Exclude>.gitattributes</Exclude>
+        <Exclude>.gitignore</Exclude>
+        <Exclude>Gnamod.sln</Exclude>
+        <Exclude>ModLauncher.xml</Exclude>
+      </Excludes>
 			<Downloads>
 				<Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
 			</Downloads>
@@ -44,17 +48,36 @@ base 7 Days to Die game. This means that the mod is purely XML based and tries t
 
     <Server Name="Gnamod Beta" Logo="">
       <Description>
-Gnamod as it is being developed.
+Gnamod as it is being developed, this version is the current work and thus may contain unfinished stuff or things that are not working (yet). 
+This version currently comes with a flat world for building and testing.
       </Description>
-      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?58754-Gnamod-Ultra-Nomad-Mode-A15</ReleaseNotes>
+      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
       <Excludes>
         <Exclude>Gnamod Nomad A16</Exclude>
         <Exclude>Gnamod Base A16</Exclude>
-        <Exclude>Gnamod Specials</Exclude>
+        <Exclude>Gnamod Special</Exclude>
         <Exclude>Vanilla Base</Exclude>
+        <Exclude>.gitattributes</Exclude>
+        <Exclude>.gitignore</Exclude>
+        <Exclude>Gnamod.sln</Exclude>
+        <Exclude>ModLauncher.xml</Exclude>
       </Excludes>
       <Downloads>
         <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
+      </Downloads>
+    </Server>
+
+    <Server Name="Gnamod Clientversion" Logo="">
+      <Description>
+        If you are joining a server that runs any version of Gnamod you can also install this light version that will make sure all names show up properly.
+      </Description>
+      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+      <Excludes>
+      </Excludes>
+      <Downloads>
+        <Download>
+          <Download>https://raw.githubusercontent.com/haidrgna/Gnamod/master/Gnamod%20Base%20A16/Config/localization.txt</Download>
+        </Download>
       </Downloads>
     </Server>
     
