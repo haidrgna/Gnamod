@@ -69,16 +69,25 @@
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.50"> <!-- Desolate Space -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="snow">       <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="snow">         <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
-
+  
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="snow">         <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.0018"/>
@@ -100,16 +109,25 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="snow">       <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->  
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.18"/>
@@ -169,16 +187,25 @@
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.50"> <!-- Pine Forest -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="forestGround"> <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.02"/>
@@ -223,16 +250,25 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="snow">       <resource blockname="forestGround"      cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="snow">             <resource blockname="forestGround"      cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="snow">             <resource blockname="forestGround"      cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.14"/>
@@ -307,16 +343,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.20"> <!-- Open Space -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.45"/>
@@ -360,16 +405,25 @@
 </subbiome>
 
 <subbiome prob="0.30"> <!-- Birch Cluster -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.17"/>
@@ -413,15 +467,23 @@
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.30"/>
@@ -499,16 +561,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.30"> <!-- Rock Cluster -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.22"/>
@@ -550,16 +621,25 @@
 </subbiome>
   
 <subbiome prob="0.10"> <!-- Corn Plains -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="plainsGround"> <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.18"/>
@@ -583,16 +663,25 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.40"/>
@@ -666,15 +755,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.30"> <!-- Open Space -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">        <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.25"/>
@@ -716,15 +815,25 @@
 </subbiome>
   
 <subbiome prob="0.10"> <!-- Dead Trees -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="forestGround"> <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="forestGround">   <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="forestGround"> <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
@@ -747,15 +856,23 @@
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">        <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
@@ -832,16 +949,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.20"> <!-- Clustered Cacti -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="desertGround">     <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="sandStone">        <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clayInSandstone">  <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.10"/>
@@ -866,16 +992,25 @@
 </subbiome>
   
 <subbiome prob="0.20"> <!-- Desolate -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="desertGround">     <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="sandStone">        <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clayInSandstone">  <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.0010"/>
@@ -892,15 +1027,23 @@
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="desertGround">     <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="sandStone">        <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clayInSandstone">  <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="desertGround">       <resource blockname="plainsGround"      cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.25"/>
@@ -972,16 +1115,25 @@
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="58" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="grass">      <resource blockname="dirt"              cluster="0" prob="0.25"   rwgGenerationType="all"/> <resource blockname="sand"     cluster="1" prob="0.35"   rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">       <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">       <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="*"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="2"  blockname="stone">      <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="1"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.25"   rwgGenerationType="all"/> <resource blockname="sand"     cluster="1" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="58" blockname="water" />
+<layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.25"   rwgGenerationType="all"/> <resource blockname="sand"     cluster="1" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.15" />
@@ -1056,15 +1208,24 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.40"> <!-- Dead Plains -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="plainsGround"> <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1109,16 +1270,25 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="plainsGround"      cluster="1" prob="0.3"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.09"/>
@@ -1220,15 +1390,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.20"> <!-- Dead Pine Forest -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.07" rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.07" rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+  
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.07" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.07"/>
@@ -1261,15 +1441,25 @@
 </subbiome> 
   
 <subbiome prob="0.15"> <!-- Buildings -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+
 <decorations>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootBurntForestHelper"                prob="0.0035"/>
@@ -1290,16 +1480,25 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"    rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.09" rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.09" rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> <resource blockname="fertilizedFarmland" cluster="1" prob="0.09" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.04"/>
@@ -1391,15 +1590,24 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
+
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1508,16 +1716,25 @@
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.40"> <!-- Buildings -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.0025"/>
@@ -1566,16 +1783,25 @@
 </subbiome>
     
 <subbiome prob="0.05"> <!-- Desolate -->
+<!-- Gnamod Base -->
 <layers>
-<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.05"/>
@@ -1627,15 +1853,23 @@
 </subbiome>     
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<!-- Grass Layer    --> <layer depth="2"  blockname="destroyedStone"> <resource blockname="concrete"          cluster="0" prob="0.10"    rwgGenerationType="all"/> </layer>
-<!-- Dirt Layer     --> <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Clay Layer     --> <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<!-- Stone Layer    --> <layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<!-- Granite Layer  --> <layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<!-- End Layer      --> <layer depth="2"  blockname="stone"/>
-<!-- Bedrock Layer  --> <layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.10"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
 </layers>
 
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.10"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.025"/>
@@ -1709,7 +1943,7 @@
 </decorations>
 
 <terrain class="Wasteland" />
-<spectrum name="wasteland" />
+<spectrum name="plains" />
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED FOREST BIOME      +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
 <biome name="wasteland_hub" biomemapcolor="#a0a0a0" >
