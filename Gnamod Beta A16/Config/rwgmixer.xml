@@ -622,13 +622,13 @@
 <terrain_generator                        name="gnamodBase" use_old_final="false">
 
 <!-- Main Landscape -->
-<module name="Base"              type="FastBillow" seed_additive="1">
+<module name="Base"                       type="FastBillow" seed_additive="1">
 <property name="frequency"                value="0.035"/>
 </module>
 
-<module name="BaseFilter"               type="ScaleBiasOutput">
+<module name="BaseFilter"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Base"/>
-<property name="scale"                    value="0.03"/>
+<property name="scale"                    value="0.02"/>
 <property name="bias"                     value="0.05"/>  
 </module>
 
@@ -662,7 +662,7 @@
 
 <module name="LakeDeltaMod"               type="ScaleBiasOutput">
 <property name="sourceModule"             value="LakeDeltaBase"/>
-<property name="scale"                    value="0.42"/>
+<property name="scale"                    value="0.22"/>
 <property name="bias"                     value="0.40"/>
 </module>
 
@@ -698,8 +698,8 @@
 
 <module name="ContinentsMod"              type="ScaleBiasOutput">
 <property name="sourceModule"             value="ContinentsBase"/>
-<property name="scale"                    value="0.42"/>
-<property name="bias"                     value="0.25"/>  
+<property name="scale"                    value="0.22"/>
+<property name="bias"                     value="0.15"/>  
 </module>
 
 <module name="Continents"                 type="FastTurbulence">
@@ -801,11 +801,11 @@
   
 <!-- Final Selecting -->
 <module name="Final"                      type="Select">
-<property name="controlModule"            value="Selecting"/>
+<property name="controlModule"            value="WorldBase"/>
 <property name="sourceModule1"            value="WorldBase"/>
-<property name="sourceModule2"            value="CraterLakes"/>
+<property name="sourceModule2"            value="Selecting"/>
 <property name="sourceModule3"            value="Continents"/>
-<property name="sourceModule4"            value="WorldBase"/>
+<property name="sourceModule4"            value="RockyRiver"/>
 <property name="sourceModule5"            value="WorldBase"/>
 <property name="sourceModule6"            value="WorldBase"/>
 <property name="sourceModule7"            value="Continents"/>
