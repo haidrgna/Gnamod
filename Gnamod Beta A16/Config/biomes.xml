@@ -614,9 +614,18 @@
 <decoration type="block" blockname="rockResource"                         prob="0.0075"/>
 <decoration type="block" blockname="rockResource02"                       prob="0.0075"/>
 <!-- Prefabs -->
-<decoration type="prefab" name="rock_form02"                              prob="0.001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.01"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.005"/>
+<decoration type="prefab" name="resource_lead_pile"                       prob="0.00035"/>
+
+<decoration type="prefab" name="campsite_01"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_02"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_03"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_04"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_06"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_06a"                             prob="0.01"/>
+<decoration type="prefab" name="campsite_07"                              prob="0.01"/>
+<decoration type="prefab" name="campsite_07a"                             prob="0.01"/>  
 </decorations>
 </subbiome>
   
@@ -1852,6 +1861,7 @@
 </decorations>
 </subbiome>     
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.10"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>

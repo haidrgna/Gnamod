@@ -1,28 +1,3 @@
-<!--
-	Quest format description:
-
-	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
-
-	id = ID used for the quest
-	name_key - localization key for the quest used when displayed in the quest list.
-	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
-	description_key = localization key for the description displayed in the description window.
-	offer_key = localization key for the offer window description.
-	icon = icon shown in the quest list and on the tracker.
-	category_key = localization key for the category type (quest,challenge)
-	difficulty = (veryeasy, easy, medium, hard, insane )
-
-	Alternative settings for custom quest creation:
-
-	name - quest name without localization.
-	subtitle - sub name without localization.
-	description - description without localization.
-	offer - offer without localization.
-	group_name - quest chain name without localization.
-	category - category type without localization.
-
--->
-
 <quests>  
 	<!-- Basic Survival 1 - Craft a Stone Axe /> -->
     <quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle="Craft a Stone Axe" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_BasicSurvival_offer" >
@@ -341,23 +316,12 @@
 	</quest>
 
 <!-- Gnamod Quests-->
-
-  <!--
-  
-  	name - quest name without localization.
-	subtitle - sub name without localization.
-	description - description without localization.
-	offer - offer without localization.
-	group_name - quest chain name without localization.
-	category - category type without localization.
-  -->
-
 <!-- Default Starting Quest Givers -->
-<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1x" group_name_key="quest_BasicSurvival" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod." 
 offer="Welcome to Gnamod!"
-icon="ui_game_symbol_hammer">
+icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <!-- Rewards -->
 <reward type="Item"           id="bottledWater"             value="1"/>
 <reward type="Item"           id="canChicken"               value="1"/>
@@ -379,31 +343,45 @@ icon="ui_game_symbol_hammer">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>    
 
-<quest id="quest_BasicSurvival1z" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1z" group_name="Gnamod" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the hard start." 
 offer="Welcome to Gnamod!"
-icon="ui_game_symbol_hammer">
+icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
+</quest>      
+
+<!-- Nomad Mode -->
+<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" category_key="quest"
+name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
+description="Welcome to Gnamod. This is the nomad mode start." 
+offer="Welcome to Gnamod!"
+icon="ui_game_symbol_hammer" difficulty="veryeasy">
+<!-- Rewards -->
+<reward type="Item"           id="bottledWater"             value="1"/>
+<reward type="Item"           id="canChicken"               value="1"/>
+<reward type="Item"           id="firstAidBandage"          value="2"/>
+<reward type="Item"           id="painkillers"              value="1"/>
+<reward type="Item"           id="q_GnamodNomad"            value="1"/>
 </quest>      
   
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->
 <quest id="quest_GnamodExpert" group_name="Seven Days to Live" category="quest"
 name="Gnamod Expert"  subtitle="You dont need a survival guide! (But you still get the rewards.)" 
 description="This is the option to skip the tutorial if you do not need any." 
-offer="Hello Survivor, \nYou choose to skip the tutorial of Gnamod, I hope you know what you are doing! \nGood Luck Survivor!" 
-icon="ui_game_symbol_map_house">
+offer="Hello Survivor, \nYou choose to skip the tutorial of Gnamod, I hope you know what you are doing! \nGood Luck Survivor!"
+icon="ui_game_symbol_map_house" difficulty="hard">
 <!-- Rewards -->
 <reward type="SkillPoints"                                  value="10" />
 <reward type="Item"           id="keystoneBlock"            value="1" />
 </quest>  
   
-<!-- New Basis Survival -->
+<!-- New Basic Survival -->
 <quest id="quest_GnamodBasic1" group_name="Seven Days to Live" category="quest"
 name="Getting Started"  subtitle="Basic Materials and Tools" 
 description="The first thing you need to do is gather the most basic materials from around you, materials that if you look carefully can be found almost everywhere: Wood, Plant Fibers, Stone and Feathers. Look for birdnests on the ground as they may contain feathers you need to fletch arrows from. The following instructions will teach you how to craft basic tools and weapons from these materials, tools you will need if you want to gather larger quantities of these materials." 
 offer="Hello Survivor, \nIt seems you been fortunate enough to find my 'Seven Days to Live' guide on surviving in the wilds. As you may already know the wilds harbor countless dangers and it is important to use your surroundings. \nThis book will teach you everything you need to know to survive the first seven days. This first chapter is all about surviving your first day.\n\nGood Luck Survivor!"
-icon="ui_game_symbol_hammer">
+icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <action type="TrackQuest" />
 <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="yuccaFibers"              value="15"/>
@@ -421,8 +399,8 @@ icon="ui_game_symbol_hammer">
 
 <quest id="quest_GnamodBasic2" group_name="Seven Days to Live" category="quest"
 name="Resource Gathering"  subtitle="Gather Additional Resources." 
-description="Now that you have your basic tools and weapons made you will need to gather some more basic materials using these tools. For the next assignments you will need these materials. You can gather cloth from cotton plants, but also by harvesting cloth items you might encounter such as curtains, couches or bags." 
-icon="ui_game_symbol_hammer">
+description="Now that you have your basic tools and weapons made you will need to gather some more basic materials using these tools. For the next assignments you will need these materials. You can gather cloth from cotton plants, but also by harvesting cloth items you might encounter such as curtains, couches or bags."
+icon="ui_game_symbol_hammer" difficulty="easy">
 <action type="TrackQuest" />
 <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="yuccaFibers"              value="100"/>
@@ -440,8 +418,8 @@ icon="ui_game_symbol_hammer">
 
 <quest id="quest_GnamodBasic3" group_name="Seven Days to Live" category="quest"
 name="Tailoring"  subtitle="Making some clothes and a bedroll" 
-description="In order to survive out there you need to start making yourself some clothes to protect yourself against the weather and a bedroll. You probably need to gather more plant fibers to make everything. The instructions on the next page will teach you how to use fiber and cloth to make some clothes, they also show you how to make a basic bedroll to keep you warm at night." 
-icon="ui_game_symbol_tailoring">
+description="In order to survive out there you need to start making yourself some clothes to protect yourself against the weather and a bedroll. You probably need to gather more plant fibers to make everything. The instructions on the next page will teach you how to use fiber and cloth to make some clothes, they also show you how to make a basic bedroll to keep you warm at night."
+icon="ui_game_symbol_tailoring" difficulty="medium">
 <!-- Crafting -->
 <objective type="Craft"       id="bedroll"                  value="1"/>  
 <objective type="Craft"       id="plantFiberPants"          value="1"/>
@@ -456,8 +434,8 @@ icon="ui_game_symbol_tailoring">
 
 <quest id="quest_GnamodBasic4" group_name="Seven Days to Live" category="quest"
 name="Some Protection"  subtitle="Making a set of basic armor" 
-description="The simple clothes you made can be upgraded with cloth into armor and you can make some additional armor pieces that can be worn over basic clothing. You probably need to gather additional cloth to make everything. The instructions on the next page will teach you how to make cloth armor." 
-icon="ui_game_symbol_tailoring"> 
+description="The simple clothes you made can be upgraded with cloth into armor and you can make some additional armor pieces that can be worn over basic clothing. You probably need to gather additional cloth to make everything. The instructions on the next page will teach you how to make cloth armor."
+icon="ui_game_symbol_tailoring" difficulty="medium">
 <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="cloth"                    value="70"/>  
 <!-- Crafting -->
@@ -475,9 +453,9 @@ icon="ui_game_symbol_tailoring">
 
 <quest id="quest_GnamodBasic5" group_name="Seven Days to Live" category="quest"
 name="Hunting and Gathering"  subtitle="Learning how to gather your food" 
-description="Now that you are equipped it is time to learn how to hunt and gather your food. For this you will need to gather some feathers and eggs from nests and then make arrows for your bow. You can use the bow to kill animals and then use your stone axe to gather their flesh and bones. From these bones you can make a shiv which you can use to carve up animals more efficiently and thus gaining more usable resources." 
-icon="ui_game_symbol_archery">
-<!-- Resource Gathering -->
+description="Now that you are equipped it is time to learn how to hunt and gather your food. For this you will need to gather some feathers and eggs from nests and then make arrows for your bow. You can use the bow to kill animals and then use your stone axe to gather their flesh and bones. From these bones you can make a shiv which you can use to carve up animals more efficiently and thus gaining more usable resources."
+icon="ui_game_symbol_archery" difficulty="medium">
+  <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="egg"                      value="4"/>
 <objective type="FetchKeep"   id="rawMeat"                  value="5"/>
 <objective type="FetchKeep"   id="animalFat"                value="5"/>
@@ -493,8 +471,8 @@ icon="ui_game_symbol_archery">
 
 <quest id="quest_GnamodBasic6" group_name="Seven Days to Live" category="quest"
 name="Making Fire"  subtitle="Making fire, light and using it to cook" 
-description="After you have spend nearly most of the morning and afternoon hunting and gathering it is now time to learn how to make a campfire and use it to cook your food and boil your water. You will need to scavenge some cans from any source of trash or by eating the contents. Cans are the best basic way to cook your water and meat until you find a real pot. You can fill cans at any water source or dig up snow if you can fin any. Place your campfire somewhere safe and perhaps your bedroll close to it. Later on this book will teach you more about creating shelters." 
-icon="ui_game_symbol_campfire">
+description="After you have spend nearly most of the morning and afternoon hunting and gathering it is now time to learn how to make a campfire and use it to cook your food and boil your water. You will need to scavenge some cans from any source of trash or by eating the contents. Cans are the best basic way to cook your water and meat until you find a real pot. You can fill cans at any water source or dig up snow if you can fin any. Place your campfire somewhere safe and perhaps your bedroll close to it. Later on this book will teach you more about creating shelters."
+icon="ui_game_symbol_campfire" difficulty="medium">
 <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="canEmpty"                 value="5"/>
 <objective type="FetchKeep"   id="canMurkyWater"            value="5"/>
@@ -512,8 +490,8 @@ icon="ui_game_symbol_campfire">
 
 <quest id="quest_GnamodBasic7" group_name="Seven Days to Live" category="quest"
 name="Taking Shelter"  subtitle="Finding shelter for the night" 
-description="With your belly filled and the power of fire in your hand to light the way it is time to find shelter for the night. The following instructions will teach you how to create basic building materials from wood around your campsite. You will need to scavenge some nails in order to create sturdy door and chest to stash your findings. You could also try and find an abandoned building nearby and use the building materials described here to repair it instead. Do not forget to take your bedroll and place it in this new shelter." 
-icon="ui_game_symbol_map_house">
+description="With your belly filled and the power of fire in your hand to light the way it is time to find shelter for the night. The following instructions will teach you how to create basic building materials from wood around your campsite. You will need to scavenge some nails in order to create sturdy door and chest to stash your findings. You could also try and find an abandoned building nearby and use the building materials described here to repair it instead. Do not forget to take your bedroll and place it in this new shelter."
+icon="ui_game_symbol_map_house" difficulty="medium">
 <!-- Resource Gathering -->
 <objective type="FetchKeep"   id="nail"                     value="8"/>
 <objective type="FetchKeep"   id="wood"                     value="500"/>
@@ -530,4 +508,79 @@ icon="ui_game_symbol_map_house">
 <reward type="Quest"          id="quest_whiteRiverCitizen1" stage="aftercomplete"/>
 </quest>
 
+<!-- Gnamod Nomad Mode -->
+<quest id="quest_GnamodNomad1" group_name="Nomading Around" category="quest"
+name="Getting Equipped 1"  subtitle="Grabbing the bag" 
+description="The wilds can be a dangerous place, but recently the zombies have become more agressive and started to hunt us survivors. I have left you this backpack with the gear we could spare, but we had to leave without you. We drew the horde away from you as much as we could and we will leave a trail of supplies behind should you decide to try and catch up with us." 
+offer="Hello Survivor, \nIt seems we had to leave you behind because you were in to bad a shape to move. You suffered a bad wound to the head and hopefully it did not affect your memory. We left you this backpack with gear in the hope that when you find this note you can make your way to us. \n\nGood Luck \n         -Ducky"
+icon="ui_game_symbol_treasure" difficulty="veryeasy">
+<action type="TrackQuest"/>
+
+<!-- Rewards -->
+<reward type="Item"           id="StartingKit"              value="1"/>
+<reward type="Quest"          id="quest_GnamodNomad2"/>
+</quest>
+
+<!-- Gnamod Nomad Mode -->
+<quest id="quest_GnamodNomad2" group_name="Nomading Around" category="quest"
+name="Getting Equipped 2"  subtitle="Taking out the gear" 
+description="The wilds can be a dangerous place, but recently the zombies have become more agressive and started to hunt us survivors. I have left you this backpack with the gear we could spare, but we had to leave without you. We drew the horde away from you as much as we could and we will leave a trail of supplies behind should you decide to try and catch up with us." 
+icon="ui_game_symbol_treasure" difficulty="veryeasy">
+<!-- Block Placement-->
+<objective type="BlockPlace"  id="StartingKit"              value="1"/>
+
+<!-- Rewards -->
+<reward type="SkillPoints"                                  value="10"/>
+<reward type="Quest"          id="quest_GnamodNomad3"/>
+</quest>  
+  
+<quest id="quest_GnamodNomad3" group_name="Nomading Around" category="quest"
+name="Finding the trail"  subtitle="Finding the hidden cache" 
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+  
+<objective type="TreasureChest" id="treasureChestNomad" value="500-1000"/>
+  
+<!-- Rewards -->
+<reward type="Item"           id="q_GnamodNomadTrail"       value="1"/>
+<reward type="SkillPoints"                                  value="3"/>
+</quest>
+
+<quest id="quest_GnamodNomadTrail" group_name="The Nomad Trail" category="quest"
+name="Following the trail"  subtitle="Finding the hidden cache" 
+description="You have found the box of stuff I buried, on this note I have marked our next goal. If we have made it you will find another box buried there. Good Luck."
+icon="ui_game_symbol_treasure" difficulty="hard">
+  
+<objective type="TreasureChest" id="treasureChestNomad" value="1000-1500"/>
+  
+<!-- Rewards -->
+<reward type="Item"           id="q_GnamodNomadTrail"       value="1"/>
+<reward type="SkillPoints"                                  value="3"/>
+</quest>  
+  
 </quests>
+
+<!--
+	Quest format description:
+
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
+
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+
+-->

@@ -16013,105 +16013,83 @@ kind of free
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
 
-<!-- GNAMOD NOMAD MODE -->
+<!-- Gnamod Blocks -->
 
-<block id="2031" name="PlaceAndBreakOpen">
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="DowngradeBlock" value="StartingKit" />
-	<property name="CustomIcon" value="cntBackpack01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="0" />
+<block id="2031" name="StartingKit">
+<property name="Material" value="cloth" />
+<property name="StabilitySupport" value="false" />
+<property name="Shape" value="Ext3dModel" />
+<property name="Mesh" value="models" />
+<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
+<property name="IsTerrainDecoration" value="true" />
+<property name="DowngradeBlock" value="StartingKitSelector" />
+<property name="CustomIcon" value="cntBackpack01" />
+<property name="DescriptionKey" value="StartingKit1Desc"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="StartingKitSelector"/>
+<property name="PlantGrowing.GrowthRate" value="0.005"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<drop event="Destroy" name="cloth" count="0" />
 </block>
 
-<block id="2032" name="PlaceAndBreakOpen1">
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="DowngradeBlock" value="StartingKitSelector" />
-	<property name="CustomIcon" value="cntBackpack01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="0" />
+<block id="2032" name="StartingKitSelector">
+<property name="CreativeMode" value="Dev"/>
+<property name="Material" value="cloth" />
+<property name="StabilitySupport" value="false" />
+<property name="Shape" value="Ext3dModel" />
+<property name="Mesh" value="models" />
+<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
+<property name="IsTerrainDecoration" value="true" />
+<drop event="Destroy" name="cloth" count="0" />
 </block>
 
-<block id="2033" name="StartingKitSelector">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Destroy" name="cloth" count="0" />
+<block id="2033" name="StartingKitBase">
+<property name="CreativeMode" value="Dev"/>
+<property name="Class" value="Loot" />
+<property name="Material" value="cloth" />
+<property name="StabilitySupport" value="false" />
+<property name="Shape" value="Ext3dModel" />
+<property name="Mesh" value="models" />
+<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
+<property name="IsTerrainDecoration" value="true" />
+<property name="LootList" value="151" />
+<property name="CustomIcon" value="cntBackpack01" />
+<property name="DescriptionKey" value="StartingKit1Desc"/>
+<drop event="Destroy" name="cloth" count="3" />
 </block>
 
-<block id="2034" name="StartingKit">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Loot" />
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="LootList" value="151" />
-	<property name="CustomIcon" value="cntBackpack01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="3" />
+<block id="2034" name="StartingKitLucky">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="152"/>
+<property name="CustomIcon" value="cntBackpack01"/>
+<drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-<block id="2035" name="StartingKitBase">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Loot" />
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="LootList" value="152" />
-	<property name="CustomIcon" value="cntBackpack01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="3" />
+<block id="2035" name="StartingKitUnlucky">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="153"/>
+<property name="CustomIcon" value="cntBackpack01"/>
+<drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-<block id="2036" name="StartingKitLucky">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Loot" />
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="LootList" value="153" />
-	<property name="CustomIcon" value="cntDuffle01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="3" />
+<block id="2036" name="treasureChestNomad">
+<property name="Class" value="Loot"/>
+<property name="CustomIcon" value="cntChest01"/>
+<property name="Material" value="wood+wood"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+<property name="Mesh" value="models"/>
+<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="LootList" value="151"/>
+<drop event="Destroy" name="wood" count="1,3"/>
+<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
-<block id="2037" name="StartingKitUnlucky">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Loot" />
-	<property name="Material" value="cloth" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
-	<property name="Model" value="LootContainers/backpack02" param1="main_mesh" />
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="LootList" value="154" />
-	<property name="CustomIcon" value="cntBackpack01" />
-	<property name="DescriptionKey" value="StartingKit1Desc"/>
-	<drop event="Destroy" name="cloth" count="3" />
-</block>
-
+  
 <block id="2041" name="glassShowerRamp">
 	<property name="Material" value="glass"/>
 	<property name="Shape" value="New"/>

@@ -6966,14 +6966,9 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<!-- Gnamod Basic Quests -->
-<item id="1161" name="q_GnamodBasic"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
-<property class="Action1">  <property name="QuestGiven" value="quest_GnamodBasic1"/> </property>
-</item>  
-
-<item id="1162" name="q_GnamodExpert"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
-<property class="Action1">  <property name="QuestGiven" value="quest_GnamodExpert"/> </property>
-</item>    
+  
+  
+  
   
 <item id="1180" name="qc_silenceofthelambs">
 	<property name="Extends" value="challengeQuestMaster"/>
@@ -10880,5 +10875,22 @@ Mesh files no longer used:
     <property name="CraftingSkillGroup" value="craftSkillGuns"/>
     <property name="RepairExpMultiplier" value="10.8"/>
   </item>  
+  
+<!-- Gnamod Quest Items -->
+<item id="1651" name="q_GnamodBasic"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodBasic1"/> </property>
+</item>
+
+<item id="1652" name="q_GnamodExpert"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodExpert"/> </property>
+</item>
+
+<item id="1653" name="q_GnamodNomad"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodNomad1"/> </property>
+</item>
+  
+<item id="1654" name="q_GnamodNomadTrail"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodNomadTrail"/> </property>
+</item>
   
 </items>
