@@ -2,7 +2,7 @@
 <rwgmixer><world ruleset="nomad" />
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="3000"  cell_offset="0" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="2000"  cell_offset="0" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
 <!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="750"   cell_offset="1" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="750"   cell_offset="1" generation_distance="7500"   terrain_generator="necropolis" biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1200"  cell_offset="0" generation_distance="3000"   terrain_generator="necropolis" biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
@@ -11,7 +11,7 @@
 <!-- Cell Rules (Big chunks of the map with a hub near the center. Biggest city size = 1500) -->
 <cell_rules>
 <cell_rule name="default">  
-<cave_count value="4,8"/> <path_material value="asphalt" /> <path_radius value="10"/>
+<cave_count value="4,8"/> <path_material value="asphalt" /> <path_radius value="11"/>
 <hub_rule name="townSmall" prob="0.1"/>
 <hub_rule name="townLarge" prob="0.1"/>
 <hub_rule name="citySmall" prob="0.3"/>
@@ -21,10 +21,11 @@
 <wilderness_rule name="wildernessDefault"/>
 </cell_rule>
 <cell_rule name="test">  
-<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="10"/>
+<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
 <hub_rule name="ruralTiny"  prob="1"/>
 <hub_rule name="ruralSmall" prob="0"/>
 <hub_rule name="ruralLarge" prob="0"/>
+<hub_rule name="townTiny"   prob="0"/>
 <hub_rule name="townSmall"  prob="0"/>
 <hub_rule name="townLarge"  prob="0"/>
 <hub_rule name="citySmall"  prob="0"/>
@@ -34,23 +35,25 @@
 </cell_rule>
 
 <cell_rule name="nomadHub">  
-<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="10"/>
-<hub_rule name="ruralTiny"  prob="0.89"/>
-<hub_rule name="ruralSmall" prob="0.02"/>
-<hub_rule name="ruralLarge" prob="0.02"/>
-<hub_rule name="townSmall"  prob="0.02"/>
-<hub_rule name="townLarge"  prob="0.02"/>
-<hub_rule name="citySmall"  prob="0.02"/>
-<hub_rule name="cityLarge"  prob="0.01"/>
+<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_rule name="ruralTiny"  prob="0.04"/>
+<hub_rule name="ruralSmall" prob="0.04"/>
+<hub_rule name="ruralLarge" prob="0.04"/>
+<hub_rule name="townTiny"   prob="0.75"/>
+<hub_rule name="townSmall"  prob="0.04"/>
+<hub_rule name="townLarge"  prob="0.04"/>
+<hub_rule name="citySmall"  prob="0.03"/>
+<hub_rule name="cityLarge"  prob="0.02"/>
 <hub_rule name="cityHuge"   prob="0"/>
 <wilderness_rule name="wildernessNomad"/>
 </cell_rule>  
   
 <cell_rule name="necropolisHub">  
-<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="10"/>
-<hub_rule name="ruralTiny"  prob="0.9"/>
+<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_rule name="ruralTiny"  prob="0.02"/>
 <hub_rule name="ruralSmall" prob="0.02"/>
 <hub_rule name="ruralLarge" prob="0.02"/>
+<hub_rule name="townTiny"   prob="0.88"/>
 <hub_rule name="townSmall"  prob="0.02"/>
 <hub_rule name="townLarge"  prob="0.02"/>
 <hub_rule name="citySmall"  prob="0.02"/>
@@ -64,7 +67,7 @@
 <!-- Hub Rules (Cities & Towns at center of a Cell)-->
 <hub_rules>
 <hub_rule name="ruralTiny"> <!-- Tiny Rural Hub -->
-<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="10" />
+<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="default"/> <street_gen level="5" length_multiplier="4">
 
 <axiom value="[FF][-FF]"/>  
@@ -88,7 +91,7 @@
 </hub_rule>
   
 <hub_rule name="ruralSmall"> <!-- Normal Rural Hub -->
-<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="10" />
+<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="default"/> <street_gen level="10" length_multiplier="4">
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
@@ -101,7 +104,7 @@
 </hub_rule>
 
 <hub_rule name="ruralLarge"> <!-- Large Rural Hub -->
-<hub_type value="rural"/> <width value="250, 300" />  <height value="250, 300" /> <path_material value="asphalt" /> <path_radius value="10" />
+<hub_type value="rural"/> <width value="250, 300" />  <height value="250, 300" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="default"/> <street_gen level="15" length_multiplier="4">
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
@@ -113,9 +116,33 @@
 </street_gen>
 </hub_rule>
 
+<hub_rule name="townTiny"> <!-- Tiny Town Hub -->
+<hub_type value="town"/>  <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="15" length_multiplier="4">
+
+<axiom value="[FF][-FF]"/>  
+<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>          <!-- Draws 2 rectngls side by side -->
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>             <!-- Draws 2 boxes side by side -->
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>                      <!-- Draws cross street -->
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>                            <!-- draw T section LFT -->
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>                             <!-- draw T section RT-->
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>                           <!-- draw T section -->
+<rule char="H" replace_with="F[F]-[FF*]"/>                                  <!-- LFT Turn-->
+<rule char="Z" replace_with="F[F]+[FF*]"/>                                  <!-- RT Turn-->
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>        <!-- Center Spoked Box -->
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>           <!-- Small Spoked box off center -->
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>  <!-- Lrg Spoked box Off center -->
+<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
+</street_gen>
+</hub_rule>  
+  
 <hub_rule name="townSmall"> <!-- Small Town Hub -->
-<hub_type value="town"/>  <width value="250, 500" />  <height value="250, 500" /> <path_material value="asphalt" /> <path_radius value="10" />
-<prefab_rule name="default"/> <street_gen level="15" length_multiplier="4">
+<hub_type value="town"/>  <width value="250, 500" />  <height value="250, 500" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="15" length_multiplier="4">
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -127,8 +154,8 @@
 </hub_rule>
 
 <hub_rule name="townLarge"> <!-- Large Town Hub -->
-<hub_type value="town"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="10" />
-<prefab_rule name="default"/> <street_gen level="20" length_multiplier="4">
+<hub_type value="town"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="20" length_multiplier="4">
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -140,8 +167,8 @@
 </hub_rule>
 
 <hub_rule name="citySmall"> <!-- Small City Hub -->
-<hub_type value="city"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="10" />
-<prefab_rule name="default"/> <street_gen level="20" length_multiplier="4"> <downtown_zone_size_perc value="0.50"/>
+<hub_type value="city"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="20" length_multiplier="4"> <downtown_zone_size_perc value="0.50"/>
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -153,8 +180,8 @@
 </hub_rule>
 
 <hub_rule name="cityLarge"> <!-- Large City Hub -->
-<hub_type value="city"/>  <width value="750, 1000" /> <height value="750, 1000" />  <path_material value="asphalt" /> <path_radius value="10" />
-<prefab_rule name="default"/> <street_gen level="25" length_multiplier="4"> <downtown_zone_size_perc value="0.75"/>
+<hub_type value="city"/>  <width value="750, 1000" /> <height value="750, 1000" />  <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="25" length_multiplier="4"> <downtown_zone_size_perc value="0.75"/>
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -166,8 +193,8 @@
 </hub_rule>
 
 <hub_rule name="cityHuge"> <!-- Huge City Hub -->
-<hub_type value="city"/>  <width value="1000, 1500" /> <height value="1000, 1500" />  <path_material value="asphalt" /> <path_radius value="10" />
-<prefab_rule name="default"/> <street_gen level="30" length_multiplier="4"> <downtown_zone_size_perc value="0.9"/>
+<hub_type value="city"/>  <width value="1000, 1500" /> <height value="1000, 1500" />  <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="city"/> <street_gen level="30" length_multiplier="4"> <downtown_zone_size_perc value="0.9"/>
 
 <axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -182,12 +209,24 @@
 
 <wilderness_rules>
 <wilderness_rule name="wildernessDefault"       spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>  <prefab_rule name="wildernessGroup" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNomad"         spawn_min_max="0,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="true"/>   <prefab_rule name="wildernessNomad" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNomad"         spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="true"/>   <prefab_rule name="wildernessNomad" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNecropolis"    spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="true"/>   <prefab_rule name="industrialGroup" prob="0.2"/> <prefab_rule name="commercialGroup" prob="0.4"/> <prefab_rule name="downtownGroup" prob="0.4"/> </wilderness_rule>
 </wilderness_rules>
 
   <prefab_rules>
     <prefab_rule name="none"/>
+
+    <prefab_rule name="city">
+      <prefab rule="residentialOldGroup"/>
+      <prefab rule="residentialNewGroup"/>
+      <prefab rule="commercialGroup"/>
+      <prefab rule="downtownGroup"/>
+      <prefab rule="industrialGroup"/>
+      <!--
+      <prefab rule="ruralGroup"/>
+      <prefab rule="detailFillerGroup"/>
+      -->
+    </prefab_rule>
 
     <prefab_rule name="default">
       <prefab rule="residentialOldGroup"/>
@@ -415,9 +454,9 @@
       <prefab name="farm_shed3" />
       <prefab name="farm_shed4" />
       <prefab name="oldwest_stables" />
-      <prefab name="water_tower_01" />
-      <prefab name="water_tower_02" />
-      <prefab name="oldwest_watertower" />
+      <prefab name="water_tower_01" max_count="1"  />
+      <prefab name="water_tower_02" max_count="1"  />
+      <prefab name="oldwest_watertower" max_count="1"  />
       <prefab name="oldwest_church"/>
       <prefab name="oldwest_hotel_01"/>
       <prefab name="oldwest_hotel_02"/>
@@ -629,7 +668,7 @@
 <module name="BaseFilter"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Base"/>
 <property name="scale"                    value="0.02"/>
-<property name="bias"                     value="0.05"/>  
+<property name="bias"                     value="0.03"/>  
 </module>
 
 <module name="WorldBase"                  type="FastTurbulence">
@@ -648,7 +687,7 @@
 <module name="CraterLakesMod"             type="ScaleBiasOutput">
 <property name="sourceModule"             value="CraterLakesBase"/>
 <property name="scale"                    value="0.34"/>
-<property name="bias"                     value="0.12"/>
+<property name="bias"                     value="0.05"/>
 </module> 
 
 <module name="CraterLakes"                type="ClampOutput">
@@ -680,13 +719,13 @@
 
 <module name="AlienHillsMod"              type="ScaleBiasOutput">
 <property name="sourceModule"             value="AlienHillsBase"/>
-<property name="scale"                    value="0.42"/>
-<property name="bias"                     value="0.30"/>  
+<property name="scale"                    value="0.32"/>
+<property name="bias"                     value="0.20"/>  
 </module>
 
 <module name="AlienHills"                 type="FastTurbulence">
 <property name="sourceModule"             value="AlienHillsMod"/>
-<property name="power"                    value="20"/>
+<property name="power"                    value="15"/>
 <property name="frequency"                value="0.40"/>
 <property name="roughness"                value="5"/>
 </module>
@@ -727,20 +766,20 @@
 <property name="roughness"                value="1"/>
 </module>
 
+<!-- Mountains -->
 <module name="MountainsBase"              type="FastNoise">
 <property name="frequency"                value="1.10"/>
 </module>
   
-<!-- Mountains -->
 <module name="MountainsMod"               type="FastBillow">
 <property name="sourceModule"             value="MountainsBase"/>
-<property name="frequency"                value="1.50"/>
+<property name="frequency"                value="0.50"/>
 </module>
 
 <module name="MountainsScale"             type="ScaleBiasOutput">
 <property name="sourceModule"             value="MountainsMod"/>
 <property name="scale"                    value="0.50"/>
-<property name="bias"                     value="0.35"/>
+<property name="bias"                     value="0.25"/>
 </module>
 
 <module name="Mountains"                  type="Select">
@@ -753,7 +792,34 @@
 <property name="bounds"                   value="0, 1"/>
 <property name="edgeFalloff"              value="2.5"/>
 </module>
- 
+
+<!-- High Mountains -->
+<module name="HighMountainsBase"          type="FastNoise">
+<property name="frequency"                value="1.10"/>
+</module>
+
+<module name="HighMountainsMod"           type="FastBillow">
+<property name="sourceModule"             value="HighMountainsBase"/>
+<property name="frequency"                value="0.50"/>
+</module>
+
+<module name="HighMountainsScale"         type="ScaleBiasOutput">
+<property name="sourceModule"             value="HighMountainsMod"/>
+<property name="scale"                    value="0.80"/>
+<property name="bias"                     value="0.35"/>
+</module>
+
+<module name="HighMountains"              type="Select">
+<property name="controlModule"            value="MountainsScale"/>
+<property name="sourceModule1"            value="MountainsScale"/>
+<property name="sourceModule2"            value="Continents"/>
+<property name="sourceModule3"            value="MountainsScale"/>
+<property name="sourceModule4"            value="MountainsScale"/>
+<property name="sourceModule5"            value="MountainsScale"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+
 <!-- Cliffs -->
 <module name="CliffsBase"                 type="FastBillow">
 <property name="frequency"                value="1.10"/>
@@ -761,14 +827,13 @@
 
 <module name="CliffsMod"                  type="FastBillow">
 <property name="sourceModule"             value="CliffsBase"/>
-<property name="frequency"                value="1.10"/>
+<property name="frequency"                value="1.50"/>
 </module>
 
 <module name="CliffsScale"                type="ScaleBiasOutput">
 <property name="sourceModule"             value="CliffsMod"/>
-<property name="scale"                    value="0.40"/>
-<property name="bias"                     value="0.30"/>
-<property name="bounds"                   value="-60, 110"/>
+<property name="scale"                    value="0.30"/>
+<property name="bias"                     value="0.05"/>
 </module>
 
 <module name="Cliffs"                     type="Select">
@@ -800,7 +865,7 @@
 </module>  
   
 <!-- Final Selecting -->
-<module name="Final"                      type="Select">
+<module name="SelectingMore"              type="Select">
 <property name="controlModule"            value="WorldBase"/>
 <property name="sourceModule1"            value="WorldBase"/>
 <property name="sourceModule2"            value="Selecting"/>
@@ -816,11 +881,28 @@
 <property name="edgeFalloff"              value="2.5"/>
 </module>
 
+<!-- Final Selecting -->
+<module name="Final"                      type="Select">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="HighMountains"/>
+<property name="sourceModule2"            value="SelectingMore"/>
+<property name="sourceModule3"            value="Continents"/>
+<property name="sourceModule4"            value="RockyRiver"/>
+<property name="sourceModule5"            value="WorldBase"/>
+<property name="sourceModule6"            value="WorldBase"/>
+<property name="sourceModule7"            value="Continents"/>
+<property name="sourceModule8"            value="WorldBase"/>
+<property name="sourceModule9"            value="Mountains"/>
+<property name="sourceModule10"           value="WorldBase"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+
 <!-- Final Scaling-->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="250"/>
-<property name="bias"                     value="-1"/>
+<property name="scale"                    value="290"/>
+<property name="bias"                     value="2"/>
 </module>
   
 <!-- Final Processing -->
@@ -1196,8 +1278,8 @@
   
 <biome_generator                          name="gnamod">
 <module name="BaseNoise"                  type="Voronoi">
-<property name="frequency"                value="0.00075"/>
-<property name="displacement"             value="0.5"/>
+<property name="frequency"                value="0.00095"/>
+<property name="displacement"             value="1.5"/>
 </module>
 
 <module name="BaseNoiseMod"               type="BiasOutput">
@@ -1301,37 +1383,36 @@
 
 <biome_spawn_rules>
 <!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)             -->	
-<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.20,0.25"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.25,0.30"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.30,0.35"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.35,0.40"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.65"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.65,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.35,0.40"/>          </biome_spawn_rule>
 <biome_spawn_rule name="forest">          <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
 <!-- Grassland Overlay (Primary Biome Paint)                                                            -->
-<biome_spawn_rule name="plains">          <terrain_generator range="-60,10"/>           </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <terrain_generator range="25,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <terrain_generator range="-60,2"/>            </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <terrain_generator range="2,255"/>            </biome_spawn_rule>
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)                -->
-<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.00,0.10"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.25,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.35"/>          </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
 <biome_spawn_rule name="snow">            <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
 <biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.90,0.95"/>          </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <biome_generator range="0.95,1.00"/>          </biome_spawn_rule>
 <!-- Mountain Paints (Biomes that make up the alpine mountains on the map                               -->
-<biome_spawn_rule name="forest">          <terrain_generator range="90,255"/>           </biome_spawn_rule> 
-<biome_spawn_rule name="pine_forest">     <terrain_generator range="100,255"/>          </biome_spawn_rule>  
-<biome_spawn_rule name="snow">            <terrain_generator range="125,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city">            <terrain_generator range="150,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <terrain_generator range="40,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="55,255"/>           </biome_spawn_rule> 
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="70,255"/>           </biome_spawn_rule>  
+<biome_spawn_rule name="snow">            <terrain_generator range="85,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="city">            <terrain_generator range="100,255"/>          </biome_spawn_rule>
 <!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      -->  
 <biome_spawn_rule name="water">           <terrain_generator range="-60,2"/>            </biome_spawn_rule>
 <!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                         -->
-<biome_spawn_rule name="desert">          <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.10,0.25"/>          </biome_spawn_rule>
 <!-- Water Overlay (Desert requires a new water paint underwater)                                       -->
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
-<!-- Urban Ruins Overlay (Paints over all biomes on specific height)                                    
-<biome_spawn_rule name="city_wasteland">  <terrain_generator range="22,26"/>            </biome_spawn_rule> -->
 <!-- Radiated Biome Barrier                                                                             -->
-<biome_spawn_rule name="radiated">        <distance_from_center range="11000,12000"/>   </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <distance_from_center range="11000,11500"/>   </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <distance_from_center range="11500,12000"/>   </biome_spawn_rule>
   
 <!-- Necropolis Test
 <biome_spawn_rule name="water">           <terrain_generator range="-60,2"/>           </biome_spawn_rule>       
@@ -1351,9 +1432,9 @@
 <biome_spawn_rule name="city_wasteland">  <biome_generator range="0.90,1.00"/>          </biome_spawn_rule>
 -->
   
-<!-- Biome Test 
+<!-- Biome Test
 <biome_spawn_rule name="city_wasteland">         <terrain_generator range="-60,255"/>           </biome_spawn_rule>  
-  -->
+-->
 </biome_spawn_rules>
   
   <!--
