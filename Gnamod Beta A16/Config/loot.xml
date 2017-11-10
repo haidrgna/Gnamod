@@ -322,7 +322,7 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 </placeholder>
 
 <placeholder name="lootStreetHelper">
-<!-- Loot Containers (0.34)-->
+<!-- Loot Containers (0.335)-->
 <block name="cntTrashPile01"              prob="0.030"/>
 <block name="cntTrashPile02"              prob="0.030"/>
 <block name="cntTrashPile03"              prob="0.030"/>
@@ -341,18 +341,15 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <block name="cntPurse01"                  prob="0.005"/>
 <block name="cntShoppingCart"             prob="0.005"/>
 <block name="shoppingCartEmpty"           prob="0.005"/>
-<block name="cntWashingMachine"           prob="0.001"/>
-<block name="cntTrashCompactor"           prob="0.001"/>
-<block name="cntOven"                     prob="0.001"/>
-<block name="cntSuitcase"                 prob="0.011"/>
-<block name="cntCooler"                   prob="0.011"/>
-<!-- Decorative (0.66) -->
-<block name="tire"                        prob="0.015"/>
+<block name="cntSuitcase"                 prob="0.010"/>
+<block name="cntCooler"                   prob="0.010"/>
+<!-- Decorative (0.665) -->
+<block name="tire"                        prob="0.017"/>
 <block name="mineHubcap"                  prob="0.005"/>
 <block name="hubcapNoMine"                prob="0.035"/>
-<block name="garbage_decor1"              prob="0.075"/>
-<block name="garbage_decor2"              prob="0.075"/>
-<block name="garbage_decor3"              prob="0.075"/>
+<block name="garbage_decor1"              prob="0.076"/>
+<block name="garbage_decor2"              prob="0.076"/>
+<block name="garbage_decor3"              prob="0.076"/>
 <block name="rock01"                      prob="0.07"/>
 <block name="rock02"                      prob="0.07"/>
 <block name="rock04"                      prob="0.07"/>
@@ -493,6 +490,11 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <block name="StartingKitUnlucky" 		prob="0.10"/>
 </placeholder>
 
+<placeholder name="towerHelper">
+<block name="rConcreteBlock" 			  prob="0.20"/>
+<block name="towerTest" 			      prob="0.80"/>
+</placeholder>    
+  
 </lootplaceholders>
 
 <!-- Lootchance Templates (Loot MAGIC) -->

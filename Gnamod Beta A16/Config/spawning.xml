@@ -13,15 +13,51 @@
 <spawning>
 <!-- Unused Biome -->
 <biome name="city">
-<spawn maxcount="0" respawndelay="1" time="Day" entitygroup="ZombiesAllMoves" />
+<!-- Zombies Day -->
+<spawn maxcount="1" respawndelay="1" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesAlpine" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesAlpine" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesAlpine" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesAlpine" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Bear"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAlpineHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Stag"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Wolf"/>
 </biome>
 <!-- Unused Biome -->
 <biome name="city_wasteland">
-      <spawn maxcount="0" respawndelay="1" time="Day" entitygroup="ZombiesAllMoves" />
+<!-- Zombies Day -->
+<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesWasteland" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesWastelandNight" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesWasteland" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesWastelandNight" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dog"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
 </biome>
 <!-- Unused Biome-->
 <biome name="wasteland_hub">
-<spawn maxcount="0" respawndelay="1" time="Day" entitygroup="ZombiesAllMoves" />
+<!-- Zombies Day -->
+<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesWasteland" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesWastelandNight" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesWasteland" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesWastelandNight" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dog"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
 </biome>
 
 <!-- Grasslands -->
@@ -157,7 +193,19 @@
 
 <biome name="radiated">
 <!-- Zombies Day -->
-<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesRoam" />
+<!-- Zombies Day -->
+<spawn maxcount="2" respawndelay="1" time="Any"		entitygroup="ZombiesWasteland" />
+<spawn maxcount="2" respawndelay="7" time="Any"		entitygroup="ZombiesWastelandNight" />
+<spawn maxcount="1" respawndelay="21" time="Any"	entitygroup="ZombiesWastelandNight" />
+<!-- Zombies Night (Extra) -->
+<spawn maxcount="2" respawndelay="1" time="Night"	entitygroup="ZombiesWasteland" />
+<spawn maxcount="3" respawndelay="4" time="Night"	entitygroup="ZombiesWastelandNight" />
+<!-- Animals -->
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Dog"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteFriendly"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsWasteHostile"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
+<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="Vulture"/>
 </biome>
 
 
