@@ -3,7 +3,7 @@
 
 <rulesets>
 <!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="2000"  cell_offset="0.75" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
-<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
+<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="800"   cell_offset="0.50" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="7500"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="3000"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
 </rulesets>
@@ -39,11 +39,11 @@
 <hub_rule name="ruralTiny"  prob="0.06"/>
 <hub_rule name="ruralSmall" prob="0.06"/>
 <hub_rule name="ruralLarge" prob="0.06"/>
-<hub_rule name="townTiny"   prob="0.55"/>
-<hub_rule name="townSmall"  prob="0.07"/>
-<hub_rule name="townLarge"  prob="0.07"/>
-<hub_rule name="citySmall"  prob="0.07"/>
-<hub_rule name="cityLarge"  prob="0.06"/>
+<hub_rule name="townTiny"   prob="0.59"/>
+<hub_rule name="townSmall"  prob="0.06"/>
+<hub_rule name="townLarge"  prob="0.06"/>
+<hub_rule name="citySmall"  prob="0.06"/>
+<hub_rule name="cityLarge"  prob="0.05"/>
 <hub_rule name="cityHuge"   prob="0"/>
 <wilderness_rule name="wildernessNomad"/>
 </cell_rule>  
@@ -217,6 +217,7 @@
     <prefab_rule name="none"/>
 
     <prefab_rule name="city">
+      <prefab rule="skyscrapers" min_count="2"/>
       <prefab rule="residentialOldGroup"/>
       <prefab rule="residentialNewGroup"/>
       <prefab rule="commercialGroup"/>
@@ -259,6 +260,7 @@
       <prefab name="garagetan1"/>
       <prefab name="garagestucco1"/>
       <prefab name="garagegreen1"/>
+<!--
       <prefab name="garageburnt1"/>
       <prefab name="houseburnt1"/>
       <prefab name="houseburnt2"/>
@@ -266,6 +268,7 @@
       <prefab name="houseburnt3b"/>
       <prefab name="houseburnt4"/>
       <prefab name="houseburnt5"/>
+-->
       <prefab name="housewhite1basement"/>
       <prefab name="housewhitepyramid3"/>
       <prefab name="housetanpyramid2"/>
@@ -283,7 +286,7 @@
       <prefab name="houseyellow1"/>
       <prefab name="houseyellowpyramid3"/>
       <prefab name="house_trailer_blue_01" />
-      <prefab name="house_trailer_burnt_01" />
+    <!--  <prefab name="house_trailer_burnt_01" /> -->
       <prefab name="house_trailer_green_01" />
       <prefab name="house_trailer_tan_01" />
       <prefab name="house_trailer_white_01" />
@@ -385,7 +388,7 @@
       <prefab name="bar_sm_01" />
       <prefab name="fire_station_01" max_count="1"/>
       <prefab name="fire_station_02" max_count="1"/>
-      <prefab rule="skyscrapers" min_count="2"/>
+      
       <prefab name="store_pawn_01" max_count="1" />
       <prefab name="settlement_trader_04" max_count="1" prob="0.5"/>
     </prefab_rule>
@@ -672,7 +675,7 @@
 <module name="WorldBase"                  type="FastTurbulence">
 <property name="sourceModule"             value="BaseFilter"/>
 <property name="power"                    value="1"/>
-<property name="frequency"                value="0.45"/>
+<property name="frequency"                value="0.05"/>
 <property name="roughness"                value="5"/>
 </module>    
   
@@ -862,8 +865,8 @@
 <!-- Final Scaling-->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="70"/>
-<property name="bias"                     value="-25"/>
+<property name="scale"                    value="80"/>
+<property name="bias"                     value="-15"/>
 </module>
   
 <!-- Final Processing -->
@@ -1615,20 +1618,20 @@
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
 <biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule> 
 <!-- Height Paints (Biomes that make up the hills on the map                                            -->
-<biome_spawn_rule name="plains">          <terrain_generator range="50,255"/>           </biome_spawn_rule>   
+<biome_spawn_rule name="plains">          <terrain_generator range="60,255"/>           </biome_spawn_rule>   
 <biome_spawn_rule name="forest">          <terrain_generator range="70,255"/>           </biome_spawn_rule>   
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)                -->
 <biome_spawn_rule name="snow">            <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
 <biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.90,0.99"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.90,0.995"/>         </biome_spawn_rule>
 <!-- Mountain Paints (Biomes that make up the alpine mountains on the map                               -->
-<biome_spawn_rule name="pine_forest">     <terrain_generator range="90,255"/>           </biome_spawn_rule>  
-<biome_spawn_rule name="snow">            <terrain_generator range="110,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city">            <terrain_generator range="130,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="85,255"/>           </biome_spawn_rule>  
+<biome_spawn_rule name="snow">            <terrain_generator range="105,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city">            <terrain_generator range="125,255"/>          </biome_spawn_rule>
 <!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      -->  
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                         -->
-<biome_spawn_rule name="desert">          <biome_generator range="0.99,1.00"/>          </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.995,1.00"/>         </biome_spawn_rule>
 <!-- Water Overlay (Desert requires a new water paint underwater)                                       -->
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
 <!-- Radiated Biome Barrier                                                                             -->

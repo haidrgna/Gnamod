@@ -223,8 +223,8 @@
 		<objective type="AnimalKill" id="animalRabbit" value="5"  />
 
 		<requirement type="Group" id="requirementGroupShotgun" value="OR">
-			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
-			<requirement type="Holding" id="gunPumpShotgun" />
+			<requirement type="Holding" id="gunShortPumpShotgun" />
+			<requirement type="Holding" id="gunLongPumpShotgun" />
 		</requirement>
 
 		<reward type="SkillPoints" value="2" />
