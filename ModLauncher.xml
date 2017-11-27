@@ -70,6 +70,27 @@ This version currently comes with a flat world for building and testing.
       </Downloads>
     </Server>
 
+    <Server Name="Gnamod Nomad Beta" Logo="">
+      <Description>
+        Gnamod Nomad as it is being developed, this version is the current work and thus may contain unfinished stuff or things that are not working (yet).
+        This version currently comes with a flat world for building and testing.
+      </Description>
+      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+      <Excludes>
+        <Exclude>Gnamod Beta A16</Exclude>
+        <Exclude>Gnamod Base A16</Exclude>
+        <Exclude>Gnamod Special</Exclude>
+        <Exclude>Vanilla Base</Exclude>
+        <Exclude>.gitattributes</Exclude>
+        <Exclude>.gitignore</Exclude>
+        <Exclude>Gnamod.sln</Exclude>
+        <Exclude>ModLauncher.xml</Exclude>
+      </Excludes>
+      <Downloads>
+        <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
+      </Downloads>
+    </Server>
+    
     <Server Name="Gnamod Clientversion" Logo="">
       <Description>
         If you are joining a server that runs any version of Gnamod you can also install this light version that will make sure all names show up properly.

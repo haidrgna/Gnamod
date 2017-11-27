@@ -1,0 +1,262 @@
+<biome name="city_wasteland" biomemapcolor="#c0c0c0">
+<!-- Weather -->
+<weather>
+<!-- ===== Temperature ============================ -->
+<Temperature      min="15"    max="35"    prob="0.10"/>
+<Temperature      min="10"    max="15"    prob="0.20"/>
+<Temperature      min="-25"   max="10"    prob="0.50"/>
+<Temperature      min="-40"   max="-25"   prob="0.20"/>
+<!-- ===== Fog ==================================== -->
+<Fog              min="0"     max="0"     prob="0.70"/>
+<Fog              min="0"     max="50"    prob="0.10"/>
+<Fog              min="50"    max="75"    prob="0.10"/>
+<Fog              min="75"    max="100"   prob="0.10"/>
+<!-- ===== Clouds ================================= -->
+<CloudThickness   min="0"     max="0"     prob="0.20"/>
+<CloudThickness   min="0"     max="50"    prob="0.10"/>
+<CloudThickness   min="50"    max="70"    prob="0.10"/>
+<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<!-- ===== Precipitation ========================== -->
+<Precipitation    min="0"     max="0"     prob="0.05"/>
+<Precipitation    min="25"    max="50"    prob="0.25"/>
+<Precipitation    min="50"    max="75"    prob="0.25"/>
+<Precipitation    min="75"    max="100"   prob="0.45"/>
+<!-- ===== Winds ================================== -->
+<Wind             min="0"     max="0"     prob="0.45"/>
+<Wind             min="0"     max="50"    prob="0.35"/>
+<Wind             min="50"    max="75"    prob="0.19"/>
+<Wind             min="75"    max="100"   prob="0.01"/>
+<!-- ===== Particles ============================== -->
+</weather>
+<!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.40"> <!-- Buildings -->
+<!-- Gnamod Base -->
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
+</layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.0025"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<!-- Prefabs-->
+<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.10"/>
+<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.30"/>
+<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.30"/>
+  
+<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.20"/>
+<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.20"/>  
+  
+<decoration type="prefab" name="waste_rubble_highway_01"                  prob="0.0025"/>
+<decoration type="prefab" name="street_light_01"                          prob="0.00025"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00025"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.00015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
+</subbiome>
+    
+<subbiome prob="0.05"> <!-- Desolate -->
+<!-- Gnamod Base -->
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
+</layers>
+
+<!-- Gnamod Nomad Mode
+<layers>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.05"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rock01"                               prob="0.001"/>
+<decoration type="block" blockname="rock02"                               prob="0.001"/>
+<decoration type="block" blockname="rock04"                               prob="0.001"/>
+<decoration type="block" blockname="rockResource"                         prob="0.001"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
+<decoration type="block" blockname="cinderBlocks01"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks02"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks03"                       prob="0.006"/>
+<!-- Prefabs-->
+<decoration type="prefab" name="street_light_01"                          prob="0.00125"/>
+<decoration type="prefab" name="sign_slow"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_25"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_35"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_45"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_55"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_stop"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_stop_4way"                           prob="0.00025"/>
+<decoration type="prefab" name="mp_waste_pile_01"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_02"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_03"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_04"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_pile_05"                         prob="0.015"/>
+<decoration type="prefab" name="mp_waste_cover_01"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_cover_02"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_hole_asphalt_01"                 prob="0.00005"/>
+<decoration type="prefab" name="mp_waste_hole_rock_01"                    prob="0.0005"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00075"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
+</subbiome>     
+<!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.10"   rwgGenerationType="all"/> </layer>
+<layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone"/>
+<layer depth="3"  blockname="bedrock"/>
+</layers>
+
+<!-- Gnamod Nomad Mode
+<layers>                <layer filluptorg="60" blockname="water" />
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="concrete"          cluster="0" prob="0.10"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="21" blockname="bedrock"/>
+</layers>
+-->
+  
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.025"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.00012"/>
+<!-- Trees -->
+<decoration type="block" blockname="treeDeadTree02"                       prob="0.00012"/>
+<decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="lootWastelandHelper"                  prob="0.0005"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rock01"                               prob="0.001"/>
+<decoration type="block" blockname="rock02"                               prob="0.001"/>
+<decoration type="block" blockname="rock04"                               prob="0.001"/>
+<decoration type="block" blockname="rockResource"                         prob="0.001"/>
+<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
+<decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
+<decoration type="block" blockname="cinderBlocks01"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks02"                       prob="0.006"/>
+<decoration type="block" blockname="cinderBlocks03"                       prob="0.006"/>
+<!-- Prefabs -->
+<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.05"/>
+<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.25"/>
+<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.25"/>
+  
+<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.15"/>
+<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_highway_01"                  prob="0.00125"/>
+<decoration type="prefab" name="street_light_01"                          prob="0.00125"/>
+<decoration type="prefab" name="sign_slow"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_25"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_35"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_45"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_speed_55"                            prob="0.00025"/>
+<decoration type="prefab" name="sign_stop"                                prob="0.00025"/>
+<decoration type="prefab" name="sign_stop_4way"                           prob="0.00025"/>
+<decoration type="prefab" name="mp_waste_cover_01"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_cover_02"                        prob="0.0005"/>
+<decoration type="prefab" name="mp_waste_hole_asphalt_01"                 prob="0.00005"/>
+<decoration type="prefab" name="mp_waste_hole_rock_01"                    prob="0.0005"/>
+<!-- Misc -->
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.00025"/>
+<decoration type="block" blockname="scrapMetalPile"                       prob="0.00015"/>
+<!-- Traps -->
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
+</decorations>
+
+<terrain class="Wasteland" />
+<spectrum name="plains" />
+</biome>
