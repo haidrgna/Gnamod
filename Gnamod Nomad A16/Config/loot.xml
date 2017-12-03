@@ -1769,6 +1769,8 @@ ID    LOOTCONTAINER     USED?     Vanilla?    GNAMOD Special
 <lootgroup name="cnt96" count="1">  <item group="itemsCommon" prob="20"/>   <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="10"/> <item group="schemAll" prob="20"/>  <item group="medicalAdvanced" prob="40"/>         </lootgroup>
 <lootgroup name="cnt97" count="1"> <item name="scrapLead" count="20,50" prob="90"/> <item group="batteries" prob="10"/>                             </lootgroup>
 <lootgroup name="cnt98" count="1"> <item name="scrapIron" count="20,50" prob="90"/> <item group="engines" prob="10"/>                             </lootgroup>
+
+<lootgroup name="cnt154" count="all"> <item group="cnt9"/>  <item group="ammoGuns"/>  </lootgroup>
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD BASE Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- =========================== CARDBOARD BOXES =============================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="1" count="1" size="5,5" open_time="3" 
@@ -3014,4 +3016,18 @@ loot_quality_template= "startingKit">
 
 <item group="startingKitUnlucky" count="1" prob="100"/>                                          </lootcontainer>
 
+<!-- =========================== Quest Bag  ====================================================================================================================================================================================================================================================================================================================================== -->
+<lootcontainer id="154" count="1" size="5,5" open_time="15" 
+destroy_on_close= "false"
+sound_open=  "UseActions/open_backpack"
+sound_close=  "UseActions/close_backpack"
+loot_quality_template= "leveledLight">
+
+<item group="cnt154" count="2" prob="25"/>
+<item group="cnt154" count="3,4" prob="45"/>
+<item group="cnt154" count="5" prob="10"/>  
+<!-- Chance of No Loot -->
+<item group="cnt154" count="1,2" loot_prob_template="nothing50"/>
+</lootcontainer>  
+  
 </lootcontainers>

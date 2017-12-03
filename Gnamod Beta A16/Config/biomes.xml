@@ -538,6 +538,7 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
@@ -839,6 +840,7 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
@@ -1349,6 +1351,7 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
+<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
@@ -2392,7 +2395,7 @@
 
 <!-- Gnamod Nomad Mode
 <layers>
-<layer depth="2"  blockname="destroyedStone">   <resource blockname="asphalt"           cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="21" blockname="bedrock"/>
 </layers>
@@ -2459,7 +2462,7 @@
 
 <!-- Gnamod Nomad Mode
 <layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.60"   rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="21" blockname="bedrock"/>
 </layers>

@@ -9617,7 +9617,7 @@ Mesh files no longer used:
 <!-- Attack Action -->
 <property class="Action0">
 <property name="Class"                        value="Ranged"/>
-<property name="Delay"                        value="0.38"/>
+<property name="Delay"                        value="0.30"/>
 <property name="Crosshair_min_distance"       value="10"/>
 <property name="Crosshair_max_distance"       value="12"/>
 <property name="Reload_time"                  value="4.25"/>
@@ -9669,7 +9669,7 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action -->
 <property class="Action0">
-<property name="Delay"                        value="0.32"/>
+<property name="Delay"                        value="0.25"/>
 <property name="Crosshair_min_distance"       value="9"/>
 <property name="Crosshair_max_distance"       value="11"/>
 <property name="Reload_time"                  value="3.75"/>
@@ -9694,7 +9694,7 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action -->
 <property class="Action0">
-<property name="Delay"                        value="0.28"/>
+<property name="Delay"                        value="0.20"/>
 <property name="Crosshair_min_distance"       value="7"/>
 <property name="Crosshair_max_distance"       value="9"/>
 <property name="Reload_time"                  value="3.25"/>
@@ -9819,7 +9819,7 @@ Mesh files no longer used:
 <!-- Attack Action -->
 <property class="Action0">
 <property name="Class"                        value="Ranged"/>
-<property name="Delay"                        value="0.30"/>
+<property name="Delay"                        value="0.32"/>
 <property name="Crosshair_min_distance"       value="15"/>
 <property name="Crosshair_max_distance"       value="19"/>
 <property name="Reload_time"                  value="2.5"/>
@@ -9871,7 +9871,7 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action -->
 <property class="Action0">
-<property name="Delay"                        value="0.25"/>
+<property name="Delay"                        value="0.27"/>
 <property name="Crosshair_min_distance"       value="13"/>
 <property name="Crosshair_max_distance"       value="17"/>
 <property name="Reload_time"                  value="2.25"/>
@@ -9896,7 +9896,7 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action -->
 <property class="Action0">
-<property name="Delay"                        value="0.20"/>
+<property name="Delay"                        value="0.22"/>
 <property name="Crosshair_min_distance"       value="11"/>
 <property name="Crosshair_max_distance"       value="15"/>
 <property name="Reload_time"                  value="2"/>
@@ -10469,7 +10469,7 @@ Mesh files no longer used:
 -->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
-  <property name="Magazine_size"              value="5"/>
+  <property name="Magazine_size"              value="3"/>
   <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
   <property name="Magazine_item_ray_spreads"  value="0.10,0.09,0.08,0,0.10,0.09,0.08,0"/>
@@ -10677,7 +10677,7 @@ Mesh files no longer used:
 -->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo-->
-  <property name="Magazine_size"              value="8"/>
+  <property name="Magazine_size"              value="5"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
   <property name="Magazine_item_ray_spreads"  value="0.06,0.05,0.04,0,0.06,0.05,0.04,0"/>
@@ -10905,7 +10905,7 @@ Mesh files no longer used:
 <property name="Zoom_max_in"                  value="40"/>
 </property>
 <property class="Attributes">
-<property name="FalloffRange"                 value="15,25"/>
+<property name="FalloffRange"                 value="30,80"/>
 <property name="DegradationMax"               value="500,3500"/>
 <property name="DegradationRate"              value="20,10"/>
 </property>
@@ -11138,7 +11138,7 @@ Mesh files no longer used:
 <!-- ==================== Pump Shotgun Stock (Short) ==================== -->
 <item id="1734"                               name="partsPumpShotgun_stockShort">
 <property name="Extends"                      value="partsMaster"/>
-<property name="DescriptionKey"               value="partsPumpShotgunShortGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property name="PartType"                     value="Stock"/>
 <property name="Material"                     value="wood"/>
 <property name="Weight"                       value="15"/>
@@ -11180,7 +11180,7 @@ Mesh files no longer used:
 <!-- ==================== Pump Shotgun Receiver ==================== -->  
 <item id="1738"                               name="partsPumpShotgun_receiver">
 <property name="Extends"                      value="partsMaster"/>
-<property name="DescriptionKey"               value="commonShotgunPartsGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property name="PartType"                     value="Receiver"/>
 <property name="Weight"                       value="25"/>
 <property class="Attributes">
@@ -11191,7 +11191,7 @@ Mesh files no longer used:
 </item>
 <item id="1739"                               name="partsPumpShotgun_receiverMG">
 <property name="Extends"                      value="partsPumpShotgun_receiver"/>
-<property name="DescriptionKey"               value="commonShotgunPartsGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property class="Attributes">
 <property name="DismembermentBaseChance"      value="0.002,0.01"/>
 <property name="DegradationMax"               value="1500,10500"/>
@@ -11201,7 +11201,7 @@ Mesh files no longer used:
 <!-- ==================== Pump Shotgun Parts ==================== -->
 <item id="1740"                               name="partsPumpShotgun_parts">
 <property name="Extends"                      value="partsMaster"/>
-<property name="DescriptionKey"               value="commonShotgunPartsGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property name="PartType"                     value="Pump"/>
 <property name="Weight"                       value="15"/>
 <property class="Attributes">
@@ -11212,7 +11212,7 @@ Mesh files no longer used:
 </item>
 <item id="1741"                               name="partsPumpShotgun_partsMG">
 <property name="Extends"                      value="partsPumpShotgun_parts"/>
-<property name="DescriptionKey"               value="commonShotgunPartsGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDescc"/>
 <property class="Attributes">
 <property name="DegradationRate"              value="20,15"/>
 <property name="DegradationMax"               value="1500,10500"/>
@@ -11222,7 +11222,7 @@ Mesh files no longer used:
 <!-- ==================== Pump Shotgun Barrel (Short) ==================== -->
 <item id="1742"                               name="partsPumpShotgun_barrelShort">
 <property name="Extends"                      value="partsMaster"/>
-<property name="DescriptionKey"               value="partsPumpShotgunShortGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property name="PartType"                     value="Barrel"/>
 <property name="Weight"                       value="20"/>
 <property class="Attributes">
@@ -11233,7 +11233,7 @@ Mesh files no longer used:
 </item>
 <item id="1743"                               name="partsPumpShotgun_barrelShortMG">
 <property name="Extends"                      value="partsPumpShotgun_barrelShort"/>
-<property name="DescriptionKey"               value="partsPumpShotgunShortGroupDesc"/>
+<property name="DescriptionKey"               value="partsPumpShotgunGroupDesc"/>
 <property class="Attributes">
 <property name="FalloffRange"                 value="35,70"/>
 <property name="DegradationMax"               value="1500,10500"/>
