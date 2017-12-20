@@ -3332,7 +3332,7 @@
 <property name="Explosion.DamageBonus.earth"        value="1"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial0"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="ZombieBurning"/>
+<property name="Buffs"                              value="SuicideBurn"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -3360,6 +3360,7 @@
 <property name="LegCrippleThreshold"                value="0"/>
 <property name="KnockdownProneDamageThreshold"      value="0"/>
 <property name="KnockdownKneelDamageThreshold"      value="0"/>
+<property name="Buffs"                              value="Smoking"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="8"/>
@@ -3562,7 +3563,22 @@
 <property name="MaxHealth"                          value="1"/>
 </entity_class>
 
-
+<!-- ============================== Mc Plofkip ================================================================================================================================================================== -->
+<entity_class name="animalPlofkip"                  extends="animalChicken">
+<property name="MaxHealth"                          value="250"/>
+<property name="Class"                              value="EntityZombieCop"/>
+<property name="RightHandJointName"                 value="Jaw"/>
+<property name="Explosion.ParticleIndex"            value="10"/>
+<property name="Explosion.RadiusBlocks"             value="25"/>
+<property name="Explosion.RadiusEntities"           value="1"/>
+<property name="Explosion.BlockDamage"              value="25000"/>
+<property name="Explosion.EntityDamage"             value="50"/>
+<property name="Explosion.DamageBonus.earth"        value="1"/>
+<property name="Buffs"                              value="SuicideBomber"/>
+  
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="feather"    tool_category="Butcher" count="30"/>
+</entity_class>
 
 <entity_class name="animalZombieDog"                extends="animalTemplateHostile">
 <property name="EntityType"                         value="Zombie"/>
@@ -3681,6 +3697,15 @@
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
 </entity_class>
 
+  <entity_class name="animalZapBear"                  extends="animalBear">
+
+    <property name="Buffs"                              value="ZombieZapping"/>
+
+    <drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10"/>
+    <drop event="Harvest" name="animalHide" tool_category="Butcher" count="15"/>
+    <drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
+  </entity_class>  
+  
 <entity_class name="animalZombieBear" extends="animalBear">
 	<property name="MaxHealth" value="2400"/>
 	<property name="ExperienceGain" value="2916"/>

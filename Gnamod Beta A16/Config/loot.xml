@@ -956,7 +956,7 @@
 <lootgroup name="foodStock">                          <item name="egg" count="4,8" prob="20"/>  <item name="corn" count="4,8" prob="15"/>  <item name="potato" count="4,8" prob="15"/>  <item name="blueberries" count="6,12" prob="15"/>
                                                       <item name="coffeeBeans" count="4,8" prob="15"/> <item name="foodHoney" count="1,2" prob="5"/>  <item name="mushrooms" count="4,8" prob="15"/>                     </lootgroup>
 <!-- Meats Base Group -->
-<lootgroup name="foodMeat">                           <item name="rawMeat" count="0,3" prob="60"/>  <item name="charredMeat" count="0,3" prob="20"/> <item name="grilledMeat" count="0,3" prob="10"/> <item name="boiledMeat" count="0,3" prob="10"/>              </lootgroup>
+<lootgroup name="foodMeat">                           <item name="rottingFlesh" count="0,3" prob="25"/>  <item name="rawMeat" count="0,3" prob="60"/>  <item name="charredMeat" count="0,3" prob="5"/> <item name="grilledMeat" count="0,3" prob="5"/> <item name="boiledMeat" count="0,3" prob="5"/>              </lootgroup>
 <!-- Prepared Foods Base Group -->
 <lootgroup name="foodPrepared">                       <item name="blueberryPie" count="0,3" prob="10"/> <item name="meatStew" count="0,2" prob="5"/>  <item name="baconAndEggs" count="1,2" prob="10"/> <item name="cornBread" count="3,5" prob="15"/>
                                                       <item name="cornOnTheCob" count="3,5" prob="15"/> <item name="bakedPotato" count="3,5" prob="15"/>                           </lootgroup>
@@ -1393,6 +1393,7 @@
                                                       <item group="foodRotten" count="1,2" prob="15"/>        <item group="seedsFood" count="1,3" prob="2.5"/>                  </lootgroup>
 <lootgroup name="lootBackpacks"         count="all">  <item name="bottledRiverWater" count="0,1"/>  <item group="weaponsBackpack" count="0,1"/>  <item group="lootHousehold" count="1" />  <item group="itemsCookware" count="0,1" /> <item group="gunsCommon" count="0,1"/>  <item group="clothGeneral" count="0,1"/> <item group="armorBackpack"/>  </lootgroup> 
 <lootgroup name="lootSafesBasic"        count="all">  <item group="itemsCash" count="1,4"/>   <item group="itemsKeepsafe" count="1"/>   <item group="schemAll" count="0,1"/>                    </lootgroup>
+<lootgroup name="lootSafesRich"        count="all">  <item group="itemsCash" count="4,8"/>   <item group="itemsKeepsafe" count="2,4"/> </lootgroup>
 <lootgroup name="lootNest"              count="all">  <item name="egg" count="1,2"/>    <item name="feather" count="3,7"/>                           </lootgroup> 
 <lootgroup name="lootSurvivor"          count="all">  <item group="weaponsBackpack"/>    <item group="gunsComplete"/>    <item group="clothGeneralRS"/>    <item group="armorRS"/>               </lootgroup>
 <lootgroup name="lootFeral"             count="all">  <item group="gunsComplete" count="0,1" />  <item group="gunsCommon" count="0,1" />   <item group="gunsUncommon" count="0,1" />                   </lootgroup>
@@ -1546,492 +1547,398 @@
 <lootgroup name="startingKitLucky"      count="all">  <item group="startingKitBasics"/>   <item group="startingKitToolsLucky"/>   <item group="startingKitGunsLucky"/>                    </lootgroup>
 <lootgroup name="startingKitUnlucky"    count="all">  <item group="startingKitBasics"/>   <item group="startingKitToolsBase" count="0,1"/> <item group="startingKitGunsBase" count="0,1"/>                   </lootgroup>
 
-<!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Container Lootgroups =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
-<lootgroup name="cnt1"                  count="1">    <item group="itemsTrash" prob="20"/>   <item group="itemsCommon" prob="80"/>                             </lootgroup>
-<lootgroup name="cnt2"                  count="1">    <item group="itemsTrash" prob="40"/>   <item group="itemsCommon" prob="60"/>                             </lootgroup>
-<lootgroup name="cnt3"                  count="1">    <item group="itemsTrash" prob="20"/>   <item group="lootHousehold" prob="45"/>   <item group="itemsCommon" prob="30"/>  <item group="itemsCookware" prob="5"/>                 </lootgroup>
-<lootgroup name="cnt4"                  count="1,2">  <item group="foodCanned" prob="25"/>   <item group="foodRations" prob="5"/>   <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="30"/>  <item group="foodStock" prob="5"/>          </lootgroup>
-<lootgroup name="cnt5"                  count="1">    <item name="scrapIron" count="5,15" prob="40"/>  <item name="coal" count="4,12" prob="10"/>   <item group="itemsCookware" prob="15"/>  <item group="itemsCommon" prob="5"/>  <item group="foodMeat" count="1,2" prob="10"/>  <item group="foodRotten" count="1,2" prob="20"/> </lootgroup>
-<lootgroup name="cnt6"                  count="1">    <item name="flashlight02" prob="5"/>   <item group="clothGeneral" prob="35"/>   <item group="itemsCommon" prob="15"/>  <item group="ammoGuns" count="1,2" prob="5"/> <item group="schemBasic" prob="10"/>   <item group="schemCommon" prob="5"/> 
-                                                      <item group="medicalBasic" prob="15"/>   <item group="pistol" prob="5"/>                              </lootgroup>
-<lootgroup name="cnt7"                  count="1">    <item group="medicalBasic"/>                                      </lootgroup>
-<lootgroup name="cnt8"                  count="1">    <item group="itemsTrash" prob="25"/>   <item name="shortMetalPipe" prob="10"/>   <item group="toolsHousehold" prob="10"/> <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="10"/>
-                                                      <item name="coffeeBeans" count="1,4" prob="15"/> <item name="potassiumNitratePowder" count="2,6" prob="10"/>      <item name="scrapLead" count="1,10" prob="15"/>               </lootgroup>
-<lootgroup name="cnt9"                  count="1">    <item group="lootBackpacks" prob="65"/>   <item group="lootHousehold" count="0,2" prob="35"/>                             </lootgroup>
-<lootgroup name="cnt10"                 count="1">    <item group="lootHousehold" prob="45"/>   <item group="itemsCommon" prob="30"/>   <item group="itemsCookware" prob="5"/>                      </lootgroup>
-<lootgroup name="cnt11"                 count="1">    <item group="lootSafesBasic"/>                                     </lootgroup>
-<lootgroup name="cnt12"                 count="1">    <item group="lootHousehold" prob="55"/>   <item group="itemsCommon" prob="40"/>   <item group="itemsCookware" prob="5"/>                       </lootgroup>
-<lootgroup name="cnt13"                 count="1">    <item group="itemsTrash" prob="15"/>   <item name="shortMetalPipe" prob="10"/>   <item group="toolsHousehold" prob="10"/> <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="20"/>
-                                                      <item name="coffeeBeans" count="1,4" prob="15"/> <item name="potassiumNitratePowder" count="2,6" prob="10"/>      <item name="scrapLead" count="1,10" prob="15"/>               </lootgroup>
-<lootgroup name="cnt14"                 count="1">    <item name="paper" count="0,25" prob="85"/>  <item group="schemAll" prob="15"/>                             </lootgroup>
-<lootgroup name="cnt15"                 count="1">    <item group="lootBaseZombie" prob="90"/>  <item group="lootFoodZombie" prob="5"/>   <item group="lootStrongZombie" prob="5"/>                     </lootgroup>
-<lootgroup name="cnt16"                 count="1">    <item group="itemsTrash" prob="30"/>   <item group="itemsCommon" prob="70"/>                             </lootgroup>
-<lootgroup name="cnt17"                 count="1">    <item group="lootBaseZombie" prob="30"/>  <item group="lootCopZombie" prob="70"/>                             </lootgroup>
-<lootgroup name="cnt18"                 count="1">    <item group="clothGeneral" prob="60"/>   <item name="cloth" count="1,10" prob="40"/>                            </lootgroup>
-<lootgroup name="cnt19"                 count="1">    <item group="itemsCommon" count="1,2" prob="55"/> <item group="toolsCar" prob="20"/>     <item group="matsMisc" prob="15"/>  <item group="automotiveMinibike" prob="10"/>               </lootgroup>
-<lootgroup name="cnt20"                 count="1,2">  <item group="foodCanned" prob="25"/>   <item group="foodRations" prob="5"/>   <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="30"/>  <item group="foodStock" prob="5"/>          </lootgroup>
-<lootgroup name="cnt21"                 count="1">    <item name="firstAidBandage" prob="25"/>  <item group="medicalBasic" prob="25"/>   <item group="medicalAdvanced" prob="50"/>                     </lootgroup>
-<lootgroup name="cnt22"                 count="1">    <item group="matsMisc" count="1,2" prob="70"/>  <item group="blocksElectric" prob="10"/>  <item group="automotiveMinibike" prob="20"/>                     </lootgroup>
-<lootgroup name="cnt23"                 count="1">    <item group="itemsCommon" count="1,2" prob="50"/> <item group="ammoGuns" count="1,2" prob="10"/>  <item group="schemAll" prob="10"/>  <item group="medicalBasic" count="1,2" prob="15"/> <item group="pistol" prob="5"/>   <item name="flashlight02" prob="10"/>   </lootgroup>
-<lootgroup name="cnt24"                 count="1">    <item group="itemsCommon" count="1,2" prob="40"/> <item group="ammoGuns" count="1,2" prob="15"/>  <item group="schemAll" prob="10"/>  <item group="medicalBasic" count="1,2" prob="15"/> <item group="pistol" prob="10"/>  <item name="flashlight02" prob="10"/>   </lootgroup>
-<lootgroup name="cnt25"                 count="1">    <item name="feather" count="3,7" prob="75"/>  <item group="lootNest" prob="25"/>                             </lootgroup>
-<lootgroup name="cnt26"                 count="1">    <item name="scrapIron" count="5,15" prob="40"/>  <item name="coal" count="4,12" prob="10"/>   <item group="itemsCookware" prob="15"/>  <item group="itemsCommon" prob="5"/>  <item group="foodMeat" count="1,2" prob="10"/>  <item group="foodRotten" count="1,2" prob="20"/> </lootgroup>
-<lootgroup name="cnt27"                 count="1">    <item name="casinoCoin" count="1,25" prob="5"/>  <item group="itemsCash" prob="45"/>   <item group="nothing" prob="50"/>                      </lootgroup>
-<lootgroup name="cnt28"                 count="1">    <item name="rottingFlesh" count="1,2" prob="30"/> <item name="femur" count="1,2" prob="25"/>  <item name="fertilizer" count="1,3" prob="5"/> <item name="goldNugget" prob="5"/>  <item group="itemsTrash" prob="15"/>   <item group="itemsCommon" prob="10"/> 
-                                                      <item group="schemCommon" prob="5"/>   <item group="lootSurvivor" prob="5"/>                             </lootgroup>
-<lootgroup name="cnt29"                 count="1">    <!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>                                </lootgroup>
-<lootgroup name="cnt30"                 count="1">    <!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>                                </lootgroup>
-<lootgroup name="cnt31"                 count="1">    <!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>                                </lootgroup>
-<lootgroup name="cnt32"                 count="1">    <!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>                                </lootgroup>
-<lootgroup name="cnt33"                 count="1">    <!-- FREE --><item group="nothing" loot_prob_template="nothing50"/>                                </lootgroup>
-<lootgroup name="cnt34"                 count="1">    <item group="lootADBase" prob="35"/>   <item group="lootADMedical" prob="10"/>   <item group="lootADFood" prob="12"/>  <item group="lootADGunsAmmo" prob="12"/> <item group="lootADTools" prob="12"/>   <item group="lootADArmor" prob="12"/>
-                                                      <item group="lootADBuild" prob="2"/>   <item group="lootADStock" prob="5"/>                             </lootgroup>
-<lootgroup name="cnt35"                 count="1">    <item group="itemsCommon" count="1,2" prob="25"/> <item name="flashlight02" prob="2.5"/>   <item name="foodHoney" prob="8"/>  <item group="clothCW" prob="15"/>  <item group="clothGeneral" prob="6.5"/>   <item group="armorMilitaryMisc" prob="1"/>
-                                                      <item group="gunsCommon" prob="8"/>   <item group="gunsUncommon" prob="5"/>   <item group="gunsComplete" prob="1"/>  <item group="foodCanned" prob="10"/>  <item group="foodRations" prob="5"/>   <item group="itemsCookware" prob="7"/>
-                                                      <item group="medicalBasic" prob="5"/>   <item group="lootHerbal" prob="1"/>                              </lootgroup>
-<lootgroup name="cnt36"                 count="1">    <item name="bottledWater" prob="15"/>   <item group="foodCanned" count="1,2" prob="25"/> <item group="itemsCommon" prob="25"/>  <item group="toolsBasic" prob="10"/>  <item group="medicalBasic" prob="10"/>   <item group="weaponsBackpack" prob="10"/>
-                                                      <item group="gunsCommon" prob="5"/>                                    </lootgroup>
-<lootgroup name="cnt37"                 count="1">    <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/>                      </lootgroup>
-<lootgroup name="cnt38"                 count="1">    <item group="lootBaseZombie" prob="60"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootStrongZombie" prob="24.9"/>   <item group="lootSurvivor" prob="0.1"/>                   </lootgroup>
-<lootgroup name="cnt39"                 count="1">    <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="24"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt40"                 count="1">    <item group="ammoGuns" prob="85"/>   <item group="ammoBombs" prob="5"/>   <item group="ammoMines" prob="5"/>  <item group="gunsCommon" prob="2"/>  <item group="gunsUncommon" prob="2"/>   <item group="gunsRare" prob="1"/>   </lootgroup>
-<lootgroup name="cnt41"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt42"                 count="1">    <item group="ammoGuns" count="1,3" prob="10"/>  <item group="ammoBombs" prob="2"/>   <item group="ammoMines" prob="2"/>  <item group="gunsCommon" count="1" prob="48"/> <item group="gunsUncommon" prob="28"/>   <item group="gunsRare" prob="5"/>  
-                                                      <item group="gunsComplete" prob="2.5"/>   <item group="schemFirearm" prob="2.5"/>                             </lootgroup>
-<lootgroup name="cnt43"                 count="1">    <item name="gunPowder" count="1,25" prob="3"/>  <item name="footballHelmet" prob="6"/>   <item name="miningHelmet" prob="1"/>  <item name="paper" count="3,5" prob="3"/> <item group="clothGeneral" prob="50"/>   <item group="toolsOther" prob="2"/>
-                                                      <item group="gunsCommon" prob="3"/>   <item group="ammoGuns" prob="3"/>   <item group="medicalBasic" prob="4"/>  <item group="schemBasic" prob="3"/>  <item group="schemCommon" prob="2"/>   <item group="itemsCommon" prob="20"/>   </lootgroup>
-<lootgroup name="cnt44"                 count="1">    <item name="painkillers" prob="15"/>   <item name="paper" count="1,10" prob="15"/>  <item group="itemsCash" prob="30"/>  <item group="ammoGuns" prob="5"/>  <item group="schemBasic" prob="10"/>   <item group="schemCommon" prob="5"/>
-                                                      <item group="schemPainting" prob="5"/>   <item group="itemsCommon" prob="15"/>                             </lootgroup>
-<lootgroup name="cnt45"                 count="1">    <item name="emptyJar" prob="10"/>   <item name="bottledRiverWater" prob="15"/>  <item name="bottledWater" prob="5"/>  <item name="foodHoney" prob="10"/>  <item group="foodDrinks" prob="5"/>   <item group="foodPrepared" prob="5"/>
-                                                      <item group="foodCanned" prob="6"/>   <item group="foodRations" prob="3"/>   <item group="foodStock" prob="1"/>  <item group="foodMeat" prob="5"/>  <item group="foodRotten" prob="35"/>          </lootgroup>
-<lootgroup name="cnt46"                 count="1">    <item group="itemsTrash" count="1,2" prob="40"/> <item group="itemsCommon" prob="50"/>   <item group="clothGeneral" prob="7.5"/>  <item group="foodCanned" prob="2.5"/>                </lootgroup>
-<lootgroup name="cnt47"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt48"                 count="1">    <item group="pistol" prob="10"/>   <item group="lootPurse" count="1,3" prob="90"/>                            </lootgroup>
-<lootgroup name="cnt49"                 count="1">    <item name="paper" count="1,10" prob="55"/>  <item group="schemBasic" prob="15"/>   <item group="schemCommon" prob="20"/>  <item group="schemRare" prob="10"/>                </lootgroup>
-<lootgroup name="cnt50"                 count="1">    <item name="mechanicalParts" count="1,5" prob="10"/> <item name="scrapPlastics" count="1,6" prob="5"/> <item group="ammoGuns" count="1,2" prob="15"/> <item group="gunsBalanced" prob="45"/>  <item group="gunsComplete" prob="10"/>   <item group="schemFirearm" prob="10"/>
-                                                      <item group="ammoBombs" prob="3"/>   <item group="ammoMines" prob="2"/>                             </lootgroup>
-<lootgroup name="cnt51"                 count="1">    <item group="medicalBasic" prob="30"/>   <item group="medicalAdvanced" prob="70"/>                            </lootgroup>
-<lootgroup name="cnt52"                 count="1">    <item name="beer" count="1,2" prob="30"/>  <item name="molotovCocktail" count="1,4" prob="5"/> <item group="foodDrinks" prob="65" count="1,2"/>                    </lootgroup>
-<lootgroup name="cnt53"                 count="1">    <item group="lootHWTools" prob="50"/>   <item group="lootHWMats" prob="30"/>   <item group="lootHWBlocks" prob="20"/>                      </lootgroup>
-<lootgroup name="cnt54"                 count="1">    <item name="scrapPlastics" count="1,2" prob="15"/> <item group="lootHousehold" prob="40"/>   <item group="foodDrinks" prob="25"/>                      </lootgroup>
-<lootgroup name="cnt55"                 count="1">    <item name="casinoCoin" count="1,25" prob="55"/> <item group="itemsCash" prob="45"/>                             </lootgroup>
-<lootgroup name="cnt56"                 count="1">    <item group="lootTazas"/>                                     </lootgroup>
-<lootgroup name="cnt57"                 count="1">    <item group="lootMining"/>                                     </lootgroup>
-<lootgroup name="cnt58"                 count="1">    <item name="scrapPlastics" count="1,2" prob="15"/> <item group="lootHousehold" prob="40"/>   <item group="foodDrinks" prob="25"/>                      </lootgroup>
-<lootgroup name="cnt59"                 count="1">    <item name="paper" count="1,10" prob="5"/>  <item name="scrapPlastics" count="1,8" prob="5"/> <item name="canHam" count="1,5" prob="20"/> <item name="foodHoney" count="1" prob="5"/> <item group="foodCanned" count="1,3" prob="10"/> <item group="foodStock" count="1,2" prob="20"/>
-                                                      <item group="foodDrinks" count="1,2" prob="10"/> <item name="shamSandwich" count="1,5" prob="30"/>                           </lootgroup>
-<lootgroup name="cnt60"                 count="1">    <item name="paper" count="1,10" prob="30"/>  <item group="schemAll" prob="70"/>                             </lootgroup>
-<lootgroup name="cnt61"                 count="1">    <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="14"/>  <item group="lootFeralZombie" prob="50"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt62"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt63"                 count="1">    <item name="herbalAntibiotics" count="2,5" prob="25"/> <item group="lootHerbal" prob="75"/>                             </lootgroup>
-<lootgroup name="cnt64"                 count="1">    <item name="gasCan" count="25,100" prob="100"/>                                   </lootgroup>
-<lootgroup name="cnt65"                 count="1">    <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="4"/>  <item group="lootHazmatZombie" prob="45"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt66"                 count="1">    <item group="lootBaseZombie" prob="30"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootLumberZombie" prob="40"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt67"                 count="1">    <item name="bottledRiverWater" count="1,2" prob="40"/> <item name="turd" count="1,2" prob="40"/>  <item group="lootToilet" prob="20"/>                      </lootgroup>
-<lootgroup name="cnt68"                 count="1">    <item group="itemsTrash" prob="38"/>   <item group="itemsCommon" prob="60"/>   <item group="lootHousehold" prob="1"/>  <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt69"                 count="1">    <item name="bottledRiverWater" count="1,3" prob="35"/> <item name="turd" count="1,3" prob="35"/>  <item group="lootToilet" prob="30"/>                      </lootgroup>
-<lootgroup name="cnt70"                 count="1">    <item group="lootTreasureBasic" count="2,5" prob="100"/>                                 </lootgroup>
-<lootgroup name="cnt71"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt72"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt73"                 count="1">    <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootSoldierZombie" prob="60"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
-<lootgroup name="cnt74"                 count="1">    <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/>                     </lootgroup>
-<lootgroup name="cnt75"                 count="1">    <item name="rottingFlesh" count="1,2" prob="25"/> <item name="femur" count="1,2" prob="20"/>  <item name="fertilizer" count="1,2" prob="10"/> <item name="goldNugget" prob="10"/>  <item group="itemsTrash" prob="20"/>   <item group="itemsCommon" prob="10"/>
-                                                      <item group="schemCommon" prob="5"/>                                    </lootgroup>
-<lootgroup name="cnt76"                 count="1">    <item name="coal" count="5,15" prob="35"/>  <item name="fertilizer" count="1,2" prob="10"/>  <item name="femur" count="1,2" prob="30"/> <item name="goldNugget" prob="10"/>  <item group="itemsCommon" prob="15"/>          </lootgroup>
-<lootgroup name="cnt77"                 count="1">    <item group="itemsTrash" prob="55"/>   <item group="itemsCommon" count="1,2" prob="40"/> <item group="lootSafesBasic" prob="5"/>                     </lootgroup>
-<lootgroup name="cnt78"                 count="1">    <item group="lootBaseZombie" prob="20"/>  <item group="lootStrongZombie" prob="35"/>  <item group="lootFootballZombie" prob="45"/>                     </lootgroup>
-<lootgroup name="cnt79"                 count="1">    <item group="lootBaseZombie" prob="75"/>  <item group="lootFoodZombie" prob="15"/>  <item name="megaCrush" prob="10"/>                      </lootgroup>
-<lootgroup name="cnt80"                 count="1">    <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="10"/>  <item name="megaCrush" prob="5"/>  <item name="mechanicalParts" count="1,3" prob="10"/>              </lootgroup>
-<lootgroup name="cnt81"                 count="1">    <item group="lootBaseZombie" prob="10"/>  <item group="lootCowboyZombie" prob="90"/>                            </lootgroup>
-<lootgroup name="cnt82"                 count="1">    <item group="itemsTrash" count="1,4" prob="15"/> <item group="itemsCommon" count="1,2" prob="15"/> <item group="lootMining" count="1,2" prob="50"/>                    </lootgroup>
-<lootgroup name="cnt83"                 count="1">    <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="35"/>  <item group="lootBikerZombie" prob="55"/>                     </lootgroup>
-<lootgroup name="cnt84"                 count="1">    <item group="lootBaseZombie" prob="10"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootBikerZombie" prob="75"/>                     </lootgroup>
-<lootgroup name="cnt85"                 count="1">    <item group="lootBaseZombie" prob="10"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootFarmerZombie" prob="75"/>                     </lootgroup>
-<lootgroup name="cnt86"                 count="1">    <item group="schemAll" prob="75"/>   <item name="scrapPlastics" count="1,4" prob="25"/>                           </lootgroup>
-<lootgroup name="cnt87"                 count="1">    <item name="paper" count="2,8" prob="5"/>  <item name="repairKit" count="2,5" prob="5"/>  <item name="headlight" count="1,2" prob="5"/> <item name="partsHandlebars" prob="5"/>  <item name="toolAndDieSet" prob="1"/>   <item group="toolsBasic" prob="10"/>
-                                                      <item group="matsScrap" prob="10"/>   <item group="matsForged" prob="10"/>   <item group="matsMisc" prob="10"/>  <item group="automotiveMinibike" prob="39"/>               </lootgroup>
-<lootgroup name="cnt88"                 count="1">    <item group="itemsCommon" prob="20"/>   <item name="pickaxeSteel" prob="5"/>   <item name="fireaxeSteel" prob="5"/>  <item name="shovelSteel" prob="5"/>  <item name="sledgehammer" prob="5"/>   <item group="toolsBasic" prob="20"/>
-                                                      <item group="toolsMechanized" prob="10"/>  <item group="lootHWMats" prob="15"/>   <item group="lootHWBlocks" prob="15"/>                      </lootgroup>
-<lootgroup name="cnt89"                 count="1">    <item group="lootBaseZombie" prob="80"/>  <item group="itemsCash" count="1,2" prob="20"/>                            </lootgroup>
-<lootgroup name="cnt90"                 count="1">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
-<lootgroup name="cnt91"                 count="1">    <item group="matsBasic" prob="20"/>   <item group="matsOres" prob="20"/>   <item group="matsScrap" prob="20"/>  <item group="matsForged" prob="15"/>  <item group="toolsForge" prob="5"/>
-                                                      <item name="ironArrowHead" count="10,50" prob="15"/> <item name="steelArrowHead" count="10,50" prob="5"/>                           </lootgroup>
-<lootgroup name="cnt92"                 count="1">    <item group="matsBasic" prob="10"/>   <item group="matsScrap" prob="10"/>   <item group="matsForged" prob="20"/>  <item group="matsMisc" prob="20"/>  <item group="toolsIron" prob="10"/>
-                                                      <item group="toolsSteel" prob="10"/>   <item group="ammoParts" prob="10"/>  <item group="ammoParts" prob="10"/>                     </lootgroup>
-<lootgroup name="cnt93"                 count="1">    <item name="rottingFlesh" count="5,15" prob="20"/> <item group="matsBasic" prob="40"/>   <item group="matsOres" prob="10"/>  <item group="matsConstruction" prob="30"/>               </lootgroup>
-<lootgroup name="cnt94"                 count="1">    <item group="itemsTrash" prob="10"/>   <item name="wood" count="10,100" prob="10"/>  <item name="paint" count="25,75" prob="5"/> <item name="glue" count="1,5" prob="5"/> <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="15"/>
-                                                      <item name="coal" count="10,50" prob="10"/>  <item name="oilShale" count="10,50" prob="5"/>  <item name="beaker" prob="5"/>   <item group="medicalAdvanced" prob="5"/> <item name="potassiumNitratePowder" count="10,50" prob="10"/>       </lootgroup>
-<lootgroup name="cnt95"                 count="1">    <item group="gunsBalanced" prob="20"/>   <item group="gunsComplete" prob="10"/>   <item group="armorLight" prob="15"/>  <item group="armorHeavy" prob="10"/>  <item group="armorRS" prob="10"/> 
-                                                      <item group="schemAll" prob="15"/>   <item group="matsRareOres" prob="10"/>                             </lootgroup>
-<lootgroup name="cnt96"                 count="1">    <item group="itemsCommon" prob="20"/>   <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="10"/> <item group="schemAll" prob="20"/>  <item group="medicalAdvanced" prob="40"/>         </lootgroup>
-<lootgroup name="cnt97"                 count="1">    <item name="scrapLead" count="20,50" prob="90"/> <item group="batteries" prob="10"/>                             </lootgroup>
-<lootgroup name="cnt98"                 count="1">    <item name="scrapIron" count="20,50" prob="90"/> <item group="engines" prob="10"/>                             </lootgroup>
-
-<lootgroup name="cnt154"                count="all">  <item group="cnt9"/>  <item group="ammoGuns"/>  </lootgroup>
-<!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD BASE Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
+<!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- =========================== CARDBOARD BOXES =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt1">                                   <item group="itemsTrash" count="1,2" prob="20"/>  <item group="itemsCommon" prob="80"/>  </lootgroup>
 <lootcontainer id="1" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt1" count="1" prob="30"/>
-<item group="cnt1" count="2" prob="30"/>
-<item group="cnt1" count="3" prob="20"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                           </lootcontainer>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt1" count="1" prob="20"/>
+<item group="cnt1" count="2" prob="45"/>
+<item group="cnt1" count="3" prob="15"/>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" loot_prob_template="nothing66"/>  </lootcontainer>
 <!-- =========================== GARBAGE BAGS ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt2">                                   <item group="itemsTrash" prob="40"/>  <item group="itemsCommon" prob="60"/>  </lootgroup>
 <lootcontainer id="2" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_garbage"
-sound_close=  "UseActions/close_garbage"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_garbage"
+sound_close=            "UseActions/close_garbage"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt2" count="1" prob="40"/>
 <item group="cnt2" count="2" prob="35"/>
 <item group="cnt2" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="itemsTrash" count="0,1" loot_prob_template="nothing66"/>                                           </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing66"/>  </lootcontainer>
 <!-- =========================== CUPBOARDS (OLD HOUSES) ======================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt3">                                   <item group="itemsTrash" count="1,2" prob="20"/>  <item group="lootHousehold" prob="45"/>  <item group="itemsCommon" prob="30"/>  <item group="itemsCookware" prob="5"/>  </lootgroup>
 <lootcontainer id="3" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cupboard"
-sound_close=  "UseActions/close_cupboard"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt3" count="1" prob="60"/>
-<item group="cnt3" count="2" prob="15"/>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cupboard"
+sound_close=            "UseActions/close_cupboard"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt3" count="1" prob="30"/>
+<item group="cnt3" count="2" prob="45"/>
 <item group="cnt3" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                           </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== BIG FRIDGES =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt4">                                   <item group="foodCanned" prob="25"/>  <item group="foodRations" prob="5"/> <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="30"/>  <item group="foodStock" prob="5"/>  </lootgroup>
 <lootcontainer id="4" count="1" size="4,8" open_time="8" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_fridge"
-sound_close=  "UseActions/close_fridge"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt4" count="1" prob="60"/>
-<item group="cnt4" count="2" prob="15"/>
-<item group="cnt4" count="3,4" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_fridge"
+sound_close=            "UseActions/close_fridge"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt4" count="1,2" prob="60"/>
+<item group="cnt4" count="2,4" prob="15"/>
+<item group="cnt4" count="4,8" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="foodRotten" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== STOVES (OLD HOUSES) =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt5">                                   <item name="scrapIron" count="5,15" prob="40"/> <item name="coal" count="4,12" prob="10"/> <item group="itemsCookware" prob="15"/> <item group="itemsCommon" prob="5"/> <item group="foodMeat" count="1,2" prob="10"/> <item group="foodRotten" count="1,2" prob="20"/>  </lootgroup>
 <lootcontainer id="5" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_mailbox"
-sound_close=  "UseActions/close_mailbox"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt5" count="1" prob="40"/>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_mailbox"
+sound_close=            "UseActions/close_mailbox"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt5" count="1,2" prob="40"/>
 <item group="cnt5" count="2" prob="35"/>
 <item group="cnt5" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing66"/>
+</lootcontainer>
 <!-- =========================== NIGHT STANDS ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt6">                                   <item name="flashlight02" prob="5"/>  <item group="clothGeneral" prob="35"/>  <item group="itemsCommon" prob="15"/> <item group="ammoGuns" count="1,2" prob="5"/> <item group="schemBasic" prob="10"/>  <item group="schemCommon" prob="5"/>  <item group="medicalBasic" prob="15"/>  <item group="pistol" prob="5"/>  </lootgroup>
 <lootcontainer id="6" count="1" size="4,6" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_drawer"
-sound_close=  "UseActions/close_drawer"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_drawer"
+sound_close=            "UseActions/close_drawer"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt6" count="1" prob="40"/>
 <item group="cnt6" count="2" prob="35"/>
 <item group="cnt6" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="clothGeneral" count="0,1" loot_prob_template="nothing66"/>
+</lootcontainer>
 <!-- =========================== HOUSEHOLD MEDICINE CABINETS =================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt7">                                   <item group="medicalBasic" prob="75"/> <item group="medicalPills" count="1,3" prob="25"/>  </lootgroup>
 <lootcontainer id="7" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_medicine_cabinet"
-sound_close=  "UseActions/close_medicine_cabinet"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt7" count="1" prob="40"/>
-<item group="cnt7" count="2" prob="35"/>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_medicine_cabinet"
+sound_close=            "UseActions/close_medicine_cabinet"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt7" count="1" prob="50"/>
+<item group="cnt7" count="2" prob="25"/>
 <item group="cnt7" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="medicalPills" count="0,1" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="medicalPills" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== KITCHEN SINKS (OLD HOUSES) ==================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt8">                                   <item group="itemsTrash" prob="25"/>  <item name="shortMetalPipe" prob="10"/> <item group="toolsHousehold" prob="10"/>  <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="10"/> <item name="coffeeBeans" count="1,4" prob="15"/> <item name="potassiumNitratePowder" count="2,6" prob="10"/>  <item name="scrapLead" count="1,10" prob="15"/>  </lootgroup>
 <lootcontainer id="8" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cupboard"
-sound_close=  "UseActions/close_cupboard"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cupboard"
+sound_close=            "UseActions/close_cupboard"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt8" count="1" prob="40"/>
 <item group="cnt8" count="2" prob="35"/>
 <item group="cnt8" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing66"/>
+</lootcontainer>
 <!-- =========================== BACKPACKS ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt9">                                   <item group="lootBackpacks" prob="65"/> <item group="lootHousehold" count="0,2" prob="35"/>  </lootgroup>
 <lootcontainer id="9" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt9" count="0,1" prob="19"/>
 <item group="cnt9" count="1" prob="60"/>
 <item group="cnt9" count="2,3" prob="1"/>
-<!-- Chance of No Loot -->
-<item group="itemsTrash" count="0,2" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== PLAYER MADE CHESTS ============================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt10">                                  <item group="lootHousehold" prob="45"/> <item group="itemsCommon" prob="30"/> <item group="itemsCookware" prob="5"/>  </lootgroup>
 <lootcontainer id="10" count="1" size="9,9" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_chest"
-sound_close=  "UseActions/close_chest"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_chest"
+sound_close=            "UseActions/close_chest"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt10" count="1" prob="60"/>
 <item group="cnt10" count="2" prob="15"/>
 <item group="cnt10" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== SAFES (DESK & WALL) =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt11">                                  <item group="lootSafesBasic" prob="90"/> <item group="lootSafesRich" prob="10"/>  </lootgroup>
 <lootcontainer id="11" count="1" size="7,7" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_safe"
-sound_close=  "UseActions/close_safe"
-loot_quality_template= "leveledLight">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_safe"
+sound_close=            "UseActions/close_safe"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
 <item group="cnt11" count="1" prob="60"/>
 <item group="cnt11" count="2" prob="15"/>
 <item group="cnt11" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="cnt11" loot_prob_template="nothing33"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="cnt11" loot_prob_template="nothing33"/>
+</lootcontainer>
 <!-- =========================== CUPBOARDS (EXPENSIVE HOUSES) ================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt12">                                  <item group="lootHousehold" prob="55"/> <item group="itemsCommon" prob="40"/> <item group="itemsCookware" prob="5"/>  </lootgroup>
 <lootcontainer id="12" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cupboard"
-sound_close=  "UseActions/close_cupboard"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cupboard"
+sound_close=            "UseActions/close_cupboard"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt12" count="1" prob="60"/>
 <item group="cnt12" count="2" prob="15"/>
 <item group="cnt12" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== KITCHEN SINKS (EXPENSIVE HOUSES) ============================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt13">                                  <item group="itemsTrash" prob="15"/>   <item name="shortMetalPipe" prob="10"/>  <item group="toolsHousehold" prob="10"/>  <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="20"/> <item name="coffeeBeans" count="1,9" prob="15"/>  <item name="potassiumNitratePowder" count="5,10" prob="10"/> <item name="scrapLead" count="5,15" prob="15"/> </lootgroup>
 <lootcontainer id="13" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cupboard"
-sound_close=  "UseActions/close_cupboard"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cupboard"
+sound_close=            "UseActions/close_cupboard"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt13" count="1" prob="30"/>
 <item group="cnt13" count="2" prob="45"/>
 <item group="cnt13" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== MAILBOXES ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt14">                                  <item name="paper" count="0,25" prob="60"/> <item group="schemAll" prob="15"/> <item group="lootNest" count="1,2" prob="25"/>  </lootgroup>
 <lootcontainer id="14" count="1" size="4,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_mailbox"
-sound_close=  "UseActions/close_mailbox"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_mailbox"
+sound_close=            "UseActions/close_mailbox"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt14" count="1" prob="30"/>
 <item group="cnt14" count="2" prob="45"/>
 <item group="cnt14" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
-<!-- =========================== BASIC ZOMBIES (MALES) ========================================================================================================================================================================================================================================================================================================================= -->
+<!-- Chance of Default Loot -->
+<item group="lootNest" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== BASIC ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt15">                                  <item group="lootBaseZombie" prob="90"/>  <item group="lootFoodZombie" prob="5"/> <item group="lootStrongZombie" prob="5"/>  </lootgroup>
 <lootcontainer id="15" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt15" count="1" prob="50"/>
 <item group="cnt15" count="2" prob="25"/>
 <item group="cnt15" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing66"/>
+</lootcontainer>
 <!-- =========================== TRASHCANS ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt16">                                  <item group="itemsTrash" prob="30"/>  <item group="itemsCommon" prob="70"/>  </lootgroup>
 <lootcontainer id="16" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_trashcan"
-sound_close=  "UseActions/close_trashcan"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_trashcan"
+sound_close=            "UseActions/close_trashcan"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt16" count="1" prob="20"/>
 <item group="cnt16" count="2" prob="50"/>
 <item group="cnt16" count="3,4" prob="10"/>
-<!-- Chance of No Loot -->
-<item group="itemsTrash" count="1" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== ZOMBIE COP (NORMAL) =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt17">                                  <item group="lootBaseZombie" prob="30"/>  <item group="lootCopZombie" prob="70"/>  </lootgroup>
 <lootcontainer id="17" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
 <item group="cnt17" count="1" prob="40"/>
 <item group="cnt17" count="2" prob="35"/>
 <item group="cnt17" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="cnt17" count="0,1" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="cnt17" count="0,1" loot_prob_template="nothing50"/>
+  </lootcontainer>
 <!-- =========================== WASHING MACHINE =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt18">                                  <item group="clothGeneral" prob="60"/>  <item name="cloth" count="1,10" prob="40"/>  </lootgroup>
 <lootcontainer id="18" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_fridge"
-sound_close=  "UseActions/close_fridge"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_fridge"
+sound_close=            "UseActions/close_fridge"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt18" count="1" prob="30"/>
 <item group="cnt18" count="2" prob="45"/>
 <item group="cnt18" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                            </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== CARS ========================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt19">                                  <item group="itemsCommon" count="1,2" prob="55"/> <item group="toolsCar" prob="20"/>  <item group="matsMisc" prob="15"/>  <item group="automotiveMinibike" prob="10"/>  </lootgroup>
 <lootcontainer id="19" count="1" size="8,4" open_time="6" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_vehicle"
-sound_close=  "UseActions/close_vehicle"
-loot_quality_template= "leveledLight">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_vehicle"
+sound_close=            "UseActions/close_vehicle"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
 <item group="cnt19" count="1" prob="30"/>
 <item group="cnt19" count="2" prob="45"/>
 <item group="cnt19" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="itemsTrash" count="1,3" loot_prob_template="nothing33"/>                                        </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" count="1,3" loot_prob_template="nothing33"/>
+</lootcontainer>
 <!-- =========================== CHROME FRIDGES (TOP/BOTTOM) =================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt20">                                  <item group="foodCanned" prob="25"/>  <item group="foodRations" prob="5"/>  <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="30"/>  <item group="foodStock" prob="5"/>  </lootgroup>
 <lootcontainer id="20" count="1" size="4,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_fridge"
-sound_close=  "UseActions/close_fridge"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
-<item group="cnt20" count="1" prob="35"/>
-<item group="cnt20" count="2" prob="35"/>
-<item group="cnt20" count="3" prob="10"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_fridge"
+sound_close=            "UseActions/close_fridge"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt20" count="1,2" prob="35"/>
+<item group="cnt20" count="2,4" prob="35"/>
+<item group="cnt20" count="3,6" prob="10"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== ZOMBIE NURSE (NORMAL) ========================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt21">                                  <item name="firstAidBandage" prob="25"/>  <item group="medicalBasic" prob="25"/>  <item group="medicalAdvanced" prob="50"/>  </lootgroup>
 <lootcontainer id="21" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt21" count="1" prob="40"/>
 <item group="cnt21" count="2" prob="35"/>
 <item group="cnt21" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>                                        </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== GARAGE BOX ==================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt22">                                  <item group="matsMisc" count="1,2" prob="70"/>  <item group="blocksElectric" prob="10"/>  <item group="automotiveMinibike" prob="20"/>  </lootgroup>
 <lootcontainer id="22" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledLight">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
 <item group="cnt22" count="1" prob="40"/>
 <item group="cnt22" count="2" prob="35"/>
 <item group="cnt22" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="itemsCommon" loot_prob_template="nothing50"/>                                         </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="itemsCommon" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== WOODEN DESK =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt23">                                  <item group="itemsCommon" count="1,2" prob="50"/> <item group="ammoGuns" count="1,2" prob="10"/>  <item group="schemAll" prob="10"/>  <item group="medicalBasic" count="1,2" prob="15"/>  <item group="pistol" prob="5"/> <item name="flashlight02" prob="10"/>  </lootgroup>
 <lootcontainer id="23" count="1" size="6,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_drawer"
-sound_close=  "UseActions/close_drawer"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_drawer"
+sound_close=            "UseActions/close_drawer"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt23" count="1" prob="40"/>
 <item group="cnt23" count="2" prob="35"/>
 <item group="cnt23" count="3" prob="5"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing66"/>
+</lootcontainer>
 <!-- =========================== IRON DESK ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt24">                                  <item group="itemsCommon" count="1,2" prob="40"/> <item group="ammoGuns" count="1,2" prob="15"/>  <item group="schemAll" prob="10"/>  <item group="medicalBasic" count="1,2" prob="15"/>  <item group="pistol" prob="10"/>  <item name="flashlight02" prob="10"/>  </lootgroup>
 <lootcontainer id="24" count="1" size="6,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_file_cabinet"
-sound_close=  "UseActions/close_file_cabinet"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_file_cabinet"
+sound_close=            "UseActions/close_file_cabinet"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt24" count="1" prob="30"/>
 <item group="cnt24" count="2" prob="40"/>
 <item group="cnt24" count="3" prob="10"/>
-<!-- Chance of No Loot -->
-<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
 <!-- =========================== BIRD NEST ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt25">                                  <item name="feather" count="3,7" prob="75"/>  <item group="lootNest" prob="25"/>  </lootgroup>
 <lootcontainer id="25" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_garbage"
-sound_close=  "UseActions/close_garbage"
-loot_quality_template= "leveledNormal">
-
-<!-- Chance of Loot: Default Total = 80 -->
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_garbage"
+sound_close=            "UseActions/close_garbage"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
 <item group="cnt25" count="1,2" prob="30"/>
 <item group="cnt25" count="2,3" prob="30"/>
 <item group="cnt25" count="3,4" prob="20"/>
-<!-- Chance of No Loot -->
-<item name="feather" count="3,7" loot_prob_template="nothing33"/>                                        </lootcontainer>
+<!-- Chance of Default Loot -->
+<item name="feather" count="3,7" loot_prob_template="nothing33"/>
+</lootcontainer>
 <!-- =========================== STOVES (EXPENSIVE HOUSES) ===================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt26">    <item name="scrapIron" count="5,15" prob="40"/>  <item name="coal" count="4,12" prob="10"/>   <item group="itemsCookware" prob="15"/>  <item group="itemsCommon" prob="5"/>  <item group="foodMeat" count="1,2" prob="10"/>  <item group="foodRotten" count="1,2" prob="20"/> </lootgroup>
 <lootcontainer id="26" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_mailbox"
-sound_close=  "UseActions/close_mailbox"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_mailbox"
+sound_close=            "UseActions/close_mailbox"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt26" count="1" prob="20"/>
 <item group="cnt26" count="2" prob="45"/>
 <item group="cnt26" count="3" prob="15"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== CASH REGISTER (OPEN) ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt27">    <item name="casinoCoin" count="1,25" prob="5"/>  <item group="itemsCash" prob="45"/>   <item group="nothing" prob="50"/>                      </lootgroup>
 <lootcontainer id="27" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cash_register"
-sound_close=  "UseActions/close_cash_register"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cash_register"
+sound_close=            "UseActions/close_cash_register"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt27" count="1" prob="70"/>
 <item group="cnt27" count="2" prob="9"/>
 <item group="cnt27" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing90"/>                                          </lootcontainer>
 <!-- =========================== COFFIN (CORPSE) =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt28">    <item name="rottingFlesh" count="1,2" prob="30"/> <item name="femur" count="1,2" prob="25"/>  <item name="fertilizer" count="1,3" prob="5"/> <item name="goldNugget" prob="5"/>  <item group="itemsTrash" prob="15"/>   <item group="itemsCommon" prob="10"/> 
+                                                      <item group="schemCommon" prob="5"/>   <item group="lootSurvivor" prob="5"/>                             </lootgroup>
 <lootcontainer id="28" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt28" count="1" prob="40"/>
 <item group="cnt28" count="2" prob="30"/>
 <item group="cnt28" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- 29 FREE -->
 <!-- 30 FREE -->
@@ -2039,891 +1946,974 @@ loot_quality_template= "leveledNormal">
 <!-- 32 FREE -->
 <!-- 33 FREE -->
 <!-- =========================== AIRDROPS (BASIC) ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt34">    <item group="lootADBase" prob="35"/>   <item group="lootADMedical" prob="10"/>   <item group="lootADFood" prob="12"/>  <item group="lootADGunsAmmo" prob="12"/> <item group="lootADTools" prob="12"/>   <item group="lootADArmor" prob="12"/>
+                                                      <item group="lootADBuild" prob="2"/>   <item group="lootADStock" prob="5"/>                             </lootgroup>
 <lootcontainer id="34" count="1" size="7,7" open_time="3" 
-destroy_on_close= "true"
-sound_open=  "UseActions/open_supply_crate"
-sound_close=  "UseActions/close_supply_crate"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "true"
+sound_open=             "UseActions/open_supply_crate"
+sound_close=            "UseActions/close_supply_crate"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt34" count="1" prob="75"/>
 <item group="cnt34" count="2" prob="4"/>
 <item group="cnt34" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt34" loot_prob_template="nothing33"/>                                          </lootcontainer>
 <!-- =========================== STUMP (DEFAULT) =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt35">    <item group="itemsCommon" count="1,2" prob="25"/> <item name="flashlight02" prob="2.5"/>   <item name="foodHoney" prob="8"/>  <item group="clothCW" prob="15"/>  <item group="clothGeneral" prob="6.5"/>   <item group="armorMilitaryMisc" prob="1"/>
+                                                      <item group="gunsCommon" prob="8"/>   <item group="gunsUncommon" prob="5"/>   <item group="gunsComplete" prob="1"/>  <item group="foodCanned" prob="10"/>  <item group="foodRations" prob="5"/>   <item group="itemsCookware" prob="7"/>
+                                                      <item group="medicalBasic" prob="5"/>   <item group="lootHerbal" prob="1"/>                              </lootgroup>
 <lootcontainer id="35" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_stump"
-sound_close=  "UseActions/close_stump"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_stump"
+sound_close=            "UseActions/close_stump"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt35" count="1" prob="35"/>
 <item group="cnt35" count="2" prob="35"/>
 <item group="cnt35" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                         </lootcontainer>
 <!-- =========================== SUITCASE ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt36">    <item name="bottledWater" prob="15"/>   <item group="foodCanned" count="1,2" prob="25"/> <item group="itemsCommon" prob="25"/>  <item group="toolsBasic" prob="10"/>  <item group="medicalBasic" prob="10"/>   <item group="weaponsBackpack" prob="10"/>
+                                                      <item group="gunsCommon" prob="5"/>                                    </lootgroup>
 <lootcontainer id="36" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_suitcase"
-sound_close=  "UseActions/close_suitcase"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_suitcase"
+sound_close=            "UseActions/close_suitcase"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt36" count="1" prob="20"/>
 <item group="cnt36" count="2" prob="40"/>
 <item group="cnt36" count="3" prob="20"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="itemsTrash" loot_prob_template="nothing50"/>                                         </lootcontainer>
 <!-- =========================== SPECIAL ZOMBIES =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt37">    <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/>                      </lootgroup>
 <lootcontainer id="37" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt37" count="1" prob="50"/>
 <item group="cnt37" count="2" prob="25"/>
 <item group="cnt37" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== BASIC ZOMBIES (Strong) ======================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt38">    <item group="lootBaseZombie" prob="60"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootStrongZombie" prob="24.9"/>   <item group="lootSurvivor" prob="0.1"/>                   </lootgroup>
 <lootcontainer id="38" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt38" count="1" prob="50"/>
 <item group="cnt38" count="2" prob="25"/>
 <item group="cnt38" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
 <!-- =========================== FAT ZOMBIES =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt39">    <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="24"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="39" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt39" count="1" prob="50"/>
 <item group="cnt39" count="2" prob="25"/>
 <item group="cnt39" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="itemsCommon" count="0,1" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== AMMO CHEST ==================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt40">    <item group="ammoGuns" prob="85"/>   <item group="ammoBombs" prob="5"/>   <item group="ammoMines" prob="5"/>  <item group="gunsCommon" prob="2"/>  <item group="gunsUncommon" prob="2"/>   <item group="gunsRare" prob="1"/>   </lootgroup>
 <lootcontainer id="40" count="1" size="7,7" open_time="15" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_chest"
-sound_close=  "UseActions/close_chest"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_chest"
+sound_close=            "UseActions/close_chest"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt40" count="3,4" prob="30"/>
 <item group="cnt40" count="5,6" prob="45"/>
 <item group="cnt40" count="7,9" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="ammoGuns" count="2,3" loot_prob_template="nothing50"/>                                        </lootcontainer> 
 <!-- =========================== PLAYER BACKPACK =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt41">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="41" count="1" size="9,9" open_time="0" 
-destroy_on_close= "true"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "true"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt41" count="1" prob="30"/>
 <item group="cnt41" count="2" prob="45"/>
 <item group="cnt41" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== GUN SAFES ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt42">    <item group="ammoGuns" count="1,3" prob="10"/>  <item group="ammoBombs" prob="2"/>   <item group="ammoMines" prob="2"/>  <item group="gunsCommon" count="1" prob="48"/> <item group="gunsUncommon" prob="28"/>   <item group="gunsRare" prob="5"/>  
+                                                      <item group="gunsComplete" prob="2.5"/>   <item group="schemFirearm" prob="2.5"/>                             </lootgroup>
 <lootcontainer id="42" count="1" size="9,9" open_time="8" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_safe"
-sound_close=  "UseActions/close_safe"
-loot_quality_template= "unleveled">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_safe"
+sound_close=            "UseActions/close_safe"
+loot_quality_template=  "unleveled">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt42" count="1,2" prob="10"/>
 <item group="cnt42" count="3,4" prob="60"/>
 <item group="cnt42" count="5" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="gunsBalanced" count="1,2" loot_prob_template="nothing33"/>                                        </lootcontainer>
 <!-- =========================== LOCKERS ======================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt43">    <item name="gunPowder" count="1,25" prob="3"/>  <item name="footballHelmet" prob="6"/>   <item name="miningHelmet" prob="1"/>  <item name="paper" count="3,5" prob="3"/> <item group="clothGeneral" prob="50"/>   <item group="toolsOther" prob="2"/>
+                                                      <item group="gunsCommon" prob="3"/>   <item group="ammoGuns" prob="3"/>   <item group="medicalBasic" prob="4"/>  <item group="schemBasic" prob="3"/>  <item group="schemCommon" prob="2"/>   <item group="itemsCommon" prob="20"/>   </lootgroup>
 <lootcontainer id="43" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_locker"
-sound_close=  "UseActions/close_locker"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_locker"
+sound_close=            "UseActions/close_locker"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt43" count="1" prob="25"/>
 <item group="cnt43" count="2,3" prob="50"/>
 <item group="cnt43" count="4" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== FILE CABINETS ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt44">    <item name="painkillers" prob="15"/>   <item name="paper" count="1,10" prob="15"/>  <item group="itemsCash" prob="30"/>  <item group="ammoGuns" prob="5"/>  <item group="schemBasic" prob="10"/>   <item group="schemCommon" prob="5"/>
+                                                      <item group="schemPainting" prob="5"/>   <item group="itemsCommon" prob="15"/>                             </lootgroup>
 <lootcontainer id="44" count="1" size="2,8" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_file_cabinet"
-sound_close=  "UseActions/close_file_cabinet"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_file_cabinet"
+sound_close=            "UseActions/close_file_cabinet"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt44" count="1" prob="35"/>
 <item group="cnt44" count="2" prob="40"/>
 <item group="cnt44" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== COOLERS ======================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt45">    <item name="emptyJar" prob="10"/>   <item name="bottledRiverWater" prob="15"/>  <item name="bottledWater" prob="5"/>  <item name="foodHoney" prob="10"/>  <item group="foodDrinks" prob="5"/>   <item group="foodPrepared" prob="5"/>
+                                                      <item group="foodCanned" prob="6"/>   <item group="foodRations" prob="3"/>   <item group="foodStock" prob="1"/>  <item group="foodMeat" prob="5"/>  <item group="foodRotten" prob="35"/>          </lootgroup>
 <lootcontainer id="45" count="1" size="4,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cooler"
-sound_close=  "UseActions/close_cooler"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cooler"
+sound_close=            "UseActions/close_cooler"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt45" count="1" prob="35"/>
 <item group="cnt45" count="2,3" prob="40"/>
 <item group="cnt45" count="4" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== TRASH COMPACTORS ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt46">    <item group="itemsTrash" count="1,2" prob="40"/> <item group="itemsCommon" prob="50"/>   <item group="clothGeneral" prob="7.5"/>  <item group="foodCanned" prob="2.5"/>                </lootgroup>
 <lootcontainer id="46" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_fridge"
-sound_close=  "UseActions/close_fridge"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_fridge"
+sound_close=            "UseActions/close_fridge"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt46" count="1" prob="35"/>
 <item group="cnt46" count="2,3" prob="40"/>
 <item group="cnt46" count="4" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== DESTROYED CONTAINER BACKPACK ================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt47">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="47" count="1" size="9,9" open_time="0" 
-destroy_on_close= "true"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "true"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt47" count="1" prob="30"/>
 <item group="cnt47" count="2" prob="45"/>
 <item group="cnt47" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== PURSE ========================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt48">    <item group="pistol" prob="10"/>   <item group="lootPurse" count="1,3" prob="90"/>                            </lootgroup>
 <lootcontainer id="48" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt48" count="1" prob="70"/>
 <item group="cnt48" count="2" prob="9"/>
 <item group="cnt48" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="foodCanned" loot_prob_template="nothing50"/>                                         </lootcontainer>
 <!-- =========================== BOOKCASE (COMMON) ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt49">    <item name="paper" count="1,10" prob="55"/>  <item group="schemBasic" prob="15"/>   <item group="schemCommon" prob="20"/>  <item group="schemRare" prob="10"/>                </lootgroup>
 <lootcontainer id="49" count="1" size="3,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_drawer"
-sound_close=  "UseActions/close_drawer"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_drawer"
+sound_close=            "UseActions/close_drawer"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt49" count="1" prob="40"/>
 <item group="cnt49" count="2" prob="39"/>
 <item group="cnt49" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="schemBasic" loot_prob_template="nothing33"/>                                         </lootcontainer>
 <!-- =========================== WEAPON CRATE ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt50">    <item name="mechanicalParts" count="1,5" prob="10"/> <item name="scrapPlastics" count="1,6" prob="5"/> <item group="ammoGuns" count="1,2" prob="15"/> <item group="gunsBalanced" prob="45"/>  <item group="gunsComplete" prob="10"/>   <item group="schemFirearm" prob="10"/>
+                                                      <item group="ammoBombs" prob="3"/>   <item group="ammoMines" prob="2"/>                             </lootgroup>
 <lootcontainer id="50" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "unleveled">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "unleveled">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt50" count="2" prob="50"/>
 <item group="cnt50" count="3,4" prob="25"/>
 <item group="cnt50" count="5" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="gunsBalanced" count="1,2" loot_prob_template="nothing50"/>                                        </lootcontainer>
 <!-- =========================== PILL RACK ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt51">    <item group="medicalBasic" prob="30"/>   <item group="medicalAdvanced" prob="70"/>                            </lootgroup>
 <lootcontainer id="51" count="1" size="3,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_pill_case"
-sound_close=  "UseActions/close_pill_case"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_pill_case"
+sound_close=            "UseActions/close_pill_case"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt51" count="1" prob="20"/>
 <item group="cnt51" count="2,3" prob="40"/>
 <item group="cnt51" count="4" prob="20"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="medicalBasic" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== BEVERAGE COOLER =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt52">    <item name="beer" count="1,2" prob="30"/>  <item name="molotovCocktail" count="1,4" prob="5"/> <item group="foodDrinks" prob="65" count="1,2"/>                    </lootgroup>
 <lootcontainer id="52" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cooler"
-sound_close=  "UseActions/close_cooler"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cooler"
+sound_close=            "UseActions/close_cooler"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt52" count="1" prob="35"/>
 <item group="cnt52" count="2" prob="35"/>
 <item group="cnt52" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== HARDWARE CRATE ================================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt53">    <item group="lootHWTools" prob="50"/>   <item group="lootHWMats" prob="30"/>   <item group="lootHWBlocks" prob="20"/>                      </lootgroup>
 <lootcontainer id="53" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "unleveled">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "unleveled">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt53" count="3" prob="50"/>
 <item group="cnt53" count="4,5" prob="25"/>
 <item group="cnt53" count="6" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt53" count="1,2" loot_prob_template="nothing50"/>                                        </lootcontainer>
 <!-- =========================== SHOPPING CARTS ================================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt54">    <item name="scrapPlastics" count="1,2" prob="15"/> <item group="lootHousehold" prob="40"/>   <item group="foodDrinks" prob="25"/>                      </lootgroup>
 <lootcontainer id="54" count="1" size="6,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_shopping_cart"
-sound_close=  "UseActions/close_shopping_cart"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_shopping_cart"
+sound_close=            "UseActions/close_shopping_cart"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt54" count="1" prob="50"/>
 <item group="cnt54" count="2,3" prob="25"/>
 <item group="cnt54" count="4" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== CASH REGISTER (CLOSED) ======================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt55">    <item name="casinoCoin" count="1,25" prob="55"/> <item group="itemsCash" prob="45"/>                             </lootgroup>
 <lootcontainer id="55" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cash_register"
-sound_close=  "UseActions/close_cash_register"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cash_register"
+sound_close=            "UseActions/close_cash_register"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt55" count="1" prob="40"/>
 <item group="cnt55" count="2" prob="35"/>
 <item group="cnt55" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== TAZAS ARTIFACT CHEST ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt56">    <item group="lootTazas"/>                                     </lootgroup>
 <lootcontainer id="56" count="1" size="9,9" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_apache_artifact_chest"
-sound_close=  "UseActions/close_apache_artifact_chest"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_apache_artifact_chest"
+sound_close=            "UseActions/close_apache_artifact_chest"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt56" count="1" prob="50"/>
 <item group="cnt56" count="2" prob="25"/>
 <item group="cnt56" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt56" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== MINER CHEST =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt57">    <item group="lootMining"/>                                     </lootgroup>
 <lootcontainer id="57" count="1" size="9,9" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_chest"
-sound_close=  "UseActions/close_chest"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_chest"
+sound_close=            "UseActions/close_chest"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt57" count="1" prob="50"/>
 <item group="cnt57" count="2" prob="25"/>
 <item group="cnt57" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt57" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== SHOPPING BASKET =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt58">    <item name="scrapPlastics" count="1,2" prob="15"/> <item group="lootHousehold" prob="40"/>   <item group="foodDrinks" prob="25"/>                      </lootgroup>
 <lootcontainer id="58" count="1" size="3,3" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_shopping_basket"
-sound_close=  "UseActions/close_shopping_basket"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_shopping_basket"
+sound_close=            "UseActions/close_shopping_basket"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt58" count="1" prob="50"/>
 <item group="cnt58" count="2" prob="25"/>
 <item group="cnt58" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== FOOD CRATE ==================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt59">    <item name="paper" count="1,10" prob="5"/>  <item name="scrapPlastics" count="1,8" prob="5"/> <item name="canHam" count="1,5" prob="20"/> <item name="foodHoney" count="1" prob="5"/> <item group="foodCanned" count="1,3" prob="10"/> <item group="foodStock" count="1,2" prob="20"/>
+                                                      <item group="foodDrinks" count="1,2" prob="10"/> <item name="shamSandwich" count="1,5" prob="30"/>                           </lootgroup>
 <lootcontainer id="59" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt59" count="2,3" prob="20"/>
 <item group="cnt59" count="3,4" prob="40"/>
 <item group="cnt59" count="5" prob="20"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt59" count="2" loot_prob_template="nothing50"/>                                         </lootcontainer>
 <!-- =========================== BOOKCASE (BOOKSTORE) ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt60">    <item name="paper" count="1,10" prob="30"/>  <item group="schemAll" prob="70"/>                             </lootgroup>
 <lootcontainer id="60" count="1" size="3,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_drawer"
-sound_close=  "UseActions/close_drawer"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_drawer"
+sound_close=            "UseActions/close_drawer"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt60" count="1" prob="25"/>
 <item group="cnt60" count="2,3" prob="40"/>
 <item group="cnt60" count="4" prob="15"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="schemCommon" loot_prob_template="nothing33"/>                                         </lootcontainer>
 <!-- =========================== ZOMBIE WIGHT (GHOUL) ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt61">    <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="14"/>  <item group="lootFeralZombie" prob="50"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="61" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt61" count="1" prob="70"/>
 <item group="cnt61" count="2" prob="9"/>
 <item group="cnt61" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt61" count="0,1" loot_prob_template="nothing33"/>                                         </lootcontainer>
 <!-- =========================== MINIBIKE STORAGE ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt62">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="62" count="1" size="3,6" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_shopping_basket"
-sound_close=  "UseActions/close_shopping_basket"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_shopping_basket"
+sound_close=            "UseActions/close_shopping_basket"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt62" count="1" prob="30"/>
 <item group="cnt62" count="2" prob="35"/>
 <item group="cnt62" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== MOUNTAIN MAN CHEST ============================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt63">    <item name="herbalAntibiotics" count="2,5" prob="25"/> <item group="lootHerbal" prob="75"/>                             </lootgroup>
 <lootcontainer id="63" count="1" size="9,9" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_apache_artifact_chest"
-sound_close=  "UseActions/close_apache_artifact_chest"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_apache_artifact_chest"
+sound_close=            "UseActions/close_apache_artifact_chest"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt63" count="1" prob="20"/>
 <item group="cnt63" count="2" prob="50"/>
 <item group="cnt63" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="lootHerbal" loot_prob_template="nothing533"/>                                         </lootcontainer>
 <!-- =========================== GAZZ PUMP ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt64">    <item name="gasCan" count="25,100" prob="100"/>                                   </lootgroup>
 <lootcontainer id="64" count="1" size="3,6" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_mailbox"
-sound_close=  "UseActions/close_mailbox"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_mailbox"
+sound_close=            "UseActions/close_mailbox"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt64" count="1,2" prob="30"/>
 <item group="cnt64" count="3,5" prob="40"/>
 <item group="cnt64" count="6" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item name="gasCan" count="50,150" loot_prob_template="nothing33"/>                                        </lootcontainer>
 <!-- =========================== HAZMAT ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt65">    <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="4"/>  <item group="lootHazmatZombie" prob="45"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="65" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt65" count="1" prob="60"/>
 <item group="cnt65" count="2" prob="19"/>
 <item group="cnt65" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="medicalBasic" count="0,1" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== LUMBERJACK ZOMBIE ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt66">    <item group="lootBaseZombie" prob="30"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootLumberZombie" prob="40"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="66" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt66" count="1" prob="60"/>
 <item group="cnt66" count="2" prob="19"/>
 <item group="cnt66" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== TOILETS (OLD HOUSES) ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt67">    <item name="bottledRiverWater" count="1,2" prob="40"/> <item name="turd" count="1,2" prob="40"/>  <item group="lootToilet" prob="20"/>                      </lootgroup>
 <lootcontainer id="67" count="1" size="4,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_toilet"
-sound_close=  "UseActions/close_toilet"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_toilet"
+sound_close=            "UseActions/close_toilet"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt67" count="1" prob="75"/>
 <item group="cnt67" count="1,2" prob="4"/>
 <item group="cnt67" count="2" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item name="turd" count="0,1" loot_prob_template="nothing66"/>                                         </lootcontainer>
 <!-- =========================== DUMPSTER ====================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt68">    <item group="itemsTrash" prob="38"/>   <item group="itemsCommon" prob="60"/>   <item group="lootHousehold" prob="1"/>  <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="68" count="1" size="8,4" open_time="8" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_dumpster"
-sound_close=  "UseActions/close_dumpster"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt68" count="2" prob="20"/>
 <item group="cnt68" count="3,4" prob="50"/>
 <item group="cnt68" count="5,6" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt68" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== TOILETS (EXPENSIVE HOUSES) ==================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt69">    <item name="bottledRiverWater" count="1,3" prob="35"/> <item name="turd" count="1,3" prob="35"/>  <item group="lootToilet" prob="30"/>                      </lootgroup>
 <lootcontainer id="69" count="1" size="4,4" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_toilet"
-sound_close=  "UseActions/close_toilet"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_toilet"
+sound_close=            "UseActions/close_toilet"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt69" count="1" prob="75"/>
 <item group="cnt69" count="1,2" prob="4"/>
 <item group="cnt69" count="2" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item name="turd" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== TREASURE CHESTS (BASIC) ======================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt70">    <item group="lootTreasureBasic" count="2,5" prob="100"/>                                 </lootgroup>
 <lootcontainer id="70" count="1" size="9,9" open_time="8" 
-destroy_on_close= "true"
-sound_open=  "UseActions/open_apache_artifact_chest"
-sound_close=  "UseActions/close_apache_artifact_chest"
-loot_quality_template= "unleveled">
+destroy_on_close=       "true"
+sound_open=             "UseActions/open_apache_artifact_chest"
+sound_close=            "UseActions/close_apache_artifact_chest"
+loot_quality_template=  "unleveled">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt70" count="1" prob="75"/>
 <item group="cnt70" count="2" prob="4"/>
 <item group="cnt70" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt70" loot_prob_template="nothing33"/>                                          </lootcontainer>
 <!-- =========================== MELEE BANDIT ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt71">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="71" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt71" count="1" prob="50"/>
 <item group="cnt71" count="2" prob="25"/>
 <item group="cnt71" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== RANGED BANDIT ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt72">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="72" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt72" count="1" prob="50"/>
 <item group="cnt72" count="2" prob="25"/>
 <item group="cnt72" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== ZOMBIE SOLDIER ================================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt73">    <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootSoldierZombie" prob="60"/> <item group="lootSurvivor" prob="1"/>                </lootgroup>
 <lootcontainer id="73" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt73" count="1" prob="75"/>
 <item group="cnt73" count="2" prob="4"/>
 <item group="cnt73" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== ZOMBIE UTILITY WORKER ========================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt74">    <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/>                     </lootgroup>
 <lootcontainer id="74" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt74" count="1" prob="75"/>
 <item group="cnt74" count="2" prob="4"/>
 <item group="cnt74" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== MORTICIAN DRAWER ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt75">    <item name="rottingFlesh" count="1,2" prob="25"/> <item name="femur" count="1,2" prob="20"/>  <item name="fertilizer" count="1,2" prob="10"/> <item name="goldNugget" prob="10"/>  <item group="itemsTrash" prob="20"/>   <item group="itemsCommon" prob="10"/>
+                                                      <item group="schemCommon" prob="5"/>                                    </lootgroup>
 <lootcontainer id="75" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_dumpster"
-sound_close=  "UseActions/close_dumpster"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt75" count="1" prob="50"/>
 <item group="cnt75" count="2,3" prob="25"/>
 <item group="cnt75" count="4" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== FURNACE DRAWER ================================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt76">    <item name="coal" count="5,15" prob="35"/>  <item name="fertilizer" count="1,2" prob="10"/>  <item name="femur" count="1,2" prob="30"/> <item name="goldNugget" prob="10"/>  <item group="itemsCommon" prob="15"/>          </lootgroup>
 <lootcontainer id="76" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_fridge"
-sound_close=  "UseActions/close_fridge"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_fridge"
+sound_close=            "UseActions/close_fridge"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt76" count="1" prob="50"/>
 <item group="cnt76" count="2" prob="25"/>
 <item group="cnt76" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== GREEN DRAWER ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt77">    <item group="itemsTrash" prob="55"/>   <item group="itemsCommon" count="1,2" prob="40"/> <item group="lootSafesBasic" prob="5"/>                     </lootgroup>
 <lootcontainer id="77" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_dumpster"
-sound_close=  "UseActions/close_dumpster"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt77" count="1" prob="50"/>
 <item group="cnt77" count="2" prob="25"/>
 <item group="cnt77" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                          </lootcontainer>
 <!-- =========================== FOOTBALL ZOMBIE =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt78">    <item group="lootBaseZombie" prob="20"/>  <item group="lootStrongZombie" prob="35"/>  <item group="lootFootballZombie" prob="45"/>                     </lootgroup>
 <lootcontainer id="78" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetFBPlayer" count="1" prob="10"/>
 <item group="cnt78"  count="1" prob="60"/>
 <item group="cnt78"  count="2" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 <!-- =========================== CHEERLEADER ZOMBIE ============================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt79">    <item group="lootBaseZombie" prob="75"/>  <item group="lootFoodZombie" prob="15"/>  <item name="megaCrush" prob="10"/>                      </lootgroup>
 <lootcontainer id="79" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetCheerleader" count="1" prob="5"/>
 <item group="cnt79"   count="1,2" prob="60"/>
 <item group="cnt79"   count="3" prob="15"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== SKATER ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt80">    <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="10"/>  <item name="megaCrush" prob="5"/>  <item name="mechanicalParts" count="1,3" prob="10"/>              </lootgroup>
 <lootcontainer id="80" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetSkater" count="1" prob="5"/>
 <item group="cnt80"  count="1,2" prob="60"/>
 <item group="cnt80"  count="3" prob="15"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                               </lootcontainer>
 <!-- =========================== COWBOY ZOMBIE ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt81">    <item group="lootBaseZombie" prob="10"/>  <item group="lootCowboyZombie" prob="90"/>                            </lootgroup>
 <lootcontainer id="81" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetCowboy" count="1" prob="10"/>
 <item group="cnt81"  count="1,2" prob="60"/>
 <item group="cnt81"  count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                               </lootcontainer>
 <!-- =========================== MINER ZOMBIE (LEGACY) =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt82">    <item group="itemsTrash" count="1,4" prob="15"/> <item group="itemsCommon" count="1,2" prob="15"/> <item group="lootMining" count="1,2" prob="50"/>                    </lootgroup>
 <lootcontainer id="82" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt82" count="1" prob="60"/>
 <item group="cnt82" count="2" prob="19"/>
 <item group="cnt82" count="3" prob="1"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== BIKER ZOMBIE ==================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt83">    <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="35"/>  <item group="lootBikerZombie" prob="55"/>                     </lootgroup>
 <lootcontainer id="83" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetBiker" count="1" prob="10"/>
 <item group="cnt83"  count="1,2" prob="60"/>
 <item group="cnt83"  count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt83" count="0,1" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== STRIPPER ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt84">    <item group="lootBaseZombie" prob="10"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootBikerZombie" prob="75"/>                     </lootgroup>
 <lootcontainer id="84" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt84" count="1" prob="30"/>
 <item group="cnt84" count="2" prob="30"/>
 <item group="cnt84" count="3" prob="20"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== FARMER ZOMBIE =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt85">    <item group="lootBaseZombie" prob="10"/>  <item group="lootFoodZombie" prob="15"/>  <item group="lootFarmerZombie" prob="75"/>                     </lootgroup>
 <lootcontainer id="85" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt85" count="1" prob="50"/>
 <item group="cnt85" count="2" prob="20"/>
 <item group="cnt85" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== BOOKSTORE SHIPPING CRATE ======================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt86">    <item group="schemAll" prob="75"/>   <item name="scrapPlastics" count="1,4" prob="25"/>                           </lootgroup>
 <lootcontainer id="86" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt86" count="1" prob="25"/>
 <item group="cnt86" count="2,3" prob="40"/>
 <item group="cnt86" count="4" prob="15"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="schemAll" loot_prob_template="nothing33"/>                                           </lootcontainer>
 <!-- =========================== CAR PARTS SHIPPING CRATE ======================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt87">    <item name="paper" count="2,8" prob="5"/>  <item name="repairKit" count="2,5" prob="5"/>  <item name="headlight" count="1,2" prob="5"/> <item name="partsHandlebars" prob="5"/>  <item name="toolAndDieSet" prob="1"/>   <item group="toolsBasic" prob="10"/>
+                                                      <item group="matsScrap" prob="10"/>   <item group="matsForged" prob="10"/>   <item group="matsMisc" prob="10"/>  <item group="automotiveMinibike" prob="39"/>               </lootgroup>
 <lootcontainer id="87" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt87" count="1" prob="50"/>
 <item group="cnt87" count="2" prob="20"/>
 <item group="cnt87" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== CONSTRUCTION SHIPPING CRATE ===================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt88">    <item group="itemsCommon" prob="20"/>   <item name="pickaxeSteel" prob="5"/>   <item name="fireaxeSteel" prob="5"/>  <item name="shovelSteel" prob="5"/>  <item name="sledgehammer" prob="5"/>   <item group="toolsBasic" prob="20"/>
+                                                      <item group="toolsMechanized" prob="10"/>  <item group="lootHWMats" prob="15"/>   <item group="lootHWBlocks" prob="15"/>                      </lootgroup>
 <lootcontainer id="88" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledLight">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt88" count="1" prob="50"/>
 <item group="cnt88" count="2" prob="20"/>
 <item group="cnt88" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== BUSINESSMAN ZOMBIE ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt89">    <item group="lootBaseZombie" prob="80"/>  <item group="itemsCash" count="1,2" prob="20"/>                            </lootgroup>
 <lootcontainer id="89" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_corpse"
-sound_close=  "UseActions/close_corpse"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="clothSetBusiness" count="1" prob="10"/>
 <item group="cnt89"  count="1,2" prob="65"/>
 <item group="cnt89"  count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== GREEN DRAWER (PLAYER) =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt90">    <item group="nothing" loot_prob_template="nothing50"/>                                  </lootgroup>
 <lootcontainer id="90" count="1" size="9,9" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_dumpster"
-sound_close=  "UseActions/close_dumpster"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt90" count="1" prob="10"/>
 <item group="cnt90" count="1,2" prob="65"/>
 <item group="cnt90" count="3" prob="5"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing50"/>                                            </lootcontainer>
 <!-- =========================== COLLAPSED FORGE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt91">    <item group="matsBasic" prob="20"/>   <item group="matsOres" prob="20"/>   <item group="matsScrap" prob="20"/>  <item group="matsForged" prob="15"/>  <item group="toolsForge" prob="5"/>
+                                                      <item name="ironArrowHead" count="10,50" prob="15"/> <item name="steelArrowHead" count="10,50" prob="5"/>                           </lootgroup>
 <lootcontainer id="91" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/forge_open"
-sound_close=  "UseActions/forge_close"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/forge_open"
+sound_close=            "UseActions/forge_close"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt91" count="1" prob="30"/>
 <item group="cnt91" count="2" prob="40"/>
 <item group="cnt91" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                             </lootcontainer>
 <!-- =========================== COLLAPSED WORKBENCH ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt92">    <item group="matsBasic" prob="10"/>   <item group="matsScrap" prob="10"/>   <item group="matsForged" prob="20"/>  <item group="matsMisc" prob="20"/>  <item group="toolsIron" prob="10"/>
+                                                      <item group="toolsSteel" prob="10"/>   <item group="ammoParts" prob="10"/>  <item group="ammoParts" prob="10"/>                     </lootgroup>
 <lootcontainer id="92" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_workbench"
-sound_close=  "UseActions/close_workbench"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_workbench"
+sound_close=            "UseActions/close_workbench"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt92" count="1" prob="30"/>
 <item group="cnt92" count="2" prob="40"/>
 <item group="cnt92" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== COLLAPSED CEMENTMIXER =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt93">    <item name="rottingFlesh" count="5,15" prob="20"/> <item group="matsBasic" prob="40"/>   <item group="matsOres" prob="10"/>  <item group="matsConstruction" prob="30"/>               </lootgroup>
 <lootcontainer id="93" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_workbench"
-sound_close=  "UseActions/close_workbench"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_workbench"
+sound_close=            "UseActions/close_workbench"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt93" count="1" prob="30"/>
 <item group="cnt93" count="2" prob="40"/>
 <item group="cnt93" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== COLLAPSED CHEMISTRY STATION ===================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt94">    <item group="itemsTrash" prob="10"/>   <item name="wood" count="10,100" prob="10"/>  <item name="paint" count="25,75" prob="5"/> <item name="glue" count="1,5" prob="5"/> <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="15"/>
+                                                      <item name="coal" count="10,50" prob="10"/>  <item name="oilShale" count="10,50" prob="5"/>  <item name="beaker" prob="5"/>   <item group="medicalAdvanced" prob="5"/> <item name="potassiumNitratePowder" count="10,50" prob="10"/>       </lootgroup>
 <lootcontainer id="94" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/chem_station_open"
-sound_close=  "UseActions/chem_station_close"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/chem_station_open"
+sound_close=            "UseActions/chem_station_close"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt94" count="1" prob="30"/>
 <item group="cnt94" count="2" prob="40"/>
 <item group="cnt94" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== LOOTCRATE HERO ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt95">    <item group="gunsBalanced" prob="20"/>   <item group="gunsComplete" prob="10"/>   <item group="armorLight" prob="15"/>  <item group="armorHeavy" prob="10"/>  <item group="armorRS" prob="10"/> 
+                                                      <item group="schemAll" prob="15"/>   <item group="matsRareOres" prob="10"/>                             </lootgroup>
 <lootcontainer id="95" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "unleveled">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "unleveled">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt95" count="1" prob="30"/>
 <item group="cnt95" count="2" prob="40"/>
 <item group="cnt95" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="gunsBalanced" loot_prob_template="nothing33"/>                                           </lootcontainer>
 <!-- =========================== LAB EQUIPMENT CRATE ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt96">    <item group="itemsCommon" prob="20"/>   <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="10"/> <item group="schemAll" prob="20"/>  <item group="medicalAdvanced" prob="40"/>         </lootgroup>
 <lootcontainer id="96" count="1" size="5,5" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_cardboard"
-sound_close=  "UseActions/close_cardboard"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt96" count="1" prob="30"/>
 <item group="cnt96" count="2" prob="40"/>
 <item group="cnt96" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="medicalBasic" loot_prob_template="nothing33"/>                                           </lootcontainer>
 <!-- =========================== COLLAPSED BATTERYBANK =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt97">    <item name="scrapLead" count="20,50" prob="90"/> <item group="batteries" prob="10"/>                             </lootgroup>
 <lootcontainer id="97" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_vending"
-sound_close=  "UseActions/close_vending"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_vending"
+sound_close=            "UseActions/close_vending"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt97" count="1" prob="30"/>
 <item group="cnt97" count="2" prob="40"/>
 <item group="cnt97" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 <!-- =========================== COLLAPSED GENERATORBANK ========================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt98">    <item name="scrapIron" count="20,50" prob="90"/> <item group="engines" prob="10"/>                             </lootgroup>
 <lootcontainer id="98" count="1" size="3,2" open_time="3" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_vending"
-sound_close=  "UseActions/close_vending"
-loot_quality_template= "leveledNormal">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_vending"
+sound_close=            "UseActions/close_vending"
+loot_quality_template=  "leveledNormal">
 
-<!-- Chance of Loot: Default Total = 80 -->
+<!-- Chance of Loot: 80 -->
 <item group="cnt98" count="1" prob="30"/>
 <item group="cnt98" count="2" prob="40"/>
 <item group="cnt98" count="3" prob="10"/>
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>                                            </lootcontainer>
 
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 
 <!-- =========================== STARTERKIT (BASE) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootcontainer id="151" count="1" size="9,9" open_time="5" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "startingKit">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "startingKit">
 
 <item group="startingKitUnlucky" count="1" prob="10"/>
 <item group="startingKitBase"  count="1" prob="80"/>
 <item group="startingKitLucky"  count="1" prob="10"/>                                          </lootcontainer>
 <!-- =========================== STARTERKIT (LUCKY) ============================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="152" count="1" size="9,9" open_time="5" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "startingKit">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "startingKit">
 
 <item group="startingKitLucky"  count="1" prob="100"/>                                          </lootcontainer>
 <!-- =========================== STARTERKIT (UNLUCKY) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootcontainer id="153" count="1" size="9,9" open_time="5" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "startingKit">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "startingKit">
 
 <item group="startingKitUnlucky" count="1" prob="100"/>                                          </lootcontainer>
 
 <!-- =========================== Quest Bag  ====================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt154"                count="all">  <item group="lootBackpacks" count="0,1"/>   <item group="lootHousehold" count="0,1"/>  <item group="ammoGuns"/>  </lootgroup>
 <lootcontainer id="154" count="1" size="5,5" open_time="15" 
-destroy_on_close= "false"
-sound_open=  "UseActions/open_backpack"
-sound_close=  "UseActions/close_backpack"
-loot_quality_template= "leveledLight">
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledLight">
 
 <item group="cnt154" count="2" prob="25"/>
 <item group="cnt154" count="3,4" prob="45"/>
 <item group="cnt154" count="5" prob="10"/>  
-<!-- Chance of No Loot -->
+<!-- Chance of Default Loot -->
 <item group="cnt154" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>  
   

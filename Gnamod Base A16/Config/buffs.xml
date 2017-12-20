@@ -440,8 +440,9 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 <buff id="testBreath" duration="0" stack="discard" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" icon="ui_game_symbol_cold" description_key=""/>
 
 
-<buff id="shotgunWound" mutex="painkillerBuff" duration="5" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
+<buff id="shotgunWound" castsound="Buffs/critical_blunt" mutex="painkillerBuff" duration="5" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.4"/>
+  <modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
 
 <buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />
@@ -585,20 +586,45 @@ This requires a 50+ food bar:
 "D:\7DTD_Project\trunk\Assets\GUI\Textures\ui_game_symbol_natural_healing.tga"
 -->
 
+<buff id="critAmmoLight" duration="1" castsound="Buffs/critical_blunt"> <modify id="1" stat="health" amount="-25" rate="1" /> </buff>
+<buff id="critAmmoModerate" duration="1" castsound="Buffs/critical_blunt"> <modify id="1" stat="health" amount="-50" rate="1"/> </buff>
+<buff id="critAmmoHeavy" duration="1" castsound="Buffs/critical_blunt"> <modify id="1" stat="health" amount="-75" rate="1"/> </buff>
+  
   <buff id="SuicideBomber" duration="10" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
     <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>
     <modify id="1" stat="speedmodifier" modifyValue="2.0"/>
     <modify id="2" stat="health" setValue="20"/>
   </buff>
 
-  <buff id="SuicideBurn" duration="0" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
+  <buff id="SuicideBurn" duration="60" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="SuicideBomber">
     <modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>
     <modify id="1" stat="speedmodifier" modifyValue="5.0"/>
-    <modify id="2" stat="health" setValue="20"/>
   </buff>
 
-  <buff id="ZombieBurning" duration="15" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="ZombieBurning">
+  <buff id="ZombieBurning" duration="10" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="ZombieBurning1">
     <modify id="0" stat="health" amount="40" rate="3" />
+  </buff>
+
+  <buff id="ZombieBurning1" duration="10" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="ZombieBurning">
+    <modify id="0" stat="health" amount="40" rate="3" />
+  </buff>
+
+  <buff id="ZombieZapping" duration="10" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact" onexpired="ZombieZapping1">
+    <modify id="0" stat="health" amount="10" rate="3" />
+    <modify id="1" stat="speedmodifier" mulValue="2.1" duration="5"/>
+  </buff>
+
+  <buff id="ZombieZapping1" duration="10" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact" onexpired="ZombieZapping">
+    <modify id="0" stat="health" amount="10" rate="3" />
+    <modify id="1" stat="speedmodifier" mulValue="2.1" duration="5"/>
+  </buff>
+
+  <buff id="Smoking" duration="10" actions="attach(ParticleEffects/p_smokestorm, @impact)" onexpired="Smoking1">
+    <modify id="0" stat="health" amount="10" rate="3" />
+  </buff>
+
+  <buff id="Smoking1" duration="10" actions="attach(ParticleEffects/p_smokestorm, @impact)" onexpired="Smoking">
+    <modify id="0" stat="health" amount="10" rate="3" />
   </buff>
 
   <buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
