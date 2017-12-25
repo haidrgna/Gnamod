@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rwgmixer><world ruleset="nomad" />
+<rwgmixer><world ruleset="test" />
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="2000"  cell_offset="0.75" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
-<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="800"   cell_offset="0.50" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
-<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="7500"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
-<!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="3000"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="2000"  cell_offset="0.75" generation_distance="12000"  terrain_generator="gnamodBase"    biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
+<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="800"   cell_offset="0.50" generation_distance="12000"  terrain_generator="gnamodBase"    biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
+<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="7500"   terrain_generator="necropolisII"  biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
+<!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="3000"   terrain_generator="necropolisII"  biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
+<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="800"   cell_offset="0.30" generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
 </rulesets>
 
 <!-- Cell Rules (Big chunks of the map with a hub near the center. Biggest city size = 1500) -->
@@ -20,17 +21,10 @@
 
 <wilderness_rule name="wildernessDefault"/>
 </cell_rule>
+ 
 <cell_rule name="test">  
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="ruralTiny"  prob="1"/>
-<hub_rule name="ruralSmall" prob="0"/>
-<hub_rule name="ruralLarge" prob="0"/>
-<hub_rule name="townTiny"   prob="0"/>
-<hub_rule name="townSmall"  prob="0"/>
-<hub_rule name="townLarge"  prob="0"/>
-<hub_rule name="citySmall"  prob="0"/>
-<hub_rule name="cityLarge"  prob="0"/>
-<hub_rule name="cityHuge"   prob="0"/>
+<hub_rule name="oldWestTown"  prob="1"/>
 <wilderness_rule name="wildernessDefault"/>
 </cell_rule>
 
@@ -64,8 +58,33 @@
   
 </cell_rules>
 
-<!-- Hub Rules (Cities & Towns at center of a Cell)-->
+<!-- Gnamod Towns -->
 <hub_rules>
+<hub_rule name="oldWestTown">
+<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="oldWest"/> <street_gen level="5" length_multiplier="4">
+
+<axiom value="[+J][-J]"/>  <!-- [+J-J+J-J][-J+J-J+J] -->
+<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
+<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
+</street_gen>
+</hub_rule>
+
+<!-- Hub Rules (Cities & Towns at center of a Cell)-->
 <hub_rule name="ruralTiny"> <!-- Tiny Rural Hub -->
 <hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="default"/> <street_gen level="5" length_multiplier="4">
@@ -209,13 +228,51 @@
 
 <wilderness_rules>
 <wilderness_rule name="wildernessDefault"       spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>  <prefab_rule name="wildernessGroup" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNomad"         spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="true"/>   <prefab_rule name="wildernessNomad" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNomad"         spawn_min_max="1,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="true"/>   <prefab_rule name="wildernessNomad" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNecropolis"    spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="true"/>   <prefab_rule name="industrialGroup" prob="0.2"/> <prefab_rule name="commercialGroup" prob="0.4"/> <prefab_rule name="downtownGroup" prob="0.4"/> </wilderness_rule>
 </wilderness_rules>
 
-  <prefab_rules>
-    <prefab_rule name="none"/>
+<prefab_rules>
+    
+<prefab_rule name="none"/>
 
+<prefab_rule name="oldWest">
+<prefab name="abandoned_house_01"/>
+<prefab name="abandoned_house_02"/>
+<prefab name="abandoned_house_03"/>
+<prefab name="abandoned_house_04"/>
+<prefab name="abandoned_house_05"/>
+<prefab name="abandoned_house_06"/>
+<prefab name="abandoned_house_07"/>
+<prefab name="abandoned_house_08"/>
+<prefab name="oldwest_stables"/>
+<prefab name="oldwest_gallows" max_count="1" prob="10"/>
+<prefab name="oldwest_watertower" max_count="3"/>
+<prefab name="oldwest_church" max_count="1" prob="4"/>
+<prefab name="oldwest_hotel_01" max_count="4" prob="2"/>
+<prefab name="oldwest_hotel_02" max_count="4" prob="2"/>
+<prefab name="oldwest_jail" max_count="2"/>
+<prefab name="oldwest_md_shop_01" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_02" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_03" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_04" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_01" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_02" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_03" max_count="4" prob="2"/> 
+<prefab name="barn_01"/>
+<prefab name="barn_02"/>
+<prefab name="barn_03"/>
+<prefab name="farm_shed1" prob="0.1"/>
+<prefab name="farm_shed2" prob="0.1"/>
+<prefab name="farm_shed3" prob="0.1"/>
+<prefab name="farm_shed4" prob="0.1"/>
+<prefab name="blueberryfield_sm"/>
+<prefab name="cornfield_sm"/>
+<prefab name="cornfield_med"/>
+<prefab name="cornfield_lg"/>
+<prefab name="potatofield_sm"/>
+</prefab_rule>
+  
     <prefab_rule name="city">
       <prefab rule="skyscrapers" min_count="2"/>
       <prefab rule="residentialOldGroup"/>
@@ -1500,8 +1557,8 @@
   
 <biome_generator                          name="gnamod">
 <module name="BaseNoise"                  type="Voronoi">
-<property name="frequency"                value="0.00105"/>
-<property name="displacement"             value="1.5"/>
+<property name="frequency"                value="0.00085"/>
+<property name="displacement"             value="1.25"/>
 </module>
 
 <module name="BaseNoiseMod"               type="BiasOutput">
@@ -1530,39 +1587,6 @@
 			
 <output module="BiomeBuilding"/>
 </biome_generator>
-  
-<biome_generator                          name="test">
-<module name="BaseNoise"                  type="FastNoise">
-<property name="frequency"                value="0.0004"/>
-<property name="displacement"             value="0.5"/>
-</module>
-
-<module name="BaseNoiseMod"               type="BiasOutput">
-<property name="sourceModule"             value="BaseNoise"/>
-<property name="bias"                     value="0.55"/>
-</module>
-			
-<module name="BiomeDither"                type="FastTurbulence">
-<property name="sourceModule"             value="BaseNoiseMod"/>
-<property name="frequency"                value="0.25"/>
-<property name="power"                    value="8"/>
-<property name="roughness"                value="5"/>
-</module>
-			
-<module name="BiomeJiggle"                type="FastTurbulence">
-<property name="sourceModule"             value="BiomeDither"/>
-<property name="frequency"                value="0.0018"/>
-<property name="power"                    value="300"/>
-<property name="roughness"                value="1"/>
-</module>
-			
-<module name="BiomeBuilding"              type="ClampOutput">
-<property name="sourceModule"             value="BiomeJiggle"/>
-<property name="bounds"                   value="0,1"/>
-</module>
-			
-<output module="BiomeBuilding"/>
-</biome_generator>  
   
 </biome_generators>
 
@@ -1605,33 +1629,36 @@
 
 <biome_spawn_rules>
 <!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)             -->	
-<biome_spawn_rule name="forest">          <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
 <!-- Grassland Overlay (Primary Biome Paint)                                                            -->
 <biome_spawn_rule name="plains">          <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <biome_spawn_rule name="plains">          <terrain_generator range="5,255"/>            </biome_spawn_rule>
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Height Paints)                  -->
-<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.00,0.07"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.07,0.10"/>          </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
-<biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>  
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule> 
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
 <!-- Height Paints (Biomes that make up the hills on the map                                            -->
-<biome_spawn_rule name="plains">          <terrain_generator range="60,255"/>           </biome_spawn_rule>   
-<biome_spawn_rule name="forest">          <terrain_generator range="70,255"/>           </biome_spawn_rule>   
+<biome_spawn_rule name="plains">          <terrain_generator range="30,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="40,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="80,255"/>           </biome_spawn_rule>
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)                -->
-<biome_spawn_rule name="snow">            <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
-<biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.90,0.995"/>         </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <biome_generator range="0.55,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.75"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.95,0.999"/>         </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.001,0.10"/>         </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.50,0.55"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.75,0.80"/>          </biome_spawn_rule>
 <!-- Mountain Paints (Biomes that make up the alpine mountains on the map                               -->
-<biome_spawn_rule name="pine_forest">     <terrain_generator range="85,255"/>           </biome_spawn_rule>  
 <biome_spawn_rule name="snow">            <terrain_generator range="105,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city">            <terrain_generator range="125,255"/>          </biome_spawn_rule>
-<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      -->  
+<biome_spawn_rule name="city">            <terrain_generator range="145,255"/>          </biome_spawn_rule>
+<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      --> 
+
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                         -->
-<biome_spawn_rule name="desert">          <biome_generator range="0.995,1.00"/>         </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.80,0.95"/>          </biome_spawn_rule>
 <!-- Water Overlay (Desert requires a new water paint underwater)                                       -->
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
 <!-- Radiated Biome Barrier                                                                             -->

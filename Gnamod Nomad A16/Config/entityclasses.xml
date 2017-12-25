@@ -4092,7 +4092,7 @@
 	<property name="MaxHealth" value="1000000"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
-	<property name="LootListAlive" value="62"/>
+	<property name="LootListAlive" value="3"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="Explosion.ParticleIndex" value="6"/>
 	<property name="Explosion.RadiusBlocks" value="6"/>
@@ -4137,7 +4137,7 @@
 	<property name="Parent" value="Backpack"/>
 	<property name="TimeStayAfterDeath" value="12000"/> <!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="LootListOnDeath" value="41"/> <!-- used to determine container X/Y size -->
+	<property name="LootListOnDeath" value="4"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
 
@@ -4149,7 +4149,7 @@
 	<property name="Parent" value="Backpack"/>
 	<property name="TimeStayAfterDeath" value="60"/>
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
+	<property name="LootListOnDeath" value="5"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
 
@@ -4173,7 +4173,7 @@
 	<property name="Parent" value="Animals"/>
 	<property name="TimeStayAfterDeath" value="1"/>
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
+	<property name="LootListOnDeath" value="5"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
 
@@ -4185,7 +4185,7 @@
 	<property name="Parent" value="Animals"/>
 	<property name="TimeStayAfterDeath" value="1"/>
 	<property name="IsEnemyEntity" value="true"/>
-	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
+	<property name="LootListOnDeath" value="5"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
 
