@@ -2,220 +2,557 @@
 <rwgmixer><world ruleset="nomad" />
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="2000"  cell_offset="0.75" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
-<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="800"   cell_offset="0.50" generation_distance="12000"  terrain_generator="gnamodBase" biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
-<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="7500"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
-<!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="750"   cell_offset="0.75" generation_distance="3000"   terrain_generator="necropolisII" biome_generator="gnamod"> <cell_rule name="default" prob="1"/>  </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/>  </ruleset>
+<!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
+<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
+<!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolisII"   biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
+<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="test" prob="1"/>  </ruleset>
 </rulesets>
 
 <!-- Cell Rules (Big chunks of the map with a hub near the center. Biggest city size = 1500) -->
 <cell_rules>
-<cell_rule name="default">  
-<cave_count value="4,8"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="townSmall" prob="0.1"/>
-<hub_rule name="townLarge" prob="0.1"/>
-<hub_rule name="citySmall" prob="0.3"/>
-<hub_rule name="cityLarge" prob="0.4"/>
-<hub_rule name="rural" prob="0.1"/>
-
-<wilderness_rule name="wildernessDefault"/>
-</cell_rule>
 <cell_rule name="test">  
-<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="ruralTiny"  prob="1"/>
-<hub_rule name="ruralSmall" prob="0"/>
-<hub_rule name="ruralLarge" prob="0"/>
-<hub_rule name="townTiny"   prob="0"/>
-<hub_rule name="townSmall"  prob="0"/>
-<hub_rule name="townLarge"  prob="0"/>
-<hub_rule name="citySmall"  prob="0"/>
-<hub_rule name="cityLarge"  prob="0"/>
-<hub_rule name="cityHuge"   prob="0"/>
-<wilderness_rule name="wildernessDefault"/>
+<cave_count value="0,5"/> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_rule name="militaryBase"  prob="1"/>
+<wilderness_rule name="wildernessBase"/>
+</cell_rule>
+ 
+<cell_rule name="baseHub">  
+<cave_count value="0,5"/> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_rule name="hugeCity"  prob="1"/>
+<wilderness_rule name="wildernessBase"/>
 </cell_rule>
 
 <cell_rule name="nomadHub">  
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="ruralTiny"  prob="0.06"/>
-<hub_rule name="ruralSmall" prob="0.06"/>
-<hub_rule name="ruralLarge" prob="0.06"/>
-<hub_rule name="townTiny"   prob="0.59"/>
-<hub_rule name="townSmall"  prob="0.06"/>
-<hub_rule name="townLarge"  prob="0.06"/>
-<hub_rule name="citySmall"  prob="0.06"/>
-<hub_rule name="cityLarge"  prob="0.05"/>
-<hub_rule name="cityHuge"   prob="0"/>
+<hub_rule name="hugeCity"  prob="1"/>
 <wilderness_rule name="wildernessNomad"/>
 </cell_rule>  
   
 <cell_rule name="necropolisHub">  
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="ruralTiny"  prob="0.02"/>
-<hub_rule name="ruralSmall" prob="0.02"/>
-<hub_rule name="ruralLarge" prob="0.02"/>
-<hub_rule name="townTiny"   prob="0.88"/>
-<hub_rule name="townSmall"  prob="0.02"/>
-<hub_rule name="townLarge"  prob="0.02"/>
-<hub_rule name="citySmall"  prob="0.02"/>
-<hub_rule name="cityLarge"  prob="0"/>
-<hub_rule name="cityHuge"   prob="0"/>
+<hub_rule name="necropolis"  prob="1"/>
 <wilderness_rule name="wildernessNecropolis"/>
 </cell_rule>
   
 </cell_rules>
 
-<!-- Hub Rules (Cities & Towns at center of a Cell)-->
+<!-- Gnamod Towns -->
 <hub_rules>
-<hub_rule name="ruralTiny"> <!-- Tiny Rural Hub -->
-<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="default"/> <street_gen level="5" length_multiplier="4">
+<hub_rule name="militaryBase">
+<hub_type value="city"/> <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="cityMilitary"/> <street_gen level="10" length_multiplier="3">
 
-<axiom value="[FF][-FF]"/>  
+<axiom value="[B]"/>  <!-- [+J][-J] -->
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>          <!-- Draws 2 rectngls side by side -->
-<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>             <!-- Draws 2 boxes side by side -->
-<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>                      <!-- Draws cross street -->
-<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>                            <!-- draw T section LFT -->
-<rule char="E" replace_with="F[F][FF*]+[FF*]"/>                             <!-- draw T section RT-->
-<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>                           <!-- draw T section -->
-<rule char="H" replace_with="F[F]-[FF*]"/>                                  <!-- LFT Turn-->
-<rule char="Z" replace_with="F[F]+[FF*]"/>                                  <!-- RT Turn-->
-<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>        <!-- Center Spoked Box -->
-<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>           <!-- Small Spoked box off center -->
-<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>  <!-- Lrg Spoked box Off center -->
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
 <alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
 </street_gen>
 </hub_rule>
-  
-<hub_rule name="ruralSmall"> <!-- Normal Rural Hub -->
-<hub_type value="rural"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="default"/> <street_gen level="10" length_multiplier="4">
 
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+<hub_rule name="hugeCity">
+<hub_type value="city"/> <width value="1500, 1500" />  <height value="1500, 1500" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="cityMassive"/> <street_gen level="50" length_multiplier="3">
+
+<axiom value="[+J-J+J-J][-J+J-J+J][+J-J+J-J][-J+J-J+J]"/>  <!-- [+J][-J] -->
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-
-<hub_rule name="ruralLarge"> <!-- Large Rural Hub -->
-<hub_type value="rural"/> <width value="250, 300" />  <height value="250, 300" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="default"/> <street_gen level="15" length_multiplier="4">
-
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-
-<hub_rule name="townTiny"> <!-- Tiny Town Hub -->
-<hub_type value="town"/>  <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="15" length_multiplier="4">
-
-<axiom value="[FF][-FF]"/>  
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>          <!-- Draws 2 rectngls side by side -->
-<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>             <!-- Draws 2 boxes side by side -->
-<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>                      <!-- Draws cross street -->
-<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>                            <!-- draw T section LFT -->
-<rule char="E" replace_with="F[F][FF*]+[FF*]"/>                             <!-- draw T section RT-->
-<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>                           <!-- draw T section -->
-<rule char="H" replace_with="F[F]-[FF*]"/>                                  <!-- LFT Turn-->
-<rule char="Z" replace_with="F[F]+[FF*]"/>                                  <!-- RT Turn-->
-<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>        <!-- Center Spoked Box -->
-<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>           <!-- Small Spoked box off center -->
-<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>  <!-- Lrg Spoked box Off center -->
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
 <alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
 </street_gen>
-</hub_rule>  
-  
-<hub_rule name="townSmall"> <!-- Small Town Hub -->
-<hub_type value="town"/>  <width value="250, 500" />  <height value="250, 500" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="15" length_multiplier="4">
+</hub_rule>
 
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+<hub_rule name="necropolis">
+<hub_type value="city"/> <width value="1500, 1500" />  <height value="1500, 1500" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="cityNecropolis"/> <street_gen level="10" length_multiplier="3">
+
+<axiom value="[+J-J+J-J][-J+J-J+J][+J-J+J-J][-J+J-J+J]"/>  <!-- [+J-J+J-J][-J+J-J+J] -->
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
+<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
 </street_gen>
 </hub_rule>
-
-<hub_rule name="townLarge"> <!-- Large Town Hub -->
-<hub_type value="town"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="20" length_multiplier="4">
-
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-
-<hub_rule name="citySmall"> <!-- Small City Hub -->
-<hub_type value="city"/>  <width value="500, 750" />  <height value="500, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="20" length_multiplier="4"> <downtown_zone_size_perc value="0.50"/>
-
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-
-<hub_rule name="cityLarge"> <!-- Large City Hub -->
-<hub_type value="city"/>  <width value="750, 1000" /> <height value="750, 1000" />  <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="25" length_multiplier="4"> <downtown_zone_size_perc value="0.75"/>
-
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-
-<hub_rule name="cityHuge"> <!-- Huge City Hub -->
-<hub_type value="city"/>  <width value="1000, 1500" /> <height value="1000, 1500" />  <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="city"/> <street_gen level="30" length_multiplier="4"> <downtown_zone_size_perc value="0.9"/>
-
-<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-<alt_commands chars="T,I,N,K"/>
-</street_gen>
-</hub_rule>
-  
 </hub_rules>
 
 <wilderness_rules>
-<wilderness_rule name="wildernessDefault"       spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>  <prefab_rule name="wildernessGroup" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNomad"         spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="true"/>   <prefab_rule name="wildernessNomad" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNecropolis"    spawn_min_max="5,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="true"/>   <prefab_rule name="industrialGroup" prob="0.2"/> <prefab_rule name="commercialGroup" prob="0.4"/> <prefab_rule name="downtownGroup" prob="0.4"/> </wilderness_rule>
+<wilderness_rule name="wildernessBase"          spawn_min_max="1,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNomad"         spawn_min_max="1,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="cityMassive" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNecropolis"    spawn_min_max="1,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="cityNecropolis" prob="1"/>  </wilderness_rule>
 </wilderness_rules>
 
-  <prefab_rules>
-    <prefab_rule name="none"/>
+<prefab_rules>
+    
+<prefab_rule name="none"/>
 
+<prefab_rule name="all">
+<prefab rule="buildingsOldWest"/>
+<prefab rule="buildingsRural"/>
+<prefab rule="buildingsMilitary"/>
+<prefab rule="buildingsCars"/>
+<prefab rule="buildingsHotel"/>
+<prefab rule="buildingsNightlife"/>
+<prefab rule="buildingsStores"/>
+<prefab rule="buildingsBusiness"/>
+<prefab rule="buildingsParking"/>
+<prefab rule="buildingsCivics"/>
+<prefab rule="buildingsFuneral"/>
+<prefab rule="buildingsIndustrial"/>
+<prefab rule="buildingsSkyscrapers"/>
+<prefab rule="buildingsBroken"/>
+<prefab rule="buildingsSettlements"/>
+<prefab rule="buildingsCabins"/>
+<prefab rule="buildingsFiller"/>
+<prefab rule="housesOld"/>
+<prefab rule="housesBurnt"/>
+<prefab rule="housesNew"/>
+<prefab rule="housesTrailers"/>
+<prefab rule="housesAverage"/>
+</prefab_rule>     
+  
+<prefab_rule name="cityRural">
+<prefab rule="none" max_count="1" prob="10"/>
+</prefab_rule>      
+
+<prefab_rule name="cityMilitary">
+<prefab rule="buildingsMilitary" prob="99"/>
+<prefab rule="housesAverage" max_count="5"/>
+</prefab_rule>     
+
+<prefab_rule name="cityMassive">
+<prefab rule="buildingsCars" min_count="1" max_count="2" prob="10"/>
+<prefab rule="buildingsHotel" max_count="2" prob="10"/>
+<prefab rule="buildingsNightlife" min_count="2" prob="15"/>
+<prefab rule="buildingsStores" min_count="3" max_count="7" prob="15"/>
+<prefab rule="buildingsBusiness" prob="10"/>
+<prefab rule="buildingsParking" max_count="2" prob="10"/>
+<prefab rule="buildingsCivics" min_count="4" prob="15"/>
+<prefab rule="buildingsFuneral" prob="10"/>
+<prefab rule="buildingsIndustrial" min_count="4" prob="10"/>
+<prefab rule="buildingsSkyscrapers" min_count="4" max_count="8" prob="10"/>
+<prefab rule="buildingsSettlements" min_count="1" max_count="1" prob="10"/>
+<prefab rule="buildingsBroken" prob="5"/>
+<prefab rule="buildingsOldWest" prob="10"/>
+<prefab rule="housesBurnt" prob="10"/>
+<prefab rule="housesNew"/>
+<prefab rule="housesTrailers"/>
+<prefab rule="housesOld"/>
+<prefab rule="housesAverage"/>
+<prefab rule="buildingsFiller" prob="0.5"/>
+</prefab_rule>        
+
+<prefab_rule name="cityNecropolis">
+<prefab rule="buildingsSkyscrapers" min_count="4" prob="50"/>
+<prefab rule="buildingsCars" min_count="1" max_count="3"/>
+<prefab rule="buildingsHotel"/>
+<prefab rule="buildingsNightlife" min_count="2"/>
+<prefab rule="buildingsStores" prob="10"/>
+<prefab rule="buildingsBusiness"/>
+<prefab rule="buildingsParking" max_count="2"/>
+<prefab rule="buildingsCivics" min_count="4"/>
+<prefab rule="buildingsIndustrial" min_count="4" prob="10"/>
+<prefab rule="buildingsSettlements" max_count="1"/>
+<prefab rule="buildingsBroken" prob="0.5"/>
+<prefab rule="buildingsFiller" prob="0.5"/>
+</prefab_rule>    
+
+<prefab_rule name="wildernessBase">
+<prefab rule="buildingsBusiness"/>
+<prefab rule="buildingsBroken" prob="30"/>
+<prefab rule="buildingsSettlements" max_count="1"/>
+<prefab rule="buildingsCabins" prob="5"/>
+<prefab rule="housesOld" prob="5"/>
+<prefab rule="housesBurnt" prob="20"/>
+<prefab rule="housesNew"/>
+<prefab rule="housesTrailers" prob="10"/>
+<prefab rule="housesAverage" prob="5"/>
+<prefab rule="caves" prob="5"/>
+</prefab_rule>   
+
+<prefab_rule name="buildingsOldWest">
+<prefab name="oldwest_stables"/>
+<prefab name="oldwest_gallows" max_count="1" prob="10"/>
+<prefab name="oldwest_watertower" max_count="3"/>
+<prefab name="oldwest_church" max_count="1" prob="4"/>
+<prefab name="oldwest_hotel_01" max_count="4" prob="2"/>
+<prefab name="oldwest_hotel_02" max_count="4" prob="2"/>
+<prefab name="oldwest_jail" max_count="2"/>
+<prefab name="oldwest_md_shop_01" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_02" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_03" max_count="4" prob="2"/>
+<prefab name="oldwest_md_shop_04" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_01" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_02" max_count="4" prob="2"/>
+<prefab name="oldwest_sm_shop_03" max_count="4" prob="2"/> 
+</prefab_rule>
+
+<prefab_rule name="buildingsRural">
+<prefab name="barn_01"/>
+<prefab name="barn_02"/>
+<prefab name="barn_03"/>
+<prefab name="farm_shed1" prob="0.1"/>
+<prefab name="farm_shed2" prob="0.1"/>
+<prefab name="farm_shed3" prob="0.1"/>
+<prefab name="farm_shed4" prob="0.1"/>
+<prefab name="blueberryfield_sm"/>
+<prefab name="cornfield_sm"/>
+<prefab name="cornfield_med"/>
+<prefab name="cornfield_lg"/>
+<prefab name="potatofield_sm"/>
+</prefab_rule>  
+  
+<prefab_rule name="buildingsMilitary">
+<prefab name="installation_red_mesa_security" prob="2"/>  
+<prefab name="installation_red_mesa" max_count="2"/>
+<prefab name="campsite_06a"/>
+<prefab name="campsite_07"/>
+<prefab name="army_camp_01"/>
+<prefab name="army_camp_02"/>
+<prefab name="army_camp_03"/>
+<prefab name="army_barracks_01" min_count="1" max_count="3"/>
+<prefab name="settlement_01" max_count="1"/>
+<prefab name="utility_celltower_02" max_count="1"/>
+<prefab name="utility_celltower_01" max_count="1"/>
+<prefab name="utility_electric_co_01" max_count="1"/>
+<prefab name="utility_refinery_01" max_count="1"/>
+<prefab name="warehouse_01" max_count="3"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsCars">
+<prefab name="gas_station1" max_count="1"/>
+<prefab name="gas_station2" max_count="1"/>
+<prefab name="gas_station3" max_count="1"/>
+<prefab name="gas_station4" max_count="1"/>
+<prefab name="gas_station5" max_count="1"/>
+<prefab name="carlot_01" max_count="1"/>
+<prefab name="carlot_02" max_count="1"/>
+<prefab name="store_autoparts_01" max_count="1"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsHotel">
+<prefab name="hotel_new_01" max_count="1"/>
+<prefab name="hotel_ostrich" max_count="1"/>
+<prefab name="hotel_roadside_01" max_count="1"/>
+<prefab name="hotel_roadside_02" max_count="1"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsNightlife">
+<prefab name="bar_sm_01" max_count="1"/>
+<prefab name="bar_theater_01" max_count="1"/>
+<prefab name="bar_stripclub_01" max_count="1"/>
+<prefab name="skate_park_01" max_count="1"/>
+<prefab name="diner_01" max_count="1"/>
+<prefab name="diner_02" max_count="1"/>
+<prefab name="fastfood_01" max_count="1"/>
+<prefab name="fastfood_02" max_count="1"/>
+<prefab name="fastfood_03" max_count="1"/>
+<prefab name="theater_01" max_count="1"/>
+</prefab_rule>
+  
+<prefab_rule name="buildingsStores">
+<prefab name="store_gun_sm_01" max_count="1"/>
+<prefab name="store_gun_lg_01" max_count="1"/>
+<prefab name="store_pharmacy_sm_01" max_count="1"/>
+<prefab name="store_hardware_sm_01" max_count="1"/>
+<prefab name="store_hardware_lg_01" max_count="1"/>
+<prefab name="store_book_sm_01" max_count="1"/>
+<prefab name="store_book_lg_01" max_count="1"/>
+<prefab name="store_grocery_lg_01" max_count="1"/>
+<prefab name="store_grocery_sm_01" max_count="1"/>
+<prefab name="store_bank_lg_01" max_count="1"/>
+<prefab name="store_laundry_01" max_count="1"/>
+<prefab name="store_salon" max_count="1"/>
+<prefab name="store_pawn_01" max_count="1"/>
+<prefab name="business_strip_old_01" max_count="1"/>
+<prefab name="business_strip_old_02" max_count="1"/>
+</prefab_rule>
+  
+<prefab_rule name="buildingsBusiness">
+<prefab name="business_red_brick_01"/>
+<prefab name="business_red_brick_02"/>
+<prefab name="business_red_brick_03"/>
+<prefab name="business_red_brick_04"/>
+<prefab name="business_red_brick_05"/>
+<prefab name="business_red_brick_06"/>
+<prefab name="business_red_brick_07"/>
+<prefab name="business_tan_brick_01"/>
+<prefab name="business_tan_brick_02"/>
+<prefab name="business_tan_brick_03"/>
+<prefab name="business_tan_brick_04"/>
+<prefab name="business_tan_brick_05"/>
+<prefab name="snowy_ski_lodge" max_count="1"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsParking">
+<prefab name="parking_garage_01" max_count="2"/>
+<prefab name="parking_lot_01" max_count="2"/>
+<prefab name="parking_lot_02" max_count="2"/>
+<prefab name="parking_lot_03" max_count="2"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsCivics">
+<prefab name="courthouse_med_01" max_count="1"/>
+<prefab name="courthouse_med_02" max_count="1"/>
+<prefab name="fire_station_01" max_count="1"/>
+<prefab name="fire_station_02" max_count="1"/>
+<prefab name="football_stadium"  max_count="1"/>
+<prefab name="hospital_01_rg"  max_count="1"/>
+<prefab name="police_station1" max_count="2"/>
+<prefab name="post_office_sm_01" max_count="1" />
+<prefab name="post_office_med_01" max_count="1" />
+<prefab name="prison_01" max_count="1"/>
+<prefab name="school_01" max_count="1"/>
+<prefab name="school_k6_01" max_count="1"/>
+<prefab name="school_daycare_01" max_count="1"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsFuneral">
+<prefab name="cemetery_01" max_count="1"/>
+<prefab name="cemetery_02" max_count="1"/>
+<prefab name="church_graveyard1" max_count="1"/>
+<prefab name="church_sm_01" max_count="1"/>
+<prefab name="funeral_home_01" max_count="1"/>
+</prefab_rule>
+  
+<prefab_rule name="buildingsIndustrial">
+<prefab name="factory_lg_01" max_count="4"/>
+<prefab name="factory_lg_02" max_count="4"/>
+<prefab name="junkyard_lg_01" max_count="3"/>
+<prefab name="junkyard_med_01" max_count="4"/>
+<prefab name="utility_celltower_02" max_count="3"/>
+<prefab name="utility_celltower_01" max_count="4"/>
+<prefab name="utility_waterworks_01" max_count="3"/>
+<prefab name="utility_electric_co_01" max_count="3"/>
+<prefab name="utility_refinery_01" max_count="3"/>
+<prefab name="warehouse_01" max_count="5"/>
+<prefab name="sawmill_01_snow" max_count="3"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsSkyscrapers">
+<prefab name="skyscraper_01" max_count="2"/>
+<prefab name="skyscraper_02" max_count="2"/>
+<prefab name="skyscraper_03" max_count="2"/>
+<prefab name="skyscraper_04" max_count="2"/>
+<prefab name="apartment_adobe_red_5_flr" max_count="3" prob="2"/>
+<prefab name="apartment_brick_6_flr" max_count="3" prob="2"/>
+</prefab_rule>
+  
+<prefab_rule name="buildingsBroken">
+<prefab name="mp_waste_bldg_03_intact"/>
+<prefab name="mp_waste_bldg_06_intact"/>
+<prefab name="mp_waste_bldg_07_intact"/>
+<prefab name="mp_waste_bldg_governer_08"/>
+<prefab name="mp_waste_bldg_ornate_01_intact" prob="0.5"/>
+<prefab name="mp_waste_bldg_ornate_02_intact" prob="0.5"/>
+<prefab name="mp_waste_bldg_ornate_03_intact" prob="0.5"/>
+<prefab name="mp_waste_bldg_07_intact"/>
+<prefab name="mp_waste_bldg_01_white" />
+<prefab name="mp_waste_bldg_03_white" />
+<prefab name="mp_waste_bldg_04_white" />
+<prefab name="mp_waste_bldg_01_red" />
+<prefab name="mp_waste_bldg_02_red" />
+<prefab name="mp_waste_bldg_03_red" />
+<prefab name="mp_waste_bldg_04_red" />
+<prefab name="mp_waste_bldg_01_tan" />
+<prefab name="mp_waste_bldg_02_tan" />
+<prefab name="mp_waste_bldg_03_tan" />
+<prefab name="mp_waste_bldg_04_tan" />
+<prefab name="mp_waste_bldg_04_grey" />
+<prefab name="mp_waste_bldg_05_grey" />
+<prefab name="mp_waste_bldg_06_grey" />
+<prefab name="waste_rubble_bldg_08" prob="2"/>
+</prefab_rule>
+
+<prefab_rule name="buildingsSettlements">
+<prefab name="settlement_01" prob="5"/>
+<prefab name="settlement_trader_01" />
+<prefab name="settlement_trader_02" />
+<prefab name="settlement_trader_03" />
+<prefab name="settlement_trader_04" />
+<prefab name="settlement_trader_05" />
+</prefab_rule>  
+
+<prefab_rule name="buildingsCabins">
+<prefab name="cabin_snow_hidden_01"/>
+<prefab name="snowy_ski_lodge"/>
+<prefab name="cabin_01" />
+<prefab name="cabin_02_sm" />
+<prefab name="cabin_03_lg" />
+<prefab name="cabin_04_md" />
+<prefab name="cabin_05_lg" />
+<prefab name="cabin_06_lg" />
+<prefab name="ranger_station1" />
+</prefab_rule>
+
+<prefab_rule name="fillerWater">
+<prefab name="water_tower_01"/>
+<prefab name="water_tower_02"/>
+<prefab name="water_tower_03"/>
+</prefab_rule>  
+
+<prefab_rule name="fillerFences">
+<prefab name="fence_crn_wd1"/>
+<prefab name="fence_crn_wd2"/>
+<prefab name="fence_ctr_nr1"/>
+<prefab name="fence_ctr_nr2"/>
+<prefab name="fence_ctr_nr3"/>
+<prefab name="fence_ctr_wd1"/>
+<prefab name="fence_ctr_wd2"/>
+<prefab name="fence_pkt_nr1"/>
+<prefab name="fence_pkt_nr2"/>
+<prefab name="fence_pkt_wd1"/>
+<prefab name="fence_pkt_wd2"/>
+</prefab_rule>
+  
+<prefab_rule name="buildingsFiller">
+<prefab rule="fillerWater" max_count="2"/>
+<prefab rule="fillerFences"/>
+<prefab name="garagebrick"/>
+<prefab name="garageblue1"/>
+<prefab name="garageyellow1"/>
+<prefab name="garagewhite1"/>
+<prefab name="garagetan1"/>
+<prefab name="garagestucco1"/>
+<prefab name="garagegreen1"/>
+<prefab name="vacant_lot_med_01"/>
+<prefab name="vacant_lot_med_02"/>
+<prefab name="vacant_lot_sm_01"/>
+<prefab name="vacant_lot_sm_02"/>
+<prefab name="mp_waste_lot1"/>
+<prefab name="mp_waste_sewer_01"/>
+<prefab name="mp_waste_sewer_hole_1"/>
+<prefab name="mp_waste_sewer_hole_2"/>
+<prefab name="mp_waste_tree_pile_01" prob="0.1"/>
+<prefab name="mp_waste_tree_pile_02" prob="0.2"/>
+<prefab name="rg_waste_hub_blk_full"/>
+<prefab name="rg_waste_hub_blk_half"/>
+<prefab name="rg_waste_hub_blk_quartered"/>
+<prefab name="rg_waste_hub_blk_t"/>
+</prefab_rule>
+
+<!-- Housing -->
+<prefab_rule name="housesOld">
+<prefab name="abandoned_house_01"/>
+<prefab name="abandoned_house_02"/>
+<prefab name="abandoned_house_03"/>
+<prefab name="abandoned_house_04"/>
+<prefab name="abandoned_house_05"/>
+<prefab name="abandoned_house_06"/>
+<prefab name="abandoned_house_07"/>
+<prefab name="abandoned_house_08"/>
+</prefab_rule>
+
+<prefab_rule name="housesBurnt">
+<prefab name="garageburnt1"/>
+<prefab name="house_trailer_burnt_01"/>
+<prefab name="house_trailer_burnt_01_intact"/>
+<prefab name="houseburnt1"/>
+<prefab name="houseburnt2"/>
+<prefab name="houseburnt2_intact"/>
+<prefab name="houseburnt3"/>
+<prefab name="houseburnt3_intact"/>
+<prefab name="houseburnt3b"/>
+<prefab name="houseburnt4"/>
+<prefab name="houseburnt4_intact"/>
+<prefab name="houseburnt5"/>
+</prefab_rule>
+
+<prefab_rule name="housesNew">
+<prefab name="house_new_01"/>
+<prefab name="house_new_02"/>
+<prefab name="house_new_03"/>
+<prefab name="house_new_04"/>
+<prefab name="house_new_05"/>
+<prefab name="house_new_06"/>
+<prefab name="house_new_mansion_01"/>
+<prefab name="house_new_mansion_02"/>
+<prefab name="house_new_mansion_03"/>
+</prefab_rule>  
+
+<prefab_rule name="housesTrailers">
+<prefab name="house_trailer_blue_01" />
+<prefab name="house_trailer_green_01" />
+<prefab name="house_trailer_tan_01" />
+<prefab name="house_trailer_white_01" />
+<prefab name="house_trailer_yellow_01" />
+<prefab name="trailer_01" />
+<prefab name="trailer_02" />
+<prefab name="trailer_03" />
+<prefab name="trailer_04" />
+<prefab name="trailer_park_01" />
+</prefab_rule>
+
+<prefab_rule name="housesAverage">
+<prefab name="bombshelter_lg_01" max_count="1"/>
+<prefab name="bombshelter_md_01" max_count="1"/>
+<prefab name="houseranchwhite1"/>
+<prefab name="houseranchtan1"/>
+<prefab name="houseranchtan2"/>
+<prefab name="houseranchblue1"/>  
+<prefab name="housewhite1basement"/>
+<prefab name="housewhitepyramid3"/>
+<prefab name="housetanpyramid2"/>
+<prefab name="housewhitepyramid1"/>
+<prefab name="housewhitepyramid2"/>
+<prefab name="housegreen1"/>
+<prefab name="houseblue1"/>
+<prefab name="housestucco1"/>
+<prefab name="housestucco2"/>
+<prefab name="housestucco3"/>
+<prefab name="housebrick1"/>
+<prefab name="housewhite1"/>
+<prefab name="housewhite2"/>
+<prefab name="housetan2"/>
+<prefab name="houseyellow1"/>
+<prefab name="houseyellowpyramid3"/>
+</prefab_rule>  
+  
+<prefab_rule name="caves">
+<prefab name="cave_01" />
+<prefab name="cave_02" />
+<prefab name="cave_03" />
+<prefab name="cave_04" />
+<prefab name="pond02"/>
+</prefab_rule>
+</prefab_rules>
+<!--
     <prefab_rule name="city">
       <prefab rule="skyscrapers" min_count="2"/>
       <prefab rule="residentialOldGroup"/>
@@ -223,10 +560,6 @@
       <prefab rule="commercialGroup"/>
       <prefab rule="downtownGroup"/>
       <prefab rule="industrialGroup"/>
-      <!--
-      <prefab rule="ruralGroup"/>
-      <prefab rule="detailFillerGroup"/>
-      -->
     </prefab_rule>
 
     <prefab_rule name="default">
@@ -260,15 +593,6 @@
       <prefab name="garagetan1"/>
       <prefab name="garagestucco1"/>
       <prefab name="garagegreen1"/>
-<!--
-      <prefab name="garageburnt1"/>
-      <prefab name="houseburnt1"/>
-      <prefab name="houseburnt2"/>
-      <prefab name="houseburnt3"/>
-      <prefab name="houseburnt3b"/>
-      <prefab name="houseburnt4"/>
-      <prefab name="houseburnt5"/>
--->
       <prefab name="housewhite1basement"/>
       <prefab name="housewhitepyramid3"/>
       <prefab name="housetanpyramid2"/>
@@ -286,7 +610,6 @@
       <prefab name="houseyellow1"/>
       <prefab name="houseyellowpyramid3"/>
       <prefab name="house_trailer_blue_01" />
-    <!--  <prefab name="house_trailer_burnt_01" /> -->
       <prefab name="house_trailer_green_01" />
       <prefab name="house_trailer_tan_01" />
       <prefab name="house_trailer_white_01" />
@@ -388,16 +711,8 @@
       <prefab name="bar_sm_01" />
       <prefab name="fire_station_01" max_count="1"/>
       <prefab name="fire_station_02" max_count="1"/>
-      
       <prefab name="store_pawn_01" max_count="1" />
       <prefab name="settlement_trader_04" max_count="1" prob="0.5"/>
-    </prefab_rule>
-
-    <prefab_rule name="skyscrapers">
-      <prefab name="skyscraper_01" max_count="1" prob="50"/>
-      <prefab name="skyscraper_02" max_count="1" prob="50"/>
-      <prefab name="skyscraper_03" max_count="1" prob="50"/>
-      <prefab name="skyscraper_04" max_count="1" prob="50"/>
     </prefab_rule>
 
     <prefab_rule name="industrialGroup">
@@ -620,10 +935,9 @@
       <prefab name="settlement_trader_03" />
       <prefab name="settlement_trader_05" />
     </prefab_rule>
+-->
 
-
-  </prefab_rules>
-
+<!--
   <hub_layouts>
     <hub_layout name="customHubTest">
       <township_type value="town"/>
@@ -655,8 +969,7 @@
       <lot min_x_y="-135, -135" size="128,128" rotation_to_road="1" align="north_east"/>
     </hub_layout>
   </hub_layouts>
-	
-
+-->
 
 <terrain_generators>
   
@@ -1500,8 +1813,8 @@
   
 <biome_generator                          name="gnamod">
 <module name="BaseNoise"                  type="Voronoi">
-<property name="frequency"                value="0.00105"/>
-<property name="displacement"             value="1.5"/>
+<property name="frequency"                value="0.00085"/>
+<property name="displacement"             value="1.25"/>
 </module>
 
 <module name="BaseNoiseMod"               type="BiasOutput">
@@ -1530,39 +1843,6 @@
 			
 <output module="BiomeBuilding"/>
 </biome_generator>
-  
-<biome_generator                          name="test">
-<module name="BaseNoise"                  type="FastNoise">
-<property name="frequency"                value="0.0004"/>
-<property name="displacement"             value="0.5"/>
-</module>
-
-<module name="BaseNoiseMod"               type="BiasOutput">
-<property name="sourceModule"             value="BaseNoise"/>
-<property name="bias"                     value="0.55"/>
-</module>
-			
-<module name="BiomeDither"                type="FastTurbulence">
-<property name="sourceModule"             value="BaseNoiseMod"/>
-<property name="frequency"                value="0.25"/>
-<property name="power"                    value="8"/>
-<property name="roughness"                value="5"/>
-</module>
-			
-<module name="BiomeJiggle"                type="FastTurbulence">
-<property name="sourceModule"             value="BiomeDither"/>
-<property name="frequency"                value="0.0018"/>
-<property name="power"                    value="300"/>
-<property name="roughness"                value="1"/>
-</module>
-			
-<module name="BiomeBuilding"              type="ClampOutput">
-<property name="sourceModule"             value="BiomeJiggle"/>
-<property name="bounds"                   value="0,1"/>
-</module>
-			
-<output module="BiomeBuilding"/>
-</biome_generator>  
   
 </biome_generators>
 
@@ -1605,33 +1885,36 @@
 
 <biome_spawn_rules>
 <!-- Dummy Biomes (Will be overwritten completely and serve to thin out the Overlay Biomes)             -->	
-<biome_spawn_rule name="forest">          <biome_generator range="0.80,0.90"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
 <!-- Grassland Overlay (Primary Biome Paint)                                                            -->
 <biome_spawn_rule name="plains">          <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <biome_spawn_rule name="plains">          <terrain_generator range="5,255"/>            </biome_spawn_rule>
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Height Paints)                  -->
-<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.00,0.07"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.07,0.10"/>          </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
-<biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>  
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.10,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule> 
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.60,0.70"/>          </biome_spawn_rule>
 <!-- Height Paints (Biomes that make up the hills on the map                                            -->
-<biome_spawn_rule name="plains">          <terrain_generator range="60,255"/>           </biome_spawn_rule>   
-<biome_spawn_rule name="forest">          <terrain_generator range="70,255"/>           </biome_spawn_rule>   
+<biome_spawn_rule name="plains">          <terrain_generator range="30,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="40,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="80,255"/>           </biome_spawn_rule>
 <!-- Spot Biomes (Biomes that are drawn in spots but are overwritten by Mountain Paints)                -->
-<biome_spawn_rule name="snow">            <biome_generator range="0.50,0.60"/>          </biome_spawn_rule>
-<biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <biome_generator range="0.90,0.995"/>         </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <biome_generator range="0.55,0.60"/>          </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <biome_generator range="0.70,0.75"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.95,0.999"/>         </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.001,0.10"/>         </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.50,0.55"/>          </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.75,0.80"/>          </biome_spawn_rule>
 <!-- Mountain Paints (Biomes that make up the alpine mountains on the map                               -->
-<biome_spawn_rule name="pine_forest">     <terrain_generator range="85,255"/>           </biome_spawn_rule>  
 <biome_spawn_rule name="snow">            <terrain_generator range="105,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="city">            <terrain_generator range="125,255"/>          </biome_spawn_rule>
-<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      -->  
+<biome_spawn_rule name="city">            <terrain_generator range="145,255"/>          </biome_spawn_rule>
+<!-- Water Overlay (Primary Water Biome for Biomes that require a nice water edge)                      --> 
+
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <!-- Desert Spot Biome (Desert requires its own Mountain Paint)                                         -->
-<biome_spawn_rule name="desert">          <biome_generator range="0.995,1.00"/>         </biome_spawn_rule>
+<biome_spawn_rule name="desert">          <biome_generator range="0.80,0.95"/>          </biome_spawn_rule>
 <!-- Water Overlay (Desert requires a new water paint underwater)                                       -->
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>  
 <!-- Radiated Biome Barrier                                                                             -->
@@ -1639,7 +1922,8 @@
 <biome_spawn_rule name="radiated">        <distance_from_center range="11500,12000"/>   </biome_spawn_rule>
 
 <!-- Biome Test
-<biome_spawn_rule name="city_wasteland">         <terrain_generator range="-60,255"/>           </biome_spawn_rule>  
+<biome_spawn_rule name="city_wasteland">         <terrain_generator range="-60,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="water">                 <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 -->
 </biome_spawn_rules>
   

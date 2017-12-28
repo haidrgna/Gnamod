@@ -2,16 +2,15 @@
 <prefab>
     <property name="CopyAirBlocks" value="True" />
     <property name="AllowTopSoilDecorations" value="False" />
-    <property name="Zoning" value="any" />
     <property name="RotationToFaceNorth" value="2" />
     <property name="YOffset" value="-1" />
-    <property name="AllowedTownships" value="city,town,rural,wilderness" />
     <property name="TraderArea" value="True" />
     <property name="TraderAreaProtect" value="20,0,20" />
     <property name="TraderAreaTeleportSize" value="41, 24, 40" />
     <property name="TraderAreaTeleportCenter" value="1, 1, 0" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
-    <property name="AllowedBiomes" value="plains" />
-    <property name="DisallowedBiomes" value="wasteland_hub,city_wasteland,snow,city,forest,pine_forest,burnt_forest,water,desert,wasteland" />
+    <property name="Zoning" value="Downtown,Industrial,Commercial,ResidentialNew,ResidentialOld" />
+    <property name="AllowedBiomes" value="plains,forest,water,pine_forest,snow,city,desert" />
+    <property name="DisallowedBiomes" value="wasteland,city_wasteland,radiated,burnt_forest,wasteland_hub" />
 </prefab>

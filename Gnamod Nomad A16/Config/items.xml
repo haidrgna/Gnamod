@@ -84,7 +84,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="EconomicValue" value="100"/>
-	<property name="RepairTools" value="scrapIron"/>
+	<property name="RepairTools" value="forgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property class="Action0">
@@ -2918,7 +2918,7 @@ Mesh files no longer used:
 	<property name="Insulation" value="0"/>
 	<property name="Encumbrance" value="0.1"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="forgedIron"/>
+	<property name="RepairTools" value="forgedSteel"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Hands"/>
 	<property name="Weight" value="100"/>
@@ -4933,7 +4933,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="-25"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="-10"/>
 		<property name="Sound_start" value="player_blooddraw"/>
 		<property name="Buff" value="bloodDrawTrigger"/>
 		<property name="Consume" value="false"/>
@@ -4989,7 +4989,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="-2"/>
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="dysentery"/>
@@ -5012,7 +5012,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="-30"/>
+		<property name="Gain_water" value="-15"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="painkillerBuff"/>
 	</property>
@@ -5022,7 +5022,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="-30"/>
+		<property name="Gain_water" value="-15"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="painkillerBuff"/>
 	</property>
@@ -5046,8 +5046,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0"/>
+		<property name="Gain_water" value="-2"/>
+		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="infection,infection1,dysentery,dysentery2"/>
 	</property>
@@ -5057,8 +5057,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0"/>
+		<property name="Gain_water" value="-2"/>
+		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Debuff" value="infection,infection1,dysentery,dysentery2"/>
 	</property>
@@ -5080,8 +5080,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="cured"/>
 		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2"/>
@@ -5092,8 +5092,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="cured"/>
 		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2"/>
@@ -5104,7 +5104,6 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10"/>
 </item>
 
-<!-- dev item to test buff variables
 <item id="669" name="redPill">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
@@ -5167,7 +5166,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-</item>-->
+</item>
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
@@ -5274,7 +5273,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="15"/>
 		<property name="Buff" value="eatFood_8_Trigger"/>
-		<property name="Gain_water" value="-10"/>
+		<property name="Gain_water" value="-5"/>
 		<property name="Sound_start" value="player_eating"/>
 		<property name="Create_item" value="canEmpty"/>
 	</property>
@@ -5647,7 +5646,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
 		<property name="Buff" value="eatFood_9_Trigger"/>
-		<property name="Gain_water" value="-5"/>
+		<property name="Gain_water" value="-10"/>
 		<property name="Gain_wellness" value="0.65"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
@@ -5669,7 +5668,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="16"/>
 		<property name="Buff" value="eatFood_14_Trigger"/>
-		<property name="Gain_water" value="-3"/>
+		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="1.35"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
@@ -5932,6 +5931,12 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="canEmpty"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -5944,7 +5949,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="-0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="dysentery,extinguishFireBuff"/>
-		<property name="Buff_chance" value="0.5,1"/>
+		<property name="Buff_chance" value="1,1"/>
 		<property name="Create_item" value="canEmpty"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -5958,6 +5963,12 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="CraftingIngredientTime" value="10"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="canEmpty"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -5965,7 +5976,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="20"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="20"/>
+		<property name="Gain_water" value="15"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="extinguishFireBuff"/>
 		<property name="Create_item" value="canEmpty"/>
@@ -5983,6 +5994,12 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -5990,12 +6007,12 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="5"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="15"/>
+		<property name="Gain_water" value="20"/>
 		<property name="Gain_sickness" value="15"/>
-		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Gain_wellness" value="-0.2"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="dysentery,extinguishFireBuff"/>
-		<property name="Buff_chance" value="0.5,1"/>
+		<property name="Buff_chance" value="0.7,1"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -6009,6 +6026,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="30"/>
 	<property name="CraftingIngredientTime" value="15"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -6030,6 +6053,12 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="9f9fff"/>
 	<property name="EconomicValue" value="100"/>
 	<property name="CraftingIngredientTime" value="5"/>
+    <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Delay" value="1.5"/>
 		<property name="Gain_stamina" value="10"/>
@@ -6047,6 +6076,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="34"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -6070,6 +6105,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="36"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -6098,9 +6139,16 @@ Mesh files no longer used:
 	<!-- <property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="HoldType" value="3"/> -->
 	<property name="EconomicValue" value="100"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
-		<property name="Gain_water" value="8"/>
+		<property name="Gain_water" value="12"/>
 		<property name="Gain_stamina" value="0"/>
+    <property name="Gain_wellness" value="1"/>
 		<property name="Buff" value="megaCrushBuff,extinguishFireBuff"/>
 	</property>
 </item>
@@ -6112,6 +6160,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="34"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -6120,7 +6174,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="-10"/>
 		<property name="Gain_stamina" value="100"/>
-		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Gain_wellness" value="0.05"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="CoffeeStaminaBoost,extinguishFireBuff"/>
 		<property name="Create_item" value="emptyJar"/>
@@ -6135,6 +6189,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="100"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2"/>
@@ -6143,6 +6203,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="0"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="0"/>
+    <property name="Gain_wellness" value="0.05"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="DrinkBeer,extinguishFireBuff"/>
 		<property name="Create_item" value="emptyJar"/>
@@ -6157,6 +6218,12 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK resource -->
 	<property name="EconomicValue" value="48"/>
+  <property class="Action0">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1"/>
+    <property name="Use_time" value="..."/>
+    <property name="Create_item" value="emptyJar"/>
+  </property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -8161,9 +8228,113 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
 </item>
 
+<item id="1487" name="gunAdminLauncher">
+<property name="CreativeMode"                 value="Dev"/>
+<property name="Meshfile"                     value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+<property name="Material"                     value="metal"/>
+<property name="HoldType"                     value="10"/>
+<property name="Stacknumber"                  value="1"/>
+<property name="DegradationBreaksAfter"       value="true"/>
+<property name="Degradation"                  value="99999" param1="true"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
+<property name="CrosshairOnAim"               value="true"/>
+<property name="Sound_Sight_In"               value="launcher_sight_in"/>
+<property name="Sound_Sight_Out"              value="launcher_sight_out"/>
+<!-- Attack Action -->
+<property class="Action0">
+<property name="Class"                        value="Launcher"/>
+<property name="Delay"                        value="0.01"/>
+<property name="Crosshair_min_distance"       value="1"/>
+<property name="Crosshair_max_distance"       value="2"/>
+<property name="Reload_time"                  value="1"/>
+<property name="Bullet_icon"                  value="uzi"/>
+<property name="Sound_start"                  value="m136_fire"/>
+<property name="Sound_repeat"                 value=""/>
+<property name="Sound_end"                    value=""/>
+<property name="Sound_empty"                  value="weapon_empty"/>
+<property name="Sound_reload"                 value="m136_reload"/>
+<property name="Particles_muzzle_fire"        value="rocketLauncherFire"/>
+<property name="Particles_muzzle_smoke"       value="nozzlesmoke_m136"/>
+<property name="Auto_fire"                    value="true"/>
+<property name="Single_magazine_usage"        value="true"/>
+<property name="Infinite_ammo"                value="true"/>
+  <!-- Ammo -->
+  <property name="Magazine_items"             value="adminRocket,adminTorchRocket,projectileZombieVomit,adminRocket"/>
+  <property name="Magazine_item_ray_counts"   value="1,1,1,1"/>
+  <property name="Rays_spread"                value="0,0,0,0.1"/>
+</property>
+<property class="Action1">
+<property name="Class"                        value="Zoom"/>
+<property name="Zoom_max_out"                 value="40"/>
+<property name="Zoom_max_in"                  value="40"/>
+</property>
+<property name="Group"                        value="Ammo/Weapons"/>
+<property name="CraftingSkillGroup"           value="craftSkillGuns"/>
+<property name="RepairExpMultiplier"          value="25"/>
+</item>
+
+<item id="1488"                           name="adminRocket">
+<property name="CreativeMode"             value="Dev"/>
+<property name="CustomIcon"               value="rocket"/>
+<property name="Meshfile"                 value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+<property name="HandMeshfile"             value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+<property name="Material"                 value="metal"/>
+<property name="HoldType"                 value="3"/>
+<property name="Stacknumber"              value="50"/>
+<property name="EconomicValue"            value="588"/>
+<!-- Damage -->
+<property class="Attributes">
+<property name="GetQualityFromWeapon"     value="true"/>
+<property name="EntityDamage"             value="250,500"/>
+<property name="BlockDamage"              value="50,200"/>
+</property>    
+<property class="Action1">
+<property name="Class"                    value="Projectile"/>
+<property name="Explosion.ParticleIndex"  value="10"/>
+<property name="Explosion.RadiusBlocks"   value="5"/>
+<property name="Explosion.BlockDamage"    value="50000"/>
+<property name="Explosion.RadiusEntities" value="5"/>
+<property name="Explosion.EntityDamage"   value="1"/>
+<property name="Velocity"                 value="75"/>
+<property name="FlyTime"                  value="10"/>
+<property name="LifeTime"                 value="25"/>
+</property>
+<property name="CraftingSkillGroup"       value="craftSkillScience"/>
+<property name="Group"                    value="Ammo/Weapons"/>
+</item>
+
+<item id="1489"                           name="adminTorchRocket">
+<property name="CreativeMode"             value="Dev"/>
+<property name="CustomIcon"               value="torch"/>
+<property name="Meshfile"                 value="Items/Tools/torchPrefab"/>
+<property name="DropMeshfile"             value="Items/Misc/torch_droppedPrefab"/>
+<property name="Material"                 value="metal"/>
+<property name="HoldType"                 value="12"/>
+<property name="Stacknumber"              value="50"/>
+<property name="EconomicValue"            value="588"/>
+<property class="Attributes">
+<property name="GetQualityFromWeapon"     value="true"/>
+<property name="EntityDamage"             value="250,500"/>
+<property name="BlockDamage"              value="50,200"/>
+</property>    
+<property class="Action1">
+<property name="Class"                    value="Projectile"/>
+<property name="Explosion.ParticleIndex"  value="10"/>
+<property name="Explosion.RadiusBlocks"   value="5"/>
+<property name="Explosion.BlockDamage"    value="50000"/>
+<property name="Explosion.RadiusEntities" value="5"/>
+<property name="Explosion.EntityDamage"   value="500"/>
+<property name="Velocity"                 value="50"/>
+<property name="FlyTime"                  value="10"/>
+<property name="LifeTime"                 value="25"/>
+</property>
+<property name="CraftingSkillGroup"       value="craftSkillScience"/>
+<property name="Group"                    value="Ammo/Weapons"/>
+</item>  
 
 
-<item id="1490" name="superWrench">
+
+  <item id="1490" name="superWrench">
 	<property name="Extends" value="wrench"/>
 	<property name="CustomIcon" value="wrench"/>
 	<property name="CustomIconTint" value="ffa0a0"/>
@@ -8200,8 +8371,8 @@ Mesh files no longer used:
 		<property name="Rays_spread" value="0"/>
 		<property name="Crosshair_min_distance" value="5"/>
 		<property name="Crosshair_max_distance" value="8"/>
-		<property name="DamageBlock" value="3000"/>
-		<property name="DamageEntity" value="0.1"/>
+		<property name="DamageBlock" value="99999"/>
+		<property name="DamageEntity" value="100"/>
 		<property name="Single_magazine_usage" value="true"/>
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="9mmBullet"/>
@@ -8455,7 +8626,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="7,15"/>
+<property name="EntityDamage"             value="8,16"/>
 <property name="BlockDamage"              value="3,8"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
 </property>
@@ -8466,7 +8637,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="9,19"/>
+<property name="EntityDamage"             value="10,20"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
 </property>
 </item>      
@@ -8476,7 +8647,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="11,23"/>
+<property name="EntityDamage"             value="12,24"/>
 <property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8531,7 +8702,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="21,43"/>
+<property name="EntityDamage"             value="22,44"/>
 <property name="BlockDamage"              value="7,19"/>
 <property name="ApplyBuff"                value="0.025,0.05" param1="critAmmoModerate"/>
 </property>
@@ -10475,7 +10646,7 @@ Mesh files no longer used:
   <property name="Magazine_item_ray_spreads"  value="0.10,0.09,0.08,0,0.10,0.09,0.08,0"/>
   <!-- Damage Behavior-->
   <property name="DamageBonus.head"           value="4.5"/>
-  <property name="DamageBonus.torso"          value="0.5"/>
+  <property name="DamageBonus.torso"          value="1"/>
   <property name="DamageBonus.wood"           value="1.5"/>
   <property name="DamageBonus.earth"          value="0"/>
     </property>
@@ -10683,7 +10854,7 @@ Mesh files no longer used:
   <property name="Magazine_item_ray_spreads"  value="0.06,0.05,0.04,0,0.06,0.05,0.04,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.5"/>
-  <property name="DamageBonus.torso"          value="0.25"/>
+  <property name="DamageBonus.torso"          value="0.75"/>
   <property name="DamageBonus.wood"           value="1.5"/>
   <property name="DamageBonus.earth"          value="0"/>
 </property>

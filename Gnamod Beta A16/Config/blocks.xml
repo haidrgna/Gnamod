@@ -1008,7 +1008,7 @@ NOT the TextureNumber.
   <property name="PlantGrowing.IsRandom" value="false"/>
   <property name="PlantGrowing.LightLevelGrow" value="0"/>
   <property name="PlantGrowing.LightLevelStay" value="0"/>
-  <property name="PlantGrowing.GrowOnTop" value="towerHelper"/>
+  <property name="PlantGrowing.GrowOnTop" value="towerTest"/>
   <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 </block>     
 
@@ -1080,6 +1080,37 @@ NOT the TextureNumber.
     <property name="PlantGrowing.IsRandom" value="false"/>
     <property name="PlantGrowing.LightLevelGrow" value="0"/>
     <property name="PlantGrowing.LightLevelStay" value="0"/>
+  </block>
+
+  <block id="84" name="airPocket">
+    <property name="Extends" value="fertileGrass"/>
+    <property name="CustomIcon" value="destroyedStone"/>
+    <property name="Texture" value="200"/>
+    <property name="CanMobsSpawnOn" value="true"/>
+    <drop event="Destroy" count="0"/>
+    <property name="PlantGrowing.Next" value="airPocket"/>
+    <property name="PlantGrowing.GrowthRate" value="1"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="8"/>
+    <property name="PlantGrowing.LightLevelStay" value="8"/>
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+  </block>
+
+  <block id="85" name="thawingIce">
+    <property name="Extends" value="fertileGrass"/>
+    <property name="CustomIcon" value="ice"/>
+    <property name="Texture" value="178"/>
+    <property name="CanMobsSpawnOn" value="true"/>
+    <drop event="Destroy" count="0"/>
+    <property name="PlantGrowing.Next" value="waterMoving"/>
+    <property name="PlantGrowing.GrowthRate" value="0.01"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="0"/>
+    <property name="PlantGrowing.LightLevelStay" value="0"/>
+    <property name="PlantGrowing.GrowOnTop" value="thawingIce"/>
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
   </block>
   
   <!-- DO NOT DEFINE TERRAIN BLOCKS OVER ID 127. Just don't. -->
@@ -8848,6 +8879,8 @@ kind of free
 </block>
 
 <block id="878" name="morticianDrawer">
+  <property name="Class" value="Loot"/>
+  <property name="LootList" value="62"/>
 	<property name="Material" value="Msteel"/>
 	<property name="MaxDamage" value="4000"/>
 	<property name="Shape" value="New"/>
@@ -8862,6 +8895,8 @@ kind of free
 </block>
 
 <block id="879" name="furnaceDrawer">
+  <property name="Class" value="Loot"/>
+  <property name="LootList" value="62"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="mortician_drawer"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -12759,7 +12794,6 @@ kind of free
 	<property name="ParticleName" value="ember_pile"/>
 	<property name="ParticleOffset" value="0,0,0"/>
 	<property name="BuffsWhenWalkedOn" value="blockBurn2Trigger"/>
-                                                                  <property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="coal" count="1,2" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="wood" count="1"/>
@@ -13262,6 +13296,25 @@ kind of free
 </block>
 	<!-- x Free -->
 
+  <block id="1447" name="randomCars">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="CustomIcon" value="lootWastelandHelper"/>
+    <property name="DescriptionKey" value="randomLootSpawnerDesc"/>
+    <property name="Material" value="stone"/>
+    <property name="Shape" value="Ext3dModel"/>
+    <property name="Texture" value="293"/>
+    <property name="Mesh" value="models"/>
+    <property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/>
+    <property name="ImposterExclude" value="true"/>
+    <property name="Class" value="PlantGrowing"/>
+    <property name="PlantGrowing.Next" value="randomCarsHelper"/>
+    <property name="PlantGrowing.GrowthRate" value="0.005"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="0"/>
+    <property name="PlantGrowing.LightLevelStay" value="0"/>
+  </block>
+  
 <block id="1448" name="spotlightNailedDownPOI">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>

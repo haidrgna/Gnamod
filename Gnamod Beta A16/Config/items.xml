@@ -8228,9 +8228,113 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
 </item>
 
+<item id="1487" name="gunAdminLauncher">
+<property name="CreativeMode"                 value="Dev"/>
+<property name="Meshfile"                     value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+<property name="Material"                     value="metal"/>
+<property name="HoldType"                     value="10"/>
+<property name="Stacknumber"                  value="1"/>
+<property name="DegradationBreaksAfter"       value="true"/>
+<property name="Degradation"                  value="99999" param1="true"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
+<property name="CrosshairOnAim"               value="true"/>
+<property name="Sound_Sight_In"               value="launcher_sight_in"/>
+<property name="Sound_Sight_Out"              value="launcher_sight_out"/>
+<!-- Attack Action -->
+<property class="Action0">
+<property name="Class"                        value="Launcher"/>
+<property name="Delay"                        value="0.01"/>
+<property name="Crosshair_min_distance"       value="1"/>
+<property name="Crosshair_max_distance"       value="2"/>
+<property name="Reload_time"                  value="1"/>
+<property name="Bullet_icon"                  value="uzi"/>
+<property name="Sound_start"                  value="m136_fire"/>
+<property name="Sound_repeat"                 value=""/>
+<property name="Sound_end"                    value=""/>
+<property name="Sound_empty"                  value="weapon_empty"/>
+<property name="Sound_reload"                 value="m136_reload"/>
+<property name="Particles_muzzle_fire"        value="rocketLauncherFire"/>
+<property name="Particles_muzzle_smoke"       value="nozzlesmoke_m136"/>
+<property name="Auto_fire"                    value="true"/>
+<property name="Single_magazine_usage"        value="true"/>
+<property name="Infinite_ammo"                value="true"/>
+  <!-- Ammo -->
+  <property name="Magazine_items"             value="adminRocket,adminTorchRocket,projectileZombieVomit,adminRocket"/>
+  <property name="Magazine_item_ray_counts"   value="1,1,1,1"/>
+  <property name="Rays_spread"                value="0,0,0,0.1"/>
+</property>
+<property class="Action1">
+<property name="Class"                        value="Zoom"/>
+<property name="Zoom_max_out"                 value="40"/>
+<property name="Zoom_max_in"                  value="40"/>
+</property>
+<property name="Group"                        value="Ammo/Weapons"/>
+<property name="CraftingSkillGroup"           value="craftSkillGuns"/>
+<property name="RepairExpMultiplier"          value="25"/>
+</item>
+
+<item id="1488"                           name="adminRocket">
+<property name="CreativeMode"             value="Dev"/>
+<property name="CustomIcon"               value="rocket"/>
+<property name="Meshfile"                 value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+<property name="HandMeshfile"             value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+<property name="Material"                 value="metal"/>
+<property name="HoldType"                 value="3"/>
+<property name="Stacknumber"              value="50"/>
+<property name="EconomicValue"            value="588"/>
+<!-- Damage -->
+<property class="Attributes">
+<property name="GetQualityFromWeapon"     value="true"/>
+<property name="EntityDamage"             value="250,500"/>
+<property name="BlockDamage"              value="50,200"/>
+</property>    
+<property class="Action1">
+<property name="Class"                    value="Projectile"/>
+<property name="Explosion.ParticleIndex"  value="10"/>
+<property name="Explosion.RadiusBlocks"   value="5"/>
+<property name="Explosion.BlockDamage"    value="50000"/>
+<property name="Explosion.RadiusEntities" value="5"/>
+<property name="Explosion.EntityDamage"   value="1"/>
+<property name="Velocity"                 value="75"/>
+<property name="FlyTime"                  value="10"/>
+<property name="LifeTime"                 value="25"/>
+</property>
+<property name="CraftingSkillGroup"       value="craftSkillScience"/>
+<property name="Group"                    value="Ammo/Weapons"/>
+</item>
+
+<item id="1489"                           name="adminTorchRocket">
+<property name="CreativeMode"             value="Dev"/>
+<property name="CustomIcon"               value="torch"/>
+<property name="Meshfile"                 value="Items/Tools/torchPrefab"/>
+<property name="DropMeshfile"             value="Items/Misc/torch_droppedPrefab"/>
+<property name="Material"                 value="metal"/>
+<property name="HoldType"                 value="12"/>
+<property name="Stacknumber"              value="50"/>
+<property name="EconomicValue"            value="588"/>
+<property class="Attributes">
+<property name="GetQualityFromWeapon"     value="true"/>
+<property name="EntityDamage"             value="250,500"/>
+<property name="BlockDamage"              value="50,200"/>
+</property>    
+<property class="Action1">
+<property name="Class"                    value="Projectile"/>
+<property name="Explosion.ParticleIndex"  value="10"/>
+<property name="Explosion.RadiusBlocks"   value="5"/>
+<property name="Explosion.BlockDamage"    value="50000"/>
+<property name="Explosion.RadiusEntities" value="5"/>
+<property name="Explosion.EntityDamage"   value="500"/>
+<property name="Velocity"                 value="50"/>
+<property name="FlyTime"                  value="10"/>
+<property name="LifeTime"                 value="25"/>
+</property>
+<property name="CraftingSkillGroup"       value="craftSkillScience"/>
+<property name="Group"                    value="Ammo/Weapons"/>
+</item>  
 
 
-<item id="1490" name="superWrench">
+
+  <item id="1490" name="superWrench">
 	<property name="Extends" value="wrench"/>
 	<property name="CustomIcon" value="wrench"/>
 	<property name="CustomIconTint" value="ffa0a0"/>
@@ -8267,8 +8371,8 @@ Mesh files no longer used:
 		<property name="Rays_spread" value="0"/>
 		<property name="Crosshair_min_distance" value="5"/>
 		<property name="Crosshair_max_distance" value="8"/>
-		<property name="DamageBlock" value="3000"/>
-		<property name="DamageEntity" value="0.1"/>
+		<property name="DamageBlock" value="99999"/>
+		<property name="DamageEntity" value="100"/>
 		<property name="Single_magazine_usage" value="true"/>
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="9mmBullet"/>

@@ -114,6 +114,7 @@ tbnsew:
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
+  <drop event="Harvest" name="clayLump" count="10" prob="0.33" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="dirt" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0"/>
@@ -211,10 +212,11 @@ tbnsew:
 	<property name="LPHardnessScale" value="2"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="301,570,570,570,570,570"/>
+	<property name="Texture" value="570,570,301,301,301,301"/> <!-- 301 -->
 	<property name="DropScale" value="2"/>
 	<property class="RepairItems"> <property name="clayLump" value="30"/> </property>
-	<drop event="Harvest" name="clayLump" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="dirtFragment" count="5" tool_category="harvestingTools"/>
+  <drop event="Harvest" name="clayLump" count="20" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="yuccaFibers" count="1"/>
 	<drop event="Fall" name="clayLump" count="30" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
@@ -245,7 +247,7 @@ tbnsew:
 	<property name="Material" value="Mbedrock"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="322"/>
+	<property name="Texture" value="1"/> <!-- 322 -->
 	<property name="DropScale" value="2"/>
 	<drop event="Destroy" count="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
@@ -401,7 +403,7 @@ tbnsew:
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertilizedFarmland"/>
 		<property name="Item" value="fertilizer"/>
-		<property name="ItemCount" value="1"/>
+		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
@@ -443,6 +445,7 @@ tbnsew:
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
+  <drop event="Harvest" name="fertilizer" count="5" prob="0.33" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="yuccaFibers" count="1" prob="0.25"/>
 	<drop event="Fall" name="burntForestGround" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0"/>
@@ -621,7 +624,7 @@ tbnsew:
 	<property name="DropScale" value="2"/>
 	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="fertilizer" count="1" prob="0.33"/>
+  <drop event="Harvest" name="fertilizer" count="10" prob="0.33" tool_category="harvestingTools"/>
 	<drop event="Fall" name="fertileFarmland" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0"/>
 	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
@@ -1005,7 +1008,7 @@ NOT the TextureNumber.
   <property name="PlantGrowing.IsRandom" value="false"/>
   <property name="PlantGrowing.LightLevelGrow" value="0"/>
   <property name="PlantGrowing.LightLevelStay" value="0"/>
-  <property name="PlantGrowing.GrowOnTop" value="towerHelper"/>
+  <property name="PlantGrowing.GrowOnTop" value="towerTest"/>
   <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 </block>     
 
@@ -1077,6 +1080,37 @@ NOT the TextureNumber.
     <property name="PlantGrowing.IsRandom" value="false"/>
     <property name="PlantGrowing.LightLevelGrow" value="0"/>
     <property name="PlantGrowing.LightLevelStay" value="0"/>
+  </block>
+
+  <block id="84" name="airPocket">
+    <property name="Extends" value="fertileGrass"/>
+    <property name="CustomIcon" value="destroyedStone"/>
+    <property name="Texture" value="200"/>
+    <property name="CanMobsSpawnOn" value="true"/>
+    <drop event="Destroy" count="0"/>
+    <property name="PlantGrowing.Next" value="airPocket"/>
+    <property name="PlantGrowing.GrowthRate" value="1"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="8"/>
+    <property name="PlantGrowing.LightLevelStay" value="8"/>
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+  </block>
+
+  <block id="85" name="thawingIce">
+    <property name="Extends" value="fertileGrass"/>
+    <property name="CustomIcon" value="ice"/>
+    <property name="Texture" value="178"/>
+    <property name="CanMobsSpawnOn" value="true"/>
+    <drop event="Destroy" count="0"/>
+    <property name="PlantGrowing.Next" value="waterMoving"/>
+    <property name="PlantGrowing.GrowthRate" value="0.01"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="0"/>
+    <property name="PlantGrowing.LightLevelStay" value="0"/>
+    <property name="PlantGrowing.GrowOnTop" value="thawingIce"/>
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
   </block>
   
   <!-- DO NOT DEFINE TERRAIN BLOCKS OVER ID 127. Just don't. -->
@@ -2915,12 +2949,12 @@ group desc for stuff like metal siding
 
 <block id="278" name="cntLootCrateBookstore">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="86"/>
+	<property name="LootList" value="26"/>
 </block>
 
 <block id="279" name="cntLootCrateCarParts">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="87"/>
+	<property name="LootList" value="27"/>
 </block>
 
 <block id="280" name="glassShowerBlock">
@@ -2977,7 +3011,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
 	<property name="Texture" value="358,335,335,335,335,335"/>
-	<property name="LootList" value="7"/>
+	<property name="LootList" value="42"/>
 	<drop event="Destroy" name="brokenGlass" count="1,2"/>
 </block>
 
@@ -3198,7 +3232,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Appliances/oven" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="105"/>
-	<property name="LootList" value="5"/>
+	<property name="LootList" value="35"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,3" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
@@ -3356,7 +3390,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="HousingDecor/mailbox" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="14"/>
+	<property name="LootList" value="45"/>
 	<property name="FuelValue" value="150"/>
 	<property class="RepairItems"> <property name="forgedIron" value="2"/> <property name="wood" value="5"/> </property>
 	<drop event="Destroy" name="scrapIron" count="5"/>
@@ -3437,7 +3471,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/trash_can01" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="143"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="16"/>
+	<property name="LootList" value="46"/>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<property name="EconomicValue" value="40"/>
 </block>
@@ -3451,7 +3485,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/bin" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="75"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="2"/>
+	<property name="LootList" value="11"/>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<property name="EconomicValue" value="40"/>
 </block>
@@ -3463,7 +3497,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/nightstand" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="6"/>
+	<property name="LootList" value="41"/>
 	<property name="FuelValue" value="150"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="20"/> </property>
@@ -3480,7 +3514,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/suitcase" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="36"/>
+	<property name="LootList" value="15"/>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="2,8" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
@@ -3497,7 +3531,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="1"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
@@ -3512,7 +3546,7 @@ group desc for stuff like metal siding
 	<property name="ImposterExchange" value="imposterCTREighth" param1="29"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="2"/>
+	<property name="LootList" value="11"/>
   <drop event="Destroy" name="scrapPlastics" count="1,2" prob="0.5"/>
   <drop event="Destroy" name="cloth" count="1" prob="0.1"/>
 	<drop event="Destroy" name="canEmpty" count="1" prob="0.2"/>
@@ -3565,7 +3599,7 @@ group desc for stuff like metal siding
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="LootList" value="4"/>
+	<property name="LootList" value="37"/>
 	<property name="Model" value="Entities/LootContainers/fridgePrefab"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="27"/>
@@ -3590,7 +3624,7 @@ group desc for stuff like metal siding
 
 <block id="350" name="cntGasPump">
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="64"/>
+	<property name="LootList" value="58"/>
 	<property name="Material" value="Mmetal_thin"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -3770,7 +3804,7 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="18"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="11"/>
+	<property name="LootList" value="64"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntDeskSafeInsecure"/>
@@ -3788,7 +3822,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="LootList" value="11"/>
+	<property name="LootList" value="65"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntWallSafeInsecure"/>
@@ -3833,7 +3867,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="70"/>
+	<property name="LootList" value="71"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
@@ -4419,7 +4453,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="9"/>
+	<property name="LootList" value="12"/>
 	<drop event="Harvest" name="cloth" count="2"/>
 	<drop event="Destroy" name="cloth" count="1"/>
 </block>
@@ -4436,6 +4470,7 @@ group desc for stuff like metal siding
 
 <block id="426" name="cntDuffle01">
 	<property name="Extends" value="cntBackpack01"/>
+  <property name="LootList" value="13"/>
 	<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
 </block>
 
@@ -4452,7 +4487,7 @@ group desc for stuff like metal siding
 <block id="429" name="cntPurse01">
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="Model" value="LootContainers/purse01" param1="main_mesh"/>
-	<property name="LootList" value="48"/>
+	<property name="LootList" value="14"/>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -4541,7 +4576,7 @@ group desc for stuff like metal siding
 	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="67"/>
+	<property name="LootList" value="43"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="shortMetalPipe" value="2"/> <property name="wood" value="4"/> </property>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
@@ -4554,13 +4589,13 @@ group desc for stuff like metal siding
 
 <block id="435" name="cntToilet02">
 	<property name="Extends" value="cntToilet01"/>
-	<property name="LootList" value="67"/>
+	<property name="LootList" value="43"/>
 	<property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
 </block>
 
 <block id="436" name="cntToilet03">
 	<property name="Extends" value="cntToilet01"/>
-	<property name="LootList" value="69"/>
+	<property name="LootList" value="44"/>
 	<property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
 </block>
 
@@ -5144,7 +5179,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="81"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="300"/>
-	<property name="LootList" value="6"/>
+	<property name="LootList" value="47"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="15"/> </property>
 	<drop event="Destroy" name="wood" count="2,6" prob="1"/>
@@ -5162,7 +5197,7 @@ kind of free
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="147"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="24"/>
+	<property name="LootList" value="48"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="spring" value="4"/> <property name="forgedIron" value="15"/> </property>
 	<drop event="Destroy" name="scrapIron" count="25"/>
@@ -5419,7 +5454,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/birdnest" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="25"/>
+	<property name="LootList" value="18"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="cloth" count="1" prob="0.5"/>
 	<drop event="Harvest" name="feather" count="1,5" prob="1"/>
@@ -5585,8 +5620,8 @@ kind of free
 </block>
 
 <block id="557" name="cntMunitionsBox">	<!-- military ammo -->
-	<property name="Class" value="Loot"/>
-	<property name="Material" value="metal"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="Material" value="Mmetal_hard"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -5594,14 +5629,12 @@ kind of free
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="ImposterExchange" value="imposterHalf" param1="112"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="40"/>
-	<drop event="Harvest" name="forgedIron" count="2,4" prob="1"/>
-	<drop event="Harvest" name="forgedSteel" count="2,4" prob="0.5"/>
-	<drop event="Harvest" name="scrapIron" count="30" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<property name="LootList" value="66"/>
+  <property name="DowngradeBlock" value="cntMunitionsBoxInsecure"/>
+  <drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="250"/> <!-- disassemble value -->
 </block>
-
+  
 <block id="558" name="ironBarsCentered">
 	<property name="CustomIcon" value="ironBars"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -5900,8 +5933,44 @@ kind of free
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_02"/>
 </block>
-	<!-- 2 Free -->
 
+  <block id="583" name="cntMunitionsBoxInsecure">
+    <property name="Class" value="Loot"/>
+    <property name="Material" value="Mmetal_hard"/>
+    <property name="StabilitySupport" value="false"/>
+    <property name="Shape" value="Ext3dModel"/>
+    <property name="Texture" value="293"/>
+    <property name="Mesh" value="models"/>
+    <property name="Model" value="LootContainers/munitions_box01" param1="main_mesh"/>
+    <property name="Place" value="TowardsPlacer"/>
+    <property name="ImposterExchange" value="imposterHalf" param1="112"/>
+    <property name="IsTerrainDecoration" value="true"/>
+    <property name="LootList" value="66"/>
+    <drop event="Harvest" name="forgedIron" count="2,4" prob="1"/>
+    <drop event="Harvest" name="forgedSteel" count="2,4" prob="0.5"/>
+    <drop event="Harvest" name="scrapIron" count="30" prob="1"/>
+    <drop event="Destroy" count="0"/>
+    <property name="EconomicValue" value="250"/>
+  </block>
+
+  <block id="584" name="cntLockersInsecure">
+    <property name="Class" value="Loot"/>
+    <property name="Material" value="metal"/>
+    <property name="Shape" value="Ext3dModel"/>
+    <property name="Texture" value="293"/>
+    <property name="Mesh" value="models"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="Entities/LootContainers/lockersPrefab"/>
+    <property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>
+    <property name="IsTerrainDecoration" value="true"/>
+    <property name="LootList" value="68"/>
+    <property name="EconomicValue" value="60"/>
+    <drop event="Harvest" name="forgedIron" count="1,2" prob="1"/>
+    <drop event="Harvest" name="forgedSteel" count="1,2" prob="0.5"/>
+    <drop event="Harvest" name="scrapIron" count="15" prob="1"/>
+    <drop event="Destroy" count="0"/>
+  </block>
+  
 <block id="585" name="cntTreeStumpNoLoot">
 <property name="Material" value="treeWoodSmall"/>
 <property name="Shape" value="ModelEntity"/>
@@ -5954,7 +6023,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="IsPlant" value="true"/> <!-- it shall never be placed on rocks -->
-	<property name="LootList" value="35"/>
+	<property name="LootList" value="19"/>
 	<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 </block>
@@ -6246,7 +6315,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Weight" value="72"/>
-	<property name="LootList" value="44"/>
+	<property name="LootList" value="51"/>
 	<property name="Model" value="Entities/LootContainers/file_cabinetPrefab"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
@@ -6261,7 +6330,7 @@ kind of free
 	<property name="Shape" value="Ext3dModel"/>
 	<property name="Texture" value="282"/>
 	<property name="Mesh" value="models"/>
-	<property name="LootList" value="45"/>
+	<property name="LootList" value="16"/>
 	<property name="Model" value="LootContainers/cooler" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="141"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -6288,16 +6357,21 @@ kind of free
 </block>
 
 <block id="626" name="cntLockers">
-	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
-	<property name="Class" value="Loot"/>
+  <property name="Class" value="SecureLoot"/>
+  <property name="Material" value="metal"/>
+  <property name="Shape" value="Ext3dModel"/>
+  <property name="Texture" value="293"/>
+  <property name="Mesh" value="models"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/LootContainers/lockersPrefab"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="43"/>
-	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+	<property name="LootList" value="68"/>
+	<property name="EconomicValue" value="60"/>
+  <property name="DowngradeBlock" value="cntLockersInsecure"/>
+  <drop event="Destroy" count="0"/>
 </block>
-
+  
 <block id="627" name="fountain">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -6321,7 +6395,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="18"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="LootList" value="42"/>
+	<property name="LootList" value="67"/>
 	<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
 	<property class="RepairItems"> <property name="forgedIron" value="20"/> </property>
 	<drop event="Destroy" count="0"/>
@@ -6336,7 +6410,7 @@ kind of free
 	<property name="Model" value="counter_sink"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="IsDecoration" value="true"/>
 	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
-	<property name="LootList" value="13"/>
+	<property name="LootList" value="34"/>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
@@ -6469,7 +6543,7 @@ kind of free
 	<property name="FuelValue" value="300"/>
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="2"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
@@ -7094,7 +7168,7 @@ kind of free
 <block id="695" name="cntCollapsedForge">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="91"/>
+	<property name="LootList" value="81"/>
 	<property name="CustomIcon" value="forge"/>
 	<property name="Material" value="Mstone_scrap"/>
 	<property name="MaxDamage" value="500"/>
@@ -7124,7 +7198,7 @@ kind of free
 <block id="696" name="cntCollapsedWorkbench">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="92"/>
+	<property name="LootList" value="82"/>
 	<property name="CustomIcon" value="workbench"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="500"/>
@@ -7156,7 +7230,7 @@ kind of free
 <block id="697" name="cntCollapsedCementMixer">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="93"/>
+	<property name="LootList" value="83"/>
 	<property name="CustomIcon" value="cementMixer"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="MaxDamage" value="500"/>
@@ -7186,7 +7260,7 @@ kind of free
 <block id="698" name="cntCollapsedChemistryStation">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="94"/>
+	<property name="LootList" value="84"/>
 	<property name="CustomIcon" value="chemistryStation"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="MaxDamage" value="500"/>
@@ -7244,7 +7318,7 @@ kind of free
 		<property name="UpgradeRated.ToBlock" value="air"/>
 		<property name="UpgradeRated.Rate" value="50"/>
         -->
-    <property name="LootList" value="1"/>  <!-- dummy loot list, will be overridden by the zombie that died -->
+    <property name="LootList" value="63"/>  <!-- dummy loot list, will be overridden by the zombie that died -->
 	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
@@ -7437,7 +7511,7 @@ kind of free
 <block id="719" name="cntLootCrateHero">
 <!-- <property name="Extends" value="cntChest01"/> -->
 	<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
-	<property name="LootList" value="95"/>
+	<property name="LootList" value="29"/>
 </block>
 
 <block id="720" name="concreteCTRPlate">
@@ -7494,7 +7568,7 @@ kind of free
 	<property name="Model" value="cube_half"/>
 	<property name="Texture" value="67,241,241,241,241,241"/>
 	<property name="Place" value="TowardsPlacer90"/>
-	<property name="LootList" value="60"/>
+	<property name="LootList" value="53"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
@@ -7595,7 +7669,7 @@ kind of free
 	<property name="Model" value="cube_half"/>
 	<property name="Texture" value="67,241,241,241,241,241"/>
 	<property name="Place" value="TowardsPlacer90"/>
-	<property name="LootList" value="49"/>
+	<property name="LootList" value="52"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
@@ -8497,7 +8571,7 @@ kind of free
 	<property name="CustomIcon" value="cntCabinetFiller"/>
 	<property name="Texture" value="261,345,262,345,345,345"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="12"/>
+	<property name="LootList" value="32"/>
 </block>
 
 <block id="839" name="woodQuarter">
@@ -8516,7 +8590,7 @@ kind of free
 	<property name="Texture" value="267,267,265,267,265,267"/>
 	<property name="Model" value="Entities/LootContainers/fridgePrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="LootList" value="20"/>
+	<property name="LootList" value="38"/>
 	<property name="DescriptionKey" value="refrigeratorGroupDesc"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="4"/>
@@ -8805,6 +8879,8 @@ kind of free
 </block>
 
 <block id="878" name="morticianDrawer">
+  <property name="Class" value="Loot"/>
+  <property name="LootList" value="62"/>
 	<property name="Material" value="Msteel"/>
 	<property name="MaxDamage" value="4000"/>
 	<property name="Shape" value="New"/>
@@ -8819,6 +8895,8 @@ kind of free
 </block>
 
 <block id="879" name="furnaceDrawer">
+  <property name="Class" value="Loot"/>
+  <property name="LootList" value="62"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="mortician_drawer"/> <property name="Place" value="TowardsPlacerInverted"/>
@@ -8942,7 +9020,7 @@ kind of free
 
 <block id="892" name="cntCardboardBox">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="1"/>
+	<property name="LootList" value="21"/>
 </block>
 
 <block id="893" name="woodFenceSheet">
@@ -9419,7 +9497,7 @@ kind of free
 	<property name="IsDecoration" value="true"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="374,78,79,84,84,84"/> <!-- 373/374=sink, 84=cabinetWood -->
-	<property name="LootList" value="8"/>
+	<property name="LootList" value="33"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
@@ -9435,7 +9513,7 @@ kind of free
 	<property name="IsDecoration" value="true"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="267,267,554,267,267,267"/>
-	<property name="LootList" value="18"/>
+	<property name="LootList" value="40"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="4"/>
 		<property name="shortMetalPipe" value="3"/>
@@ -9459,7 +9537,7 @@ kind of free
 	<property name="IsDecoration" value="true"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="267,267,266,267,267,267"/>
-	<property name="LootList" value="46"/>
+	<property name="LootList" value="39"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="5"/>
 		<property name="mechanicalParts" value="2"/>
@@ -9865,7 +9943,7 @@ kind of free
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="greenDrawer"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="90"/>
+	<property name="LootList" value="62"/>
 	<property name="Material" value="Mmetal_hard"/> <property name="MaxDamage" value="1500"/>
 	<property name="LPHardnessScale" value="8"/>
 	<property name="Shape" value="New"/>
@@ -9899,7 +9977,7 @@ kind of free
 
 <block id="1059" name="cntLootCrateLabEquipment">
 	<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
-	<property name="LootList" value="96"/>
+	<property name="LootList" value="30"/>
 </block>
 
 <block id="1060" name="corrugatedMetalGable">
@@ -10025,7 +10103,7 @@ kind of free
 	<property name="Extends" value="cntCabinetFiller" param1="RepairItems"/>
 	<property name="Texture" value="78,84,79,84,84,84"/> <!-- 80=sink, 84=cabinetWood -->
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="3"/>
+	<property name="LootList" value="31"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 </block>
 
@@ -10033,7 +10111,7 @@ kind of free
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood_weak"/>
 	<property name="Texture" value="84,84,81,84,84,84"/>
-	<property name="LootList" value="3"/>
+	<property name="LootList" value="31"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
@@ -10042,7 +10120,7 @@ kind of free
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="346,345,341,345,262,345"/>
-	<property name="LootList" value="26"/>
+	<property name="LootList" value="36"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,10" prob="1"/>
@@ -10053,7 +10131,7 @@ kind of free
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood_weak"/>
 	<property name="Texture" value="345,345,263,345,345,345"/>
-	<property name="LootList" value="12"/>
+	<property name="LootList" value="32"/>
 	<property name="FuelValue" value="300"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
@@ -10171,14 +10249,14 @@ kind of free
 	<property name="Extends" value="morticianDrawer"/>
 	<property name="CustomIcon" value="morticianDrawer"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="75"/>
+	<property name="LootList" value="60"/>
 </block>
 
 <block id="1104" name="cntFurnaceDrawer">
 	<property name="Extends" value="furnaceDrawer"/>
 	<property name="CustomIcon" value="furnaceDrawer"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="76"/>
+	<property name="LootList" value="61"/>
 	<property name="EconomicValue" value="100"/> <!-- disassemble value -->
 </block>
 
@@ -10186,7 +10264,7 @@ kind of free
 	<property name="Extends" value="greenDrawer"/>
 	<property name="CustomIcon" value="greenDrawer"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="77"/>
+	<property name="LootList" value="62"/>
 	<property name="EconomicValue" value="100"/> <!-- disassemble value -->
 </block>
 
@@ -10827,7 +10905,7 @@ kind of free
 
 <block id="1183" name="cntLootCrateShamway">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="59"/>
+	<property name="LootList" value="25"/>
 </block>
 
 <block id="1184" name="scrapIronPoleSupport">
@@ -11185,7 +11263,7 @@ kind of free
 
 <block id="1222" name="cntLootCrateConstructionSupplies">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="88"/>
+	<property name="LootList" value="28"/>
 </block>
 	<!-- 3 Free -->
 
@@ -11336,7 +11414,7 @@ kind of free
 
 <block id="1246" name="cntLootCrateShotgunMessiah">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="50"/>
+	<property name="LootList" value="23"/>
 </block>
 
 <block id="1247" name="flagstoneHalf">
@@ -11499,7 +11577,7 @@ kind of free
 	<property name="Model" value="cube"/>
 	<property name="DescriptionKey" value="largeStorageGroupDesc"/>
 	<property name="Class" value="SecureLoot"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="1"/>
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
@@ -11515,7 +11593,7 @@ kind of free
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="cntStorageHealth"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="1"/>
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
@@ -11546,7 +11624,7 @@ kind of free
 	<property name="Model" value="cube_half"/>
 	<property name="Texture" value="25,25,55,55,55,55"/> <!-- 55 wood -->
 	<property name="Place" value="TowardsPlacer90"/>
-	<property name="LootList" value="51"/>
+	<property name="LootList" value="54"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
@@ -11556,7 +11634,7 @@ kind of free
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Texture" value="191,191,190,191,191,191"/>
 	<property name="Place" value="TowardsPlacer90"/>
-	<property name="LootList" value="52"/>
+	<property name="LootList" value="55"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="4"/>
 		<property name="shortMetalPipe" value="3"/>
@@ -12134,7 +12212,7 @@ kind of free
 
 <block id="1331" name="cntLootCrateWorkingStiffs">
 	<property name="Extends" value="cntGarageStorage"/>
-	<property name="LootList" value="53"/>
+	<property name="LootList" value="24"/>
 </block>
 
 <block id="1332" name="woodCNRRound">
@@ -12196,7 +12274,7 @@ kind of free
 
 <block id="1339" name="cashRegisterEmpty">
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="27"/>
+	<property name="LootList" value="50"/>
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="250"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -12217,7 +12295,7 @@ kind of free
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/cash_register" param1="main_mesh"/>
-	<property name="LootList" value="55"/>
+	<property name="LootList" value="49"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,3" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
@@ -12249,7 +12327,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/shopping_cart" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="111"/>
-	<property name="LootList" value="54"/>
+	<property name="LootList" value="56"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
@@ -12276,7 +12354,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/shopping_basket" param1="main_mesh"/>
 	<property name="CustomIcon" value="shoppingBasketEmpty"/>
-	<property name="LootList" value="58"/>
+	<property name="LootList" value="57"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="shoppingBasketItem" count="1" tool_category="Disassemble"/>
@@ -12463,12 +12541,12 @@ kind of free
 <block id="1373" name="cntMountainManStorageChest">
 	<property name="Extends" value="cntChest02"/>
 	<property name="CustomIcon" value="cntChest02"/>
-	<property name="LootList" value="63"/>
+	<property name="LootList" value="73"/>
 </block>
 
 <block id="1374" name="cntApacheArtifactChest">
 	<property name="Extends" value="cntMountainManStorageChest"/>
-	<property name="LootList" value="56"/>
+	<property name="LootList" value="74"/>
 </block>
 
 <block id="1375" name="solidWoodFrameHalf">
@@ -12984,7 +13062,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="18"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="11"/>
+	<property name="LootList" value="64"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="forgedIron" count="1,2" prob="0.1"/>
@@ -13006,7 +13084,7 @@ kind of free
 	<property name="Model" value="LootContainers/safe_wall" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="11"/>
+	<property name="LootList" value="65"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="forgedIron" count="1,2" prob="0.1"/>
@@ -13028,7 +13106,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="18"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="42"/>
+	<property name="LootList" value="67"/>
 	<property class="RepairItems"> <property name="forgedIron" value="15"/> </property>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="forgedIron" count="1,4" prob="0.1"/>
@@ -13218,6 +13296,25 @@ kind of free
 </block>
 	<!-- x Free -->
 
+  <block id="1447" name="randomCars">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="CustomIcon" value="lootWastelandHelper"/>
+    <property name="DescriptionKey" value="randomLootSpawnerDesc"/>
+    <property name="Material" value="stone"/>
+    <property name="Shape" value="Ext3dModel"/>
+    <property name="Texture" value="293"/>
+    <property name="Mesh" value="models"/>
+    <property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/>
+    <property name="ImposterExclude" value="true"/>
+    <property name="Class" value="PlantGrowing"/>
+    <property name="PlantGrowing.Next" value="randomCarsHelper"/>
+    <property name="PlantGrowing.GrowthRate" value="0.005"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="0"/>
+    <property name="PlantGrowing.LightLevelStay" value="0"/>
+  </block>
+  
 <block id="1448" name="spotlightNailedDownPOI">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -13315,7 +13412,7 @@ kind of free
 	<property name="CustomIcon" value="cntCar03SedanDamage0"/>
 	<property name="Material" value="metal"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="16"/>
+	<property name="LootList" value="17"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -13332,7 +13429,7 @@ kind of free
 <block id="1453" name="cntCar03SedanDamage0">
 	<property name="Material" value="metal"/>
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="17"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -13389,7 +13486,7 @@ kind of free
 <block id="1454" name="cntCar03SedanDamage1">
 	<property name="Material" value="metal"/>
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="17"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -13586,7 +13683,7 @@ kind of free
 	<property name="Model" value="Furniture/coffin" param1="main_mesh"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="1"/>
-	<property name="LootList" value="28"/>
+	<property name="LootList" value="63"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 </block>
 
@@ -13687,7 +13784,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/dumpster" param1="main_mesh"/>
 	<property name="MultiBlockDim" value="3,2,2"/>
-	<property name="LootList" value="68"/>
+	<property name="LootList" value="59"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="136"/>
 	<drop event="Destroy" name="scrapIron" count="20" prob="1"/>
 </block>
@@ -15565,7 +15662,7 @@ kind of free
 <block id="1999" name="cntCollapsedBatterybank">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="97"/>
+	<property name="LootList" value="85"/>
 	<property name="CustomIcon" value="batterybank"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="MaxDamage" value="500"/>
@@ -15598,7 +15695,7 @@ kind of free
 <block id="2000" name="cntCollapsedGeneratorbank">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="98"/>
+	<property name="LootList" value="86"/>
 	<property name="CustomIcon" value="generatorbank"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="MaxDamage" value="500"/>

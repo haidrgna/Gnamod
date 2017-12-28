@@ -37,10 +37,13 @@
 			<setvalue skill_level="90,100" value="160,320"/>
 		</effect>
     <effect name="HungerDegradation">
-      <multiply skill_level="1,100" value="2.0,1.5"/>
+      <multiply skill_level="1,100" value="2.0,1.75"/>
     </effect>
     <effect name="ThirstDegradation">
-      <multiply skill_level="1,100" value="2.0,1.5"/>
+      <multiply skill_level="1,100" value="2.0,1.75"/>
+    </effect>
+    <effect name="MinWellness">
+      <setvalue skill_level="0,100" value="10"/>
     </effect>
 	</player_skill>
 <!-- always_fire="true" : If a perk has requirements then it MAY not always fire correctly if/when/because it's not called in conjunction with a skill. This flag skips the particular bit of code. -->
@@ -705,28 +708,59 @@
 			<multiply skill_level="9,10" value="0.0067,0.0053"/>
 		</effect>
 	</perk>
-	<perk name="9mm Round Crafting" icon="gunsmithing" description_key="9mmRoundCraftingDesc" title_key="9mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+  <perk name="22 LR Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk22LR" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="1"/>
+    <recipe name="22LRBullet" unlock_level="1"/>
+    <recipe name="22LRBulletNG" unlock_level="1"/>
+  </perk>
+	<perk name="9mm Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk9mm" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="1"/>
 		<recipe name="9mmBullet" unlock_level="1"/>
+    <recipe name="9mmBulletNG" unlock_level="1"/>
 	</perk>
-	<!-- <perk name="10mm Round Crafting" icon="gunsmithing" description_key="10mmRoundCraftingDesc" title_key="10mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
-		<recipe name="10mmBullet" unlock_level="1"/>
-		<recipe name="bulletTip" unlock_level="1"/>
-		<recipe name="bulletCasing" unlock_level="1"/>
-	</perk> -->
-	<perk name="44 Magnum Round Crafting" icon="gunsmithing" description_key="44MagnumRoundCraftingDesc" title_key="44MagnumRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
-		<recipe name="44MagBullet" unlock_level="1"/>
-	</perk>
-	<perk name="shotgun Shell Crafting" icon="gunsmithing" description_key="shotgunShellCraftingDesc" title_key="shotgunShellCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
-		<recipe name="shotgunShell" unlock_level="1"/>
-	</perk>
-	<perk name="762mm Round Crafting" icon="gunsmithing" description_key="762mmRoundCraftingDesc" title_key="762mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="3"/>
-		<recipe name="762mmBullet" unlock_level="1"/>
-	</perk>
+  <perk name="357 Magnum Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk357Mag" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
+    <recipe name="357MagBullet" unlock_level="1"/>
+    <recipe name="357MagBulletNG" unlock_level="1"/>
+  </perk>
+  <perk name="44 Magnum Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk44Mag" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="3"/>
+    <recipe name="44MagBullet" unlock_level="1"/>
+    <recipe name="44MagBulletNG" unlock_level="1"/>
+  </perk>
+  <perk name="50 BMG Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk50BMG" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="4"/>
+    <recipe name="50BMGBullet" unlock_level="1"/>
+    <recipe name="50BMGBulletNG" unlock_level="1"/>
+  </perk>
+  <perk name="5.56mm NATO Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk556mm" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
+    <recipe name="556mmBullet" unlock_level="1"/>
+    <recipe name="556mmBulletNG" unlock_level="1"/>
+  </perk>
+  <perk name="7.62mm Round Crafting" icon="gunsmithing" description_key="BulletCrafingDesc" title_key="Perk762mm" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="3"/>
+    <recipe name="762mmBullet" unlock_level="1"/>
+    <recipe name="762mmBulletNG" unlock_level="1"/>
+  </perk>
+  <perk name="Shotgun Shell Crafting" icon="gunsmithing" description_key="ShellCrafingDesc" title_key="PerkShells" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
+    <recipe name="20GAShell" unlock_level="1"/>
+    <recipe name="20GAShellNG" unlock_level="1"/>
+    <recipe name="12GAShell" unlock_level="1"/>
+    <recipe name="12GAShellNG" unlock_level="1"/>
+    <recipe name="10GAShell" unlock_level="1"/>
+    <recipe name="10GAShellNG" unlock_level="1"/>
+  </perk>
+  <perk name="Shotgun Slug Crafting" icon="gunsmithing" description_key="SlugCrafingDesc" title_key="PerkSlugs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="firearms">
+    <requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="3"/>
+    <recipe name="20GASlug" unlock_level="1"/>
+    <recipe name="20GASlugNG" unlock_level="1"/>
+    <recipe name="12GASlug" unlock_level="1"/>
+    <recipe name="12GASlugNG" unlock_level="1"/>
+    <recipe name="10GASlug" unlock_level="1"/>
+    <recipe name="10GASlugNG" unlock_level="1"/>
+  </perk>  
 	<perk name="craftSkillScience" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
 	icon="science" description_key="craftSkillScienceDesc" title_key="craftSkillScience" group="science" exp_gain_multiplier="0">
 		<requirement perk_level="2" required_player_level="5"/>
