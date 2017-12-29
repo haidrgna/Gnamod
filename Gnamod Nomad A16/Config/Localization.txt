@@ -778,6 +778,7 @@ cntGunSafe,blocks,Container,KgNone,Gun Safe,Armoire à fusils,Waffenschrank,,Caj
 cntGunSafeDesc,blocks,Container,KgNone,Press & hold [activate] to lock it or set a password.,Maintenez [activate] pour la verrouiller ou définir un mot de passe.,Zum Verschließen oder Passwort eingeben [activate] gedrückt halten.,,Mantén presionado [activate] para cerrar con llave o para definir una contraseña.
 cntGunSafeInsecure,blocks,Container,KgNone,Gun Safe Insecure,Armoire à fusils précaire,Waffenschrank ungesichert,,Caja fuerte de armas poco segura
 cntLockers,blocks,Container,KgNone,Lockers,Casiers,Spinde,,Casilleros
+cntLockersInsecure,blocks,Container,KgNone,Lockers,Casiers,Spinde,,Casilleros
 cntMailbox,blocks,Container,KgNone,Mailbox,Boîte aux lettres,Briefkasten,,Buzón
 cntMailBox01,blocks,Container,KgNone,Mail Box,Boîte aux lettres,Briefkasten,,Buzón
 cntMailBox02,blocks,Container,KgNone,Mail Box,Boîte aux lettres,Briefkasten,,Buzón
@@ -786,6 +787,7 @@ cntMailboxDesc,blocks,Container,KgNone,If anyone was left to send you mail you w
 cntMedicineCabinet,blocks,Container,KgNone,Medicine Cabinet,Armoire à pharmacie,Medizinschrank,,Botiquín
 cntMountainManStorageChest,blocks,Container,KgNone,Mountain Man Chest,Coffre de montagnard,Hochländer-Truhe,,Cofre del hombre de las montañas
 cntMunitionsBox,blocks,Container,KgNone,Munitions Box,Boîte de munitions,Munitionskasten,,Caja de munición
+cntMunitionsBoxInsecure,blocks,Container,KgNone,Munitions Box,Boîte de munitions,Munitionskasten,,Caja de munición
 cntNightstand,blocks,Container,KgNone,Night Stand,Table de chevet,Nachttisch,,Mesita de noche
 cntOven,blocks,Container,KgNone,Oven,Four,Ofen,,Horno
 cntPillCase,blocks,Container,KgNone,Pill Case,Étui à médicaments,Pillendose,,Pastillero
@@ -1106,25 +1108,8 @@ animalRabbit,entityclasses,Entity,KgNone,Rabbit,Lapin,Hase,,Conejo
 animalStag,entityclasses,Entity,KgNone,Stag,Cerf,Hirsch,,Ciervo
 animalZombieDog,entityclasses,Entity,KgNone,Zombie Dog,Chien enragé,Zombie-Hund,,Perro zombi
 sc_General,entityclasses,Entity,KgNone,Supply Crate,Caisse de provisions,Vorratskiste,,Caja de suministros
-zombieArlene,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
-zombieBoe,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
-zombieBurnt,entityclasses,Entity,KgNone,Burn Victim,Calciné,Brandopfer,,Víctima quemada
-zombieDarlene,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
-zombieFatCop,entityclasses,Entity,KgNone,Infected Policeman,Policier infecté,Infizierter Polizist,,Policía infectado
-zombieJoe,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
-zombieMarlene,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
-zombieMoe,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
-zombieNurse,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
-zombieScreamer,entityclasses,Entity,KgNone,Screamer Zombie,Zombie hurleur,Schreier-Zombie,,Zombi gritón
-zombieSnow,entityclasses,Entity,KgNone,Frozen Lumberjack,Bûcheron gelé,Erfrorener Holzfäller,,Leñador congelado
-zombieSpider,entityclasses,Entity,KgNone,Spider Zombie,Zombie araignée,Spinnen-Zombie,,Araña zombi
-zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
-zombieSteveCrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
-zombieWightFeral,entityclasses,Entity,KgNone,Feral Wight,Rôdeur féroce,Wilder Streuner,,Caminante salvaje
-zombieYo,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
 animalZombieVulture,entityclasses,Entity,New,Zombie Vulture,,,,
 playersBackpack,entityclasses,Entity Info,KgNone,{0}'s backpack,Sac à dos de {0},Rucksack von {0},,La mochila de {0}
-
 arrow,items,Ammo,EnChanged,Arrow (Ammo),Flèche,Pfeil (Mun),,Flecha
 arrowDesc,items,Ammo,KgNone,Ammunition for a bow. Hold reload to use alternate ammo.,Munition d'un arc. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.,"Munition für einen Bogen. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Munición para el arco. Mantén presionado recargar para usar munición alternativa.
 blunderbussAmmo,items,Ammo,KgNone,Blunderbuss Ammo,Munition de tromblon,Donnerbüchsenmunition,,Munición de trabuco
@@ -3410,14 +3395,14 @@ flagstoneWedge,blocks,Block,New,flagstone Wedge,,,,
 looseBoardsTrapBlock1x1,blocks,Block,New,Loose Boards Block 1x1,,,,
 looseBoardsTrapBlock1x1Desc,blocks,Block,New,A false floor or trap that will disintegrate when stepped on.,,,,
 forestFlower,blocks,Block,New,Forest Flower,,,,
-furnaceDrawer,blocks,Block,New,Furnace Door (No Loot),,Feuerraumtür (keine Beute),,
+furnaceDrawer,blocks,Block,New,Furnace Door,,,,
 garageDoorMetalGroupDesc,blocks,Block,New,A wide Garage Door that can be locked,,,,
 glassBulletproofBlock,blocks,Block,New,Bulletproof Glass Block,,Panzerglasscheibe - Block,,
 glassBulletproofCTRPlate,blocks,Block,New,Bulletproof Glass Plate Centered,,Panzerglasscheibe - Platte Mittig,,
 glassBulletproofPlate,blocks,Block,New,Bulletproof Glass Plate,,Panzerglasscheibe - Platte,,
 GoreBlock1BonesPrefab,blocks,Block,New,Zombie Remains,,,,
 GoreBlock1Prefab,blocks,Block,New,Zombie Remains,,,,
-greenDrawer,blocks,Block,New,Drawer (No Loot),,Schubfach (keine Beute),,
+greenDrawer,blocks,Block,New,Drawer,,Schubfach (keine Beute),,
 hubcapNoMine,blocks,Block,New,Hubcap (No Mine),,,,
 hubcapNoMineDesc,blocks,Block,New,Some car lost a hubcap here.,,,,
 ironBarsCentered,blocks,Block,New,Iron Bars Centered,,Eisenstangen mittig,,Barras de hierro centrada
@@ -3437,7 +3422,7 @@ metalSheetNewRandom,blocks,Block,New,Metal Sheet Random (POI),,,,
 metalStairsBoard,blocks,Block,New,Metal Stairs,,,,
 metalStairsBoardRailing,blocks,Block,New,Metal Stairs With Railing,,,,
 metalTrussingRamp,blocks,Block,New,Metal Trussing Ramp,,,,
-morticianDrawer,blocks,Block,New,Mortician's Drawer (No Loot),,Leichenhallen-Schranktür (Keine Beute),,
+morticianDrawer,blocks,Block,New,Drawer,,,,
 mushroom3Harvest,blocks,Block,New,Mushrooms (Harvestable),,Pilze – Ernte,,
 plantsBlockGroupDesc,blocks,Block,New,A decorative plant block from the creative menu.,,,,
 rConcreteArrowSlitHalf,blocks,Block,New,Reinforced Concrete Arrow Slit,,,,
@@ -4240,45 +4225,6 @@ pouredConcreteStairs25,blocks,Block,New,Wet Concrete Stairs,Escaliers en béton,
 pouredConcreteSupport,blocks,Block,New,Wet Concrete Support,Support en béton,Feuchter Beton - stütze,,Soporte de hormigón
 pouredConcreteWedge,blocks,Block,New,Wet Concrete Wedge,Pente en béton,Feuchter Beton - schräge,,Cuña de hormigón
 pouredConcreteWedgeTip,blocks,Block,New,Wet Concrete Wedge Tip,Sommet de pente en béton,Feuchter Beton - schrägenspitze,,Punta de cuña de hormigón
-zombieArleneFeral,entityclasses,Entity,New,Feral Putrid Girl,,,,
-zombieBehemoth,entityclasses,Entity,New,Zombie Behemoth,,,,
-zombieBiker,entityclasses,Entity,New,Zombie Biker,,Zombie Biker,,
-zombieBoeFeral,entityclasses,Entity,New,Feral Infected Survivor,,,,
-zombieCheerleader,entityclasses,Entity,New,Cheerleader Zombie,,,,
-zombieCheerleaderFeral,entityclasses,Entity,New,Feral Cheerleader Zombie,,,,
-zombieDarleneFeral,entityclasses,Entity,New,Feral Mother,,,,
-zombieFarmer,entityclasses,Entity,New,Zombie Farmer,,,,
-zombieFarmerFeral,entityclasses,Entity,New,Feral Zombie Farmer,,,,
-zombieFatCopFeral,entityclasses,Entity,New,Feral Policeman,,,,
-zombieFatCopFeralRadiated,entityclasses,Entity,New,Feral Radiated Policeman,,,,
-zombieFatHawaiian,entityclasses,Entity,New,Disturbed Tourist,,Gestörter Tourist,,
-zombieFatHawaiianFeral,entityclasses,Entity,New,Feral Tourist,,,,
-zombieFemaleFat,entityclasses,Entity,New,Hungry Zombie,,,,
-zombieFemaleFatFeral,entityclasses,Entity,New,Feral Hungry Zombie,,,,
-zombieFootballPlayer,entityclasses,Entity,New,Team Z Player,,,,
-zombieJoeFeral,entityclasses,Entity,New,Feral Cadaver,,,,
-zombieMaleHazmat,entityclasses,Entity,New,Hazardous Worker,,,,
-zombieMarleneFeral,entityclasses,Entity,New,Feral Woman,,,,
-zombieMoeFeral,entityclasses,Entity,New,Feral Bloated Walker,,,,
-zombieNurseFeral,entityclasses,Entity,New,Feral Nurse,,,,
-zombieOldTimer,entityclasses,Entity,New,Zombie Cowboy,,Zombie Cowboy,,
-zombieOldTimerFeral,entityclasses,Entity,New,Feral Zombie Cowboy,,,,
-zombieScreamerFeral,entityclasses,Entity,New,Feral Screamer,,,,
-zombieSkateboarder,entityclasses,Entity,New,Skater Punk Zombie,,,,
-zombieSkateboarderFeral,entityclasses,Entity,New,Feral Skater Zombie,,,,
-zombieSnowFeral,entityclasses,Entity,New,Feral Frozen Lumberjack,,,,
-zombieSoldier,entityclasses,Entity,New,Fallen Soldier,,,,
-zombieSoldierFeral,entityclasses,Entity,New,Feral Soldier,,,,
-zombieSpiderFeral,entityclasses,Entity,New,Feral Spider Zombie,,,,
-zombieSpiderFeralRadiated,entityclasses,Entity,New,Feral Radiated Spider Zombie,,,,
-zombieSteveCrawlerFeral,entityclasses,Entity,New,FeralCrawler,,,,
-zombieSteveFeral,entityclasses,Entity,New,Feral Corpse,,,,
-zombieStripper,entityclasses,Entity,New,Zombie Stripper,,Untote Stripperin,,
-zombieStripperFeral,entityclasses,Entity,New,Feral Stripper,,,,
-zombieUtilityWorker,entityclasses,Entity,New,Utility Worker Zombie,,,,
-zombieUtilityWorkerFeral,entityclasses,Entity,New,Feral Utility Worker,,,,
-zombieWightFeralRadiated,entityclasses,Entity,New,Feral Radiated Wight,,"Wilder Streuner, verstrahlt",,
-zombieYoFeral,entityclasses,Entity,New,Feral Carcass,,,,
 blockcommand_options,blocks,Radial,New,Options,,Optionen,,
 flagstoneWedgeIncline,blocks,Block,New,Flagstone Wedge Incline,,Steinplatten Dachvorsprung,,
 brickWedgeTipCNRFullBottom,blocks,Block,New,Brick Wedge Full Corner Bottom,,Ziegel Schrägenspitze Komplette Ecke Unten,,
@@ -4854,7 +4800,7 @@ q_GnamodNomadTrailDesc,items,Quest Note,KgNone,The Nomad Trail: Another lead to 
 treasureChestNomad,blocks,Container,KgNone,Burried Backpack,,,,
 
 No Ammo,items,Ammo,KgNone,No Ammo,,,,
-No Ammo,items,Ammo,KgNone,No Ammo Loaded,,,,
+No AmmoDesc,items,Ammo,KgNone,No Ammo Loaded,,,,
 
 22LRBullet,items,Ammo,KgNone,Low Grade .22 Long Rifle Round (Ammo),,,,
 22LRBulletDesc,items,Ammo,KgNone,A .22 Long Rifle round used as firearm ammunition. The smallest most common bullet around and can be fired using a Pistol or Hunting Rifle. Low grade ammunition can be crafted by hand if the recipe is known. Though cheap to make and easy to find low grade ammunition also deals the lowest damage.,,,,
@@ -5161,14 +5107,6 @@ partsChainsaw_partsDesc,items,Part,KgNone,A part of a chainsaw. Assemble with ot
 partsHandlebars,items,Part,KgNone,Handlebars,Guidon,Handgriffe,,Manillar
 partsHandlebarsDesc,items,Part,KgNone,A common part for a chainsaw or auger. Assemble with other parts to create a complete tool once you've read the right schematic.,Une pièce commune aux tronçonneuses et foreuses. À assembler à d'autres pièces pour fabriquer un outil une fois que vous avez lu le bon schéma.,"Ein gewöhnliches Teil einer Kettensäge oder eines Erdbohrers. Setze es mit den anderen Teilen zu einem Werkzeug zusammen, wenn du den richtigen Bauplan gelesen hast.",,"Una parte común a las motosierras y taladros. Una vez que hayas leído el esquema correcto, se puede armar con otras partes para crear una herramienta completa."
 
-partsPumpShotgun_barrel,items,Part,KgNone,Shotgun Long Barrel,Canon long de fusil à pompe,Langer Schrotflintenlauf,,Escopeta de largo alcance
-partsPumpShotgun_barrelShort,items,Part,KgNone,Shotgun Short Barrel,Canon court de fusil à pompe,Kurzer Schrotflintenlauf,,Cañón corto de escopeta
-partsPumpShotgun_parts,items,Part,KgNone,Shotgun Parts,Pièces de fusil à pompe,Schrotflintenteile,,Partes de escopeta
-partsPumpShotgun_receiver,items,Part,KgNone,Shotgun Receiver,Carcasse de fusil à pompe,Schrotflinten-Verschlussgehäuse,,Receptor de escopeta
-partsPumpShotgun_stock,items,Part,KgNone,Shotgun Stock,Crosse de fusil à pompe,Schrotflintenschaft,,Cantonera de escopeta
-partsPumpShotgun_stockShort,items,Part,KgNone,Shotgun Short Stock,Crosse courte de fusil à pompe,Kurzer Schrotflintenschaft,,Cantonera corta de escopeta
-partsPumpShotgunGroupDesc,items,Part,KgNone,A part of the long-barrel shotgun. Assemble with other parts to create a complete shotgun once you've read the shotgun schematic.,Une pièce de fusil à pompe à long canon. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma de fusil à pompe.,"Ein Teil von einer Schrotflinte mit langem Lauf. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan für Schrotflinten gelesen hast.",,"Una parte de una escopeta de largo alcance. Una vez que hayas leído el esquema de la escopeta, ármala con otras partes para crear una escopeta completa."
-partsPumpShotgunShortGroupDesc,items,Part,KgNone,A part of the sawed-off shotgun. Assemble with other parts to create a complete shotgun once you've read the schematic.,Une pièce de fusil à pompe à canon scié. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma.,"Ein Teil von einer abgesägten Schrotflinte. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una escopeta recortada. Una vez que has leído el esquema, ármala con otras partes para crear una escopeta completa."
 partsRocketLauncher_barrel,items,Part,KgNone,Rocket Launcher Barrel,Canon de lance-roquettes,Raketenwerferlauf,,Tubo del lanzacohetes
 partsRocketLauncher_parts,items,Part,KgNone,Rocket Launcher Parts,Pièces de lance-roquettes,Raketenwerferteile,,Partes de lanzacohetes
 partsRocketLauncher_receiver,items,Part,KgNone,Rocket Launcher Receiver,Carcasse de lance-roquettes,Raketenwerfer-Verschlussgehäuse,,Receptor de lanzacohetes

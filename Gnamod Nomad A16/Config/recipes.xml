@@ -190,12 +190,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="gunPowderNG" count="1" craft_area="campfire" craft_tool="beaker">                             <ingredient name="coal" count="2"/> <ingredient name="potassiumNitratePowder" count="2"/> </recipe>
 <recipe name="gunPowderNG" craft_area="chemistryStation">                                                   <ingredient name="coal"/> <ingredient name="potassiumNitratePowder"/> </recipe>
 <recipe name="gunPowder" count="1">                                                                         <ingredient name="coal" count="2"/> <ingredient name="potassiumNitratePowder" count="2"/> </recipe>
+<recipe name="gunPowder" count="1">                                                                         <ingredient name="gunPowderNG" count="1"/>  </recipe>
 <recipe name="musketball" craft_area="forge" craft_tool="anvil" material_based="true">                      <ingredient name="unit_lead" count="2"/> <ingredient name="unit_clay" count="1"/>  </recipe>
 <recipe name="buckshot20GA" craft_area="forge" craft_tool="anvil" material_based="true">                    <ingredient name="unit_lead" count="2"/> <ingredient name="unit_clay" count="1"/>  </recipe>
 <recipe name="buckshot12GA" craft_area="forge" craft_tool="anvil" material_based="true">                    <ingredient name="unit_lead" count="4"/> <ingredient name="unit_clay" count="2"/>  </recipe>
 <recipe name="buckshot10GA" craft_area="forge" craft_tool="anvil" material_based="true">                    <ingredient name="unit_lead" count="6"/> <ingredient name="unit_clay" count="3"/>  </recipe>
 <recipe name="casingNormal" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">            <ingredient name="unit_brass" count="3"/> <ingredient name="unit_clay" count="1"/>  </recipe>
+<recipe name="casingNormalUsed" count="1">                                                                  <ingredient name="casingNormal" count="1"/>  </recipe>
 <recipe name="casingLarge" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">             <ingredient name="unit_brass" count="6"/> <ingredient name="unit_clay" count="3"/>  </recipe>
+<recipe name="casingLargeUsed" count="1">                                                                   <ingredient name="casingLarge" count="1"/>  </recipe>
 <recipe name="bulletTipNormal" craft_area="forge" craft_tool="anvil" material_based="true">                 <ingredient name="unit_lead" count="3"/> <ingredient name="unit_clay" count="1"/> </recipe>
 <recipe name="bulletTipLarge" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">          <ingredient name="unit_lead" count="6"/> <ingredient name="unit_clay" count="3"/> </recipe>
 <recipe name="rocketCasing" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">            <ingredient name="unit_iron" count="50"/> <ingredient name="unit_clay" count="30"/> </recipe>
