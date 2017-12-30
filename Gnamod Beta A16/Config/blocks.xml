@@ -1112,6 +1112,21 @@ NOT the TextureNumber.
     <property name="PlantGrowing.GrowOnTop" value="thawingIce"/>
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
   </block>
+
+  <block id="86" name="PlaceBeacon">
+    <property name="CustomIcon" value="keystoneBlock"/>
+    <property name="Extends" value="fertileGrass"/>
+    <property name="Texture" value="178"/>
+    <drop event="Destroy" count="0"/>
+    <property name="PlantGrowing.Next" value="Beacon"/>
+    <property name="PlantGrowing.GrowthRate" value="0.001"/>
+    <property name="PlantGrowing.FertileLevel" value="0"/>
+    <property name="PlantGrowing.IsRandom" value="false"/>
+    <property name="PlantGrowing.LightLevelGrow" value="0"/>
+    <property name="PlantGrowing.LightLevelStay" value="0"/>
+    <property name="PlantGrowing.GrowOnTop" value="cntBeacon"/>
+    <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+  </block>
   
   <!-- DO NOT DEFINE TERRAIN BLOCKS OVER ID 127. Just don't. -->
 
@@ -1311,8 +1326,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="14"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="1"/>
 	<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
 </block>
 
@@ -1417,8 +1432,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="8"/>
-	<property name="EconomicBundleSize" value="40"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="132" name="concreteNoUpgradeMaster">
@@ -1510,6 +1525,8 @@ group desc for stuff like metal siding
 	<property name="UpgradeRated.Rate" value="4"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DescriptionKey" value="concreteGroupDesc"/>
+  <property name="EconomicValue" value="120"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="137" name="brickNoUpgradeMaster">
@@ -1524,8 +1541,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="16"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="8"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="138" name="brickMaster">
@@ -1537,8 +1554,8 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
-	<property name="EconomicValue" value="8"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 	<!-- 1 Free -->
 
@@ -1560,8 +1577,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="25"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="25"/>
-	<property name="EconomicBundleSize" value="10"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="141" name="rScrapIronMaster">
@@ -1610,8 +1627,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 	<drop event="Destroy" name="scrapIron" count="1,5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.2" stick_chance="1"/>
-	<property name="EconomicValue" value="25"/>
-	<property name="EconomicBundleSize" value="5"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="143" name="stoneNoUpgradeMaster"> <!-- was stoneMaster -->
@@ -1676,8 +1693,8 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="15"/>
-	<property name="EconomicBundleSize" value="2"/>
+	<property name="EconomicValue" value="4"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="146" name="rWoodMetalMaster">
@@ -1742,8 +1759,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="wood" count="4"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="149" name="woodFrameMaster">
@@ -1772,8 +1789,8 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="2"/>
+	<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <!-- ****************************  Main Blocks  **************************** -->
@@ -6789,7 +6806,26 @@ kind of free
 	<property name="TraderID" value="4"/>
 	<property name="Buff" value="shockedBuff"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="659" name="cntBeacon">
+	<property name="Group" value="Science"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="Material" value="MstainlessSteel"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/Decor/flag_polePrefab"/>
+  <property name="MultiBlockDim" value="1,20,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
+	<property name="TraderID" value="6"/>
+	<property name="EconomicValue" value="20000"/>
+	<property name="Buff" value="shockedBuff"/>
+	<drop event="Destroy" count="0"/>
+</block>
 
 <block id="662" name="flagstonePole">
 	<property name="Extends" value="flagstoneMaster"/>
@@ -14853,7 +14889,7 @@ kind of free
 	<property name="OverheatSound" value="turret_overheat_lp"/>
 	<property name="WakeUpSound" value="turret_windup"/>
 	<property name="FireSound" value="Pistol_Fire"/>
-	<property name="RequiredPower" value="15"/>
+	<property name="RequiredPower" value="30"/>
 
 	<property class="RepairItems">
 		<property name="forgedIron" value="12"/>
@@ -14875,7 +14911,7 @@ kind of free
 <block id="1679" name="shotgunTurret">
 	<property name="Extends" value="autoTurret"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
-	<property name="AmmoItem" value="10GShell"/> <!-- does not use the damage value -->
+	<property name="AmmoItem" value="12GAShell"/> <!-- does not use the damage value -->
 	<property name="MaxDistance" value="15"/>
 	<property name="EntityDamage" value="11"/> <!-- 180 dps, 440 / burst -->
 	<property name="BlockDamage" value="1"/>
@@ -16275,8 +16311,6 @@ kind of free
 </block>
 
 <!-- Gnamod Blocks -->
-
-  
   
 <block id="2031" name="StartingKit">
 <property name="Material" value="cloth" />
@@ -16347,7 +16381,18 @@ kind of free
 <property name="LootList" value="151"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
-  
+
+<block id="2037" name="Beacon">
+<property name="Material" value="MstainlessSteel"/>
+<property name="CustomIcon" value="keystoneBlock"/>
+<property name="Texture" value="189"/>
+<property name="Class" value="TorchHeatMap"/>
+<property name="HeatMapStrength" value="25.0"/>
+<property name="HeatMapTime" value="2400"/>
+<property name="HeatMapFrequency" value="1"/>
+<drop event="Destroy" count="0"/>
+</block>
+
 <block id="2041" name="glassShowerRamp">
 	<property name="Material" value="glass"/>
 	<property name="Shape" value="New"/>

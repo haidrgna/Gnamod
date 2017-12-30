@@ -1,97 +1,4 @@
 <quests>  
-	<!-- Basic Survival 1 - Craft a Stone Axe /> -->
-    <quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle="Craft a Stone Axe" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_BasicSurvival_offer" >
-      <action type="ShowTip" value="tutorialTipQuest02" />
-      <action type="TrackQuest" />
-      
-		<objective type="FetchKeep" id="yuccaFibers" value="2" />
-		<objective type="FetchKeep" id="wood" value="2" />
-		<objective type="FetchKeep" id="rockSmall" value="4" />
-
-		<objective type="Craft" id="stoneAxe" value="1" />
-		<reward type="Quest" id="quest_BasicSurvival2" />
-
-    </quest>
-
-	<!-- Basic Survival 2 - Craft Plant Fiber Clothing /> -->
-	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="yuccaFibers" value="70" />
-		<objective type="Craft" id="plantFiberPants" value="1" />
-		<objective type="Craft" id="plantFiberShirt" value="1" />
-		<objective type="Craft" id="plantFiberHood" value="1" />
-		<objective type="Craft" id="plantFiberShoes" value="1" />
-		<objective type="Craft" id="plantFiberGloves" value="1" />
-
-		<reward type="Quest" id="quest_BasicSurvival3" />
-    </quest>
-
-	<!-- Basic Survival 3 - Wear Plant Fiber Clothing /> -->
-	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_shirt" category_key="quest" difficulty="veryeasy">
-		<objective type="Wear" id="plantFiberPants" />
-		<objective type="Wear" id="plantFiberShirt" />
-		<objective type="Wear" id="plantFiberHood" />
-		<objective type="Wear" id="plantFiberShoes" />
-		<objective type="Wear" id="plantFiberGloves" />
-
-		<reward type="Quest" id="quest_BasicSurvival4" />
-    </quest>
-
-	<!-- Basic Survival 4 - Craft a Wooden Club /> -->
-	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_club" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="wood" value="6" />
-		<objective type="Craft" id="clubWood" value="1" />
-
-		<reward type="Quest" id="quest_BasicSurvival5" />
-    </quest>
-
-	<!-- Basic Survival 5 - Craft Bow & Arrows /> -->
-	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_archery" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="wood" value="10" />
-		<objective type="FetchKeep" id="yuccaFibers" value="10" />
-		<objective type="FetchKeep" id="feather" value="15" />
-		<objective type="FetchKeep" id="rockSmall" value="15" />
-		<objective type="Craft" id="woodenBow" value="1" />
-		<objective type="Craft" id="arrow" value="15" />
-
-		<reward type="Quest" id="quest_BasicSurvival6" />
-    </quest>
-
-  <!-- Basic Survival 6 - Craft a Bedroll /> -->
-  <quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival1" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_map_bed" category_key="quest" difficulty="veryeasy">
-    <objective type="FetchKeep" id="cloth" value="20" />
-    <objective type="Craft" id="bedroll" value="1" />
-    <objective type="BlockPlace" id="bedroll" value="1" />
-
-    <reward type="Quest" id="quest_BasicSurvival7" />
-  </quest>
-  
-	<!-- Basic Survival 7 - Build a Campfire /> -->
-	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival8" subtitle_key="quest_BasicSurvival8_subtitle" description_key="quest_BasicSurvival8_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="rockSmall" value="12" />
-    <objective type="FetchKeep" id="wood" value="2" />
-    <objective type="FetchKeep" id="animalFat" value="1" />
-    <objective type="FetchKeep" id="cloth" value="1" />
-		<objective type="Craft" id="torch" value="1" />
-    <objective type="Craft" id="campfire" value="1" />
-		<objective type="BlockPlace" id="campfire" value="1" />
-
-    <reward type="Quest" id="quest_BasicSurvival8" />
-    </quest>
-
-  <!-- Basic Survival 8 - Start a Base /> -->
-  <quest id="quest_BasicSurvival8" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_house" category_key="quest" difficulty="veryeasy">
-    <objective type="FetchKeep" id="wood" value="260" />
-    <objective type="FetchKeep" id="yuccaFibers" value="50" />
-    <objective type="FetchKeep" id="nail" value="4" />
-    <objective type="Craft" id="woodFrameBlock" value="50" />
-    <objective type="Craft" id="secureDoorWooden" value="1" />
-    
-    <reward type="Item" id="keystoneBlock" value="1" />
-    <reward type="SkillPoints" value="5" />
-    <reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
-    <reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
-  </quest>  
-  
 	<!-- White River Citizen 1 - Journey to Settlement -->
 	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
 		<objective type="Goto" id="trader" value="5" />
@@ -317,7 +224,7 @@
 
 <!-- Gnamod Quests-->
 <!-- Default Starting Quest Givers -->
-<quest id="quest_BasicSurvival1x" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1a" group_name_key="quest_BasicSurvival" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod." 
 offer="Welcome to Gnamod!"
@@ -330,7 +237,7 @@ icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>  
 
-<quest id="quest_BasicSurvival1a" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1b" group_name_key="quest_BasicSurvival" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the easy start." 
 offer="Welcome to Gnamod!"
@@ -343,7 +250,7 @@ icon="ui_game_symbol_hammer">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>    
 
-<quest id="quest_BasicSurvival1z" group_name="Gnamod" category_key="quest"
+<quest id="quest_BasicSurvival1c" group_name="Gnamod" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the hard start." 
 offer="Welcome to Gnamod!"
@@ -352,7 +259,7 @@ icon="ui_game_symbol_hammer" difficulty="veryeasy">
 </quest>      
 
 <!-- Nomad Mode -->
-<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1d" group_name_key="quest_BasicSurvival" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the nomad mode start." 
 offer="Welcome to Gnamod!"
@@ -361,7 +268,18 @@ icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <reward type="Item"           id="stoneAxe"                 value="200"/>
 <reward type="Item"           id="q_GnamodNomad"            value="1"/>
 </quest>      
-  
+
+<!-- Horde Mode -->
+<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" category_key="quest"
+name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
+description="Welcome to Gnamod. This is the nomad mode start." 
+offer="Welcome to Gnamod!"
+icon="ui_game_symbol_hammer" difficulty="veryeasy">
+<!-- Rewards -->
+<reward type="Item"           id="casinoCoin"               value="25000"/>
+<reward type="Item"           id="q_GnamodHorde"            value="1"/>
+</quest>
+
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->
 <quest id="quest_GnamodExpert" group_name="Seven Days to Live" category="quest"
 name="Gnamod Expert"  subtitle="You dont need a survival guide! (But you still get the rewards.)" 
@@ -554,6 +472,131 @@ icon="ui_game_symbol_treasure" difficulty="hard">
 <reward type="Item"           id="q_GnamodNomadTrail"       value="1"/>
 <reward type="SkillPoints"                                  value="3"/>
 </quest>  
+
+<!-- Gnamod Horde Mode -->
+<quest id="quest_GnamodHorde1" group_name="Horde Mode" category="quest"
+name="Getting Started"  subtitle="Grabbing the bag" 
+description="It seems you have found a beacon that you can use to signal for help. It comes with a set of instructions and a backpack full of gear." 
+offer="Welcome Survivor to GNAMOD HORDE MODE. In this mode you will have to fight off hordes of zombies and try to survive for as long as you can. Follow the instructions and enjoy the ride! \n\n Good Luck,\nHaidrGna"
+icon="ui_game_symbol_treasure" difficulty="veryeasy">
+<action type="TrackQuest"/>
+
+<!-- Rewards -->
+<reward type="Item"           id="StartingKit"              value="1"/>
+<reward type="Item"           id="PlaceBeacon"              value="1"/>
+<reward type="Quest"          id="quest_Gnappy0"/>
+</quest>
+
+<quest id="quest_Gnappy0" group_name="Horde Mode" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" 
+icon="ui_game_symbol_zombie" difficulty="veryeasy">
+<objective type="BlockPlace"  id="PlaceBeacon"              value="1"/>
+  
+<reward type="SkillPoints"                                  value="10"/>
+<reward type="Quest"          id="quest_Gnappy1"/>
+</quest>  
+  
+<quest id="quest_Gnappy1" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+offer="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill"  value="10"/>
+<action type="TrackQuest"/>
+
+<reward type="SkillPoints"                                  value="1"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy2"/>
+</quest>
+
+<quest id="quest_Gnappy2" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="2"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy3"/>
+</quest>
+
+<quest id="quest_Gnappy3" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="3"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy4"/>
+</quest>
+  
+  <quest id="quest_Gnappy4" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="4"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy5"/>
+</quest>
+  
+  <quest id="quest_Gnappy5" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="6"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy6"/>
+</quest>
+  
+  <quest id="quest_Gnappy6" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="7"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy7"/>
+</quest>
+  
+  <quest id="quest_Gnappy7" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="8"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy8"/>
+</quest>
+  
+  <quest id="quest_Gnappy8" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="9"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy9"/>
+</quest>
+  
+  <quest id="quest_Gnappy9" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="10"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Quest"          id="quest_Gnappy10"/>
+</quest>
+
+<quest id="quest_Gnappy10" category="quest"
+name="Happy New Year" subtitle="Kill Some Zeds" description="Greetings Survivor!\nIt's almost time for new year, but it seems there has been an unusually high amount of zombie activity around the area. Well, armed with a good base and weapons they should be no match for us! So, kill those buggers, and let's smash our way into 2018 with guns blazing!\nHappy New Year\nHaidrGna and Max" icon="ui_game_symbol_zombie"
+repeatable="true" difficulty="insane">
+<objective type="ZombieKill" value="10"/>
+
+<reward type="SkillPoints"                                  value="10"/>
+<reward type="Item"           id="casinoCoin"               value="1000"/>
+<reward type="Item"           id="q_GnamodZombieKilling"    value="1"/>
+</quest>
   
 </quests>
 
