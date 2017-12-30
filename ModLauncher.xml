@@ -23,107 +23,73 @@ Server Name=""
   link in the list after the first link.
 ********************************************************************************************************************** -->
 <Servers>
-	<ServerGroup Name="Gnamod" Logo="" Description="Welcome Survivors to Gnamod,
-So what is Gnamod exactly? That is hard to explain in a short sentence, but I will give it a try: Gnamod is a collection of mods that aims to enhance the ' Vanilla' Experience of the 
-base 7 Days to Die game. This means that the mod is purely XML based and tries to remain as close as possible to the survival gameplay that the game already offers.
-               ">
-		<Server Name="Gnamod Base A16" Logo="">
-			<Description>
-Welcome Survivors to Gnamod,
-So what is Gnamod exactly? That is hard to explain in a short sentence, but I will give it a try: Gnamod is a collection of mods that aims to enhance the ' Vanilla' Experience of the 
-base 7 Days to Die game. This means that the mod is purely XML based and tries to remain as close as possible to the survival gameplay that the game already offers.
-			</Description>
-			<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-			<Excludes>
-				<Exclude>Gnamod Nomad A16</Exclude>
-        <Exclude>Gnamod Necropolis A16</Exclude>
-        <Exclude>Gnamod Beta A16</Exclude>
-        <Exclude>Gnamod Special</Exclude>
-				<Exclude>Vanilla Base</Exclude>
-        <Exclude>.gitattributes</Exclude>
-        <Exclude>.gitignore</Exclude>
-        <Exclude>Gnamod.sln</Exclude>
-        <Exclude>ModLauncher.xml</Exclude>
-      </Excludes>
-			<Downloads>
-				<Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
-			</Downloads>
-		</Server>
+<ServerGroup Name="Gnamod" Logo="" Description="So you like the game to be a bit more challenging but still retain the feel of the original game? You do not like to have to pick up a class but you do like to survive against all odds?
+Then Gnamod may just be the thing for you! This mod comes in different forms but at its core it features completely redone random worlds based on orignal game assets. The loot system has been completely overhauled (and then a few more times) which makes the loot experience unique and rewarding.
+Finally this mod increases the challenge of play in various way such as resource requirements and modified zombies tailored to fit with the experience.
+NOTE: Parts of this mod are still in flux and under construction. RWG work is mostly done for the base and nomad version so those should be stable enough to play. I am still working on spawning and zombies so those could change while you play. If you want to avoid bugs do not let the launcher update when playing an existing world. Enjoy">
+<Server Name="Gnamod Base" Logo="">
+<Description>
+Gnamod Base Mod
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Horde</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>
 
-    <Server Name="Gnamod Beta" Logo="">
-      <Description>
-Gnamod as it is being developed, this version is the current work and thus may contain unfinished stuff or things that are not working (yet). 
-This version currently comes with a flat world for building and testing.
-      </Description>
-      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-      <Excludes>
-        <Exclude>Gnamod Nomad A16</Exclude>
-        <Exclude>Gnamod Necropolis A16</Exclude>
-        <Exclude>Gnamod Base A16</Exclude>
-        <Exclude>Gnamod Special</Exclude>
-        <Exclude>Vanilla Base</Exclude>
-        <Exclude>.gitattributes</Exclude>
-        <Exclude>.gitignore</Exclude>
-        <Exclude>Gnamod.sln</Exclude>
-        <Exclude>ModLauncher.xml</Exclude>
-      </Excludes>
-      <Downloads>
-        <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
-      </Downloads>
-    </Server>
+<Server Name="Gnamod Horde Mode" Logo="">
+<Description>
+Gnamod Horde Mode (UNDER DEVELOPMENT)
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>  
 
-    <Server Name="Gnamod Nomad Beta" Logo="">
-      <Description>
-        Gnamod Nomad as it is being developed, this version is the current work and thus may contain unfinished stuff or things that are not working (yet).
-        This version currently comes with a flat world for building and testing.
-      </Description>
-      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-      <Excludes>
-        <Exclude>Gnamod Beta A16</Exclude>
-        <Exclude>Gnamod Necropolis A16</Exclude>
-        <Exclude>Gnamod Base A16</Exclude>
-        <Exclude>Gnamod Special</Exclude>
-        <Exclude>Vanilla Base</Exclude>
-        <Exclude>.gitattributes</Exclude>
-        <Exclude>.gitignore</Exclude>
-        <Exclude>Gnamod.sln</Exclude>
-        <Exclude>ModLauncher.xml</Exclude>
-      </Excludes>
-      <Downloads>
-        <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
-      </Downloads>
-    </Server>
-    
-    <Server Name="Gnamod Clientversion" Logo="">
-      <Description>
-        If you are joining a server that runs any version of Gnamod you can also install this light version that will make sure all names show up properly.
-      </Description>
-      <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-      <Excludes>
-      </Excludes>
-      <Downloads>
-        <Download>
-          <Download>https://raw.githubusercontent.com/haidrgna/Gnamod/master/Gnamod%20Base%20A16/Config/localization.txt</Download>
-        </Download>
-      </Downloads>
-    </Server>
-    
-<!--
-		<Server Name="HordeMode" Logo="">
-			<Description>
-Welcome Survivors to Gnamod,
-So what is Gnamod exactly? That is hard to explain in a short sentence, but I will give it a try: Gnamod is a collection of mods that aims to enhance the ' Vanilla' Experience of the 
-base 7 Days to Die game. This means that the mod is purely XML based and tries to remain as close as possible to the survival gameplay that the game already offers.
-			</Description>
-			<ReleaseNotes>https://7daystodie.com/forums/showthread.php?58754-Gnamod-Ultra-Nomad-Mode-A15</ReleaseNotes>
-			<Excludes>
-				<Exclude>Gnamod Nomad A16</Exclude>
-				<Exclude>Vanilla Base</Exclude>
-			</Excludes>
-			<Downloads>
-				<Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>
-			</Downloads>
-		</Server>
--->
-	</ServerGroup>
+<Server Name="Gnamod Necropolis" Logo="">
+<Description>
+Gnamod Necropolis (UNDER DEVELOPMENT)
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Horde</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>
+  
+<Server Name="Gnamod Nomad Mode" Logo="">
+<Description>
+Gnamod Nomad Mode
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Horde</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>
+</ServerGroup>
 </Servers>
