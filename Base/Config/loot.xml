@@ -1392,7 +1392,7 @@
                                                       <item group="foodRotten" count="1,2" prob="15"/>        <item group="seedsFood" count="1,3" prob="2.5"/>                  </lootgroup>
 <lootgroup name="lootBackpacks"         count="all">  <item name="bottledRiverWater" count="0,1"/>  <item group="weaponsBackpack" count="0,1"/>  <item group="lootHousehold" count="1" />  <item group="itemsCookware" count="0,1" /> <item group="gunsCommon" count="0,1"/>  <item group="clothGeneral" count="0,1"/> <item group="armorBackpack"/>  </lootgroup> 
 <lootgroup name="lootSafesBasic"        count="all">  <item group="itemsCash" count="1,4"/>   <item group="itemsKeepsafe" count="1"/>   <item group="schemAll" count="0,1"/>                    </lootgroup>
-<lootgroup name="lootSafesRich"        count="all">  <item group="itemsCash" count="4,8"/>   <item group="itemsKeepsafe" count="2,4"/> </lootgroup>
+<lootgroup name="lootSafesRich"         count="all">  <item group="itemsCash" count="4,8"/>   <item group="itemsKeepsafe" count="2,4"/> </lootgroup>
 <lootgroup name="lootNest"              count="all">  <item name="egg" count="1,2"/>    <item name="feather" count="3,7"/>                           </lootgroup> 
 <lootgroup name="lootSurvivor"          count="all">  <item group="weaponsBackpack"/>    <item group="gunsComplete"/>    <item group="clothGeneralRS"/>    <item group="armorRS"/>               </lootgroup>
 <lootgroup name="lootFeral"             count="all">  <item group="gunsComplete" count="0,1" />  <item group="gunsCommon" count="0,1" />   <item group="gunsUncommon" count="0,1" />                   </lootgroup>
@@ -2686,6 +2686,20 @@ loot_quality_template=  "leveledNormal">
 <item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 
+<!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="10"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="10"/> <item group="lootSafesRich" prob="10"/> <item group="lootADStock" prob="10"/> </lootgroup>
+<lootcontainer id="150" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt150" count="1" prob="50"/>
+<item group="cnt150" count="2" prob="25"/>
+<item group="cnt150" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing90Ex"/>
+</lootcontainer>
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 
 <!-- =========================== STARTERKIT (BASE) ============================================================================================================================================================================================================================================================================================================================ -->

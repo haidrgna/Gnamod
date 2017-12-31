@@ -134,7 +134,7 @@
 </hub_rule>
 
 <hub_rule name="hordeMode">
-<hub_type value="city"/> <width value="750, 1750" />  <height value="750, 1750" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_type value="city"/> <width value="1000, 1750" />  <height value="1000, 1750" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="cityHorde"/> <street_gen level="10" length_multiplier="3">
 
 <axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/>
@@ -1427,12 +1427,12 @@
 <!-- Gnamod Horde Mode Biome Spawning -->
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <distance_from_center range="0,250"/>         </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <distance_from_center range="250,500"/>       </biome_spawn_rule>  
-<biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <distance_from_center range="500,750"/>       </biome_spawn_rule>
-<biome_spawn_rule name="wasteland_hub">   <distance_from_center range="750,1000"/>      </biome_spawn_rule>
-<biome_spawn_rule name="radiated">        <distance_from_center range="1000,2000"/>     </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <distance_from_center range="0,350"/>         </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <distance_from_center range="350,700"/>       </biome_spawn_rule>  
+<biome_spawn_rule name="water">           <terrain_generator range="-60,1"/>            </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <distance_from_center range="700,1050"/>       </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <distance_from_center range="1050,1400"/>      </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <distance_from_center range="1400,2000"/>     </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
 

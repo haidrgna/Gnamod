@@ -254,11 +254,11 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="partsPistol_parts"/>
 			<item name="partsPistol_receiver"/>
 			<item name="partsPistol_grip"/>
-			<item name="partsPumpShotgun_barrelLong"/>
+			<item name="partsPumpShotgun_barrel"/>
 			<item name="partsPumpShotgun_parts"/>
 			<item name="partsPumpShotgun_barrelShort"/>
 			<item name="partsPumpShotgun_stockShort"/>
-			<item name="partsPumpShotgun_stockLong"/>
+			<item name="partsPumpShotgun_stock"/>
 			<item name="partsPumpShotgun_receiver"/>
 			<item name="partsHuntingRifle_barrel"/>
 			<item name="partsHuntingRifle_stock"/>
@@ -419,8 +419,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="weaponsGunsCommon">
 			<item name="gunPistol"/>
-			<item name="gunShortPumpShotgun"/>
-			<item name="gunLongPumpShotgun" prob="0.8"/>
+			<item name="gunSawedOffPumpShotgun"/>
+			<item name="gunPumpShotgun" prob="0.8"/>
 			<item name="gunHuntingRifle" prob="0.7"/>
 			<item name="nightvisionGoggles" prob="0.5"/>
 		</trader_item_group>
@@ -449,8 +449,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="9mmBullet" count="40,120"/>
 			<item name="762mmBullet" count="20,80"/>
 			<item name="44MagBullet" count="15,50" prob="0.5"/>
-			<item name="12GAShell" count="15,50"/>
-			<item name="12GASlug" count="6,18" prob="0.1"/>
+			<item name="shotgunShell" count="15,50"/>
+			<item name="shotgunSlug" count="6,18" prob="0.1"/>
 			<item name="rocket" count="1,4"/>
 			<item name="ironArrow" count="20,60"/>
 			<item name="steelArrow" count="20,60"/>
@@ -459,9 +459,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="ammoSupplies">
-			<item name="casingNormal" count="8,40"/> <!-- 5 -->
-			<item name="bulletTipNormal" count="20,80"/> <!-- 5 -->
-			<item name="buckshot12GA" count="20,60"/> <!-- 5 -->
+			<item name="bulletCasing" count="8,40"/> <!-- 5 -->
+			<item name="bulletTip" count="20,80"/> <!-- 5 -->
+			<item name="buckshot" count="20,60"/> <!-- 5 -->
 			<item name="gunPowder" count="5,30"/> <!-- 10 -->
 			<item name="paper" count="10,30"/> <!-- 10 -->
 			<item name="ironArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
@@ -764,209 +764,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="shotgunTurret" count="1,3" prob="0.7"/>
 		</trader_item_group>
 
-<trader_item_group name="HordemodeFood" count="1">
-<item name="blueberryPie"               count="25,100"/>
-<item name="meatStew"                   count="25,100"/>
-<item name="vegetableStew"              count="25,100"/>
-<item name="baconAndEggs"               count="25,100"/>
-<item name="boiledMeat"                 count="25,100"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeDrink" count="1">
-<item name="goldenRodTea"               count="25,100"/>
-<item name="redTea"                     count="25,100"/>
-<item name="snowberryJuice"             count="25,100"/>
-<item name="beer"                       count="25,100"/>
-<item name="coffee"                     count="25,100"/>
-<item name="megaCrush"                  count="25,100"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeMedical" count="1">
-<item name="firstAidBandage"            count="25,50"/>
-<item name="firstAidKit"                count="5,25"/>
-<item name="splint"                     count="5,25"/>
-<item name="vitamins"                   count="5,25"/>
-<item name="antibiotics"                count="5,25"/>
-<item name="repairKit"                  count="5,25"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeWeapons" count="1">
-<item name="clubIron"                   count="1"/>
-<item name="clubBarbed"                 count="1"/>
-<item name="clubSpiked"                 count="1"/>
-<item name="sledgehammer"               count="1"/>
-<item name="huntingKnife"               count="1"/>
-<item name="machete"                    count="1"/>
-<item name="chainsaw"                   count="1"/>
-<item name="crossbow"                   count="1"/>
-<item name="compoundBow"                count="1"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeGuns" count="1">
-<item name="gunPistol"                  count="1"/>
-<item name="gunPistolMOD"               count="1"/>
-<item name="gunPistolMG"                count="1"/>
-<item name="gun44Magnum"                count="1"/>
-<item name="gun44MagnumMOD"             count="1"/>
-<item name="gun44MagnumMG"              count="1"/>
-<item name="gunDeagle"                  count="1"/>
-<item name="gunDeagleMOD"               count="1"/>
-<item name="gunDeagleMG"                count="1"/>
-<item name="gunMP5"                     count="1"/>
-<item name="gunMP5MOD"                  count="1"/>
-<item name="gunMP5MG"                   count="1"/>
-<item name="gunAK47"                    count="1"/>
-<item name="gunAK47MOD"                 count="1"/>
-<item name="gunAK47MG"                  count="1"/>
-<item name="gunHuntingRifle"            count="1"/>
-<item name="gunHuntingRifleMOD"         count="1"/>
-<item name="gunHuntingRifleMG"          count="1"/>
-<item name="gunSniperRifle"             count="1"/>
-<item name="gunSniperRifleMOD"          count="1"/>
-<item name="gunSniperRifleMG"           count="1"/>
-<item name="gunShortPumpShotgun"        count="1"/>
-<item name="gunShortPumpShotgunMOD"     count="1"/>
-<item name="gunShortPumpShotgunMG"      count="1"/>
-<item name="gunLongPumpShotgun"         count="1"/>
-<item name="gunLongPumpShotgunMOD"      count="1"/>
-<item name="gunLongPumpShotgunMG"       count="1"/>
-<item name="gunDoubleBarrelShotgun"     count="1"/>
-<item name="gunDoubleBarrelShotgunMOD"  count="1"/>
-<item name="gunDoubleBarrelShotgunMG"   count="1"/>      
-<item name="gunRocketLauncher"          count="1"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeAmmo" count="1">
-<item name="22LRBullet"                 count="500,2000"/>
-<item name="22LRBulletNG"               count="250,1000"/>
-<item name="22LRBulletMG"               count="125,500"/>
-<item name="9mmBullet"                  count="500,2000"/>
-<item name="9mmBulletNG"                count="250,1000"/>
-<item name="9mmBulletMG"                count="125,500"/>
-<item name="357MagBullet"               count="500,2000"/>
-<item name="357MagBulletNG"             count="250,1000"/>
-<item name="357MagBulletMG"             count="125,500"/>
-<item name="44MagBullet"                count="500,2000"/>
-<item name="44MagBulletNG"              count="250,1000"/>
-<item name="44MagBulletMG"              count="125,500"/>
-<item name="556mmBullet"                count="500,2000"/>
-<item name="556mmBulletNG"              count="250,1000"/>
-<item name="556mmBulletMG"              count="125,500"/>
-<item name="762mmBullet"                count="500,2000"/>
-<item name="762mmBulletNG"              count="250,1000"/>
-<item name="762mmBulletMG"              count="125,500"/>
-<item name="50BMGBullet"                count="500,2000"/>
-<item name="50BMGBulletNG"              count="250,1000"/>
-<item name="50BMGBulletMG"              count="125,500"/>
-<item name="20GAShell"                  count="500,2000"/>
-<item name="20GAShellNG"                count="250,1000"/>
-<item name="20GAShellMG"                count="125,500"/>
-<item name="20GASlug"                   count="500,2000"/>
-<item name="20GASlugNG"                 count="250,1000"/>
-<item name="20GASlugMG"                 count="125,500"/>
-<item name="12GAShell"                  count="500,2000"/>
-<item name="12GAShellNG"                count="250,1000"/>
-<item name="12GAShellMG"                count="125,500"/>
-<item name="12GASlug"                   count="500,2000"/>
-<item name="12GASlugNG"                 count="250,1000"/>
-<item name="12GASlugMG"                 count="125,500"/>
-<item name="10GAShell"                  count="500,2000"/>
-<item name="10GAShellNG"                count="250,1000"/>
-<item name="10GAShellMG"                count="125,500"/>
-<item name="10GASlug"                   count="500,2000"/>
-<item name="10GASlugNG"                 count="250,1000"/>
-<item name="10GASlugMG"                 count="125,500"/>
-<item name="rocket"                     count="5,25"/>
-<item name="ironCrossbowBolt"           count="500,1000"/>
-<item name="steelCrossbowBolt"          count="250,500"/>
-<item name="explodingCrossbowBolt"      count="25,50"/>
-<item name="ironArrow"                  count="500,1000"/>
-<item name="steelArrow"                 count="250,500"/>
-<item name="flamingArrow"               count="25,50"/>
-<!-- Bombs -->
-<item name="molotovCocktail"            count="10,25"/>
-<item name="pipeBomb"                   count="10,25"/>
-<item name="mineCandyTin"               count="25,100"/>
-<item name="mineHubcap"                 count="10,50"/>
-<item name="mineAirFilter"              count="5,25"/>
-</trader_item_group>    
-    
-<trader_item_group name="HordemodeTools" count="1">
-<item name="wireTool"                   count="1"/>
-<item name="fireaxeIron"                count="1"/>
-<item name="fireaxeSteel"               count="1"/>
-<item name="shovelIron"                 count="1"/>
-<item name="shovelSteel"                count="1"/>
-<item name="pickaxeIron"                count="1"/>
-<item name="pickaxeSteel"               count="1"/>
-<item name="clawHammer"                 count="1"/>
-<item name="wrench"                     count="1"/>
-<item name="nailgun"                    count="1"/>
-<item name="toolAndDieSet"              count="1"/>
-<item name="miningHelmet"               count="1"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeBuilding" count="1">
-<item name="smallEngine"                count="1,5"/>
-<item name="carBattery"                 count="1,5"/>
-<item name="solarCell"                  count="1,5"/>
-<item name="gasCan"                     count="600,6000"/>
-<item name="electricwirerelay"          count="30"/>
-<item name="electrictimerrelay"         count="20"/>
-<item name="tripwirepost"               count="30"/>
-<item name="electricfencepost"          count="1,10"/>
-<item name="dartTrap"                   count="1,4"/>
-<item name="shotgunTurret"              count="1,2"/>
-<item name="autoTurret"                 count="1,2"/>
-<item name="bladeTrap"                  count="1,2"/>
-<item name="spotlightPlayer"            count="1,5"/>
-<item name="wood"                       count="250,25000"/>
-<item name="rockSmall"                  count="250,25000"/>
-<item name="ironFragment"               count="250,25000"/>
-<item name="clayLump"                   count="250,25000"/>
-<item name="crushedSand"                count="250,25000"/>
-<item name="coal"                       count="250,2500"/>
-<item name="potassiumNitratePowder"     count="250,2500"/>
-<item name="cobblestones"               count="1000,5000"/>
-<item name="scrapIron"                  count="250,25000"/>
-<item name="concreteMix"                count="1000,5000"/>
-<item name="steelPolish"                count="100,1000"/>
-<item name="nail"                       count="250,1000"/>
-<item name="ductTape"                   count="25,100"/>
-<item name="animalHide"                 count="25,100"/>
-<item name="scrapBrass"                 count="50,250"/>
-<item name="scrapLead"                  count="50,250"/>
-<item name="feather"                    count="50,250"/>
-<item name="cloth"                      count="25,100"/>
-<item name="militaryFiber"              count="5,25"/>
-<item name="oil"                        count="5,25"/>
-<item name="animalFat"                  count="25,100"/>
-<item name="forgedIron"                 count="250,1500"/>
-<item name="forgedSteel"                count="125,750"/>
-<item name="spring"                     count="25,100"/>
-<item name="mechanicalParts"            count="25,100"/>
-<item name="electricParts"              count="25,100"/>
-<item name="electronicParts"            count="25,100"/>
-<item name="flagstoneBlock"             count="100,250"/>
-<item name="cobblestoneBlock"           count="100,250"/>
-<item name="brickBlock"                 count="100,250"/>
-<item name="concreteBlock"              count="100,250"/>
-<item name="rebarFrameBlock"            count="100,250"/>
-<item name="scrapIronFrameBlock"        count="100,250"/>
-<item name="woodFrameBlock"             count="100,250"/>
-<item name="ironBars"                   count="50,250"/>
-<item name="torch"                      count="5,25"/>
-</trader_item_group>
-
-<trader_item_group name="HordemodeStations" count="1">
-<item name="generatorbank"              count="1"/>
-<item name="batterybank"                count="1"/>
-<item name="solarbank"                  count="1"/>
-<item name="workbench"                  count="1"/>
-<item name="forge"                      count="1"/>
-<item name="cementMixer"                count="1"/>
-<item name="chemistryStation"           count="1"/>
-</trader_item_group>
 	</trader_item_groups>
 
 <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -1109,6 +906,74 @@ workstations
 		</tier_items>
 	</trader_info>
 
+	<!-- Trader 2, carries better tools and construction material at higher levels. -->
+	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
+<!--
+	<trader_info id="2" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
+		reset_interval="3" open_time="6:05" close_time="21:50">
+		<trader_items count="all">
+			<item group="traderAlways"/>
+			<item group="traderGeneral" count="4,8"/>
+			<item group="generalResources" count="11,17"/>
+			<item group="constructionSupplies" count="4,12"/>
+			<item group="decorativeBlocks" count="2,7"/>
+			<item group="tools" count="0,2"/>
+			<item group="weaponsCommonParts" count="0,2"/>
+			<item group="lightArmor" count="1,3"/>
+			<item group="traderElectrical" count="0,1"/>
+		</trader_items>
+
+		<tier_items level="1,25" count="1,3">
+			<item group="traderElectrical" count="1,2"/>
+			<item group="weaponsGunsCommon" count="1" prob="0.5"/>
+			<item group="constructionSupplies" count="2,3" prob="1"/>
+			<item group="generalResources" count="4,7" prob="1"/>
+			<item group="tools" count="1,2" prob="1"/>
+			<item group="rareTools" count="1" prob="0.5"/>
+			<item group="ammoSupplies" count="2,3" prob="0.4"/>
+			<item group="banditArmor" count="1" prob="0.4"/>
+			<item name="miningHelmet" prob="0.5"/>
+			<item group="ammo" count="1,2" prob="1"/>
+		</tier_items>
+
+		<tier_items level="25,50" count="1,4">
+			<item group="traderElectrical" count="2,3"/>
+			<item group="weaponsGunsCommon" count="1" prob="0.8"/>
+			<item group="weaponsGunsMilitary" count="1" prob="0.2"/>
+			<item group="constructionSupplies" count="2,3" prob="1"/>
+			<item group="generalResources" count="3,4" prob="1"/>
+			<item group="tools" count="1,2" prob="1"/>
+			<item group="rareTools" count="1" prob="0.5"/>
+			<item group="ammoSupplies" count="2,3" prob="0.4"/>
+			<item group="banditArmor" count="1" prob="0.4"/>
+			<item group="hazmatGear" count="1" prob="0.2"/>
+			<item group="workstations" count="1" prob="0.3"/>
+			<item group="minibikeParts" count="1" prob="0.2"/>
+			<item name="miningHelmet" prob="0.5"/>
+			<item group="ammo" count="1,4" prob="1"/>
+		</tier_items>
+
+		<tier_items level="50,-1" count="2,6">
+			<item group="traderElectrical" count="3"/>
+			<item name="cntVendingMachine" count="1" prob="1" />
+			<item group="weaponsGunsCommon" count="1" prob="1"/>
+			<item group="weaponsGunsMilitary" count="1" prob="0.3"/>
+			<item group="constructionSupplies" count="2,3" prob="1"/>
+			<item group="generalResources" count="3,4" prob="1"/>
+			<item group="tools" count="1,2" prob="0.9"/>
+			<item group="rareTools" count="1" prob="0.6"/>
+			<item group="ammoSupplies" count="2,3" prob="0.4"/>
+			<item group="banditArmor" count="1" prob="0.4"/>
+			<item group="hazmatGear" count="1" prob="0.4"/>
+			<item group="workstations" count="1" prob="0.5"/>
+			<item group="minibikeParts" count="1" prob="0.4"/>
+			<item name="nightvisionGoggles" count="1" prob="0.2" />
+			<item name="miningHelmet" prob="0.5"/>
+			<item group="ammo" count="2,4" prob="1"/>
+		</tier_items>
+	</trader_info>
+-->
+
 	<!-- Player Owned - Vending Machine -->
 	<trader_info id="3" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" player_owned="true" />
 
@@ -1129,24 +994,4 @@ workstations
 	<!-- Rented - Vending Machine -->
 	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 
-<trader_info id="6" reset_interval="1" override_buy_markup="0.75" allow_sell="false" min_inventory="25" max_inventory="150" min_items_swapped="25" max_items_swapped="50">
-<trader_items count="all">
-<item group="HordemodeAmmo"     count="10"/>
-<item group="HordemodeFood"     count="2"/>
-<item group="HordemodeDrink"    count="2"/>
-<item group="HordemodeMedical"  count="1"/>
-<item group="HordemodeWeapons"  count="1"/>
-<item group="HordemodeGuns"     count="1"/>
-<item group="HordemodeTools"    count="1"/>
-<item name="StartingKit"        count="1"/>
-</trader_items>
-</trader_info>
-
-<trader_info id="7" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="50" max_inventory="100" min_items_swapped="50" max_items_swapped="100">
-<trader_items count="all">
-<item group="HordemodeStations" count="1"/>
-<item group="HordemodeBuilding" count="24"/>
-</trader_items>
-</trader_info>  
-  
 </traders>

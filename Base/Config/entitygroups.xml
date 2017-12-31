@@ -9,7 +9,7 @@
 <entity name="animalStag"             prob="1"/>
 <entity name="animalPig"              prob="1"/>
 </entitygroup>
-  
+
 <entitygroup name="AnimalsAllHostile">
 <entity name="animalBoar"             prob="1"/>
 <entity name="animalSnake"            prob="1"/>
@@ -27,8 +27,8 @@
 <entitygroup name="AnimalsAllRadiated">
 <entity name="animalZombieBearRad"    prob="1"/>
 <entity name="animalZombieDogRad"     prob="1"/>
+<entity name="animalWolfRad"          prob="1"/>
 <entity name="animalDireWolfRad"      prob="1"/>
-<entity name="animalBoarRad"          prob="1"/>
 <entity name="animalSnakeRad"         prob="1"/>
 </entitygroup>    
 -->  
@@ -50,6 +50,18 @@
 <entity name="animalDireWolf"         prob="1"/>
 </entitygroup>
 
+<entitygroup name="AnimalsBoom">
+<entity name="animalRabbitBoom"           prob="1"/>
+<entity name="animalChickenBoom"          prob="1"/>
+<entity name="animalStagBoom"             prob="1"/>
+<entity name="animalPigBoom"              prob="1"/>
+<entity name="animalBoarBoom"             prob="1"/>
+<entity name="animalSnakeBoom"            prob="1"/>
+<entity name="animalBearBoom"             prob="1"/>
+<entity name="animalWolfBoom"             prob="1"/>
+<entity name="animalDireWolfBoom"         prob="1"/>
+</entitygroup>
+  
 <!-- WATER BASE GROUPS (80% Animals) -->
 <entitygroup name="AnimalsWaterFriendly">
 <entity name="invisibleAnimal" 		    prob="80"/>
@@ -664,7 +676,7 @@
 <entity name="animalZombieDog" prob="20" />
 </entitygroup>
 
-<entitygroup name="ZombieScouts">
+<entitygroup name="ZombiesScouts">
 <entity name="zombieAnnaSwagger" prob="1"/> <entity name="zombieAnnaIntimidator" prob="1"/> <entity name="zombieAnnaMoaner" prob="1"/> <entity name="zombieAnnaLimper" prob="0.7"/> <entity name="zombieAnnaFlailer" prob="1"/> <entity name="zombieAnnaWalker" prob="1"/> <entity name="zombieAnnaClimber" prob="1"/> <entity name="zombieAnnaHater" prob="1"/> <entity name="zombieAnnaFeral" prob="0.3"/>
 <entity name="zombieAnnaRadSwagger" prob="0.11"/> <entity name="zombieAnnaRadIntimidator" prob="0.11"/> <entity name="zombieAnnaRadMoaner" prob="0.11"/> <entity name="zombieAnnaRadLimper" prob="0.11"/> <entity name="zombieAnnaRadFlailer" prob="0.11"/> <entity name="zombieAnnaRadWalker" prob="0.11"/> <entity name="zombieAnnaRadClimber" prob="0.12"/> <entity name="zombieAnnaRadHater" prob="0.11"/> <entity name="zombieAnnaRadFeral" prob="0.01"/>
 </entitygroup>
