@@ -1009,8 +1009,72 @@ There is a console command: forcegamestage
 	</spawner>
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated screamer / scout horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-	<spawner name="BloodMoonHorde">
+<spawner name="BloodMoonHorde">
+<gamestage stage="1">
+<spawn group="ZombiesAllMoves"  num="12" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="24" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="24" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="12" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="50">
+<spawn group="ZombiesAllMoves"  num="24" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesAllMoves"  num="24" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="100">
+<spawn group="ZombiesWasteland"  num="36" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesWasteland"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesWasteland"  num="144" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesWasteland"  num="144" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesWasteland"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesWasteland"  num="36" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="150">
+<spawn group="ZombiesSuperHorde"  num="36" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="144" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="144" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="72" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="36" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="200">
+<spawn group="ZombiesSuperHorde"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="48" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="250">
+<spawn group="ZombiesSuperHorde"  num="48" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="48" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="1000">
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="384" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="384" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="96" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<gamestage stage="2500">
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="384" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="768" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="768" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="384" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesSuperHorde"  num="192" maxAlive="256" duration="2" interval="12"/>
+</gamestage>
+<!--
 		<gamestage stage="1"><spawn group="feralHordeStageGS1" num="1" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="1" maxAlive="1"/></gamestage>
 		<gamestage stage="2"><spawn group="feralHordeStageGS2" num="2" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="3" maxAlive="1"/></gamestage>
 		<gamestage stage="4"><spawn group="feralHordeStageGS4" num="4" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="5" maxAlive="1"/></gamestage>
@@ -1333,7 +1397,6 @@ There is a console command: forcegamestage
 		<gamestage stage="4049"><spawn group="feralHordeStageGS4013" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4031" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
 		<gamestage stage="4067"><spawn group="feralHordeStageGS4031" num="300" maxAlive="256" duration="3" interval="27"/><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4067" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
 		<gamestage stage="4086"><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4067" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4086" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
-	</spawner>
-	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-
+	-->
+</spawner>
 </gamestages>
