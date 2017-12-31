@@ -179,7 +179,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
-	<property name="Group" value="Ammo/Weapons,Tools/Traps"/>
+	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
@@ -1499,7 +1499,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="500,1400"/>
 		<property name="DegradationRate" value="1,1"/>
 	</property>
-	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -7717,7 +7717,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
-	<property name="Group" value="Food/Cooking"/>
+	<property name="Group" value="Chemicals,Food/Cooking"/>
 </item>
 
 <item id="1364" name="tallow">
@@ -8021,7 +8021,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="1000"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000"/>
@@ -8045,7 +8045,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="160"/>
 	<property name="EconomicValue" value="500"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="VehicleSlotType" value="battery"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property class="Attributes">
@@ -8085,7 +8085,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="5000"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000"/>
 	</property>

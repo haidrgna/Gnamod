@@ -198,7 +198,7 @@
 
 <!-- Scout and Heat Hordes -->
 <entityspawner name="Scouts" dynamic="true" wrapMode="wrap">
-<!-- Base Scouts -->
+<!-- Base Scouts 
 <day value="1,7">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesScouts"/>
@@ -231,8 +231,8 @@
 <property name="TotalAlive"         value="2"/>
 <property name="TotalPerWave"       value="4"/>
 </day>
-
-<!-- Horde Mode Scouts 
+-->
+<!-- Horde Mode Scouts -->
 <day value="1">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesWasteland"/>
@@ -297,11 +297,11 @@
 <property name="TotalAlive"         value="20"/>
 <property name="TotalPerWave"       value="20,100"/>
 </day>
--->
+
 </entityspawner>
 
 <entityspawner name="HordeMeterDynamicSpawnDay" dynamic="true">
-<!-- Base Spawner -->
+<!-- Base Spawner 
 <day value="1">
 <property name="EntityGroupName"    value="ZombiesAllMoves"/>
 <property name="Time"               value="Any"/>
@@ -350,8 +350,8 @@
 <property name="DelayBetweenSpawns" value="1"/>
 <property name="TotalAlive"         value="15"/>
 </day>
-
-<!-- Horde Mode Spawner 
+-->
+<!-- Horde Mode Spawner -->
 <day value="1,3">
 <property name="EntityGroupName"    value="ZombiesAllMoves" />
 <property name="Time"               value="Day"/>
@@ -382,7 +382,7 @@
 <property name="DelayBetweenSpawns" value="1"/>
 <property name="TotalAlive"         value="5"/>
 </day>
--->
+
 </entityspawner>
 
 </spawning>

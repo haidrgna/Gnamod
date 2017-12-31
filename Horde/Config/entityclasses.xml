@@ -4208,6 +4208,25 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
+<!-- AI Tasks -->
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="20"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="20"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
+<!-- AI Targets -->
+<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
+<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
+<property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
+<property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
+<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4230,6 +4249,25 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="3500"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
+<!-- AI Tasks -->
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="20"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="20"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
+<!-- AI Targets -->
+<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
+<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
+<property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
+<property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
+<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4251,6 +4289,25 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="750"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
+<!-- AI Tasks -->
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="20"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="20"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
+<!-- AI Targets -->
+<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
+<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
+<property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
+<property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
+<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
