@@ -7624,7 +7624,7 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="5,10"/>
 		<property name="BlockDamage" value="0.1,0.2"/>
 	</property>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Resources"/>
 </item>
 
 <item id="1354" name="rocketTip">
@@ -7634,7 +7634,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="151"/>
-	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
@@ -7645,7 +7645,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="77"/>
-	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
@@ -7670,7 +7670,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="186"/>
 	<property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="2500"/>
-	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
@@ -9049,7 +9049,7 @@ Mesh files no longer used:
 </item>
 <item id="1540"                           name="12GAShellNG">
 <property name="Extends"                  value="12GAShell"/>
-<property name="EconomicValue"            value="6"/>
+<property name="EconomicValue"            value="23"/>
 <property class="Attributes">
 <property name="EntityDamage"             value="3.5,8"/>
 <property name="EconomicValue"            value="23"/>
@@ -9057,7 +9057,7 @@ Mesh files no longer used:
 </item>  
 <item id="1541"                           name="12GAShellMG">
 <property name="Extends"                  value="12GAShell"/>
-<property name="EconomicValue"            value="6"/>
+<property name="EconomicValue"            value="27"/>
 <property class="Attributes">
 <property name="EntityDamage"             value="4,9"/>
 <property name="EconomicValue"            value="27"/>
