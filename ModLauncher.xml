@@ -45,6 +45,25 @@ Gnamod Base Mod
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
 
+<Server Name="Gnamod Base BETA" Logo="">
+<Description>
+This is the Beta version of upcoming changes to Gnamod. There is no changelog yet on what is being changed, but I redone the entities, spawning and game stages, harmonizing what existed and fixing several errors that existed from the start.
+This should only be loaded by anyone that wants to test out what is upcoming. This is not a stable version and will likely dissapear as soon as I release all these changes to the stable build. The first upcoming release will the the 1.0 release of the total Gnamod Mod Group for A16 and then subsequently the 1.0 release for the 3 other modes.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Base</Exclude>
+<Exclude>Horde</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>
+
 <Server Name="Gnamod Horde Mode" Logo="">
 <Description>
 Gnamod Horde Mode (UNDER DEVELOPMENT)
