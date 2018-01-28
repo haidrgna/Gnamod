@@ -34,7 +34,7 @@
 				<task class="MoveToTarget" run="false"/>
 				
 				<consideration class="TargetType" type="Block"/>
-				<consideration class="TargetDistance" min="2" max="20"/>
+				<consideration class="TargetDistance" min="1" max="20"/>
 				<consideration class="TargetVisible" flip_y="true"/>
 			</action>
 			
@@ -43,7 +43,7 @@
 				
 				<consideration class="TargetType" type="EntityNPC"/>
 				<consideration class="TargetFactionStanding" flip_y="true" max="127"/>
-				<consideration class="TargetDistance" min="2" max="100"/>
+				<consideration class="TargetDistance" min="1" max="100"/>
 			</action>
 			
 			<action name="MoveToEnemyRun" weight="2">
@@ -57,7 +57,7 @@
 			<action name="MeleeAttackEntity" weight="5">
 				<task class="AttackTargetEntity" action_index="0"/>
 				
-				<consideration class="TargetType" type="EntityNPC, Block"/> <!-- Block -->
+				<consideration class="TargetType" type="EntityNPC, Block, EntityPlayer"/> <!-- Block -->
 				<consideration class="TargetFactionStanding" flip_y="true" max="127"/>
 				<consideration class="TargetDistance" flip_y="true" min="1" max="3"/>
 			</action>
@@ -67,7 +67,7 @@
 				
 				<consideration class="PathBlocked"/>
 				<consideration class="TargetType" type="Block"/>
-				<consideration class="TargetDistance" flip_y="true" min="2" max="100"/>
+				<consideration class="TargetDistance" flip_y="true" min="1" max="100"/>
 			</action>
 		</ai_package>
 		

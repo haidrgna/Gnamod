@@ -289,9 +289,18 @@
 
 <!-- Random Cars -->
 <placeholder name="randomCarsHelper">
-<block name="cntCar03SedanDamage2"              prob="0.060"/>
-<block name="cntCar03SedanDamage1"              prob="0.025"/>
-<block name="cntCar03SedanDamage0"              prob="0.015"/>
+<block name="cntCar03SedanDamage2"              prob="0.40"/>
+<block name="cntCar03SedanDamage1"              prob="0.20"/>
+<block name="cntCar03SedanDamage0"              prob="0.10"/>
+<block name="cntTrashPile01"                    prob="0.03"/>
+<block name="cntTrashPile02"                    prob="0.03"/>
+<block name="cntTrashPile03"                    prob="0.03"/>
+<block name="cntTrashPile04"                    prob="0.04"/>
+<block name="cntTrashPile05"                    prob="0.03"/>
+<block name="cntTrashPile06"                    prob="0.03"/>
+<block name="cntTrashPile07"                    prob="0.04"/>
+<block name="cntTrashPile08"                    prob="0.03"/>
+<block name="cntTrashPile09"                    prob="0.04"/>
 </placeholder>
 
 <!-- Random stone/resource -->
@@ -2685,7 +2694,302 @@ loot_quality_template=  "leveledNormal">
 <!-- Chance of Default Loot -->
 <item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
-
+<!-- =========================== STRONG BASIC ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt102"> <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="10"/> <item group="lootStrongZombie" prob="40"/>  </lootgroup>
+<lootcontainer id="102" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt102" count="1" prob="30"/>
+<item group="cnt102" count="2" prob="45"/>
+<item group="cnt102" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="cnt102" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== COP ZOMBIE ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt103"> <item group="lootBaseZombie" prob="30"/>  <item group="lootCopZombie" prob="70"/> </lootgroup>
+<lootcontainer id="103" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt103" count="1" prob="40"/>
+<item group="cnt103" count="2" prob="35"/>
+<item group="cnt103" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="cnt103" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG COP ZOMBIE ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt104"> <item group="lootBaseZombie" prob="5"/> <item group="lootCopZombie" prob="95"/> </lootgroup>
+<lootcontainer id="104" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt104" count="1" prob="20"/>
+<item group="cnt104" count="2" prob="55"/>
+<item group="cnt104" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="cnt104" count="1" loot_prob_template="nothing50"/>
+  </lootcontainer>
+<!-- =========================== MEDICAL ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt105"> <item name="firstAidBandage" prob="25"/>  <item group="medicalBasic" prob="25"/>  <item group="medicalAdvanced" prob="50"/> </lootgroup>
+<lootcontainer id="105" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt105" count="1" prob="40"/>
+<item group="cnt105" count="2" prob="35"/>
+<item group="cnt105" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG MEDICAL ZOMBIE ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt106"> <item name="firstAidBandage" prob="15"/>  <item group="medicalBasic" prob="15"/>  <item group="medicalAdvanced" prob="70"/> </lootgroup>
+<lootcontainer id="106" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt106" count="1" prob="30"/>
+<item group="cnt106" count="2" prob="45"/>
+<item group="cnt106" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="medicalAdvanced" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== SPECIAL ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt107"> <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="107" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt107" count="1" prob="50"/>
+<item group="cnt107" count="2" prob="25"/>
+<item group="cnt107" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG SPECIAL ZOMBIE =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt108"> <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/> </lootgroup>
+<lootcontainer id="108" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt108" count="1" prob="40"/>
+<item group="cnt108" count="2" prob="35"/>
+<item group="cnt108" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>  
+<!-- 109 Free -->
+<!-- =========================== GHOUL ZOMBIE ===================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt110"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootFeralZombie" prob="60"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="110" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt110" count="1" prob="50"/>
+<item group="cnt110" count="2" prob="29"/>
+<item group="cnt110" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="cnt110" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG GHOUL ZOMBIE =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt111"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootFeralZombie" prob="60"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="111" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt111" count="2" prob="50"/>
+<item group="cnt111" count="3" prob="29"/>
+<item group="cnt111" count="4" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="cnt111" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== HAZMAT ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt112"> <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="4"/> <item group="lootHazmatZombie" prob="45"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="112" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt112" count="1" prob="60"/>
+<item group="cnt112" count="2" prob="19"/>
+<item group="cnt112" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="medicalBasic" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG HAZMAT ZOMBIE =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt113"> <item group="lootBaseZombie" prob="15"/>  <item group="lootStrongZombie" prob="29"/> <item group="lootHazmatZombie" prob="55"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="113" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt113" count="1" prob="50"/>
+<item group="cnt113" count="2" prob="29"/>
+<item group="cnt113" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== ZOMBIE LUMBERJACK ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt114"> <item group="lootBaseZombie" prob="30"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootLumberZombie" prob="40"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="114" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt114" count="1" prob="60"/>
+<item group="cnt114" count="2" prob="19"/>
+<item group="cnt114" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG ZOMBIE LUMBERJACK ======================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt115"> <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="39"/>  <item group="lootLumberZombie" prob="50"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="115" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt115" count="1" prob="50"/>
+<item group="cnt115" count="2" prob="29"/>
+<item group="cnt115" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="lootLumberZombie" count="0,1" loot_prob_template="nothing33"/>
+</lootcontainer>
+<!-- =========================== ZOMBIE STRIPPER ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt116"> <item group="itemsCash" count="2,5" prob="90"/> <item group="itemsCash" count="5,10" prob="10"/>   </lootgroup>
+<lootcontainer id="116" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt116" count="1" prob="30"/>
+<item group="cnt116" count="2" prob="30"/>
+<item group="cnt116" count="3" prob="20"/>
+<!-- Chance of Default Loot -->
+<item group="itemsCash" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG ZOMBIE STRIPPER =========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt117"> <item group="itemsCash" count="2,5" prob="30"/> <item group="itemsCash" count="5,10" prob="70"/>   </lootgroup>
+<lootcontainer id="117" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt117" count="2" prob="30"/>
+<item group="cnt117" count="3" prob="30"/>
+<item group="cnt117" count="4" prob="20"/>
+<!-- Chance of Default Loot -->
+<item group="itemsCash" count="2" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== ZOMBIE SOLDIER ================================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt118"> <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootSoldierZombie" prob="60"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="118" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt118" count="1" prob="75"/>
+<item group="cnt118" count="2" prob="4"/>
+<item group="cnt118" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="lootStrongZombie" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG ZOMBIE SOLDIER ========================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt119"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="19"/>  <item group="lootSoldierZombie" prob="75"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="119" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt119" count="1" prob="75"/>
+<item group="cnt119" count="2" prob="4"/>
+<item group="cnt119" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="lootStrongZombie" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== ZOMBIE UTILITY WORKER ========================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt120"> <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/> </lootgroup>
+<lootcontainer id="120" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt120" count="1" prob="75"/>
+<item group="cnt120" count="2" prob="4"/>
+<item group="cnt120" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG ZOMBIE UTILITY WORKER ================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt121"> <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/> </lootgroup>
+<lootcontainer id="121" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt121" count="1" prob="75"/>
+<item group="cnt121" count="2" prob="4"/>
+<item group="cnt121" count="3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="nothing" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== BURLY ZOMBIES =================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt122"> <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
+<lootcontainer id="122" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt122" count="1" prob="50"/>
+<item group="cnt122" count="2" prob="25"/>
+<item group="cnt122" count="3" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="itemsCommon" count="0,1" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- =========================== STRONG BURLY ZOMBIES ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt123"> <item group="lootBaseZombie" prob="25"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/> </lootgroup>
+<lootcontainer id="123" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_corpse"
+sound_close=            "UseActions/close_corpse"
+loot_quality_template=  "leveledLight">
+<!-- Chance of Loot: 80 -->
+<item group="cnt123" count="2" prob="50"/>
+<item group="cnt123" count="3" prob="25"/>
+<item group="cnt123" count="4" prob="5"/>
+<!-- Chance of Default Loot -->
+<item group="cnt123" count="1" loot_prob_template="nothing50"/>
+</lootcontainer>
+  
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt150"> <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="10"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="10"/> <item group="lootSafesRich" prob="10"/> <item group="lootADStock" prob="10"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="3" 

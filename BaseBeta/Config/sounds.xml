@@ -2778,6 +2778,14 @@
 	<AudioClip ClipName="Sounds/Buffs/buff_stunned_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
+<SoundDataNode name="buff_stunnedLight"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+	<AudioClip ClipName="Sounds/Buffs/buff_stunned_lp" Loop="true"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="buff_stunnedStrong"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+	<AudioClip ClipName="Sounds/Buffs/buff_stunned_lp" Loop="true"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
 <SoundDataNode name="buff_bleeding"> <AudioSource name="Sounds/AudioSource_Notifications"/>
 	<AudioClip ClipName="Sounds/Buffs/buff_bleeding_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>

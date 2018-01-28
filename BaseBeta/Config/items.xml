@@ -8235,7 +8235,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="50000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="25000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -8416,8 +8416,80 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
 </item>
 
+<item id="1466" name="Railgun">
+<property name="CreativeMode"                   value="Dev"/>
+<property name="CustomIcon"                     value="nailgun"/>
+<property name="Meshfile"                       value="Items/Tools/nailgunPrefab"/>
+<property name="Material"                       value="metal"/>
+<property name="RepairTools"                    value="repairKit"/>
+<property name="DegradationBreaksAfter"         value="false"/>
+<property name="CrosshairUpAfterShot"           value="false"/>
+<property name="HoldType"                       value="37"/>
+<property name="SoundJammed"                    value="weapon_jam"/>
+<property name="CrosshairUpAfterShot"           value="false"/>
+<property class="Action0">
+<property name="Class"                          value="Launcher"/>
+<property name="Delay"                          value="0.001"/>
+<property name="Crosshair_min_distance"         value="1"/>
+<property name="Crosshair_max_distance"         value="5"/>
+<property name="Magazine_size"                  value="5000"/>
+<property name="Magazine_items"                 value="Rail"/>
+<property name="Rays_spread"                    value="0.05"/>
+<property name="Magazine_item_ray_counts"       value="1"/>
+<property name="Instantiate_on_load"            value="false"/>
+<property name="Reload_time"                    value="2"/>
+<property name="Bullet_icon"                    value="uzi"/>
+<property name="Sound_start"                    value="electric_fence_impact"/>
+<!--<property name="Particles_muzzle_fire"          value="candle_flame"/>-->
+<property name="Sound_repeat"                   value=""/>
+<property name="Sound_end"                      value=""/>
+<property name="Sound_empty"                    value="weapon_empty"/>
+<property name="Sound_reload"                   value="nailgun_reload"/>
+<property name="DamageBonus.head"               value="5"/>
+<property name="Auto_fire"                      value="true"/>
+<property name="Single_magazine_usage"          value="true"/>
+</property>
+<property class="Action1">
+    <property name="Class"                        value="Zoom"/>
+    <property name="Zoom_max_out"                 value="40"/>
+    <property name="Zoom_max_in"                  value="40"/>
+</property>
+<property class="Attributes">
+<property name="DegradationMax"               value="25000,100000"/>
+<property name="DegradationRate"              value="20,10"/>
+</property>
+</item>
+
+<item id="1467" name="Rail">
+<property name="CreativeMode"                   value="Dev"/>
+<property name="Meshfile"                       value="ParticleEffects/p_nozzleflash_ak"/>
+<property name="Material"                       value="metal"/>
+<property name="Stacknumber"                    value="50"/>
+<property name="CustomIcon"                     value="nail"/>
+<property class="Attributes">
+<property name="GetQualityFromWeapon"           value="true"/>
+<property name="EntityDamage"                   value="5,25"/>
+<property name="BlockDamage"                    value="5,25"/>
+</property>   
+<property class="Action1">
+<property name="Class"                          value="Projectile"/>
+<property name="Velocity"                       value="50"/>
+<property name="FlyTime"                        value="1.5"/>
+<property name="LifeTime"                       value="50"/>
+<!--
+<property name="Explosion.ParticleIndex"        value="7"/>
+<property name="Explosion.RadiusBlocks"         value="1"/>
+<property name="Explosion.BlockDamage"          value="25"/>
+<property name="Explosion.RadiusEntities"       value="1"/>
+<property name="Explosion.EntityDamage"         value="25"/>
+<property name="Explosion.BlastPower"           value="100"/>
+-->
+</property>
+</item>   
+
 <item id="1487" name="gunAdminLauncher">
 <property name="CreativeMode"                 value="Dev"/>
+<property name="CustomIcon"                   value="rocketLauncher"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
 <property name="Material"                     value="metal"/>
 <property name="HoldType"                     value="10"/>
@@ -10896,7 +10968,7 @@ Mesh files no longer used:
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="5"/>
-  <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
   <property name="Magazine_item_ray_spreads"  value="0.09,0.08,0.07,0,0.09,0.08,0.07,0"/>
   <!-- Damage Behavior-->
@@ -11271,7 +11343,7 @@ Mesh files no longer used:
 -->
   <!-- Ammo -->
   <property name="Magazine_size"              value="1"/>
-  <property name="Magazine_items"             value="Musketshot,Scattershot,20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
+  <property name="Magazine_items"             value="Scattershot,Musketshot,20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,20,20,20,20,1,1,1,1,1,1"/>
   <property name="Magazine_item_ray_spreads"  value="0.45,0.90,0.60,0.55,0.50,0,0.30,0.25,0.20,0"/>
   <!-- Damage Behavior -->

@@ -186,7 +186,7 @@
 <!-- Base Scouts -->
 <day value="1,7">
 <property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
+<property name="EntityGroupName"    value="ZombiesScoutsStage1"/>
 <property name="Time"               value="Any"/>
 <property name="DelayBetweenSpawns" value="10"/>
 <property name="TotalAlive"         value="1"/>
@@ -194,7 +194,7 @@
 </day>
 <day value="8,21">
 <property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
+<property name="EntityGroupName"    value="ZombiesScoutsStage1"/>
 <property name="Time"               value="Any"/>
 <property name="DelayBetweenSpawns" value="10"/>
 <property name="TotalAlive"         value="1"/>
@@ -202,7 +202,7 @@
 </day>
 <day value="22,49">
 <property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
+<property name="EntityGroupName"    value="ZombiesScoutsStage2"/>
 <property name="Time"               value="Any"/>
 <property name="DelayBetweenSpawns" value="10"/>
 <property name="TotalAlive"         value="2"/>
@@ -210,326 +210,12 @@
 </day>
 <day value="*">
 <property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
+<property name="EntityGroupName"    value="ZombiesScoutsStage3"/>
 <property name="Time"               value="Any"/>
 <property name="DelayBetweenSpawns" value="10"/>
 <property name="TotalAlive"         value="2"/>
 <property name="TotalPerWave"       value="4"/>
 </day>
-
-<!-- Horde Mode Scouts 
-<day value="*">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="20"/>
-<property name="TotalPerWave"       value="20,100"/>
-</day>
-<day value="1">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-<property name="TotalPerWave"       value="1"/>
-</day>
-<day value="2">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="1"/>
-<property name="TotalPerWave"       value="1"/>
-</day>
-<day value="3">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="2"/>
-<property name="TotalPerWave"       value="2,4"/>
-</day>
-<day value="4">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="3"/>
-<property name="TotalPerWave"       value="3,6"/>
-</day>
-<day value="5">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="4"/>
-<property name="TotalPerWave"       value="4,8"/>
-</day>
-<day value="6">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="5"/>
-<property name="TotalPerWave"       value="5,10"/>
-</day>
-<day value="7">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-<property name="TotalPerWave"       value="2"/>
-</day>
-<day value="8,13">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="10"/>
-<property name="TotalPerWave"       value="10,20"/>
-</day>
-<day value="14">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-<property name="TotalPerWave"       value="4"/>
-</day>
-<day value="15,20">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="10"/>
-<property name="TotalPerWave"       value="10,20"/>
-</day>
-<day value="21">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-<property name="TotalPerWave"       value="4"/>
-</day>
-<day value="22,27">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="20"/>
-<property name="TotalPerWave"       value="20,40"/>
-</day>
-<day value="28">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-<property name="TotalPerWave"       value="4"/>
-</day>
-<day value="29,34">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="20"/>
-<property name="TotalPerWave"       value="20,40"/>
-</day>
-<day value="35">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="3"/>
-<property name="TotalPerWave"       value="6"/>
-</day>
-<day value="36,41">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="25"/>
-<property name="TotalPerWave"       value="25,50"/>
-</day>
-<day value="42">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="3"/>
-<property name="TotalPerWave"       value="6"/>
-</day>
-<day value="43,48">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesSuperHorde"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="25"/>
-<property name="TotalPerWave"       value="25,50"/>
-</day>
-<day value="49">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="4"/>
-<property name="TotalPerWave"       value="8"/>
-</day>
-<day value="56">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="6"/>
-<property name="TotalPerWave"       value="12"/>
-</day>
-<day value="63">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="8"/>
-<property name="TotalPerWave"       value="16"/>
-</day>
-<day value="70">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesScouts"/>
-<property name="Time"               value="Day"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="10"/>
-<property name="TotalPerWave"       value="20"/>
-</day>
--->
-</entityspawner>
-
-<entityspawner name="HordeMeterDynamicSpawnDay" dynamic="true">
-<!-- Base Spawner -->
-<day value="1">
-<property name="EntityGroupName"    value="ZombiesAllMoves"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="1"/>
-</day>
-<day value="2">
-<property name="EntityGroupName"    value="ZombiesAllMoves"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="2"/>
-</day>
-<day value="3,6">
-<property name="EntityGroupName"    value="ZombiesAllMoves"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="3"/>
-</day>
-<day value="7">
-<property name="EntityGroupName"    value="ZombiesAllMoves"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="4"/>
-</day>
-<day value="8,14">
-<property name="EntityGroupName"    value="ZombiesAllMoves"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="5"/>
-</day>
-<day value="15,21">
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="7"/>
-</day>
-<day value="22,49">
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="10"/>
-</day>
-<day value="*">
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="1"/>
-<property name="TotalAlive"         value="15"/>
-</day>
-
-<!-- Horde Mode Spawner 
-<day value="*">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="0"/>
-</day>
-<day value="1">
-<property name="EntityGroupName"    value="ZombiesWasteland"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-</day>
-<day value="7">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-</day>
-<day value="14">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-</day>
-<day value="21">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="1"/>
-</day>
-<day value="28">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-</day>
-<day value="35">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-</day>
-<day value="42">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="2"/>
-</day>
-<day value="49">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="3"/>
-</day>
-<day value="56">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="3"/>
-</day>
-<day value="63">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="3"/>
-</day>
-<day value="70">
-<property name="EntityGroupName"    value="AnimalsBoom"/>
-<property name="Time"               value="Any"/>
-<property name="DelayBetweenSpawns" value="10"/>
-<property name="TotalAlive"         value="4"/>
-</day>
--->
 </entityspawner>
 
 </spawning>
