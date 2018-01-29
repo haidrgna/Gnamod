@@ -35,6 +35,7 @@ Gnamod Base Mod
 <Excludes>
 <Exclude>BaseBeta</Exclude>
 <Exclude>Horde</Exclude>
+<Exclude>HordeBeta</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
@@ -54,6 +55,7 @@ This should only be loaded by anyone that wants to test out what is upcoming. Th
 <Excludes>
 <Exclude>Base</Exclude>
 <Exclude>Horde</Exclude>
+<Exclude>HordeBeta</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
@@ -69,10 +71,12 @@ This should only be loaded by anyone that wants to test out what is upcoming. Th
 Gnamod Horde Mode (UNDER DEVELOPMENT)
 Updated to version 0.9. This will be the last version in this form, the next one will come out in Beta soon but will not be compatible anymore with worlds created by this version. Then after that Beta version is properly balanced will replace this.
 Changes: Improved quest (500 kills before the note needs to be read.), Changed spawns to progress a bit better rather than coming full force on day 4. Now all hell will start breaking lose from day 7, after day 49 passed it will be constant hordes.
+Update 0.91: Slightly reduced horde buildup over time to provide some breathing room for solo players, also increased delay between spawns to hopefully reduce the huge initial wave at nightfall.
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
 <Exclude>BaseBeta</Exclude>
+<Exclude>HordeBeta</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
@@ -91,6 +95,7 @@ Gnamod Necropolis (UNDER DEVELOPMENT)
 <Excludes>
 <Exclude>BaseBeta</Exclude>
 <Exclude>Horde</Exclude>
+<Exclude>HordeBeta</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>
@@ -108,6 +113,7 @@ Gnamod Nomad Mode
 <Excludes>
 <Exclude>BaseBeta</Exclude>
 <Exclude>Horde</Exclude>
+<Exclude>HordeBeta</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>

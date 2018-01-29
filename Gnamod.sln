@@ -611,6 +611,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{0E14D8
 		BaseBeta\Config\utilityai.xml = BaseBeta\Config\utilityai.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HordeBeta", "HordeBeta", "{6EB10018-C505-432B-95DD-7DB9F09AAB1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{ECD50E6E-8342-4C19-B695-4F5037BB7804}"
+	ProjectSection(SolutionItems) = preProject
+		HordeBeta\Config\blocks.xml = HordeBeta\Config\blocks.xml
+		HordeBeta\Config\entityclasses.xml = HordeBeta\Config\entityclasses.xml
+		HordeBeta\Config\gamestages.xml = HordeBeta\Config\gamestages.xml
+		HordeBeta\Config\quests.xml = HordeBeta\Config\quests.xml
+		HordeBeta\Config\rwgmixer.xml = HordeBeta\Config\rwgmixer.xml
+		HordeBeta\Config\spawning.xml = HordeBeta\Config\spawning.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -639,6 +651,7 @@ Global
 		{107867A1-2869-4062-BB6F-6CF0C75167DD} = {161525C4-417F-4C3C-B0E3-202B6343FE26}
 		{92341991-822F-40AB-A8D8-5F6A3882FF3C} = {7B1FEDC0-3C1E-4942-BD97-BA5CA087F70B}
 		{0E14D80E-6B6C-4221-A739-2071E2F7E4EE} = {4712A53F-68B4-43A1-98B0-1205E153F131}
+		{ECD50E6E-8342-4C19-B695-4F5037BB7804} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}
