@@ -2994,15 +2994,15 @@ loot_quality_template=  "leveledLight">
 <lootgroup name="cnt150"> <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="10"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="10"/> <item group="lootSafesRich" prob="10"/> <item group="lootADStock" prob="10"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "false"
-sound_open=             "UseActions/open_corpse"
-sound_close=            "UseActions/close_corpse"
-loot_quality_template=  "leveledNormal">
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledLight">
 <!-- Chance of Loot: 80 -->
 <item group="cnt150" count="1" prob="50"/>
 <item group="cnt150" count="2" prob="25"/>
 <item group="cnt150" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing90Ex"/>
+<item name="casinoCoin" count="0,1000" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 

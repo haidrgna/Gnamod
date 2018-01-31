@@ -62,18 +62,18 @@ diminishingReturns ="0.2"/>
 
 <!-- Special Spawners -->
 <spawner name="SleeperTestChamberGSList">
-<gamestage stage="1"><spawn group="ZombiesFeral" num="1" maxAlive="1" duration="1"/></gamestage>
-<gamestage stage="250"><spawn group="ZombiesBadass" num="1" maxAlive="1" duration="1"/></gamestage>
-<gamestage stage="500"><spawn group="ZombiesFeralRad" num="1" maxAlive="1" duration="1"/></gamestage>
-<gamestage stage="1000"><spawn group="ZombiesBadassRad" num="1" maxAlive="1" duration="1"/></gamestage>
+<gamestage stage="1">             <spawn group="ZombiesFeral" num="1" maxAlive="1" duration="1"/></gamestage>
+<gamestage stage="250">           <spawn group="ZombiesBadass" num="1" maxAlive="1" duration="1"/></gamestage>
+<gamestage stage="500">           <spawn group="ZombiesFeralRad" num="1" maxAlive="1" duration="1"/></gamestage>
+<gamestage stage="1000">          <spawn group="ZombiesBadassRad" num="1" maxAlive="1" duration="1"/></gamestage>
 </spawner>
 <spawner name="SleeperFeral">
-<gamestage stage="1"> <spawn group="ZombiesFeral" num="1" maxAlive="1" duration="1"/> </gamestage>
-<gamestage stage="2000"> <spawn group="ZombiesFeralRad" num="1" maxAlive="1" duration="1"/> </gamestage>
+<gamestage stage="1">             <spawn group="ZombiesFeral" num="1" maxAlive="1" duration="1"/> </gamestage>
+<gamestage stage="2000">          <spawn group="ZombiesFeralRad" num="1" maxAlive="1" duration="1"/> </gamestage>
 </spawner>
 <spawner name="SleeperBadass">
-<gamestage stage="1"> <spawn group="ZombiesBadass" num="1" maxAlive="1" duration="1"/> </gamestage>
-<gamestage stage="2000"> <spawn group="ZombiesBadassRad" num="1" maxAlive="1" duration="1"/> </gamestage>
+<gamestage stage="1">             <spawn group="ZombiesBadass" num="1" maxAlive="1" duration="1"/> </gamestage>
+<gamestage stage="2000">          <spawn group="ZombiesBadassRad" num="1" maxAlive="1" duration="1"/> </gamestage>
 </spawner>
 <spawner name="SleeperFootball">  <gamestage stage="1"><spawn group="ZombiesFootball" num="1" maxAlive="1" duration="1"/></gamestage>  </spawner>
 <spawner name="SleeperMilitary">  <gamestage stage="1"><spawn group="ZombiesMilitary" num="1" maxAlive="1" duration="1"/></gamestage>  </spawner>

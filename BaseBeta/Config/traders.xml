@@ -1252,7 +1252,28 @@ workstations
 	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 
 <trader_info id="6" reset_interval="1" override_buy_markup="2.0" allow_sell="true" min_inventory="25" max_inventory="25" min_items_swapped="25" max_items_swapped="25" />
- 
+
+<trader_info id="7" reset_interval="1" override_buy_markup="0.75" allow_sell="false" min_inventory="25" max_inventory="50" min_items_swapped="25" max_items_swapped="50">
+<trader_items count="all">
+<item group="HordemodeAmmo"     count="10"/>
+<item group="HordemodeFood"     count="2"/>
+<item group="HordemodeDrink"    count="2"/>
+<item group="HordemodeMedical"  count="1"/>
+<item group="HordemodeWeapons"  count="1"/>
+<item group="HordemodeGuns"     count="1"/>
+<item group="HordemodeTools"    count="1"/>
+<item name="StartingKit"        count="1"/>
+</trader_items>
+</trader_info>
+
+<trader_info id="8" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="50" max_inventory="100" min_items_swapped="50" max_items_swapped="100">
+<trader_items count="all">
+<item group="HordemodeStations" count="1"/>
+<item group="HordemodeBuilding" count="24"/>
+</trader_items>
+</trader_info>
+  
+<!--
 <trader_info id="7" reset_interval="1" override_buy_markup="0.75" allow_sell="false" min_inventory="10" max_inventory="25" min_items_swapped="10" max_items_swapped="25">
 <trader_items count="all">
 <item group="HordemodeSupplies"/>
@@ -1311,10 +1332,7 @@ workstations
 <tier_items level="1500,-1" count="all">
 <item group="HordemodeBuildingAllA" count="50"/>
 </tier_items>
-<!--
-<item group="HordemodeStations" count="1"/>
-<item group="HordemodeBuilding" count="24"/>
+</trader_info> 
 -->
-</trader_info>  
   
 </traders>

@@ -503,6 +503,12 @@
 <property name="TimeStayAfterDeath"                 value="300"/>
 <property name="LootListOnDeath"                    value="5"/>
 </entity_class>
+<!-- ============================== Dropped Zombie Backpack ============================================================================================================================================================ -->
+<entity_class name="ZombieLoot"                     extends="Backpack">
+<property name="Class"                              value="EntityLootContainer"/>
+<property name="TimeStayAfterDeath"                 value="3000"/>
+<property name="LootListOnDeath"                    value="150"/>
+</entity_class>
 <!-- ============================== Dummy Animal  ==================================================================================================================================================================== -->
 <entity_class name="animalDummy"                    extends="Backpack">
 <property name="Parent"                             value="Animals"/>
@@ -3530,7 +3536,7 @@
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="1200"/>
 <property name="ExperienceGain"                     value="2500"/>
-<property name="LootListOnDeath"                    value="1123"/>
+<property name="LootListOnDeath"                    value="123"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
@@ -4651,6 +4657,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4694,6 +4701,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="4500"/>
 <property name="Buffs"                              value="zombieRadiatedBuff80"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4828,6 +4836,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="Swim"/>
 <property name="AITask-2"                           value="ApproachSpot"/>
@@ -4853,6 +4862,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="Swim"/>
 <property name="AITask-2"                           value="ApproachSpot"/>
@@ -4878,6 +4888,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
 <drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
@@ -4896,6 +4907,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
 <drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="8"/>
@@ -4933,6 +4945,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="6"/>
 <drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
@@ -4951,6 +4964,7 @@
 <property name="Buffs"                              value="triggerSuicide"/>
 <property name="TimeStayAfterDeath"                 value="30"/>
 <property name="HandItem"                           value="handSuicide"/>
+<property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="8"/>
 <drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
