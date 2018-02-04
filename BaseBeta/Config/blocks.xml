@@ -1313,7 +1313,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="40"/>
+	<property name="EconomicValue" value="3"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
 </block>
@@ -1419,7 +1419,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="15"/>
+	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1512,8 +1512,8 @@ group desc for stuff like metal siding
 	<property name="UpgradeRated.Rate" value="4"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DescriptionKey" value="concreteGroupDesc"/>
-  <property name="EconomicValue" value="120"/>
-	<property name="EconomicBundleSize" value="1"/>
+  <property name="EconomicValue" value="10"/>
+  <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="137" name="brickNoUpgradeMaster">
@@ -1528,7 +1528,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="16"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="25"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1541,7 +1541,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
-	<property name="EconomicValue" value="25"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 	<!-- 1 Free -->
@@ -1564,7 +1564,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="25"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="150"/>
+	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1680,7 +1680,7 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="4"/>
+	<property name="EconomicValue" value="2"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1776,8 +1776,8 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
-	<property name="EconomicValue" value="2"/>
-	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="10"/>
 </block>
 
 <!-- ****************************  Main Blocks  **************************** -->
@@ -3216,7 +3216,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Group" value="Food/Cooking"/>
-	<property name="EconomicValue" value="12"/>
+	<property name="EconomicValue" value="4"/>
 </block>
 
 <block id="311" name="cntOven">
@@ -4433,9 +4433,8 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Food/Cooking,Building,Science"/>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="2000"/>
 	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 </block>
 
 <block id="423" name="cntBackpack01">
@@ -4512,53 +4511,52 @@ group desc for stuff like metal siding
 </block>
 
 <block id="431" name="mineCandyTin">
-	<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
+	<property name="Class" value="Mine"/>
 	<property name="Material" value="MLandMine"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Traps/trap_mine_tin" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="4"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="45"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-	<property name="Explosion.DamageBonus.stone" value="0.1"/>
-	<property name="Explosion.DamageBonus.metal" value="0.1"/>
-	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.DamageBonus.wood" value="0"/>
-	<property name="Explosion.DamageBonus.water" value="0"/>
-	<property name="CanPickup" value="false"/>
+	<property name="Explosion.RadiusBlocks" value="0"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="Explosion.EntityDamage" value="50"/>
 	<property name="DropScale" value="3"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Science"/>
-	<property name="EconomicValue" value="97"/>
+  <property name="CanPickup" value="true" param1="candyTin"/>
+  <property name="EconomicValue" value="35"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="432" name="mineHubcap">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_hubcap" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="5"/>
-	<property name="Explosion.RadiusBlocks" value="3"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="90"/>
-	<property name="EconomicValue" value="146"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="75"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="433" name="mineAirFilter">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="6"/>
-	<property name="Explosion.RadiusBlocks" value="4"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="180"/>
-	<property name="EconomicValue" value="182"/>
+	<property name="Explosion.RadiusEntities" value="10"/>
+	<property name="Explosion.EntityDamage" value="300"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="110"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="434" name="cntToilet01">
@@ -5332,13 +5330,13 @@ group desc for stuff like metal siding
 	<property name="CustomIcon" value="cookingPot"/> <property name="CustomIconTint" value="a00000"/>
 	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="85"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.EntityDamage" value="75"/>
 	<property name="CanPickup" value="true" param1="cookingPot"/>
-	<property name="EconomicValue" value="120"/>
+  <property name="EconomicValue" value="40"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="527" name="plantedHop1">
@@ -5674,8 +5672,8 @@ group desc for stuff like metal siding
 		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
 	</property>
 	<property class="RepairItems">
-		<property name="rockSmall" value="50"/>
-		<property name="clayLump" value="50"/>
+		<property name="rockSmall" value="250"/>
+		<property name="clayLump" value="250"/>
 		<property name="leather" value="20"/>
 	</property>
 	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
@@ -5687,7 +5685,7 @@ group desc for stuff like metal siding
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="DescriptionKey" value="forgeDesc"/>
-	<property name="EconomicValue" value="214"/>
+	<property name="EconomicValue" value="250"/>
 </block>
 
 <block id="557" name="cntMunitionsBox">	<!-- military ammo -->
@@ -12914,27 +12912,25 @@ group desc for stuff like metal siding
 	<property name="CustomIcon" value="rScrapIronPlate"/>
 	<property name="Class" value="Mine"/>
 	<property name="Material" value="MLandMine"/>
-	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="StabilitySupport" value="false"/> 
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
 	<property name="Texture" value="352"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="75"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-	<property name="Explosion.DamageBonus.stone" value="0.1"/>
-	<property name="Explosion.DamageBonus.metal" value="0.1"/>
-	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.DamageBonus.wood" value="0"/>
-	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.RadiusBlocks" value="0"/>
+	<property name="Explosion.RadiusEntities" value="7"/>
+	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="Explosion.EntityDamage" value="100"/>
 	<property name="CanPickup" value="false"/>
 	<property name="DropScale" value="3"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Science"/>
-	<property name="EconomicValue" value="115"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="60"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="1409" name="window03WoodBroke1">
@@ -14347,8 +14343,8 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="cementMixerDesc"/>
-	<property name="EconomicValue" value="1544"/>
 	<property name="Group" value="Building,Science"/>
+  <property name="EconomicValue" value="2500"/>
 </block>
 
 <block id="1562" name="bedroll">
@@ -14416,8 +14412,8 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="workbenchDesc"/>
-	<property name="EconomicValue" value="776"/>
 	<property name="Group" value="Building,Science"/>
+  	<property name="EconomicValue" value="1750"/>
 </block>
 
 <block id="1564" name="treePlantedWinterPine1m">
@@ -14937,7 +14933,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
 	<drop event="Destroy" count="0"/>
 
-	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicValue" value="2600"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 	<property name="Group" value="Science"/>
@@ -14968,7 +14964,7 @@ group desc for stuff like metal siding
 	<property name="BuffChance" value="0.8"/>
 
 	<property name="FireSound" value="pump_shotgun_fire"/>
-	<property name="EconomicValue" value="2500"/>
+	<property name="EconomicValue" value="2100"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
 <!-- Free -->
@@ -15830,7 +15826,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="1250"/>
 </block>
 
 <block id="2002" name="switch">
@@ -15916,7 +15912,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
-	<property name="EconomicValue" value="400"/>
+	<property name="EconomicValue" value="560"/>
 </block>
 
 <block id="2006" name="electricwirerelay">
@@ -15936,7 +15932,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
-	<property name="EconomicValue" value="28"/>
+	<property name="EconomicValue" value="50"/>
 </block>
 
 <block id="2007" name="pressureplate">
@@ -16016,7 +16012,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
-	<property name="EconomicValue" value="119"/>
+	<property name="EconomicValue" value="300"/>
 </block>
 
 <block id="2010" name="bladeTrap">
@@ -16042,7 +16038,6 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="RequiredPower" value="20"/>
-	<property name="EconomicValue" value="444"/>
 	<property name="Group" value="Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
@@ -16057,7 +16052,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="444"/>
+	<property name="EconomicValue" value="600"/>
 </block>
 
 <block id="2011" name="dartTrap">
@@ -16087,7 +16082,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="220"/>
+	<property name="EconomicValue" value="600"/>
 </block>
 
 <block id="2012" name="rampCornerCutoutTest">
@@ -16183,11 +16178,11 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="EconomicValue" value="310"/>
 	<property name="Group" value="Science"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+  <property name="EconomicValue" value="250"/>
 </block>
 
 <block id="2021" name="industrialLight01_player">
@@ -16290,7 +16285,7 @@ group desc for stuff like metal siding
 	<property name="Group" value="Science"/>
 	<drop event="Destroy" name="wood" count="5"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
-	<property name="EconomicValue" value="16"/>
+	<property name="EconomicValue" value="35"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
 
@@ -16344,8 +16339,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="scrapIron" count="5,10"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="135"/>
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
+  	<property name="EconomicValue" value="350"/>
 </block>
 
 <block id="2039" name="HordeLoot">

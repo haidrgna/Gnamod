@@ -1141,6 +1141,14 @@
 		</effect>
 	</player_skill>
 
+  <perk name="Vendoneer" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
+    <effect name="Bartering">
+      <add skill_level="1" value="0.10"/>
+      <add skill_level="2" value="0.30"/>
+      <add skill_level="3" value="0.60"/>
+    </effect>
+  </perk>
+  
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
 		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="20"/>
 		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="40"/>

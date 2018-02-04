@@ -950,7 +950,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="flagstoneBlock"             count="100,250"/>
 <item name="cobblestoneBlock"           count="100,250"/>
 <item name="brickBlock"                 count="100,250"/>
-<item name="concreteBlock"              count="100,250"/>
+<item name="pouredConcreteBlock"        count="100,250"/>
 <item name="rebarFrameBlock"            count="100,250"/>
 <item name="scrapIronFrameBlock"        count="100,250"/>
 <item name="woodFrameBlock"             count="100,250"/>
@@ -998,7 +998,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="flagstoneBlock"             count="50"/>
 <item name="cobblestoneBlock"           count="50"/>
 <item name="brickBlock"                 count="50"/>
-<item name="concreteBlock"              count="50"/>
+<item name="pouredConcreteBlock"        count="50"/>
 <item name="rebarFrameBlock"            count="50"/>
 <item name="scrapIronFrameBlock"        count="50"/>
 <item name="woodFrameBlock"             count="50"/>
@@ -1042,7 +1042,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="flagstoneBlock"             count="1"/>
 <item name="cobblestoneBlock"           count="1"/>
 <item name="brickBlock"                 count="1"/>
-<item name="concreteBlock"              count="1"/>
+<item name="pouredConcreteBlock"        count="1"/>
 <item name="rebarFrameBlock"            count="1"/>
 <item name="scrapIronFrameBlock"        count="1"/>
 <item name="woodFrameBlock"             count="1"/>
@@ -1249,11 +1249,11 @@ workstations
 	</trader_info>
 
 	<!-- Rented - Vending Machine -->
-	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
+<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 
-<trader_info id="6" reset_interval="1" override_buy_markup="2.0" allow_sell="true" min_inventory="25" max_inventory="25" min_items_swapped="25" max_items_swapped="25" />
+<trader_info id="6" reset_interval="1" override_buy_markup="2.0" allow_sell="true" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100" />
 
-<trader_info id="7" reset_interval="1" override_buy_markup="0.75" allow_sell="false" min_inventory="25" max_inventory="50" min_items_swapped="25" max_items_swapped="50">
+<trader_info id="7" reset_interval="1" allow_sell="false" min_inventory="25" max_inventory="50" min_items_swapped="25" max_items_swapped="50">
 <trader_items count="all">
 <item group="HordemodeAmmo"     count="10"/>
 <item group="HordemodeFood"     count="2"/>
@@ -1266,7 +1266,7 @@ workstations
 </trader_items>
 </trader_info>
 
-<trader_info id="8" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="50" max_inventory="100" min_items_swapped="50" max_items_swapped="100">
+<trader_info id="8" reset_interval="1" allow_sell="false" min_inventory="50" max_inventory="100" min_items_swapped="50" max_items_swapped="100">
 <trader_items count="all">
 <item group="HordemodeStations" count="1"/>
 <item group="HordemodeBuilding" count="24"/>

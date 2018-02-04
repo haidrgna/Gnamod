@@ -2991,9 +2991,9 @@ loot_quality_template=  "leveledLight">
 </lootcontainer>
   
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="25"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="10"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="10"/> <item group="lootSafesRich" prob="10"/> <item group="lootADStock" prob="10"/> </lootgroup>
+<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="15"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="10"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="3" 
-destroy_on_close=       "false"
+destroy_on_close=       "true"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "leveledLight">

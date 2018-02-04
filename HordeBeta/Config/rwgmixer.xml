@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rwgmixer><world ruleset="base"/>
+<rwgmixer><world ruleset="horde"/>
 
 <rulesets>
 <!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/>  </ruleset>
@@ -1417,7 +1417,7 @@
 </biome_intensity_generator>
 </biome_intensity_generators>
 
-<!-- Gnamod Base Biome Spawning -->
+<!-- Gnamod Base Biome Spawning 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
@@ -1453,8 +1453,8 @@
 
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
-
-<!-- Gnamod Horde Mode Biome Spawning
+-->
+<!-- Gnamod Horde Mode Biome Spawning -->
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
 <biome_spawn_rule name="plains">          <distance_from_center range="1,100"/>         </biome_spawn_rule>
@@ -1467,7 +1467,7 @@
 <biome_spawn_rule name="radiated">        <distance_from_center range="1100,2000"/>     </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
--->
+
   
 <!-- Biome Test
 <biome_spawn_rules>
