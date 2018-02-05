@@ -86,7 +86,7 @@ Update 0.91: Slightly reduced horde buildup over time to provide some breathing 
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>  
-
+<!--
 <Server Name="Gnamod Horde Mode Testversion" Logo="">
 <Description>
 Gnamod Horde Mode Testversion.***THIS IS A TESTVERSION OF THE LATEST GNAMOD HORDE MODE. IT IS FULLY PLAYABLE BUT RIGHT NOW IT IS NOT BALANCED. IF YOU WANT TO KEEP PLAYING A WORLD, TURN AUTO UPDATING OFF!***
@@ -104,6 +104,25 @@ How to use this version: You can test this version solo and are allowed to recor
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>  
+-->
+<Server Name="Gnamod Horde Mode Testversion" Logo="">
+<Description>
+Gnamod Horde Mode Testversion. ***THIS IS A TESTVERSION OF THE LATEST GNAMOD HORDE MODE. IT IS FULLY PLAYABLE BUT RIGHT NOW IT IS NOT BALANCED. IF YOU WANT TO KEEP PLAYING A WORLD, TURN AUTO UPDATING OFF!***
+How to use this version: You can test this version solo and are allowed to record or stream this, but I am contiually working on this and adding or changing things around. Save files might not be compatible with previous versions of Gnamod and it is possible that in-between updates the world you are playing is no longer compatible with the current version.
+Nothing in this version is final and if you find bugs please report them in the forum post.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Horde</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>
 
 <Server Name="Gnamod Necropolis" Logo="">
 <Description>
