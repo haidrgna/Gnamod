@@ -3249,7 +3249,7 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="4"/> </property>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="CanPickup" value="true"/>
 	<property name="EconomicValue" value="11"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -4611,6 +4611,7 @@ group desc for stuff like metal siding
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Destroy" count="0"/>
 </block>
   
@@ -4618,7 +4619,7 @@ group desc for stuff like metal siding
 <property name="CreativeMode" value="None"/>
 <property name="Material" value="MstainlessSteel"/>
 <property name="Model" value="floor_trap_3x3"/>
-<property name="MultiBlockDim" value="3,1,3"/>
+<property name="MultiBlockDim" value="5,1,5"/>
 <property name="Shape" value="New"/>
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267"/>
@@ -4632,6 +4633,7 @@ group desc for stuff like metal siding
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="PlantGrowing.GrowOnTop" value="BeaconPlant1"/>
 <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -4681,7 +4683,8 @@ group desc for stuff like metal siding
 <property name="HeatMapFrequency" value="4"/>
 <property name="DowngradeBlock" value="BeaconBrokenSection"/>
 <property name="PassThroughDamage" value="true"/>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -4706,7 +4709,8 @@ group desc for stuff like metal siding
 <property name="RadiusEntities" value="20"/>
 <property name="EntityDamage" value="99999"/>
 </property>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -4722,7 +4726,8 @@ group desc for stuff like metal siding
 <property name="Class" value="VendingMachine"/>
 <property name="TraderID" value="6"/>
 <property name="Buff" value="hitTag"/>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
   
@@ -4731,7 +4736,7 @@ group desc for stuff like metal siding
 <property name="Extends" value="BeaconDisposalUnit"/>
 <property name="Texture" value="267,267,25,25,25,25"/>  
 <property name="TraderID" value="7"/>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -4740,7 +4745,7 @@ group desc for stuff like metal siding
 <property name="Extends" value="BeaconDisposalUnit"/>
 <property name="Texture" value="267,267,266,266,266,266"/>
 <property name="TraderID" value="8"/>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -4753,7 +4758,8 @@ group desc for stuff like metal siding
 <property name="HeatMapTime" value="2400"/>
 <property name="HeatMapFrequency" value="4"/>
 <property name="ParticleName" value="signal_flarePrefab"/>
-<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>  
 
@@ -4776,6 +4782,7 @@ group desc for stuff like metal siding
 <property name="PassThroughDamage" value="true"/>
 <property name="DowngradeBlock" value="BeaconFlagBroken"/>
 <property name="PassThroughDamage" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Destroy" count="0"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 </block>
@@ -4800,10 +4807,27 @@ group desc for stuff like metal siding
 <property name="RadiusEntities" value="20"/>
 <property name="EntityDamage" value="99999"/>
 </property>
+<property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Destroy" count="0"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 </block>
 
+<block id="451" name="WorldBeacon">
+<property name="CreativeMode" value="Dev"/>
+<property name="Material" value="MstainlessSteel"/>
+<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<property name="Texture" value="267"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="BeaconSeed"/>
+<property name="PlantGrowing.GrowthRate" value="0.05"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
+</block>
 <!-- 451 - 462 Free -->
   
 <block id="463" name="bed01">
@@ -5234,6 +5258,7 @@ group desc for stuff like metal siding
 	<property name="Weight" value="30"/>
 	<property name="CanPickup" value="true"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 </block>
 
@@ -5293,6 +5318,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="leather" count="2,4"/>
 	<drop event="Destroy" name="scrapIron" count="5,15"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="65"/>
 </block>
 

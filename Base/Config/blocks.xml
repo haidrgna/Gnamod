@@ -3293,7 +3293,7 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="4"/> </property>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="CanPickup" value="true"/>
 	<property name="EconomicValue" value="11"/>
 	<property name="EconomicBundleSize" value="2"/>
@@ -5203,6 +5203,7 @@ kind of free
 	<property name="Weight" value="30"/>
 	<property name="CanPickup" value="true"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 </block>
 
@@ -5262,6 +5263,7 @@ kind of free
 	<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="leather" count="2,4"/>
 	<drop event="Destroy" name="scrapIron" count="5,15"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="65"/>
 </block>
 
