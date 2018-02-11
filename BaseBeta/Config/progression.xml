@@ -877,8 +877,9 @@
 		<recipe name="generatorbank" unlock_level="1"/>
 	</perk>
 
-	<perk name="electricBatteryBankPerk" icon="battery" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
-		<recipe name="batterybank" unlock_level="1"/>
+	<perk name="electricBatteryBankPerk" icon="battery" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+    <requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+    <recipe name="batterybank" unlock_level="1"/>
 	</perk>
 
 	<perk name="doItYourselfPerk" icon="misc_crafting" description_key="doItYourselfDesc" title_key="doItYourselfName" max_level="3" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="science">
@@ -1126,6 +1127,7 @@
 		</effect>
 	</perk>
 
+<!-- Gnamod Bartering 
 	<player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>
@@ -1140,15 +1142,7 @@
 			<add skill_level="90,100" value="0.56,0.60"/>
 		</effect>
 	</player_skill>
-  
-<!--  <perk name="Vendoneer" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
-    <effect name="Bartering">
-      <add skill_level="1" value="0.10"/>
-      <add skill_level="2" value="0.30"/>
-      <add skill_level="3" value="0.60"/>
-    </effect>
-  </perk>
-  -->
+ 
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
 		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="20"/>
 		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="40"/>
@@ -1160,7 +1154,59 @@
 			<add skill_level="3" value="1500"/>
 		</effect>
 	</perk>
+-->
+  
+<!-- Gnamod Horde Mode Bartering -->
+<player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" max_level="1" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
+<effect name="Bartering">
+<add skill_level="1" value="0.25,0.25"/>
+</effect>
+</player_skill>
 
+<perk name="Vendoneer" icon="safe" description="Vendoneer Description" title="Vendoneer" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="scavenging">
+<requirement perk_level="1" required_skill_name="Barter" required_skill_level="1"/>
+<requirement perk_level="1" required_player_level="2"/>
+<requirement perk_level="2" required_player_level="5"/>
+<requirement perk_level="3" required_player_level="10"/>
+<requirement perk_level="4" required_player_level="20"/>
+<requirement perk_level="5" required_player_level="30"/>
+<requirement perk_level="6" required_player_level="40"/>
+<requirement perk_level="7" required_player_level="50"/>
+<requirement perk_level="8" required_player_level="60"/>
+<requirement perk_level="9" required_player_level="80"/>
+<requirement perk_level="10" required_player_level="100"/>
+
+<effect name="Bartering">
+<add skill_level="0"  value="0.00"/>
+<add skill_level="1"  value="0.20"/>
+<add skill_level="2"  value="0.40"/>
+<add skill_level="3"  value="0.60"/>
+<add skill_level="4"  value="0.80"/>
+<add skill_level="5"  value="1.00"/>
+<add skill_level="6"  value="1.20"/>
+<add skill_level="7"  value="1.40"/>
+<add skill_level="8"  value="1.60"/>
+<add skill_level="9"  value="1.80"/>
+<add skill_level="10" value="2.00"/>
+</effect>
+
+<effect name="SecretStash">
+<add skill_level="0"  value="0"/>
+<add skill_level="1"  value="100"/>
+<add skill_level="2"  value="200"/>
+<add skill_level="3"  value="300"/>
+<add skill_level="4"  value="400"/>
+<add skill_level="5"  value="500"/>
+<add skill_level="6"  value="600"/>
+<add skill_level="7"  value="700"/>
+<add skill_level="8"  value="800"/>
+<add skill_level="9"  value="900"/>
+<add skill_level="10" value="1000"/>
+</effect>
+
+</perk>
+
+  
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">
 	</perk>

@@ -1502,7 +1502,7 @@ Mesh files no longer used:
 		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
-	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
@@ -1552,7 +1552,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="1"/>
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
-	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
@@ -1602,7 +1602,7 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
 		<property name="ActionExp" value="1"/>
 	</property>
-	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
@@ -1627,7 +1627,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="500,1400"/>
 		<property name="DegradationRate" value="1,1"/>
 	</property>
-	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -1855,7 +1855,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="Group" value="Resources,Chemicals"/>
+	<property name="Group" value="Chemicals"/>
 </item>
 
 
@@ -7717,7 +7717,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="50"/> <!-- STK repairKit -->
 	<property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="2500"/>
-	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
   <property name="EconomicValue" value="100"/>
   <property name="EconomicBundleSize" value="1"/>
@@ -7752,7 +7752,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="organic"/>
 	<property name="Stacknumber" value="2500"/> <!-- STK ammo -->
-	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
   <property name="EconomicValue" value="1"/>
@@ -7767,7 +7767,7 @@ Mesh files no longer used:
 	<property name="FuelValue" value="20"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="CraftingIngredientTime" value="15"/>
-	<property name="Group" value="Chemicals,Food/Cooking"/>
+	<property name="Group" value="Resources,Chemicals"/>
   <property name="EconomicValue" value="2"/>
   <property name="EconomicBundleSize" value="1"/>
 </item>
@@ -8796,11 +8796,11 @@ Mesh files no longer used:
 <!-- ==================== No Ammo ==================== -->
 <item id="1500"                           name="No Ammo">
 <property name="CreativeMode"             value="Dev"/>
-<property name="Meshfile"                 value="Items/Misc/sackPrefab" />
+<property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="Material"                 value="lead" />
 <property name="HoldType"                 value="45" />
 <property name="Stacknumber"              value="250" />
-<property name="Group"                    value="Ammo/Weapons" />
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true" />
 <property name="EntityDamage"             value="0" />
@@ -8815,7 +8815,7 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="7"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
@@ -8853,7 +8853,7 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="8"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
@@ -8889,7 +8889,7 @@ Mesh files no longer used:
 <property name="Material"                 value="brass"/>
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="10"/>
 <!-- Damage -->
@@ -8927,7 +8927,7 @@ Mesh files no longer used:
 <property name="Material"                 value="brass"/>
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="18"/>
 <!-- Damage -->
@@ -8965,7 +8965,7 @@ Mesh files no longer used:
 <property name="Material"                 value="brass"/>
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="20"/>
 <!-- Damage -->
@@ -9003,7 +9003,7 @@ Mesh files no longer used:
 <property name="Material"                 value="brass"/>
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="10"/>
 <!-- Damage -->
@@ -9043,7 +9043,7 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property name="EconomicValue"            value="18"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
@@ -9081,7 +9081,7 @@ Mesh files no longer used:
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"            value="3"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
@@ -9098,7 +9098,7 @@ Mesh files no longer used:
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"            value="3"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
@@ -9115,7 +9115,7 @@ Mesh files no longer used:
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"            value="10"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
@@ -9174,7 +9174,7 @@ Mesh files no longer used:
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"            value="6"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
@@ -9233,7 +9233,7 @@ Mesh files no longer used:
 <property name="HoldType"                 value="21"/>
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"            value="7"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
@@ -9310,7 +9310,7 @@ Mesh files no longer used:
 <property name="LifeTime"                 value="8"/>
 </property>
 <property name="CraftingSkillGroup"       value="craftSkillScience"/>
-<property name="Group"                    value="Ammo/Weapons"/>
+<property name="Group"                    value="Resources,Ammo/Weapons"/>
 </item>
 <!--
 <item id="1554"                           name="rocketNG">
@@ -9637,7 +9637,7 @@ Mesh files no longer used:
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12"/>
 	</property>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="20,35"/>
 		<property name="BlockDamage" value="3,5"/>
@@ -9720,7 +9720,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="1,5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Resources,Ammo/Weapons"/>
 </item> -->
 
 <item id="171" name="ironCrossbowBolt">
@@ -9751,7 +9751,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="6,10"/>
 		<property name="ApplyBuff" value="0.35,0.35" param1="arrowCriticalBleedout"/>
 	</property>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="1"/>
@@ -10188,7 +10188,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.20,0.18,0.16,0,0.15,0.13,0.11,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.12,0.12,0.12,0,0.12,0.12,0.12,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4"/>
   <property name="DamageBonus.torso"          value="0.5"/>
@@ -10227,7 +10227,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.18,0.16,0.14,0,0.13,0.11,0.09,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.11,0.11,0.11,0,0.11,0.11,0.11,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.25"/>
 </property>
@@ -10252,7 +10252,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.16,0.14,0.12,0,0.12,0.10,0.08,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.10,0.10,0.10,0,0.10,0.10,0.10,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.5"/>
 </property>
@@ -10556,7 +10556,7 @@ Mesh files no longer used:
 <property name="Attachments"                  value="flashlight02"/>
 <property name="TintColor"                    value="255,255,255"/>
 <property name="CrosshairOnAim"               value="false"/>
-<property name="CrosshairUpAfterShot"         value="true"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <property name="Sound_Sight_In"               value="smg_sight_in"/>
 <property name="Sound_Sight_Out"              value="smg_sight_out"/>
 <!-- Parts -->
@@ -11020,11 +11020,11 @@ Mesh files no longer used:
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="3"/>
-  <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.10,0.09,0.08,0,0.10,0.09,0.08,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.07,0.07,0.07,0,0.07,0.07,0.07,0"/>
   <!-- Damage Behavior-->
-  <property name="DamageBonus.head"           value="4.5"/>
+  <property name="DamageBonus.head"           value="5.5"/>
   <property name="DamageBonus.torso"          value="1"/>
   <property name="DamageBonus.wood"           value="1.5"/>
   <property name="DamageBonus.earth"          value="0"/>
@@ -11067,9 +11067,9 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="5"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.09,0.08,0.07,0,0.09,0.08,0.07,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.06,0.06,0.06,0,0.06,0.06,0.06,0"/>
   <!-- Damage Behavior-->
-  <property name="DamageBonus.head"           value="4.75"/>
+  <property name="DamageBonus.head"           value="5.75"/>
 </property>
 </item>  
 
@@ -11096,11 +11096,11 @@ Mesh files no longer used:
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="5"/>
-  <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.08,0.07,0.06,0,0.08,0.07,0.06,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.05,0.05,0.05,0,0.05,0.05,0.05,0"/>
   <!-- Damage Behavior-->
-  <property name="DamageBonus.head"           value="5"/>
+  <property name="DamageBonus.head"           value="6"/>
 </property>
 </item>  
   
@@ -11238,7 +11238,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="5"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.06,0.05,0.04,0,0.06,0.05,0.04,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.03,0.03,0.03,0,0.03,0.03,0.03,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.5"/>
   <property name="DamageBonus.torso"          value="0.75"/>
@@ -11284,7 +11284,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.05,0.04,0.03,0,0.05,0.04,0.03,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.02,0.02,0.02,0,0.02,0.02,0.02,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.75"/>
 </property>
@@ -11320,7 +11320,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.04,0.03,0.02,0,0.04,0.03,0.02,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.01,0.01,0.01,0,0.01,0.01,0.01,0"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="6"/>
 </property>

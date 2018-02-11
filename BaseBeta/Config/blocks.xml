@@ -1369,6 +1369,7 @@ group desc for stuff like metal siding
 	<property name="IsPlant" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 	<property name="ImposterExclude" value="true"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="10,50"/>
   <drop event="Destroy" name="feather" count="3,7" prob="0.25"/>
 </block>
@@ -2342,6 +2343,7 @@ group desc for stuff like metal siding
 
 <block id="210" name="brickBlock">
 	<property name="Extends" value="brickMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock"/> </property>
 </block>
 
@@ -2646,6 +2648,7 @@ group desc for stuff like metal siding
 
 <block id="246" name="pouredConcreteBlock">
 	<property name="CreativeMode" value="Player"/>
+  <property name="Group" value="Building"/>
 	<property name="Extends" value="pouredConcreteMaster"/>
 	<property name="UpgradeRated.ToBlock" value="concreteBlock"/>
 </block>
@@ -5935,7 +5938,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="treeMaster"/>
 	<property name="Material" value="treeWoodLarge"/>
 	<property name="Model" value="Entities/Trees/Maple81Prefab"/>
-	<property name="ModelOffset" value="0,-0.3,0"/>
+	<property name="ModelOffset" value="0,-0.6,0"/>
 	<property name="MultiBlockDim" value="1,10,1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
@@ -8196,6 +8199,7 @@ group desc for stuff like metal siding
 
 <block id="785" name="cobblestoneBlock">
 	<property name="Extends" value="cobblestoneMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock"/> </property>
 </block>
 
@@ -9654,6 +9658,7 @@ group desc for stuff like metal siding
 
 <block id="948" name="flagstoneBlock">
 	<property name="Extends" value="flagstoneMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneBlock"/> </property>
 </block>
 
@@ -16370,7 +16375,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="2039" name="HordeLoot">
-<property name="Material" value="cloth" />
+<property name="Material" value="MTreasureBags" />
 <property name="MaxDamage" value="2000"/>
 <property name="StabilitySupport" value="false" />
 <property name="Shape" value="Ext3dModel" />
@@ -16394,7 +16399,7 @@ group desc for stuff like metal siding
 <block id="2040" name="cntHordeZombieLoot">
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="Loot"/>
-<property name="Material" value="cloth"/>
+<property name="Material" value="MTreasureBags"/>
 <property name="MaxDamage" value="2000"/>
 <property name="StabilitySupport" value="false"/>
 <property name="Shape" value="Ext3dModel"/>

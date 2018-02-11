@@ -2525,13 +2525,13 @@ loot_quality_template=  "leveledLight">
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_supply_crate"
 sound_close=            "UseActions/close_supply_crate"
-loot_quality_template=  "leveledLight">
+loot_quality_template=  "unleveled">
 <!-- Chance of Loot: 80 -->
-<item group="cnt070" count="1" prob="20"/>
-<item group="cnt070" count="2" prob="55"/>
-<item group="cnt070" count="3" prob="5"/>
+<item group="cnt070" count="2" prob="20"/>
+<item group="cnt070" count="3" prob="55"/>
+<item group="cnt070" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt070" loot_prob_template="nothing33"/>
+<item name="casinoCoin" count="2500,5000" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== TREASURE CHESTS (BASIC) ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt071"> <item group="lootTreasureBasic" prob="100"/>  </lootgroup>
@@ -3002,7 +3002,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt150" count="2" prob="25"/>
 <item group="cnt150" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item name="casinoCoin" count="0,1000" loot_prob_template="nothing66Ex"/>
+<item name="casinoCoin" count="666,1337" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 
