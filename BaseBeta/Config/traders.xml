@@ -1038,15 +1038,15 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_item_group>
 
 <trader_item_group name="MaterialsRare">
-<item name="concreteMix"                count="25,250"      prob="0.100"/>
-<item name="steelPolish"                count="25,250"      prob="0.100"/>
-<item name="forgedSteel"                count="25,250"      prob="0.100"/>
+<item name="concreteMix"                count="25,250"      prob="0.300"/>
+<item name="steelPolish"                count="25,250"      prob="0.150"/>
+<item name="forgedSteel"                count="25,250"      prob="0.250"/>
 <item name="ductTape"                   count="5,50"        prob="0.100"/>
-<item name="militaryFiber"              count="5,25"        prob="0.100"/>
-<item name="electricParts"              count="5,25"        prob="0.100"/>
-<item name="electronicParts"            count="5,25"        prob="0.100"/>
-<item name="hubcap"                     count="10,50"       prob="0.100"/>
-<item name="airFilter"                  count="10,50"       prob="0.100"/>
+<item name="militaryFiber"              count="5,25"        prob="0.050"/>
+<item name="electricParts"              count="5,25"        prob="0.050"/>
+<item name="electronicParts"            count="5,25"        prob="0.050"/>
+<item name="hubcap"                     count="10,50"       prob="0.025"/>
+<item name="airFilter"                  count="10,50"       prob="0.025"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingStations">
@@ -1056,14 +1056,23 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="chemistryStation"           count="1"           prob="0.200"/>
 </trader_item_group>
 
-<trader_item_group name="BuildingTraps">
+<trader_item_group name="BuildingElectricity">
 <item name="electricwirerelay"          count="2,10"        prob="0.100"/>
 <item name="electricfencepost"          count="2,10"        prob="0.100"/>
-<item name="dartTrap"                   count="1,2"         prob="0.100"/>
-<item name="shotgunTurret"              count="1,2"         prob="0.100"/>
-<item name="autoTurret"                 count="1,2"         prob="0.100"/>
-<item name="bladeTrap"                  count="1,4"         prob="0.100"/>
-<item name="spotlightPlayer"            count="1,4"         prob="0.100"/>
+<item name="generatorbank"              count="1,2"         prob="0.100"/>
+<item name="solarbank"                  count="1,2"         prob="0.100"/>
+<item name="batterybank"                count="1,2"         prob="0.100"/>
+<item name="smallEngine"                count="1,2"         prob="0.100"/>
+<item name="carBattery"                 count="1,2"         prob="0.100"/>
+<item name="solarCell"                  count="1,2"         prob="0.100"/>
+</trader_item_group>
+
+<trader_item_group name="BuildingTraps">
+<item name="dartTrap"                   count="1,2"         prob="0.200"/>
+<item name="shotgunTurret"              count="1,2"         prob="0.150"/>
+<item name="autoTurret"                 count="1,2"         prob="0.150"/>
+<item name="bladeTrap"                  count="1,4"         prob="0.250"/>
+<item name="spotlightPlayer"            count="1,4"         prob="0.250"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksCommon">
@@ -1097,10 +1106,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="FoodRaw"                   prob="0.100"/>
 <item group="FoodCooked"                prob="0.010"/>
 <item group="FoodDrinks"                prob="0.100"/>
-<item group="MedicalHealing"            prob="0.070"/>
-<item group="MedicalRemedy"             prob="0.040"/>
-<item group="Supplies"                  prob="0.070"/>
-<item group="Armor"                     prob="0.080"/>
+<item group="MedicalHealing"            prob="0.020"/>
+<item group="MedicalRemedy"             prob="0.020"/>
+<item group="Supplies"                  prob="0.040"/>
+<item group="Armor"                     prob="0.180"/>
 </trader_item_group>
 
 </trader_item_groups>
@@ -1325,83 +1334,91 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_items>
 
 <tier_items level="1,99"            count="all">
-<item group="MaterialsBasic"        count="5"/>
+<item group="MaterialsBasic"        count="4"/>
 <item group="MaterialsCommon"       count="5"/>
 <item group="MaterialsRare"         count="0,5"/>
 <item group="BuildingBlocksCommon"  count="2,5"/>
 <item group="BuildingBlocksRare"    count="0,5"/>
 <item group="BuildingStations"      count="0,2"/>
-<item group="BuildingTraps"         count="0,3"/>
+<item group="BuildingTraps"         count="0,2"/>
+<item group="BuildingElectricity"   count="0,2"/>
 </tier_items>
 
 <tier_items level="100,199"         count="all">
-<item group="MaterialsBasic"        count="5"/>
+<item group="MaterialsBasic"        count="4"/>
 <item group="MaterialsCommon"       count="5"/>
 <item group="MaterialsRare"         count="2,5"/>
 <item group="BuildingBlocksCommon"  count="3,5"/>
 <item group="BuildingBlocksRare"    count="2,5"/>
 <item group="BuildingStations"      count="1,2"/>
-<item group="BuildingTraps"         count="2,3"/>
+<item group="BuildingTraps"         count="1,2"/>
+<item group="BuildingElectricity"   count="1,2"/>
 </tier_items>
 
 <tier_items level="200,299"         count="all">
-<item group="MaterialsBasic"        count="5"/>
+<item group="MaterialsBasic"        count="4"/>
 <item group="MaterialsCommon"       count="5"/>
 <item group="MaterialsRare"         count="5"/>
 <item group="BuildingBlocksCommon"  count="5"/>
 <item group="BuildingBlocksRare"    count="5"/>
 <item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="3"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
 </tier_items>
 
 <tier_items level="300,399"         count="all">
-<item group="MaterialsBasic"        count="10"/>
+<item group="MaterialsBasic"        count="9"/>
 <item group="MaterialsCommon"       count="10"/>
 <item group="MaterialsRare"         count="5"/>
 <item group="BuildingBlocksCommon"  count="5"/>
 <item group="BuildingBlocksRare"    count="5"/>
 <item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="3"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
 </tier_items>
 
 <tier_items level="400,499"         count="all">
-<item group="MaterialsBasic"        count="10"/>
+<item group="MaterialsBasic"        count="9"/>
 <item group="MaterialsCommon"       count="10"/>
 <item group="MaterialsRare"         count="10"/>
 <item group="BuildingBlocksCommon"  count="10"/>
 <item group="BuildingBlocksRare"    count="5"/>
 <item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="3"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
 </tier_items>
 
 <tier_items level="500,599"         count="all">
-<item group="MaterialsBasic"        count="10"/>
+<item group="MaterialsBasic"        count="9"/>
 <item group="MaterialsCommon"       count="10"/>
 <item group="MaterialsRare"         count="10"/>
 <item group="BuildingBlocksCommon"  count="10"/>
 <item group="BuildingBlocksRare"    count="12"/>
 <item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="5"/>
+<item group="BuildingTraps"         count="3"/>
+<item group="BuildingElectricity"   count="3"/>
 </tier_items>
 
 <tier_items level="600,699"         count="all">
-<item group="MaterialsBasic"        count="12"/>
+<item group="MaterialsBasic"        count="11"/>
 <item group="MaterialsCommon"       count="12"/>
 <item group="MaterialsRare"         count="12"/>
 <item group="BuildingBlocksCommon"  count="12"/>
 <item group="BuildingBlocksRare"    count="12"/>
 <item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="7"/>
+<item group="BuildingTraps"         count="4"/>
+<item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="700,799"         count="all">
-<item group="MaterialsBasic"        count="14"/>
+<item group="MaterialsBasic"        count="13"/>
 <item group="MaterialsCommon"       count="14"/>
 <item group="MaterialsRare"         count="14"/>
 <item group="BuildingBlocksCommon"  count="14"/>
 <item group="BuildingBlocksRare"    count="14"/>
 <item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="7"/>
+<item group="BuildingTraps"         count="4"/>
+<item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="800,899"         count="all">
@@ -1411,7 +1428,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="BuildingBlocksCommon"  count="16"/>
 <item group="BuildingBlocksRare"    count="14"/>
 <item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="8"/>
+<item group="BuildingTraps"         count="4"/>
+<item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="900,999"         count="all">
@@ -1421,7 +1439,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="BuildingBlocksCommon"  count="18"/>
 <item group="BuildingBlocksRare"    count="16"/>
 <item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="8"/>
+<item group="BuildingTraps"         count="4"/>
+<item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="1000,-1"         count="all">
@@ -1431,7 +1450,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="BuildingBlocksCommon"  count="20"/>
 <item group="BuildingBlocksRare"    count="20"/>
 <item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="8"/>
+<item group="BuildingTraps"         count="4"/>
+<item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 </trader_info>

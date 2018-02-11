@@ -9086,7 +9086,7 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="1.0,3.0"/>
+<property name="EntityDamage"             value="2.0,3.0"/>
 <property name="BlockDamage"              value="0.8,1.5"/>
 <property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
 </property>  
@@ -9103,7 +9103,7 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="40,70"/>
+<property name="EntityDamage"             value="50,80"/>
 <property name="BlockDamage"              value="25,50"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
 </property>  
@@ -9867,26 +9867,44 @@ Mesh files no longer used:
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
- 
-<item id="1604"                               name="buckshot20GA">
+
+<item id="1604"                               name="bulletTipNormalUsed">
+<property name="Meshfile"                     value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile"                 value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material"                     value="lead"/>
+<property name="HoldType"                     value="45"/>
+<property name="Stacknumber"                  value="1000"/>
+<property name="EconomicValue"                value="1"/>
+<property name="EconomicBundleSize"           value="1"/>
+<property name="Group"                        value="Resources,Ammo/Weapons"/>
+<property name="CraftingSkillGroup"           value="craftSkillGuns"/>
+</item>
+  
+<item id="1605"                               name="bulletTipLargeUsed">
+<property name="Extends"                      value="bulletTipNormal"/>
+<property name="EconomicValue"                value="3"/>
+<property name="EconomicBundleSize"           value="1"/>
+</item>
+
+<item id="1606"                               name="buckshot20GA">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="2"/>
 </item>
 
-<item id="1605"                               name="buckshot12GA">
+<item id="1607"                               name="buckshot12GA">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1606"                               name="buckshot10GA">
+<item id="1608"                               name="buckshot10GA">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="EconomicValue"                value="2"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1607"                               name="casingNormal">
+<item id="1609"                               name="casingNormal">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="brass"/>
@@ -9895,25 +9913,25 @@ Mesh files no longer used:
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1608"                               name="casingLarge">
+<item id="1610"                               name="casingLarge">
 <property name="Extends"                      value="casingNormal"/>
 <property name="EconomicValue"                value="14"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1609"                               name="casingNormalUsed">
+<item id="1611"                               name="casingNormalUsed">
 <property name="Extends"                      value="casingNormal"/>
 <property name="EconomicValue"                value="5"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1610"                               name="casingLargeUsed">
+<item id="1612"                               name="casingLargeUsed">
 <property name="Extends"                      value="casingNormal"/>
 <property name="EconomicValue"                value="10"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1611"                               name="casingShotgunPaper">
+<item id="1613"                               name="casingShotgunPaper">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="paper"/>
@@ -9922,14 +9940,14 @@ Mesh files no longer used:
 <property name="EconomicBundleSize"           value="2"/>
 </item>
 
-<item id="1612"                               name="casingShotgunPlastic">
+<item id="1614"                               name="casingShotgunPlastic">
 <property name="Extends"                      value="casingShotgunPaper"/>
 <property name="Material"                     value="Mplastics"/>
 <property name="EconomicValue"                value="8"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1613"                               name="musketball">
+<item id="1615"                               name="musketball">
 <property name="Extends"                      value="bulletTipNormal"/>
 <property name="Material"                     value="metal"/>
 <property name="EconomicValue"                value="1"/>
@@ -9976,16 +9994,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="pistol_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmoke"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>
   <!-- Ammo -->
   <property name="Magazine_size"              value="14"/>
   <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.40,0.38,0.36,0,0.30,0.28,0.26,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4"/>
   <property name="DamageBonus.torso"          value="0.5"/>
@@ -10024,7 +10038,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="21"/>
   <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.39,0.37,0.35,0,0.29,0.27,0.25,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.27,0.27,0.27,0.27,0.27,0.27,0.27,0.27"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.25"/>
 </property>
@@ -10032,6 +10046,7 @@ Mesh files no longer used:
 <!--  ==================== Military Grade Pistol ==================== -->
 <item id="1652"                               name="gunPistolMG">
 <property name="Extends"                      value="gunPistol"/>  
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsPistol_gripMG"/>
@@ -10050,7 +10065,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="21"/>
   <property name="Magazine_items"             value="22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo,9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.38,0.36,0.34,0,0.28,0.26,0.24,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.5"/>
 </property>
@@ -10179,16 +10194,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="44magnum_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmoke"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>
   <!-- Ammo -->
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.12,0.12,0.12,0,0.12,0.12,0.12,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.12,0.12,0.12,0.12,0.12,0.12,0.12,0.12"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4"/>
   <property name="DamageBonus.torso"          value="0.5"/>
@@ -10210,6 +10221,7 @@ Mesh files no longer used:
 <!-- ==================== Modified Revolver ==================== -->
 <item id="1662"                               name="gun44MagnumMOD">
 <property name="Extends"                      value="gun44Magnum"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="parts44Magnum_gripMG"/>
@@ -10227,7 +10239,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.11,0.11,0.11,0,0.11,0.11,0.11,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.11,0.11,0.11,0.11,0.11,0.11,0.11,0.11"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.25"/>
 </property>
@@ -10235,6 +10247,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Revolver ==================== -->
 <item id="1663"                               name="gun44MagnumMG">
 <property name="Extends"                      value="gun44Magnum"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="parts44Magnum_gripMG"/>
@@ -10252,7 +10265,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="6"/>
   <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.10,0.10,0.10,0,0.10,0.10,0.10,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.5"/>
 </property>
@@ -10381,16 +10394,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="pistol_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmoke"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.25,0.23,0.21,0,0.25,0.23,0.21,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4"/>
   <property name="DamageBonus.torso"          value="0.5"/>
@@ -10427,9 +10436,9 @@ Mesh files no longer used:
 <property name="Reload_time"                  value="2.25"/>
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.24,0.22,0.20,0,0.24,0.22,0.20,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.27,0.27,0.27,0.27,0.27,0.27,0.27,0.27"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.25"/>
 </property>
@@ -10437,6 +10446,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Deagle ==================== -->
 <item id="1674"                               name="gunDeagleMG">
 <property name="Extends"                      value="gunDeagle"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsDeagle_magMG"/>
@@ -10452,9 +10462,9 @@ Mesh files no longer used:
 <property name="Reload_time"                  value="2"/>
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo,357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.23,0.21,0.19,0,0.23,0.21,0.19,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="4.5"/>
 </property>
@@ -10586,16 +10596,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="mp5_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflashuzi"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="30"/>
   <property name="Magazine_items"             value="9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo,556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.25,0.24,0.23,0,0.24,0.23,0.22,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.5"/>
   <property name="DamageBonus.torso"          value="1.25"/>
@@ -10630,16 +10636,12 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="9"/>
 <property name="Crosshair_max_distance"       value="11"/>
 <property name="Reload_time"                  value="4.1"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="30"/>
   <property name="Magazine_items"             value="9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo,556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.24,0.23,0.22,0,0.23,0.22,0.21,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.75"/>
 </property>
@@ -10660,16 +10662,12 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="7"/>
 <property name="Crosshair_max_distance"       value="9"/>
 <property name="Reload_time"                  value="3.9"/>
-<!--
-<property name="Buff"                         value="critGunMP5"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="30"/>
   <property name="Magazine_items"             value="9mmBullet,9mmBulletNG,9mmBulletMG,No Ammo,556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.23,0.22,0.21,0,0.22,0.21,0.20,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="3"/>
 </property>
@@ -10799,16 +10797,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="ak47_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash_ak"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!--
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="30"/>
   <property name="Magazine_items"             value="556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo,762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.20,0.19,0.18,0,0.19,0.18,0.17,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.5"/>
   <property name="DamageBonus.torso"          value="1.25"/>
@@ -10830,6 +10824,7 @@ Mesh files no longer used:
 <!-- ==================== Modified AK47 ==================== -->  
 <item id="1695"                               name="gunAK47MOD">
 <property name="Extends"                      value="gunAK47"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsAK47_stockMG"/>
@@ -10843,16 +10838,12 @@ Mesh files no longer used:
 <property name="Reload_time"                  value="3.8"/>
 <property name="Crosshair_min_distance"       value="15"/>
 <property name="Crosshair_max_distance"       value="18"/>
-<!--
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="45"/>
   <property name="Magazine_items"             value="556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo,762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.19,0.18,0.17,0,0.18,0.17,0.16,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.75"/>
 </property>
@@ -10860,6 +10851,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade AK47 ==================== -->  
 <item id="1696"                               name="gunAK47MG">
 <property name="Extends"                      value="gunAK47"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsAK47_stockMG"/>
@@ -10873,16 +10865,12 @@ Mesh files no longer used:
 <property name="Reload_time"                  value="3.7"/>
 <property name="Crosshair_min_distance"       value="13"/>
 <property name="Crosshair_max_distance"       value="16"/>
-<!--
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="45"/>
   <property name="Magazine_items"             value="556mmBullet,556mmBulletNG,556mmBulletMG,No Ammo,762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.18,0.17,0.16,0,0.17,0.16,0.15,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.20,0.20,0.20,0.20,0.20,0.20,0.20,0.20"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="3"/>
 </property>
@@ -11013,16 +11001,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="hunting_rifle_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflashuzi"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!-- 
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="3"/>
-  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.07,0.07,0.07,0,0.07,0.07,0.07,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.07,0.07,0.07,0.07,0.07,0.07,0.07,0.07"/>
   <!-- Damage Behavior-->
   <property name="DamageBonus.head"           value="5.5"/>
   <property name="DamageBonus.torso"          value="1"/>
@@ -11045,6 +11029,7 @@ Mesh files no longer used:
 <!-- ==================== Modified Hunting Rifle ==================== -->  
 <item id="1706"                               name="gunHuntingRifleMOD">
 <property name="Extends"                      value="gunHuntingRifle"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsHuntingRifle_stockMG"/>
@@ -11058,16 +11043,12 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="34"/>
 <property name="Crosshair_max_distance"       value="40"/>
 <property name="Reload_time"                  value="2.7"/>
-<!-- 
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="5"/>
-  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.06,0.06,0.06,0,0.06,0.06,0.06,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06"/>
   <!-- Damage Behavior-->
   <property name="DamageBonus.head"           value="5.75"/>
 </property>
@@ -11076,6 +11057,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Hunting Rifle ==================== -->  
 <item id="1707"                               name="gunHuntingRifleMG">
 <property name="Extends"                      value="gunHuntingRifle"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsHuntingRifle_stockMG"/>
@@ -11089,16 +11071,12 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="30"/>
 <property name="Crosshair_max_distance"       value="36"/>
 <property name="Reload_time"                  value="2.6"/>
-<!-- 
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo -->
   <property name="Magazine_size"              value="5"/>
-  <property name="Magazine_items"             value="357MagBullet,357MagBulletNG,357MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
+  <property name="Magazine_items"             value="44MagBullet,44MagBulletNG,44MagBulletMG,No Ammo,22LRBullet,22LRBulletNG,22LRBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.05,0.05,0.05,0,0.05,0.05,0.05,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05"/>
   <!-- Damage Behavior-->
   <property name="DamageBonus.head"           value="6"/>
 </property>
@@ -11229,16 +11207,12 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="sniperrifle_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflashuzi"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>  
-<!-- 
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
 <property name="ActionExp"                    value="5"/>  
   <!-- Ammo-->
   <property name="Magazine_size"              value="5"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.03,0.03,0.03,0,0.03,0.03,0.03,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.5"/>
   <property name="DamageBonus.torso"          value="0.75"/>
@@ -11276,15 +11250,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="50"/>
 <property name="Crosshair_max_distance"       value="60"/>
 <property name="Reload_time"                  value="2.7"/>
-<!--
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.02,0.02,0.02,0,0.02,0.02,0.02,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.75"/>
 </property>
@@ -11312,15 +11282,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="45"/>
 <property name="Crosshair_max_distance"       value="55"/>
 <property name="Reload_time"                  value="2.6"/>
-<!-- 
-<property name="Buff"                         value="critGunAK47"/>
-<property name="Buff_chance"                  value="0.1"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.01,0.01,0.01,0,0.01,0.01,0.01,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="6"/>
 </property>
@@ -11441,15 +11407,11 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="blunderbuss_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash_shotgun"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="1"/>
   <property name="Magazine_items"             value="Scattershot,Musketshot,20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="20,1,20,20,20,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.45,0.15,0.60,0.55,0.50,0,0.25,0.20,0.15,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.45,0.15,0.50,0.50,0.50,0.50,0.20,0.20,0.20,0.50"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2"/>
   <property name="DamageBonus.torso"          value="1.5"/>
@@ -11513,15 +11475,11 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="shotgun_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash_shotgun"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,12GAShell,12GAShellNG,12GAShellMG,No Ammo"/>
-  <property name="Magazine_item_ray_counts"   value="15,15,15,1,15,15,15,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.55,0.50,0.45,0,0.45,0.40,0.35,0"/>
+  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
+  <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
+  <property name="Magazine_item_ray_spreads"  value="0.35,0.35,0.35,0.35,0.20,0.20,0.20,0.35"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="1.5"/>
   <property name="DamageBonus.torso"          value="1.5"/>
@@ -11556,15 +11514,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="45"/>
 <property name="Crosshair_max_distance"       value="50"/>
 <property name="Reload_time"                  value="2.7"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,12GAShell,12GAShellNG,12GAShellMG,No Ammo"/>
-  <property name="Magazine_item_ray_counts"   value="15,15,15,1,15,15,15,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.52,0.47,0.42,0,0.42,0.37,0.32,0"/>
+  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
+  <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
+  <property name="Magazine_item_ray_spreads"  value="0.32,0.32,0.32,0.32,0.17,0.17,0.17,0.32"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="1.75"/>
 </property>
@@ -11572,6 +11526,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Shortbarrel Pump Shotgun ==================== -->      
 <item id="1730"                               name="gunShortPumpShotgunMG">
 <property name="Extends"                      value="gunShortPumpShotgun"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsPumpShotgun_stockShortMG"/>
@@ -11585,15 +11540,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="40"/>
 <property name="Crosshair_max_distance"       value="50"/>
 <property name="Reload_time"                  value="2.6"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="8"/>
-  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,12GAShell,12GAShellNG,12GAShellMG,No Ammo"/>
-  <property name="Magazine_item_ray_counts"   value="15,15,15,1,15,15,15,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.50,0.45,0.40,0,0.40,0.35,0.30,0"/>
+  <property name="Magazine_items"             value="20GAShell,20GAShellNG,20GAShellMG,No Ammo,20GASlug,20GASlugNG,20GASlugMG,No Ammo"/>
+  <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
+  <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.15,0.15,0.15,0.30"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2"/>
 </property>
@@ -11616,15 +11567,11 @@ Mesh files no longer used:
 <property name="Crosshair_max_distance"       value="35"/>
 <property name="Reload_time"                  value="2.6"/>
 <property name="Sound_start"                  value="pump_shotgun_fire"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="12GAShell,12GAShellNG,12GAShellMG,No Ammo,12GASlug,12GASlugNG,12GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.40,0.35,0.30,0,0.35,0.30,0.25,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.32,0.32,0.32,0.32,0.17,0.17,0.17,0.32"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="1.5"/>
   <property name="DamageBonus.torso"          value="1"/>
@@ -11645,20 +11592,16 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action-->
 <property class="Action0">
-<property name="Delay"                        value="0.9"/>
+<property name="Delay"                        value="0.8"/>
 <property name="Crosshair_min_distance"       value="25"/>
 <property name="Crosshair_max_distance"       value="30"/>
 <property name="Reload_time"                  value="2.5"/>
 <property name="Sound_start"                  value="pump_shotgun_fire"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="12GAShell,12GAShellNG,12GAShellMG,No Ammo,12GASlug,12GASlugNG,12GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.37,0.32,0.27,0,0.30,0.25,0.20,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.29,0.29,0.29,0.29,0.14,0.14,0.14,0.29"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2"/>
 </property>
@@ -11666,6 +11609,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Longbarrel Pump Shotgun ==================== -->   
 <item id="1733"                               name="gunLongPumpShotgunMG">
 <property name="Extends"                      value="gunLongPumpShotgun"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsPumpShotgun_stockLongMG"/>
@@ -11675,20 +11619,16 @@ Mesh files no longer used:
 </property>
 <!-- Attack Action-->
 <property class="Action0">
-<property name="Delay"                        value="0.8"/>
+<property name="Delay"                        value="0.6"/>
 <property name="Crosshair_min_distance"       value="20"/>
 <property name="Crosshair_max_distance"       value="25"/>
 <property name="Reload_time"                  value="2.4"/>
 <property name="Sound_start"                  value="pump_shotgun_fire"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="12GAShell,12GAShellNG,12GAShellMG,No Ammo,12GASlug,12GASlugNG,12GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="15,15,15,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.35,0.30,0.25,0,0.25,0.20,0.15,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.27,0.27,0.27,0.27,0.12,0.12,0.12,0.27"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.5"/>
 </property>
@@ -11831,7 +11771,7 @@ Mesh files no longer used:
 <property name="SoundJammed"                  value="weapon_jam"/>
 <property name="Attachments"                  value="flashlight02"/>
 <property name="CrosshairOnAim"               value="false"/>
-<property name="CrosshairUpAfterShot"         value="false"/>
+<property name="CrosshairUpAfterShot"         value="true"/>
 <property name="Sound_Sight_In"               value="rifle_sight_in"/>
 <property name="Sound_Sight_Out"              value="rifle_sight_out"/>
 <!-- Parts -->
@@ -11861,15 +11801,11 @@ Mesh files no longer used:
 <property name="Sound_reload"                 value="shotgun_reload"/>
 <property name="Particles_muzzle_fire"        value="nozzleflash_shotgun"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo-->
   <property name="Magazine_size"              value="2"/>
   <property name="Magazine_items"             value="10GAShell,10GAShellNG,10GAShellMG,No Ammo,10GASlug,10GASlugNG,10GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="10,10,10,0,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.30,0.27,0.25,0,0.20,0.17,0.15,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.15,0.15,0.15,0.30"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2"/>
   <property name="DamageBonus.torso"          value="0.75"/>
@@ -11891,6 +11827,7 @@ Mesh files no longer used:
 <!-- ==================== Modified Double Barrel Shotgun ==================== -->   
 <item id="1747"                               name="gunDoubleBarrelShotgunMOD">
 <property name="Extends"                      value="gunDoubleBarrelShotgun"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsDoubleBarrel_stockMG"/>
@@ -11904,15 +11841,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="23"/>
 <property name="Crosshair_max_distance"       value="28"/>
 <property name="Reload_time"                  value="2.3"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="2"/>
   <property name="Magazine_items"             value="10GAShell,10GAShellNG,10GAShellMG,No Ammo,10GASlug,10GASlugNG,10GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="10,10,10,0,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.28,0.25,0.23,0,0.18,0.15,0.13,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.27,0.27,0.27,0.27,0.12,0.12,0.12,0.27"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="2.5"/>
 </property>
@@ -11920,6 +11853,7 @@ Mesh files no longer used:
 <!-- ==================== Military Grade Double Barrel Shotgun ==================== -->   
 <item id="1748"                               name="gunDoubleBarrelShotgunMG">
 <property name="Extends"                      value="gunDoubleBarrelShotgun"/>
+<property name="CrosshairUpAfterShot"         value="false"/>
 <!-- Parts -->
 <property class="Parts">
 <property name="Stock"                        value="partsDoubleBarrel_stockMG"/>
@@ -11933,15 +11867,11 @@ Mesh files no longer used:
 <property name="Crosshair_min_distance"       value="20"/>
 <property name="Crosshair_max_distance"       value="25"/>
 <property name="Reload_time"                  value="2.1"/>
-<!--
-<property name="Buff"                         value="shotgunWound"/>
-<property name="Buff_chance"                  value="1.0"/>
--->
   <!-- Ammo -->
   <property name="Magazine_size"              value="2"/>
   <property name="Magazine_items"             value="10GAShell,10GAShellNG,10GAShellMG,No Ammo,10GASlug,10GASlugNG,10GASlugMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="10,10,10,0,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.25,0.22,0.20,0,0.15,0.12,0.10,0"/>
+  <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.10,0.10,0.10,0.25"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="3"/>
 </property>

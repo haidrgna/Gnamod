@@ -367,7 +367,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemIcons", "ItemIcons", "{
 		Base\Mods\ItemIconTest\ItemIcons\buckshot12GA.png = Base\Mods\ItemIconTest\ItemIcons\buckshot12GA.png
 		Base\Mods\ItemIconTest\ItemIcons\buckshot20GA.png = Base\Mods\ItemIconTest\ItemIcons\buckshot20GA.png
 		Base\Mods\ItemIconTest\ItemIcons\bulletTipLarge.png = Base\Mods\ItemIconTest\ItemIcons\bulletTipLarge.png
+		Base\Mods\ItemIconTest\ItemIcons\bulletTipLargeUsed.png = Base\Mods\ItemIconTest\ItemIcons\bulletTipLargeUsed.png
 		Base\Mods\ItemIconTest\ItemIcons\bulletTipNormal.png = Base\Mods\ItemIconTest\ItemIcons\bulletTipNormal.png
+		Base\Mods\ItemIconTest\ItemIcons\bulletTipNormalUsed.png = Base\Mods\ItemIconTest\ItemIcons\bulletTipNormalUsed.png
 		Base\Mods\ItemIconTest\ItemIcons\casingLarge.png = Base\Mods\ItemIconTest\ItemIcons\casingLarge.png
 		Base\Mods\ItemIconTest\ItemIcons\casingLargeUsed.png = Base\Mods\ItemIconTest\ItemIcons\casingLargeUsed.png
 		Base\Mods\ItemIconTest\ItemIcons\casingNormal.png = Base\Mods\ItemIconTest\ItemIcons\casingNormal.png
@@ -623,6 +625,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{ECD50E
 		HordeBeta\Config\spawning.xml = HordeBeta\Config\spawning.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{79FEC4B3-81A1-4096-BD91-16E805DCD2AF}"
+	ProjectSection(SolutionItems) = preProject
+		HordeBeta\Prefabs\gnamod_42x42_asphalt.tts = HordeBeta\Prefabs\gnamod_42x42_asphalt.tts
+		HordeBeta\Prefabs\gnamod_42x42_asphalt.xml = HordeBeta\Prefabs\gnamod_42x42_asphalt.xml
+		HordeBeta\Prefabs\gnamod_beacon_20.tts = HordeBeta\Prefabs\gnamod_beacon_20.tts
+		HordeBeta\Prefabs\gnamod_beacon_20.xml = HordeBeta\Prefabs\gnamod_beacon_20.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -652,6 +662,7 @@ Global
 		{92341991-822F-40AB-A8D8-5F6A3882FF3C} = {7B1FEDC0-3C1E-4942-BD97-BA5CA087F70B}
 		{0E14D80E-6B6C-4221-A739-2071E2F7E4EE} = {4712A53F-68B4-43A1-98B0-1205E153F131}
 		{ECD50E6E-8342-4C19-B695-4F5037BB7804} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
+		{79FEC4B3-81A1-4096-BD91-16E805DCD2AF} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}
