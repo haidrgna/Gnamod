@@ -1414,7 +1414,7 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="cobblestoneMaster"/>
 		<property name="Item" value="cobblestones"/>
 		<property name="ItemCount" value="9"/>
-		<property name="UpgradeHitCount" value="6"/>
+		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="clayLump" count="2"/>
 	<drop event="Harvest" name="rockSmall" count="2"/>
@@ -4272,6 +4272,12 @@ group desc for stuff like metal siding
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="50"/>
+  	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodLogSpike1"/>
+		<property name="Item" value="wood"/>
+		<property name="ItemCount" value="15"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
 </block>
 
 <block id="409" name="trapSpikesDamage1">
@@ -14921,7 +14927,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
 	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
-	<property name="AmmoItem" value="9mmBulletNG"/>
+	<property name="AmmoItem" value="22LRBullet"/>
 	<property name="TurnSpeed" value="22.5"/>
 	<property name="MaxDistance" value="30"/>
 	<property name="EntityDamage" value="18"/> <!-- 120 dps, 270 / burst -->
@@ -14976,7 +14982,7 @@ group desc for stuff like metal siding
 <block id="1679" name="shotgunTurret">
 	<property name="Extends" value="autoTurret"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
-	<property name="AmmoItem" value="12GAShellNG"/> <!-- does not use the damage value -->
+	<property name="AmmoItem" value="20GAShell"/> <!-- does not use the damage value -->
 	<property name="MaxDistance" value="15"/>
 	<property name="EntityDamage" value="11"/> <!-- 180 dps, 440 / burst -->
 	<property name="BlockDamage" value="1"/>
@@ -16442,7 +16448,7 @@ group desc for stuff like metal siding
 <property name="PlantGrowing.IsRandom" value="false"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="EconomicValue" value="20000"/>
+<property name="EconomicValue" value="7500"/>
 <drop event="Destroy" name="cloth" count="0" />
 </block>
 

@@ -1475,8 +1475,8 @@ Mesh files no longer used:
 		<property name="Delay" value="0.3"/>
 		<property name="Crosshair_min_distance" value="15"/> <!-- 15 -->
 		<property name="Crosshair_max_distance" value="18"/> <!-- 18 -->
-		<property name="Magazine_size" value="15"/>
-		<property name="Magazine_items" value="nail"/>
+		<property name="Magazine_size" value="50"/>
+		<property name="Magazine_items" value="nail,No Ammo,steelDart,No Ammo, "/>
 		<property name="Rays_spread" value="0.043"/>
 		<property name="Instantiate_on_load" value="false"/>
 		<property name="Reload_time" value="2"/>
@@ -1870,7 +1870,8 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="RepairAmount" value="300"/>
 	<property name="Weight" value="5"/>
-	<property class="Action0"> <!-- AttackAction -->
+  <property name="MeltTimePerUnit" value="0.5"/>
+	<property class="Action0"> <!-- AttackActio+n -->
 		<property name="Class" value="ThrowAway"/>
 		<property name="Delay" value="1.2"/>
 		<property name="Throw_strength_default" value="8"/>
@@ -7121,6 +7122,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="glass"/>
 	<property name="Weight" value="1"/>
+  <property name="MeltTimePerUnit" value="0.1"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="100"/>
@@ -7136,6 +7138,7 @@ Mesh files no longer used:
 	<property name="SellableToTrader" value="false"/>
 	<property name="HoldType" value="45"/>
 	<property name="DropScale" value="3"/>
+  <property name="MeltTimePerUnit" value="0.5"/>
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="2"/>
 	<property name="Group" value="Resources,Basics"/>
@@ -7152,6 +7155,7 @@ Mesh files no longer used:
 	<property name="RepairTime" value="0.5"/>
 	<property name="RepairAmount" value="20"/>
 	<property name="CraftingIngredientTime" value="0.2"/>
+  <property name="MeltTimePerUnit" value="0.1"/>
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="10"/>
 </item>
@@ -7163,7 +7167,7 @@ Mesh files no longer used:
 	<property name="Material" value="Miron"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="CraftingIngredientExp" value="10"/>
-	<property name="CraftingIngredientTime" value="10"/>
+	<property name="CraftingIngredientTime" value="7"/>
 	<property name="RepairTime" value="0.5"/>
 	<property name="RepairAmount" value="270"/>
 	<property name="Group" value="Resources"/>
@@ -7177,6 +7181,7 @@ Mesh files no longer used:
 	<property name="Material" value="Miron"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="Group" value="Resources"/>
+  <property name="CraftingIngredientTime" value="5"/>
   <property name="EconomicValue" value="5"/>
   <property name="EconomicBundleSize" value="2"/>
 </item>
@@ -7188,7 +7193,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
-	<property name="CraftingIngredientTime" value="15"/>
+	<property name="CraftingIngredientTime" value="12"/>
 	<property name="RepairTime" value="1"/>
 	<property name="RepairAmount" value="400"/>
   <property name="EconomicValue" value="6"/>
@@ -7204,7 +7209,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
-	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingIngredientTime" value="5"/>
   <property name="EconomicValue" value="2"/>
   <property name="EconomicBundleSize" value="1"/>
 </item>
@@ -7301,6 +7306,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
+  <property name="MeltTimePerUnit" value="0.3" />
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="Group" value="Resources,Basics"/>
@@ -7313,6 +7319,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Weight" value="1"/>
+  <property name="MeltTimePerUnit" value="0.3" />
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Basics"/>
@@ -7326,6 +7333,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="Group" value="Resources,Basics"/>
 	<property name="CraftingIngredientTime" value="0.5"/>
+  <property name="MeltTimePerUnit" value="0.5" />
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="100"/>
 </item>
@@ -7439,7 +7447,7 @@ Mesh files no longer used:
 	<property name="Weight" value="1"/>
   <property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="1"/>
-	<property name="EconomicBundleSize" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1330" name="militaryFiber"> <!-- scrap material -->
@@ -8270,13 +8278,13 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="50000"/>
+	<property name="Stacknumber" value="25000"/>
 	<property name="Weight" value="1"/>
 	<property name="Group" value="Resources"/>
 	<property name="ResourceUnit" value="true"/>
 	<property name="MeltTimePerUnit" value="0.25"/>
 	<property name="UserHidden" value="true"/>
-	<property name="CraftingIngredientTime" value="0.5"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
 	<property name="CreativeMode" value="None" />
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -8316,6 +8324,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="500"/>
+  <property name="CraftingIngredientTime" value="0.5"/>
 </item>
 
 <item id="1465" name="unit_clay">
@@ -8325,6 +8334,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="500"/>
+  <property name="CraftingIngredientTime" value="0.5"/>
 </item>
 
 <item id="1466" name="Railgun">
@@ -8819,8 +8829,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="8,16"/>
-<property name="BlockDamage"              value="3,8"/>
+<property name="EntityDamage"             value="11,24"/>
+<property name="BlockDamage"              value="6,10"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8830,7 +8840,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="10,20"/>
+<property name="EntityDamage"             value="19,31"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
 </property>
 </item>      
@@ -8840,7 +8850,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="12,24"/>
+<property name="EntityDamage"             value="24,41"/>
 <property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8857,8 +8867,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="13,26"/>
-<property name="BlockDamage"              value="4,11"/>
+<property name="EntityDamage"             value="14,31"/>
+<property name="BlockDamage"              value="8,12"/>
 <property name="ApplyBuff"                value="0.01,0.05" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8868,7 +8878,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="15,30"/>
+<property name="EntityDamage"             value="24,36"/>
 <property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8878,7 +8888,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="17,34"/>
+<property name="EntityDamage"             value="31,44"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
 </property>
 </item>
@@ -8895,8 +8905,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="22,44"/>
-<property name="BlockDamage"              value="7,19"/>
+<property name="EntityDamage"             value="28,43"/>
+<property name="BlockDamage"              value="12,17"/>
 <property name="ApplyBuff"                value="0.025,0.05" param1="critAmmoModerate"/>
 </property>
 </item>
@@ -8906,7 +8916,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="25,50"/>
+<property name="EntityDamage"             value="36,50"/>
 <property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoModerate"/>
 </property>
 </item>
@@ -8916,7 +8926,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="28,58"/>
+<property name="EntityDamage"             value="43,58"/>
 <property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerate"/>
 </property>
 </item>
@@ -8933,8 +8943,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="29,61"/>
-<property name="BlockDamage"              value="10,27"/>
+<property name="EntityDamage"             value="40,55"/>
+<property name="BlockDamage"              value="13,23"/>
 <property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerate"/>
 </property>
 </item>
@@ -8944,7 +8954,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="36,69"/>
+<property name="EntityDamage"             value="40,70"/>
 <property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -8954,7 +8964,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="41,81"/>
+<property name="EntityDamage"             value="55,86"/>
 <property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -8971,8 +8981,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="34,68"/>
-<property name="BlockDamage"              value="11,30"/>
+<property name="EntityDamage"             value="45,60"/>
+<property name="BlockDamage"              value="16,27"/>
 <property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -8982,7 +8992,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="41,79"/>
+<property name="EntityDamage"             value="49,81"/>
 <property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -8992,7 +9002,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="46,91"/>
+<property name="EntityDamage"             value="60,95"/>
 <property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -9009,8 +9019,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="17,34"/>
-<property name="BlockDamage"              value="6,15"/>
+<property name="EntityDamage"             value="31,44"/>
+<property name="BlockDamage"              value="13,17"/>
 <property name="ApplyBuff"                value="0.10,0.25" param1="critAmmoLight"/>
 </property>
 </item>
@@ -9020,7 +9030,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="20,40"/>
+<property name="EntityDamage"             value="39,51"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoLight"/>
 </property>
 </item>
@@ -9030,7 +9040,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="23,46"/>
+<property name="EntityDamage"             value="44,52"/>
 <property name="ApplyBuff"                value="0.20,0.25" param1="critAmmoLight"/>
 </property>
 </item>
@@ -9047,8 +9057,8 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="26,51"/>
-<property name="BlockDamage"              value="9,23"/>
+<property name="EntityDamage"             value="38,53"/>
+<property name="BlockDamage"              value="13,23"/>
 <property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -9058,7 +9068,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="30,60"/>
+<property name="EntityDamage"             value="38,68"/>
 <property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -9068,7 +9078,7 @@ Mesh files no longer used:
 <!-- Damage -->
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="35,69"/>
+<property name="EntityDamage"             value="51,70"/>
 <property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
 </property>
 </item>
@@ -9086,8 +9096,8 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="2.0,3.0"/>
-<property name="BlockDamage"              value="0.8,1.5"/>
+<property name="EntityDamage"             value="2.0,4.0"/>
+<property name="BlockDamage"              value="0.7,1.3"/>
 <property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
 </property>  
 </item>  
@@ -9103,8 +9113,8 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="50,80"/>
-<property name="BlockDamage"              value="25,50"/>
+<property name="EntityDamage"             value="40,70"/>
+<property name="BlockDamage"              value="13,23"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
 </property>  
 </item>    
@@ -9116,28 +9126,28 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
 <property name="Group"                    value="Resources,Ammo/Weapons"/>
-<property name="EconomicValue"            value="10"/>
+<property name="EconomicValue"            value="8"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="2,4"/>
-<property name="BlockDamage"              value="1,2"/>
+<property name="EntityDamage"             value="2.0,4.7"/>
+<property name="BlockDamage"              value="1.0,2.1"/>
 <property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
 </property>  
 </item>
 <item id="1532"                           name="20GAShellNG">
 <property name="Extends"                  value="20GAShell"/>
-<property name="EconomicValue"            value="14"/>
+<property name="EconomicValue"            value="16"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="2.5,5"/>
+<property name="EntityDamage"             value="3.0,6.3"/>
 <property name="EconomicValue"            value="12"/>
 </property>  
 </item>  
 <item id="1533"                           name="20GAShellMG">
 <property name="Extends"                  value="20GAShell"/>
-<property name="EconomicValue"            value="28"/>
+<property name="EconomicValue"            value="32"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="3,6"/>
+<property name="EntityDamage"             value="4.7,7.3"/>
 <property name="EconomicValue"            value="14"/>
 </property>  
 </item>   
@@ -9145,25 +9155,25 @@ Mesh files no longer used:
 <!-- ==================== 20 Gauge Slugs ==================== -->
 <item id="1535"                           name="20GASlug">
 <property name="Extends"                  value="20GAShell"/>
-<property name="EconomicValue"            value="6"/>
+<property name="EconomicValue"            value="10"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="40,120"/>
-<property name="BlockDamage"              value="50,100"/>
+<property name="EntityDamage"             value="45,75"/>
+<property name="BlockDamage"              value="17,37"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
 </property>  
 </item>  
 <item id="1536"                           name="20GASlugNG">
 <property name="Extends"                  value="20GASlug"/>
-<property name="EconomicValue"            value="16"/>
+<property name="EconomicValue"            value="20"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="50,130"/>
+<property name="EntityDamage"             value="50,100"/>
 </property>  
 </item>  
 <item id="1537"                           name="20GASlugMG">
 <property name="Extends"                  value="20GASlug"/>
-<property name="EconomicValue"            value="32"/>
+<property name="EconomicValue"            value="40"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="60,140"/>
+<property name="EntityDamage"             value="75,125"/>
 </property>  
 </item>   
 <!-- 1538 Free -->
@@ -9175,28 +9185,28 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
 <property name="Group"                    value="Resources,Ammo/Weapons"/>
-<property name="EconomicValue"            value="6"/>
+<property name="EconomicValue"            value="10"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="3,7"/>
-<property name="BlockDamage"              value="3,6"/>
+<property name="EntityDamage"             value="3.0,5.7"/>
+<property name="BlockDamage"              value="1.3,2.4"/>
 <property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
 </property>  
 </item>
 <item id="1540"                           name="12GAShellNG">
 <property name="Extends"                  value="12GAShell"/>
-<property name="EconomicValue"            value="16"/>
+<property name="EconomicValue"            value="20"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="3.5,8"/>
+<property name="EntityDamage"             value="4.0,7.3"/>
 <property name="EconomicValue"            value="23"/>
 </property>  
 </item>  
 <item id="1541"                           name="12GAShellMG">
 <property name="Extends"                  value="12GAShell"/>
-<property name="EconomicValue"            value="32"/>
+<property name="EconomicValue"            value="40"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="4,9"/>
+<property name="EntityDamage"             value="5.7,8.3"/>
 <property name="EconomicValue"            value="27"/>
 </property>  
 </item>   
@@ -9204,25 +9214,25 @@ Mesh files no longer used:
 <!-- ==================== 12 Gauge Slugs ==================== -->
 <item id="1543"                           name="12GASlug">
 <property name="Extends"                  value="12GAShell"/>
-<property name="EconomicValue"            value="7"/>
+<property name="EconomicValue"            value="13"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="60,140"/>
-<property name="BlockDamage"              value="50,100"/>
+<property name="EntityDamage"             value="60,90"/>
+<property name="BlockDamage"              value="23,40"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
 </property>  
 </item>  
 <item id="1544"                           name="12GASlugNG">
 <property name="Extends"                  value="12GASlug"/>
-<property name="EconomicValue"            value="24"/>
+<property name="EconomicValue"            value="25"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="70,150"/>
+<property name="EntityDamage"             value="70,120"/>
 </property>  
 </item>  
 <item id="1545"                           name="12GASlugMG">
 <property name="Extends"                  value="12GASlug"/>
-<property name="EconomicValue"            value="48"/>
+<property name="EconomicValue"            value="50"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="80,160"/>
+<property name="EntityDamage"             value="90,140"/>
 </property>  
 </item>   
 <!-- 1546 Free -->
@@ -9234,52 +9244,52 @@ Mesh files no longer used:
 <property name="Stacknumber"              value="500"/>
 <property name="DropScale"                value="4"/>
 <property name="Group"                    value="Resources,Ammo/Weapons"/>
-<property name="EconomicValue"            value="7"/>
+<property name="EconomicValue"            value="15"/>
 <property name="CraftingSkillGroup"       value="craftSkillGuns"/>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
-<property name="EntityDamage"             value="5,12"/>
-<property name="BlockDamage"              value="4,8"/>
+<property name="EntityDamage"             value="4.0,6.7"/>
+<property name="BlockDamage"              value="1.5,2.9"/>
 <property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
 </property>  
 </item>
 <item id="1548"                           name="10GAShellNG">
 <property name="Extends"                  value="10GAShell"/>
-<property name="EconomicValue"            value="24"/>
+<property name="EconomicValue"            value="30"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="5.5,13"/>
+<property name="EntityDamage"             value="4.5,8.8"/>
 </property>  
 </item>  
 <item id="1549"                           name="10GAShellMG">
 <property name="Extends"                  value="10GAShell"/>
-<property name="EconomicValue"            value="48"/>
+<property name="EconomicValue"            value="60"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="6,14"/>
+<property name="EntityDamage"             value="6.7,9.3"/>
 </property>  
 </item>   
 <!-- 1550 Free -->
 <!-- ==================== 10 Gauge Slugs ==================== -->
 <item id="1551"                           name="10GASlug">
 <property name="Extends"                  value="10GAShell"/>
-<property name="EconomicValue"            value="10"/>
+<property name="EconomicValue"            value="20"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="80,160"/>
-<property name="BlockDamage"              value="50,100"/>
+<property name="EntityDamage"             value="75,105"/>
+<property name="BlockDamage"              value="30,43"/>
 <property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
 </property>  
 </item>  
 <item id="1552"                           name="10GASlugNG">
 <property name="Extends"                  value="10GASlug"/>
-<property name="EconomicValue"            value="30"/>
+<property name="EconomicValue"            value="35"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="90,170"/>
+<property name="EntityDamage"             value="90,130"/>
 </property>  
 </item>  
 <item id="1553"                           name="10GASlugMG">
 <property name="Extends"                  value="10GASlug"/>
-<property name="EconomicValue"            value="60"/>
+<property name="EconomicValue"            value="70"/>
 <property class="Attributes">
-<property name="EntityDamage"             value="100,180"/>
+<property name="EntityDamage"             value="105,155"/>
 </property>  
 </item>   
 <!-- 1554 Free -->
@@ -9936,8 +9946,8 @@ Mesh files no longer used:
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="paper"/>
 <property name="HoldType"                     value="21"/>
-<property name="EconomicValue"                value="1"/>
-<property name="EconomicBundleSize"           value="2"/>
+<property name="EconomicValue"                value="2"/>
+<property name="EconomicBundleSize"           value="1"/>
 </item>
 
 <item id="1614"                               name="casingShotgunPlastic">

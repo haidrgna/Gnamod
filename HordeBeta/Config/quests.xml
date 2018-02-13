@@ -223,8 +223,8 @@
 	</quest>
 
 <!-- Gnamod Quests-->
-<!-- Default Starting Quest Givers -->
-<quest id="quest_BasicSurvival1a" group_name_key="quest_BasicSurvival" category_key="quest"
+<!-- Gnamod Base - Default -->
+<quest id="quest_BasicSurvival1a" group_name="Gnamod Base - Default" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod." 
 offer="Welcome to Gnamod!"
@@ -237,7 +237,7 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>  
 
-<quest id="quest_BasicSurvival1b" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1b" group_name="Gnamod Base - Easy Peasy" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the easy start." 
 offer="Welcome to Gnamod!"
@@ -250,35 +250,52 @@ icon="ui_game_symbol_zombie">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>    
 
-<quest id="quest_BasicSurvival1c" group_name="Gnamod" category_key="quest"
+<!-- Necropolis -->
+<quest id="quest_BasicSurvival1c" group_name="Gnamod Necropolis" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
-description="Welcome to Gnamod. This is the hard start." 
+description="Welcome to Gnamod. This is the Necropolis start." 
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <reward type="Item"           id="q_GnamodBasic"            value="1"/>
 </quest>      
 
 <!-- Nomad Mode -->
-<quest id="quest_BasicSurvival1d" group_name_key="quest_BasicSurvival" category_key="quest"
+<quest id="quest_BasicSurvival1d" group_name="Gnamod Nomad Mode" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
-description="Welcome to Gnamod. This is the nomad mode start." 
+description="Welcome to Gnamod. This is the Nomad Mode start." 
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <!-- Rewards -->
-<reward type="Item"           id="stoneAxe"                 value="200"/>
-<reward type="Item"           id="q_GnamodNomad"            value="1"/>
+<reward type="Item"           id="stoneAxe"                   value="200"/>
+<reward type="Item"           id="bedroll"                    value="1"/>
+<reward type="Item"           id="torch"                      value="1"/>
+<reward type="Item"           id="q_GnamodNomad"              value="1"/>
 </quest>      
 
-<!-- Horde Mode -->
-<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" category_key="quest"
+<!-- Horde Mode Singleplayer -->
+<quest id="quest_BasicSurvival1" group_name="Gnamod Horde Mode - Singleplayer" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
-description="Welcome to Gnamod. This is the horde mode start." 
+description="Welcome to Gnamod. This is the Horde Mode singleplayer start." 
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <!-- Rewards -->
-<reward type="Item"           id="bedroll"                  value="1"/>
-<reward type="Item"           id="torch"                    value="1"/>
-<reward type="Item"           id="q_GnamodHorde"            value="1"/>
+<reward type="Item"           id="bedroll"                    value="1"/>
+<reward type="Item"           id="torch"                      value="1"/>
+<reward type="Item"           id="q_GnamodHorde"              value="1"/>
+</quest>
+
+<!-- Horde Mode Multiplayer -->
+<quest id="quest_BasicSurvival1f" group_name="Gnamod Horde Mode - Multiplayer" category_key="quest"
+name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
+description="Welcome to Gnamod. This is the Horde Mode multiplayer start." 
+offer="Welcome to Gnamod!"
+icon="ui_game_symbol_zombie" difficulty="veryeasy">
+<!-- Rewards -->
+<reward type="Item"           id="StartingKit"                value="1"/>
+<reward type="Item"           id="casinoCoin"                 value="50000"/>
+<reward type="Item"           id="bedroll"                    value="1"/>
+<reward type="Item"           id="torch"                      value="1"/>
+<reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>  
 </quest>
 
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->

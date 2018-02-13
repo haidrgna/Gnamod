@@ -867,6 +867,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="flamingArrow"               count="100,250"     prob="0.100"/>
 <item name="Musketshot"                 count="25,100"      prob="0.100"/>
 <item name="Scattershot"                count="25,100"      prob="0.100"/>
+<item name="steelDart"                  count="100,250"     prob="0.100"/>
 </trader_item_group>
 
 <trader_item_group name="Explosives">
@@ -1038,9 +1039,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_item_group>
 
 <trader_item_group name="MaterialsRare">
-<item name="concreteMix"                count="25,250"      prob="0.300"/>
-<item name="steelPolish"                count="25,250"      prob="0.150"/>
-<item name="forgedSteel"                count="25,250"      prob="0.250"/>
+<item name="concreteMix"                count="100,1000"    prob="0.300"/>
+<item name="steelPolish"                count="50,500"      prob="0.150"/>
+<item name="forgedSteel"                count="50,500"      prob="0.250"/>
 <item name="ductTape"                   count="5,50"        prob="0.100"/>
 <item name="militaryFiber"              count="5,25"        prob="0.050"/>
 <item name="electricParts"              count="5,25"        prob="0.050"/>
