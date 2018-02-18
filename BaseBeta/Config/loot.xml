@@ -390,18 +390,26 @@
 <block name="cntTrashCompactor"                 prob="0.02"/>
 </placeholder>
 
-<!-- GNAMOD NOMAD MODE -->
-<placeholder name="StartingKitSelector">
-<block name="StartingKitLucky"                  prob="0.10"/>
-<block name="StartingKitBase"                   prob="0.80"/>
-<block name="StartingKitUnlucky"                prob="0.10"/>
+<placeholder name="cookingPotHelper">
+<block name="mineCookingPot"                    prob="0.09"/>
+<block name="noMineCookingPot"                  prob="0.01"/>
+<block name="cntTrashPile01"                    prob="0.10"/>
+<block name="cntTrashPile02"                    prob="0.10"/>
+<block name="cntTrashPile03"                    prob="0.10"/>
+<block name="cntTrashPile04"                    prob="0.10"/>
+<block name="cntTrashPile05"                    prob="0.10"/>
+<block name="cntTrashPile06"                    prob="0.10"/>
+<block name="cntTrashPile07"                    prob="0.10"/>
+<block name="cntTrashPile08"                    prob="0.10"/>
+<block name="cntTrashPile09"                    prob="0.10"/>
 </placeholder>
 
-<placeholder name="towerHelper">
-<block name="rConcreteBlock"                    prob="0"/>
-<block name="towerTest"                         prob="1"/>
-</placeholder>    
-  
+<!-- GNAMOD STARTER KITS -->
+<placeholder name="StartingKitSelector">
+<block name="StartingKitLucky"                  prob="0.05"/>
+<block name="StartingKitBase"                   prob="0.90"/>
+<block name="StartingKitFood"                   prob="0.05"/>
+</placeholder>
 </lootplaceholders>
 
 <!-- Lootchance Templates (Loot MAGIC) -->
@@ -945,11 +953,11 @@
 </lootgroup>
 <!-- Specific Tool Base Groups -->
 <lootgroup name="toolsMechanized">                    <item group="toolsPartsNailgun" prob="40"/>   <item group="toolsPartsChainsaw" prob="30"/> <item group="toolsPartsAuger" prob="30"/>                        </lootgroup>
-<lootgroup name="toolsForge">                         <item name="anvil" prob="40"/>   <item name="toolAndDieSet" prob="25"/>  <item name="forgeCrucible" prob="35"/>  <!-- <item name="calipers"/> -->                 </lootgroup>
+<lootgroup name="toolsForge">                         <item name="anvil" prob="50"/>   <item name="toolAndDieSet" prob="25"/>  <item name="forgeCrucible" prob="25"/>  <!-- <item name="calipers"/> -->                 </lootgroup>
 <lootgroup name="toolsIron">                          <item name="sledgehammer" prob="15"/>  <item name="pickaxeIron" prob="15"/>  <item name="shovelIron" prob="20"/>  <item name="fireaxeIron" prob="15"/> <item name="hoeIron" prob="15"/> <item name="clawHammer" prob="20"/>       </lootgroup>
 <lootgroup name="toolsSteel">                         <item name="pickaxeSteel" prob="20"/>  <item name="fireaxeSteel" prob="25"/>  <item name="shovelSteel" prob="25"/>  <item name="wrench" prob="30"/>                  </lootgroup>
 <lootgroup name="toolsOther">                         <item name="repairKit" count="2,4" prob="30"/> <item name="flashlight02" prob="30"/>  <item name="miningHelmet" prob="20"/>  <item name="paintTool" prob="10"/> <item name="wireTool" prob="10"/>            </lootgroup>
-<lootgroup name="toolsBasic">                         <item group="toolsForge" prob="5"/>      <item group="toolsIron" prob="55"/>    <item group="toolsOther" prob="40"/>                         </lootgroup>
+<lootgroup name="toolsBasic">                         <item group="toolsForge" prob="2.5"/>      <item group="toolsIron" prob="55"/>    <item group="toolsOther" prob="42.5"/>                         </lootgroup>
 <lootgroup name="toolsCar">                           <item group="toolsMechanized" prob="15"/>   <item group="toolsForge" prob="2"/>    <item group="toolsSteel" prob="23"/>    <item group="toolsIron" prob="30"/>   <item group="toolsOther" prob="30"/>              </lootgroup>
 <lootgroup name="toolsHousehold">                     <item name="wrench" prob="15"/>   <item name="clawHammer" prob="10"/>  <item name="nailgun" prob="1"/>   <item name="hoeIron" prob="9"/>  <item name="paintTool" prob="10"/> <item name="wireTool" prob="10"/>
                                                       <item name="electricParts" count="0,3" prob="15"/>  <item name="electronicParts" count="0,3" prob="15"/> <item name="mechanicalParts" count="0,3" prob="15"/>                  </lootgroup>
@@ -1385,7 +1393,7 @@
                                                       <item name="electronicParts" prob="1"/>   <item name="mechanicalParts" prob="1"/>   <item group="seedsFood" prob="1"/>   <item group="foodRotten" prob="1.25"/>  <item group="foodPet" prob="2"/>  <item group="clothGeneral" prob="0.5"/>
                                                       <item group="ammoPrimitive" prob="0.5"/>  <item group="weaponsPrimitive" prob="0.5"/>  <item group="ammoGuns" prob="0.5"/>   <item group="gunsCommon" prob="0.5"/>  <item group="gunsUncommon" prob="0.25"/> <item group="gunsRare" prob="0.25"/>
                                                       <item name="paint" count="1,5" prob="0.5"/>
-                                                      <item group="schemBasic" prob="1.5"/>   <item group="schemCommon" prob="0.25"/>   <item group="questSkill" prob="1"/>   <item group="questTreasureMap" prob="1"/> <item group="schemPainting" prob="1"/>        </lootgroup>
+                                                      <item group="schemBasic" prob="1.5"/>   <item group="schemCommon" prob="0.25"/>   <item group="questSkill" prob="0"/>   <item group="questTreasureMap" prob="2"/> <item group="schemPainting" prob="1"/>        </lootgroup>
 <!-- Specific Items Base Groups -->
 <lootgroup name="itemsCookware">                      <item name="emptyJar" prob="30"/>    <item name="canEmpty" prob="40"/>   <item name="cookingPot" prob="10"/>   <item name="cookingGrill" prob="20"/>              </lootgroup>
 <lootgroup name="itemsCash">                          <item name="paper" count="1,15" prob="60"/>  <item name="oldCash" count="1,15" prob="30"/>  <item name="scrapPlastics" count="1" prob="10"/>                   </lootgroup>
@@ -1422,15 +1430,15 @@
 <!-- Treasure Chest Loot --> <!-- ADD MORE VARIATIONS -->
 <lootgroup name="lootTreasureBasic">                  <item name="casinoCoin" count="1000,5000" prob="10"/> <item name="oldCash" count="50,250" prob="20"/>  <item group="medicalAdvanced" count="3,5" prob="25"/> <item group="gunsComplete" prob="10"/>  <item group="ammoGuns" count="3,5" prob="25"/> <item group="matsRareOres" count="4,7" prob="10"/>  </lootgroup>
 <!-- Airdrop Loot -->
-<lootgroup name="lootADBase"            count="3,5">  <item group="gunsBalanced" prob="15"/>   <item group="gunsComplete" prob="5"/>   <item group="schemCommon" prob="20"/>   <item group="schemRare" prob="5"/>  <item group="medicalAdvanced" count="1,3" prob="15"/>
+<lootgroup name="lootADBase"            count="3,5">  <item group="gunsBalanced" prob="15"/>   <item group="gunsComplete" prob="5"/>    <item group="ammoGuns" count="2,4" prob="25"/>  <item group="medicalAdvanced" count="1,3" prob="15"/>
                                                       <item group="foodStock" count="5" prob="5"/>  <item group="foodRations" count="3" prob="15"/>  <item group="toolsBasic" prob="20"/>                    </lootgroup>
 <lootgroup name="lootADMedical"         count="3,5">  <item group="medicalAdvanced" count="1,3" prob="60"/> <item group="medicalAdvanced" count="2,4" prob="15"/> <item group="medicalAdvanced" count="3,5" prob="5"/>                  </lootgroup>
 <lootgroup name="lootADFood"            count="3,5">  <item group="foodStock" count="2,5" prob="25"/>  <item group="foodStock" count="3,7" prob="15"/>  <item group="foodRations" count="1,5" prob="35"/> <item group="foodRations" count="3,7" prob="25"/>           </lootgroup>
-<lootgroup name="lootADGunsAmmo"        count="3,5">  <item group="gunsBalanced" prob="35"/>   <item group="gunsComplete" prob="5"/>   <item group="schemFirearm" prob="5"/>   <item group="ammoGuns" count="2,4" prob="35"/>  
+<lootgroup name="lootADGunsAmmo"        count="3,5">  <item group="gunsBalanced" prob="35"/>   <item group="gunsComplete" prob="10"/>  <item group="ammoGuns" count="2,4" prob="35"/>  
                                                       <item group="ammoBombs" prob="10"/>    <item group="ammoMines" prob="10"/>                           </lootgroup>
 <lootgroup name="lootADTools"           count="3,5">  <item group="toolsMechanized" prob="20"/>  <item group="toolsIron" prob="40"/>   <item group="toolsSteel" prob="20"/>   <item group="toolsOther" prob="20"/>             </lootgroup>
-<lootgroup name="lootADArmor"           count="3,5">  <item group="armorLight" prob="60"/>   <item group="armorHeavy" prob="30"/>   <item group="armorRS" prob="9"/>   <item group="armorMilitaryMisc" prob="1"/>            </lootgroup>
-<lootgroup name="lootADBuild"           count="3,5">  <item group="lootHWMats" prob="70"/>   <item group="lootHWBlocks" prob="30"/>                           </lootgroup>
+<lootgroup name="lootADArmor"           count="4">    <item group="armorLight" prob="60"/>   <item group="armorHeavy" prob="30"/>   <item group="armorRS" prob="9"/>   <item group="armorMilitaryMisc" prob="1"/>            </lootgroup>
+<lootgroup name="lootADBuild"           count="4,6">  <item group="lootHWMats" prob="50"/>   <item group="lootHWBlocks" prob="30"/>  <item group="toolsIron" prob="20"/>                         </lootgroup>
 <lootgroup name="lootADStock"           count="all">  <item group="gunsBalanced"/>    <item group="gunsComplete"/>    <item group="schemCommon"/>    <item group="schemRare"/>   <item group="medicalAdvanced" count="3"/>
                                                       <item group="foodStock" count="5"/>   <item group="foodRations" count="3"/>   <item group="toolsBasic"/>                     </lootgroup>
 <!-- Zombie Loot -->
@@ -1456,8 +1464,8 @@
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD MODE =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- Starting Kit Armor Groups -->
 <lootgroup name="kitClothArmor"         count="all">  <item name="cloth" count="8,32"/>          <item group="armorClothAll"/>  </lootgroup>
-<lootgroup name="kitHideArmor"          count="all">  <item name="leather" count="12,16"/>        <item group="armorHideAll"/>  </lootgroup>
-<lootgroup name="kitLeatherArmor"       count="all">  <item name="leather" count="12,16"/>        <item group="armorLeatherAll"/>  </lootgroup>
+<lootgroup name="kitHideArmor"          count="all">  <item name="leather" count="12,16"/>       <item group="armorHideAll"/>  </lootgroup>
+<lootgroup name="kitLeatherArmor"       count="all">  <item name="leather" count="12,16"/>       <item group="armorLeatherAll"/>  </lootgroup>
 <lootgroup name="kitHazmatArmor"        count="all">  <item name="militaryFiber" count="8,16"/>  <item group="armorHazmatAll"/> </lootgroup>
 <lootgroup name="kitScrapArmor"         count="all">  <item name="scrapIron" count="75,150"/>    <item group="armorScrapAll"/>  </lootgroup>
 <lootgroup name="kitIronArmor"          count="all">  <item name="forgedIron" count="5,10"/>     <item group="armorIronAll"/>  </lootgroup>
@@ -1465,37 +1473,86 @@
 <lootgroup name="kitBanditArmor"        count="all">  <item name="forgedSteel" count="5,10"/>    <item group="armorBanditAll"/>  </lootgroup>
 <!-- Final Armor Group -->
 <lootgroup name="kitArmors">
-<item group="kitClothArmor"             prob="15"/>
+<item group="kitClothArmor"             prob="10"/>
 <item group="kitHideArmor"              prob="20"/>
-<item group="kitLeatherArmor"           prob="20"/>
-<item group="kitHazmatArmor"            prob="5"/>
+<item group="kitLeatherArmor"           prob="22.5"/>
+<item group="kitHazmatArmor"            prob="2.5"/>
 <item group="kitScrapArmor"             prob="20"/>
 <item group="kitIronArmor"              prob="10"/>
-<item group="kitBanditArmor"            prob="2.5"/>
-<item group="kitMilitaryArmor"          prob="2.5"/>
+<item group="kitBanditArmor"            prob="5"/>
+<item group="kitMilitaryArmor"          prob="5"/>
 </lootgroup>
 <!-- Starting Kit Ammo Groups -->
-<lootgroup name="kitPistolAmmo">                      <item name="22LRBullet" count="75,325" prob="35"/>    <item name="22LRBulletNG" count="75,325" prob="15"/>    <item name="22LRBulletMG" count="75,325" prob="10"/>    <item name="9mmBullet" count="75,325" prob="30"/>     <item name="9mmBulletNG" count="75,325" prob="10"/>     <item name="9mmBulletMG" count="75,325" prob="5"/>    </lootgroup>
-<lootgroup name="kitRevolverAmmo">                    <item name="357MagBullet" count="75,325" prob="35"/>  <item name="357MagBulletNG" count="75,325" prob="15"/>  <item name="357MagBulletMG" count="75,325" prob="10"/>  <item name="44MagBullet" count="75,325" prob="30"/>   <item name="44MagBulletNG" count="75,325" prob="10"/>   <item name="44MagBulletMG" count="75,325" prob="5"/>  </lootgroup>
-<lootgroup name="kitDeagleAmmo">                      <item name="357MagBullet" count="75,325" prob="35"/>  <item name="357MagBulletNG" count="75,325" prob="15"/>  <item name="357MagBulletMG" count="75,325" prob="10"/>  <item name="50BMGBullet" count="75,325" prob="30"/>   <item name="50BMGBulletNG" count="75,325" prob="10"/>   <item name="50BMGBulletMG" count="75,325" prob="5"/>  </lootgroup>
-<lootgroup name="kitMP5Ammo">                         <item name="9mmBullet" count="75,325" prob="35"/>     <item name="9mmBulletNG" count="75,325" prob="15"/>     <item name="9mmBulletMG" count="75,325" prob="10"/>     <item name="556mmBullet" count="75,325" prob="30"/>   <item name="556mmBulletNG" count="75,325" prob="10"/>   <item name="556mmBulletMG" count="75,325" prob="5"/>  </lootgroup>
-<lootgroup name="kitAK47Ammo">                        <item name="556mmBullet" count="75,325" prob="35"/>   <item name="556mmBulletNG" count="75,325" prob="15"/>   <item name="556mmBulletMG" count="75,325" prob="10"/>   <item name="762mmBullet" count="75,325" prob="30"/>   <item name="762mmBulletNG" count="75,325" prob="10"/>   <item name="762mmBulletMG" count="75,325" prob="5"/>  </lootgroup>
-<lootgroup name="kitHRifleAmmo">                      <item name="22LRBullet" count="75,325" prob="35"/>    <item name="22LRBulletNG" count="75,325" prob="15"/>    <item name="22LRBulletMG" count="75,325" prob="10"/>    <item name="44MagBullet" count="75,325" prob="30"/>   <item name="44MagBulletNG" count="75,325" prob="10"/>   <item name="44MagBulletMG" count="75,325" prob="5"/>  </lootgroup>  
-<lootgroup name="kitSRifleAmmo">                      <item name="762mmBullet" count="75,325" prob="35"/>   <item name="762mmBulletNG" count="75,325" prob="15"/>   <item name="762mmBulletMG" count="75,325" prob="10"/>   <item name="50BMGBullet" count="75,325" prob="30"/>   <item name="50BMGBulletNG" count="75,325" prob="10"/>   <item name="50BMGBulletMG" count="75,325" prob="5"/>  </lootgroup>
-<lootgroup name="kitSPShotgunAmmo">                   <item name="20GAShell" count="75,325" prob="35"/>     <item name="20GAShellNG" count="75,325" prob="15"/>     <item name="20GAShellMG" count="75,325" prob="10"/>     <item name="20GASlug" count="75,325" prob="30"/>      <item name="20GASlugNG" count="75,325" prob="10"/>      <item name="20GASlugMG" count="75,325" prob="5"/>     </lootgroup>  
-<lootgroup name="kitLPShotgunAmmo">                   <item name="12GAShell" count="75,325" prob="35"/>     <item name="12GAShellNG" count="75,325" prob="15"/>     <item name="12GAShellMG" count="75,325" prob="10"/>     <item name="12GASlug" count="75,325" prob="30"/>      <item name="12GASlugNG" count="75,325" prob="10"/>      <item name="12GASlugMG" count="75,325" prob="5"/>     </lootgroup>
-<lootgroup name="kitDBShotgunAmmo">                   <item name="10GAShell" count="75,325" prob="35"/>     <item name="10GAShellNG" count="75,325" prob="15"/>     <item name="10GAShellMG" count="75,325" prob="10"/>     <item name="10GASlug" count="75,325" prob="30"/>      <item name="10GASlugNG" count="75,325" prob="10"/>      <item name="10GASlugMG" count="75,325" prob="5"/>     </lootgroup>
+<lootgroup name="kitPistolAmmo">                      <item name="22LRBullet" count="75,325" prob="35"/>    <item name="22LRBulletNG" count="75,325" prob="15"/>    <item name="22LRBulletMG" count="75,325" prob="10"/>    <item name="9mmBullet" count="75,325" prob="30"/>           <item name="9mmBulletNG" count="75,325" prob="10"/>     <item name="9mmBulletMG" count="75,325" prob="5"/>    </lootgroup>
+<lootgroup name="kitRevolverAmmo">                    <item name="357MagBullet" count="75,325" prob="35"/>  <item name="357MagBulletNG" count="75,325" prob="15"/>  <item name="357MagBulletMG" count="75,325" prob="10"/>  <item name="44MagBullet" count="75,325" prob="30"/>         <item name="44MagBulletNG" count="75,325" prob="10"/>   <item name="44MagBulletMG" count="75,325" prob="5"/>  </lootgroup>
+<lootgroup name="kitDeagleAmmo">                      <item name="357MagBullet" count="75,325" prob="35"/>  <item name="357MagBulletNG" count="75,325" prob="15"/>  <item name="357MagBulletMG" count="75,325" prob="10"/>  <item name="50BMGBullet" count="75,325" prob="30"/>         <item name="50BMGBulletNG" count="75,325" prob="10"/>   <item name="50BMGBulletMG" count="75,325" prob="5"/>  </lootgroup>
+<lootgroup name="kitMP5Ammo">                         <item name="9mmBullet" count="75,325" prob="35"/>     <item name="9mmBulletNG" count="75,325" prob="15"/>     <item name="9mmBulletMG" count="75,325" prob="10"/>     <item name="556mmBullet" count="75,325" prob="30"/>         <item name="556mmBulletNG" count="75,325" prob="10"/>   <item name="556mmBulletMG" count="75,325" prob="5"/>  </lootgroup>
+<lootgroup name="kitAK47Ammo">                        <item name="556mmBullet" count="75,325" prob="35"/>   <item name="556mmBulletNG" count="75,325" prob="15"/>   <item name="556mmBulletMG" count="75,325" prob="10"/>   <item name="762mmBullet" count="75,325" prob="30"/>         <item name="762mmBulletNG" count="75,325" prob="10"/>   <item name="762mmBulletMG" count="75,325" prob="5"/>  </lootgroup>
+<lootgroup name="kitHRifleAmmo">                      <item name="22LRBullet" count="75,325" prob="35"/>    <item name="22LRBulletNG" count="75,325" prob="15"/>    <item name="22LRBulletMG" count="75,325" prob="10"/>    <item name="44MagBullet" count="75,325" prob="30"/>         <item name="44MagBulletNG" count="75,325" prob="10"/>   <item name="44MagBulletMG" count="75,325" prob="5"/>  </lootgroup>  
+<lootgroup name="kitSRifleAmmo">                      <item name="762mmBullet" count="75,325" prob="35"/>   <item name="762mmBulletNG" count="75,325" prob="15"/>   <item name="762mmBulletMG" count="75,325" prob="10"/>   <item name="50BMGBullet" count="75,325" prob="30"/>         <item name="50BMGBulletNG" count="75,325" prob="10"/>   <item name="50BMGBulletMG" count="75,325" prob="5"/>  </lootgroup>
+<lootgroup name="kitSPShotgunAmmo">                   <item name="20GAShell" count="75,325" prob="35"/>     <item name="20GAShellNG" count="75,325" prob="15"/>     <item name="20GAShellMG" count="75,325" prob="10"/>     <item name="20GASlug" count="75,325" prob="30"/>            <item name="20GASlugNG" count="75,325" prob="10"/>      <item name="20GASlugMG" count="75,325" prob="5"/>     </lootgroup>  
+<lootgroup name="kitLPShotgunAmmo">                   <item name="12GAShell" count="75,325" prob="35"/>     <item name="12GAShellNG" count="75,325" prob="15"/>     <item name="12GAShellMG" count="75,325" prob="10"/>     <item name="12GASlug" count="75,325" prob="30"/>            <item name="12GASlugNG" count="75,325" prob="10"/>      <item name="12GASlugMG" count="75,325" prob="5"/>     </lootgroup>
+<lootgroup name="kitDBShotgunAmmo">                   <item name="10GAShell" count="75,325" prob="35"/>     <item name="10GAShellNG" count="75,325" prob="15"/>     <item name="10GAShellMG" count="75,325" prob="10"/>     <item name="10GASlug" count="75,325" prob="30"/>            <item name="10GASlugNG" count="75,325" prob="10"/>      <item name="10GASlugMG" count="75,325" prob="5"/>     </lootgroup>
+<lootgroup name="kitExplosives">                      <item name="pipeBomb" count="3,10" prob="25"/>        <item name="heavyPipeBomb" count="3,10" prob="10"/>     <item name="molotovCocktail" count="3,10" prob="25"/>   <item name="heavyMolotovCocktail" count="3,10" prob="10"/>  <item name="mineCandyTin" count="3,10" prob="25"/>      <item name="mineHubcap" count="3,10" prob="5"/>       </lootgroup>
 <!-- Starting Kit Firearms Groups -->
-<lootgroup name="kitPistol"             count="all">  <item group="pistolRNG"/>                  <item group="kitPistolAmmo"    count="1,2"/>  </lootgroup>
-<lootgroup name="kitRevolver"           count="all">  <item group="revolverRNG"/>                <item group="kitRevolverAmmo"  count="1,2"/>  </lootgroup>
-<lootgroup name="kitDeagle"             count="all">  <item group="deagleRNG"/>                  <item group="kitDeagleAmmo"    count="1,2"/>  </lootgroup>
-<lootgroup name="kitMP5"                count="all">  <item group="MP5RNG"/>                     <item group="kitMP5Ammo"       count="1,2"/>  </lootgroup>
-<lootgroup name="kitAK47"               count="all">  <item group="AK47RNG"/>                    <item group="kitAK47Ammo"      count="1,2"/>  </lootgroup>
-<lootgroup name="kitHuntingRifle"       count="all">  <item group="huntingRifleRNG"/>            <item group="kitHRifleAmmo"    count="1,2"/>  </lootgroup>
-<lootgroup name="kitSniperRifle"        count="all">  <item group="sniperRifleRNG"/>             <item group="kitSRifleAmmo"    count="1,2"/>  </lootgroup>
-<lootgroup name="kitSPShotgun"          count="all">  <item group="SPumpShotgunRNG"/>            <item group="kitSPShotgunAmmo" count="1,2"/>  </lootgroup>
-<lootgroup name="kitLPShotgun"          count="all">  <item group="LPumpShotgunRNG"/>            <item group="kitLPShotgunAmmo" count="1,2"/>  </lootgroup>
-<lootgroup name="kitDBShotgun"          count="all">  <item group="DBShotgunRNG"/>               <item group="kitDBShotgunAmmo" count="1,2"/>  </lootgroup>
+<lootgroup name="kitPistol"             count="all">  <item group="pistolRNG"/>                 <item group="kitPistolAmmo"    count="1,2"/>  </lootgroup>
+<lootgroup name="kitRevolver"           count="all">  <item group="revolverRNG"/>               <item group="kitRevolverAmmo"  count="1,2"/>  </lootgroup>
+<lootgroup name="kitDeagle"             count="all">  <item group="deagleRNG"/>                 <item group="kitDeagleAmmo"    count="1,2"/>  </lootgroup>
+<lootgroup name="kitMP5"                count="all">  <item group="MP5RNG"/>                    <item group="kitMP5Ammo"       count="1,2"/>  </lootgroup>
+<lootgroup name="kitAK47"               count="all">  <item group="AK47RNG"/>                   <item group="kitAK47Ammo"      count="1,2"/>  </lootgroup>
+<lootgroup name="kitHuntingRifle"       count="all">  <item group="huntingRifleRNG"/>           <item group="kitHRifleAmmo"    count="1,2"/>  </lootgroup>
+<lootgroup name="kitSniperRifle"        count="all">  <item group="sniperRifleRNG"/>            <item group="kitSRifleAmmo"    count="1,2"/>  </lootgroup>
+<lootgroup name="kitSPShotgun"          count="all">  <item group="SPumpShotgunRNG"/>           <item group="kitSPShotgunAmmo" count="1,2"/>  </lootgroup>
+<lootgroup name="kitLPShotgun"          count="all">  <item group="LPumpShotgunRNG"/>           <item group="kitLPShotgunAmmo" count="1,2"/>  </lootgroup>
+<lootgroup name="kitDBShotgun"          count="all">  <item group="DBShotgunRNG"/>              <item group="kitDBShotgunAmmo" count="1,2"/>  </lootgroup>
+<!-- Weapon Pair Groups Groups -->
+<lootgroup name="kitGunPair01"          count="all">  <item group="kitPistol"/>                 <item group="kitRevolver"/>     </lootgroup>
+<lootgroup name="kitGunPair02"          count="all">  <item group="kitPistol"/>                 <item group="kitDeagle"/>       </lootgroup>
+<lootgroup name="kitGunPair03"          count="all">  <item group="kitPistol"/>                 <item group="kitMP5"/>          </lootgroup>
+<lootgroup name="kitGunPair04"          count="all">  <item group="kitPistol"/>                 <item group="kitAK47"/>         </lootgroup>
+<lootgroup name="kitGunPair05"          count="all">  <item group="kitPistol"/>                 <item group="kitHuntingRifle"/> </lootgroup>
+<lootgroup name="kitGunPair06"          count="all">  <item group="kitPistol"/>                 <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair07"          count="all">  <item group="kitPistol"/>                 <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair08"          count="all">  <item group="kitPistol"/>                 <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair09"          count="all">  <item group="kitPistol"/>                 <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair10"          count="all">  <item group="kitRevolver"/>               <item group="kitDeagle"/>       </lootgroup>
+<lootgroup name="kitGunPair11"          count="all">  <item group="kitRevolver"/>               <item group="kitMP5"/>          </lootgroup>
+<lootgroup name="kitGunPair12"          count="all">  <item group="kitRevolver"/>               <item group="kitAK47"/>         </lootgroup>
+<lootgroup name="kitGunPair13"          count="all">  <item group="kitRevolver"/>               <item group="kitHuntingRifle"/> </lootgroup>
+<lootgroup name="kitGunPair14"          count="all">  <item group="kitRevolver"/>               <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair15"          count="all">  <item group="kitRevolver"/>               <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair16"          count="all">  <item group="kitRevolver"/>               <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair17"          count="all">  <item group="kitRevolver"/>               <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair18"          count="all">  <item group="kitDeagle"/>                 <item group="kitMP5"/>          </lootgroup>
+<lootgroup name="kitGunPair19"          count="all">  <item group="kitDeagle"/>                 <item group="kitAK47"/>         </lootgroup>
+<lootgroup name="kitGunPair20"          count="all">  <item group="kitDeagle"/>                 <item group="kitHuntingRifle"/> </lootgroup>
+<lootgroup name="kitGunPair21"          count="all">  <item group="kitDeagle"/>                 <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair22"          count="all">  <item group="kitDeagle"/>                 <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair23"          count="all">  <item group="kitDeagle"/>                 <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair24"          count="all">  <item group="kitDeagle"/>                 <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair25"          count="all">  <item group="kitMP5"/>                    <item group="kitAK47"/>         </lootgroup>
+<lootgroup name="kitGunPair26"          count="all">  <item group="kitMP5"/>                    <item group="kitHuntingRifle"/> </lootgroup>
+<lootgroup name="kitGunPair27"          count="all">  <item group="kitMP5"/>                    <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair28"          count="all">  <item group="kitMP5"/>                    <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair29"          count="all">  <item group="kitMP5"/>                    <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair30"          count="all">  <item group="kitMP5"/>                    <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair31"          count="all">  <item group="kitAK47"/>                   <item group="kitHuntingRifle"/> </lootgroup>
+<lootgroup name="kitGunPair32"          count="all">  <item group="kitAK47"/>                   <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair33"          count="all">  <item group="kitAK47"/>                   <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair34"          count="all">  <item group="kitAK47"/>                   <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair35"          count="all">  <item group="kitAK47"/>                   <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair36"          count="all">  <item group="kitHuntingRifle"/>           <item group="kitSniperRifle"/>  </lootgroup>
+<lootgroup name="kitGunPair37"          count="all">  <item group="kitHuntingRifle"/>           <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair38"          count="all">  <item group="kitHuntingRifle"/>           <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair39"          count="all">  <item group="kitHuntingRifle"/>           <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair40"          count="all">  <item group="kitSniperRifle"/>            <item group="kitSPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair41"          count="all">  <item group="kitSniperRifle"/>            <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair42"          count="all">  <item group="kitSniperRifle"/>            <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair43"          count="all">  <item group="kitSPShotgun"/>              <item group="kitLPShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair44"          count="all">  <item group="kitSPShotgun"/>              <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair45"          count="all">  <item group="kitLPShotgun"/>              <item group="kitDBShotgun"/>    </lootgroup>
+<lootgroup name="kitGunPair46"          count="all">  <item name="gunRocketLauncher"/>          <item name="rocket" count="25,50"/>  </lootgroup>
+
 <!-- Final Gun Groups -->
 <lootgroup name="kitGunBase">
 <item group="kitPistol"                 prob="20"/>
@@ -1521,6 +1578,18 @@
 <item group="kitLPShotgun"              prob="7.5"/>
 <item group="kitDBShotgun"              prob="10"/>
 </lootgroup>
+<lootgroup name="kitGunPairs">
+<item group="kitGunPair01"/>    <item group="kitGunPair11"/>    <item group="kitGunPair21"/>    <item group="kitGunPair31"/>    <item group="kitGunPair41"/>
+<item group="kitGunPair02"/>    <item group="kitGunPair12"/>    <item group="kitGunPair22"/>    <item group="kitGunPair32"/>    <item group="kitGunPair42"/>
+<item group="kitGunPair03"/>    <item group="kitGunPair13"/>    <item group="kitGunPair23"/>    <item group="kitGunPair33"/>    <item group="kitGunPair43"/>
+<item group="kitGunPair04"/>    <item group="kitGunPair14"/>    <item group="kitGunPair24"/>    <item group="kitGunPair34"/>    <item group="kitGunPair44"/>
+<item group="kitGunPair05"/>    <item group="kitGunPair15"/>    <item group="kitGunPair25"/>    <item group="kitGunPair35"/>    <item group="kitGunPair45"/>
+<item group="kitGunPair06"/>    <item group="kitGunPair16"/>    <item group="kitGunPair26"/>    <item group="kitGunPair36"/>    <item group="kitGunPair46"/>
+<item group="kitGunPair07"/>    <item group="kitGunPair17"/>    <item group="kitGunPair27"/>    <item group="kitGunPair37"/>
+<item group="kitGunPair08"/>    <item group="kitGunPair18"/>    <item group="kitGunPair28"/>    <item group="kitGunPair38"/>
+<item group="kitGunPair09"/>    <item group="kitGunPair19"/>    <item group="kitGunPair29"/>    <item group="kitGunPair39"/>
+<item group="kitGunPair10"/>    <item group="kitGunPair20"/>    <item group="kitGunPair30"/>    <item group="kitGunPair40"/>
+</lootgroup>
 <!-- Starting Kit Tools Groups -->
 <lootgroup name="kitAuger"              count="all">  <item name="gasCan" count="200,600"/>       <item name="auger"/>                      </lootgroup>
 <lootgroup name="kitChainsaw"           count="all">  <item name="gasCan" count="200,600"/>       <item name="chainsaw"/>                   </lootgroup>
@@ -1528,30 +1597,32 @@
 <!-- Final Tool Groups -->
 <lootgroup name="kitBonusToolsA">                     <item name="pickaxeIron" prob="25"/>        <item name="fireaxeIron" prob="30"/>      <item name="fireaxeSteel" prob="25"/>       <item name="pickaxeSteel" prob="15"/>   <item group="kitChainsaw" prob="5"/>  </lootgroup>
 <lootgroup name="kitBonusToolsB">                     <item name="bloodDrawKit" prob="5"/>        <item name="beaker" prob="10"/>           <item name="shovelIron" prob="30"/>
-                                                      <item group="kitBonusToolsA" prob="5"/>     <item name="shovelSteel" prob="25"/>     <item group="kitAuger" prob="5"/>  </lootgroup>
-<lootgroup name="kitBonusToolsC">                     <item name="flashlight02" prob="35"/>       <item name="clawHammer" prob="25"/>       <item group="kitBonusToolsB" prob="5"/>     <item name="wrench" prob="25"/>         <item group="kitNailgun" prob="10"/>  </lootgroup>
-<!-- Starting Kit Weapon Groups -->
-<lootgroup name="kitExplosives"         count="all">  <item name="pipeBomb" count="0,5"/>         <item name="mineCandyTin" count="0,5"/>   <item name="gunPowderNG" count="5,25"/>  </lootgroup>
-
+                                                      <item group="kitBonusToolsA" prob="5"/>     <item name="shovelSteel" prob="25"/>      <item group="kitAuger" prob="5"/>  </lootgroup>
+<lootgroup name="kitBonusToolsC">                     <item name="flashlight02" prob="35"/>       <item name="clawHammer" prob="25"/>       <item group="kitBonusToolsB" prob="15"/>    <item name="wrench" prob="5"/>         <item group="kitNailgun" prob="20"/>  </lootgroup>
 <!-- Ranged Weapons -->
 <lootgroup name="kitArrows">
-<item name="ironArrow"                  count="75,100" prob="50"/>
-<item name="steelArrow"                 count="75,100" prob="30"/>
-<item name="flamingArrow"               count="75,100" prob="20"/>
+<item name="ironArrow"                  count="100,250" prob="40"/>
+<item name="steelArrow"                 count="75,150"  prob="30"/>
+<item name="flamingArrow"               count="25,75"   prob="10"/>
+<item name="petrolArrow"                count="25,75"   prob="5"/>
+<item name="firecrackerArrow"           count="25,75"   prob="10"/>
+<item name="explodingArrow"             count="25,75"   prob="5"/>
 </lootgroup>
 <lootgroup name="kitBolts">
-<item name="ironCrossbowBolt"           count="75,100" prob="50"/>
-<item name="steelCrossbowBolt"          count="75,100" prob="30"/>
-<item name="explodingCrossbowBolt"      count="75,100" prob="20"/>
+<item name="ironCrossbowBolt"           count="100,250" prob="40"/>
+<item name="steelCrossbowBolt"          count="75,150"  prob="30"/>
+<item name="flamingCrossbowBolt"        count="25,75"   prob="10"/>
+<item name="petrolCrossbowBolt"         count="25,75"   prob="5"/>
+<item name="firecrackerCrossbowBolt"    count="25,75"   prob="10"/>
+<item name="explodingCrossbowBolt"      count="25,75"   prob="5"/>
 </lootgroup>
-<lootgroup name="kitCrossbow"           count="all">  <item name="crossbow"/>                     <item group="kitBolts" count="1,3"/>  </lootgroup>
-<lootgroup name="kitWoodenBow"          count="all">  <item name="woodenBow"/>                    <item group="kitArrows" count="1,3"/>  </lootgroup>
-<lootgroup name="kitCompoundBow"        count="all">  <item name="compoundBow"/>                  <item group="kitArrows" count="1,3"/>  </lootgroup>
+<lootgroup name="kitCrossbow"           count="all">  <item name="crossbow"/>                     <item group="kitBolts" count="2"/>  </lootgroup>
+<lootgroup name="kitCompoundBow"        count="all">  <item name="compoundBow"/>                  <item group="kitArrows" count="2"/>  </lootgroup>
 <lootgroup name="kitBlunderbuss"        count="all">  <item name="blunderbuss"/>                  <item group="ammoBlunderbuss" count="10,20"/>  </lootgroup>
 <!-- Final Weapon Groups -->
 <lootgroup name="kitKnife">                           <item name="torch" count="3,5" prob="25"/>  <item name="huntingKnife" prob="45"/>     <item name="machete" prob="30"/>  </lootgroup>
 <lootgroup name="kitClub">                            <item name="torch" count="3,5" prob="25"/>  <item name="clubIron" prob="30"/>         <item name="clubBarbed" prob="20"/>         <item name="clubSpiked" prob="15"/>       <item name="sledgehammer" prob="10"/>  </lootgroup>
-<lootgroup name="kitRanged">                          <item group="kitWoodenBow" prob="0"/>       <item group="kitCompoundBow" prob="35"/>  <item group="kitCrossbow" prob="35"/>       <item group="kitBlunderbuss" prob="30"/>  </lootgroup>
+<lootgroup name="kitRanged">                          <item group="kitCompoundBow" prob="40"/>    <item group="kitCrossbow" prob="40"/>     <item group="kitBlunderbuss" prob="20"/>  </lootgroup>
 <!-- Basic Supply Groups -->
 <lootgroup name="kitFood">
 <item name="canBeef"                    count="1,10"/>
@@ -1588,27 +1659,27 @@
 <item name="antibiotics"                count="0,3" prob="30"/>
 </lootgroup>
 <lootgroup name="kitHealing"            count="all">
-<item name="firstAidBandage"            count="3,5"/>
-<item name="firstAidKit"                count="0,5"/>
-<item name="painkillers"                count="3,5"/>
+<item name="firstAidBandage"            count="2,7"/>
+<item name="firstAidKit"                count="0,7"/>
+<item name="painkillers"                count="2,7"/>
 </lootgroup>
 <lootgroup name="kitRepair"             count="all">
 <item name="cloth"                      count="0,10"/>
 <item name="forgedIron"                 count="15,25"/>
-<item name="forgedSteel"                count="5,15"/>
-<item name="repairKit"                  count="6,12"/>
+<item name="forgedSteel"                count="0,10"/>
+<item name="repairKit"                  count="8,16"/>
 </lootgroup>
 <!-- Starting Kits Base Groups -->
 <lootgroup name="startingKitBasics"     count="all">  <item name="flashlight02"/>                 <item group="kitFood"/>                           <item group="kitDrink"/>                    <item group="kitMedicine"/>             <item group="kitHealing"/>
-                                                      <item group="kitRepair"/>                   <item group="kitClub"/>                           <item group="clothGeneralRS"/>              <item group="kitArmors"/>               <item group="kitGunBase"/>  </lootgroup>
-<lootgroup name="startingKitGunsBase"   count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunBonus" count="1"/>             <item group="kitExplosives" count="0,2"/>  </lootgroup>
-<lootgroup name="startingKitGunsLucky"  count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunBonus" count="1,2"/>           <item group="kitExplosives" count="2,3"/>  </lootgroup>
-<lootgroup name="startingKitToolsBase"  count="all">  <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>        <item group="kitBonusToolsC" count="0,1"/>  <item group="kitKnife" count="0,1"/>  </lootgroup>
-<lootgroup name="startingKitToolsLucky" count="all">  <item group="kitBonusToolsA" count="1,2"/>  <item group="kitBonusToolsB" count="1"/>          <item group="kitBonusToolsC" count="1"/>    <item group="kitKnife" count="1"/>  </lootgroup>
+                                                      <item group="kitRepair"/>                   <item group="kitClub"/>                           <item group="clothGeneralRS"/>              <item group="kitArmors"/>               </lootgroup>
+<lootgroup name="startingKitGunsBase"   count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunPairs"/>                       <item group="kitExplosives" count="0,2"/>   </lootgroup>
+<lootgroup name="startingKitGunsLucky"  count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunPairs"/>                       <item group="kitExplosives" count="2,3"/>   </lootgroup>
+<lootgroup name="startingKitToolsBase"  count="all">  <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>        <item group="kitBonusToolsC" count="0,1"/>  <item group="kitKnife" count="0,1"/>    </lootgroup>
+<lootgroup name="startingKitToolsLucky" count="all">  <item group="kitBonusToolsA" count="1"/>    <item group="kitBonusToolsB" count="1"/>          <item group="kitBonusToolsC" count="1"/>    <item group="kitKnife" count="1"/>      </lootgroup>
 <!-- Final Starting Kits -->
-<lootgroup name="startingKitBase"       count="all">  <item group="startingKitBasics"/>           <item group="startingKitToolsBase"/>              <item group="startingKitGunsBase"/>  </lootgroup>
-<lootgroup name="startingKitLucky"      count="all">  <item group="startingKitBasics"/>           <item group="startingKitToolsLucky"/>             <item group="startingKitGunsLucky"/>  </lootgroup>
-<lootgroup name="startingKitUnlucky"    count="all">  <item group="startingKitBasics"/>           <item group="startingKitToolsBase" count="0,1"/>  <item group="startingKitGunsBase" count="0,1"/>  </lootgroup>
+<lootgroup name="startingKitBase"       count="all">  <item group="startingKitBasics"/>           <item group="startingKitToolsBase"/>              <item group="startingKitGunsBase"/>   </lootgroup>
+<lootgroup name="startingKitLucky"      count="all">  <item group="startingKitBasics"/>           <item group="startingKitToolsLucky"/>             <item group="startingKitGunsLucky"/>  <item group="kitHealing"/> <item name="wrench" count="0,1"/> </lootgroup>
+<lootgroup name="startingKitFood"       count="all">  <item group="startingKitBasics"/>           <item group="startingKitGunsBase"/>               <item group="kitFood"/>               <item group="kitDrink"/>   </lootgroup>
 
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- =========================== PLAYER MADE CHESTS ============================================================================================================================================================================================================================================================================================================================ -->
@@ -2506,7 +2577,7 @@ loot_quality_template=  "leveledNormal">
 
 <!-- Special -->
 <!-- =========================== AIRDROPS (BASIC) ============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt069"> <item group="lootADBase" prob="35"/>  <item group="lootADMedical" prob="10"/> <item group="lootADFood" prob="12"/>  <item group="lootADGunsAmmo" prob="12"/>  <item group="lootADTools" prob="12"/> <item group="lootADArmor" prob="12"/> <item group="lootADBuild" prob="1"/>  <item group="lootADStock" prob="6"/>  </lootgroup>
+<lootgroup name="cnt069"> <item group="lootADBase" prob="35"/>  <item group="lootADMedical" prob="10"/> <item group="lootADFood" prob="12"/>  <item group="lootADGunsAmmo" prob="12"/>  <item group="lootADTools" prob="9"/> <item group="lootADArmor" prob="9"/> <item group="lootADBuild" prob="1"/>  <item group="lootADStock" prob="9"/> <item group="kitRepair" prob="3"/>  </lootgroup>
 <lootcontainer id="69" count="1" size="7,7" open_time="3" 
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_supply_crate"
@@ -2976,7 +3047,7 @@ loot_quality_template=  "leveledLight">
 <item group="itemsCommon" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG BURLY ZOMBIES ============================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt123"> <item group="lootBaseZombie" prob="25"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/> </lootgroup>
+<lootgroup name="cnt123"> <item group="lootBaseZombie" prob="25"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/>  </lootgroup>
 <lootcontainer id="123" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_corpse"
@@ -2991,7 +3062,7 @@ loot_quality_template=  "leveledLight">
 </lootcontainer>
   
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="15"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="10"/> </lootgroup>
+<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="4.5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="15"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="10"/> <item name="Railgun" prob="0.5"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_backpack"
@@ -3024,14 +3095,14 @@ loot_quality_template=  "startingKit">
 
 <item group="startingKitLucky"  count="1" prob="100"/>
 </lootcontainer>
-<!-- =========================== STARTERKIT (UNLUCKY) ============================================================================================================================================================================================================================================================================================================================ -->
+<!-- =========================== STARTERKIT (FOOD) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootcontainer id="153" count="1" size="9,9" open_time="5" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "startingKit">
 
-<item group="startingKitUnlucky" count="1" prob="100"/>
+<item group="startingKitFood" count="1" prob="100"/>
 </lootcontainer>
 <!-- =========================== QUEST BAG ======================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt154"                count="all">  <item group="lootBackpacks" count="0,1"/>   <item group="lootHousehold" count="0,1"/>  <item group="ammoGuns"/>  </lootgroup>
@@ -3041,9 +3112,11 @@ sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "leveledLight">
 
-<item group="cnt154" count="2" prob="25"/>
-<item group="cnt154" count="3,4" prob="45"/>
-<item group="cnt154" count="5" prob="10"/>  
+<item group="cnt154" count="2"    prob="25"/>
+<item group="cnt154" count="3,4"  prob="35"/>
+<item group="cnt154" count="5"    prob="10"/>
+<item group="kitRepair"           prob="5"/>
+<item group="startingKitBase"     prob="5"/>
 <!-- Chance of Default Loot -->
 <item group="cnt154" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>  

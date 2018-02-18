@@ -27,9 +27,9 @@ Server Name=""
 Then Gnamod may just be the thing for you! This mod comes in different forms but at its core it features completely redone random worlds based on orignal game assets. The loot system has been completely overhauled (and then a few more times) which makes the loot experience unique and rewarding.
 Finally this mod increases the challenge of play in various way such as resource requirements and modified zombies tailored to fit with the experience.
 NOTE: Parts of this mod are still in flux and under construction. RWG work is mostly done for the base and nomad version so those should be stable enough to play. I am still working on spawning and zombies so those could change while you play. If you want to avoid bugs do not let the launcher update when playing an existing world. Enjoy">
-<Server Name="Gnamod Base" Logo="">
+<Server Name="Gnamod 1.0 - Base" Logo="">
 <Description>
-Gnamod Base 0.91 (Stable)
+(Description and Documention coming soon)
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
@@ -45,7 +45,7 @@ Gnamod Base 0.91 (Stable)
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
-
+<!--
 <Server Name="Gnamod Base Testversion" Logo="">
 <Description>
 Gnamod Horde Mode Testversion. ***THIS IS A TESTVERSION OF THE LATEST GNAMOD BASE. IT IS FULLY PLAYABLE BUT RIGHT NOW IT IS NOT BALANCED. IF YOU WANT TO KEEP PLAYING A WORLD, TURN AUTO UPDATING OFF!***
@@ -66,13 +66,29 @@ Nothing in this version is final and if you find bugs please report them in the 
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
-
+-->
 <Server Name="Gnamod Horde Mode" Logo="">
 <Description>
-Gnamod Horde Mode 0.91 (Stable)
-Updated to version 0.91 This will be the last version in this form, the next one will come out in Beta soon but will not be compatible anymore with worlds created by this version. Then after that Beta version is properly balanced will replace this.
-Changes: Improved quest (500 kills before the note needs to be read.), Changed spawns to progress a bit better rather than coming full force on day 4. Now all hell will start breaking lose from day 7, after day 49 passed it will be constant hordes.
-Update 0.91: Slightly reduced horde buildup over time to provide some breathing room for solo players, also increased delay between spawns to hopefully reduce the huge initial wave at nightfall.
+This is the old version (0.91) that will stay up here for a bit until I am all done with documentation (roughly until end of february). The saves from this version are not compatible with the new version. If you are planning on starting a new game, you should check out the 1.0 version instead.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>Base\Config</Exclude>
+<Exclude>BaseBeta</Exclude>
+<Exclude>HordeBeta</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server>  
+
+<Server Name="Gnamod 1.0 - Horde Mode (Singleplayer)" Logo="">
+<Description>
+(Description and Documention coming soon)
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
@@ -86,31 +102,11 @@ Update 0.91: Slightly reduced horde buildup over time to provide some breathing 
 <Exclude>ModLauncher.xml</Exclude>
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
-</Server>  
-
-<Server Name="Gnamod Horde Mode Testversion" Logo="">
-<Description>
-Gnamod Horde Mode Testversion. ***THIS IS A TESTVERSION OF THE LATEST GNAMOD HORDE MODE. IT IS FULLY PLAYABLE BUT RIGHT NOW IT IS NOT BALANCED. IF YOU WANT TO KEEP PLAYING A WORLD, TURN AUTO UPDATING OFF!***
-How to use this version: You can test this version solo and are allowed to record or stream this, but I am contiually working on this and adding or changing things around. Save files might not be compatible with previous versions of Gnamod and it is possible that in-between updates the world you are playing is no longer compatible with the current version.
-Nothing in this version is final and if you find bugs please report them in the forum post. Current Version is 0.96b.
-</Description>
-<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-<Excludes>
-<Exclude>Base\Config</Exclude>
-<Exclude>Horde\Config</Exclude>
-<Exclude>Necropolis</Exclude>
-<Exclude>Nomad</Exclude>
-<Exclude>.gitattributes</Exclude>
-<Exclude>.gitignore</Exclude>
-<Exclude>Gnamod.sln</Exclude>
-<Exclude>ModLauncher.xml</Exclude>
-</Excludes>
-<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
 
-<Server Name="Gnamod Necropolis" Logo="">
+<Server Name="Gnamod 1.0 - Necropolis" Logo="">
 <Description>
-Gnamod Necropolis 0.9 (UNDER DEVELOPMENT)
+(!!!UNDER DEVELOPMENT!!!) Might not be playable yet in the current state, but I will not let me working on this hold back the other mods.
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
@@ -126,9 +122,9 @@ Gnamod Necropolis 0.9 (UNDER DEVELOPMENT)
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
   
-<Server Name="Gnamod Nomad Mode" Logo="">
+<Server Name="Gnamod 1.0 - Nomad Mode" Logo="">
 <Description>
-Gnamod Nomad Mode 0.9 (Stable)
+(Description and Documention coming soon)
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>

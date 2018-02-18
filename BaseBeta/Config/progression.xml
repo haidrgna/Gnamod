@@ -334,7 +334,8 @@
 	</action_skill>
 	<perk name="Workbench" icon="resource" description_key="workbenchSkillDesc" title_key="workbench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="15"/>
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="4"/>
+    <requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="workbench" unlock_level="1"/>
 	</perk>
 	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
@@ -1127,7 +1128,7 @@
 		</effect>
 	</perk>
 
-<!-- Gnamod Bartering 
+<!-- Gnamod Bartering -->
 	<player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>
@@ -1154,9 +1155,9 @@
 			<add skill_level="3" value="1500"/>
 		</effect>
 	</perk>
--->
+
   
-<!-- Gnamod Horde Mode Bartering -->
+<!-- Gnamod Horde Mode Bartering 
 <player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" max_level="1" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 <effect name="Bartering">
 <add skill_level="1" value="0.25,0.25"/>
@@ -1205,7 +1206,7 @@
 </effect>
 
 </perk>
-
+-->
   
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">

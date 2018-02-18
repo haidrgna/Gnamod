@@ -268,16 +268,16 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="smelly" duration="30" smell="largeSmell" icon="ui_game_symbol_dysentery" name_key="smelly" description_key="smellyDesc" tooltip_key="smellyTooltip"/>
 
-<buff id="infection" mutex="cured" duration="1200t" onexpired="infection1" type="sickness"
+<buff id="infection" mutex="cured,infection1,infection2,infection3" duration="1200t" onexpired="infection1" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection" description_key="infectionDesc" tooltip_key="infectionTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
 </buff>
 
-<buff id="infection1" mutex="cured" duration="7200t" actions="debuff(infection)" onexpired="infection2" type="sickness"
+<buff id="infection1" mutex="cured,infection2,infection3" duration="7200t" actions="debuff(infection)" onexpired="infection2" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics,herbalAntibiotics">
 	<modify id="0" stat="stamina" amount="-0.3" rate="1"/>
 </buff>
 
-<buff id="infection2" mutex="cured" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
+<buff id="infection2" mutex="cured,infection3" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
@@ -622,6 +622,7 @@ This requires a 50+ food bar:
 </buff>
 
 <buff id="deadAnimal" duration="5"> <modify id="0" stat="health" amount="-9999" rate="1" /> </buff>   
+<buff id="railZap" duration="1"> <modify id="0" stat="health" amount="-50" rate="1" castsound="metalhitmetal"/> </buff>   
 
 <buff id="hitTag" duration="3" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="metalhitmetal">
 <modify id="0" stat="health" amount="-1" rate="1" />

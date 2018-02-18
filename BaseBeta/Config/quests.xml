@@ -72,10 +72,10 @@
 	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
+		<objective type="ZombieKill" id="zombieArleneWalker,zombieArleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieDarleneWalker,zombieDarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMarleneWalker,zombieMarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieLillyWalker,zombieLillyFeral" value="1" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />

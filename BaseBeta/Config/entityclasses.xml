@@ -82,20 +82,20 @@
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="Territorial"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityLootContainer"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityMinibike"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-3"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
+<property name="AITask-4"                           value="BreakBlock"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-6"                           value="BreakBlock"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="BreakBlock"/>
 <property name="AITask-9"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
 <property name="AITask-10"                          value="ApproachSpot"/>
 <property name="AITask-11"                          value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
 <property name="AITarget-5"                         value="SetNearestCorpseAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
@@ -150,7 +150,7 @@
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
 <property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="1000"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 <!-- Attack Settings -->
 <property name="HandItem"                           value="handZombieNormal"/>
 <property name="AttackTimeoutDay"                   value="1.5"/>
@@ -200,7 +200,7 @@
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
 <property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="2000"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 <!-- Stealth Settings -->
 <property name="SightRange"                         value="60"/>
 <property name="SightScale"                         value="-20,50"/>
@@ -248,7 +248,7 @@
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
 <property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="2500"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 <!-- Radiated Effect -->
 <property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="TintMaterial0"                      value="172,242,172"/>
@@ -296,7 +296,7 @@
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
 <property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="3500"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 <!-- Dismemberment -->
 <property name="LegsExplosionDamageMultiplier"      value="0.4"/>
 <property name="ArmsExplosionDamageMultiplier"      value="0.4"/>
@@ -357,7 +357,7 @@
 <property name="ExperienceGain"                     value="500"/>
 <property name="CorpseBlock"                        value="animalGore"/>
 <property name="CorpseBlockChance"                  value="1"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 </entity_class>
 
 <!-- Basic Hostile Animal -->
@@ -388,11 +388,11 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityZombie"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-5"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityZombie"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-5"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <!-- Statistics -->
 <property name="CanClimbLadders"                    value="false"/>
 <property name="MaxHealth"                          value="1200"/>
@@ -422,7 +422,7 @@
 <property name="ExperienceGain"                     value="2000"/>
 <property name="CorpseBlock"                        value="animalGore"/>
 <property name="CorpseBlockChance"                  value="1"/>
-<property name="DeadBodyHitPoints"                  value="350"/>  
+<property name="DeadBodyHitPoints"                  value="500"/>  
 <!-- Attack Settings -->
 <property name="HandItem"                           value="handAnimalBear"/>
 <property name="AttackTimeoutDay"                   value="2"/>
@@ -564,7 +564,7 @@
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
 <property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="5000"/>
-<property name="DeadBodyHitPoints"                  value="350"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
 <property name="HasDeathAnim"                       value="true"/>
 </entity_class>
 <!-- ============================== Joel ============================================================================================================================================================================= -->
@@ -4474,10 +4474,10 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
@@ -4524,14 +4524,15 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
 <property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
+<!-- Sounds -->
 <property name="SoundRandom"                        value="Animals/Vulture/vultureroam"/>
 <property name="SoundAlert"                         value="Animals/Vulture/vulturealert"/>
 <property name="SoundHurt"                          value="Animals/Vulture/vulturepain"/>
@@ -4549,16 +4550,34 @@
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>
 <!-- ============================== Zombie Bear ============================================================================================================================================================================ -->
-<entity_class name="animalZombieBear"               extends="animalBear">
-<property name="MaxHealth"                          value="4000"/>
-<property name="ExperienceGain"                     value="4000"/>
+<entity_class name="animalZombieBear"               extends="animalTemplateHostile">
+<property name="Mesh"                               value="Animals/Bear/animalBearStandardRagdoll"/>
+<property name="PhysicsBody"                        value="bear"/>
 <property name="HandItem"                           value="handAnimalZombieBear"/>
 <property name="ReplaceMaterial0"                   value="Materials/UMAFur_ZombieBear"/>
+<property name="HasRagdoll"                         value="true"/>
+<property name="HasDeathAnim"                       value="true"/>
+<property name="RootMotion"                         value="true"/>
+<property name="RagdollOnDeathChance"               value=".5"/>
+<property name="WalkType"                           value="0"/>
+<property name="ApproachSpeed"                      value="1.35"/>
+<property name="NightApproachSpeed"                 value="1.45"/>
+<property name="ExperienceGain"                     value="4000"/>
 <property name="DeadBodyHitPoints"                  value="1000"/>
+<property name="MaxHealth"                          value="4000"/>
+<property name="SmellAlertThreshold"                value="5"/>
 <property name="EntityType"                         value="Zombie"/>
 <property name="Faction"                            value="undead"/>
 <property name="Parent"                             value="Enemies"/>
+<property name="Class"                              value="EntityZombieDog"/>
 <property name="CorpseBlockChance"                  value="0"/>
+<!-- Mechanim -->
+<property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/>       </property>
+<property class="MechanimAttackStates">   <property name="state0" value="Base Layer.Attack"/>   </property>
+<property class="MechanimPainTriggers">   <property name="state0" value="PainTrigger"/>         </property>
+<property class="MechanimPainStates">     <property name="state0" value="Base Layer.Pain"/>     </property>
+<property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>        </property>
+<property class="MechanimDeathStates">    <property name="state0" value="Base Layer.Death"/>    </property>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="Swim"/>
 <property name="AITask-2"                           value="BreakDoor"/>
@@ -4571,16 +4590,24 @@
 <property name="AITask-9"                           value="ApproachSpot"/>
 <property name="AITask-10"                          value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>  
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
-<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/>
+<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
+<!-- Sounds -->
+<property name="SoundHurt"                          value="Animals/Bear/bearpain"/>
+<property name="SoundDeath"                         value="Animals/Bear/beardeath"/>
+<property name="SoundRandom"                        value="Animals/Bear/bearroam"/>
+<property name="SoundSense"                         value="Animals/Bear/bearsense"/>
+<property name="SoundAlert"                         value="Animals/Bear/bearalert"/>
+<property name="SoundAttack"                        value="Animals/Bear/bearattack"/>
+<property name="SoundGiveUp"                        value="Animals/Bear/beargiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="60"/>
+<property name="SightRange"                         value="90"/>
 <property name="SightScale"                         value="-5,75"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="6"/>
@@ -4648,7 +4675,17 @@
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>
 <!-- ============================== Radiated Wolf ========================================================================================================================================================================= -->  
-<entity_class name="animalWolfRad"                  extends="animalWolf">
+<entity_class name="animalWolfRad"                  extends="animalTemplateHostile">
+<property name="Mesh"                               value="Animals/Wolf/animalStandardWolfRagdoll"/>
+<property name="PhysicsBody"                        value="wolf"/>
+<property name="Class"                              value="EntityZombieCop"/>
+<property name="HasDeathAnim"                       value="true"/>
+<property name="RootMotion"                         value="true"/>
+<property name="RagdollOnDeathChance"               value=".5"/>
+<property name="ApproachSpeed"                      value="1.35"/>
+<property name="NightApproachSpeed"                 value="1.5"/>
+<property name="DeadBodyHitPoints"                  value="500"/>
+<property name="SmellAlertThreshold"                value="5"/>
 <property name="EntityType"                         value="Zombie"/>
 <property name="Faction"                            value="undead"/>
 <property name="MaxHealth"                          value="900"/>
@@ -4659,6 +4696,13 @@
 <property name="ExperienceGain"                     value="2000"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <property name="CorpseBlockChance"                  value="0"/>
+<!-- Mechanim -->
+<property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
+<property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        <property name="state1" value="AttackStandingStill"/>   </property>
+<property class="MechanimPainTriggers">   <property name="state0" value="PainTrigger"/>   </property>
+<property class="MechanimPainStates">     <property name="state0" value="Pain"/>          </property>
+<property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>  </property>
+<property class="MechanimDeathStates">    <property name="state0" value="Death"/>         </property>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4670,14 +4714,25 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
 <property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
+<!-- Sounds -->
+<property name="SoundRandom"                        value="Animals/Wolf/wolfroam"/>
+<property name="SoundAlert"                         value="Animals/Wolf/wolfalert"/>
+<property name="SoundHurt"                          value="Animals/Wolf/wolfpain"/>
+<property name="SoundDeath"                         value="Animals/Wolf/wolfdeath"/>
+<property name="SoundAttack"                        value="Animals/Wolf/wolfattack"/>
+<property name="SoundSense"                         value="Animals/Wolf/wolfsense"/>
+<property name="SoundGiveUp"                        value="Animals/Wolf/wolfgiveup"/>
+<!-- Stealth -->
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-5,75"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4692,7 +4747,9 @@
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>  
 <!-- ============================== Radiated Dire Wolf ==================================================================================================================================================================== -->  
-<entity_class name="animalDireWolfRad"              extends="animalDireWolf">
+<entity_class name="animalDireWolfRad"              extends="animalWolfRad">
+<property name="Mesh"                               value="Animals/Wolf/animalStandardDireWolfRagdoll"/>
+<property name="DeadBodyHitPoints"                  value="1000"/>
 <property name="EntityType"                         value="Zombie"/>
 <property name="Faction"                            value="undead"/>
 <property name="MaxHealth"                          value="1800"/>
@@ -4714,10 +4771,10 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
@@ -4739,6 +4796,7 @@
 <entity_class name="animalSnakeRad"                 extends="animalSnake">
 <property name="EntityType"                         value="Zombie"/>
 <property name="Faction"                            value="undead"/>
+<property name="Class"                              value="EntityZombieDog"/>
 <property name="MaxHealth"                          value="250"/>
 <property name="ParticleOnSpawn"			              value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="HandItem"                           value="handAnimalZombieDogRad"/>
@@ -4772,6 +4830,9 @@
 <property name="Explosion.RadiusEntities"           value="10"/>
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
+<!-- Stealth -->
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-5,75"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="1"/>
 <drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="2"/>
@@ -4986,3 +5047,5 @@
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>
 </entity_classes>
+
+<!-- <property name="HandItemCrawler" value="handZombieBurningCrawler"/> -->

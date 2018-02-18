@@ -299,9 +299,12 @@ tbnsew:
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="CanMobsSpawnOn" value="true"/>
-	<!-- A15
-	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
-	-->
+  <property class="UpgradeBlock">
+    <property name="ToBlock" value="concreteBlock"/>
+    <property name="Item" value="cementMix"/>
+    <property name="ItemCount" value="10"/>
+    <property name="UpgradeHitCount" value="4"/>
+  </property>
 	<property name="EconomicValue" value="45"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
@@ -3205,7 +3208,7 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false"/>
 </block>
 
-<block id="310" name="cookingPot">
+<block id="310" name="cookingPotHelper">
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -3214,12 +3217,18 @@ group desc for stuff like metal siding
 	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CanPickup" value="true"/>
+  <property name="CanPickup" value="true" param1="cookingPot"/>
+  <property name="Stacknumber" value="1"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Group" value="Food/Cooking"/>
-	<property name="EconomicValue" value="4"/>
+  <property name="Class" value="PlantGrowing"/>
+  <property name="PlantGrowing.Next" value="cookingPotHelper"/>
+  <property name="PlantGrowing.GrowthRate" value="0.005"/>
+  <property name="PlantGrowing.FertileLevel" value="0"/>
+  <property name="PlantGrowing.IsRandom" value="false"/>
+  <property name="PlantGrowing.LightLevelGrow" value="0"/>
+  <property name="PlantGrowing.LightLevelStay" value="0"/>
 </block>
 
 <block id="311" name="cntOven">
@@ -3249,6 +3258,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="200"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="4"/> </property>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
@@ -4603,7 +4613,7 @@ group desc for stuff like metal siding
 <!-- Gnamod Horde Mode Blocks -->
 
 <block id="437" name="PlaceBeacon">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="Player"/>
 <property name="Material" value="MstainlessSteel"/>
 <property name="CustomIcon" value="flagPoleWhiteRiver"/>
 <property name="Model" value="floor_trap_3x3"/>
@@ -4687,7 +4697,7 @@ group desc for stuff like metal siding
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267,267,320,320,320,320"/>
 <property name="Class" value="TorchHeatMap"/>
-<property name="HeatMapStrength" value="80.0"/>
+<property name="HeatMapStrength" value="100.0"/>
 <property name="HeatMapTime" value="2400"/>
 <property name="HeatMapFrequency" value="4"/>
 <property name="DowngradeBlock" value="BeaconBrokenSection"/>
@@ -4730,20 +4740,20 @@ group desc for stuff like metal siding
 <property name="MultiBlockDim" value="3,1,3"/>
 <property name="Shape" value="New"/>
 <property name="UseGlobalUV" value="Global"/>
-<property name="Texture" value="267"/>
 <property name="Texture" value="267,267,341,341,341,341"/>
 <property name="Class" value="VendingMachine"/>
 <property name="TraderID" value="6"/>
 <property name="Buff" value="hitTag"/>
 <property name="CanPlayersSpawnOn" value="false"/>
+<property name="DowngradeBlock" value="BeaconBrokenSection"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
-  
+
 <block id="446" name="BeaconSupplies">
 <property name="CreativeMode" value="None"/>
 <property name="Extends" value="BeaconDisposalUnit"/>
-<property name="Texture" value="267,267,25,25,25,25"/>  
+<property name="Texture" value="267,267,25,25,25,25"/>
 <property name="TraderID" value="7"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
@@ -4765,7 +4775,7 @@ group desc for stuff like metal siding
 <property name="Class" value="TorchHeatMap"/>
 <property name="HeatMapStrength" value="10"/>
 <property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="4"/>
+<property name="HeatMapFrequency" value="2"/>
 <property name="ParticleName" value="signal_flarePrefab"/>
 <property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
@@ -4773,7 +4783,7 @@ group desc for stuff like metal siding
 </block>  
 
 <block id="449" name="BeaconFlag">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="CustomIcon" value="flagPoleWhiteRiver"/>
 <property name="Material" value="Mbeacon"/>
 <property name="StabilitySupport" value="false"/>
@@ -4786,7 +4796,7 @@ group desc for stuff like metal siding
 <property name="Class" value="TorchHeatMap"/>
 <property name="HeatMapStrength" value="10"/>
 <property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="4"/>
+<property name="HeatMapFrequency" value="2"/>
 <property name="ParticleName" value="candle_flame"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="DowngradeBlock" value="BeaconFlagBroken"/>
@@ -4822,7 +4832,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="451" name="WorldBeacon">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="Material" value="MstainlessSteel"/>
 <property name="CustomIcon" value="flagPoleWhiteRiver"/>
 <property name="Texture" value="267"/>
@@ -4837,7 +4847,29 @@ group desc for stuff like metal siding
 <property name="CanPlayersSpawnOn" value="false"/>
 <drop event="Destroy" count="0"/>
 </block>
-<!-- 451 - 462 Free -->
+  
+<block id="452" name="BeaconSuppliesSmall">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267,267,25,25,25,25"/>
+<property name="Class" value="VendingMachine"/>
+<property name="TraderID" value="7"/>
+<property name="Buff" value="hitTag"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
+</block>
+
+<block id="453" name="BeaconBuildingSmall">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSuppliesSmall"/>
+<property name="Texture" value="267,267,266,266,266,266"/>
+<property name="TraderID" value="8"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
+</block>
+<!-- 454 - 462 Free -->
   
 <block id="463" name="bed01">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
@@ -5266,6 +5298,7 @@ group desc for stuff like metal siding
 	<property name="FuelValue" value="200"/>
 	<property name="Weight" value="30"/>
 	<property name="CanPickup" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
   <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
@@ -5318,6 +5351,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="90"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems">
 		<property name="leather" value="5"/>
 		<property name="cottonPlant" value="10"/>
@@ -5325,7 +5359,7 @@ group desc for stuff like metal siding
 		<property name="forgedIron" value="3"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="leather" count="2,4"/>
+  <drop event="Harvest" name="leather" count="2,4" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,15"/>
   <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="65"/>
@@ -5631,9 +5665,9 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="6"/> <property name="leather" value="4"/> </property>
 	<drop event="Harvest" name="wood" count="2"/>
-	<drop event="Harvest" name="leather" count="2"/>
+  <drop event="Harvest" name="leather" count="1,3" tool_category="Butcher"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05"/>
 	<property name="EconomicValue" value="18"/>
 </block>
 
@@ -6557,6 +6591,7 @@ group desc for stuff like metal siding
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -6686,6 +6721,7 @@ group desc for stuff like metal siding
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -6720,6 +6756,7 @@ group desc for stuff like metal siding
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -7402,7 +7439,24 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted"/>
 <property name="PlantGrowing.Next" value="lootWorkstationsBustedHelper"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="700" name="noMineCookingPot">
+	<property name="Material" value="MmetalNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+  <property name="CanPickup" value="true" param1="cookingPot"/>
+  <property name="Stacknumber" value="1"/>
+	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="EconomicValue" value="4"/>
+</block>
 
 <block id="701" name="GoreBlock1Prefab">
 	<property name="CreativeMode" value="Dev"/>
@@ -7479,7 +7533,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4"/>
-		<property name="ItemCount" value="40"/>
+    <property name="Item" value="forgedIron"/>
+    <property name="ItemCount" value="2"/>
 	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2"/>
 	<drop event="Destroy" name="wood" count="0"/>
@@ -11085,9 +11140,10 @@ group desc for stuff like metal siding
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="302"/>
 	<property name="IsDecoration" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug"/>
+		<property name="ToBlock" value="WindowPlug01"/>
 		<property name="Item" value="wood"/>
 		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="4"/>
@@ -11159,6 +11215,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Buildings/window03_broke1" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DowngradeBlock" value="window03Frame"/>
+    <property name="StabilitySupport" value="false"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -11177,6 +11234,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Buildings/window03_broke2" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+  <property name="StabilitySupport" value="false"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -12675,6 +12733,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="408"/>
 	<property name="IsDecoration" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01"/>
@@ -13316,7 +13375,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronLogSpike5"/>
-		<property name="ItemCount" value="40"/>
+    <property name="Item" value="forgedIron"/>
+    <property name="ItemCount" value="6"/>
 	</property>
 	<drop event="Destroy" name="wood" count="0"/>
 	<drop event="Destroy" name="scrapIron" count="15"/>
@@ -13325,6 +13385,7 @@ group desc for stuff like metal siding
 
 <block id="1433" name="rScrapIronLogSpike5"> <!-- log spike 5 rScrap -->
 	<property name="Extends" value="scrapIronLogSpike4"/>
+  <property name="Material" value="Mmetal_hard"/>
 	<property name="Damage" value="7"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Texture" value="352"/>
@@ -13416,6 +13477,7 @@ group desc for stuff like metal siding
     <property name="PlantGrowing.IsRandom" value="false"/>
     <property name="PlantGrowing.LightLevelGrow" value="0"/>
     <property name="PlantGrowing.LightLevelStay" value="0"/>
+    <property name="BigDecorationRadius" value="7"/>
   </block>
   
 <block id="1448" name="spotlightNailedDownPOI">
@@ -13523,7 +13585,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<drop event="Destroy" count="0"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> <!-- intentionally bright green so the prefab gang can identify them -->
 	<property name="ActivationDistance" value="8"/>
@@ -13541,16 +13603,18 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
-	<drop event="Harvest" name="scrapIron" count="10,20"/>
-	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<!-- <drop event="Fall" name="cntCar03SedanDamage1" count="1" prob="1.0" stick_chance="1"/> -->
+	<drop event="Harvest" name="leather"          count="5"   prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="headlight"        count="1"   prob="0.4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts"  count="2"   prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts"    count="2"   prob="0.2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts"  count="2"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="oil"              count="1"   prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan"           count="100" prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="gasCan"           count="100" prob="0.5"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage1"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
 	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
@@ -13567,15 +13631,6 @@ group desc for stuff like metal siding
 	<property name="RandomTintColor13" value="0,16,96" param1="car03_white"/>
 	<property name="RandomTintColor14" value="68,58,2" param1="car03_white"/>
 	<property name="RandomTintColor15" value="128,128,128" param1="car03_white"/>
-	<!--
-	<property name="RandomTintColor2" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor3" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor4" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor5" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor6" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor7" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor8" value="0,0,0" param1="2"/>
-	-->
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
 		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
@@ -13584,6 +13639,7 @@ group desc for stuff like metal siding
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1454" name="cntCar03SedanDamage1">
@@ -13598,23 +13654,24 @@ group desc for stuff like metal siding
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="cloth" count="3,7"/>
-	<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="20,120"/>
-	<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<!-- <drop event="Fall" name="cntCar03SedanDamage2" count="1" prob="1.0" stick_chance="1"/> -->
+  <drop event="Harvest" name="headlight"        count="1"   prob="0.4" tool_category="Disassemble"/>
+  <drop event="Harvest" name="mechanicalParts"  count="3"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electricParts"    count="2"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electronicParts"  count="2"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="smallEngine"      count="1"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="carBattery"       count="1"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="radiator"         count="1"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="oil"              count="2"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="spring"           count="3"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="forgedIron"       count="3"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="2"   tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan"           count="100" prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="gasCan"           count="100" prob="0.5"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
+  <drop event="Harvest" name="cloth"            count="5"   prob="0.5"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
 	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
@@ -13639,6 +13696,7 @@ group desc for stuff like metal siding
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+  	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1455" name="cntCar03SedanDamage2"> <!-- car wreck, no color -->
@@ -13651,30 +13709,17 @@ group desc for stuff like metal siding
 	<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
-	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="1,5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
-	<property name="BigDecorationRadius" value="5"/>
+  <drop event="Harvest" name="mechanicalParts"  count="3"   prob="0.1" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electricParts"    count="2"   prob="0.1" tool_category="Disassemble"/>
+  <drop event="Harvest" name="spring"           count="1"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="forgedIron"       count="5"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="shortMetalPipe"   count="5"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="2"   tool_category="Disassemble"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
+  <drop event="Harvest" name="cloth"            count="5"   prob="0.5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
-	<!--
-	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
-	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
-	<property name="RandomTintColor3" value="200,161,17" param1="car03_white"/>
-	<property name="RandomTintColor4" value="212,50,7" param1="car03_white"/>
-	<property name="RandomTintColor5" value="246,0,15" param1="car03_white"/>
-	<property name="RandomTintColor6" value="255,204,16" param1="car03_white"/>
-	<property name="RandomTintColor7" value="255,255,255" param1="car03_white"/>
-	<property name="RandomTintColor8" value="5,95,190" param1="car03_white"/>
-	<property name="RandomTintColor9" value="70,158,255" param1="car03_white"/>
-	<property name="RandomTintColor10" value="184,6,40" param1="car03_frame"/>
-	-->
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
 		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
@@ -13683,6 +13728,7 @@ group desc for stuff like metal siding
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+	<drop event="Destroy" count="0"/>
 </block>
 	<!-- n Free -->
 
@@ -14441,16 +14487,16 @@ group desc for stuff like metal siding
 		<property name="wood" value="50"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
-	<drop event="Harvest" name="mechanicalParts" count="8" tool_category="Disassemble"/>
+	<drop event="Harvest" name="wood" count="100" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="25" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="25" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="workbenchDesc"/>
 	<property name="Group" value="Building,Science"/>
-  	<property name="EconomicValue" value="1750"/>
+  	<property name="EconomicValue" value="4000"/>
 </block>
 
 <block id="1564" name="treePlantedWinterPine1m">
@@ -16056,7 +16102,7 @@ group desc for stuff like metal siding
 	<property name="Class" value="BladeTrap"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Damage" value="20"/>
-	<property name="DamageReceived" value="4"/>
+	<property name="DamageReceived" value="2"/>
 	<property name="BreakingPercentage" value="0.5"/>
 	<property name="BrokenPercentage" value="0.25"/>
 	<property name="ImpactSound" value="bladetrap_impact"/>
@@ -16078,9 +16124,9 @@ group desc for stuff like metal siding
 	<property name="Group" value="Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
-		<property name="forgedSteel" value="16"/>
-		<property name="mechanicalParts" value="5"/>
-		<property name="electricParts" value="3"/>
+		<property name="forgedIron" value="15"/>
+		<property name="mechanicalParts" value="6"/>
+		<property name="electricParts" value="4"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
@@ -16453,7 +16499,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="2043" name="StartingKitSelector">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="Material" value="cloth" />
 <property name="StabilitySupport" value="false" />
 <property name="Shape" value="Ext3dModel" />
@@ -16464,7 +16510,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="2044" name="StartingKitBase">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="Class" value="Loot" />
 <property name="Material" value="cloth" />
 <property name="StabilitySupport" value="false" />
@@ -16479,15 +16525,15 @@ group desc for stuff like metal siding
 </block>
 
 <block id="2045" name="StartingKitLucky">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="152"/>
 <property name="CustomIcon" value="cntBackpack01"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-<block id="2046" name="StartingKitUnlucky">
-<property name="CreativeMode" value="Dev"/>
+<block id="2046" name="StartingKitFood">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="153"/>
 <property name="CustomIcon" value="cntBackpack01"/>
@@ -16495,10 +16541,10 @@ group desc for stuff like metal siding
 </block>
 
 <block id="2047" name="treasureChestNomad">
-<property name="CreativeMode" value="Dev"/>
+<property name="CreativeMode" value="None"/>
 <property name="CustomIcon" value="cntBackpack02"/>
 <property name="Extends" value="StartingKitBase"/>
-<property name="LootList" value="151"/>
+<property name="LootList" value="154"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>  
   

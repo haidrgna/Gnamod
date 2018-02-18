@@ -301,15 +301,15 @@
 <Fog              min="50"    max="75"    prob="0.10"/>
 <Fog              min="75"    max="100"   prob="0.10"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.10"/>
-<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<CloudThickness   min="0"     max="0"     prob="0.30"/>
+<CloudThickness   min="0"     max="50"    prob="0.20"/>
+<CloudThickness   min="50"    max="70"    prob="0.20"/>
+<CloudThickness   min="70"    max="100"   prob="0.30"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.50"/>
+<Precipitation    min="0"     max="50"    prob="0.20"/>
+<Precipitation    min="50"    max="75"    prob="0.15"/>
+<Precipitation    min="75"    max="100"   prob="0.15"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.65"/>
 <Wind             min="0"     max="50"    prob="0.25"/>
@@ -682,25 +682,25 @@
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="-10"   max="10"    prob="0.10"/>
-<Temperature      min="-20"   max="-10"   prob="0.20"/>
-<Temperature      min="-30"   max="-20"   prob="0.50"/>
-<Temperature      min="-50"   max="-30"   prob="0.20"/>
+<Temperature      min="10"    max="25"    prob="0.10"/>
+<Temperature      min="5"     max="10"    prob="0.20"/>
+<Temperature      min="-35"   max="5"     prob="0.50"/>
+<Temperature      min="-50"   max="-35"   prob="0.20"/>
 <!-- ===== Fog ==================================== -->
 <Fog              min="0"     max="0"     prob="0.70"/>
 <Fog              min="0"     max="50"    prob="0.10"/>
 <Fog              min="50"    max="75"    prob="0.10"/>
 <Fog              min="75"    max="100"   prob="0.10"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.05"/>
+<CloudThickness   min="0"     max="0"     prob="0.30"/>
 <CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="95"    prob="0.25"/>
-<CloudThickness   min="95"    max="100"   prob="0.50"/>
+<CloudThickness   min="50"    max="70"    prob="0.20"/>
+<CloudThickness   min="70"    max="100"   prob="0.30"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.50"/>
+<Precipitation    min="0"     max="50"    prob="0.20"/>
+<Precipitation    min="50"    max="75"    prob="0.15"/>
+<Precipitation    min="75"    max="100"   prob="0.15"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.65"/>
 <Wind             min="0"     max="50"    prob="0.25"/>
@@ -951,25 +951,25 @@
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="15"    max="35"    prob="0.10"/>
-<Temperature      min="10"    max="15"    prob="0.20"/>
-<Temperature      min="-25"   max="10"    prob="0.50"/>
-<Temperature      min="-40"   max="-25"   prob="0.20"/>
+<Temperature      min="10"    max="25"    prob="0.10"/>
+<Temperature      min="5"     max="10"    prob="0.20"/>
+<Temperature      min="-35"   max="5"     prob="0.50"/>
+<Temperature      min="-50"   max="-35"   prob="0.20"/>
 <!-- ===== Fog ==================================== -->
 <Fog              min="0"     max="0"     prob="0.70"/>
 <Fog              min="0"     max="50"    prob="0.10"/>
 <Fog              min="50"    max="75"    prob="0.10"/>
 <Fog              min="75"    max="100"   prob="0.10"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.10"/>
-<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<CloudThickness   min="0"     max="0"     prob="0.30"/>
+<CloudThickness   min="0"     max="50"    prob="0.20"/>
+<CloudThickness   min="50"    max="70"    prob="0.20"/>
+<CloudThickness   min="70"    max="100"   prob="0.30"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.50"/>
+<Precipitation    min="0"     max="50"    prob="0.20"/>
+<Precipitation    min="50"    max="75"    prob="0.15"/>
+<Precipitation    min="75"    max="100"   prob="0.15"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.65"/>
 <Wind             min="0"     max="50"    prob="0.25"/>
@@ -1331,25 +1331,25 @@
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="15"    max="35"    prob="0.10"/>
-<Temperature      min="10"    max="15"    prob="0.20"/>
-<Temperature      min="-25"   max="10"    prob="0.50"/>
-<Temperature      min="-40"   max="-25"   prob="0.20"/>
+<Temperature      min="10"    max="25"    prob="0.10"/>
+<Temperature      min="5"     max="10"    prob="0.20"/>
+<Temperature      min="-35"   max="5"     prob="0.50"/>
+<Temperature      min="-50"   max="-35"   prob="0.20"/>
 <!-- ===== Fog ==================================== -->
 <Fog              min="0"     max="0"     prob="0.70"/>
 <Fog              min="0"     max="50"    prob="0.10"/>
 <Fog              min="50"    max="75"    prob="0.10"/>
 <Fog              min="75"    max="100"   prob="0.10"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.10"/>
-<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<CloudThickness   min="0"     max="0"     prob="0.30"/>
+<CloudThickness   min="0"     max="50"    prob="0.20"/>
+<CloudThickness   min="50"    max="70"    prob="0.20"/>
+<CloudThickness   min="70"    max="100"   prob="0.30"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.50"/>
+<Precipitation    min="0"     max="50"    prob="0.20"/>
+<Precipitation    min="50"    max="75"    prob="0.15"/>
+<Precipitation    min="75"    max="100"   prob="0.15"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.65"/>
 <Wind             min="0"     max="50"    prob="0.25"/>

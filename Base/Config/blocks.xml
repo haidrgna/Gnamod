@@ -299,9 +299,12 @@ tbnsew:
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="CanMobsSpawnOn" value="true"/>
-	<!-- A15
-	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
-	-->
+  <property class="UpgradeBlock">
+    <property name="ToBlock" value="concreteBlock"/>
+    <property name="Item" value="cementMix"/>
+    <property name="ItemCount" value="10"/>
+    <property name="UpgradeHitCount" value="4"/>
+  </property>
 	<property name="EconomicValue" value="45"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
@@ -1113,51 +1116,7 @@ NOT the TextureNumber.
     <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
   </block>
 
-<block id="112" name="PlaceBeacon">
-<property name="CreativeMode" value="Dev"/>
-<property name="CustomIcon" value="keystoneBlock"/>
-<property name="Extends" value="fertileGrass"/>
-<property name="Texture" value="178"/>
-<drop event="Destroy" count="0"/>
-<property name="PlantGrowing.Next" value="Beacon"/>
-<property name="PlantGrowing.GrowthRate" value="0.001"/>
-<property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="0"/>
-<property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="PlantGrowing.GrowOnTop" value="BeaconPlant1"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
-</block>
 
-<block id="113" name="BeaconPlant1">
-<property name="CreativeMode" value="None"/>
-<property name="CustomIcon" value="keystoneBlock"/>
-<property name="Extends" value="fertileGrass"/>
-<drop event="Destroy" count="0"/>
-<property name="PlantGrowing.Next" value="cntSupplies"/>
-<property name="PlantGrowing.GrowthRate" value="0.001"/>
-<property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="0"/>
-<property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="PlantGrowing.GrowOnTop" value="BeaconPlant2"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
-</block>
-
-<block id="114" name="BeaconPlant2">
-<property name="CreativeMode" value="None"/>
-<property name="CustomIcon" value="keystoneBlock"/>
-<property name="Extends" value="fertileGrass"/>
-<drop event="Destroy" count="0"/>
-<property name="PlantGrowing.Next" value="cntBuilding"/>
-<property name="PlantGrowing.GrowthRate" value="0.001"/>
-<property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="0"/>
-<property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="PlantGrowing.GrowOnTop" value="BeaconLight"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
-</block>
   
   <!-- DO NOT DEFINE TERRAIN BLOCKS OVER ID 127. Just don't. -->
 
@@ -1357,7 +1316,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="40"/>
+	<property name="EconomicValue" value="3"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
 </block>
@@ -1413,6 +1372,7 @@ group desc for stuff like metal siding
 	<property name="IsPlant" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 	<property name="ImposterExclude" value="true"/>
+  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="10,50"/>
   <drop event="Destroy" name="feather" count="3,7" prob="0.25"/>
 </block>
@@ -1457,13 +1417,13 @@ group desc for stuff like metal siding
 		<property name="ToBlock" value="cobblestoneMaster"/>
 		<property name="Item" value="cobblestones"/>
 		<property name="ItemCount" value="9"/>
-		<property name="UpgradeHitCount" value="6"/>
+		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="clayLump" count="2"/>
 	<drop event="Harvest" name="rockSmall" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="15"/>
+	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1556,8 +1516,8 @@ group desc for stuff like metal siding
 	<property name="UpgradeRated.Rate" value="4"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DescriptionKey" value="concreteGroupDesc"/>
-  <property name="EconomicValue" value="120"/>
-	<property name="EconomicBundleSize" value="1"/>
+  <property name="EconomicValue" value="10"/>
+  <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="137" name="brickNoUpgradeMaster">
@@ -1572,7 +1532,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="16"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="25"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1585,7 +1545,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
-	<property name="EconomicValue" value="25"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 	<!-- 1 Free -->
@@ -1608,7 +1568,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="25"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="150"/>
+	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1724,7 +1684,7 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="4"/>
+	<property name="EconomicValue" value="2"/>
 	<property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -1820,8 +1780,8 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
-	<property name="EconomicValue" value="2"/>
-	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="10"/>
 </block>
 
 <!-- ****************************  Main Blocks  **************************** -->
@@ -2386,6 +2346,7 @@ group desc for stuff like metal siding
 
 <block id="210" name="brickBlock">
 	<property name="Extends" value="brickMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock"/> </property>
 </block>
 
@@ -2690,6 +2651,7 @@ group desc for stuff like metal siding
 
 <block id="246" name="pouredConcreteBlock">
 	<property name="CreativeMode" value="Player"/>
+  <property name="Group" value="Building"/>
 	<property name="Extends" value="pouredConcreteMaster"/>
 	<property name="UpgradeRated.ToBlock" value="concreteBlock"/>
 </block>
@@ -3246,7 +3208,7 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false"/>
 </block>
 
-<block id="310" name="cookingPot">
+<block id="310" name="cookingPotHelper">
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -3255,12 +3217,18 @@ group desc for stuff like metal siding
 	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CanPickup" value="true"/>
+  <property name="CanPickup" value="true" param1="cookingPot"/>
+  <property name="Stacknumber" value="1"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Group" value="Food/Cooking"/>
-	<property name="EconomicValue" value="12"/>
+  <property name="Class" value="PlantGrowing"/>
+  <property name="PlantGrowing.Next" value="cookingPotHelper"/>
+  <property name="PlantGrowing.GrowthRate" value="0.005"/>
+  <property name="PlantGrowing.FertileLevel" value="0"/>
+  <property name="PlantGrowing.IsRandom" value="false"/>
+  <property name="PlantGrowing.LightLevelGrow" value="0"/>
+  <property name="PlantGrowing.LightLevelStay" value="0"/>
 </block>
 
 <block id="311" name="cntOven">
@@ -3290,6 +3258,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="200"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="4"/> </property>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
@@ -4313,6 +4282,12 @@ group desc for stuff like metal siding
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="50"/>
+  	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodLogSpike1"/>
+		<property name="Item" value="wood"/>
+		<property name="ItemCount" value="15"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
 </block>
 
 <block id="409" name="trapSpikesDamage1">
@@ -4477,9 +4452,8 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Food/Cooking,Building,Science"/>
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="2000"/>
 	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 </block>
 
 <block id="423" name="cntBackpack01">
@@ -4556,53 +4530,52 @@ group desc for stuff like metal siding
 </block>
 
 <block id="431" name="mineCandyTin">
-	<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
+	<property name="Class" value="Mine"/>
 	<property name="Material" value="MLandMine"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Traps/trap_mine_tin" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="4"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="45"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-	<property name="Explosion.DamageBonus.stone" value="0.1"/>
-	<property name="Explosion.DamageBonus.metal" value="0.1"/>
-	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.DamageBonus.wood" value="0"/>
-	<property name="Explosion.DamageBonus.water" value="0"/>
-	<property name="CanPickup" value="false"/>
+	<property name="Explosion.RadiusBlocks" value="0"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="Explosion.EntityDamage" value="50"/>
 	<property name="DropScale" value="3"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Science"/>
-	<property name="EconomicValue" value="97"/>
+  <property name="CanPickup" value="true" param1="candyTin"/>
+  <property name="EconomicValue" value="35"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="432" name="mineHubcap">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_hubcap" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="5"/>
-	<property name="Explosion.RadiusBlocks" value="3"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="90"/>
-	<property name="EconomicValue" value="146"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="75"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="433" name="mineAirFilter">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="6"/>
-	<property name="Explosion.RadiusBlocks" value="4"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="180"/>
-	<property name="EconomicValue" value="182"/>
+	<property name="Explosion.RadiusEntities" value="10"/>
+	<property name="Explosion.EntityDamage" value="300"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="110"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="434" name="cntToilet01">
@@ -4637,144 +4610,267 @@ group desc for stuff like metal siding
 	<property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
 </block>
 
-<!--
-kind of free
+<!-- Gnamod Horde Mode Blocks -->
 
-<block id="437" name="pipeGreen">
-	<property name="Material" value="metal"/>
-	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-	<property name="Mesh" value="models"/>
-	<property name="Model" value="Plumbing/pipe_green" param1="main_mesh"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+<block id="437" name="PlaceBeacon">
+<property name="CreativeMode" value="Player"/>
+<property name="Material" value="MstainlessSteel"/>
+<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<property name="Model" value="floor_trap_3x3"/>
+<property name="MultiBlockDim" value="3,25,3"/>
+<property name="Shape" value="New"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267"/>
+<property name="OnlySimpleRotations" value="true"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="BeaconSeed"/>
+<property name="PlantGrowing.GrowthRate" value="0.001"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
+</block>
+  
+<block id="438" name="BeaconSeed">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="MstainlessSteel"/>
+<property name="Model" value="floor_trap_3x3"/>
+<property name="MultiBlockDim" value="5,1,5"/>
+<property name="Shape" value="New"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267"/>
+<property name="OnlySimpleRotations" value="true"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="BeaconBase"/>
+<property name="PlantGrowing.GrowthRate" value="0.001"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.GrowOnTop" value="BeaconPlant1"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="438" name="pipeGreen3Way">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_3way" param1="main_mesh"/>
+<block id="439" name="BeaconPlant1">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSeed"/>
+<property name="PlantGrowing.Next" value="BeaconDisposalUnit"/>
+<property name="PlantGrowing.GrowOnTop" value="BeaconPlant2"/>
 </block>
 
-<block id="439" name="pipeGreen3WayVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_3way_vertical" param1="main_mesh"/>
+<block id="440" name="BeaconPlant2">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSeed"/>
+<property name="PlantGrowing.Next" value="BeaconSupplies"/>
+<property name="PlantGrowing.GrowOnTop" value="BeaconPlant3"/>
+<drop event="Destroy" count="0"/>
+</block>  
+
+<block id="441" name="BeaconPlant3">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSeed"/>
+<property name="PlantGrowing.Next" value="BeaconBuilding"/>
+<property name="PlantGrowing.GrowOnTop" value="BeaconPlant4"/>
+<drop event="Destroy" count="0"/>
+</block>  
+
+<block id="442" name="BeaconPlant4">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSeed"/>
+<property name="PlantGrowing.Next" value="BeaconTop"/>
+<property name="PlantGrowing.GrowOnTop" value="BeaconFlag"/>
+<drop event="Destroy" count="0"/>
+</block>  
+
+<block id="443" name="BeaconBase">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="CustomIcon" value="keystoneBlock"/>
+<property name="Model" value="floor_trap_3x3"/>
+<property name="MultiBlockDim" value="3,1,3"/>
+<property name="Shape" value="New"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267,267,320,320,320,320"/>
+<property name="Class" value="TorchHeatMap"/>
+<property name="HeatMapStrength" value="100.0"/>
+<property name="HeatMapTime" value="2400"/>
+<property name="HeatMapFrequency" value="4"/>
+<property name="DowngradeBlock" value="BeaconBrokenSection"/>
+<property name="PassThroughDamage" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="440" name="pipeGreen3WayVertical2">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_3way_vertical2" param1="main_mesh"/>
+<block id="444" name="BeaconBrokenSection">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="CustomIcon" value="keystoneBlock"/>
+<property name="Model" value="floor_trap_3x3"/>
+<property name="MultiBlockDim" value="3,1,3"/>
+<property name="Shape" value="New"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="194"/>
+<property name="MaxDamage" value="500"/>  
+<property name="StabilitySupport" value="false"/>
+<drop event="Fall" name="blastingTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>  
+<property name="Class" value="CarExplode"/>
+<property class="Explosion">
+<property name="ParticleIndex" value="4"/>
+<property name="RadiusBlocks" value="20"/>
+<property name="BlockDamage" value="99999"/>
+<property name="RadiusEntities" value="20"/>
+<property name="EntityDamage" value="99999"/>
+</property>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="441" name="pipeGreenCap">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_cap" param1="main_mesh"/>
+<block id="445" name="BeaconDisposalUnit">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="Model" value="floor_trap_3x3"/>
+<property name="MultiBlockDim" value="3,1,3"/>
+<property name="Shape" value="New"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267,267,341,341,341,341"/>
+<property name="Class" value="VendingMachine"/>
+<property name="TraderID" value="6"/>
+<property name="Buff" value="hitTag"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<property name="DowngradeBlock" value="BeaconBrokenSection"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="442" name="pipeGreenCurve">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_curve" param1="main_mesh"/>
+<block id="446" name="BeaconSupplies">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconDisposalUnit"/>
+<property name="Texture" value="267,267,25,25,25,25"/>
+<property name="TraderID" value="7"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="443" name="pipeGreenCurveVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_curve_vertical" param1="main_mesh"/>
+<block id="447" name="BeaconBuilding">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconDisposalUnit"/>
+<property name="Texture" value="267,267,266,266,266,266"/>
+<property name="TraderID" value="8"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="444" name="pipeGreenFlange">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_flange" param1="main_mesh"/>
+<block id="448" name="BeaconTop">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="Texture" value="267,267,355,355,355,355"/>
+<property name="Class" value="TorchHeatMap"/>
+<property name="HeatMapStrength" value="10"/>
+<property name="HeatMapTime" value="2400"/>
+<property name="HeatMapFrequency" value="2"/>
+<property name="ParticleName" value="signal_flarePrefab"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
+</block>  
+
+<block id="449" name="BeaconFlag">
+<property name="CreativeMode" value="None"/>
+<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<property name="Material" value="Mbeacon"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="ModelEntity"/>
+<property name="Model" value="Entities/Decor/flag_polePrefab"/>
+<property name="MultiBlockDim" value="1,20,1"/>
+<property name="ImposterDontBlock" value="true"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="OnlySimpleRotations" value="true"/>
+<property name="Class" value="TorchHeatMap"/>
+<property name="HeatMapStrength" value="10"/>
+<property name="HeatMapTime" value="2400"/>
+<property name="HeatMapFrequency" value="2"/>
+<property name="ParticleName" value="candle_flame"/>
+<property name="PassThroughDamage" value="true"/>
+<property name="DowngradeBlock" value="BeaconFlagBroken"/>
+<property name="PassThroughDamage" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+</block>
+  
+<block id="450" name="BeaconFlagBroken">
+<property name="CreativeMode" value="None"/>
+<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<property name="Material" value="Mbeacon"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="ModelEntity"/>
+<property name="Model" value="Entities/Decor/flag_polePrefab"/>
+<property name="MultiBlockDim" value="1,20,1"/>
+<property name="ImposterDontBlock" value="true"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="OnlySimpleRotations" value="true"/>
+<property name="MaxDamage" value="500"/>
+<property name="Class" value="CarExplode"/>
+<property class="Explosion">
+<property name="ParticleIndex" value="4"/>
+<property name="RadiusBlocks" value="20"/>
+<property name="BlockDamage" value="99999"/>
+<property name="RadiusEntities" value="20"/>
+<property name="EntityDamage" value="99999"/>
+</property>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 </block>
 
-<block id="445" name="pipeGreenFlangeVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_flange_vertical" param1="main_mesh"/>
+<block id="451" name="WorldBeacon">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="MstainlessSteel"/>
+<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<property name="Texture" value="267"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="BeaconSeed"/>
+<property name="PlantGrowing.GrowthRate" value="0.05"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Destroy" count="0"/>
+</block>
+  
+<block id="452" name="BeaconSuppliesSmall">
+<property name="CreativeMode" value="None"/>
+<property name="Material" value="Mbeacon"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267,267,25,25,25,25"/>
+<property name="Class" value="VendingMachine"/>
+<property name="TraderID" value="7"/>
+<property name="Buff" value="hitTag"/>
+<property name="CanPlayersSpawnOn" value="false"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
 
-<block id="446" name="pipeGreenValve">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_valve" param1="main_mesh"/>
+<block id="453" name="BeaconBuildingSmall">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="BeaconSuppliesSmall"/>
+<property name="Texture" value="267,267,266,266,266,266"/>
+<property name="TraderID" value="8"/>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
 </block>
-
-<block id="447" name="pipeGreenValveVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_valve_vertical" param1="main_mesh"/>
-</block>
-
-<block id="448" name="pipeGreenVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_vertical" param1="main_mesh"/>
-</block>
-
-<block id="449" name="pipeRed">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red" param1="main_mesh"/>
-</block>
-
-<block id="450" name="pipeRed3Way">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_3way" param1="main_mesh"/>
-</block>
-
-<block id="451" name="pipeRed3WayVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_3way_vertical" param1="main_mesh"/>
-</block>
-
-<block id="452" name="pipeRed3WayVertical2">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_3way_vertical2" param1="main_mesh"/>
-</block>
-
-<block id="453" name="pipeRedCap">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_cap" param1="main_mesh"/>
-</block>
-
-<block id="454" name="pipeRedCurve">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_curve" param1="main_mesh"/>
-</block>
-
-<block id="455" name="pipeRedCurveVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_curve_vertical" param1="main_mesh"/>
-</block>
-
-<block id="456" name="pipeRedFlange">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_flange" param1="main_mesh"/>
-</block>
-
-<block id="457" name="pipeRedFlangeVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_flange_vertical" param1="main_mesh"/>
-</block>
-
-<block id="458" name="pipeRedValve">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_valve" param1="main_mesh"/>
-</block>
-
-<block id="459" name="pipeRedValveVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_valve_vertical" param1="main_mesh"/>
-</block>
-
-<block id="460" name="pipeRedVertical">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_vertical" param1="main_mesh"/>
-</block>
-
-<block id="461" name="pipeGreenCurveVertical2">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_green_curve_vertical2" param1="main_mesh"/>
-</block>
-
-<block id="462" name="pipeRedCurveVertical2">
-	<property name="Extends" value="pipeGreen"/>
-	<property name="Model" value="Plumbing/pipe_red_curve_vertical2" param1="main_mesh"/>
-</block>
--->
-
+<!-- 454 - 462 Free -->
+  
 <block id="463" name="bed01">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
 	<property name="Class" value="SleepingBag"/>
@@ -5202,6 +5298,7 @@ kind of free
 	<property name="FuelValue" value="200"/>
 	<property name="Weight" value="30"/>
 	<property name="CanPickup" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
   <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
@@ -5254,6 +5351,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="90"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems">
 		<property name="leather" value="5"/>
 		<property name="cottonPlant" value="10"/>
@@ -5261,7 +5359,7 @@ kind of free
 		<property name="forgedIron" value="3"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="leather" count="2,4"/>
+  <drop event="Harvest" name="leather" count="2,4" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,15"/>
   <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="65"/>
@@ -5301,13 +5399,13 @@ kind of free
 	<property name="CustomIcon" value="cookingPot"/> <property name="CustomIconTint" value="a00000"/>
 	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="85"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.EntityDamage" value="75"/>
 	<property name="CanPickup" value="true" param1="cookingPot"/>
-	<property name="EconomicValue" value="120"/>
+  <property name="EconomicValue" value="40"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="527" name="plantedHop1">
@@ -5567,9 +5665,9 @@ kind of free
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="6"/> <property name="leather" value="4"/> </property>
 	<drop event="Harvest" name="wood" count="2"/>
-	<drop event="Harvest" name="leather" count="2"/>
+  <drop event="Harvest" name="leather" count="1,3" tool_category="Butcher"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05"/>
 	<property name="EconomicValue" value="18"/>
 </block>
 
@@ -5643,8 +5741,8 @@ kind of free
 		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
 	</property>
 	<property class="RepairItems">
-		<property name="rockSmall" value="50"/>
-		<property name="clayLump" value="50"/>
+		<property name="rockSmall" value="250"/>
+		<property name="clayLump" value="250"/>
 		<property name="leather" value="20"/>
 	</property>
 	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
@@ -5656,7 +5754,7 @@ kind of free
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="DescriptionKey" value="forgeDesc"/>
-	<property name="EconomicValue" value="214"/>
+	<property name="EconomicValue" value="250"/>
 </block>
 
 <block id="557" name="cntMunitionsBox">	<!-- military ammo -->
@@ -5880,7 +5978,7 @@ kind of free
 	<property name="Extends" value="treeMaster"/>
 	<property name="Material" value="treeWoodLarge"/>
 	<property name="Model" value="Entities/Trees/Maple81Prefab"/>
-	<property name="ModelOffset" value="0,-0.3,0"/>
+	<property name="ModelOffset" value="0,-0.6,0"/>
 	<property name="MultiBlockDim" value="1,10,1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
@@ -6217,6 +6315,7 @@ kind of free
 	<property name="UseGlobalUV" value="Global"/>
 </block>
 
+
 <block id="606" name="trapGlassBusinessCTRSheet1x1">
 	<property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
 	<property name="Class" value="TrapDoor"/>
@@ -6492,6 +6591,7 @@ kind of free
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -6621,6 +6721,7 @@ kind of free
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -6655,6 +6756,7 @@ kind of free
 	<property name="Tag" value="Door"/>
 	<property name="Place" value="Door"/> <!-- build restriction -->
 	<property name="PlaceEverywhere" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Doors/wooden_door_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="35"/>  <!-- door replacer -->
 	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
@@ -7337,7 +7439,24 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 <property name="PlantGrowing.Next" value="lootWorkstationsBustedHelper"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="700" name="noMineCookingPot">
+	<property name="Material" value="MmetalNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+  <property name="CanPickup" value="true" param1="cookingPot"/>
+  <property name="Stacknumber" value="1"/>
+	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="EconomicValue" value="4"/>
+</block>
 
 <block id="701" name="GoreBlock1Prefab">
 	<property name="CreativeMode" value="Dev"/>
@@ -7360,7 +7479,8 @@ kind of free
 	<drop event="Harvest" name="animalFat" count="2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="3" prob="0.5" tool_category="Butcher"/>
 	<drop event="Destroy" name="femur" count="1" prob="0.25"/>
-	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+	<property name="DroppedEntityClass" value="DroppedLootContainer"/> <!-- EvisceratedRemains-->
+  
 </block>
 
 <!--
@@ -7413,7 +7533,8 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4"/>
-		<property name="ItemCount" value="40"/>
+    <property name="Item" value="forgedIron"/>
+    <property name="ItemCount" value="2"/>
 	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2"/>
 	<drop event="Destroy" name="wood" count="0"/>
@@ -8139,6 +8260,7 @@ kind of free
 
 <block id="785" name="cobblestoneBlock">
 	<property name="Extends" value="cobblestoneMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock"/> </property>
 </block>
 
@@ -9597,6 +9719,7 @@ kind of free
 
 <block id="948" name="flagstoneBlock">
 	<property name="Extends" value="flagstoneMaster"/>
+  <property name="Group" value="Building"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneBlock"/> </property>
 </block>
 
@@ -11017,9 +11140,10 @@ kind of free
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="302"/>
 	<property name="IsDecoration" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug"/>
+		<property name="ToBlock" value="WindowPlug01"/>
 		<property name="Item" value="wood"/>
 		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="4"/>
@@ -11091,6 +11215,7 @@ kind of free
 	<property name="Model" value="Buildings/window03_broke1" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DowngradeBlock" value="window03Frame"/>
+    <property name="StabilitySupport" value="false"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -11109,6 +11234,7 @@ kind of free
 	<property name="Model" value="Buildings/window03_broke2" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+  <property name="StabilitySupport" value="false"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -12607,6 +12733,7 @@ kind of free
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="408"/>
 	<property name="IsDecoration" value="true"/>
+  <property name="StabilitySupport" value="false"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01"/>
@@ -12881,27 +13008,25 @@ kind of free
 	<property name="CustomIcon" value="rScrapIronPlate"/>
 	<property name="Class" value="Mine"/>
 	<property name="Material" value="MLandMine"/>
-	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="StabilitySupport" value="false"/> 
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
 	<property name="Texture" value="352"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
-	<property name="Explosion.RadiusBlocks" value="2"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
-	<property name="Explosion.BlockDamage" value="10"/>
-	<property name="Explosion.EntityDamage" value="75"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-	<property name="Explosion.DamageBonus.stone" value="0.1"/>
-	<property name="Explosion.DamageBonus.metal" value="0.1"/>
-	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.DamageBonus.wood" value="0"/>
-	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.RadiusBlocks" value="0"/>
+	<property name="Explosion.RadiusEntities" value="7"/>
+	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="Explosion.EntityDamage" value="100"/>
 	<property name="CanPickup" value="false"/>
 	<property name="DropScale" value="3"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Science"/>
-	<property name="EconomicValue" value="115"/>
+  <property name="CanPickup" value="false"/>
+  <property name="EconomicValue" value="60"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property name="SellableToTrader" value="true"/>
 </block>
 
 <block id="1409" name="window03WoodBroke1">
@@ -13250,7 +13375,8 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronLogSpike5"/>
-		<property name="ItemCount" value="40"/>
+    <property name="Item" value="forgedIron"/>
+    <property name="ItemCount" value="6"/>
 	</property>
 	<drop event="Destroy" name="wood" count="0"/>
 	<drop event="Destroy" name="scrapIron" count="15"/>
@@ -13259,6 +13385,7 @@ kind of free
 
 <block id="1433" name="rScrapIronLogSpike5"> <!-- log spike 5 rScrap -->
 	<property name="Extends" value="scrapIronLogSpike4"/>
+  <property name="Material" value="Mmetal_hard"/>
 	<property name="Damage" value="7"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Texture" value="352"/>
@@ -13345,11 +13472,12 @@ kind of free
     <property name="ImposterExclude" value="true"/>
     <property name="Class" value="PlantGrowing"/>
     <property name="PlantGrowing.Next" value="randomCarsHelper"/>
-    <property name="PlantGrowing.GrowthRate" value="0.005"/>
+    <property name="PlantGrowing.GrowthRate" value="0.001"/>
     <property name="PlantGrowing.FertileLevel" value="0"/>
     <property name="PlantGrowing.IsRandom" value="false"/>
     <property name="PlantGrowing.LightLevelGrow" value="0"/>
     <property name="PlantGrowing.LightLevelStay" value="0"/>
+    <property name="BigDecorationRadius" value="7"/>
   </block>
   
 <block id="1448" name="spotlightNailedDownPOI">
@@ -13457,7 +13585,7 @@ kind of free
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<drop event="Destroy" count="0"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> <!-- intentionally bright green so the prefab gang can identify them -->
 	<property name="ActivationDistance" value="8"/>
@@ -13475,16 +13603,18 @@ kind of free
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
-	<drop event="Harvest" name="scrapIron" count="10,20"/>
-	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<!-- <drop event="Fall" name="cntCar03SedanDamage1" count="1" prob="1.0" stick_chance="1"/> -->
+	<drop event="Harvest" name="leather"          count="5"   prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="headlight"        count="1"   prob="0.4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts"  count="2"   prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts"    count="2"   prob="0.2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts"  count="2"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="oil"              count="1"   prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan"           count="100" prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="gasCan"           count="100" prob="0.5"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage1"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
 	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
@@ -13501,15 +13631,6 @@ kind of free
 	<property name="RandomTintColor13" value="0,16,96" param1="car03_white"/>
 	<property name="RandomTintColor14" value="68,58,2" param1="car03_white"/>
 	<property name="RandomTintColor15" value="128,128,128" param1="car03_white"/>
-	<!--
-	<property name="RandomTintColor2" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor3" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor4" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor5" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor6" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor7" value="0,0,0" param1="2"/>
-	<property name="RandomTintColor8" value="0,0,0" param1="2"/>
-	-->
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
 		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
@@ -13518,6 +13639,7 @@ kind of free
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1454" name="cntCar03SedanDamage1">
@@ -13532,23 +13654,24 @@ kind of free
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="cloth" count="3,7"/>
-	<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="20,120"/>
-	<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<!-- <drop event="Fall" name="cntCar03SedanDamage2" count="1" prob="1.0" stick_chance="1"/> -->
+  <drop event="Harvest" name="headlight"        count="1"   prob="0.4" tool_category="Disassemble"/>
+  <drop event="Harvest" name="mechanicalParts"  count="3"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electricParts"    count="2"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electronicParts"  count="2"   prob="0.2" tool_category="Disassemble"/>
+  <drop event="Harvest" name="smallEngine"      count="1"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="carBattery"       count="1"   prob="0.3" tool_category="Disassemble"/>
+  <drop event="Harvest" name="radiator"         count="1"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="oil"              count="2"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="spring"           count="3"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="forgedIron"       count="3"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="2"   tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan"           count="100" prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="gasCan"           count="100" prob="0.5"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
+  <drop event="Harvest" name="cloth"            count="5"   prob="0.5"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
 	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
@@ -13573,6 +13696,7 @@ kind of free
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+  	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1455" name="cntCar03SedanDamage2"> <!-- car wreck, no color -->
@@ -13585,30 +13709,17 @@ kind of free
 	<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
-	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="1,5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
-	<property name="BigDecorationRadius" value="5"/>
+  <drop event="Harvest" name="mechanicalParts"  count="3"   prob="0.1" tool_category="Disassemble"/>
+  <drop event="Harvest" name="electricParts"    count="2"   prob="0.1" tool_category="Disassemble"/>
+  <drop event="Harvest" name="spring"           count="1"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="forgedIron"       count="5"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="shortMetalPipe"   count="5"   prob="0.5" tool_category="Disassemble"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="2"   tool_category="Disassemble"/>
+  <drop event="Harvest" name="brokenGlass"      count="5"   prob="0.5"/>
+  <drop event="Harvest" name="scrapIron"        count="25"  prob="0.5"/>
+  <drop event="Harvest" name="cloth"            count="5"   prob="0.5"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
-	<!--
-	<property name="RandomTintColor1" value="0,50,110" param1="car03_white"/>
-	<property name="RandomTintColor2" value="148,119,10" param1="car03_white"/>
-	<property name="RandomTintColor3" value="200,161,17" param1="car03_white"/>
-	<property name="RandomTintColor4" value="212,50,7" param1="car03_white"/>
-	<property name="RandomTintColor5" value="246,0,15" param1="car03_white"/>
-	<property name="RandomTintColor6" value="255,204,16" param1="car03_white"/>
-	<property name="RandomTintColor7" value="255,255,255" param1="car03_white"/>
-	<property name="RandomTintColor8" value="5,95,190" param1="car03_white"/>
-	<property name="RandomTintColor9" value="70,158,255" param1="car03_white"/>
-	<property name="RandomTintColor10" value="184,6,40" param1="car03_frame"/>
-	-->
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
 		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
@@ -13617,9 +13728,12 @@ kind of free
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
 	<property name="ActivationDistance" value="6"/>
+	<drop event="Destroy" count="0"/>
 </block>
 	<!-- n Free -->
 
+
+  
 <block id="1463" name="scrapHatch_v1">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -14312,8 +14426,8 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="cementMixerDesc"/>
-	<property name="EconomicValue" value="1544"/>
 	<property name="Group" value="Building,Science"/>
+  <property name="EconomicValue" value="2500"/>
 </block>
 
 <block id="1562" name="bedroll">
@@ -14373,16 +14487,16 @@ kind of free
 		<property name="wood" value="50"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
-	<drop event="Harvest" name="mechanicalParts" count="8" tool_category="Disassemble"/>
+	<drop event="Harvest" name="wood" count="100" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="25" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="25" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="workbenchDesc"/>
-	<property name="EconomicValue" value="776"/>
 	<property name="Group" value="Building,Science"/>
+  	<property name="EconomicValue" value="4000"/>
 </block>
 
 <block id="1564" name="treePlantedWinterPine1m">
@@ -14859,7 +14973,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
 	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
-	<property name="AmmoItem" value="9mmBulletNG"/>
+	<property name="AmmoItem" value="22LRBullet"/>
 	<property name="TurnSpeed" value="22.5"/>
 	<property name="MaxDistance" value="30"/>
 	<property name="EntityDamage" value="18"/> <!-- 120 dps, 270 / burst -->
@@ -14902,17 +15016,19 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
 	<drop event="Destroy" count="0"/>
 
-	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicValue" value="2600"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 	<property name="Group" value="Science"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+  <property name="Stacknumber" value="10"/>
+  <property name="TakeDelay" value="10"/>
 </block>
 
 <block id="1679" name="shotgunTurret">
 	<property name="Extends" value="autoTurret"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
-	<property name="AmmoItem" value="12GAShellNG"/> <!-- does not use the damage value -->
+	<property name="AmmoItem" value="20GAShell"/> <!-- does not use the damage value -->
 	<property name="MaxDistance" value="15"/>
 	<property name="EntityDamage" value="11"/> <!-- 180 dps, 440 / burst -->
 	<property name="BlockDamage" value="1"/>
@@ -14931,7 +15047,7 @@ kind of free
 	<property name="BuffChance" value="0.8"/>
 
 	<property name="FireSound" value="pump_shotgun_fire"/>
-	<property name="EconomicValue" value="2500"/>
+	<property name="EconomicValue" value="2100"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
 <!-- Free -->
@@ -15793,7 +15909,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="1250"/>
 </block>
 
 <block id="2002" name="switch">
@@ -15879,7 +15995,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
-	<property name="EconomicValue" value="400"/>
+	<property name="EconomicValue" value="560"/>
 </block>
 
 <block id="2006" name="electricwirerelay">
@@ -15899,7 +16015,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
-	<property name="EconomicValue" value="28"/>
+	<property name="EconomicValue" value="50"/>
 </block>
 
 <block id="2007" name="pressureplate">
@@ -15979,14 +16095,14 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
-	<property name="EconomicValue" value="119"/>
+	<property name="EconomicValue" value="300"/>
 </block>
 
 <block id="2010" name="bladeTrap">
 	<property name="Class" value="BladeTrap"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Damage" value="20"/>
-	<property name="DamageReceived" value="4"/>
+	<property name="DamageReceived" value="2"/>
 	<property name="BreakingPercentage" value="0.5"/>
 	<property name="BrokenPercentage" value="0.25"/>
 	<property name="ImpactSound" value="bladetrap_impact"/>
@@ -16005,13 +16121,12 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="RequiredPower" value="20"/>
-	<property name="EconomicValue" value="444"/>
 	<property name="Group" value="Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
-		<property name="forgedSteel" value="16"/>
-		<property name="mechanicalParts" value="5"/>
-		<property name="electricParts" value="3"/>
+		<property name="forgedIron" value="15"/>
+		<property name="mechanicalParts" value="6"/>
+		<property name="electricParts" value="4"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
@@ -16020,7 +16135,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="444"/>
+	<property name="EconomicValue" value="600"/>
 </block>
 
 <block id="2011" name="dartTrap">
@@ -16050,7 +16165,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
-	<property name="EconomicValue" value="220"/>
+	<property name="EconomicValue" value="600"/>
 </block>
 
 <block id="2012" name="rampCornerCutoutTest">
@@ -16146,11 +16261,11 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="EconomicValue" value="310"/>
 	<property name="Group" value="Science"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+  <property name="EconomicValue" value="250"/>
 </block>
 
 <block id="2021" name="industrialLight01_player">
@@ -16253,7 +16368,7 @@ kind of free
 	<property name="Group" value="Science"/>
 	<drop event="Destroy" name="wood" count="5"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
-	<property name="EconomicValue" value="16"/>
+	<property name="EconomicValue" value="35"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
 
@@ -16307,13 +16422,62 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="5,10"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="135"/>
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
+  	<property name="EconomicValue" value="350"/>
 </block>
 
-<!-- Gnamod Blocks -->
+<block id="2039" name="HordeLoot">
+<property name="Material" value="MTreasureBags" />
+<property name="MaxDamage" value="2000"/>
+<property name="StabilitySupport" value="false" />
+<property name="Shape" value="Ext3dModel" />
+<property name="Mesh" value="models" />
+<property name="Model" value="LootContainers/duffle01" param1="main_mesh" />
+<property name="IsTerrainDecoration" value="true" />
+<property name="DowngradeBlock" value="StartingKitSelector" />
+<property name="CustomIcon" value="cntBackpack01" />
+<property name="DescriptionKey" value="StartingKit1Desc"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="cntHordeZombieLoot"/>
+<property name="PlantGrowing.GrowthRate" value="0.005"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="EconomicValue" value="20000"/>
+<drop event="Destroy" name="cloth" count="0" />
+</block>
+
+<block id="2040" name="cntHordeZombieLoot">
+<property name="CreativeMode" value="Dev"/>
+<property name="Class" value="Loot"/>
+<property name="Material" value="MTreasureBags"/>
+<property name="MaxDamage" value="2000"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Mesh" value="models"/>
+<property name="Model" value="LootContainers/duffle01" param1="main_mesh" />
+<property name="IsTerrainDecoration" value="true"/>
+<property name="LootList" value="150"/>
+<property name="CustomIcon" value="cntBackpack01"/>
+<property name="DescriptionKey" value="StartingKit1Desc"/>
+<drop event="Destroy" name="cloth" count="3"/>
+</block>
+
+<block id="2041" name="glassShowerRamp">
+<property name="Material" value="glass"/>
+<property name="Shape" value="New"/>
+<property name="LightOpacity" value="1"/>
+<property name="Model" value="ramp_glass"/>
+<property name="Mesh" value="transparent"/>
+<property name="Texture" value="285"/>
+<property name="DescriptionKey" value="glassGroupDesc"/>
+<drop event="Destroy" name="brokenGlass" count="1,4"/>
+</block>
+
+<!-- Gnamod Nomad Mode Blocks -->
   
-<block id="2031" name="StartingKit">
+<block id="2042" name="StartingKit">
 <property name="Material" value="cloth" />
 <property name="StabilitySupport" value="false" />
 <property name="Shape" value="Ext3dModel" />
@@ -16330,12 +16494,12 @@ kind of free
 <property name="PlantGrowing.IsRandom" value="false"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="EconomicValue" value="20000"/>
+<property name="EconomicValue" value="7500"/>
 <drop event="Destroy" name="cloth" count="0" />
 </block>
 
-<block id="2032" name="StartingKitSelector">
-<property name="CreativeMode" value="Dev"/>
+<block id="2043" name="StartingKitSelector">
+<property name="CreativeMode" value="None"/>
 <property name="Material" value="cloth" />
 <property name="StabilitySupport" value="false" />
 <property name="Shape" value="Ext3dModel" />
@@ -16345,8 +16509,8 @@ kind of free
 <drop event="Destroy" name="cloth" count="0" />
 </block>
 
-<block id="2033" name="StartingKitBase">
-<property name="CreativeMode" value="Dev"/>
+<block id="2044" name="StartingKitBase">
+<property name="CreativeMode" value="None"/>
 <property name="Class" value="Loot" />
 <property name="Material" value="cloth" />
 <property name="StabilitySupport" value="false" />
@@ -16360,96 +16524,28 @@ kind of free
 <drop event="Destroy" name="cloth" count="3" />
 </block>
 
-<block id="2034" name="StartingKitLucky">
-<property name="CreativeMode" value="Dev"/>
+<block id="2045" name="StartingKitLucky">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="152"/>
 <property name="CustomIcon" value="cntBackpack01"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-<block id="2035" name="StartingKitUnlucky">
-<property name="CreativeMode" value="Dev"/>
+<block id="2046" name="StartingKitFood">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="153"/>
 <property name="CustomIcon" value="cntBackpack01"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-<block id="2036" name="treasureChestNomad">
-<property name="CreativeMode" value="Dev"/>
+<block id="2047" name="treasureChestNomad">
+<property name="CreativeMode" value="None"/>
 <property name="CustomIcon" value="cntBackpack02"/>
 <property name="Extends" value="StartingKitBase"/>
-<property name="LootList" value="151"/>
+<property name="LootList" value="154"/>
 <drop event="Destroy" name="cloth" count="3"/>
-</block>
-
-<block id="2037" name="Beacon">
-<property name="Material" value="MstainlessSteel"/>
-<property name="CustomIcon" value="keystoneBlock"/>
-<property name="Texture" value="189"/>
-<property name="Class" value="TorchHeatMap"/>
-<property name="HeatMapStrength" value="10.0"/>
-<property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="1"/>
-<drop event="Destroy" count="0"/>
-</block>
-
-<block id="2038" name="cntSupplies">
-<property name="CustomIcon" value="fridgeTop"/>
-<property name="Material" value="MstainlessSteel"/>
-<property name="Class" value="VendingMachine"/>
-<property name="Texture" value="267,267,265,265,265,265"/>
-<property name="Model" value="Entities/LootContainers/fridgePrefab"/>
-<property name="TraderID" value="6"/>
-<property name="EconomicValue" value="20000"/>
-<property name="Buff" value="shockedBuff"/>
-<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
-<drop event="Destroy" count="0"/>
-</block>
-
-<block id="2039" name="cntBuilding">
-<property name="CustomIcon" value="fridgeBottom"/>
-<property name="Material" value="MstainlessSteel"/>
-<property name="Class" value="VendingMachine"/>
-<property name="Texture" value="267,267,266,266,266,266"/>
-<property name="Model" value="Entities/LootContainers/fridgePrefab"/>
-<property name="TraderID" value="7"/>
-<property name="EconomicValue" value="20000"/>
-<property name="Buff" value="shockedBuff"/>
-<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
-<drop event="Destroy" count="0"/>
-</block>
-
-<block id="2040" name="BeaconLight">
-<property name="CreativeMode" value="Dev"/>
-<property name="Class" value="Torch"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="Material" value="MstainlessSteel"/>
-<property name="MaxDamage" value="20000"/>
-<property name="StabilitySupport" value="false"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/Decor/flag_polePrefab"/>
-<property name="MultiBlockDim" value="1,20,1"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="Place" value="TowardsPlacerInverted"/>
-<property name="OnlySimpleRotations" value="true"/>
-<property name="ParticleName" value="candle_flame"/>
-<property name="DowngradeBlock" value="BeaconLight"/>
-<drop event="Destroy" name="candle" count="0"/>
-<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
-<property name="Group" value="Building"/>
-</block>
+</block>  
   
-<block id="2041" name="glassShowerRamp">
-	<property name="Material" value="glass"/>
-	<property name="Shape" value="New"/>
-	<property name="LightOpacity" value="1"/> <!-- juuuust enough to get light level < 15 and keep the rain out -->
-	<property name="Model" value="ramp_glass"/>
-	<property name="Mesh" value="transparent"/>
-	<property name="Texture" value="285"/>
-	<property name="DescriptionKey" value="glassGroupDesc"/>
-	<drop event="Destroy" name="brokenGlass" count="1,4"/>
-</block>
-
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

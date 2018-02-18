@@ -145,6 +145,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Clothes Recipes -->
 <recipe name="animalHidePoncho" count="1">                                                                  <ingredient name="leather" count="20"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="patchworkPufferCoat" count="1">                                                               <ingredient name="cloth" count="20"/> <ingredient name="scrapPlastics" count="2"/>  <ingredient name="ductTape"/> </recipe>
 <recipe name="bandana" count="1">                                                                           <ingredient name="cloth" count="4"/> </recipe>
 <recipe name="miningHelmet" craft_area="workbench">                                                         <ingredient name="footballHelmet"/> <ingredient name="flashlight02"/> <ingredient name="electricParts" count="8"/> <ingredient name="ductTape" count="5"/> <ingredient name="scrapPlastics" count="4"/> </recipe>
 <recipe name="miningHelmet" craft_area="workbench">                                                         <ingredient name="footballHelmetZU"/> <ingredient name="flashlight02"/> <ingredient name="electricParts" count="8"/> <ingredient name="ductTape" count="5"/> <ingredient name="scrapPlastics" count="4"/> </recipe>
@@ -240,15 +241,32 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="10GASlugNG" craft_area="workbench">                                                           <ingredient name="bulletTipLarge"/> <ingredient name="gunPowderNG" count="5"/> <ingredient name="casingShotgunPlastic"/> </recipe>
 <recipe name="Scattershot" count="5">                                                                       <ingredient name="nail"/> <ingredient name="rockSmall" count="3"/> <ingredient name="brokenGlass"/> <ingredient name="gunPowder" count="5"/> <ingredient name="paper" count="5"/> </recipe>
 <recipe name="Musketshot">                                                                                  <ingredient name="musketball"/> <ingredient name="gunPowder" count="2"/> <ingredient name="paper"/> </recipe>
-<!-- Other Ammo -->
-<recipe name="rocket" craft_area="workbench">                                                               <ingredient name="rocketTip"/> <ingredient name="gunPowder" count="20"/> <ingredient name="ductTape"/> <ingredient name="gasCan" count="20"/> <ingredient name="rocketCasing"/> </recipe>
+
+<!-- Rockets -->
+<recipe name="rocket" craft_area="workbench">                                                               <ingredient name="rocketTip"/> <ingredient name="gunPowder" count="40"/> <ingredient name="gasCan" count="40"/> <ingredient name="rocketCasing"/> </recipe>
+<recipe name="APRocket" craft_area="workbench">                                                             <ingredient name="rocketTip"/> <ingredient name="gunPowder" count="40"/> <ingredient name="gasCan" count="40"/> <ingredient name="buckshot10GA" count="10"/> <ingredient name="rocketCasing"/> </recipe>
+<recipe name="INRocket" craft_area="workbench">                                                             <ingredient name="rocketTip"/> <ingredient name="gunPowder" count="40"/> <ingredient name="gasCan" count="40"/> <ingredient name="oil"/> <ingredient name="rocketCasing"/> </recipe>
+<recipe name="heavyRocket" craft_area="workbench">                                                          <ingredient name="rocketTip"/> <ingredient name="gunPowderNG" count="60"/> <ingredient name="gasCan" count="60"/> <ingredient name="rocketCasing"/> </recipe>
+<recipe name="heavyAPRocket" craft_area="workbench">                                                        <ingredient name="rocketTip"/> <ingredient name="gunPowderNG" count="60"/> <ingredient name="gasCan" count="60"/> <ingredient name="buckshot10GA" count="20"/> <ingredient name="rocketCasing"/> </recipe>
+<recipe name="heavyINRocket" craft_area="workbench">                                                        <ingredient name="rocketTip"/> <ingredient name="gunPowderNG" count="60"/> <ingredient name="gasCan" count="60"/> <ingredient name="oil"/> <ingredient name="rocketCasing"/> </recipe>
+
+<!-- Arrows and Bolts -->
 <recipe name="arrow" count="1">                                                                             <ingredient name="rockSmall"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
+<recipe name="crossbowBolt" count="1">                                                                      <ingredient name="rockSmall"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
 <recipe name="ironArrow" count="1">                                                                         <ingredient name="ironArrowHead"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
 <recipe name="ironCrossbowBolt" count="1">                                                                  <ingredient name="ironArrowHead"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
 <recipe name="steelArrow" count="1">                                                                        <ingredient name="steelArrowHead"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
 <recipe name="steelCrossbowBolt" count="1">                                                                 <ingredient name="steelArrowHead"/> <ingredient name="wood"/> <ingredient name="feather"/> </recipe>
-<recipe name="explodingCrossbowBolt" craft_area="workbench">                                                <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowderNG" count="8"/> <ingredient name="ductTape"/> </recipe>
-<recipe name="flamingArrow" craft_area="workbench">                                                         <ingredient name="steelArrow"/> <ingredient name="gunPowder" count="2"/> <ingredient name="cloth" count="2"/> <ingredient name="tallow"/> <ingredient name="gasCan" count="5"/> </recipe>
+<recipe name="firecrackerArrow" craft_area="workbench">                                                     <ingredient name="steelArrow"/> <ingredient name="gunPowder" count="20"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="firecrackerArrow" craft_area="workbench">                                                     <ingredient name="steelArrow"/> <ingredient name="gunPowderNG" count="10"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="firecrackerCrossbowBolt" craft_area="workbench">                                              <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowder" count="20"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="firecrackerCrossbowBolt" craft_area="workbench">                                              <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowderNG" count="10"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="explodingArrow" craft_area="workbench">                                                       <ingredient name="steelArrow"/> <ingredient name="gunPowderNG" count="20"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="explodingCrossbowBolt" craft_area="workbench">                                                <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowderNG" count="20"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="flamingArrow" count="1">                                                                      <ingredient name="steelArrow"/> <ingredient name="gunPowder" count="2"/> <ingredient name="cloth" count="3"/> <ingredient name="tallow"/> <ingredient name="gasCan" count="15"/> </recipe>
+<recipe name="flamingCrossbowBolt" count="1">                                                               <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowder" count="2"/> <ingredient name="cloth" count="3"/> <ingredient name="tallow"/> <ingredient name="gasCan" count="15"/> </recipe>
+<recipe name="petrolArrow" craft_area="workbench">                                                          <ingredient name="steelArrow"/> <ingredient name="gunPowderNG" count="2"/> <ingredient name="cloth" count="3"/> <ingredient name="tallow"/> <ingredient name="gasCan" count="30"/> </recipe>
+<recipe name="petrolCrossbowBolt" craft_area="workbench">                                                   <ingredient name="steelCrossbowBolt"/> <ingredient name="gunPowderNG" count="2"/> <ingredient name="cloth" count="3"/> <ingredient name="tallow"/> <ingredient name="gasCan" count="30"/> </recipe>
 <recipe name="steelDart" craft_area="forge" craft_tool="anvil" material_based="true">                       <ingredient name="unit_iron" count="3"/> <ingredient name="unit_clay"/> </recipe>
 
 <!-- Seeds -->
@@ -306,31 +324,29 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="machete" craft_area="workbench" craft_time="60">                                              <ingredient name="macheteBlade"/> <ingredient name="leather"/> </recipe>
 
 <!-- Mines -->
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowder" count="6"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowderNG" count="3"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowder" count="6"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowderNG" count="3"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineCookingPot" count="1">                                                                    <ingredient name="cookingPot"/> <ingredient name="gunPowder" count="10"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineCookingPot" count="1">                                                                    <ingredient name="cookingPot"/> <ingredient name="gunPowderNG" count="5"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="rScrapIronPlateMine" count="1" craft_area="workbench">                                        <ingredient name="forgedIron" count="2"/> <ingredient name="gunPowder" count="16"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="rScrapIronPlateMine" count="1" craft_area="workbench">                                        <ingredient name="forgedIron" count="2"/> <ingredient name="gunPowderNG" count="8"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineHubcap" count="1" craft_area="workbench">                                                 <ingredient name="hubcap"/>  <ingredient name="gunPowder" count="20"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineHubcap" count="1" craft_area="workbench">                                                 <ingredient name="hubcap"/>  <ingredient name="gunPowderNG" count="10"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineAirFilter" count="1" craft_area="workbench">                                              <ingredient name="airFilter"/> <ingredient name="gunPowder" count="40"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="mineAirFilter" count="1" craft_area="workbench">                                              <ingredient name="airFilter"/> <ingredient name="gunPowderNG" count="20"/> <ingredient name="spring"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="tnt" count="1" craft_area="workbench">                                                        <ingredient name="paper" count="10"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="20"/> <ingredient name="glue"/> </recipe>
+<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowder" count="6"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="1"/> </recipe>
+<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowderNG" count="3"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="1"/> </recipe>
+<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowder" count="6"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="1"/> </recipe>
+<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowderNG" count="3"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="1"/> </recipe>
+<recipe name="mineCookingPot" count="1">                                                                    <ingredient name="cookingPot"/> <ingredient name="gunPowder" count="10"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
+<recipe name="mineCookingPot" count="1">                                                                    <ingredient name="cookingPot"/> <ingredient name="gunPowderNG" count="5"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
+<recipe name="rScrapIronPlateMine" count="1" craft_area="workbench">                                        <ingredient name="forgedIron" count="2"/> <ingredient name="gunPowder" count="16"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="3"/> </recipe>
+<recipe name="rScrapIronPlateMine" count="1" craft_area="workbench">                                        <ingredient name="forgedIron" count="2"/> <ingredient name="gunPowderNG" count="8"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="3"/> </recipe>
+<recipe name="mineHubcap" count="1" craft_area="workbench">                                                 <ingredient name="hubcap"/>  <ingredient name="gunPowder" count="20"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="4"/> </recipe>
+<recipe name="mineHubcap" count="1" craft_area="workbench">                                                 <ingredient name="hubcap"/>  <ingredient name="gunPowderNG" count="10"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="4"/> </recipe>
+<recipe name="mineAirFilter" count="1" craft_area="workbench">                                              <ingredient name="airFilter"/> <ingredient name="gunPowder" count="40"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="5"/> </recipe>
+<recipe name="mineAirFilter" count="1" craft_area="workbench">                                              <ingredient name="airFilter"/> <ingredient name="gunPowderNG" count="20"/> <ingredient name="spring"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="5"/> </recipe>
+<recipe name="tnt" count="1" craft_area="workbench">                                                        <ingredient name="paper" count="10"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="50"/> <ingredient name="glue"/> </recipe>
 
 <!-- Bombs -->
-<recipe name="molotovCocktail" count="1">                                                                   <ingredient name="emptyJar"/> <ingredient name="cloth" count="3"/> <ingredient name="gasCan" count="50"/> </recipe>
-<recipe name="heavyMolotovCocktail" count="1" craft_area="workbench">                                       <ingredient name="emptyJar"/> <ingredient name="cloth" count="3"/> <ingredient name="gasCan" count="100"/> <ingredient name="oil"/> </recipe>
+<recipe name="molotovCocktail" count="1">                                                                   <ingredient name="emptyJar"/> <ingredient name="cloth" count="3"/> <ingredient name="gasCan" count="30"/> </recipe>
+<recipe name="heavyMolotovCocktail" count="1" craft_area="workbench">                                       <ingredient name="emptyJar"/> <ingredient name="cloth" count="3"/> <ingredient name="gasCan" count="60"/> <ingredient name="oil"/> </recipe>
 <recipe name="pipeBomb" count="1">                                                                          <ingredient name="shortMetalPipe"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowder" count="12"/> </recipe>
 <recipe name="pipeBomb" count="1">                                                                          <ingredient name="shortMetalPipe"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="6"/> </recipe>
-<recipe name="heavyPipeBomb" count="1" craft_area="workbench">                                              <ingredient name="shortMetalPipe"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowder" count="30"/> </recipe>
-<recipe name="heavyPipeBomb" count="1" craft_area="workbench">                                              <ingredient name="shortMetalPipe"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="15"/> </recipe>
 <recipe name="dynamite" count="1">                                                                          <ingredient name="paper" count="12"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowder" count="24"/> <ingredient name="glue"/> </recipe>
 <recipe name="dynamite" count="1">                                                                          <ingredient name="paper" count="12"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="12"/> <ingredient name="glue"/> </recipe>
-<recipe name="heavyDynamite" count="1" craft_area="workbench">                                              <ingredient name="scrapPlastics" count="3"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowder" count="50"/> <ingredient name="glue"/> </recipe>
-<recipe name="heavyDynamite" count="1" craft_area="workbench">                                              <ingredient name="scrapPlastics" count="3"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="25"/> <ingredient name="glue"/> </recipe>
+<recipe name="heavyPipeBomb" count="1" craft_area="workbench">                                              <ingredient name="shortMetalPipe"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="25"/> </recipe>
+<recipe name="heavyDynamite" count="1" craft_area="workbench">                                              <ingredient name="scrapPlastics" count="3"/> <ingredient name="cloth" count="2"/> <ingredient name="gunPowderNG" count="40"/> <ingredient name="glue"/> </recipe>
 
 <!-- Assembled Weapons and Tools -->
 <recipe name="auger" craft_area="assembly">                                                                 <ingredient name="partsHandlebars"/> <ingredient name="smallEngine"/> <ingredient name="partsAuger_parts"/> <ingredient name="partsAuger_blade"/> </recipe>
@@ -406,7 +422,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="fertilizer" count="1" craft_area="cementMixer">                                               <ingredient name="rottingFlesh" count="1"/> <ingredient name="dirtFragment" count="1"/> <ingredient name="potassiumNitratePowder" count="1"/> </recipe>
 <recipe name="forgedIron" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="10"/> <ingredient name="unit_clay" count="5"/> </recipe>
 <recipe name="forgedSteel" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="20"/> <ingredient name="unit_clay" count="10"/> </recipe>
-<recipe name="leather" count="1">                                                                           <ingredient name="animalHide"/> </recipe>
+<recipe name="leather" count="1" craft_area="campfire" craft_tool="cookingPot">                             <ingredient name="animalHide" count="4"/> </recipe>
+<recipe name="leather" count="1" craft_area="campfire" craft_tool="beaker">                                 <ingredient name="animalHide" count="2"/> </recipe>
+<recipe name="leather" count="1" craft_area="chemistryStation">                                             <ingredient name="animalHide" count="1"/> </recipe>
 <recipe name="nail" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                  <ingredient name="unit_iron"/> <ingredient name="unit_clay"/> </recipe>
 <recipe name="crushedSand" count="1" craft_area="cementMixer">                                              <ingredient name="rockSmall"/> </recipe>
 <recipe name="spring" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">        <ingredient name="unit_iron" count="60"/> <ingredient name="unit_lead" count="10"/> <ingredient name="unit_clay" count="60"/> </recipe>
@@ -528,7 +546,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="glassBulletproofPlateCurved" count="1">                                                       <ingredient name="glassBulletproofBlock"/> </recipe>
 <recipe name="glassBulletproofRamp" count="1">                                                              <ingredient name="glassBulletproofBlock"/> </recipe>
 <!-- Rebar Frames -->
-<recipe name="rebarFrameBlock" craft_area="forge" craft_tool="anvil" material_based="true">                 <ingredient name="unit_iron" count="25"/> <ingredient name="unit_clay" count="5"/> </recipe>
+<recipe name="rebarFrameBlock" craft_area="forge" craft_tool="forgeCrucible" material_based="true">         <ingredient name="unit_iron" count="25"/> <ingredient name="unit_clay" count="5"/> </recipe>
 <recipe name="rebarFrameCNRInside" count="1">                                                               <ingredient name="rebarFrameBlock"/> </recipe>
 <recipe name="rebarFramePillar100" count="1">                                                               <ingredient name="rebarFrameBlock"/> </recipe>
 <recipe name="rebarFrameRamp" count="1">                                                                    <ingredient name="rebarFrameBlock"/> </recipe>
@@ -591,6 +609,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="woodGable" count="1">                                                                         <ingredient name="wood" count="10"/> <ingredient name="nail" count="1"/> </recipe>
  
 <!-- Defensive Blocks -->
+<recipe name="plainWoodWindowPlug" count="1">                                                               <ingredient name="wood" count="20"/> <ingredient name="nail" count="4"/> </recipe>
 <recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="100"/> <ingredient name="unit_clay" count="20"/> </recipe>
 <recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCentered"/> </recipe>
 <recipe name="ironBarsCentered" count="1">                                                                  <ingredient name="ironBars"/> </recipe>
@@ -615,7 +634,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="barbedFence" count="1">                                                                       <ingredient name="forgedIron" count="2"/> <ingredient name="wood" count="5"/> </recipe>
 <recipe name="barbedWireSheet" count="1">                                                                   <ingredient name="forgedIron" count="2"/> </recipe>
 <recipe name="woodLogSpike1" count="1">                                                                     <ingredient name="wood" count="20"/> </recipe>
-<recipe name="scrapIronLogSpike4" count="1">                                                                <ingredient name="forgedIron" count="4"/> <ingredient name="wood" count="20"/> </recipe>
+<recipe name="scrapIronLogSpike4" count="1">                                                                <ingredient name="forgedIron" count="2"/> <ingredient name="wood" count="20"/> </recipe>
 <recipe name="trapSpikesNew" count="1">                                                                     <ingredient name="wood" count="20"/> </recipe>
 <recipe name="looseBoardsTrapBlock1x1" count="1">                                                           <ingredient name="wood" count="20"/> <ingredient name="nail" count="2"/> </recipe>
 <recipe name="looseBoardsTrapBlock3x3" count="1">                                                           <ingredient name="wood" count="180"/> <ingredient name="nail" count="18"/> </recipe>
@@ -633,7 +652,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="campfire" count="1">                                                                          <ingredient name="rockSmall" count="12"/> <ingredient name="torch"/> </recipe>
 <recipe name="cementMixer" count="1" craft_area="workbench">                                                <ingredient name="forgedIron" count="25"/> <ingredient name="spring" count="4"/> <ingredient name="smallEngine"/> <ingredient name="mechanicalParts" count="25"/> </recipe>
 <recipe name="forge" count="1">                                                                             <ingredient name="rockSmall" count="250"/> <ingredient name="clayLump" count="250"/> <ingredient name="bellows"/> <ingredient name="shortMetalPipe" count="4"/> </recipe>
-<recipe name="workbench" count="1">                                                                         <ingredient name="forgedIron" count="25"/> <ingredient name="mechanicalParts" count="25"/> <ingredient name="wrench"/> <ingredient name="clawHammer"/> <ingredient name="wood" count="150"/> </recipe>
+<recipe name="workbench" count="1">                                                                         <ingredient name="forgedIron" count="50"/> <ingredient name="mechanicalParts" count="50"/> <ingredient name="wrench"/> <ingredient name="clawHammer"/> <ingredient name="wood" count="150"/> </recipe>
 
 <!-- Misc and Decorative Blocks -->
 <recipe name="burningBarrelPlayer" count="1" craft_area="workbench">                                        <ingredient name="forgedIron" count="5"/> <ingredient name="wood" count="10"/> <ingredient name="torch"/> </recipe>
@@ -734,7 +753,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="cntToilet02" count="1" craft_area="workbench">                                                <ingredient name="bucketWater"/> <ingredient name="shortMetalPipe" count="2"/> <ingredient name="mechanicalParts"/> <ingredient name="wood" count="4"/> </recipe>
 <recipe name="cntToilet03" count="1" craft_area="workbench">                                                <ingredient name="bucketWater"/> <ingredient name="shortMetalPipe" count="2"/> <ingredient name="mechanicalParts"/> <ingredient name="wood" count="4"/> </recipe>
 <recipe name="cntLockers" count="1" craft_area="workbench">                                                 <ingredient name="forgedIron" count="2"/> <ingredient name="spring" count="2"/> </recipe>
-
+<recipe name="cntBackpack01" count="1">                                                                     <ingredient name="cloth" count="10"/> </recipe>
+  
 <!-- Electronic Recipes -->
 <recipe name="generatorbank" count="1" craft_area="workbench">                                              <ingredient name="forgedIron" count="10"/> <ingredient name="mechanicalParts" count="10"/> <ingredient name="electricParts" count="10"/> <ingredient name="electronicParts" count="4"/> </recipe>
 <recipe name="batterybank" count="1" craft_area="workbench">                                                <ingredient name="forgedIron" count="10"/> <ingredient name="electricParts" count="8"/> <ingredient name="electronicParts" count="3"/> <ingredient name="scrapPlastics" count="6"/> </recipe>
@@ -759,10 +779,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="shotgunTurret" count="1" craft_area="workbench">                                              <ingredient name="forgedIron" count="20"/> <ingredient name="motionsensor"/> <ingredient name="partsPumpShotgun_parts"/> <ingredient name="mechanicalParts" count="15"/> </recipe>
 <recipe name="autoTurret" count="1" craft_area="workbench">                                                 <ingredient name="forgedIron" count="20"/> <ingredient name="motionsensor"/> <ingredient name="partsMP5_parts"/> <ingredient name="mechanicalParts" count="15"/> </recipe>
 
-<!-- GNAMOD Custom Items or Blocks -->
-<recipe name="StartingKitBase" > <!-- Empty Starting Kit Bag -->                                            <ingredient name="cloth" count="10"/> </recipe>
+<!-- Quests -->
 <recipe name="q_GnamodExpert" > <!-- Quest Swapping -->                                                     <ingredient name="q_GnamodBasic"/> </recipe>
-
- 
- 
 </recipes>

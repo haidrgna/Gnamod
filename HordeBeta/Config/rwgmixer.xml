@@ -101,7 +101,7 @@
 <hub_type value="city"/> <width value="1500, 1500" />  <height value="1500, 1500" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="cityMassive"/> <street_gen level="50" length_multiplier="3">
 
-<axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/> <!-- [+J-J+J-J][-J+J-J+J][+J-J+J-J][-J+J-J+J] -->
+<axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -335,7 +335,7 @@
 <prefab_rule name="hordeCentral">
 <!--
 <prefab name="gnamod_42x42_asphalt"/>
-<prefab name="gnamod_beacon_20" max_count="2"/>
+<prefab name="gnamod_beacon_20" max_count="1"/>
 -->
 </prefab_rule>    
 
@@ -1492,7 +1492,6 @@
 <biome_spawn_rule name="forest">          <distance_from_center range="200,300"/>       </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <distance_from_center range="300,500"/>       </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
-<!--<biome_spawn_rule name="city">            <distance_from_center range="1,1"/>           </biome_spawn_rule> -->
 <biome_spawn_rule name="wasteland">       <distance_from_center range="500,750"/>       </biome_spawn_rule>
 <biome_spawn_rule name="city_wasteland">  <distance_from_center range="750,1000"/>      </biome_spawn_rule>
 <biome_spawn_rule name="wasteland_hub">   <distance_from_center range="1000,1100"/>     </biome_spawn_rule>

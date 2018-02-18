@@ -7,9 +7,7 @@
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Horde Mode -->         <ruleset name="horde"             cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="2000"   terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="hordeHub" prob="1"/> <cell_rule name="hordeHubEmpty" position="0,0" prob="1"/>  </ruleset>
-<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="800"     cell_offset="0"     generation_distance="2500"   terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="hordeHub" prob="1"/>
-  <cell_rule name="hordeHubEmpty" position="0,0" prob="1"/>
-</ruleset>
+<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="emptyHub" prob="1"/>  </ruleset>
 </rulesets>
 
 <!-- Cell Rules (Big chunks of the map with a hub near the center. Biggest city size = 1500) -->
@@ -49,7 +47,7 @@
 
 <cell_rule name="hordeHub">  
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="hordeCity"  prob="1"/>
+<hub_rule name="hordeNoCity"  prob="1"/>
 <wilderness_rule name="wildernessHorde"/>
 </cell_rule>
 
@@ -63,6 +61,12 @@
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="0"/>
 <hub_rule name="noCity"  prob="1"/>
 <wilderness_rule name="wildernessHorde"/>
+</cell_rule>
+
+<cell_rule name="hugeHub">  
+<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="0"/>
+<hub_rule name="hugeCity"  prob="1"/>
+<wilderness_rule name="wildernessBase"/>
 </cell_rule>
 
 </cell_rules>
@@ -103,7 +107,7 @@
 <hub_type value="city"/> <width value="1500, 1500" />  <height value="1500, 1500" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="cityMassive"/> <street_gen level="50" length_multiplier="3">
 
-<axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/> <!-- [+J-J+J-J][-J+J-J+J][+J-J+J-J][-J+J-J+J] -->
+<axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
@@ -124,10 +128,10 @@
 </hub_rule>
 
 <hub_rule name="emptyCity">
-<hub_type value="city"/> <width value="1000, 1750" />  <height value="1000, 1750" /> <path_material value="asphalt" /> <path_radius value="11"/>
-<prefab_rule name="hordeCentral"/> <street_gen level="10" length_multiplier="3">
+<hub_type value="city"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="hordeCentral"/> <street_gen level="10" length_multiplier="2">
 
-<axiom value="A"/>
+<axiom value="[F+FF][-F-FF][+F-FF][++F+FF]"/>
 <rule char="A" replace_with="FF+FF+FF+F[F]+F-F-F-F-F"/>
 <alt_commands chars="A"/>
 </street_gen>
@@ -335,13 +339,16 @@
 </prefab_rule>
 
 <prefab_rule name="hordeCentral">
-<prefab name="Beacon" max_count="1"/>
+<!--
+<prefab name="gnamod_42x42_asphalt"/>
+<prefab name="gnamod_beacon_20" max_count="1"/>
+-->
 </prefab_rule>    
 
 <prefab_rule name="wildernessBase">
 <prefab rule="buildingsBusiness"/>
 <prefab rule="buildingsBroken" prob="30"/>
-<prefab rule="buildingsSettlements" max_count="1"/>
+<prefab rule="buildingsSettlements" max_count="1" prob="0.1"/>
 <prefab rule="buildingsCabins" prob="5"/>
 <prefab rule="housesOld" prob="5"/>
 <prefab rule="housesBurnt" prob="20"/>
@@ -545,26 +552,27 @@
 <prefab name="waste_rubble_bldg_08" prob="2"/>
 </prefab_rule>
 
-<prefab_rule name="buildingsSettlements">
-<prefab name="settlement_01" prob="5"/>
-<prefab name="settlement_trader_01" />
-<prefab name="settlement_trader_02" />
-<prefab name="settlement_trader_03" />
-<prefab name="settlement_trader_04" />
-<prefab name="settlement_trader_05" />
-</prefab_rule>  
-
 <prefab_rule name="buildingsCabins">
 <prefab name="cabin_snow_hidden_01"/>
 <prefab name="snowy_ski_lodge"/>
-<prefab name="cabin_01" />
-<prefab name="cabin_02_sm" />
-<prefab name="cabin_03_lg" />
-<prefab name="cabin_04_md" />
-<prefab name="cabin_05_lg" />
-<prefab name="cabin_06_lg" />
-<prefab name="ranger_station1" />
+<prefab name="cabin_01"/>
+<prefab name="cabin_02_sm"/>
+<prefab name="cabin_03_lg"/>
+<prefab name="cabin_04_md"/>
+<prefab name="cabin_05_lg"/>
+<prefab name="cabin_06_lg"/>
+<prefab name="ranger_station1"/>
 </prefab_rule>
+
+<prefab_rule name="buildingsSettlements">
+<prefab name="settlement_01" prob="5"/>
+<prefab name="settlement_trader_01"/>
+<prefab name="settlement_trader_02"/>
+<prefab name="settlement_trader_03"/>
+<prefab name="settlement_trader_04"/>
+<prefab name="settlement_trader_05"/>
+<prefab rule="buildingsCabins" prob="5"/>
+</prefab_rule>  
 
 <prefab_rule name="fillerWater">
 <prefab name="water_tower_01"/>
@@ -1476,7 +1484,7 @@
 <biome_spawn_rule name="desert">          <biome_generator range="0.50,0.55"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.80,0.95"/>          </biome_spawn_rule>
 
-<biome_spawn_rule name="city_wasteland">  <distance_from_center range="0,1000"/>        </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <distance_from_center range="0,900"/>        </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <distance_from_center range="9500,10500"/>    </biome_spawn_rule>
 <biome_spawn_rule name="wasteland_hub">   <distance_from_center range="10500,11500"/>   </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <distance_from_center range="11500,12000"/>   </biome_spawn_rule>
@@ -1484,15 +1492,15 @@
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
 
-<!-- Gnamod Horde Mode Biome Spawning
+<!-- Gnamod Horde Mode Biome Spawning 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <distance_from_center range="1,100"/>         </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <distance_from_center range="100,150"/>       </biome_spawn_rule>
-<biome_spawn_rule name="burnt_forest">    <distance_from_center range="150,300"/>       </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <distance_from_center range="0,200"/>         </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <distance_from_center range="200,300"/>       </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <distance_from_center range="300,500"/>       </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <distance_from_center range="300,600"/>       </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <distance_from_center range="600,1000"/>      </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <distance_from_center range="500,750"/>       </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <distance_from_center range="750,1000"/>      </biome_spawn_rule>
 <biome_spawn_rule name="wasteland_hub">   <distance_from_center range="1000,1100"/>     </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <distance_from_center range="1100,2000"/>     </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
@@ -1502,7 +1510,7 @@
 <!-- Biome Test
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="city">            <terrain_generator range="-60,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <terrain_generator range="-60,255"/>          </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 </biome_spawn_rules>
 -->
