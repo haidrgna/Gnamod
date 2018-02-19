@@ -4,7 +4,7 @@
 <rulesets>
 <!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/>  </ruleset>
 <!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
-<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
+<!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisSmallHub" prob="1"/> <cell_rule name="necropolisHub" position="0,0" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1000"    cell_offset="0"     generation_distance="5000"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Horde Mode -->         <ruleset name="horde"             cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="2000"   terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="hordeHub" prob="1"/> <cell_rule name="hordeHubEmpty" position="0,0" prob="1"/>  </ruleset>
 <!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="emptyHub" prob="1"/>  </ruleset>
@@ -42,6 +42,12 @@
 <cell_rule name="necropolisHub">  
 <cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
 <hub_rule name="necropolis"  prob="1"/>
+<wilderness_rule name="wildernessNecropolis"/>
+</cell_rule>
+
+<cell_rule name="necropolisSmallHub">  
+<cave_count value="0,0"/> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_rule name="necropolisSmall"  prob="1"/>
 <wilderness_rule name="wildernessNecropolis"/>
 </cell_rule>
 
@@ -136,6 +142,30 @@
 <prefab_rule name="cityNecropolis"/> <street_gen level="10" length_multiplier="3">
 
 <axiom value="[+J-J+J-J][-J+J-J+J][+J-J+J-J][-J+J-J+J]"/>
+<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
+<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
+</street_gen>
+</hub_rule>
+
+<hub_rule name="necropolisSmall">
+<hub_type value="city"/> <width value="250, 750" />  <height value="250, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<prefab_rule name="cityNecropolis"/> <street_gen level="10" length_multiplier="3">
+
+<axiom value="[*][-*]"/>
 <rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 <rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
