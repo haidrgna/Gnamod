@@ -224,17 +224,17 @@
 
 <!-- Gnamod Quests-->
 <!-- Gnamod Base - Default -->
-<quest id="quest_BasicSurvival1" group_name="Gnamod Base - Default" category_key="quest"
+<quest id="quest_BasicSurvival1a" group_name="Gnamod Base - Default" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod." 
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <!-- Rewards -->
-<reward type="Item"           id="bottledWater"             value="1"/>
-<reward type="Item"           id="canChicken"               value="1"/>
-<reward type="Item"           id="firstAidBandage"          value="2"/>
-<reward type="Item"           id="painkillers"              value="1"/>
-<reward type="Item"           id="q_GnamodBasic"            value="1"/>
+<reward type="Item"           id="bottledWater"               value="1"/>
+<reward type="Item"           id="canChicken"                 value="1"/>
+<reward type="Item"           id="firstAidBandage"            value="2"/>
+<reward type="Item"           id="painkillers"                value="1"/>
+<reward type="Item"           id="q_GnamodBasic"              value="1"/>
 </quest>  
 
 <quest id="quest_BasicSurvival1b" group_name="Gnamod Base - Easy Peasy" category_key="quest"
@@ -243,21 +243,26 @@ description="Welcome to Gnamod. This is the easy start."
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie">
 <!-- Rewards -->
-<reward type="Item"           id="bottledWater"             value="3"/>
-<reward type="Item"           id="canChicken"               value="3"/>
-<reward type="Item"           id="firstAidBandage"          value="4"/>
-<reward type="Item"           id="painkillers"              value="2"/>
-<reward type="Item"           id="q_GnamodBasic"            value="1"/>
+<reward type="Item"           id="bottledWater"               value="3"/>
+<reward type="Item"           id="canChicken"                 value="3"/>
+<reward type="Item"           id="firstAidBandage"            value="4"/>
+<reward type="Item"           id="painkillers"                value="2"/>
+<reward type="Item"           id="q_GnamodBasic"              value="1"/>
 </quest>    
 
 <!-- Necropolis -->
-<quest id="quest_BasicSurvival1c" group_name="Gnamod Necropolis" category_key="quest"
+<quest id="quest_BasicSurvival1" group_name="Gnamod Necropolis" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the Necropolis start." 
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
-<reward type="Item"           id="q_GnamodBasic"            value="1"/>
-</quest>      
+<reward type="Item"           id="bottledWater"               value="1"/>
+<reward type="Item"           id="canChicken"                 value="1"/>
+<reward type="Item"           id="firstAidBandage"            value="2"/>
+<reward type="Item"           id="bedroll"                    value="1"/>
+<reward type="Item"           id="torch"                      value="1"/>
+<reward type="SkillPoints"                                    value="10"/>
+</quest>
 
 <!-- Nomad Mode -->
 <quest id="quest_BasicSurvival1d" group_name="Gnamod Nomad Mode" category_key="quest"
@@ -545,7 +550,7 @@ icon="ui_game_symbol_zombie" difficulty="hard">
 <reward type="Item"           id="casinoCoin"                 value="10000"/>
 <reward type="Quest"          id="quest_KillingForDukes1"/>
 </quest>  
-  
+
 <!-- Dukes per 25 Kills -->
 <quest id="quest_KillingForDukes1" group_name="Killing For Dukes" category="quest"
 name="Killing For Dukes 1" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"

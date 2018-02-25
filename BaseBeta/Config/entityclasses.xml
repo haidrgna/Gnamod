@@ -4096,8 +4096,8 @@
 <property name="DeadBodyHitPoints"                  value="175"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="2"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Animal Chicken ======================================================================================================================================================================== -->
 <entity_class name="animalChicken"                  extends="animalTemplateTimid">
@@ -4115,8 +4115,8 @@
 <property name="DeadBodyHitPoints"                  value="175"/>
   <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
-<drop event="Harvest"                               name="feather"    tool_category="Butcher" prob="0.75" count="30"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="feather"    tool_category="Butcher" count="30"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Animal Stag ========================================================================================================================================================================= -->
 <entity_class name="animalStag"                     extends="animalTemplateTimid">
@@ -4131,10 +4131,10 @@
 <property name="SoundDeath"                         value="Animals/stagdeath"/>
 <property name="TimeStayAfterDeath"                 value="300"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="2,4"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Animal Pig ============================================================================================================================================================================ -->
 <entity_class name="animalPig"                      extends="animalTemplateTimid">
@@ -4148,10 +4148,10 @@
 <property name="HasRagdoll"                         value="true"/>
 <property name="MaxHealth"                          value="150"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4,6"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Animal Boar =========================================================================================================================================================================== -->
 <entity_class name="animalBoar"                     extends="animalTemplateHostile">
@@ -4188,10 +4188,10 @@
 <property name="SoundSense"                         value="Animals/Boar/boarsense"/>
 <property name="SoundGiveUp"                        value="Animals/Boar/boargiveup"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4,6"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Animal Dead =========================================================================================================================================================================== -->
 <entity_class name="animalDead"                     extends="animalTemplateTimid">
@@ -4257,10 +4257,10 @@
 <property name="SoundAttack"                        value="Animals/Bear/bearattack"/>
 <property name="SoundGiveUp"                        value="Animals/Bear/beargiveup"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="7"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="5,7"/>
+<drop event="Destroy"                               name="rawMeat"    count="1,2"/>
 </entity_class>
 <!-- ============================== Animal Wolf =========================================================================================================================================================================== -->
 <entity_class name="animalWolf"                     extends="animalTemplateHostile">
@@ -4313,10 +4313,10 @@
 <property name="SoundSense"                         value="Animals/Wolf/wolfsense"/>
 <property name="SoundGiveUp"                        value="Animals/Wolf/wolfgiveup"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="3"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="2,3"/>
+<drop event="Destroy"                               name="rawMeat" count="1"/>
 </entity_class>
 <!-- ============================== Animal Dire Wolf ====================================================================================================================================================================== -->
 <entity_class name="animalDireWolf"                 extends="animalWolf">
@@ -4327,10 +4327,10 @@
 <property name="ReplaceMaterial1"                   value="entities/animals/wolf/materials/wolfEyeFeral"/>
 <property name="DeadBodyHitPoints"                  value="450"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="3,5"/>
+<drop event="Destroy"                               name="rawMeat" count="1"/>
 </entity_class>
 <!-- ============================== Animal Snake ========================================================================================================================================================================== -->
 <entity_class name="animalSnake"                    extends="animalTemplateHostile">
@@ -4386,9 +4386,9 @@
 <property name="SoundAlert"                         value="Animals/Snake/snakealert"/>
 <property name="SoundAttack"                        value="Animals/Snake/snakeattack"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="1"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="2"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rawMeat" count="1"/>
 </entity_class>
 <!-- ============================== Animal Rabbid Boar ==================================================================================================================================================================== -->
 <entity_class name="animalRabbidBoar"               extends="animalBoar">
@@ -4422,10 +4422,10 @@
 <property name="AITarget-9"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
 <property name="AITarget-10"                        value="SetNearestEntityAsTarget"    param1="EntityNPC"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4,6"/>
+<drop event="Destroy"                               name="rawMeat" count="1"/>
 </entity_class>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= ZOMBIE ANIMALS +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- ============================== Zombie Dog ============================================================================================================================================================================ -->
@@ -4483,17 +4483,17 @@
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
 <property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
 <!-- Stealth -->
-<property name="SightRange"                         value="60"/>
+<property name="SightRange"                         value="45"/>
 <property name="SightScale"                         value="-5,75"/>
 <property name="SleeperSmellSenseThreshold"         value="5,30"/>
 <property name="SleeperSmellWakeThreshold"          value="10,40"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="3"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="1"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" prob="0.75" count="2"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>  
 <!-- ============================== Zombie Vulture ======================================================================================================================================================================== -->
 <entity_class name="animalZombieVulture"            extends="animalTemplateHostile">
@@ -4544,10 +4544,10 @@
 <property name="SightRange"                         value="120"/>
 <property name="SightScale"                         value="-5,75"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Harvest"                               name="feather"      tool_category="Butcher" prob="0.75" count="30"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Harvest"                               name="feather"      tool_category="Butcher" count="30"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
 <!-- ============================== Zombie Bear ============================================================================================================================================================================ -->
 <entity_class name="animalZombieBear"               extends="animalTemplateHostile">
@@ -4607,14 +4607,14 @@
 <property name="SoundAttack"                        value="Animals/Bear/bearattack"/>
 <property name="SoundGiveUp"                        value="Animals/Bear/beargiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="90"/>
+<property name="SightRange"                         value="60"/>
 <property name="SightScale"                         value="-5,75"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2,4"/>
+<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1,2"/>
 </entity_class>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED ANIMALS +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- ============================== Radiated Zombie Dog =================================================================================================================================================================== -->
@@ -4633,11 +4633,11 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="3"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="1"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" prob="0.75" count="2"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
 <!-- ============================== Radiated Zombie Bear ================================================================================================================================================================== -->
 <entity_class name="animalZombieBearRad"            extends="animalZombieBear">
@@ -4654,11 +4654,11 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2,4"/>
+<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1,2"/>
 </entity_class>
 <!-- ============================== Radiated Zombie Vulture =============================================================================================================================================================== -->  
 <entity_class name="animalZombieVultureRad"         extends="animalZombieVulture">
@@ -4669,10 +4669,10 @@
 <property name="ExperienceGain"                     value="3000"/>
 <property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Harvest"                               name="feather"      tool_category="Butcher" prob="0.75" count="30"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Harvest"                               name="feather"      tool_category="Butcher" count="30"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
 <!-- ============================== Radiated Wolf ========================================================================================================================================================================= -->  
 <entity_class name="animalWolfRad"                  extends="animalTemplateHostile">
@@ -4731,7 +4731,7 @@
 <property name="SoundSense"                         value="Animals/Wolf/wolfsense"/>
 <property name="SoundGiveUp"                        value="Animals/Wolf/wolfgiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="90"/>
+<property name="SightRange"                         value="45"/>
 <property name="SightScale"                         value="-5,75"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
@@ -4740,11 +4740,11 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>  
 <!-- ============================== Radiated Dire Wolf ==================================================================================================================================================================== -->  
 <entity_class name="animalDireWolfRad"              extends="animalWolfRad">
@@ -4786,11 +4786,11 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
 <!-- ============================== Radiated Snake ======================================================================================================================================================================== -->  
 <entity_class name="animalSnakeRad"                 extends="animalSnake">
@@ -4831,13 +4831,13 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="90"/>
+<property name="SightRange"                         value="45"/>
 <property name="SightScale"                         value="-5,75"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="1"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="2"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="1,2"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>   
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= EXPLODING ANIMALS +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- ============================== Exploding Rabbit ====================================================================================================================================================================== -->
@@ -4861,8 +4861,8 @@
 <property name="AITask-6"                           value="Wander"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="2"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Chicken ===================================================================================================================================================================== -->
 <entity_class name="animalChickenBoom"              extends="animalChicken">
@@ -4886,7 +4886,7 @@
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
 <drop event="Harvest"                               name="feather"    tool_category="Butcher" count="30"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Stag ======================================================================================================================================================================== -->
 <entity_class name="animalStagBoom"                 extends="animalStag">
@@ -4909,10 +4909,10 @@
 <property name="AITask-5"                           value="Wander"/>
 <property name="AITask-6"                           value="Wander"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="3,5"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="2,4"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Pig ========================================================================================================================================================================= -->
 <entity_class name="animalPigBoom"                  extends="animalPig">
@@ -4935,10 +4935,10 @@
 <property name="AITask-5"                           value="Wander"/>
 <property name="AITask-6"                           value="Wander"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4,6"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Boar ======================================================================================================================================================================== -->
 <entity_class name="animalBoarBoom"                 extends="animalBoar">
@@ -4954,10 +4954,10 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="4,6"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Wolf ======================================================================================================================================================================== -->
 <entity_class name="animalWolfBoom"                 extends="animalWolf">
@@ -4973,10 +4973,10 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="3"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="2,3"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>
 <!-- ============================== Exploding Snake ======================================================================================================================================================================= -->
 <entity_class name="animalSnakeBoom"                extends="animalSnake">
@@ -4993,9 +4993,9 @@
 <property name="NightApproachSpeed"                 value="1.5"/>
 <property name="HandItem"                           value="handSuicide"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="1"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="2"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="1,2"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>  
 <!-- ============================== Exploding Dire Wolf ======================================================================================================================================================================= -->
 <entity_class name="animalDireWolfBoom"             extends="animalDireWolf">
@@ -5011,10 +5011,10 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="5"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="3,5"/>
+<drop event="Destroy"                               name="rawMeat"    count="1"/>
 </entity_class>  
 <!-- ============================== Exploding Bear ======================================================================================================================================================================= -->
 <entity_class name="animalBearBoom"                 extends="animalBear">
@@ -5030,10 +5030,10 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="8"/>
-<drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" prob="0.75" count="7"/>
-<drop event="Destroy"                               name="rawMeat"    tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" count="5,8"/>
+<drop event="Harvest"                               name="animalHide" tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"  tool_category="Butcher" count="5,7"/>
+<drop event="Destroy"                               name="rawMeat"    count="1,2"/>
 </entity_class>  
 <!-- ============================== Flaming Vulture ====================================================================================================================================================================== -->
 <entity_class name="animalZombieVultureFlaming"     extends="animalZombieVulture">
@@ -5041,10 +5041,10 @@
 <property name="MaxHealth"                          value="250"/>
 <property name="Buffs"                              value="ZombieBurning"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
-<drop event="Harvest"                               name="feather"      tool_category="Butcher" prob="0.75" count="30"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
+<drop event="Harvest"                               name="feather"      tool_category="Butcher" count="30"/>
+<drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
 </entity_classes>
 

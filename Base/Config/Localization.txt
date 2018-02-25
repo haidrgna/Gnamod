@@ -3764,8 +3764,8 @@ snowberryPlantDesc,items,Farming,New,Snowberries can easily be mistaken for blue
 yuccaSeed,items,Farming,New,Yucca Seed,,,,
 megaCrush,items,Food,New,Mega Crush,,,,
 megaCrushDesc,items,Food,New,Crush your enemies and your thirst with Mega Crush! It's got electrolytes!,,,,
-snowberryJuice,items,Food,New,Snowberry Juice,,,,
-snowberryJuiceDesc,items,Food,New,This drink helps you survive cold environments but should not be overused.,,,,
+snowberryJuice,items,Food,New,Berry Juice,,,,
+snowberryJuiceDesc,items,Food,New,A drink made from various berries found in the cold climates.,,,,
 yuccaCocktail,items,Food,New,Yucca Cocktail,,,,
 yuccaCocktailDesc,items,Food,New,Lorem ipsum dolor sit amet,,,,
 compoundBow,items,Gun,New,Compound Bow,,Compoundbogen,,
@@ -4778,11 +4778,11 @@ q_GnamodHordeDesc,items,Quest Note,EnChanged,Gnamod Horde Mode: Getting started.
 q_GnamodZombieKilling,items,Quest Note,EnChanged,Zombie Killing for Cash,,,,
 q_GnamodZombieKillingDesc,items,Quest Note,EnChanged,Seems you managed to complete a streak. Now you can start killing again.,,,,
 
-StartingKit,blocks,Block,,Backpack,,
+StartingKit,blocks,Block,,Starting Kit,,
 StartingKitBase,blocks,Block,,Backpack,,
 StartingKitLucky,blocks,Block,,Backpack,,
 StartingKitUnlucky,blocks,Block,,Backpack,,
-StartingKitDesc,blocks,Block,,An empty backpack to place and use to store items.,,
+StartingKitDesc,blocks,Block,,This is your Starting Kit. Place it on the ground to get yourself equiped.,,
 treasureChestNomad,blocks,Container,EnChanged,Burried Backpack,,,,
 PlaceBeacon,blocks,Container,EnChanged,Place the Beacon,,,,
 PlaceBeaconDesc,blocks,Container,EnChanged,Place the Beacon somewhere on solid ground and well supported!,,,,
@@ -4790,6 +4790,9 @@ BeaconDisposalUnit,blocks,Container,EnChanged,Disposal Unit,,,,
 BeaconSupplies,blocks,Container,EnChanged,Supplies Cache,,,,
 BeaconBuilding,blocks,Container,EnChanged,Building Cache,,,,
 cntHordeZombieLoot,blocks,Block,,Bag with Loot,,
+
+patchworkPufferCoat,items,Ammo,EnChanged,Patchwork Puffercoat,,,,
+patchworkPufferCoatDesc,items,Ammo,EnChanged,A puffercoat you taped together from some cloth and plastic bags. It might protect you from cold weather for a while.,,,,
 
 No Ammo,items,Ammo,EnChanged,No Ammo,,,,
 No AmmoDesc,items,Ammo,EnChanged,No Ammo Loaded,,,,
@@ -4903,7 +4906,7 @@ firecrackerCrossbowBoltDesc,items,Ammo,EnChanged,Bow ammunition with a small gun
 explodingCrossbowBolt,items,Ammo,EnChanged,Exploding Crossbow Bolt (Ammo),,,,
 explodingCrossbowBoltDesc,items,Ammo,EnChanged,Bow ammunition with a gunpowder bomb attached to deal explosive damage to a group of enemies.,,,,
 flamingCrossbowBolt,items,Ammo,EnChanged,Flaming Crossbow Bolt (Ammo),,,,
-flamningCrossbowBoltDesc,items,Ammo,EnChanged,Bow ammunition with a small petrol bomb attached to set a small group of enemies on fire.,,,,
+flamingCrossbowBoltDesc,items,Ammo,EnChanged,Bow ammunition with a small petrol bomb attached to set a small group of enemies on fire.,,,,
 petrolCrossbowBolt,items,Ammo,EnChanged,Petrolbomb Crossbow Bolt (Ammo),,,,
 petrolCrossbowBoltDesc,items,Ammo,EnChanged,Bow ammunition with a petrol bomb attached to set a group of enemies on fire.,,,,
 
@@ -4912,7 +4915,7 @@ firecrackerArrowDesc,items,Ammo,EnChanged,Bow ammunition with a small gunpowder 
 explodingArrow,items,Ammo,EnChanged,Exploding Arrow (Ammo),,,,
 explodingArrowDesc,items,Ammo,EnChanged,Bow ammunition with a gunpowder bomb attached to deal explosive damage to a group of enemies.,,,,
 flamingArrow,items,Ammo,EnChanged,Flaming Arrow (Ammo),,,,
-flamningArrowDesc,items,Ammo,EnChanged,Bow ammunition with a small petrol bomb attached to set a small group of enemies on fire.,,,,
+flamingArrowDesc,items,Ammo,EnChanged,Bow ammunition with a small petrol bomb attached to set a small group of enemies on fire.,,,,
 petrolArrow,items,Ammo,EnChanged,Petrolbomb Arrow (Ammo),,,,
 petrolArrowDesc,items,Ammo,EnChanged,Bow ammunition with a petrol bomb attached to set a group of enemies on fire.,,,,
 
@@ -4932,39 +4935,39 @@ heavyMolotovCocktail,items,Gun,New,Strong Molotov Cocktail (Ammo),,,,
 heavyMolotovCocktailDesc,items,Gun,New,Page one of the Anarchists' Cook Book, just throw it at your enemies and watch them burn.,,,,
 
 Scattershot,items,Ammo,EnChanged,Scattershot Ammunition (Ammo),,,,
-ScattershotDesc,items,Ammo,EnChanged,Scattershot Ammunition is the most primitive form of ammuntion that can be fired with a blunderbuss. Scatteshot is made from pebbles, pieces of glass and rusty nails. Most effective at melee range.,,,,
+ScattershotDesc,items,Ammo,EnChanged,"Scattershot Ammunition is the most primitive form of ammuntion that can be fired with a blunderbuss. Scatteshot is made from pebbles, pieces of glass and rusty nails. Most effective at melee range.",,,,
 Musketshot,items,Ammo,EnChanged,Musketshot Ammunition (Ammo),,,,
 MusketshotDesc,items,Ammo,EnChanged,A Musketshot for the blunderbuss. These round metal balls fit the barrel of the blunderbuss with ease and can be fired up a decent range, effectively turning the blunderbuss into a musket.,,,,
 
-gunPowder,items,Item,EnChanged,Handcrafted Gun Powder,Poudre à canon,Schießpulver,,Pólvora
-gunPowderDesc,items,Item,EnChanged,Handcrafted Gun powder made from coal and nitrate can be used to make your own ammo and explosives.,"Faite à base de charbon et de nitrates, la poudre à canon peut être utilisée pour fabriquer vos propres munitions et explosifs.","Schießpulver aus Kohle und Kaliumnitrat kann benutzt werden, um eigene Munition und Sprengstoffe herzustellen.",,Puedes usar la pólvora obtenida del carbón y nitrato para fabricar tu propia munición y explosivos.
-gunPowderNG,items,Item,EnChanged,Gun Powder,Poudre à canon,Schießpulver,,Pólvora
-gunPowderNGDesc,items,Item,EnChanged,Gun powder made from coal and nitrate can be used to make your own ammo and explosives.,"Faite à base de charbon et de nitrates, la poudre à canon peut être utilisée pour fabriquer vos propres munitions et explosifs.","Schießpulver aus Kohle und Kaliumnitrat kann benutzt werden, um eigene Munition und Sprengstoffe herzustellen.",,Puedes usar la pólvora obtenida del carbón y nitrato para fabricar tu propia munición y explosivos.
+gunPowder,items,Item,EnChanged,Low Quality Gun Powder,,,,
+gunPowderDesc,items,Item,EnChanged,Low Quality Gun Powder made from coal and nitrate can be used to make your own ammo and explosives.,,,,
+gunPowderNG,items,Item,EnChanged,Gun Powder,,,,
+gunPowderNGDesc,items,Item,EnChanged,Gun powder made from coal and nitrate can be used to make your own ammo and explosives.,,,,
 
-casingNormal,items,Ammo,EnChanged,Regular Bullet Casing,,,,
-casingNormalDesc,items,Ammo,EnChanged,Bullet casings that can be used to make most regular and smaller sized bullets. They can be crafted using the forge.,,,,
-casingLarge,items,Ammo,EnChanged,Large Bullet Casing,,,,
-casingLargeDesc,items,Ammo,EnChanged,Large bullet casings can be used to make the bigger kinds of bullets. They can be crafted using the forge.,,,,
+bulletCasingLG,items,Ammo,EnChanged,Low Quality Regular Bullet Casing,,,,
+bulletCasingLGDesc,items,Ammo,EnChanged,Bullet casings that can be used to make most regular and smaller sized bullets. They can be crafted using the forge. Low quality casings can only be used to make low grade ammunitions.,,,,
+bulletTipLG,items,Ammo,EnChanged,Low Quality Regular Bullet Tip,,,,
+bulletTipLGDesc,items,Ammo,EnChanged,Bullet tips that can be used to make most regular and smaller sized bullets or slugs. They can be crafted using the forge. Low quality tips can only be used to make low grade ammunitions.,,,,
 
-casingNormalUsed,items,Ammo,EnChanged,Low Quality Regular Bullet Casing,,,,
-casingNormalUsedDesc,items,Ammo,EnChanged,Bullet casings that can be used to make most regular and smaller sized bullets. They can be crafted using the forge. Low quality casings can only be used to make low grade ammunitions.,,,,
-casingLargeUsed,items,Ammo,EnChanged,Low Quality Large Bullet Casing,,,,
-casingLargeUsedDesc,items,Ammo,EnChanged,Large bullet casings can be used to make the bigger kinds of bullets. They can be crafted using the forge. Low quality casings can only be used to make low grade ammunitions.,,,,
+bulletCasingNG,items,Ammo,EnChanged,Regular Bullet Casing,,,,
+bulletCasingNGDesc,items,Ammo,EnChanged,Bullet casings that can be used to make most regular and smaller sized bullets. They can be crafted using the forge.,,,,
+bulletTipNG,items,Ammo,EnChanged,Regular Bullet Tip,,,,
+bulletTipNGDesc,items,Ammo,EnChanged,Bullet tips that can be used to make most regular and smaller sized bullets or slugs. They can be crafted using the forge.,,,,
+
+largeBulletCasingLG,items,Ammo,EnChanged,Low Quality Large Bullet Casing,,,,
+largeBulletCasingLGDesc,items,Ammo,EnChanged,Large bullet casings can be used to make the bigger kinds of bullets. They can be crafted using the forge. Low quality casings can only be used to make low grade ammunitions.,,,,
+largeBulletTipLG,items,Ammo,EnChanged,Low Quality Large Bullet Tip,,,,
+largeBulletTipLGDesc,items,Ammo,EnChanged,Large bullet tips can be used to make the bigger kinds of bullets or slugs. They can be crafted using the forge. Low quality tips can only be used to make low grade ammunitions.,,,,
+
+largeBulletCasingNG,items,Ammo,EnChanged,Large Bullet Casing,,,,
+largeBulletCasingNGDesc,items,Ammo,EnChanged,Large bullet casings can be used to make the bigger kinds of bullets. They can be crafted using the forge.,,,,
+largeBulletTipNG,items,Ammo,EnChanged,Large Bullet Tip,,,,
+largeBulletTipNGDesc,items,Ammo,EnChanged,Large bullet tips can be used to make the bigger kinds of bullets or slugs. They can be crafted using the forge.,,,,
 
 casingShotgunPaper,items,Ammo,EnChanged,Paper Shotgun Cartridges,,,,
 casingShotgunPaperDesc,items,Ammo,EnChanged,Shotgun Cartridges made out of paper can be used to make low grade shells and slugs. They can be crafted by hand if you know the recipe.,,,,
 casingShotgunPlastic,items,Ammo,EnChanged,Plastic Shotgun Cartridges,,,,
 casingShotgunPlasticDesc,items,Ammo,EnChanged,Shotgun Cartridges made out of plastic can be used to make regular grade shells and slugs. They can be crafted at a workbench if you know the recipe.,,,,
-
-bulletTipNormal,items,Ammo,EnChanged,Regular Bullet Tip,,,,
-bulletTipNormalDesc,items,Ammo,EnChanged,Bullet tips that can be used to make most regular and smaller sized bullets or slugs. They can be crafted using the forge.,,,,
-bulletTipLarge,items,Ammo,EnChanged,Large Bullet Tip,,,,
-bulletTipLargeDesc,items,Ammo,EnChanged,Large bullet tips can be used to make the bigger kinds of bullets or slugs. They can be crafted using the forge.,,,,
-
-bulletTipNormalUsed,items,Ammo,EnChanged,Low Quality Regular Bullet Tip,,,,
-bulletTipNormalUsedDesc,items,Ammo,EnChanged,Bullet tips that can be used to make most regular and smaller sized bullets or slugs. They can be crafted using the forge. Low quality tips can only be used to make low grade ammunitions.,,,,
-bulletTipLargeUsed,items,Ammo,EnChanged,Low Quality Large Bullet Tip,,,,
-bulletTipLargeUsedDesc,items,Ammo,EnChanged,Large bullet tips can be used to make the bigger kinds of bullets or slugs. They can be crafted using the forge. Low quality tips can only be used to make low grade ammunitions.,,,,
 
 buckshot20GA,items,Ammo,EnChanged,Buckshot 20 Gauge,,,,
 buckshot20GADesc,items,Ammo,EnChanged,Buckshot can be used to craft shotgun shells of the same gauge. They can be crafted using the forge.,,,,

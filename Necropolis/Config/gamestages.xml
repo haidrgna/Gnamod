@@ -12,9 +12,9 @@ daysAliveDifficultyBonus="0.1"
 daysAliveChangeWhenKilled ="2"
 diminishingReturns ="0.2"/>
 
-<difficultyModifier name="easy" amount="250"/>
-<difficultyModifier name="medium" amount="350"/>
-<difficultyModifier name="hard" amount="450"/>
+<difficultyModifier name="easy" amount="150"/>
+<difficultyModifier name="medium" amount="250"/>
+<difficultyModifier name="hard" amount="350"/>
 
 <!-- LOOTROOM SLEEPER GROUPS -->
 <group name="S_LootRoom_XS"           emptyChance="0">  <spawner name="SleeperGSList" count="1,3"/>   </group>
@@ -84,11 +84,11 @@ diminishingReturns ="0.2"/>
 <spawner name="WanderingHorde">
 <gamestage stage="01"><spawn group="ZombiesGreenBiomes"	    num="15" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="02"><spawn group="AnimalsBoarpack"	      num="15" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="03"><spawn group="ZombiesGnahordeStage2"	num="16" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="04"><spawn group="ZombiesGnahordeStage2"	num="05" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="05"><spawn group="ZombiesGnahordeStage2"	num="16" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="06"><spawn group="ZombiesGnahordeStage2"	num="15" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="07"><spawn group="ZombiesGnahordeStage2"	num="16" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="03"><spawn group="ZombiesGnahordeStage1"	num="16" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="04"><spawn group="ZombiesGnahordeStage1"	num="05" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="05"><spawn group="ZombiesGnahordeStage1"	num="16" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="06"><spawn group="ZombiesGnahordeStage1"	num="15" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="07"><spawn group="ZombiesGnahordeStage1"	num="16" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="08"><spawn group="AnimalsWolfpack"	      num="05" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="09"><spawn group="ZombiesGnahordeStage2"	num="15" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="10"><spawn group="ZombiesGnahordeStage2"	num="17" maxAlive="30" duration="06"/></gamestage>
@@ -136,8 +136,8 @@ diminishingReturns ="0.2"/>
 
 <!-- Sleeper Spawn List -->
 <spawner name="SleeperGSList">
-<gamestage stage="1">             <spawn group="ZombiesGnasleepersStage2" num="1" maxAlive="1" duration="1"/>    </gamestage>
-<gamestage stage="10">            <spawn group="ZombiesGnasleepersStage2" num="5" maxAlive="2" duration="1"/>    </gamestage>
+<gamestage stage="1">             <spawn group="ZombiesGnasleepersStage1" num="1" maxAlive="1" duration="1"/>    </gamestage>
+<gamestage stage="10">            <spawn group="ZombiesGnasleepersStage1" num="5" maxAlive="2" duration="1"/>    </gamestage>
 <gamestage stage="25">            <spawn group="ZombiesGnasleepersStage2" num="10" maxAlive="3" duration="1"/>   </gamestage>
 <gamestage stage="50">            <spawn group="ZombiesGnasleepersStage2" num="15" maxAlive="4" duration="1"/>   </gamestage>
 <gamestage stage="75">            <spawn group="ZombiesGnasleepersStage2" num="20" maxAlive="5" duration="1"/>   </gamestage>
@@ -158,8 +158,8 @@ diminishingReturns ="0.2"/>
 
 <!-- Scout Summoning List -->
 <spawner name="ScoutGSList">
-<gamestage stage="1">             <spawn group="ZombiesGnahordeStage2" num="1" maxAlive="1" duration="1"/>    </gamestage>
-<gamestage stage="10">            <spawn group="ZombiesGnahordeStage2" num="5" maxAlive="2" duration="1"/>    </gamestage>
+<gamestage stage="1">             <spawn group="ZombiesGnahordeStage1" num="1" maxAlive="1" duration="1"/>    </gamestage>
+<gamestage stage="10">            <spawn group="ZombiesGnahordeStage1" num="5" maxAlive="2" duration="1"/>    </gamestage>
 <gamestage stage="25">            <spawn group="ZombiesGnahordeStage2" num="10" maxAlive="3" duration="1"/>   </gamestage>
 <gamestage stage="50">            <spawn group="ZombiesGnahordeStage2" num="15" maxAlive="4" duration="1"/>   </gamestage>
 <gamestage stage="75">            <spawn group="ZombiesGnahordeStage2" num="20" maxAlive="5" duration="1"/>   </gamestage>
@@ -181,20 +181,20 @@ diminishingReturns ="0.2"/>
 <!-- Blood Moon Horde -->
 <spawner name="BloodMoonHorde">
 <gamestage stage="1">
-<spawn group="ZombiesGnahordeStage3"  num="30" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="50" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="70" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="70" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="50" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="30" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="30" maxAlive="32" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="50" maxAlive="32" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="70" maxAlive="32" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="70" maxAlive="32" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="50" maxAlive="32" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage1"  num="30" maxAlive="32" duration="2" interval="12"/>
 </gamestage>
 <gamestage stage="100">
-<spawn group="ZombiesGnahordeStage3"  num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="60" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="80" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="80" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="60" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage3"  num="40" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="40" maxAlive="64" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="60" maxAlive="64" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="80" maxAlive="64" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="80" maxAlive="64" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="60" maxAlive="64" duration="2" interval="12"/>
+<spawn group="ZombiesGnahordeStage2"  num="40" maxAlive="64" duration="2" interval="12"/>
 </gamestage>
 <gamestage stage="200">
 <spawn group="ZombiesGnahordeStage3"  num="50" maxAlive="256" duration="2" interval="12"/>

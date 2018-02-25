@@ -251,17 +251,18 @@ Mesh files no longer used:
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2.0"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="DamageEntity" value="6"/>
-		<property name="DamageBlock" value="0.7"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="7"/>
-		<property name="DamageBonus.head" value="2"/>
+		<property name="Stamina_usage" value="6"/>
+		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons,Science"/>
 	<property class="Attributes">
 		<property name="DegradationMax" value="300,6000"/>
+    <property name="EntityDamage" value="7,9"/>
+		<property name="BlockDamage" value="1,2"/>
+    <property name="DegradationRate" value="3,1"/>
 	</property>
 	<property name="PickupJournalEntry" value="augmentGunsTip"/>
   <property name="EconomicValue" value="800"/>
@@ -308,7 +309,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="8"/>
-		<property name="ToolCategory.Butcher" value="0.50" param1="10"/>
+		<property name="ToolCategory.Butcher" value="0.51" param1="10"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" /> <!-- Special harvest sound only plays if the target has ANY matching ToolCategory harvest.
 		Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface_category ) -->
 	</property>
@@ -1476,7 +1477,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="15"/> <!-- 15 -->
 		<property name="Crosshair_max_distance" value="18"/> <!-- 18 -->
 		<property name="Magazine_size" value="50"/>
-		<property name="Magazine_items" value="nail,No Ammo,steelDart,No Ammo, "/>
+		<property name="Magazine_items" value="nail,No Ammo,steelDart,No Ammo"/>
 		<property name="Rays_spread" value="0.043"/>
 		<property name="Instantiate_on_load" value="false"/>
 		<property name="Reload_time" value="2"/>
@@ -2853,24 +2854,24 @@ Mesh files no longer used:
 </item>
 
 <item id="397" name="hazmatBoots"> <!-- armorMasterHazMatArmor -->
-	<property name="Insulation" value="6"/>
+	<property name="Insulation" value="3"/>
 	<property name="Encumbrance" value="0.03"/>
 	<property name="Material" value="MmilitaryFiber"/>
 	<property name="RepairTools" value="militaryFiber"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Weight" value="5"/>
-	<property name="EconomicValue" value="1600"/>
+	<property name="EconomicValue" value="1250"/>
 	<property name="EquipSlot" value="Feet"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.08,0.2"/>
-		<property name="PunctureProtection" value="0.1,0.25"/>
+		<property name="ConcussiveProtection" value="0.1,0.4"/>
+		<property name="PunctureProtection" value="0.05,0.2"/>
 		<property name="FireProtection" value="0.04,0.1"/>
-		<property name="RadiationProtection" value="0.32,0.8"/>
-		<property name="ElectricalProtection" value="0.06,0.1"/>
-		<property name="DegradationMax" value="160,400"/>
+		<property name="RadiationProtection" value="0.5,1.2"/>
+		<property name="ElectricalProtection" value="0.15,0.25"/>
+		<property name="DegradationMax" value="80,400"/>
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="armor_hazmat_feet"/>
@@ -2888,7 +2889,7 @@ Mesh files no longer used:
 <item id="398" name="hazmatPants"> <!-- hazMatArmor -->
 	<property name="Extends" value="hazmatBoots"/>
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="3200"/>
+	<property name="EconomicValue" value="2500"/>
 	<property name="EquipSlot" value="Legs"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_hazmat_legs"/>
@@ -2904,7 +2905,7 @@ Mesh files no longer used:
 	<property name="Insulation" value="10"/>
 	<property name="Waterproof" value="0.45"/>
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="3200"/>
+	<property name="EconomicValue" value="2500"/>
 	<property name="EquipSlot" value="Chest"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_hazmat_chest"/>
@@ -2956,7 +2957,7 @@ Mesh files no longer used:
 	<property name="EquipSlot" value="Hands"/>
 	<property name="Weight" value="100"/>
 	<property name="FuelValue" value="12"/>
-	<property name="EconomicValue" value="506"/>
+	<property name="EconomicValue" value="1200"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -3010,7 +3011,7 @@ Mesh files no longer used:
 <item id="405" name="heavyBanditLegArmor"> <!-- banditArmor -->
 	<property name="Extends" value="heavyBanditGloves"/>
 	<property name="Weight" value="150"/>
-	<property name="EconomicValue" value="770"/>
+	<property name="EconomicValue" value="2400"/>
 	<property name="EquipSlot" value="Legs"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_heavy_bandit_legarmor"/>
@@ -3023,7 +3024,7 @@ Mesh files no longer used:
 <item id="406" name="heavyBanditChestArmor"> <!-- banditArmor -->
 	<property name="Extends" value="heavyBanditGloves"/>
 	<property name="Weight" value="150"/>
-	<property name="EconomicValue" value="770"/>
+	<property name="EconomicValue" value="2400"/>
 	<property name="EquipSlot" value="Chest"/>
 	<property class="UMA">
 		<property name="Mesh" value="male_armor_heavy_bandit_chest"/>
@@ -6057,7 +6058,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="-0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="dysentery,extinguishFireBuff"/>
-		<property name="Buff_chance" value="1,1"/>
+		<property name="Buff_chance" value="0.75,1"/>
 		<property name="Create_item" value="canEmpty"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -6127,7 +6128,7 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="-0.2"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="dysentery,extinguishFireBuff"/>
-		<property name="Buff_chance" value="0.7,1"/>
+		<property name="Buff_chance" value="0.5,1"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7413,7 +7414,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="40"/>
 	<property name="Material" value="snow"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 
 	<property name="SellableToTrader" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
@@ -7424,6 +7425,18 @@ Mesh files no longer used:
 		<property name="Max_strain_time" value="1"/>
 		<property name="Sound_start" value="swoosh"/>
 	</property>
+  <property class="Action1">
+    <property name="Class" value="Eat"/>
+    <property name="Delay" value="1.0"/>
+    <property name="Use_time" value="..."/>
+    <property name="Gain_health" value="0"/>
+    <property name="Gain_food" value="0"/>
+    <property name="Buff" value="dysentery"/>
+    <property name="Buff_chance" value="0.01"/>
+    <property name="Gain_water" value="1"/>
+    <property name="Gain_wellness" value="0"/>
+    <property name="Sound_start" value="player_eating"/>
+  </property>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="DropScale" value="3"/>
 	<property name="Group" value="Resources,Basics"/>
@@ -7970,7 +7983,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="1"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
 
@@ -9155,7 +9168,7 @@ Mesh files no longer used:
 </property>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"         value="true"/>
-<property name="EntityDamage"                 value="5,30"/>
+<property name="EntityDamage"                 value="18,22"/>
 <property name="BlockDamage"                  value="1,2"/>
 <property name="ApplyBuff"                    value="0.15,0.50" param1="arrowCriticalBleedout"/>
 </property>
@@ -9331,7 +9344,7 @@ Mesh files no longer used:
 </property>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"         value="true"/>
-<property name="EntityDamage"                 value="5,30"/>
+<property name="EntityDamage"                 value="18,22"/>
 <property name="BlockDamage"                  value="1,2"/>
 <property name="ApplyBuff"                    value="0.15,0.50" param1="arrowCriticalBleedout"/>
 </property>

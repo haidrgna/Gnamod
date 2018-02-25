@@ -425,6 +425,35 @@
 <entity name="animalSnakeRad"               prob="0.00"/>
 <entity name="animalZombieVultureRad"       prob="0.00"/>
 </entitygroup>
+<!-- +-+-+-+-+- Wetlands +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+<entitygroup name="WildlifeNecropolis">
+<entity name="animalDummy"                  prob="39.50"/>
+<entity name="animalDead"                   prob="0.50"/>
+<!-- Friendly -->
+<entity name="animalRabbit"                 prob="12.50"/>
+<entity name="animalChicken"                prob="12.50"/>
+<entity name="animalStag"                   prob="5.00"/>
+<entity name="animalPig"                    prob="5.00"/>
+<entity name="animalBoar"                   prob="4.00"/>
+<!-- Hostile -->
+<entity name="animalRabbidBoar"             prob="1.00"/>
+<entity name="animalSnake"                  prob="0.00"/>
+<entity name="animalBear"                   prob="2.50"/>
+<entity name="animalWolf"                   prob="4.50"/>
+<entity name="animalDireWolf"               prob="0.50"/>
+<!-- Zombiefied -->
+<entity name="animalZombieDog"              prob="4.50"/>
+<entity name="animalZombieBear"             prob="1.50"/>
+<entity name="animalZombieVulture" 	        prob="6.00"/>
+<entity name="animalZombieVultureFlaming"   prob="0.10"/>
+<!-- Radiated -->
+<entity name="animalZombieDogRad"           prob="0.10"/>
+<entity name="animalZombieBearRad"          prob="0.05"/>
+<entity name="animalWolfRad"                prob="0.05"/>
+<entity name="animalDireWolfRad"            prob="0.05"/>
+<entity name="animalSnakeRad"               prob="0.05"/>
+<entity name="animalZombieVultureRad"       prob="0.05"/>
+</entitygroup>
 <!-- ========== ENEMY BASIC LIST ===================== -->
 <entitygroup name="EnemiesAll"> <!-- 0.175 = 98% on 560 zeds. 2% for animals -->
 <!-- ============== Normal =========================== -->
@@ -11167,38 +11196,38 @@
 <entity name="zombieGhoulRadFeral"          prob="1.000"/>
 </entitygroup>
 <entitygroup name="ZombiesScoutsStage1">
-<entity name="zombieAnnaSwagger"            prob="10.00"/>
-<entity name="zombieAnnaIntimidator"        prob="10.00"/>
-<entity name="zombieAnnaMoaner"             prob="10.00"/>
-<entity name="zombieAnnaLimper"             prob="10.00"/>
-<entity name="zombieAnnaFlailer"            prob="10.00"/>
-<entity name="zombieAnnaWalker"             prob="10.00"/>
-<entity name="zombieAnnaClimber"            prob="10.00"/>
-<entity name="zombieAnnaHater"              prob="10.00"/>
-<entity name="zombieAnnaFeral"              prob="10.00"/>
-<entity name="zombieAnnaPuke"               prob="10.00"/>
+<entity name="zombieAnnaSwagger"            prob="11.00"/>
+<entity name="zombieAnnaIntimidator"        prob="11.00"/>
+<entity name="zombieAnnaMoaner"             prob="11.00"/>
+<entity name="zombieAnnaLimper"             prob="11.00"/>
+<entity name="zombieAnnaFlailer"            prob="11.00"/>
+<entity name="zombieAnnaWalker"             prob="11.00"/>
+<entity name="zombieAnnaClimber"            prob="11.00"/>
+<entity name="zombieAnnaHater"              prob="11.00"/>
+<entity name="zombieAnnaFeral"              prob="1.000"/>
+<entity name="zombieAnnaPuke"               prob="11.00"/>
 </entitygroup>
 <entitygroup name="ZombiesScoutsStage2">
-<entity name="zombieAnnaSwagger"            prob="7.500"/>
-<entity name="zombieAnnaIntimidator"        prob="7.500"/>
-<entity name="zombieAnnaMoaner"             prob="7.500"/>
-<entity name="zombieAnnaLimper"             prob="7.500"/>
-<entity name="zombieAnnaFlailer"            prob="7.500"/>
-<entity name="zombieAnnaWalker"             prob="7.500"/>
-<entity name="zombieAnnaClimber"            prob="7.500"/>
-<entity name="zombieAnnaHater"              prob="7.500"/>
-<entity name="zombieAnnaFeral"              prob="7.500"/>
-<entity name="zombieAnnaPuke"               prob="7.500"/>
-<entity name="zombieAnnaRadSwagger"         prob="2.500"/>
-<entity name="zombieAnnaRadIntimidator"     prob="2.500"/>
-<entity name="zombieAnnaRadMoaner"          prob="2.500"/>
-<entity name="zombieAnnaRadLimper"          prob="2.500"/>
-<entity name="zombieAnnaRadFlailer"         prob="2.500"/>
-<entity name="zombieAnnaRadWalker"          prob="2.500"/>
-<entity name="zombieAnnaRadClimber"         prob="2.500"/>
-<entity name="zombieAnnaRadHater"           prob="2.500"/>
-<entity name="zombieAnnaRadFeral"           prob="2.500"/>
-<entity name="zombieAnnaRadPuke"            prob="2.500"/>
+<entity name="zombieAnnaSwagger"            prob="8.250"/>
+<entity name="zombieAnnaIntimidator"        prob="8.250"/>
+<entity name="zombieAnnaMoaner"             prob="8.250"/>
+<entity name="zombieAnnaLimper"             prob="8.250"/>
+<entity name="zombieAnnaFlailer"            prob="8.250"/>
+<entity name="zombieAnnaWalker"             prob="8.250"/>
+<entity name="zombieAnnaClimber"            prob="8.250"/>
+<entity name="zombieAnnaHater"              prob="8.250"/>
+<entity name="zombieAnnaFeral"              prob="0.750"/>
+<entity name="zombieAnnaPuke"               prob="8.250"/>
+<entity name="zombieAnnaRadSwagger"         prob="2.750"/>
+<entity name="zombieAnnaRadIntimidator"     prob="2.750"/>
+<entity name="zombieAnnaRadMoaner"          prob="2.750"/>
+<entity name="zombieAnnaRadLimper"          prob="2.750"/>
+<entity name="zombieAnnaRadFlailer"         prob="2.750"/>
+<entity name="zombieAnnaRadWalker"          prob="2.750"/>
+<entity name="zombieAnnaRadClimber"         prob="2.750"/>
+<entity name="zombieAnnaRadHater"           prob="2.750"/>
+<entity name="zombieAnnaRadFeral"           prob="0.250"/>
+<entity name="zombieAnnaRadPuke"            prob="2.750"/>
 </entitygroup>  
 <entitygroup name="ZombiesScoutsStage3">
 <entity name="zombieAnnaSwagger"            prob="5.000"/>
