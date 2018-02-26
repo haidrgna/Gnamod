@@ -525,7 +525,7 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 
 <!-- Snowberries double your natural water consumption. If you eat too much they are poisonous. Fun stuff. -->
 <buff id="eatSnowberryTrigger" duration="1" actions="increment(CTRsnowberry, 144, 0, 0, 1)"/>
-<buff id="eatsnowberryJuiceTrigger" duration="1" actions="increment(CTRsnowberry, 720, 0, 0, 1);buff(snowberryWarmingBuff)"/>
+<buff id="eatsnowberryJuiceTrigger" duration="1" actions="increment(CTRsnowberry, 144, 0, 0, 1);buff(snowberryWarmingBuff)"/>
 <buff id="eatSnowberryExtractTrigger" duration="1" actions="increment(CTRsnowberry, 1640, 0, 0, 1)"/>
 <!-- Unskilled food/water consumption: 80% per RT hour, 1% in 45 sec.
 snowberryJuice hydrates you for 450 sec.
@@ -541,7 +541,7 @@ snowberryPlant feeds you for 90 sec. -->
 	<modify id="1" stat="wellness" amount="-.1" rate="20" />
 </buff>
 
-<buff id="snowberryWarmingBuff" duration="420" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
+<buff id="snowberryWarmingBuff" duration="210" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
 	name_key="snowberryWarmingName" description_key="snowberryWarmingDesc" tooltip_key="snowberryWarmingTooltip" causes="snowberryJuice">
 	<modify id="1" stat="coretemp" modifyValue="15"/>
 </buff>

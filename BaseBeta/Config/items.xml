@@ -3357,13 +3357,13 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="EquipSlot" value="Head"/>
 	<property name="FuelValue" value="16"/>
-	<property name="EconomicValue" value="1600"/>
-	<property name="Degradation" value="250" param1="true"/>
+	<property name="EconomicValue" value="1250"/>
+  <property name="RepairTools" value="militaryFiber"/>
 	<property class="Attributes">
     <property name="ConcussiveProtection" value="0.08,0.15"/>
     <property name="PunctureProtection" value="0.08,0.15"/>
     <property name="FireProtection" value="0.14,0.25"/>
-    <property name="RadiationProtection" value="0.12,0.25"/>
+    <property name="RadiationProtection" value="0.12,0.40"/>
     <property name="ElectricalProtection" value="0.07,0.12"/>
 		<property name="DegradationMax" value="120,300"/> <!-- altered -->
 	</property>
@@ -4030,8 +4030,6 @@ Mesh files no longer used:
 
 <item id="520" name="patchworkPufferCoat">
   <property name="Extends" value="pufferCoat"/>
-  <property name="CustomIcon" value="pufferCoat"/>
-  <property name="CustomIconTint" value="120,120,120"/>
 	<property name="Insulation" value="30"/>
 	<property name="Waterproof" value="0.35"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -6171,8 +6169,10 @@ Mesh files no longer used:
 
 <item id="781" name="snowberryJuice">
 	<property name="Extends" value="bottledWater"/>
-	<property name="CustomIcon" value="grainAlcohol"/>
-	<property name="CustomIconTint" value="9f9fff"/>
+<!--
+<property name="CustomIcon" value="grainAlcohol"/>
+	<property name="CustomIconTint" value="9f9fff"/> 
+-->
 	<property name="CraftingIngredientTime" value="5"/>
 <!--
   <property class="Action0">
@@ -6184,13 +6184,13 @@ Mesh files no longer used:
 -->
 	<property class="Action1">
 		<property name="Delay" value="1.5"/>
-		<property name="Gain_stamina" value="10"/>
+		<property name="Gain_stamina" value="30"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="10"/>
+		<property name="Gain_water" value="15"/>
 		<property name="Buff" value="eatsnowberryJuiceTrigger,extinguishFireBuff"/>
 	</property>
 	<property name="Group" value="Food/Cooking,Science"/>
-    <property name="EconomicValue" value="60"/>
+    <property name="EconomicValue" value="15"/>
   <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -7409,7 +7409,6 @@ Mesh files no longer used:
 </item>
 
 <item id="1321" name="snowBall">
-	<property name="CustomIcon" value="snow"/>
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<property name="HoldType" value="40"/>
 	<property name="Material" value="snow"/>
@@ -8907,7 +8906,6 @@ Mesh files no longer used:
 
 <item id="1555"                               name="APRocket">
 <property name="Extends"                      value="rocket"/>
-<property name="CustomIcon"                   value="rocket"/>
 <property class="Action1">
 <property name="Velocity"                     value="50"/>
 <property name="FlyTime"                      value="1.2"/>
@@ -8923,7 +8921,6 @@ Mesh files no longer used:
 
 <item id="1556"                               name="INRocket">
 <property name="Extends"                      value="rocket"/>
-<property name="CustomIcon"                   value="rocket"/>
 <property class="Action1">
 <property name="Velocity"                     value="50"/>
 <property name="FlyTime"                      value="1.2"/>
@@ -8948,7 +8945,6 @@ Mesh files no longer used:
 
 <item id="1557"                               name="heavyRocket">
 <property name="Extends"                      value="rocket"/>
-<property name="CustomIcon"                   value="rocket"/>
 <property class="Action1">
 <property name="Velocity"                     value="50"/>
 <property name="FlyTime"                      value="1.2"/>
@@ -8964,7 +8960,6 @@ Mesh files no longer used:
 
 <item id="1558"                               name="heavyAPRocket">
 <property name="Extends"                      value="rocket"/>
-<property name="CustomIcon"                   value="rocket"/>
 <property class="Action1">
 <property name="Velocity"                     value="50"/>
 <property name="FlyTime"                      value="1.2"/>
@@ -8980,7 +8975,6 @@ Mesh files no longer used:
 
 <item id="1559"                               name="heavyINRocket">
 <property name="Extends"                      value="rocket"/>
-<property name="CustomIcon"                   value="rocket"/>
 <property class="Action1">
 <property name="Velocity"                     value="50"/>
 <property name="FlyTime"                      value="1.2"/>
@@ -9039,7 +9033,6 @@ Mesh files no longer used:
 
 <item id="1561"                               name="dynamite">
 <property name="Extends"                      value="pipeBomb"/>
-<property name="CustomIcon"                   value="tnt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Dynamite/dynamitePrefab"/>
 <property name="Material"                     value="MDynamite"/>
 <!-- Explosion -->
@@ -9054,7 +9047,6 @@ Mesh files no longer used:
 
 <item id="1562"                               name="heavyPipeBomb">
 <property name="Extends"                      value="pipeBomb"/>
-<property name="CustomIcon"                   value="pipeBomb"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
 <!-- Explosion -->
 <property name="Explosion.EntityDamage"       value="250"/>
@@ -9068,7 +9060,6 @@ Mesh files no longer used:
 
 <item id="1563"                               name="heavyDynamite">
 <property name="Extends"                      value="pipeBomb"/>
-<property name="CustomIcon"                   value="tnt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Dynamite/dynamitePrefab"/>
 <property name="Material"                     value="MDynamite"/>
 <!-- Explosion -->
@@ -9122,7 +9113,6 @@ Mesh files no longer used:
 
 <item id="1565"                               name="heavyMolotovCocktail">
 <property name="Extends"                      value="molotovCocktail"/>
-<property name="CustomIcon"                   value="molotovCocktail"/>
 <property name="Class"                        value="ItemClassTimeBomb"/>
 <property name="Material"                     value="organic"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Molotov/molotovPrefab"/>
@@ -9170,7 +9160,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"         value="true"/>
 <property name="EntityDamage"                 value="18,22"/>
 <property name="BlockDamage"                  value="1,2"/>
-<property name="ApplyBuff"                    value="0.15,0.50" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.40,0.50" param1="arrowCriticalBleedout"/>
 </property>
 <property name="CraftingSkillGroup"           value="craftSkillWeapons"/>
 <property name="EconomicValue"                value="1"/>
@@ -9190,7 +9180,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"                 value="20,40"/>
 <property name="BlockDamage"                  value="2,4"/>
-<property name="ApplyBuff"                    value="0.25,0.75" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.50,0.75" param1="arrowCriticalBleedout"/>
 </property>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9207,7 +9197,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"                 value="30,50"/>
 <property name="BlockDamage"                  value="4,6"/>
-<property name="ApplyBuff"                    value="0.50,1.00" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.75,1.00" param1="arrowCriticalBleedout"/>
 </property>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9251,7 +9241,6 @@ Mesh files no longer used:
 
 <item id="1574"                               name="petrolArrow">
 <property name="Extends"                      value="flamingArrow"/>
-<property name="CustomIcon"                   value="flamingArrow"/>
 <property class="Action1">
 <property name="Velocity"                     value="55"/>
 <property name="Gravity"                      value="-6"/>
@@ -9278,7 +9267,6 @@ Mesh files no longer used:
 
 <item id="1575"                               name="firecrackerArrow">
 <property name="Extends"                      value="steelArrow"/>
-<property name="CustomIcon"                   value="steelArrow"/>
 <property name="DropMeshfile"                 value="Items/Misc/arrow_flaming_dropped"/>
 <property name="HandMeshfile"                 value="Items/Misc/arrow_flaming_hand"/>
 <property name="FuelValue"                    value="12"/>
@@ -9300,7 +9288,6 @@ Mesh files no longer used:
 
 <item id="1576"                               name="explodingArrow">
 <property name="Extends"                      value="firecrackerArrow"/>
-<property name="CustomIcon"                   value="steelArrow"/>
 <property name="DropMeshfile"                 value="Items/Misc/arrow_flaming_dropped"/>
 <property name="HandMeshfile"                 value="Items/Misc/arrow_flaming_hand"/>
 <property name="FuelValue"                    value="12"/>
@@ -9321,7 +9308,6 @@ Mesh files no longer used:
 </item>
 <!-- Crossbow Bolts -->
 <item id="1577"                               name="crossbowBolt">
-<property name="CustomIcon"                   value="ironCrossbowBolt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/crossbow_bolt_dropped_stonePrefab"/>
 <property name="HandMeshfile"                 value="Items/Misc/crossbow_bolt_hand_stonePrefab"/>
@@ -9346,7 +9332,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"         value="true"/>
 <property name="EntityDamage"                 value="18,22"/>
 <property name="BlockDamage"                  value="1,2"/>
-<property name="ApplyBuff"                    value="0.15,0.50" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.40,0.50" param1="arrowCriticalBleedout"/>
 </property>
 <property name="CraftingSkillGroup"           value="craftSkillWeapons"/>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
@@ -9378,7 +9364,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"         value="true"/>
 <property name="EntityDamage"                 value="20,40"/>
 <property name="BlockDamage"                  value="2,4"/>
-<property name="ApplyBuff"                    value="0.25,0.75" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.50,0.75" param1="arrowCriticalBleedout"/>
 </property>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"           value="craftSkillWeapons"/>
@@ -9400,7 +9386,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"                 value="30,50"/>
 <property name="BlockDamage"                  value="4,6"/>
-<property name="ApplyBuff"                    value="0.50,1.00" param1="arrowCriticalBleedout"/>
+<property name="ApplyBuff"                    value="0.75,1.00" param1="arrowCriticalBleedout"/>
 </property>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9409,7 +9395,6 @@ Mesh files no longer used:
 
 <item id="1580"                               name="flamingCrossbowBolt">
 <property name="Extends"                      value="ironCrossbowBolt"/>
-<property name="CustomIcon"                   value="flamingArrow"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/arrow_flaming_dropped"/>
 <property name="HandMeshfile"                 value="Items/Misc/arrow_flaming_hand"/>
@@ -9446,7 +9431,6 @@ Mesh files no longer used:
 
 <item id="1581"                               name="petrolCrossbowBolt">
 <property name="Extends"                      value="flamingCrossbowBolt"/>
-<property name="CustomIcon"                   value="flamingArrow"/>
 <property class="Action1">
 <property name="Velocity"                     value="55"/>
 <property name="Gravity"                      value="-6"/>
@@ -9473,7 +9457,6 @@ Mesh files no longer used:
 
 <item id="1582"                               name="firecrackerCrossbowBolt">
 <property name="Extends"                      value="steelCrossbowBolt"/>
-<property name="CustomIcon"                   value="explodingCrossbowBolt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltExplosivePrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/crossbow_bolt_dropped_explosivePrefab"/>
 <property name="HandMeshfile"                 value="Items/Misc/crossbow_bolt_hand_explosivePrefab"/>
@@ -9563,7 +9546,6 @@ Mesh files no longer used:
 <!-- Special Projectiles -->
 <item id="1590"                               name="Rail">
 <property name="CreativeMode"                 value="None"/>
-<property name="CustomIcon"                   value="nail"/>
 <property name="Meshfile"                     value="ParticleEffects/p_nozzleflash_ak"/>
 <property name="Material"                     value="metal"/>
 <property name="Stacknumber"                  value="1"/>
@@ -9654,7 +9636,7 @@ Mesh files no longer used:
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1602"                               name="bulletTipNormal">
+<item id="1602"                               name="bulletTipNG">
 <property name="Meshfile"                     value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material"                     value="lead"/>
@@ -9665,14 +9647,14 @@ Mesh files no longer used:
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"           value="craftSkillGuns"/>
 </item>
-  
-<item id="1603"                               name="bulletTipLarge">
-<property name="Extends"                      value="bulletTipNormal"/>
+
+<item id="1603"                               name="largeBulletTipNG">
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1604"                               name="bulletTipNormalUsed">
+<item id="1604"                               name="bulletTipLG">
 <property name="Meshfile"                     value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material"                     value="lead"/>
@@ -9684,32 +9666,32 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup"           value="craftSkillGuns"/>
 </item>
   
-<item id="1605"                               name="bulletTipLargeUsed">
-<property name="Extends"                      value="bulletTipNormal"/>
+<item id="1605"                               name="largeBulletTipLG">
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
 <item id="1606"                               name="buckshot20GA">
-<property name="Extends"                      value="bulletTipNormal"/>
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="2"/>
 </item>
 
 <item id="1607"                               name="buckshot12GA">
-<property name="Extends"                      value="bulletTipNormal"/>
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
 <item id="1608"                               name="buckshot10GA">
-<property name="Extends"                      value="bulletTipNormal"/>
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="EconomicValue"                value="2"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
-<item id="1609"                               name="casingNormal">
-<property name="Extends"                      value="bulletTipNormal"/>
+<item id="1609"                               name="bulletCasingNG">
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="brass"/>
 <property name="HoldType"                     value="21"/>
@@ -9717,26 +9699,26 @@ Mesh files no longer used:
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1610"                               name="casingLarge">
-<property name="Extends"                      value="casingNormal"/>
+<item id="1610"                               name="largeBulletCasingNG">
+<property name="Extends"                      value="bulletCasingNG"/>
 <property name="EconomicValue"                value="14"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1611"                               name="casingNormalUsed">
-<property name="Extends"                      value="casingNormal"/>
+<item id="1611"                               name="bulletCasingLG">
+<property name="Extends"                      value="bulletCasingNG"/>
 <property name="EconomicValue"                value="5"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
-<item id="1612"                               name="casingLargeUsed">
-<property name="Extends"                      value="casingNormal"/>
+<item id="1612"                               name="largeBulletCasingLG">
+<property name="Extends"                      value="bulletCasingNG"/>
 <property name="EconomicValue"                value="10"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
 <item id="1613"                               name="casingShotgunPaper">
-<property name="Extends"                      value="bulletTipNormal"/>
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="paper"/>
 <property name="HoldType"                     value="21"/>
@@ -9752,7 +9734,7 @@ Mesh files no longer used:
 </item>
 
 <item id="1615"                               name="musketball">
-<property name="Extends"                      value="bulletTipNormal"/>
+<property name="Extends"                      value="bulletTipNG"/>
 <property name="Material"                     value="metal"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="2"/>
@@ -11868,7 +11850,6 @@ Mesh files no longer used:
 <!-- ==================== Standard Railgun ==================== --> 
 <item id="1800"                               name="Railgun">
 <property name="CreativeMode"                 value="Player"/>
-<property name="CustomIcon"                   value="nailgun"/>
 <property name="Meshfile"                     value="Items/Tools/nailgunPrefab"/>
 <property name="Material"                     value="metal"/>
 <property name="RepairTools"                  value="repairKit"/>
@@ -11908,7 +11889,7 @@ Mesh files no longer used:
 <property name="DegradationMax"               value="50000,100000"/>
 <property name="DegradationRate"              value="15,15"/>
 <property name="DismembermentBaseChance"      value="0.025,0.1"/>
-<property name="EconomicValue"                value="50000"/>
+<property name="EconomicValue"                value="25000"/>
 </property>
 </item>
 

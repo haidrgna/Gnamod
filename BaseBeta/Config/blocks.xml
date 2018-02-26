@@ -2851,7 +2851,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FallDamage" value="false"/>
   <property name="Class" value="TorchHeatMap"/>
-  <property name="HeatMapStrength" value="10.0"/>
+  <property name="HeatMapStrength" value="5.0"/>
   <property name="HeatMapTime" value="2400"/>
   <property name="HeatMapFrequency" value="1"/>
 	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
@@ -4539,7 +4539,7 @@ group desc for stuff like metal siding
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
 	<property name="Explosion.RadiusBlocks" value="0"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.RadiusEntities" value="2"/>
 	<property name="Explosion.BlockDamage" value="0"/>
 	<property name="Explosion.EntityDamage" value="50"/>
 	<property name="DropScale" value="3"/>
@@ -4556,7 +4556,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Traps/trap_mine_hubcap" param1="main_mesh"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="5"/>
-	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
 	<property name="Explosion.EntityDamage" value="100"/>
   <property name="CanPickup" value="false"/>
   <property name="EconomicValue" value="75"/>
@@ -4570,7 +4570,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="MaxDamage" value="6"/>
-	<property name="Explosion.RadiusEntities" value="10"/>
+	<property name="Explosion.RadiusEntities" value="7"/>
 	<property name="Explosion.EntityDamage" value="200"/>
   <property name="CanPickup" value="false"/>
   <property name="EconomicValue" value="110"/>
@@ -4616,7 +4616,7 @@ group desc for stuff like metal siding
 <block id="437" name="PlaceBeacon">
 <property name="CreativeMode" value="Player"/>
 <property name="Material" value="MstainlessSteel"/>
-<property name="CustomIcon" value="flagPoleWhiteRiver"/>
+<!--<property name="CustomIcon" value="flagPoleWhiteRiver"/> -->
 <property name="Model" value="floor_trap_3x3"/>
 <property name="MultiBlockDim" value="3,25,3"/>
 <property name="Shape" value="New"/>
@@ -5404,8 +5404,8 @@ group desc for stuff like metal siding
   <property name="Explosion.BlockDamage"        value="5"/>
   <property name="Explosion.EntityDamage"       value="25"/>
   <property name="Explosion.ParticleIndex"      value="10"/>
-  <property name="Explosion.RadiusBlocks"       value="4"/>
-  <property name="Explosion.RadiusEntities"     value="4"/>
+  <property name="Explosion.RadiusBlocks"       value="3"/>
+  <property name="Explosion.RadiusEntities"     value="3"/>
   <property name="Explosion.BlastPower"         value="70"/>
   <property name="Explosion.DamageBonus.stone"  value="0"/>
   <property name="Explosion.DamageBonus.metal"  value="0"/>
@@ -6488,10 +6488,9 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/cooler" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="141"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property class="RepairItems"> <property name="scrapPlastics" value="8"/> </property>
-	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<property class="RepairItems"> <property name="scrapPlastics" value="4"/> </property>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="scrapPlastics" count="2,7" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapPlastics" count="1,4"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="EconomicValue" value="300"/> <!-- disassemble value -->
@@ -13031,7 +13030,7 @@ group desc for stuff like metal siding
 	<property name="MaxDamage" value="4"/>
 	<property name="Explosion.ParticleIndex" value="1"/>
 	<property name="Explosion.RadiusBlocks" value="0"/>
-	<property name="Explosion.RadiusEntities" value="7"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
 	<property name="Explosion.BlockDamage" value="0"/>
 	<property name="Explosion.EntityDamage" value="75"/>
 	<property name="CanPickup" value="false"/>
@@ -16499,14 +16498,13 @@ group desc for stuff like metal siding
   
 <block id="2042" name="StartingKit">
 <property name="Material" value="cloth" />
+<!--<property name="CustomIcon" value="cntBackpack01"/> -->
 <property name="StabilitySupport" value="false" />
 <property name="Shape" value="Ext3dModel" />
 <property name="Mesh" value="models" />
 <property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
 <property name="IsTerrainDecoration" value="true" />
 <property name="DowngradeBlock" value="StartingKitSelector" />
-<property name="CustomIcon" value="cntBackpack01" />
-<property name="DescriptionKey" value="StartingKit1Desc"/>
 <property name="Class" value="PlantGrowing"/>
 <property name="PlantGrowing.Next" value="StartingKitSelector"/>
 <property name="PlantGrowing.GrowthRate" value="0.005"/>
