@@ -145,6 +145,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{00F7
 		Base\Prefabs\gas_station3.xml = Base\Prefabs\gas_station3.xml
 		Base\Prefabs\gas_station4.xml = Base\Prefabs\gas_station4.xml
 		Base\Prefabs\gas_station5.xml = Base\Prefabs\gas_station5.xml
+		Base\Prefabs\gnamod_21x21_asphalt.tts = Base\Prefabs\gnamod_21x21_asphalt.tts
+		Base\Prefabs\gnamod_21x21_asphalt.xml = Base\Prefabs\gnamod_21x21_asphalt.xml
+		Base\Prefabs\gnamod_42x42_asphalt.tts = Base\Prefabs\gnamod_42x42_asphalt.tts
+		Base\Prefabs\gnamod_42x42_asphalt.xml = Base\Prefabs\gnamod_42x42_asphalt.xml
+		Base\Prefabs\gnamod_beacon_21_MP.tts = Base\Prefabs\gnamod_beacon_21_MP.tts
+		Base\Prefabs\gnamod_beacon_21_MP.xml = Base\Prefabs\gnamod_beacon_21_MP.xml
+		Base\Prefabs\gnamod_beacon_21_SP.tts = Base\Prefabs\gnamod_beacon_21_SP.tts
+		Base\Prefabs\gnamod_beacon_21_SP.xml = Base\Prefabs\gnamod_beacon_21_SP.xml
 		Base\Prefabs\hospital_01_rg.xml = Base\Prefabs\hospital_01_rg.xml
 		Base\Prefabs\hotel_new_01.xml = Base\Prefabs\hotel_new_01.xml
 		Base\Prefabs\hotel_ostrich.xml = Base\Prefabs\hotel_ostrich.xml
@@ -535,32 +543,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemIcons", "ItemIcons", "{
 		Base\Mods\ItemIconTest\ItemIcons\StartingKit.png = Base\Mods\ItemIconTest\ItemIcons\StartingKit.png
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Horde", "Horde", "{5F5EFDC1-AB6B-465C-BC7B-4389EF409357}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HordeSP", "HordeSP", "{5F5EFDC1-AB6B-465C-BC7B-4389EF409357}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{BF9F0C4B-BBA7-4A23-ADA5-EDFC2CC3BDBA}"
 	ProjectSection(SolutionItems) = preProject
-		Horde\Config\biomes.xml = Horde\Config\biomes.xml
-		Horde\Config\blocks.xml = Horde\Config\blocks.xml
-		Horde\Config\buffs.xml = Horde\Config\buffs.xml
-		Horde\Config\entityclasses.xml = Horde\Config\entityclasses.xml
-		Horde\Config\entitygroups.xml = Horde\Config\entitygroups.xml
-		Horde\Config\gamestages.xml = Horde\Config\gamestages.xml
-		Horde\Config\items.xml = Horde\Config\items.xml
-		Horde\Config\Localization - Quest.txt = Horde\Config\Localization - Quest.txt
-		Horde\Config\Localization.txt = Horde\Config\Localization.txt
-		Horde\Config\loot.xml = Horde\Config\loot.xml
-		Horde\Config\materials.xml = Horde\Config\materials.xml
-		Horde\Config\progression.xml = Horde\Config\progression.xml
-		Horde\Config\quests.xml = Horde\Config\quests.xml
-		Horde\Config\recipes.xml = Horde\Config\recipes.xml
-		Horde\Config\rwgmixer.xml = Horde\Config\rwgmixer.xml
-		Horde\Config\sounds.xml = Horde\Config\sounds.xml
-		Horde\Config\spawning.xml = Horde\Config\spawning.xml
-		Horde\Config\traders.xml = Horde\Config\traders.xml
-		Horde\Config\utilityai.xml = Horde\Config\utilityai.xml
+		HordeSP\Config\biomes.xml = HordeSP\Config\biomes.xml
+		HordeSP\Config\entityclasses.xml = HordeSP\Config\entityclasses.xml
+		HordeSP\Config\gamestages.xml = HordeSP\Config\gamestages.xml
+		HordeSP\Config\progression.xml = HordeSP\Config\progression.xml
+		HordeSP\Config\quests.xml = HordeSP\Config\quests.xml
+		HordeSP\Config\rwgmixer.xml = HordeSP\Config\rwgmixer.xml
+		HordeSP\Config\spawning.xml = HordeSP\Config\spawning.xml
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{1238621D-DEA3-4DA4-8A3B-6D4F123ECD10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Necropolis", "Necropolis", "{35D28F5F-2029-4843-8ACC-2BF1CC78ED01}"
 EndProject
@@ -572,19 +566,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{E36B4B
 		Necropolis\Config\quests.xml = Necropolis\Config\quests.xml
 		Necropolis\Config\rwgmixer.xml = Necropolis\Config\rwgmixer.xml
 		Necropolis\Config\spawning.xml = Necropolis\Config\spawning.xml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{80510D80-A78A-4F32-A0FF-4BB4445D306C}"
-	ProjectSection(SolutionItems) = preProject
-		Necropolis\Prefabs\waste_rubble_bldg_01.xml = Necropolis\Prefabs\waste_rubble_bldg_01.xml
-		Necropolis\Prefabs\waste_rubble_bldg_02.xml = Necropolis\Prefabs\waste_rubble_bldg_02.xml
-		Necropolis\Prefabs\waste_rubble_bldg_03.xml = Necropolis\Prefabs\waste_rubble_bldg_03.xml
-		Necropolis\Prefabs\waste_rubble_bldg_04.xml = Necropolis\Prefabs\waste_rubble_bldg_04.xml
-		Necropolis\Prefabs\waste_rubble_bldg_05.xml = Necropolis\Prefabs\waste_rubble_bldg_05.xml
-		Necropolis\Prefabs\waste_rubble_bldg_06.xml = Necropolis\Prefabs\waste_rubble_bldg_06.xml
-		Necropolis\Prefabs\waste_rubble_bldg_07.xml = Necropolis\Prefabs\waste_rubble_bldg_07.xml
-		Necropolis\Prefabs\waste_rubble_bldg_08.xml = Necropolis\Prefabs\waste_rubble_bldg_08.xml
-		Necropolis\Prefabs\waste_rubble_bldg_09.xml = Necropolis\Prefabs\waste_rubble_bldg_09.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nomad", "Nomad", "{161525C4-417F-4C3C-B0E3-202B6343FE26}"
@@ -599,8 +580,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{CD36D6
 		Nomad\Config\rwgmixer.xml = Nomad\Config\rwgmixer.xml
 		Nomad\Config\spawning.xml = Nomad\Config\spawning.xml
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{107867A1-2869-4062-BB6F-6CF0C75167DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alpha16.4", "Alpha16.4", "{7B1FEDC0-3C1E-4942-BD97-BA5CA087F70B}"
 EndProject
@@ -638,63 +617,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{923419
 		Alpha16.4\Config\xui.xml = Alpha16.4\Config\xui.xml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BaseBeta", "BaseBeta", "{4712A53F-68B4-43A1-98B0-1205E153F131}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{0E14D80E-6B6C-4221-A739-2071E2F7E4EE}"
-	ProjectSection(SolutionItems) = preProject
-		BaseBeta\Config\biomes.xml = BaseBeta\Config\biomes.xml
-		BaseBeta\Config\blocks.xml = BaseBeta\Config\blocks.xml
-		BaseBeta\Config\buffs.xml = BaseBeta\Config\buffs.xml
-		BaseBeta\Config\entityclasses.xml = BaseBeta\Config\entityclasses.xml
-		BaseBeta\Config\entitygroups.xml = BaseBeta\Config\entitygroups.xml
-		BaseBeta\Config\gamestages.xml = BaseBeta\Config\gamestages.xml
-		BaseBeta\Config\items.xml = BaseBeta\Config\items.xml
-		BaseBeta\Config\Localization - Quest.txt = BaseBeta\Config\Localization - Quest.txt
-		BaseBeta\Config\Localization.txt = BaseBeta\Config\Localization.txt
-		BaseBeta\Config\loot.xml = BaseBeta\Config\loot.xml
-		BaseBeta\Config\materials.xml = BaseBeta\Config\materials.xml
-		BaseBeta\Config\progression.xml = BaseBeta\Config\progression.xml
-		BaseBeta\Config\quests.xml = BaseBeta\Config\quests.xml
-		BaseBeta\Config\recipes.xml = BaseBeta\Config\recipes.xml
-		BaseBeta\Config\rwgmixer.xml = BaseBeta\Config\rwgmixer.xml
-		BaseBeta\Config\sounds.xml = BaseBeta\Config\sounds.xml
-		BaseBeta\Config\spawning.xml = BaseBeta\Config\spawning.xml
-		BaseBeta\Config\traders.xml = BaseBeta\Config\traders.xml
-		BaseBeta\Config\utilityai.xml = BaseBeta\Config\utilityai.xml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HordeBeta", "HordeBeta", "{6EB10018-C505-432B-95DD-7DB9F09AAB1F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HordeMP", "HordeMP", "{6EB10018-C505-432B-95DD-7DB9F09AAB1F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{ECD50E6E-8342-4C19-B695-4F5037BB7804}"
 	ProjectSection(SolutionItems) = preProject
-		HordeBeta\Config\biomes.xml = HordeBeta\Config\biomes.xml
-		HordeBeta\Config\entityclasses.xml = HordeBeta\Config\entityclasses.xml
-		HordeBeta\Config\gamestages.xml = HordeBeta\Config\gamestages.xml
-		HordeBeta\Config\progression.xml = HordeBeta\Config\progression.xml
-		HordeBeta\Config\quests.xml = HordeBeta\Config\quests.xml
-		HordeBeta\Config\rwgmixer.xml = HordeBeta\Config\rwgmixer.xml
-		HordeBeta\Config\spawning.xml = HordeBeta\Config\spawning.xml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prefabs", "Prefabs", "{79FEC4B3-81A1-4096-BD91-16E805DCD2AF}"
-	ProjectSection(SolutionItems) = preProject
-		HordeBeta\Prefabs\gnamod_42x42_asphalt.tts = HordeBeta\Prefabs\gnamod_42x42_asphalt.tts
-		HordeBeta\Prefabs\gnamod_42x42_asphalt.xml = HordeBeta\Prefabs\gnamod_42x42_asphalt.xml
-		HordeBeta\Prefabs\gnamod_beacon_20.tts = HordeBeta\Prefabs\gnamod_beacon_20.tts
-		HordeBeta\Prefabs\gnamod_beacon_20.xml = HordeBeta\Prefabs\gnamod_beacon_20.xml
+		HordeMP\Config\biomes.xml = HordeMP\Config\biomes.xml
+		HordeMP\Config\entityclasses.xml = HordeMP\Config\entityclasses.xml
+		HordeMP\Config\gamestages.xml = HordeMP\Config\gamestages.xml
+		HordeMP\Config\progression.xml = HordeMP\Config\progression.xml
+		HordeMP\Config\quests.xml = HordeMP\Config\quests.xml
+		HordeMP\Config\rwgmixer.xml = HordeMP\Config\rwgmixer.xml
+		HordeMP\Config\spawning.xml = HordeMP\Config\spawning.xml
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -705,15 +641,10 @@ Global
 		{120C6FA5-5127-44EC-9345-BA3467730782} = {FCEDA37B-1092-4355-AB74-CBFCFB5FD166}
 		{6436DE8F-DC61-429D-B15B-834E7CA4AEE1} = {120C6FA5-5127-44EC-9345-BA3467730782}
 		{BF9F0C4B-BBA7-4A23-ADA5-EDFC2CC3BDBA} = {5F5EFDC1-AB6B-465C-BC7B-4389EF409357}
-		{1238621D-DEA3-4DA4-8A3B-6D4F123ECD10} = {5F5EFDC1-AB6B-465C-BC7B-4389EF409357}
 		{E36B4BBD-998F-418C-B36C-E58F510EE373} = {35D28F5F-2029-4843-8ACC-2BF1CC78ED01}
-		{80510D80-A78A-4F32-A0FF-4BB4445D306C} = {35D28F5F-2029-4843-8ACC-2BF1CC78ED01}
 		{CD36D664-F427-4C5D-ADEE-51E921F852E0} = {161525C4-417F-4C3C-B0E3-202B6343FE26}
-		{107867A1-2869-4062-BB6F-6CF0C75167DD} = {161525C4-417F-4C3C-B0E3-202B6343FE26}
 		{92341991-822F-40AB-A8D8-5F6A3882FF3C} = {7B1FEDC0-3C1E-4942-BD97-BA5CA087F70B}
-		{0E14D80E-6B6C-4221-A739-2071E2F7E4EE} = {4712A53F-68B4-43A1-98B0-1205E153F131}
 		{ECD50E6E-8342-4C19-B695-4F5037BB7804} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
-		{79FEC4B3-81A1-4096-BD91-16E805DCD2AF} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}

@@ -72,10 +72,10 @@
 	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieArleneWalker,zombieArleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieDarleneWalker,zombieDarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieMarleneWalker,zombieMarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieLillyWalker,zombieLillyFeral" value="1" />
+		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -183,43 +183,43 @@
 	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+		<objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure"
 	repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
 
-		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+    <objective type="TreasureChest" id="treasureChest" value="300-1000" />
 	</quest>
 
 <!-- Gnamod Quests-->
@@ -260,7 +260,7 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 </quest>      
 
 <!-- Nomad Mode -->
-<quest id="quest_BasicSurvival1" group_name="Gnamod Nomad Mode" category_key="quest"
+<quest id="quest_BasicSurvival1d" group_name="Gnamod Nomad Mode" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the Nomad Mode start." 
 offer="Welcome to Gnamod!"
@@ -273,7 +273,7 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 </quest>      
 
 <!-- Horde Mode Singleplayer -->
-<quest id="quest_BasicSurvival1e" group_name="Gnamod Horde Mode - Singleplayer" category_key="quest"
+<quest id="quest_BasicSurvival1" group_name="Gnamod Horde Mode - Singleplayer" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna." 
 description="Welcome to Gnamod. This is the Horde Mode singleplayer start." 
 offer="Welcome to Gnamod!"
@@ -515,9 +515,9 @@ icon="ui_game_symbol_treasure" difficulty="veryeasy">
 <quest id="quest_GnamodHorde3" group_name="Horde Mode" category="quest"
 name="Some Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
 icon="ui_game_symbol_zombie" difficulty="hard">
-<objective type="ZombieKill"                                  value="20"/>
+<objective type="ZombieKill"                                  value="10"/>
 
-<reward type="Item"           id="casinoCoin"                 value="8000"/>
+<reward type="Item"           id="casinoCoin"                 value="5000"/>
 <reward type="Quest"          id="quest_GnamodHorde4"/>
 </quest>
 
@@ -728,7 +728,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <reward type="Item"           id="casinoCoin"                 value="10000"/>
 <reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
 </quest>
-  
+
 </quests>
 
 <!--

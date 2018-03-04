@@ -608,7 +608,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="woodGable" count="1" craft_area="workbench">                                                  <ingredient name="wood" count="10"/> <ingredient name="nail" count="1"/> </recipe>
  
 <!-- Defensive Blocks -->
-<recipe name="plainWoodWindowPlug" count="1">                                                               <ingredient name="wood" count="20"/> <ingredient name="nail" count="4"/> </recipe>
+<recipe name="plainWoodWindowPlug" count="1">                                                               <ingredient name="wood" count="5"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="100"/> <ingredient name="unit_clay" count="20"/> </recipe>
 <recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCentered"/> </recipe>
 <recipe name="ironBarsCentered" count="1">                                                                  <ingredient name="ironBars"/> </recipe>
@@ -634,10 +634,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="barbedWireSheet" count="1" craft_area="workbench">                                            <ingredient name="forgedIron" count="2"/> </recipe>
 <recipe name="woodLogSpike1" count="1" craft_area="workbench">                                              <ingredient name="wood" count="20"/> </recipe>
 <recipe name="scrapIronLogSpike4" count="1" craft_area="workbench">                                         <ingredient name="forgedIron" count="2"/> <ingredient name="wood" count="20"/> </recipe>
-<recipe name="trapSpikesNew" count="1">                                                                     <ingredient name="wood" count="20"/> </recipe>
-<recipe name="looseBoardsTrapBlock1x1" count="1" craft_area="workbench">                                    <ingredient name="wood" count="20"/> <ingredient name="nail" count="2"/> </recipe>
-<recipe name="looseBoardsTrapBlock3x3" count="1" craft_area="workbench">                                    <ingredient name="wood" count="180"/> <ingredient name="nail" count="18"/> </recipe>
-<recipe name="looseBoardsTrapPlate1x1" count="1" craft_area="workbench">                                    <ingredient name="wood" count="20"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="trapSpikesNew" count="1">                                                                     <ingredient name="wood" count="8"/> </recipe>
+<recipe name="looseBoardsTrapBlock1x1" count="1" craft_area="workbench">                                    <ingredient name="wood" count="10"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="looseBoardsTrapBlock3x3" count="1" craft_area="workbench">                                    <ingredient name="wood" count="90"/> <ingredient name="nail" count="9"/> </recipe>
+<recipe name="looseBoardsTrapPlate1x1" count="1" craft_area="workbench">                                    <ingredient name="wood" count="10"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="trapGlassBusinessSheet1x1" count="1" craft_area="forge" material_based="true">                <ingredient name="unit_glass" count="20"/> <ingredient name="unit_stone" count="5"/> <ingredient name="unit_lead" count="5"/> <ingredient name="unit_clay" count="3"/> </recipe>
 <recipe name="trapGlassBusinessCTRSheet1x1" count="1" craft_area="forge" material_based="true">             <ingredient name="unit_glass" count="20"/> <ingredient name="unit_stone" count="5"/> <ingredient name="unit_lead" count="5"/> <ingredient name="unit_clay" count="3"/> </recipe>
 
@@ -780,4 +780,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Quests -->
 <recipe name="q_GnamodExpert" > <!-- Quest Swapping -->                                                     <ingredient name="q_GnamodBasic"/> </recipe>
+<recipe name="q_GnamodNomadTrail" > <!-- Quest Swapping -->                                                 <ingredient name="paper" count="5"/> </recipe>
+
 </recipes>

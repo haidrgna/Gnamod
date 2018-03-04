@@ -882,17 +882,17 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_item_group>
 
 <trader_item_group name="Explosives">
-<item name="flamingCrossbowBolt"        count="50,75"       prob="0.050"/>
-<item name="petrolCrossbowBolt"         count="50,75"       prob="0.050"/>
-<item name="firecrackerCrossbowBolt"    count="25,50"       prob="0.025"/>
-<item name="explodingCrossbowBolt"      count="25,50"       prob="0.025"/>
-<item name="flamingArrow"               count="50,75"       prob="0.050"/>
-<item name="petrolArrow"                count="50,75"       prob="0.050"/>
-<item name="firecrackerArrow"           count="25,50"       prob="0.025"/>
-<item name="explodingArrow"             count="25,50"       prob="0.025"/>
-<item name="molotovCocktail"            count="10,25"       prob="0.100"/>
+<item name="flamingCrossbowBolt"        count="50,75"       prob="0.075"/>
+<item name="petrolCrossbowBolt"         count="50,75"       prob="0.025"/>
+<item name="firecrackerCrossbowBolt"    count="25,50"       prob="0.040"/>
+<item name="explodingCrossbowBolt"      count="25,50"       prob="0.010"/>
+<item name="flamingArrow"               count="50,75"       prob="0.075"/>
+<item name="petrolArrow"                count="50,75"       prob="0.025"/>
+<item name="firecrackerArrow"           count="25,50"       prob="0.040"/>
+<item name="explodingArrow"             count="25,50"       prob="0.010"/>
+<item name="molotovCocktail"            count="10,25"       prob="0.125"/>
+<item name="heavyMolotovCocktail"       count="10,25"       prob="0.025"/>
 <item name="pipeBomb"                   count="10,25"       prob="0.100"/>
-<item name="heavyMolotovCocktail"       count="10,25"       prob="0.050"/>
 <item name="heavyPipeBomb"              count="10,25"       prob="0.025"/>
 <item name="dynamite"                   count="10,25"       prob="0.100"/>
 <item name="heavyDynamite"              count="10,25"       prob="0.025"/>
@@ -924,12 +924,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="pickaxeSteel"               prob="0.020"/>
 <item name="clawHammer"                 prob="0.100"/>
 <item name="wrench"                     prob="0.100"/>
-<item name="nailgun"                    prob="0.050"/>
-<item name="chainsaw"                   prob="0.050"/>
-<item name="auger"                      prob="0.050"/>
+<item name="nailgun"                    prob="0.040"/>
+<item name="chainsaw"                   prob="0.040"/>
+<item name="auger"                      prob="0.040"/>
 <item name="cookingGrill"               prob="0.010"/>
 <item name="cookingPot"                 prob="0.010"/>
-<item name="beaker"                     prob="0.010"/>
+<item name="beaker"                     prob="0.040"/>
 <item name="anvil"                      prob="0.010"/>
 <item name="forgeCrucible"              prob="0.010"/>
 <item name="toolAndDieSet"              prob="0.010"/>
@@ -1022,47 +1022,49 @@ quality_mod: adjusts the price range of all items with a quality level.
     
 <trader_item_group name="MaterialsBasic">
 <item name="yuccaFibers"                count="100,1000"    prob="0.075"/>
-<item name="wood"                       count="500,5000"    prob="0.125"/>
-<item name="rockSmall"                  count="500,5000"    prob="0.125"/>
-<item name="clayLump"                   count="500,5000"    prob="0.100"/>
-<item name="crushedSand"                count="500,5000"    prob="0.100"/>
-<item name="ironFragment"               count="250,2500"    prob="0.075"/>
-<item name="oilShale"                   count="25,100"      prob="0.100"/>
-<item name="coal"                       count="50,500"      prob="0.100"/>
-<item name="potassiumNitratePowder"     count="50,500"      prob="0.100"/>
-<item name="scrapIron"                  count="250,2500"    prob="0.100"/>
-<item name="scrapBrass"                 count="25,250"      prob="0.100"/>
-<item name="scrapLead"                  count="25,250"      prob="0.100"/>
-<item name="animalFat"                  count="5,25"        prob="0.100"/>
-<item name="femur"                      count="5,25"        prob="0.100"/>
-<item name="leather"                    count="5,25"        prob="0.100"/>
-<item name="feather"                    count="50,250"      prob="0.100"/>
-<item name="cloth"                      count="50,250"      prob="0.100"/>
+<item name="wood"                       count="5000"        prob="0.175"/>
+<item name="rockSmall"                  count="5000"        prob="0.175"/>
+<item name="clayLump"                   count="5000"        prob="0.150"/>
+<item name="crushedSand"                count="5000"        prob="0.100"/>
+<item name="ironFragment"               count="1000,2000"   prob="0.125"/>
+<item name="oilShale"                   count="25,100"      prob="0.075"/>
+<item name="coal"                       count="50,500"      prob="0.075"/>
+<item name="potassiumNitratePowder"     count="50,500"      prob="0.075"/>
+<item name="scrapIron"                  count="2500"        prob="0.150"/>
+<item name="scrapBrass"                 count="25,250"      prob="0.075"/>
+<item name="scrapLead"                  count="25,250"      prob="0.075"/>
+<item name="animalFat"                  count="5,25"        prob="0.075"/>
+<item name="femur"                      count="5,25"        prob="0.075"/>
+<item name="leather"                    count="5,25"        prob="0.075"/>
+<item name="feather"                    count="50,250"      prob="0.075"/>
+<item name="cloth"                      count="50,250"      prob="0.075"/>
 </trader_item_group>
     
 <trader_item_group name="MaterialsCommon">
 <item name="cobblestones"               count="100,1000"    prob="0.100"/>
-<item name="cement"                     count="100,1000"    prob="0.050"/>
+<item name="cement"                     count="50,500"      prob="0.025"/>
 <item name="forgedIron"                 count="50,500"      prob="0.100"/>
 <item name="shortMetalPipe"             count="5,25"        prob="0.100"/>
 <item name="nail"                       count="10,100"      prob="0.100"/>
 <item name="glue"                       count="5,50"        prob="0.050"/>
-<item name="oil"                        count="5,25"        prob="0.050"/>
+<item name="oil"                        count="5,25"        prob="0.070"/>
 <item name="spring"                     count="5,25"        prob="0.050"/>
-<item name="scrapPlastics"              count="10,50"       prob="0.050"/>
+<item name="scrapPlastics"              count="10,50"       prob="0.070"/>
 <item name="mechanicalParts"            count="5,25"        prob="0.100"/>
 <item name="insulator"                  count="5,10"        prob="0.025"/>
-<item name="paint"                      count="10,100"      prob="0.025"/>
+<item name="paint"                      count="10,100"      prob="0.005"/>
 <item name="emptyJar"                   count="5,15"        prob="0.050"/>
-<item name="candyTin"                   count="5,15"        prob="0.050"/>
+<item name="candyTin"                   count="5,15"        prob="0.005"/>
+<item name="paper"                      count="10,50"       prob="0.050"/>
 </trader_item_group>
 
 <trader_item_group name="MaterialsRare">
-<item name="concreteMix"                count="100,1000"    prob="0.300"/>
+<item name="cement"                     count="100,1000"    prob="0.075"/>
+<item name="concreteMix"                count="100,1000"    prob="0.250"/>
 <item name="steelPolish"                count="50,500"      prob="0.150"/>
 <item name="forgedSteel"                count="50,500"      prob="0.250"/>
 <item name="ductTape"                   count="5,50"        prob="0.100"/>
-<item name="militaryFiber"              count="5,25"        prob="0.050"/>
+<item name="militaryFiber"              count="5,25"        prob="0.025"/>
 <item name="electricParts"              count="5,25"        prob="0.050"/>
 <item name="electronicParts"            count="5,25"        prob="0.050"/>
 <item name="hubcap"                     count="10,50"       prob="0.025"/>
@@ -1076,15 +1078,30 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="chemistryStation"           count="1"           prob="0.200"/>
 </trader_item_group>
 
+<trader_item_group name="Generatorbank" count="all">
+<item name="generatorbank"              count="1"/>
+<item name="smallEngine"                count="1,2"/>
+</trader_item_group>
+
+<trader_item_group name="Solarbank"     dount="all">
+<item name="solarbank"                  count="1"/>
+<item name="solarCell"                  count="1,2"/>
+</trader_item_group>
+
+<trader_item_group name="Batterybank"   count="all">
+<item name="batterybank"                count="1"/>
+<item name="carBattery"                 count="1,2"/>
+</trader_item_group>
+
 <trader_item_group name="BuildingElectricity">
-<item name="electricwirerelay"          count="2,10"        prob="0.100"/>
-<item name="electricfencepost"          count="2,10"        prob="0.100"/>
-<item name="generatorbank"              count="1,2"         prob="0.100"/>
-<item name="solarbank"                  count="1,2"         prob="0.100"/>
-<item name="batterybank"                count="1,2"         prob="0.100"/>
-<item name="smallEngine"                count="1,2"         prob="0.100"/>
-<item name="carBattery"                 count="1,2"         prob="0.100"/>
-<item name="solarCell"                  count="1,2"         prob="0.100"/>
+<item group="Generatorbank"                                 prob="0.200"/>
+<item group="Batterybank"                                   prob="0.200"/>
+<item group="Solarbank"                                     prob="0.200"/>
+<item name="electricwirerelay"          count="2,10"        prob="0.050"/>
+<item name="electricfencepost"          count="4,10"        prob="0.200"/>
+<item name="smallEngine"                count="1,2"         prob="0.050"/>
+<item name="carBattery"                 count="1,2"         prob="0.050"/>
+<item name="solarCell"                  count="1,2"         prob="0.050"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingTraps">
@@ -1106,7 +1123,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="brickBlock"                 count="50,250"      prob="0.200"/>
 <item name="pouredConcreteBlock"        count="25,125"      prob="0.400"/>
 <item name="rebarFrameBlock"            count="25,125"      prob="0.300"/>
-<item name="ironBars"                   count="5,50"        prob="0.100"/>
+<item name="ironBars"                   count="10,50"       prob="0.100"/>
 </trader_item_group>
 
 <trader_item_group name="HordeModeBasicMaterials">
@@ -1265,7 +1282,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_items>
 </trader_info>
 <!-- Disposal Station -->
-<trader_info id="6" reset_interval="1" override_buy_markup="2.0" override_sell_markup="1.0" allow_sell="true" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100" />
+<trader_info id="6" reset_interval="1" override_buy_markup="2.0" override_sell_markup="2.0" allow_sell="true" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100" />
 
 <!-- Supplies Cache -->
 <trader_info id="7" reset_interval="1" allow_sell="false" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100">
@@ -1342,10 +1359,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 </tier_items>
 
 <tier_items level="400,499"         count="all">
-<item group="GunsNormal"            count="5"/>
-<item group="GunsModified"          count="4"/>
+<item group="GunsNormal"            count="4"/>
+<item group="GunsModified"          count="3"/>
 <item group="GunsMilitary"          count="3"/>
-<item group="FirearmAmmoLG"         count="10"/>
+<item group="FirearmAmmoLG"         count="9"/>
 <item group="FirearmAmmoNG"         count="5"/>
 <item group="FirearmAmmoMG"         count="5"/>
 <item group="Explosives"            count="3"/>
@@ -1353,16 +1370,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Tools"                 count="3"/>
 <item group="FoodCooked"            count="2"/>
 <item group="FoodDrinks"            count="2"/>
-<item group="MedicalHealing"        count="2"/>
+<item group="MedicalHealing"        count="5"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
 </tier_items>
 
 <tier_items level="500,599"         count="all">
-<item group="GunsNormal"            count="5"/>
-<item group="GunsModified"          count="4"/>
-<item group="GunsMilitary"          count="3"/>
-<item group="FirearmAmmoLG"         count="10"/>
+<item group="GunsNormal"            count="3"/>
+<item group="GunsModified"          count="3"/>
+<item group="GunsMilitary"          count="4"/>
+<item group="FirearmAmmoLG"         count="9"/>
 <item group="FirearmAmmoNG"         count="6"/>
 <item group="FirearmAmmoMG"         count="6"/>
 <item group="Explosives"            count="4"/>
@@ -1370,14 +1387,14 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="3"/>
 <item group="FoodDrinks"            count="3"/>
-<item group="MedicalHealing"        count="3"/>
+<item group="MedicalHealing"        count="6"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 </tier_items>
 
 <tier_items level="600,699"         count="all">
-<item group="GunsNormal"            count="5"/>
-<item group="GunsModified"          count="5"/>
+<item group="GunsNormal"            count="3"/>
+<item group="GunsModified"          count="4"/>
 <item group="GunsMilitary"          count="5"/>
 <item group="FirearmAmmoLG"         count="10"/>
 <item group="FirearmAmmoNG"         count="10"/>
@@ -1387,16 +1404,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="3"/>
 <item group="FoodDrinks"            count="3"/>
-<item group="MedicalHealing"        count="3"/>
+<item group="MedicalHealing"        count="6"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 </tier_items>
 
 <tier_items level="700,799"         count="all">
-<item group="GunsNormal"            count="5"/>
+<item group="GunsNormal"            count="3"/>
 <item group="GunsModified"          count="6"/>
 <item group="GunsMilitary"          count="6"/>
-<item group="FirearmAmmoLG"         count="10"/>
+<item group="FirearmAmmoLG"         count="9"/>
 <item group="FirearmAmmoNG"         count="11"/>
 <item group="FirearmAmmoMG"         count="12"/>
 <item group="Explosives"            count="6"/>
@@ -1404,61 +1421,61 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="3"/>
 <item group="FoodDrinks"            count="3"/>
-<item group="MedicalHealing"        count="4"/>
+<item group="MedicalHealing"        count="7"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 <item name="Railgun"                count="0,1"/>
 </tier_items>
 
 <tier_items level="800,899"         count="all">
-<item group="GunsNormal"            count="5"/>
-<item group="GunsModified"          count="6"/>
-<item group="GunsMilitary"          count="6"/>
-<item group="FirearmAmmoLG"         count="10"/>
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="7"/>
+<item group="GunsMilitary"          count="7"/>
+<item group="FirearmAmmoLG"         count="7"/>
 <item group="FirearmAmmoNG"         count="16"/>
-<item group="FirearmAmmoMG"         count="17"/>
+<item group="FirearmAmmoMG"         count="19"/>
 <item group="Explosives"            count="6"/>
 <item group="Weapons"               count="3"/>
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="3"/>
 <item group="FoodDrinks"            count="3"/>
-<item group="MedicalHealing"        count="4"/>
+<item group="MedicalHealing"        count="7"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 <item name="Railgun"                count="0,1"/>
 </tier_items>
 
 <tier_items level="900,999"         count="all">
-<item group="GunsNormal"            count="5"/>
-<item group="GunsModified"          count="7"/>
-<item group="GunsMilitary"          count="7"/>
-<item group="FirearmAmmoLG"         count="10"/>
-<item group="FirearmAmmoNG"         count="16"/>
-<item group="FirearmAmmoMG"         count="17"/>
+<item group="GunsNormal"            count="1"/>
+<item group="GunsModified"          count="6"/>
+<item group="GunsMilitary"          count="8"/>
+<item group="FirearmAmmoLG"         count="5"/>
+<item group="FirearmAmmoNG"         count="18"/>
+<item group="FirearmAmmoMG"         count="20"/>
 <item group="Explosives"            count="9"/>
 <item group="Weapons"               count="4"/>
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="4"/>
 <item group="FoodDrinks"            count="4"/>
-<item group="MedicalHealing"        count="4"/>
+<item group="MedicalHealing"        count="8"/>
 <item group="MedicalRemedy"         count="4"/>
 <item group="Supplies"              count="4"/>
 <item name="Railgun"                count="1"/>
 </tier_items>
 
 <tier_items level="1000,-1"         count="all">
-<item group="GunsNormal"            count="1"/>
-<item group="GunsModified"          count="7"/>
-<item group="GunsMilitary"          count="7"/>
-<item group="FirearmAmmoLG"         count="6"/>
-<item group="FirearmAmmoNG"         count="16"/>
-<item group="FirearmAmmoMG"         count="20"/>
+<item group="GunsNormal"            count="0"/>
+<item group="GunsModified"          count="0"/>
+<item group="GunsMilitary"          count="12"/>
+<item group="FirearmAmmoLG"         count="0"/>
+<item group="FirearmAmmoNG"         count="17"/>
+<item group="FirearmAmmoMG"         count="25"/>
 <item group="Explosives"            count="13"/>
 <item group="Weapons"               count="4"/>
 <item group="Tools"                 count="4"/>
 <item group="FoodCooked"            count="5"/>
 <item group="FoodDrinks"            count="5"/>
-<item group="MedicalHealing"        count="5"/>
+<item group="MedicalHealing"        count="8"/>
 <item group="MedicalRemedy"         count="4"/>
 <item group="Supplies"              count="4"/>
 <item name="Railgun"                count="1"/>
@@ -1475,9 +1492,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 <tier_items level="1,99"            count="all">
 <item group="MaterialsBasic"        count="4"/>
 <item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="0,5"/>
-<item group="BuildingBlocksCommon"  count="2,5"/>
-<item group="BuildingBlocksRare"    count="0,5"/>
+<item group="MaterialsRare"         count="1,5"/>
+<item group="BuildingBlocksCommon"  count="3,5"/>
+<item group="BuildingBlocksRare"    count="1,5"/>
 <item group="BuildingStations"      count="0,2"/>
 <item group="BuildingTraps"         count="0,2"/>
 <item group="BuildingElectricity"   count="0,2"/>
@@ -1486,12 +1503,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 <tier_items level="100,199"         count="all">
 <item group="MaterialsBasic"        count="4"/>
 <item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="2,5"/>
+<item group="MaterialsRare"         count="4"/>
 <item group="BuildingBlocksCommon"  count="3,5"/>
-<item group="BuildingBlocksRare"    count="2,5"/>
-<item group="BuildingStations"      count="1,2"/>
-<item group="BuildingTraps"         count="1,2"/>
-<item group="BuildingElectricity"   count="1,2"/>
+<item group="BuildingBlocksRare"    count="4"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="1"/>
+<item group="BuildingElectricity"   count="2"/>
 </tier_items>
 
 <tier_items level="200,299"         count="all">
@@ -1539,59 +1556,385 @@ quality_mod: adjusts the price range of all items with a quality level.
 </tier_items>
 
 <tier_items level="600,699"         count="all">
-<item group="MaterialsBasic"        count="11"/>
-<item group="MaterialsCommon"       count="12"/>
-<item group="MaterialsRare"         count="12"/>
-<item group="BuildingBlocksCommon"  count="12"/>
-<item group="BuildingBlocksRare"    count="12"/>
+<item group="MaterialsBasic"        count="10"/>
+<item group="MaterialsCommon"       count="10"/>
+<item group="MaterialsRare"         count="15"/>
+<item group="BuildingBlocksCommon"  count="10"/>
+<item group="BuildingBlocksRare"    count="14"/>
 <item group="BuildingStations"      count="3"/>
 <item group="BuildingTraps"         count="4"/>
 <item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="700,799"         count="all">
-<item group="MaterialsBasic"        count="13"/>
-<item group="MaterialsCommon"       count="14"/>
-<item group="MaterialsRare"         count="14"/>
-<item group="BuildingBlocksCommon"  count="14"/>
-<item group="BuildingBlocksRare"    count="14"/>
+<item group="MaterialsBasic"        count="7"/>
+<item group="MaterialsCommon"       count="7"/>
+<item group="MaterialsRare"         count="29"/>
+<item group="BuildingBlocksCommon"  count="10"/>
+<item group="BuildingBlocksRare"    count="18"/>
 <item group="BuildingStations"      count="3"/>
 <item group="BuildingTraps"         count="4"/>
 <item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="800,899"         count="all">
-<item group="MaterialsBasic"        count="16"/>
-<item group="MaterialsCommon"       count="16"/>
-<item group="MaterialsRare"         count="16"/>
-<item group="BuildingBlocksCommon"  count="16"/>
-<item group="BuildingBlocksRare"    count="14"/>
+<item group="MaterialsBasic"        count="8"/>
+<item group="MaterialsCommon"       count="8"/>
+<item group="MaterialsRare"         count="32"/>
+<item group="BuildingBlocksCommon"  count="10"/>
+<item group="BuildingBlocksRare"    count="20"/>
 <item group="BuildingStations"      count="4"/>
 <item group="BuildingTraps"         count="4"/>
 <item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="900,999"         count="all">
-<item group="MaterialsBasic"        count="18"/>
-<item group="MaterialsCommon"       count="18"/>
-<item group="MaterialsRare"         count="18"/>
-<item group="BuildingBlocksCommon"  count="18"/>
-<item group="BuildingBlocksRare"    count="16"/>
+<item group="MaterialsBasic"        count="9"/>
+<item group="MaterialsCommon"       count="9"/>
+<item group="MaterialsRare"         count="36"/>
+<item group="BuildingBlocksCommon"  count="10"/>
+<item group="BuildingBlocksRare"    count="24"/>
 <item group="BuildingStations"      count="4"/>
 <item group="BuildingTraps"         count="4"/>
 <item group="BuildingElectricity"   count="4"/>
 </tier_items>
 
 <tier_items level="1000,-1"         count="all">
-<item group="MaterialsBasic"        count="14"/>
-<item group="MaterialsCommon"       count="14"/>
-<item group="MaterialsRare"         count="20"/>
-<item group="BuildingBlocksCommon"  count="20"/>
-<item group="BuildingBlocksRare"    count="20"/>
+<item group="MaterialsBasic"        count="7"/>
+<item group="MaterialsCommon"       count="7"/>
+<item group="MaterialsRare"         count="34"/>
+<item group="BuildingBlocksCommon"  count="10"/>
+<item group="BuildingBlocksRare"    count="30"/>
 <item group="BuildingStations"      count="4"/>
 <item group="BuildingTraps"         count="4"/>
 <item group="BuildingElectricity"   count="4"/>
 </tier_items>
 </trader_info>
 
+<!-- Supplies Cache Small -->
+<trader_info id="9" reset_interval="1" allow_sell="false" min_inventory="50" max_inventory="50" min_items_swapped="50" max_items_swapped="50">
+<trader_items count="all">
+<item group="HordeModeBasicSupplies"/>
+</trader_items>
+
+<tier_items level="1,99"            count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="0,2"/>
+<item group="GunsMilitary"          count="0,1"/>
+<item group="FirearmAmmoLG"         count="2"/>
+<item group="FirearmAmmoNG"         count="0,2"/>
+<item group="FirearmAmmoMG"         count="0,1"/>
+<item group="Explosives"            count="0,1"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="1,2"/>
+<item group="FoodCooked"            count="0,1"/>
+<item group="FoodDrinks"            count="0,1"/>
+<item group="MedicalHealing"        count="0,1"/>
+<item group="MedicalRemedy"         count="0,1"/>
+<item group="Supplies"              count="0,1"/>
+</tier_items>
+
+<tier_items level="100,199"         count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="1,2"/>
+<item group="GunsMilitary"          count="0,1"/>
+<item group="FirearmAmmoLG"         count="3"/>
+<item group="FirearmAmmoNG"         count="0,2"/>
+<item group="FirearmAmmoMG"         count="0,1"/>
+<item group="Explosives"            count="0,1"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="1"/>
+<item group="FoodDrinks"            count="1"/>
+<item group="MedicalHealing"        count="1"/>
+<item group="MedicalRemedy"         count="1"/>
+<item group="Supplies"              count="1"/>
+</tier_items>
+
+<tier_items level="200,299"         count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="2"/>
+<item group="GunsMilitary"          count="1"/>
+<item group="FirearmAmmoLG"         count="3"/>
+<item group="FirearmAmmoNG"         count="2"/>
+<item group="FirearmAmmoMG"         count="1"/>
+<item group="Explosives"            count="1"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="1"/>
+<item group="FoodDrinks"            count="1"/>
+<item group="MedicalHealing"        count="1"/>
+<item group="MedicalRemedy"         count="1"/>
+<item group="Supplies"              count="1"/>
+</tier_items>
+
+<tier_items level="300,399"         count="all">
+<item group="GunsNormal"            count="3"/>
+<item group="GunsModified"          count="2"/>
+<item group="GunsMilitary"          count="2"/>
+<item group="FirearmAmmoLG"         count="3"/>
+<item group="FirearmAmmoNG"         count="2"/>
+<item group="FirearmAmmoMG"         count="1"/>
+<item group="Explosives"            count="1"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="1"/>
+<item group="FoodDrinks"            count="1"/>
+<item group="MedicalHealing"        count="1"/>
+<item group="MedicalRemedy"         count="1"/>
+<item group="Supplies"              count="1"/>
+</tier_items>
+
+<tier_items level="400,499"         count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="2"/>
+<item group="GunsMilitary"          count="2"/>
+<item group="FirearmAmmoLG"         count="4"/>
+<item group="FirearmAmmoNG"         count="3"/>
+<item group="FirearmAmmoMG"         count="3"/>
+<item group="Explosives"            count="2"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="1"/>
+<item group="FoodDrinks"            count="1"/>
+<item group="MedicalHealing"        count="3"/>
+<item group="MedicalRemedy"         count="1"/>
+<item group="Supplies"              count="1"/>
+</tier_items>
+
+<tier_items level="500,599"         count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="2"/>
+<item group="GunsMilitary"          count="2"/>
+<item group="FirearmAmmoLG"         count="4"/>
+<item group="FirearmAmmoNG"         count="3"/>
+<item group="FirearmAmmoMG"         count="3"/>
+<item group="Explosives"            count="2"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="2"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="3"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+</tier_items>
+
+<tier_items level="600,699"         count="all">
+<item group="GunsNormal"            count="2"/>
+<item group="GunsModified"          count="2"/>
+<item group="GunsMilitary"          count="3"/>
+<item group="FirearmAmmoLG"         count="5"/>
+<item group="FirearmAmmoNG"         count="5"/>
+<item group="FirearmAmmoMG"         count="4"/>
+<item group="Explosives"            count="2"/>
+<item group="Weapons"               count="1"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="2"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="3"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+</tier_items>
+
+<tier_items level="700,799"         count="all">
+<item group="GunsNormal"            count="1"/>
+<item group="GunsModified"          count="3"/>
+<item group="GunsMilitary"          count="3"/>
+<item group="FirearmAmmoLG"         count="4"/>
+<item group="FirearmAmmoNG"         count="6"/>
+<item group="FirearmAmmoMG"         count="6"/>
+<item group="Explosives"            count="3"/>
+<item group="Weapons"               count="2"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="2"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="4"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+<item name="Railgun"                count="0,1"/>
+</tier_items>
+
+<tier_items level="800,899"         count="all">
+<item group="GunsNormal"            count="1"/>
+<item group="GunsModified"          count="4"/>
+<item group="GunsMilitary"          count="4"/>
+<item group="FirearmAmmoLG"         count="4"/>
+<item group="FirearmAmmoNG"         count="8"/>
+<item group="FirearmAmmoMG"         count="9"/>
+<item group="Explosives"            count="3"/>
+<item group="Weapons"               count="2"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="2"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="4"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+<item name="Railgun"                count="0,1"/>
+</tier_items>
+
+<tier_items level="900,999"         count="all">
+<item group="GunsNormal"            count="1"/>
+<item group="GunsModified"          count="3"/>
+<item group="GunsMilitary"          count="4"/>
+<item group="FirearmAmmoLG"         count="3"/>
+<item group="FirearmAmmoNG"         count="9"/>
+<item group="FirearmAmmoMG"         count="10"/>
+<item group="Explosives"            count="4"/>
+<item group="Weapons"               count="2"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="2"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="4"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+<item name="Railgun"                count="1"/>
+</tier_items>
+
+<tier_items level="1000,-1"         count="all">
+<item group="GunsNormal"            count="0"/>
+<item group="GunsModified"          count="0"/>
+<item group="GunsMilitary"          count="6"/>
+<item group="FirearmAmmoLG"         count="0"/>
+<item group="FirearmAmmoNG"         count="9"/>
+<item group="FirearmAmmoMG"         count="12"/>
+<item group="Explosives"            count="6"/>
+<item group="Weapons"               count="2"/>
+<item group="Tools"                 count="2"/>
+<item group="FoodCooked"            count="3"/>
+<item group="FoodDrinks"            count="2"/>
+<item group="MedicalHealing"        count="4"/>
+<item group="MedicalRemedy"         count="2"/>
+<item group="Supplies"              count="2"/>
+<item name="Railgun"                count="1"/>
+</tier_items>
+</trader_info>
+
+<!-- Materials Cache Small -->
+<trader_info id="10" reset_interval="1" allow_sell="false" min_inventory="50" max_inventory="50" min_items_swapped="50" max_items_swapped="50">
+
+<trader_items count="all">
+<item group="HordeModeBasicMaterials"/>
+</trader_items>
+
+<tier_items level="1,99"            count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="1,5"/>
+<item group="BuildingBlocksCommon"  count="3,5"/>
+<item group="BuildingBlocksRare"    count="1,5"/>
+<item group="BuildingStations"      count="0,1"/>
+<item group="BuildingTraps"         count="0,1"/>
+<item group="BuildingElectricity"   count="0,1"/>
+</tier_items>
+
+<tier_items level="100,199"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="3"/>
+<item group="BuildingBlocksCommon"  count="3,5"/>
+<item group="BuildingBlocksRare"    count="3"/>
+<item group="BuildingStations"      count="1"/>
+<item group="BuildingTraps"         count="1"/>
+<item group="BuildingElectricity"   count="1"/>
+</tier_items>
+
+<tier_items level="200,299"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="3"/>
+<item group="BuildingBlocksCommon"  count="3"/>
+<item group="BuildingBlocksRare"    count="1"/>
+<item group="BuildingStations"      count="1"/>
+<item group="BuildingTraps"         count="1"/>
+<item group="BuildingElectricity"   count="1"/>
+</tier_items>
+
+<tier_items level="300,399"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="3"/>
+<item group="BuildingBlocksCommon"  count="3"/>
+<item group="BuildingBlocksRare"    count="3"/>
+<item group="BuildingStations"      count="1"/>
+<item group="BuildingTraps"         count="1"/>
+<item group="BuildingElectricity"   count="1"/>
+</tier_items>
+
+<tier_items level="400,499"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="5"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="3"/>
+<item group="BuildingStations"      count="1"/>
+<item group="BuildingTraps"         count="1"/>
+<item group="BuildingElectricity"   count="1"/>
+</tier_items>
+
+<tier_items level="500,599"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="5"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="6"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+
+<tier_items level="600,699"         count="all">
+<item group="MaterialsBasic"        count="5"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="7"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="7"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+
+<tier_items level="700,799"         count="all">
+<item group="MaterialsBasic"        count="3"/>
+<item group="MaterialsCommon"       count="3"/>
+<item group="MaterialsRare"         count="14"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="9"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+
+<tier_items level="800,899"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="4"/>
+<item group="MaterialsRare"         count="16"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="10"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+
+<tier_items level="900,999"         count="all">
+<item group="MaterialsBasic"        count="4"/>
+<item group="MaterialsCommon"       count="5"/>
+<item group="MaterialsRare"         count="18"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="12"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+
+<tier_items level="1000,-1"         count="all">
+<item group="MaterialsBasic"        count="3"/>
+<item group="MaterialsCommon"       count="4"/>
+<item group="MaterialsRare"         count="17"/>
+<item group="BuildingBlocksCommon"  count="5"/>
+<item group="BuildingBlocksRare"    count="15"/>
+<item group="BuildingStations"      count="2"/>
+<item group="BuildingTraps"         count="2"/>
+<item group="BuildingElectricity"   count="2"/>
+</tier_items>
+</trader_info>
 </traders>

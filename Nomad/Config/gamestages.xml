@@ -115,7 +115,7 @@ diminishingReturns ="0.2"/>
 <gamestage stage="31"><spawn group="ZombiesFeral"	          num="12" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="32"><spawn group="ZombiesFeral"	          num="13" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="33"><spawn group="ZombiesFeralRad"	      num="09" maxAlive="30" duration="06"/></gamestage>
-<gamestage stage="34"><spawn group="ZombiesDog"	            num="12" maxAlive="30" duration="06"/></gamestage>
+<gamestage stage="34"><spawn group="ZombiesDogs"	          num="12" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="35"><spawn group="ZombiesFeral"	          num="07" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="36"><spawn group="ZombiesFeralRad"	      num="09" maxAlive="30" duration="06"/></gamestage>
 <gamestage stage="37"><spawn group="ZombiesGnahordeStage3"	num="19" maxAlive="30" duration="06"/></gamestage>
@@ -158,15 +158,14 @@ diminishingReturns ="0.2"/>
 
 <!-- Scout Summoning List -->
 <spawner name="ScoutGSList">
-<gamestage stage="1">             <spawn group="ZombiesRunners"         num="1" maxAlive="1" duration="1"/>    </gamestage>
-<gamestage stage="10">            <spawn group="ZombiesRunners"         num="5" maxAlive="2" duration="1"/>    </gamestage>
-<gamestage stage="25">            <spawn group="ZombiesFeral"           num="10" maxAlive="3" duration="1"/>   </gamestage>
-<gamestage stage="50">            <spawn group="ZombiesGnahordeStage2"  num="15" maxAlive="4" duration="1"/>   </gamestage>
-<gamestage stage="75">            <spawn group="ZombiesFeral"           num="20" maxAlive="5" duration="1"/>   </gamestage>
-<gamestage stage="100">           <spawn group="ZombiesGnahordeStage3"  num="25" maxAlive="10" duration="1"/>  </gamestage>
-<gamestage stage="200">           <spawn group="ZombiesFeral"           num="30" maxAlive="15" duration="1"/>  </gamestage>
-<gamestage stage="300">           <spawn group="ZombiesGnahordeStage4"  num="35" maxAlive="20" duration="1"/>  </gamestage>
-<gamestage stage="400">           <spawn group="ZombiesFeral"           num="40" maxAlive="25" duration="1"/>  </gamestage>
+<gamestage stage="1">             <spawn group="ZombiesRunners"         num="01" maxAlive="1" duration="1"/>   </gamestage>
+<gamestage stage="25">            <spawn group="ZombiesRunners"         num="10" maxAlive="2" duration="1"/>   </gamestage>
+<gamestage stage="50">            <spawn group="ZombiesRunners"         num="15" maxAlive="3" duration="1"/>   </gamestage>
+<gamestage stage="75">            <spawn group="ZombiesGnahordeStage2"  num="20" maxAlive="4" duration="1"/>   </gamestage>
+<gamestage stage="100">           <spawn group="ZombiesGnahordeStage3"  num="25" maxAlive="5" duration="1"/>   </gamestage>
+<gamestage stage="200">           <spawn group="ZombiesFeral"           num="30" maxAlive="5" duration="1"/>   </gamestage>
+<gamestage stage="300">           <spawn group="ZombiesGnahordeStage4"  num="35" maxAlive="10" duration="1"/>  </gamestage>
+<gamestage stage="400">           <spawn group="ZombiesFeral"           num="40" maxAlive="20" duration="1"/>  </gamestage>
 <gamestage stage="500">           <spawn group="ZombiesGnahordeStage5"  num="50" maxAlive="32" duration="1"/>  </gamestage>
 <gamestage stage="750">           <spawn group="ZombiesFeralRad"        num="60" maxAlive="64" duration="1"/>  </gamestage>
 <gamestage stage="1000">          <spawn group="ZombiesGnahordeStage6"  num="70" maxAlive="128" duration="1"/> </gamestage>

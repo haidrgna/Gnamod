@@ -419,7 +419,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="Class"                          value="Melee"/>
 <property name="Delay"                          value="0.8"/>
-<property name="Range"                          value="1.65"/>
+<property name="Range"                          value="1.55"/>
 <property name="Sphere"                         value="0.1"/>
 <property name="Block_range"                    value="2.5"/>
 <property name="DamageEntity"                   value="10"/>
@@ -469,7 +469,7 @@ Mesh files no longer used:
 <property name="HoldType"                       value="24"/>
 <property class="Action0">
 <property name="Delay"                          value="2.0"/>
-<property name="Range"                          value="1.85"/>
+<property name="Range"                          value="1.75"/>
 <property name="DamageEntity"                   value="25"/>
 <property name="DamageBlock"                    value="75"/>
 <property name="Buff"                           value="sprainedLeg,brokenLeg,infection"/>
@@ -7192,13 +7192,12 @@ Mesh files no longer used:
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Weight" value="5"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
-	<property name="SellableToTrader" value="false"/>
 	<property name="HoldType" value="45"/>
 	<property name="DropScale" value="3"/>
   <property name="MeltTimePerUnit" value="0.5"/>
-	<property name="EconomicValue" value="1"/>
-	<property name="EconomicBundleSize" value="2"/>
 	<property name="Group" value="Resources,Basics"/>
+  <property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="2"/>
 </item>
 
 <item id="1305" name="scrapIron">
@@ -8370,7 +8369,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="500"/>
-  <property name="CraftingIngredientTime" value="0.5"/>
+  <property name="CraftingIngredientTime" value="0.40"/>
 </item>
 
 <item id="1465" name="unit_clay">
@@ -8380,7 +8379,7 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None" />
   <property name="EconomicValue" value="1"/>
   <property name="EconomicBundleSize" value="500"/>
-  <property name="CraftingIngredientTime" value="0.5"/>
+  <property name="CraftingIngredientTime" value="0.20"/>
 </item>
 
 <!-- ============================== GNAMOD ITEMS =========================================================================================================================================================================== -->
@@ -11889,8 +11888,8 @@ Mesh files no longer used:
 <property name="DegradationMax"               value="50000,100000"/>
 <property name="DegradationRate"              value="15,15"/>
 <property name="DismembermentBaseChance"      value="0.025,0.1"/>
-<property name="EconomicValue"                value="25000"/>
 </property>
+<property name="EconomicValue"                value="25000"/>
 </item>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= Admin Tools +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->

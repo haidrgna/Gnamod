@@ -16,7 +16,7 @@
 <spawn maxcount="10"  respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="5"   respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeRadiatedWasteland"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeRadiatedWasteland"/>
 </biome>
 <!-- Radiated Forest -->
 <biome name="wasteland_hub">
@@ -33,7 +33,7 @@
 <spawn maxcount="7"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="8"   respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeRadiatedForest"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeRadiatedForest"/>
 </biome>
 <!-- Destroyed City -->
 <biome name="city_wasteland">
@@ -49,123 +49,131 @@
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Plains Wasteland -->
 <biome name="wasteland">
 <!-- Zombies Day -->
-<spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesHotBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Burnt Forest -->
 <biome name="burnt_forest">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesHotBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesHotBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesHotBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Snow Flats -->
 <biome name="city">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesMountainBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesMountainBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Alpine Forest -->
 <biome name="snow">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesMountainBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesMountainBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Pine Forest -->
 <biome name="pine_forest">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesGreenBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Dense Forests -->
 <biome name="forest">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesGreenBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Grasslands -->
 <biome name="plains">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesGreenBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="4"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
 </biome>
 <!-- Wetlands -->
 <biome name="water">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesGreenBiomes"/>
 <!-- Zombies Night -->
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
-<spawn maxcount="1"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
-<spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeWetlands"/>
+<spawn maxcount="1"   respawndelay="1"  time="Day"    entitygroup="WildlifeNecropolis"/>
+<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeWetlands"/>
 </biome>  
 <!-- Desert -->  
 <biome name="desert">
 <!-- Zombies Day -->
-<spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesHotBiomes"/>
-<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="7"   time="Any"   entitygroup="ZombiesHotBiomes"/>
+<spawn maxcount="1"   respawndelay="14"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <spawn maxcount="1"   respawndelay="28"  time="Any"   entitygroup="ZombiesWastelandBiomes"/>
+<spawn maxcount="1"   respawndelay="256" time="Any"   entitygroup="ZombiesHotBiomes"/>
 <!-- Zombies Night -->
-<spawn maxcount="4"   respawndelay="0"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="7"   respawndelay="0"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
-<spawn maxcount="2"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
+<spawn maxcount="3"   respawndelay="1"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="15"  respawndelay="1"  time="Night"  entitygroup="ZombiesWastelandBiomes"/>
 <!-- Animals -->
 <spawn maxcount="4"   respawndelay="1"  time="Any"    entitygroup="WildlifeNecropolis"/>
@@ -174,7 +182,7 @@
 <!-- Scout and Heat Hordes -->
 <entityspawner name="Scouts" dynamic="true" wrapMode="wrap">
 <!-- Base Scouts -->
-<day value="1,5">
+<day value="1,7">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesScoutsStage1"/>
 <property name="Time"               value="Any"/>
@@ -182,7 +190,7 @@
 <property name="TotalAlive"         value="1"/>
 <property name="TotalPerWave"       value="1"/>
 </day>
-<day value="6,14">
+<day value="8,14">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesScoutsStage1"/>
 <property name="Time"               value="Any"/>

@@ -23,40 +23,17 @@ Server Name=""
   link in the list after the first link.
 ********************************************************************************************************************** -->
 <Servers>
-<ServerGroup Name="Gnamod" Logo="" Description="So you like the game to be a bit more challenging but still retain the feel of the original game? You do not like to have to pick up a class but you do like to survive against all odds?
-Then Gnamod may just be the thing for you! This mod comes in different forms but at its core it features completely redone random worlds based on orignal game assets. The loot system has been completely overhauled (and then a few more times) which makes the loot experience unique and rewarding.
-Finally this mod increases the challenge of play in various way such as resource requirements and modified zombies tailored to fit with the experience.
-NOTE: Parts of this mod are still in flux and under construction. RWG work is mostly done for the base and nomad version so those should be stable enough to play. I am still working on spawning and zombies so those could change while you play. If you want to avoid bugs do not let the launcher update when playing an existing world. Enjoy">
+<ServerGroup Name="Gnamod" Logo="" Description="Gnamod is a collection of mods that aims to create a unique and mostly challenging experience to players that have beaten the base game but find that it does not offer them the same challenge it did when they first started playing. Gnamod will bring back that feeling again to veteran players and will offer a diverse range of challenge modes. 
+Gnamod is based around one central mod that is called Gnamod Base, the other challenge modes are all extensions or modifications of this mod, using most of the rules set there. This means that many aspects that make Gnamod unique are in this version. It is also the closest to the vanilla game and offers similar but far more challenging gameplay. Survival in Gnamod is not guaranteed, adapt or die trying.">
 <Server Name="Gnamod 1.0 - Base" Logo="">
 <Description>
-(Description and Documention coming soon) Current Version 1.01
+===============Current Version 1.02===============
+Gnamod Base is a standalone core experience extension mod. This means that the mod focuses to retain the core 7 Days to Die experience but with more focus on Survival and an overall difficulty increase that doesn’t just increase the zombie strength. This mod will have you on edge trying to survive and will make looting rewarding again without giving you everything you need within a few days. Becoming self-sufficient will be harder and more rewarding. This all set in a completely custom tailored random gen world with specifically designed biomes to create an as realistic as possible apocalyptic world. On top of that the zombies have been improved and enhanced, you will see them behave differently and you will see more of them. They will be harder to fight and there will be times where you will need to run. Survival in Gnamod is not guaranteed!
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
-<Exclude>BaseBeta</Exclude>
-<Exclude>Horde</Exclude>
-<Exclude>HordeBeta</Exclude>
-<Exclude>Necropolis</Exclude>
-<Exclude>Nomad</Exclude>
-<Exclude>.gitattributes</Exclude>
-<Exclude>.gitignore</Exclude>
-<Exclude>Gnamod.sln</Exclude>
-<Exclude>ModLauncher.xml</Exclude>
-</Excludes>
-<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
-</Server>
-<!--
-<Server Name="Gnamod Base Testversion" Logo="">
-<Description>
-Gnamod Horde Mode Testversion. ***THIS IS A TESTVERSION OF THE LATEST GNAMOD BASE. IT IS FULLY PLAYABLE BUT RIGHT NOW IT IS NOT BALANCED. IF YOU WANT TO KEEP PLAYING A WORLD, TURN AUTO UPDATING OFF!***
-How to use this version: You can test this version solo and are allowed to record or stream this, but I am contiually working on this and adding or changing things around. Save files might not be compatible with previous versions of Gnamod and it is possible that in-between updates the world you are playing is no longer compatible with the current version.
-Nothing in this version is final and if you find bugs please report them in the forum post. Current Version is 0.96b.
-</Description>
-<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-<Excludes>
-<Exclude>Base\Config</Exclude>
-<Exclude>Horde\Config</Exclude>
-<Exclude>HordeBeta\Config</Exclude>
+<Exclude>HordeMP</Exclude>
+<Exclude>HordeSP</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
@@ -67,34 +44,14 @@ Nothing in this version is final and if you find bugs please report them in the 
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
 
-<Server Name="Gnamod Horde Mode" Logo="">
-<Description>
-!!!! 28 Februari this version will be REMOVED from the launcher. Want to keep playing, download the 0.91 version from the 7dtd forums (follow release notes link). !!!!
-This is the old version (0.91) that will stay up here for a bit until I am all done with documentation (roughly until end of february). The saves from this version are not compatible with the new version. If you are planning on starting a new game, you should check out the 1.0 version instead.
-</Description>
-<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
-<Excludes>
-<Exclude>Base\Config</Exclude>
-<Exclude>BaseBeta</Exclude>
-<Exclude>HordeBeta</Exclude>
-<Exclude>Necropolis</Exclude>
-<Exclude>Nomad</Exclude>
-<Exclude>.gitattributes</Exclude>
-<Exclude>.gitignore</Exclude>
-<Exclude>Gnamod.sln</Exclude>
-<Exclude>ModLauncher.xml</Exclude>
-</Excludes>
-<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
-</Server>  
--->
 <Server Name="Gnamod 1.0 - Horde Mode (Singleplayer)" Logo="">
 <Description>
-(Description and Documention coming soon) Current Version 1.01
+===============Current Version 1.02===============
+Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 1-3 players.
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
-<Exclude>BaseBeta</Exclude>
-<Exclude>Horde\Config</Exclude>
+<Exclude>HordeMP</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
@@ -104,16 +61,34 @@ This is the old version (0.91) that will stay up here for a bit until I am all d
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
+
+<Server Name="Gnamod 1.0 - Horde Mode (Multiplayer)" Logo="">
+<Description>
+===============Current Version 1.02===============
+Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 4-6 players.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>HordeSP</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
+</Server> 
 
 <Server Name="Gnamod 1.0 - Necropolis" Logo="">
 <Description>
-(Description and Documentation coming soon) Current Version 1.01
+===============Current Version 1.02===============
+You are one of the few humans left alive in the remains of a once great metropolis, which is now a Necropolis. It is now the home of the living dead and littered with the remains of warfare. This is your home, you have no choice but to endure and survive. During the day the zombies mostly hide in the bigger buildings that are still standing or bathing in the radiation that surrounds the city, but at night they roam the land in search of food: You!
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
-<Exclude>BaseBeta</Exclude>
-<Exclude>Horde</Exclude>
-<Exclude>HordeBeta</Exclude>
+<Exclude>HordeMP</Exclude>
+<Exclude>HordeSP</Exclude>
 <Exclude>Nomad</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>
@@ -122,16 +97,16 @@ This is the old version (0.91) that will stay up here for a bit until I am all d
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
-  
+
 <Server Name="Gnamod 1.0 - Nomad Mode" Logo="">
 <Description>
-(Description and Documention coming soon) Current Version 1.01
+===============Current Version 1.02===============
+You are left behind by your friends with a backpack full of supplies and weapons. Your goal is to roam around the world and survive. But you cannot build anything without a workbench, which makes that you will have to move from house to house and town to town fighting for your life when the zombies attack during the night.
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
-<Exclude>BaseBeta</Exclude>
-<Exclude>Horde</Exclude>
-<Exclude>HordeBeta</Exclude>
+<Exclude>HordeMP</Exclude>
+<Exclude>HordeSP</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>
