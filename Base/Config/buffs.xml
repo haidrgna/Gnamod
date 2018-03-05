@@ -372,7 +372,7 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-9" rate="1"/>
 </buff>
 
-<buff id="extinguishFireBuff" duration="10" stack="reset" actions="debuff(burningSmall);debuff(burning);debuff(burningMolotov);debuff(burningMolotovStrong);debuff(burningSmall);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0)"
+<buff id="extinguishFireBuff" duration="10" stack="reset" actions="debuff(burningSmall);debuff(burning);debuff(burningMolotov);debuff(burningMolotovStrong);debuff(burningSmall);debuff(burningFireball);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0)"
 	icon="ui_game_symbol_water" name_key="extinguishFireBuffName" description_key="extinguishFireBuffDesc"/>
 
 <buff id="wellnessExample" duration="10" type="wellness" icon="ui_game_symbol_stunned" name_key="wellness" description_key="wellnessDesc" tooltip_key="wellnessTooltip">
@@ -630,7 +630,7 @@ This requires a 50+ food bar:
 
 <buff id="burningFireball" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="8" stack="reset" ffcheck="true"
 actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
-<modify id="1" stat="health" amount="-3" rate="1"/>
+<modify id="1" stat="health" amount="-4" rate="1"/>
 </buff>  
   
 <buff id="SuicideBurn" mutex="burningSmall,burning,burningMolotov,burningMolotovZombie" duration="60" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="SuicideBomber">
