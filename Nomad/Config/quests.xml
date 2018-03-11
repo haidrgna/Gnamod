@@ -471,8 +471,10 @@ icon="ui_game_symbol_archery" difficulty="veryeasy">
 name="Finding the trail"  subtitle="Finding the hidden cache" 
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad"     value="1000-1000" optional="true"/>
+<objective type="TreasureChest" id="treasureChestNomad"     value="1000-2500" optional="true"/>
 <objective type="Craft"         id="q_GnamodNomadTrail"     value="1"/>
+
+<reward type="SkillPoints"                                  value="5" optional="true"/>
 </quest>
 
 <quest id="quest_GnamodNomadTrail" group_name="The Nomad Trail" category="quest"
@@ -480,8 +482,10 @@ name="Following the trail"  subtitle="Finding the hidden cache"
 description="You have found the bag of stuff I buried, on this note I have marked our next goal. If we have made it you will find another bag buried there. Good Luck. -Ducky"
 offer="Hello Survivor,\nYou found one of my caches, here are the coordinates for where we will try to leave our next cache. \n\nGood Luck\n         -Ducky"
 icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad"     value="500-2500" optional="true"/>
+<objective type="TreasureChest" id="treasureChestNomad"     value="1000-2500" optional="true"/>
 <objective type="Craft"         id="q_GnamodNomadTrail"     value="1"/>
+
+<reward type="SkillPoints"                                  value="2" optional="true"/>
 </quest>
 
 <!-- Gnamod Horde Mode -->

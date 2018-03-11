@@ -4044,7 +4044,6 @@ Mesh files no longer used:
     <property name="ElectricalProtection" value="0.01,0.07"/>
 		<property name="DegradationMax" value="25,100"/>
 	</property>
-	<property name="DescriptionKey" value="pufferCoatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
   <property name="CraftingSkillGroup" value="craftSkillArmor"/>
@@ -7615,7 +7614,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="7"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
   <property name="EconomicValue" value="1"/>
-  <property name="EconomicBundleSize" value="10"/>
+  <property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1337" name="snowberryPlant">
@@ -7627,7 +7626,7 @@ Mesh files no longer used:
 	<property name="Material" value="plants"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="100"/> <!-- STK resource -->
-	<property name="CraftingIngredientTime" value="60"/>
+	<property name="CraftingIngredientTime" value="8"/>
 	<property class="Action1">
 		<property name="Delay" value="1.5"/>
 		<property name="Gain_food" value="2"/>
