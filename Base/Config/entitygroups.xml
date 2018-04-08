@@ -10930,6 +10930,12 @@
 <entity name="animalZombieDog"              prob="97.50"/>
 <entity name="animalZombieBear"             prob="2.500"/>
 </entitygroup>
+<entitygroup name="ZombiesVultures">
+<entity name="animalDummy"                  prob="40.00"/>
+<entity name="animalZombieVulture" 	        prob="40.00"/>
+<entity name="animalZombieVultureFlaming"   prob="10.00"/>
+<entity name="animalZombieVultureRad"       prob="10.00"/>
+</entitygroup>
 <entitygroup name="ZombiesBears">
 <entity name="animalZombieBear"             prob="40.00"/>
 <entity name="animalZombieBearRad"          prob="50.00"/>
@@ -10937,27 +10943,27 @@
 <entity name="animalSnakeRad"               prob="1.000"/>
 </entitygroup>
 <entitygroup name="ZombiesBadass">
-<entity name="zombieRyanSwagger"            prob="1.000"/>
-<entity name="zombieLouisSwagger"           prob="1.000"/>
-<entity name="zombieGhoulSwagger"           prob="1.000"/>
-<entity name="zombieRyanIntimidator"        prob="1.000"/>
-<entity name="zombieLouisIntimidator"       prob="1.000"/>
-<entity name="zombieGhoulIntimidator"       prob="1.000"/>
-<entity name="zombieRyanMoaner"             prob="1.000"/>
-<entity name="zombieLouisMoaner"            prob="1.000"/>
-<entity name="zombieGhoulMoaner"            prob="1.000"/>
-<entity name="zombieRyanLimper"             prob="1.000"/>
-<entity name="zombieLouisLimper"            prob="1.000"/>
-<entity name="zombieGhoulLimper"            prob="1.000"/>
-<entity name="zombieRyanFlailer"            prob="1.000"/>
-<entity name="zombieLouisFlailer"           prob="1.000"/>
-<entity name="zombieGhoulFlailer"           prob="1.000"/>
-<entity name="zombieRyanWalker"             prob="1.000"/>
-<entity name="zombieLouisWalker"            prob="1.000"/>
-<entity name="zombieGhoulWalker"            prob="1.000"/>
-<entity name="zombieRyanClimber"            prob="1.000"/>
-<entity name="zombieLouisClimber"           prob="1.000"/>
-<entity name="zombieGhoulClimber"           prob="1.000"/>
+<entity name="zombieRyanSwagger"            prob="2.000"/>
+<entity name="zombieLouisSwagger"           prob="2.000"/>
+<entity name="zombieGhoulSwagger"           prob="2.000"/>
+<entity name="zombieRyanIntimidator"        prob="2.000"/>
+<entity name="zombieLouisIntimidator"       prob="2.000"/>
+<entity name="zombieGhoulIntimidator"       prob="2.000"/>
+<entity name="zombieRyanMoaner"             prob="2.000"/>
+<entity name="zombieLouisMoaner"            prob="2.000"/>
+<entity name="zombieGhoulMoaner"            prob="2.000"/>
+<entity name="zombieRyanLimper"             prob="2.000"/>
+<entity name="zombieLouisLimper"            prob="2.000"/>
+<entity name="zombieGhoulLimper"            prob="3.000"/>
+<entity name="zombieRyanFlailer"            prob="2.000"/>
+<entity name="zombieLouisFlailer"           prob="2.000"/>
+<entity name="zombieGhoulFlailer"           prob="3.000"/>
+<entity name="zombieRyanWalker"             prob="2.000"/>
+<entity name="zombieLouisWalker"            prob="2.000"/>
+<entity name="zombieGhoulWalker"            prob="3.000"/>
+<entity name="zombieRyanClimber"            prob="2.000"/>
+<entity name="zombieLouisClimber"           prob="2.000"/>
+<entity name="zombieGhoulClimber"           prob="3.000"/>
 
 <entity name="zombieBoeFeral"               prob="1.000"/>
 <entity name="zombieJoeFeral"               prob="1.000"/>
@@ -10987,38 +10993,38 @@
 <entity name="zombieLouisFeral"             prob="1.000"/>
 <entity name="zombieGhoulFeral"             prob="1.000"/>
 
-<entity name="zombieCrispyPuke"             prob="1.000"/>
-<entity name="zombieBigMommaPuke"           prob="1.000"/>
-<entity name="zombieHenryPuke"              prob="1.000"/>
-<entity name="zombieDavePuke"               prob="1.000"/>
-<entity name="zombieJackPuke"               prob="1.000"/>
-<entity name="zombieJerryPuke"              prob="1.000"/>
-<entity name="zombieRyanPuke"               prob="1.000"/>
-<entity name="zombieLouisPuke"              prob="1.000"/>
-<entity name="zombieGhoulPuke"              prob="1.000"/>
+<entity name="zombieCrispyPuke"             prob="3.000"/>
+<entity name="zombieBigMommaPuke"           prob="3.000"/>
+<entity name="zombieHenryPuke"              prob="3.000"/>
+<entity name="zombieDavePuke"               prob="3.000"/>
+<entity name="zombieJackPuke"               prob="3.000"/>
+<entity name="zombieJerryPuke"              prob="3.000"/>
+<entity name="zombieRyanPuke"               prob="3.000"/>
+<entity name="zombieLouisPuke"              prob="3.000"/>
+<entity name="zombieGhoulPuke"              prob="3.000"/>
 </entitygroup>
 <entitygroup name="ZombiesBadassRad">
-<entity name="zombieRyanRadSwagger"         prob="1.000"/>
-<entity name="zombieLouisRadSwagger"        prob="1.000"/>
-<entity name="zombieGhoulRadSwagger"        prob="1.000"/>
-<entity name="zombieRyanRadIntimidator"     prob="1.000"/>
-<entity name="zombieLouisRadIntimidator"    prob="1.000"/>
-<entity name="zombieGhoulRadIntimidator"    prob="1.000"/>
-<entity name="zombieRyanRadMoaner"          prob="1.000"/>
-<entity name="zombieLouisRadMoaner"         prob="1.000"/>
-<entity name="zombieGhoulRadMoaner"         prob="1.000"/>
-<entity name="zombieRyanRadLimper"          prob="1.000"/>
-<entity name="zombieLouisRadLimper"         prob="1.000"/>
-<entity name="zombieGhoulRadLimper"         prob="1.000"/>
-<entity name="zombieRyanRadFlailer"         prob="1.000"/>
-<entity name="zombieLouisRadFlailer"        prob="1.000"/>
-<entity name="zombieGhoulRadFlailer"        prob="1.000"/>
-<entity name="zombieRyanRadWalker"          prob="1.000"/>
-<entity name="zombieLouisRadWalker"         prob="1.000"/>
-<entity name="zombieGhoulRadWalker"         prob="1.000"/>
-<entity name="zombieRyanRadClimber"         prob="1.000"/>
-<entity name="zombieLouisRadClimber"        prob="1.000"/>
-<entity name="zombieGhoulRadClimber"        prob="1.000"/>
+<entity name="zombieRyanRadSwagger"         prob="2.000"/>
+<entity name="zombieLouisRadSwagger"        prob="2.000"/>
+<entity name="zombieGhoulRadSwagger"        prob="2.000"/>
+<entity name="zombieRyanRadIntimidator"     prob="2.000"/>
+<entity name="zombieLouisRadIntimidator"    prob="2.000"/>
+<entity name="zombieGhoulRadIntimidator"    prob="2.000"/>
+<entity name="zombieRyanRadMoaner"          prob="2.000"/>
+<entity name="zombieLouisRadMoaner"         prob="2.000"/>
+<entity name="zombieGhoulRadMoaner"         prob="2.000"/>
+<entity name="zombieRyanRadLimper"          prob="2.000"/>
+<entity name="zombieLouisRadLimper"         prob="2.000"/>
+<entity name="zombieGhoulRadLimper"         prob="3.000"/>
+<entity name="zombieRyanRadFlailer"         prob="2.000"/>
+<entity name="zombieLouisRadFlailer"        prob="2.000"/>
+<entity name="zombieGhoulRadFlailer"        prob="3.000"/>
+<entity name="zombieRyanRadWalker"          prob="2.000"/>
+<entity name="zombieLouisRadWalker"         prob="2.000"/>
+<entity name="zombieGhoulRadWalker"         prob="3.000"/>
+<entity name="zombieRyanRadClimber"         prob="2.000"/>
+<entity name="zombieLouisRadClimber"        prob="2.000"/>
+<entity name="zombieGhoulRadClimber"        prob="3.000"/>
 
 <entity name="zombieBoeRadFeral"            prob="1.000"/>
 <entity name="zombieJoeRadFeral"            prob="1.000"/>
@@ -11048,15 +11054,136 @@
 <entity name="zombieLouisRadFeral"          prob="1.000"/>
 <entity name="zombieGhoulRadFeral"          prob="1.000"/>
 
-<entity name="zombieCrispyRadPuke"          prob="1.000"/>
-<entity name="zombieBigMommaRadPuke"        prob="1.000"/>
-<entity name="zombieHenryRadPuke"           prob="1.000"/>
-<entity name="zombieDaveRadPuke"            prob="1.000"/>
-<entity name="zombieJackRadPuke"            prob="1.000"/>
-<entity name="zombieJerryRadPuke"           prob="1.000"/>
-<entity name="zombieRyanRadPuke"            prob="1.000"/>
-<entity name="zombieLouisRadPuke"           prob="1.000"/>
-<entity name="zombieGhoulRadPuke"           prob="1.000"/>
+<entity name="zombieCrispyRadPuke"          prob="3.000"/>
+<entity name="zombieBigMommaRadPuke"        prob="3.000"/>
+<entity name="zombieHenryRadPuke"           prob="3.000"/>
+<entity name="zombieDaveRadPuke"            prob="3.000"/>
+<entity name="zombieJackRadPuke"            prob="3.000"/>
+<entity name="zombieJerryRadPuke"           prob="3.000"/>
+<entity name="zombieRyanRadPuke"            prob="3.000"/>
+<entity name="zombieLouisRadPuke"           prob="3.000"/>
+<entity name="zombieGhoulRadPuke"           prob="3.000"/>
+</entitygroup>
+<entitygroup name="ZombiesBadassAll">
+<entity name="zombieRyanSwagger"            prob="2.000"/>
+<entity name="zombieLouisSwagger"           prob="2.000"/>
+<entity name="zombieGhoulSwagger"           prob="2.000"/>
+<entity name="zombieRyanIntimidator"        prob="2.000"/>
+<entity name="zombieLouisIntimidator"       prob="2.000"/>
+<entity name="zombieGhoulIntimidator"       prob="2.000"/>
+<entity name="zombieRyanMoaner"             prob="2.000"/>
+<entity name="zombieLouisMoaner"            prob="2.000"/>
+<entity name="zombieGhoulMoaner"            prob="2.000"/>
+<entity name="zombieRyanLimper"             prob="2.000"/>
+<entity name="zombieLouisLimper"            prob="2.000"/>
+<entity name="zombieGhoulLimper"            prob="3.000"/>
+<entity name="zombieRyanFlailer"            prob="2.000"/>
+<entity name="zombieLouisFlailer"           prob="2.000"/>
+<entity name="zombieGhoulFlailer"           prob="3.000"/>
+<entity name="zombieRyanWalker"             prob="2.000"/>
+<entity name="zombieLouisWalker"            prob="2.000"/>
+<entity name="zombieGhoulWalker"            prob="3.000"/>
+<entity name="zombieRyanClimber"            prob="2.000"/>
+<entity name="zombieLouisClimber"           prob="2.000"/>
+<entity name="zombieGhoulClimber"           prob="3.000"/>
+
+<entity name="zombieBoeFeral"               prob="1.000"/>
+<entity name="zombieJoeFeral"               prob="1.000"/>
+<entity name="zombieEdgarFeral"             prob="1.000"/>
+<entity name="zombieYoFeral"                prob="1.000"/>
+<entity name="zombieSteveFeral"             prob="1.000"/>
+<entity name="zombieClarkeFeral"            prob="1.000"/>
+<entity name="zombieEugeneFeral"            prob="1.000"/>
+<entity name="zombieBobFeral"               prob="1.000"/>
+<entity name="zombieClintFeral"             prob="1.000"/>
+<entity name="zombieDeanFeral"              prob="1.000"/>
+<entity name="zombieSpiderFeral"            prob="1.000"/>
+<entity name="zombieHazmatFeral"            prob="1.000"/>
+<entity name="zombieArleneFeral"            prob="1.000"/>
+<entity name="zombieDarleneFeral"           prob="1.000"/>
+<entity name="zombieMarleneFeral"           prob="1.000"/>
+<entity name="zombieLillyFeral"             prob="1.000"/>
+<entity name="zombieClaireFeral"            prob="1.000"/>
+<entity name="zombieCrystalFeral"           prob="1.000"/>
+<entity name="zombieCrispyFeral"            prob="1.000"/>
+<entity name="zombieBigMommaFeral"          prob="1.000"/>
+<entity name="zombieHenryFeral"             prob="1.000"/>
+<entity name="zombieDaveFeral"              prob="1.000"/>
+<entity name="zombieJackFeral"              prob="1.000"/>
+<entity name="zombieJerryFeral"             prob="1.000"/>
+<entity name="zombieRyanFeral"              prob="1.000"/>
+<entity name="zombieLouisFeral"             prob="1.000"/>
+<entity name="zombieGhoulFeral"             prob="1.000"/>
+
+<entity name="zombieCrispyPuke"             prob="3.000"/>
+<entity name="zombieBigMommaPuke"           prob="3.000"/>
+<entity name="zombieHenryPuke"              prob="3.000"/>
+<entity name="zombieDavePuke"               prob="3.000"/>
+<entity name="zombieJackPuke"               prob="3.000"/>
+<entity name="zombieJerryPuke"              prob="3.000"/>
+<entity name="zombieRyanPuke"               prob="3.000"/>
+<entity name="zombieLouisPuke"              prob="3.000"/>
+<entity name="zombieGhoulPuke"              prob="3.000"/>
+
+<entity name="zombieRyanRadSwagger"         prob="2.000"/>
+<entity name="zombieLouisRadSwagger"        prob="2.000"/>
+<entity name="zombieGhoulRadSwagger"        prob="2.000"/>
+<entity name="zombieRyanRadIntimidator"     prob="2.000"/>
+<entity name="zombieLouisRadIntimidator"    prob="2.000"/>
+<entity name="zombieGhoulRadIntimidator"    prob="2.000"/>
+<entity name="zombieRyanRadMoaner"          prob="2.000"/>
+<entity name="zombieLouisRadMoaner"         prob="2.000"/>
+<entity name="zombieGhoulRadMoaner"         prob="2.000"/>
+<entity name="zombieRyanRadLimper"          prob="2.000"/>
+<entity name="zombieLouisRadLimper"         prob="2.000"/>
+<entity name="zombieGhoulRadLimper"         prob="3.000"/>
+<entity name="zombieRyanRadFlailer"         prob="2.000"/>
+<entity name="zombieLouisRadFlailer"        prob="2.000"/>
+<entity name="zombieGhoulRadFlailer"        prob="3.000"/>
+<entity name="zombieRyanRadWalker"          prob="2.000"/>
+<entity name="zombieLouisRadWalker"         prob="2.000"/>
+<entity name="zombieGhoulRadWalker"         prob="3.000"/>
+<entity name="zombieRyanRadClimber"         prob="2.000"/>
+<entity name="zombieLouisRadClimber"        prob="2.000"/>
+<entity name="zombieGhoulRadClimber"        prob="3.000"/>
+
+<entity name="zombieBoeRadFeral"            prob="1.000"/>
+<entity name="zombieJoeRadFeral"            prob="1.000"/>
+<entity name="zombieEdgarRadFeral"          prob="1.000"/>
+<entity name="zombieYoRadFeral"             prob="1.000"/>
+<entity name="zombieSteveRadFeral"          prob="1.000"/>
+<entity name="zombieClarkeRadFeral"         prob="1.000"/>
+<entity name="zombieEugeneRadFeral"         prob="1.000"/>
+<entity name="zombieBobRadFeral"            prob="1.000"/>
+<entity name="zombieClintRadFeral"          prob="1.000"/>
+<entity name="zombieDeanRadFeral"           prob="1.000"/>
+<entity name="zombieSpiderRadFeral"         prob="1.000"/>
+<entity name="zombieHazmatRadFeral"         prob="1.000"/>
+<entity name="zombieArleneRadFeral"         prob="1.000"/>
+<entity name="zombieDarleneRadFeral"        prob="1.000"/>
+<entity name="zombieMarleneRadFeral"        prob="1.000"/>
+<entity name="zombieLillyRadFeral"          prob="1.000"/>
+<entity name="zombieClaireRadFeral"         prob="1.000"/>
+<entity name="zombieCrystalRadFeral"        prob="1.000"/>
+<entity name="zombieCrispyRadFeral"         prob="1.000"/>
+<entity name="zombieBigMommaRadFeral"       prob="1.000"/>
+<entity name="zombieHenryRadFeral"          prob="1.000"/>
+<entity name="zombieDaveRadFeral"           prob="1.000"/>
+<entity name="zombieJackRadFeral"           prob="1.000"/>
+<entity name="zombieJerryRadFeral"          prob="1.000"/>
+<entity name="zombieRyanRadFeral"           prob="1.000"/>
+<entity name="zombieLouisRadFeral"          prob="1.000"/>
+<entity name="zombieGhoulRadFeral"          prob="1.000"/>
+
+<entity name="zombieCrispyRadPuke"          prob="3.000"/>
+<entity name="zombieBigMommaRadPuke"        prob="3.000"/>
+<entity name="zombieHenryRadPuke"           prob="3.000"/>
+<entity name="zombieDaveRadPuke"            prob="3.000"/>
+<entity name="zombieJackRadPuke"            prob="3.000"/>
+<entity name="zombieJerryRadPuke"           prob="3.000"/>
+<entity name="zombieRyanRadPuke"            prob="3.000"/>
+<entity name="zombieLouisRadPuke"           prob="3.000"/>
+<entity name="zombieGhoulRadPuke"           prob="3.000"/>
 </entitygroup>
 <entitygroup name="ZombiesRunners">
 <entity name="zombieBoeHater"               prob="3.204"/>
@@ -11202,6 +11329,19 @@
 <entity name="zombieGhoulRadFeral"          prob="1.000"/>
 </entitygroup>
 <entitygroup name="ZombiesScoutsStage1">
+<entity name="animalDummy"                  prob="45.00"/>
+<entity name="zombieAnnaSwagger"            prob="6.000"/>
+<entity name="zombieAnnaIntimidator"        prob="6.000"/>
+<entity name="zombieAnnaMoaner"             prob="6.000"/>
+<entity name="zombieAnnaLimper"             prob="6.000"/>
+<entity name="zombieAnnaFlailer"            prob="6.000"/>
+<entity name="zombieAnnaWalker"             prob="6.000"/>
+<entity name="zombieAnnaClimber"            prob="6.000"/>
+<entity name="zombieAnnaHater"              prob="6.000"/>
+<entity name="zombieAnnaFeral"              prob="1.000"/>
+<entity name="zombieAnnaPuke"               prob="6.000"/>
+</entitygroup>
+<entitygroup name="ZombiesScoutsStage2">
 <entity name="zombieAnnaSwagger"            prob="11.00"/>
 <entity name="zombieAnnaIntimidator"        prob="11.00"/>
 <entity name="zombieAnnaMoaner"             prob="11.00"/>
@@ -11212,8 +11352,8 @@
 <entity name="zombieAnnaHater"              prob="11.00"/>
 <entity name="zombieAnnaFeral"              prob="1.000"/>
 <entity name="zombieAnnaPuke"               prob="11.00"/>
-</entitygroup>
-<entitygroup name="ZombiesScoutsStage2">
+</entitygroup>  
+<entitygroup name="ZombiesScoutsStage3">
 <entity name="zombieAnnaSwagger"            prob="8.250"/>
 <entity name="zombieAnnaIntimidator"        prob="8.250"/>
 <entity name="zombieAnnaMoaner"             prob="8.250"/>
@@ -11234,8 +11374,8 @@
 <entity name="zombieAnnaRadHater"           prob="2.750"/>
 <entity name="zombieAnnaRadFeral"           prob="0.250"/>
 <entity name="zombieAnnaRadPuke"            prob="2.750"/>
-</entitygroup>  
-<entitygroup name="ZombiesScoutsStage3">
+</entitygroup>
+<entitygroup name="ZombiesScoutsStage4">
 <entity name="zombieAnnaSwagger"            prob="5.000"/>
 <entity name="zombieAnnaIntimidator"        prob="5.000"/>
 <entity name="zombieAnnaMoaner"             prob="5.000"/>

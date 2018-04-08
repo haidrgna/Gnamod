@@ -276,10 +276,10 @@
 <property name="KnockdownKneelDamageThreshold"      value="0.38"/>
 <property name="KnockdownKneelStunDuration"         value="3,5"/>
 <property name="KnockdownKneelRefillRate"           value="0.045,0.045"/>
-<property name="LegsExplosionDamageMultiplier"      value=".45"/>
-<property name="ArmsExplosionDamageMultiplier"      value=".45"/>
-<property name="HeadExplosionDamageMultiplier"      value=".45"/>
-<property name="ChestExplosionDamageMultiplier"     value=".45"/>
+<property name="LegsExplosionDamageMultiplier"      value="0.45"/>
+<property name="ArmsExplosionDamageMultiplier"      value="0.45"/>
+<property name="HeadExplosionDamageMultiplier"      value="0.45"/>
+<property name="ChestExplosionDamageMultiplier"     value="0.45"/>
 </entity_class>
 
 <!-- FERAL RADIATED ZOMBIES                         *** The most badass zombies, they are fast, super strong and have a powerful hand. *** -->
@@ -378,15 +378,14 @@
 <property name="RotateToGround"                     value="true"/>
 <property name="PhysicsBody"                        value="bear"/>
 <!-- AI Tasks -->
-<property name="AITask-1"                           value="Swim"/>
-<property name="AITask-2"                           value="BreakDoor"/>
-<property name="AITask-3"                           value="BreakBlock"/>
-<property name="AITask-4"                           value="Territorial"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityPlayer" param2="20"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer" param2="20"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-7"                           value="ApproachSpot"/>
+<property name="AITask-8"                           value="Wander"/>
 <!-- AI Targets -->
 <property name="AITarget-1"                         value="BlockingTargetTask"/>
 <property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
@@ -400,10 +399,10 @@
 <property name="SurfaceCategory"                    value="organic"/>
 <property name="ParticleOnDeath"                    value="blood_death"/>
 <!-- Movement -->
-<property name="WanderSpeed"                        value="0.25"/>
+<property name="WanderSpeed"                        value="0.4"/>
 <property name="PanicSpeed"                         value="2.0"/>
 <property name="ApproachSpeed"                      value="1.2"/>
-<property name="NightWanderSpeed"                   value="0.25"/>
+<property name="NightWanderSpeed"                   value="0.4"/>
 <property name="NightApproachSpeed"                 value="1.2"/>
 <property name="MaxTurnSpeed"                       value="450"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>  
@@ -484,6 +483,11 @@
 <property name="SoundParachuteOpen"                 value="SupplyDrops/Parachute_Opens"/>
 <property name="SoundLanding"                       value="SupplyDrops/Supply_Crate_Land"/>
 <property name="TimeStayAfterDeath"                 value="0"/>
+</entity_class>
+<!-- ============================== Beacon Crate ===================================================================================================================================================================== -->
+<entity_class name="sc_Beacon"                      extends="sc_General">
+<property name="LootListAlive"                      value="155"/>
+<property name="LootListAliveMP"                    value="155"/>
 </entity_class>
 <!-- ============================== Player Backpack ================================================================================================================================================================== -->
 <entity_class name="Backpack">
@@ -1498,6 +1502,7 @@
 <property name="HandItem"                           value="handZombieBurning"/>
 <property name="LootListOnDeath"                    value="107"/>
 <property name="ExperienceGain"                     value="1500"/>
+<property name="Buffs"                              value="fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1534,6 +1539,7 @@
 <property name="LegCrippleThreshold"                value="0"/>
 <property name="KnockdownProneDamageThreshold"      value="0"/>
 <property name="KnockdownKneelDamageThreshold"      value="0"/>
+<property name="Buffs"                              value="fireProtection"/>
 <!-- Puking --> 
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
@@ -1575,6 +1581,7 @@
 <property name="HandItem"                           value="handZombieBurningFeral"/>
 <property name="LootListOnDeath"                    value="108"/>
 <property name="ExperienceGain"                     value="2500"/>
+<property name="Buffs"                              value="fireProtection"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1596,7 +1603,7 @@
 <property name="LootListOnDeath"                    value="108"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
+<property name="Buffs"                              value="fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1634,6 +1641,7 @@
 <property name="LegCrippleThreshold"                value="0"/>
 <property name="KnockdownProneDamageThreshold"      value="0"/>
 <property name="KnockdownKneelDamageThreshold"      value="0"/>
+<property name="Buffs"                              value="fireProtection"/>
 <!-- Puking --> 
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
@@ -1678,7 +1686,7 @@
 <property name="LootListOnDeath"                    value="108"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
+<property name="Buffs"                              value="fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -4226,17 +4234,16 @@
 <property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>        </property>
 <property class="MechanimDeathStates">    <property name="state0" value="Base Layer.Death"/>    </property>
 <!-- AI Tasks -->
-<property name="AITask-1"                           value="Swim"/>
-<property name="AITask-2"                           value="BreakDoor"/>
-<property name="AITask-3"                           value="BreakBlock"/>
-<property name="AITask-4"                           value="Territorial"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="20"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="20"/>
-<property name="AITask-9"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-10"                          value="ApproachSpot"/>
-<property name="AITask-11"                          value="Wander"/>
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="20"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="20"/>
+<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-9"                           value="ApproachSpot"/>
+<property name="AITask-10"                          value="Wander"/>
 <!-- AI Targets -->
 <property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityZombie"/>
 <property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
@@ -4284,16 +4291,15 @@
 <property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>  </property>
 <property class="MechanimDeathStates">    <property name="state0" value="Death"/>         </property>
 <!-- AI Tasks -->
-<property name="AITask-1"                           value="Swim"/>
-<property name="AITask-2"                           value="BreakDoor"/>
-<property name="AITask-3"                           value="BreakBlock"/>
-<property name="AITask-4"                           value="Territorial"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="30"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="30"/>
-<property name="AITask-9"                           value="ApproachSpot"/>
-<property name="AITask-10"                          value="Wander"/>
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="30"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="30"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
 <property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityZombie"/>
 <property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
@@ -4343,11 +4349,11 @@
 <property name="HasDeathAnim"                       value="true"/>
 <property name="HandItem"                           value="handAnimalBoar"/>
 <property name="Weight"                             value="70"/>
-<property name="WanderSpeed"                        value="0.08"/>
+<property name="WanderSpeed"                        value="0.1"/>
 <property name="PanicSpeed"                         value="0.2"/>
-<property name="ApproachSpeed"                      value="0.2"/>
-<property name="NightWanderSpeed"                   value="0.08"/>
-<property name="NightApproachSpeed"                 value="0.2"/>
+<property name="ApproachSpeed"                      value="0.3"/>
+<property name="NightWanderSpeed"                   value="0.1"/>
+<property name="NightApproachSpeed"                 value="0.3"/>
 <property name="WalkType"                           value="7"/>
 <property name="MaxHealth"                          value="75"/>
 <property name="DeadBodyHitPoints"                  value="150"/>
@@ -4399,17 +4405,16 @@
 <property name="DeadBodyHitPoints"                  value="500"/>
 <property name="MaxHealth"                          value="750"/>
 <!-- AI Tasks -->
-<property name="AITask-1"                           value="Swim"/>
-<property name="AITask-2"                           value="BreakDoor"/>
-<property name="AITask-3"                           value="BreakBlock"/>
-<property name="AITask-4"                           value="Territorial"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="15"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="15"/>
-<property name="AITask-9"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-10"                          value="ApproachSpot"/>
-<property name="AITask-11"                          value="Wander"/>
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityZombie"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"         param2="15"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityNPC"            param2="15"/>
+<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-9"                           value="ApproachSpot"/>
+<property name="AITask-10"                          value="Wander"/>
 <!-- AI Targets -->
 <property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityZombie"/>
 <property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
@@ -4452,7 +4457,7 @@
 <property name="WalkType"                           value="0"/>
 <property name="WanderSpeed"                        value="0.5"/>
 <property name="ApproachSpeed"                      value="1.6"/>
-<property name="NightWanderSpeed"                   value="0.3"/>
+<property name="NightWanderSpeed"                   value="0.5"/>
 <property name="NightApproachSpeed"                 value="2.0"/>
 <property name="PanicSpeed"                         value="2.0"/>
 <!-- Sounds -->
@@ -4579,16 +4584,15 @@
 <property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>        </property>
 <property class="MechanimDeathStates">    <property name="state0" value="Base Layer.Death"/>    </property>
 <!-- AI Tasks -->
-<property name="AITask-1"                           value="Swim"/>
-<property name="AITask-2"                           value="BreakDoor"/>
-<property name="AITask-3"                           value="BreakBlock"/>
-<property name="AITask-4"                           value="Territorial"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-8"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-9"                           value="ApproachSpot"/>
-<property name="AITask-10"                          value="Wander"/>
+<property name="AITask-1"                           value="BreakDoor"/>
+<property name="AITask-2"                           value="BreakBlock"/>
+<property name="AITask-3"                           value="Territorial"/>
+<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
+<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
+<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
+<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
+<property name="AITask-8"                           value="ApproachSpot"/>
+<property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
 <property name="AITarget-1"                         value="BlockingTargetTask"/>  
 <property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>

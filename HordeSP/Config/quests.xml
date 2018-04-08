@@ -486,62 +486,31 @@ icon="ui_game_symbol_treasure" difficulty="hard">
 
 <!-- Gnamod Horde Mode -->
 <quest id="quest_GnamodHorde1" group_name="Horde Mode" category="quest"
-name="Getting Started"  subtitle="Taking the beacon" 
-description="It seems you have found a beacon that you can use to signal for help. It comes with a set of instructions and a backpack full of gear." 
-offer="Welcome Survivor to GNAMOD HORDE MODE. In this mode you will have to fight off hordes of zombies and try to survive for as long as you can. Follow the instructions and enjoy the ride!\n\nGood Luck,\nHaidrGna"
+name="Getting Started"  subtitle="Horde Mode" 
+description="It seems you are nearby a beacon that you can use to signal for help. It comes with a set of instructions and a backpack full of gear." 
+offer="Welcome Survivor to GNAMOD HORDE MODE. In this mode you will have to fight off hordes of zombies and try to survive for as long as you can. You have found a backpack with gear and there should be a Beacon near!\n\nGood Luck,\nHaidrGna"
 icon="ui_game_symbol_treasure" difficulty="veryeasy">
 <action type="TrackQuest"/>
 
 <!-- Rewards -->
 <reward type="Item"           id="StartingKit"                value="1"/>
-<!--<reward type="Item"           id="PlaceBeacon"                value="1"/>-->
 <reward type="Item"           id="casinoCoin"                 value="50000"/>
 <reward type="Quest"          id="quest_GnamodHorde2"/>
 </quest>
 
 <quest id="quest_GnamodHorde2" group_name="Horde Mode" category="quest"
-name="Placing the Beacon" subtitle=".. And Get Ready to BUILD!" description="You will need to place the beacon somewhere on solid ground. It will call out a resQ but will likely also attract unwanted attention. So make sure to defend the spot until help arrives." 
+name="Getting Equipped" subtitle=".. and get ready to BUILD!" description="You will need to place your bag of equipment down to be able to open it Inside you will find the basics you need to defend yourself. You may want to repair the armor inside and attach the flashlights to the guns before heading off." 
 icon="ui_game_symbol_treasure" difficulty="veryeasy">
 <objective type="BlockPlace"  id="StartingKit"                value="1"/>
-<!--<objective type="BlockPlace"  id="PlaceBeacon"                value="1"/> 
-<objective type="ZombieKill"                                  value="10"/> -->
 
 <!-- Rewards -->
 <reward type="SkillPoints"                                    value="10"/>
-<!--<reward type="Item"           id="casinoCoin"                 value="3000"/> -->
-<reward type="Quest"          id="quest_GnamodHorde3"/>
+<reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
 </quest>  
 
-<quest id="quest_GnamodHorde3" group_name="Horde Mode" category="quest"
-name="Some Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
-icon="ui_game_symbol_zombie" difficulty="hard">
-<objective type="ZombieKill"                                  value="10"/>
-
-<reward type="Item"           id="casinoCoin"                 value="5000"/>
-<reward type="Quest"          id="quest_GnamodHorde4"/>
-</quest>
-
-<quest id="quest_GnamodHorde4" group_name="Horde Mode" category="quest"
-name="Some More Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
-icon="ui_game_symbol_zombie" difficulty="hard">
-<objective type="ZombieKill"                                  value="15"/>
-
-<reward type="Item"           id="casinoCoin"                 value="7000"/>
-<reward type="Quest"          id="quest_GnamodHorde5"/>
-</quest>
-
-<quest id="quest_GnamodHorde5" group_name="Horde Mode" category="quest"
-name="Quite Some Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
-icon="ui_game_symbol_zombie" difficulty="hard">
-<objective type="ZombieKill"                                  value="25"/>
-
-<reward type="Item"           id="casinoCoin"                 value="10000"/>
-<reward type="Quest"          id="quest_KillingForDukes1"/>
-</quest>  
-  
 <!-- Dukes per 25 Kills -->
 <quest id="quest_KillingForDukes1" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 1" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 1" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 offer="Still alive?\n\nWell Then why not go kill some more zombies to earn some more cash?\n\nHappy Hunting!,\nHaidrGna"
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <action type="TrackQuest"/>
@@ -552,7 +521,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
 
 <quest id="quest_KillingForDukes2" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 2" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 2" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -561,7 +530,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes3" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 3" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 3" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -570,7 +539,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes4" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 4" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 4" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -580,7 +549,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes5" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 5" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 5" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -589,7 +558,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes6" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 6" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 6" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -598,7 +567,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes7" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 7" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 7" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -607,7 +576,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes8" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 8" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 8" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -617,7 +586,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes9" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 9" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 9" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -626,7 +595,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
 
 <quest id="quest_KillingForDukes10" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 10" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 10" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -636,7 +605,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
 
 <quest id="quest_KillingForDukes11" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 11" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 11" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -645,7 +614,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes12" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 12" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 12" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -655,7 +624,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes13" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 13" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 13" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -664,7 +633,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes14" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 14" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 14" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -673,7 +642,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes15" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 15" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 15" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -682,7 +651,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes16" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 16" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 16" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -692,7 +661,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes17" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 17" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 17" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -701,7 +670,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes18" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 18" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 18" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -710,7 +679,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes19" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 19" subtitle="Kill more Zombies!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 19" subtitle="Kill more Zombies!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -719,7 +688,7 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 </quest>
   
 <quest id="quest_KillingForDukes20" group_name="Killing For Dukes" category="quest"
-name="Killing For Dukes 20" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="The more zombies you kill the more dukes you will earn. Happy Hunting!"
+name="Killing For Dukes 20" subtitle="Kill more Zombies! Earn a bonus for persistance!" description="You will need to keep at least 2 slots of your inventory free, one for the coins you earn and one to continue doing this quest when it ends. If you lose the quest note, use the creative menu for a new one and look for q_GnamodZombieKilling."
 icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <objective type="ZombieKill"                                  value="25"/>
 
@@ -729,6 +698,34 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
 </quest>
 
+
+<!-- Old Quests to be removed -->
+<quest id="quest_GnamodHorde3" group_name="Horde Mode" category="quest"
+name="Some Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
+icon="ui_game_symbol_zombie" difficulty="hard">
+<objective type="ZombieKill"                                  value="10"/>
+
+<reward type="Item"           id="casinoCoin"                 value="5000"/>
+<reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
+</quest>
+
+<quest id="quest_GnamodHorde4" group_name="Horde Mode" category="quest"
+name="Some More Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
+icon="ui_game_symbol_zombie" difficulty="hard">
+<objective type="ZombieKill"                                  value="15"/>
+
+<reward type="Item"           id="casinoCoin"                 value="7000"/>
+<reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
+</quest>
+
+<quest id="quest_GnamodHorde5" group_name="Horde Mode" category="quest"
+name="Quite Some Zombie Hunting" subtitle="Remove some Zeds" description="Before you can really start to build to defend you need to get rid of those pesky stragglers first!"
+icon="ui_game_symbol_zombie" difficulty="hard">
+<objective type="ZombieKill"                                  value="25"/>
+
+<reward type="Item"           id="casinoCoin"                 value="10000"/>
+<reward type="Item"           id="q_GnamodZombieKilling"      value="1"/>
+</quest>  
 </quests>
 
 <!--

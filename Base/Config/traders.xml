@@ -1,763 +1,224 @@
-<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="casinoCoin" >
-<!--
-When adding items or blocks to the list, check if they have an "EconomicValue".
-Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
-
-quality_mod: adjusts the price range of all items with a quality level.
-	Price of QL 1 item =  item.EconomicValue * traders.quality_mod(low)
-	Price of QL 600 item =  item.EconomicValue * traders.quality_mod(high)
--->
-
-	<!-- <trader_economy_limits>
-		<item name="hazmatBoots" min="2" max="10"/>
-		<item name="hazmatPants" min="2" max="10"/>
-		<item name="arrow" min="1" max="100"/>
-		<item name="steelArrow" min="1" max="100"/>
-	</trader_economy_limits>
-
--->
-
-	<trader_item_groups>
-		<trader_item_group name="tshirtAll">
-			<item name="tshirtBlack"/>
-			<item name="tshirtBlue"/>
-			<item name="tshirtBrown"/>
-			<item name="tshirtGreen"/>
-			<item name="tshirtRed"/>
-			<item name="tshirtWhite"/>
-		</trader_item_group>
-
-		<trader_item_group name="bandanaAll">
-			<item name="bandana"/>
-			<item name="bandanaBlack"/>
-			<item name="bandanaBlue"/>
-			<item name="bandanaBrown"/>
-			<item name="bandanaGreen"/>
-			<item name="bandanaRed"/>
-		</trader_item_group>
-
-		<trader_item_group name="suitAll">
-			<item name="suitPantsBlack"/>
-			<item name="suitJacketBlack"/>
-			<item name="dressShoesBlack"/>
-		</trader_item_group>
-
-		<trader_item_group name="pantsAll">
-			<item name="denimPants"/>
-			<item name="blackDenimPants"/>
-			<item name="brownDenimPants"/>
-			<item name="redDenimPants"/>
-			<item name="armyPants"/>
-		</trader_item_group>
-
-		<trader_item_group name="skirtsAll">
-			<item name="skirt"/>
-			<item name="skirtRed"/>
-			<item name="skirtBrown"/>
-			<item name="skirtGreen"/>
-			<item name="skirtBlue"/>
-			<item name="skirtBlack"/>
-		</trader_item_group>
-
-		<trader_item_group name="denimShortsPantsAll">
-			<item name="denimShortsPants"/>
-			<item name="denimShortsPantsRed"/>
-			<item name="denimShortsPantsBrown"/>
-			<item name="denimShortsPantsGreen"/>
-			<item name="denimShortsPantsBlue"/>
-			<item name="denimShortsPantsBlack"/>
-		</trader_item_group>
-
-		<trader_item_group name="pufferCoatAll">
-			<item name="pufferCoat"/>
-			<item name="pufferCoatBlack"/>
-			<item name="pufferCoatBrown"/>
-			<item name="pufferCoatGreen"/>
-			<item name="pufferCoatRed"/>
-		</trader_item_group>
-
-		<trader_item_group name="shirtLongAll">
-			<item name="shirt"/>
-			<item name="shirtBlack"/>
-			<item name="shirtBlue"/>
-			<item name="shirtBrown"/>
-			<item name="shirtGreen"/>
-			<item name="shirtRed"/>
-			<item name="armyShirt"/>
-		</trader_item_group>
-
-		<trader_item_group name="skullCapAll">
-			<item name="skullCap"/>
-			<item name="skullCapBlack"/>
-			<item name="skullCapBlue"/>
-			<item name="skullCapBrown"/>
-			<item name="skullCapGreen"/>
-			<item name="skullCapRed"/>
-		</trader_item_group>
-
-		<trader_item_group name="ballCapAll">
-			<item name="ballCap"/>
-			<item name="ballCapBlack"/>
-			<item name="ballCapBlue"/>
-			<item name="ballCapBrown"/>
-			<item name="ballCapGreen"/>
-			<item name="ballCapRed"/>
-		</trader_item_group>
-
-		<trader_item_group name="pressboyCapAll">
-			<item name="pressboyCapBlack"/>
-			<item name="pressboyCapBlue"/>
-			<item name="pressboyCapBrown"/>
-			<item name="pressboyCapGreen"/>
-			<item name="pressboyCapRed"/>
-			<item name="pressboyCapWhite"/>
-		</trader_item_group>
-
-		<trader_item_group name="sweatshirtAll">
-			<item name="sweatshirt"/>
-			<item name="sweatshirtBlack"/>
-			<item name="sweatshirtBlue"/>
-			<item name="sweatshirtBrown"/>
-			<item name="sweatshirtGreen"/>
-			<item name="sweatshirtRed"/>
-		</trader_item_group>
-
-		<trader_item_group name="hoodedSweatshirtAll">
-			<item name="hoodedSweatshirtBlack"/>
-			<item name="hoodedSweatshirtBlue"/>
-			<item name="hoodedSweatshirtBrown"/>
-			<item name="hoodedSweatshirtGreen"/>
-			<item name="hoodedSweatshirtRed"/>
-			<item name="hoodedSweatshirtWhite"/>
-		</trader_item_group>
-
-		<trader_item_group name="tankTopAll">
-			<item name="tankTopBlue"/>
-			<item name="tankTopGreen"/>
-			<item name="tankTopPurple"/>
-			<item name="tankTopRed"/>
-			<item name="tankTopWhite"/>
-		</trader_item_group>
-
-		<trader_item_group name="cowboyHatAll">
-			<item name="cowboyHat"/>
-			<item name="blackCowboyHat"/>
-		</trader_item_group>
-
-		<trader_item_group name="overallsAll">
-			<item name="overalls"/>
-		</trader_item_group>
-
-		<trader_item_group name="hazmatGear" count="1,2">
-			<item name="hazmatBoots"/>
-			<item name="hazmatPants"/>
-			<item name="hazmatShirt"/>
-			<item name="hazmatGloves"/>
-			<item name="hazmatMask"/>
-			<item name="militaryFiber" count="1,6" prob="2"/>
-		</trader_item_group>
-
-		<trader_item_group name="banditArmor">
-			<item name="heavyBanditGloves"/>
-			<item name="heavyBanditGasmask"/>
-			<item name="heavyBanditBoots"/>
-			<item name="heavyBanditLegArmor"/>
-			<item name="heavyBanditChestArmor"/>
-		</trader_item_group>
-
-		<trader_item_group name="hats">
-			<item group="cowboyHatAll"/>
-			<item group="skullCapAll"/>
-			<item group="ballCapAll"/>
-			<item name="clothHat"/>
-			<item name="footballHelmet"/>
-		</trader_item_group>
-
-		<trader_item_group name="clothes">
-			<item group="pufferCoatAll"/>
-			<item group="skullCapAll"/>
-			<item group="shirtLongAll"/>
-			<item group="pantsAll"/>
-			<item group="skirtsAll" prob="0.5"/>
-			<item group="tankTopAll"/>
-			<item group="bandanaAll"/>
-			<item group="sweatshirtAll"/>
-			<item group="cowboyHatAll"/>
-			<item name="cowboyBootsBrown"/>
-			<item name="cowboyBootsBlack"/>
-			<item group="tshirtAll"/>
-			<item group="hoodedSweatshirtAll"/>
-			<item group="ballCapAll"/>
-			<item group="pressboyCapAll"/>
-			<item group="suitAll" prob="0.2"/>
-			<item name="wornBoots"/>
-			<item name="shades"/>
-			<item name="aviatorGoggles"/>
-			<item name="footballHelmet"/>
-			<item name="leatherDuster" prob="0.2"/>
-			<item name="leatherDusterBlack" prob="0.1"/>
-			<item group="hazmatGear" prob="0.1"/>
-			<item name="facialPiercings" prob="0.1"/>
-		</trader_item_group>
-
-		<trader_item_group name="warmClothes">
-			<item group="pufferCoatAll"/>
-			<item group="skullCapAll"/>
-			<item group="shirtLongAll"/>
-			<item group="pantsAll"/>
-			<item group="sweatshirtAll"/>
-			<item group="hoodedSweatshirtAll"/>
-			<item name="shades"/>
-			<item name="leatherDuster" prob="0.6"/>
-			<item name="leatherDusterBlack" prob="0.2"/>
-		</trader_item_group>
-
-		<trader_item_group name="lightArmor">
-			<item name="clothPants"/>
-			<item name="clothJacket"/>
-			<item name="clothBoots"/>
-			<item name="clothGloves"/>
-			<item name="leatherBoots"/>
-			<item name="leatherPants"/>
-			<item name="leatherJacket"/>
-			<item name="leatherGloves"/>
-			<item name="goggles"/>
-		</trader_item_group>
-
-		<trader_item_group name="heavyArmor">
-			<item name="ironBoots"/>
-			<item name="ironLegArmor"/>
-			<item name="ironChestArmor"/>
-			<item name="ironGloves"/>
-			<item name="swatHelmet"/>
-			<item name="miningHelmet"/>
-		</trader_item_group>
-
-		<trader_item_group name="militaryArmor">
-			<item name="militaryGloves"/>
-			<item name="militaryHelmet"/>
-			<item name="militaryBoots"/>
-			<item name="militaryLegArmor"/>
-			<item name="militaryVest"/>
-			<item name="militaryFiber" count="1,5" prob="2"/>
-			<item name="nightvisionGoggles"/>
-		</trader_item_group>
-
-		<trader_item_group name="Armor">
-			<item group="clothes" prob="0.500"/>
-			<item group="lightArmor" prob="0.300"/>
-			<item group="heavyArmor" prob="0.100"/>
-      <item group="banditArmor" prob="0.050"/>
-      <item group="militaryArmor" prob="0.050"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsCommonParts">
-			<item name="partsPistol_barrel"/>
-			<item name="partsPistol_parts"/>
-			<item name="partsPistol_receiver"/>
-			<item name="partsPistol_grip"/>
-			<item name="partsPumpShotgun_barrelLong"/>
-			<item name="partsPumpShotgun_parts"/>
-			<item name="partsPumpShotgun_barrelShort"/>
-			<item name="partsPumpShotgun_stockShort"/>
-			<item name="partsPumpShotgun_stockLong"/>
-			<item name="partsPumpShotgun_receiver"/>
-			<item name="partsHuntingRifle_barrel"/>
-			<item name="partsHuntingRifle_stock"/>
-			<item name="partsHuntingRifle_receiver"/>
-			<item name="partsHuntingRifle_parts"/>
-			<item name="parts44Magnum_cylinder" prob="0.3"/>
-			<item name="parts44Magnum_frame" prob="0.3"/>
-			<item name="parts44Magnum_grip" prob="0.3"/>
-			<item name="parts44Magnum_parts" prob="0.3"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsMilitaryParts">
-			<item name="partsMP5_barrel"/>
-			<item name="partsMP5_stock"/>
-			<item name="partsMP5_receiver"/>
-			<item name="partsMP5_parts"/>
-			<item name="partsAK47_barrel"/>
-			<item name="partsAK47_stock"/>
-			<item name="partsAK47_receiver"/>
-			<item name="partsAK47_parts"/>
-			<item name="partsSniperRifle_barrel"/>
-			<item name="partsSniperRifle_stock"/>
-			<item name="partsSniperRifle_receiver"/>
-			<item name="partsSniperRifle_parts"/>
-			<item name="partsRocketLauncher_barrel"/>
-			<item name="partsRocketLauncher_stock"/>
-			<item name="partsRocketLauncher_receiver"/>
-			<item name="partsRocketLauncher_parts"/>
-			<item name="rocketLauncherSchematic"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsCompoundBowParts">
-			<item name="partsCompoundBow_body"/>
-			<item name="partsCompoundBow_grip"/>
-			<item name="partsCompoundBow_parts"/>
-			<item name="partsCompoundBow_string"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsMelee">
-			<item name="clubIron"/>
-			<item name="clubBarbed" prob="0.7"/>
-			<item name="clubSpiked" prob="0.5"/>
-			<item name="huntingKnife" prob="0.5"/>
-			<item name="machete" prob="0.2"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsCrossbow+ammo" count="all">
-			<item name="crossbow" count="1"/>
-			<item name="ironCrossbowBolt" count="10,30"/>
-		</trader_item_group>
-
-		<trader_item_group name="rareMedicine" count="1">
-			<item name="firstAidKit"/>
-			<item name="beaker"/>
-			<item name="antibiotics"/>
-			<item name="bloodDrawKit"/>
-			<item name="firstAidKitSchematic"/>
-		</trader_item_group>
-
-		<trader_item_group name="medicine" count="1">
-			<item name="painkillers"/>
-			<item name="firstAidBandage"/>
-			<item name="bandage"/>
-			<item name="emptyJar"/>
-			<item name="bloodBag"/>
-			<item name="vitamins"/>
-			<item name="grainAlcohol"/>
-			<item name="splint"/>
-			<item group="rareMedicine"/>
-		</trader_item_group>
-
-		<trader_item_group name="questChallenge" count="1">
-			<item name="qc_silenceofthelambs" count="1"/>
-			<item name="qc_drunkanddisorderly" count="1"/>
-			<item name="qc_nurseyoubacktohealth" count="1"/>
-			<item name="qc_copanattitude" count="1"/>
-			<item name="qc_dogdaysareover" count="1"/>
-			<item name="qc_itsbitsyspider" count="1"/>
-			<item name="qc_ladykiller" count="1"/>
-			<item name="qc_maneater" count="1"/>
-			<item name="qc_imalumberjackandimokay" count="1"/>
-			<item name="qc_yournothingspecial" count="1"/>
-			<item name="qc_killthewabbit" count="1"/>
-			<item name="qc_nailsomechicks" count="1"/>
-			<item name="qc_thatlldopig" count="1"/>
-			<item name="qc_stagparty" count="1"/>
-			<item name="qc_dontfeedthebears" count="1"/>
-			<item name="qc_buythefarm" count="1"/>
-			<item name="qt_taylor" count="1" prob="0.2"/>
-			<item name="qt_nickole" count="1" prob="0.2"/>
-			<item name="qt_stephan" count="1" prob="0.2"/>
-			<item name="qt_jennifer" count="1" prob="0.2"/>
-			<item name="qt_claude" count="1" prob="0.2"/>
-			<item name="qt_sarah" count="1" prob="0.2"/>
-			<item name="qt_raphael" count="1" prob="0.2"/>
-		</trader_item_group>
-
-		<trader_item_group name="commonBooks" count="1">
-			<item name="crossbowSchematic"/>
-			<item name="huntingKnifeBook"/>
-			<item name="huntingRifleSchematic"/>
-			<item name="leatherBootsSchematic"/>
-			<item name="leatherGlovesSchematic"/>
-			<item name="leatherHoodSchematic"/>
-			<item name="leatherJacketSchematic"/>
-			<item name="leatherPantsSchematic"/>
-			<item name="pistolBook"/>
-			<item name="pumpShotgunSchematic"/>
-			<item name="scrapBootsSchematic" prob="0.7"/>
-			<item name="scrapLegArmorSchematic" prob="0.7"/>
-			<item name="scrapChestArmorSchematic" prob="0.7"/>
-			<item name="scrapHelmetSchematic" prob="0.7"/>
-			<item name="scrapGlovesSchematic" prob="0.7"/>
-		</trader_item_group>
-
-		<trader_item_group name="rareBooks" count="1">
-			<item name="ak47Schematic"/>
-			<item name="augerSchematic"/>
-			<item name="chainsawSchematic"/>
-			<item name="clubSpikedSchematic"/>
-			<item name="explodingCrossbowBoltSchematic"/>
-			<item name="firstAidKitSchematic"/>
-			<item name="flamingArrowSchematic"/>
-			<item name="gasCanSchematic"/>
-			<item name="ironBootsSchematic"/>
-			<item name="ironChestArmorSchematic"/>
-			<item name="ironGlovesSchematic"/>
-			<item name="ironHelmetSchematic"/>
-			<item name="ironLegArmorSchematic"/>
-			<item name="minibikesForDumbshits"/>
-			<item name="rocketLauncherSchematic"/>
-			<item name="shotgunSlugSchematic"/>
-			<item name="sledgehammerSchematic"/>
-			<item name="smgSchematics"/>
-			<item name="sniperRifleSchematic"/>
-			<item name="theEnforcerMagazine"/>
-			<item name="compoundBowSchematic"/>
-			<item name="herbalAntibioticsRecipe" prob="0.5"/>
-			<!-- <item name="macDyverBook" prob="1.5"/> -->
-		</trader_item_group>
-
-		<trader_item_group name="paintMagazines" count="1">
-			<item name="paintMagazineDecorations"/> <!-- traders -->
-			<item name="paintMagazineFaux"/> <!-- cntBookcase -->
-			<item name="paintMagazineMasonry"/> <!-- workingStiffs -->
-			<item name="paintMagazineMetal"/> <!-- garage -->
-			<item name="paintMagazineWallCoverings"/> <!-- nightstands -->
-			<item name="paintMagazineWoodAndRoofing"/> <!-- lumberjacks -->
-		</trader_item_group>
-
-		<trader_item_group name="books" count="1">
-			<item group="questChallenge" prob="0.2"/>
-			<item group="rareBooks" prob="0.3"/>
-			<item group="commonBooks"/>
-			<item group="paintMagazines" prob="0.09"/>
-			<item name="paintMagazineDecorations" prob="0.09"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsGunsCommon">
-			<item name="gunPistol"/>
-			<item name="gunShortPumpShotgun"/>
-			<item name="gunLongPumpShotgun" prob="0.8"/>
-			<item name="gunHuntingRifle" prob="0.7"/>
-			<item name="nightvisionGoggles" prob="0.5"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsGunsMilitary">
-			<item name="gunMP5" prob="0.8"/>
-			<item name="gunSniperRifle" prob="1"/>
-			<item name="gunAK47" prob="0.6"/>
-			<item name="gunRocketLauncher" prob="0.4"/>
-			<item name="nightvisionGoggles" prob="0.6"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsMixedParts">
-			<item group="weaponsCommonParts" prob="3"/>
-			<item group="weaponsMilitaryParts" prob="1"/>
-			<item group="weaponsCompoundBowParts" prob="1"/>
-		</trader_item_group>
-
-		<trader_item_group name="weaponsGunsMixed">
-			<item group="weaponsGunsCommon" prob="3"/>
-			<item group="weaponsGunsMilitary" prob="1"/>
-			<item name="compoundBow" prob="0.15"/>
-		</trader_item_group>
-
-		<trader_item_group name="ammo">
-			<item name="9mmBullet" count="40,120"/>
-			<item name="762mmBullet" count="20,80"/>
-			<item name="44MagBullet" count="15,50" prob="0.5"/>
-			<item name="12GAShell" count="15,50"/>
-			<item name="12GASlug" count="6,18" prob="0.1"/>
-			<item name="rocket" count="1,4"/>
-			<item name="ironArrow" count="20,60"/>
-			<item name="steelArrow" count="20,60"/>
-			<item name="ironCrossbowBolt" count="20,60"/>
-			<item name="steelCrossbowBolt" count="20,60"/>
-		</trader_item_group>
-
-		<trader_item_group name="ammoSupplies">
-			<item name="feather" count="10,45"/> <!-- 5 -->
-		</trader_item_group>
-
-
-		<trader_item_group name="seeds">
-			<item name="plantedPotato1"/>
-			<item name="plantedCoffee1"/>
-			<item name="plantedCorn1"/>
-			<item name="plantedBlueberry1"/>
-			<item name="plantedCotton1" prob="0.5"/>
-			<item name="plantedGoldenrod1"/>
-			<item name="plantedAloe1"/>
-			<item name="plantedMushroom1"/>
-			<item name="plantedYucca1"/>
-			<item name="plantedChrysanthemum1" prob="0.5"/>
-			<item name="treePlantedMountainPine1m" prob="0.3"/>
-			<item name="treePlantedMaple1m" prob="0.3"/>
-			<item name="treePlantedWinterPine1m" prob="0.3"/>
-		</trader_item_group>
-
-		<trader_item_group name="cannedfood">
-			<item name="canBeef"/>
-			<item name="canCatfood"/>
-			<item name="canChicken"/>
-			<item name="canChili"/>
-			<item name="canDogfood"/>
-			<item name="canHam"/>
-			<item name="canLamb"/>
-			<item name="canMiso"/>
-			<item name="canPasta"/>
-			<item name="canPeas"/>
-			<item name="canSalmon"/>
-			<item name="canSoup"/>
-			<item name="canStock"/>
-			<item name="canTuna"/>
-			<item name="canPears"/>
-		</trader_item_group>
-
-		<trader_item_group name="foodSupplies">
-			<item name="egg" count="2,6"/>
-			<item name="rawMeat" count="2,4"/>
-			<item name="corn" count="4,12"/>
-			<item name="potato" count="4,12"/>
-			<item name="blueberries" count="5,15"/>
-			<item name="snowberryPlant" count="4,8"/>
-			<item name="snowberryExtract" count="1,5"/>
-			<item name="cornMeal" count="5,15"/>
-			<item name="mushrooms" count="4,8"/>
-			<item name="foodHoney" count="1,2"/>
-		</trader_item_group>
-
-		<trader_item_group name="preparedFood">
-			<item name="blueberryPie"/>
-			<item name="meatStew"/>
-			<item name="cornBread"/>
-			<item name="charredMeat"/>
-			<item name="grilledMeat"/>
-			<item name="boiledMeat"/>
-			<item name="eggboiled"/>
-			<item name="bakedPotato"/>
-			<item name="baconAndEggs"/>
-			<item name="vegetableStew"/>
-		</trader_item_group>
-
-		<trader_item_group name="preparedDrink">
-			<item name="foodYuccaJuice"/>
-			<item name="bottledWater"/>
-			<item name="goldenRodTea"/>
-			<item name="redTea"/>
-			<item name="coffee"/>
-			<item name="beer"/>
-			<item name="grainAlcohol"/>
-			<item name="snowberryJuice"/>
-		</trader_item_group>
-
-		<trader_item_group name="landMines" count="1">
-			<item name="mineCandyTin" count="1,6"/>
-			<item name="mineHubcap" count="1,5"/>
-			<item name="mineAirFilter" count="1,4"/>
-		</trader_item_group>
-
-		<trader_item_group name="constructionSupplies">
-			<item name="cement" count="1,5"/> <!-- 70 -->
-			<item name="cobblestones" count="2,8"/> <!-- 70 -->
-			<item name="concreteMix" count="5,20"/> <!-- 20 -->
-			<item name="nail" count="3,15"/> <!-- 10 -->
-			<item name="rebarFrameBlock" count="5,20"/> <!-- 10 -->
-			<item name="steelPolish" count="5,35" prob="2"/>
-			<item group="landMines" count="1" prob="0.3"/>
-		</trader_item_group>
-
-		<trader_item_group name="generalResources"> <!-- bundle size -->
-			<item name="wood" count="10,50"/> <!-- 50 -->
-			<item name="yuccaFibers" count="5,40"/> <!-- 50 -->
-			<item name="crushedSand" count="10,40"/> <!-- 50 -->
-			<item name="scrapIron" count="15,80"/> <!-- 10 -->
-			<item name="scrapPlastics" count="30,150"/>
-			<item name="forgedIron" count="5,50"/>
-			<item name="forgedSteel" count="5,50"/>
-			<item name="shortMetalPipe" count="5,20"/>
-			<item name="macheteBlade" count="1,3"/>
-			<item name="oilShale" count="20,60"/> <!-- 50 -->
-			<item name="animalHide" count="5,25"/>
-			<item name="leather" count="5,30"/>
-			<item name="scrapBrass" count="5,40"/> <!-- 10 -->
-			<item name="clayLump" count="5,25"/> <!-- 150 -->
-			<item name="scrapLead" count="5,90"/> <!-- 5 -->
-			<item name="cloth" count="5,100"/>
-			<item name="militaryFiber" count="5,20" prob="0.6"/>
-			<item name="coal" count="20,60"/> <!-- 10 -->
-			<item name="potassiumNitratePowder" count="20,60"/> <!-- 10 -->
-			<item name="gunPowder" count="3,30"/> <!-- 10 -->
-			<item name="oil" count="3,10"/>
-			<item name="animalFat" count="5,40"/>
-			<item name="bucket" prob="0.6"/>
-			<item name="candle" count="5,20"/>
-			<item name="headlight" count="5,20" prob="0.6"/>
-			<item name="ductTape" count="5,20"/>
-			<item name="spring" count="5,30"/>
-			<item name="mechanicalParts" count="15,80" prob="0.8"/>
-			<item name="electricParts" count="15,50" prob="0.7"/>
-			<item name="electronicParts" count="10,30" prob="0.6"/>
-			<item name="insulator" count="20,60" prob="0.6"/>
-		</trader_item_group>
-
-		<trader_item_group name="rareTools" count="1">
-			<item name="chainsaw"/>
-			<item name="auger" prob="0.3"/>
-			<item name="partsChainsaw_parts"/>
-			<item name="partsAuger_parts"/>
-			<item name="partsAuger_blade"/>
-			<item name="partsChainsaw_blade"/>
-			<item name="nailgun"/>
-			<item name="smallEngine"/>
-			<item name="pickaxeSteel"/>
-			<item name="fireaxeSteel"/>
-			<item name="shovelSteel"/>
-		</trader_item_group>
-
-		<trader_item_group name="tools" count="1">
-			<item name="pickaxeIron"/>
-			<item name="shovelIron"/>
-			<item name="fireaxeIron"/>
-			<item name="sledgehammer"/>
-			<item name="hoeIron"/>
-			<item name="clawHammer"/>
-			<item name="wrench" prob="0.8"/>
-			<item name="repairKit" count="1,4"/>
-			<item name="wood" count="50,250"/>
-			<item name="anvil" count="1"/>
-			<!-- <item name="calipers" prob="0.6"/> -->
-			<item name="toolAndDieSet" prob="0.6"/>
-			<item name="forgedIron" count="2,8" prob="0.21"/>
-			<item name="forgedSteel" count="2,8" prob="0.12"/>
-			<item name="fertilizer" count="1,3" prob="0.5"/>
-			<item name="paintTool" prob="0.5"/>
-			<item name="wireTool"/>
-		</trader_item_group>
-
-		<trader_item_group name="minibikeParts" count="1">
-			<item name="minibikeWheels"/>
-			<item name="minibikeChassis"/>
-			<item name="minibikeSeat"/>
-			<item name="minibikeHandlebars"/>
-			<item name="smallEngine" prob="0.3"/>
-			<item name="shoppingBasketItem" prob="0.3"/>
-		</trader_item_group>
-
-		<trader_item_group name="workstations" count="1">
-			<item name="forge"/>
-			<item name="workbench"/>
-			<item name="cementMixer"/>
-		</trader_item_group>
-
-		<trader_item_group name="decorativeCurtains" count="all">
-			<item name="curtain_top1Sheet3" count="4,15"/>
-			<item name="curtain_bottom1Sheet3" count="4,15"/>
-		</trader_item_group>
-
-		<trader_item_group name="decorativeBlinds" count="all">
-			<item name="miniblindTopSheet" count="4,15"/>
-			<item name="miniblindBottomSheet" count="4,15"/>
-		</trader_item_group>
-
-
-		<trader_item_group name="decorativeBlocks" count="1">
-			<item group="decorativeCurtains"/>
-			<item group="decorativeBlinds"/>
-			<item name="airConditioner"/>
-			<item name="chaulkboardPlate"/>
-			<item name="cntBookcase"/>
-			<item name="cntCabinetOldSink"/>
-			<item name="cntCashRegister"/>
-			<item name="cntCooler"/>
-			<item name="cntFileCabinet"/>
-			<item name="cntFurnaceDrawer"/>
-			<item name="cntGasPump"/>
-			<item name="cntGraniteSink"/>
-			<item name="cntGreenDrawer"/>
-			<item name="cntLockers"/>
-			<item name="cntMunitionsBox"/>
-			<item name="cntOven"/>
-			<item name="faucet02"/>
-			<item name="faucet04"/>
-			<item name="faucetBrass02"/>
-			<item name="faucetBrass04"/>
-			<item name="fountain"/>
-			<item name="fusebox"/>
-			<item name="mattress"/>
-			<item name="mattressFlat"/>
-			<item name="metalPipeCap"/>
-			<item name="metalPipeCorner"/>
-			<item name="metalPipeFlange"/>
-			<item name="metalPipeJoint"/>
-			<item name="metalPipeStraight"/>
-			<item name="metalPipeValve"/>
-			<item name="shoppingCartEmpty"/>
-			<item name="treeAzalea"/>
-			<item name="barStool"/>
-			<item name="cntTrash_can01"/>
-			<item name="cntBin"/>
-			<item name="window02" count="4,15"/>
-			<item name="shutters1Plate" count="4,15"/>
-		</trader_item_group>
-
-		<trader_item_group name="traderAlways" count="all">
-			<item name="gunPowder" count="5,25"/> <!-- 10 -->
-			<item group="ammo" count="3"/>
-			<item group="ammoSupplies" count="2"/>
-			<item name="potassiumNitratePowder" count="2,5"/> <!-- 10 -->
-		</trader_item_group>
-
-		<trader_item_group name="traderGeneral" count="1">
-			<item name="beerBook" count="1" prob="0.3"/>
-			<item name="plantedHop1" count="1,5" prob="0.3"/>
-			<item name="paint" count="1,12"/> <!-- 50 -->
-			<item group="clothes" count="2,4"/>
-			<item group="weaponsCommonParts" count="1,3" prob="0.5"/>
-			<item group="weaponsMelee" count="1,3" prob="1.5"/>
-			<item group="weaponsCrossbow+ammo" count="1"/>
-			<item group="weaponsGunsCommon" count="1" prob="1"/>
-			<item name="flashlight02"/>
-			<item group="books" count="1,2" prob="0.6"/>
-			<item group="ammo" count="2,4" prob="2"/>
-			<item group="ammoSupplies" count="1,3"/>
-			<item group="seeds" count="1,4"/>
-			<item group="cannedfood" count="1,2"/>
-			<item group="foodSupplies" count="1,4"/>
-			<item group="preparedFood" count="1,2"/>
-			<item group="preparedDrink" count="1"/>
-			<item group="constructionSupplies" count="1,3" prob="0.8"/>
-			<item group="rareTools" count="1" prob="0.2"/>
-			<item group="rareMedicine" count="1" prob="0.2"/>
-			<item group="medicine" count="1,2" prob="1"/>
-		</trader_item_group>
-
-		<trader_item_group name="traderElectrical" count="1">
-			<item name="electricParts" count="20,50" prob="1"/>
-			<item name="electronicParts" count="15,35" prob="0.5"/>
-			<item name="generatorbank" count="1" prob="1"/>
-			<item name="batterybank" count="1" prob="0.7"/>
-			<item name="bladeTrap" count="1,3" prob="0.8"/>
-			<item name="tripwirepost" count="1,5" prob="1.0"/>
-			<item name="electricfencepost" count="1,4" prob="1.0"/>
-			<item name="pressureplate" count="1,5" prob="1.0"/>
-			<item name="steelDart" count="15,70" prob="1.0"/>
-			<item name="wallLight01_player" count="1,6" prob="1.0"/>
-			<item name="ceilingLight01_player" count="1,6" prob="1.0"/>
-			<item name="ceilingLight02_player" count="1,6" prob="1.0"/>
-			<item name="ceilingLight07_player" count="1,5" prob="1.0"/>
-			<item name="industrialLight01_player" count="1,5" prob="1.0"/>
-			<item name="spotlightPlayer" count="1,2" prob="1.0"/>
-			<item name="porchLight01_player" count="1,6" prob="1.0"/>
-			<item name="dartTrap" count="1,2" prob="1.0"/>
-			<item name="electrictimerrelay" count="1,3" prob="1.0"/>
-			<item name="electricwirerelay" count="5,15" prob="1.0"/>
-			<item name="motionsensor" count="1,2" prob="1.0"/>
-			<item name="speaker" count="1,2" prob="1.0"/>
-			<item name="switch" count="3,9" prob="1.0"/>
-		</trader_item_group>
-
-		<trader_item_group name="stashOnlyItemsLow" count="1">
-			<item name="beerBook" count="1"/>
-			<item name="plantedHop1" count="1,5"/>
-			<item name="batterybankSchematic" count="1" prob="0.5"/>
-			<item name="autoTurret" count="1,2" prob="0.5"/>
-			<item name="shotgunTurret" count="1,2" prob="0.7"/>
-		</trader_item_group>
-
-		<trader_item_group name="stashOnlyItemsHigh" count="1">
-			<item name="beerBook" count="1"/>
-			<item name="plantedHop1" count="2,8"/>
-			<item name="solarCell" count="1,2"/>
-			<item name="batterybankSchematic" count="1" prob="0.5"/>
-			<item name="autoTurret" count="1,2" prob="0.5"/>
-			<item name="shotgunTurret" count="1,3" prob="0.7"/>
-		</trader_item_group>
+<traders buy_markup="3.0" sell_markdown="0.25" quality_mod="0.25,2.25" currency_item="casinoCoin">
+
+<trader_item_groups>
+<trader_item_group name="tshirtAll">
+<item name="tshirtBlack"/>
+<item name="tshirtBlue"/>
+<item name="tshirtBrown"/>
+<item name="tshirtGreen"/>
+<item name="tshirtRed"/>
+<item name="tshirtWhite"/>
+</trader_item_group>
+
+<trader_item_group name="bandanaAll">
+<item name="bandana"/>
+<item name="bandanaBlack"/>
+<item name="bandanaBlue"/>
+<item name="bandanaBrown"/>
+<item name="bandanaGreen"/>
+<item name="bandanaRed"/>
+</trader_item_group>
+
+<trader_item_group name="suitAll">
+<item name="suitPantsBlack"/>
+<item name="suitJacketBlack"/>
+<item name="dressShoesBlack"/>
+</trader_item_group>
+
+<trader_item_group name="pantsAll">
+<item name="denimPants"/>
+<item name="blackDenimPants"/>
+<item name="brownDenimPants"/>
+<item name="redDenimPants"/>
+<item name="armyPants"/>
+</trader_item_group>
+
+<trader_item_group name="skirtsAll">
+<item name="skirt"/>
+<item name="skirtRed"/>
+<item name="skirtBrown"/>
+<item name="skirtGreen"/>
+<item name="skirtBlue"/>
+<item name="skirtBlack"/>
+</trader_item_group>
+
+<trader_item_group name="denimShortsPantsAll">
+<item name="denimShortsPants"/>
+<item name="denimShortsPantsRed"/>
+<item name="denimShortsPantsBrown"/>
+<item name="denimShortsPantsGreen"/>
+<item name="denimShortsPantsBlue"/>
+<item name="denimShortsPantsBlack"/>
+</trader_item_group>
+
+<trader_item_group name="pufferCoatAll">
+<item name="pufferCoat"/>
+<item name="pufferCoatBlack"/>
+<item name="pufferCoatBrown"/>
+<item name="pufferCoatGreen"/>
+<item name="pufferCoatRed"/>
+</trader_item_group>
+
+<trader_item_group name="shirtLongAll">
+<item name="shirt"/>
+<item name="shirtBlack"/>
+<item name="shirtBlue"/>
+<item name="shirtBrown"/>
+<item name="shirtGreen"/>
+<item name="shirtRed"/>
+<item name="armyShirt"/>
+</trader_item_group>
+
+<trader_item_group name="skullCapAll">
+<item name="skullCap"/>
+<item name="skullCapBlack"/>
+<item name="skullCapBlue"/>
+<item name="skullCapBrown"/>
+<item name="skullCapGreen"/>
+<item name="skullCapRed"/>
+</trader_item_group>
+
+<trader_item_group name="ballCapAll">
+<item name="ballCap"/>
+<item name="ballCapBlack"/>
+<item name="ballCapBlue"/>
+<item name="ballCapBrown"/>
+<item name="ballCapGreen"/>
+<item name="ballCapRed"/>
+</trader_item_group>
+
+<trader_item_group name="pressboyCapAll">
+<item name="pressboyCapBlack"/>
+<item name="pressboyCapBlue"/>
+<item name="pressboyCapBrown"/>
+<item name="pressboyCapGreen"/>
+<item name="pressboyCapRed"/>
+<item name="pressboyCapWhite"/>
+</trader_item_group>
+
+<trader_item_group name="sweatshirtAll">
+<item name="sweatshirt"/>
+<item name="sweatshirtBlack"/>
+<item name="sweatshirtBlue"/>
+<item name="sweatshirtBrown"/>
+<item name="sweatshirtGreen"/>
+<item name="sweatshirtRed"/>
+</trader_item_group>
+
+<trader_item_group name="hoodedSweatshirtAll">
+<item name="hoodedSweatshirtBlack"/>
+<item name="hoodedSweatshirtBlue"/>
+<item name="hoodedSweatshirtBrown"/>
+<item name="hoodedSweatshirtGreen"/>
+<item name="hoodedSweatshirtRed"/>
+<item name="hoodedSweatshirtWhite"/>
+</trader_item_group>
+
+<trader_item_group name="tankTopAll">
+<item name="tankTopBlue"/>
+<item name="tankTopGreen"/>
+<item name="tankTopPurple"/>
+<item name="tankTopRed"/>
+<item name="tankTopWhite"/>
+</trader_item_group>
+
+<trader_item_group name="cowboyHatAll">
+<item name="cowboyHat"/>
+<item name="blackCowboyHat"/>
+</trader_item_group>
+
+<trader_item_group name="overallsAll">
+<item name="overalls"/>
+</trader_item_group>
+
+<trader_item_group name="hazmatGear">
+<item name="hazmatBoots"/>
+<item name="hazmatPants"/>
+<item name="hazmatShirt"/>
+<item name="hazmatGloves"/>
+<item name="hazmatMask"/>
+</trader_item_group>
+
+<trader_item_group name="banditArmor">
+<item name="heavyBanditGloves"/>
+<item name="heavyBanditGasmask"/>
+<item name="heavyBanditBoots"/>
+<item name="heavyBanditLegArmor"/>
+<item name="heavyBanditChestArmor"/>
+</trader_item_group>
+
+<trader_item_group name="hats">
+<item group="cowboyHatAll"/>
+<item group="skullCapAll"/>
+<item group="ballCapAll"/>
+<item name="clothHat"/>
+<item name="footballHelmet"/>
+</trader_item_group>
+
+<trader_item_group name="clothes">
+<item group="pufferCoatAll"/>
+<item group="skullCapAll"/>
+<item group="shirtLongAll"/>
+<item group="pantsAll"/>
+<item group="skirtsAll"/>
+<item group="tankTopAll"/>
+<item group="bandanaAll"/>
+<item group="sweatshirtAll"/>
+<item group="cowboyHatAll"/>
+<item name="cowboyBootsBrown"/>
+<item name="cowboyBootsBlack"/>
+<item group="tshirtAll"/>
+<item group="hoodedSweatshirtAll"/>
+<item group="ballCapAll"/>
+<item group="pressboyCapAll"/>
+<item group="suitAll"/>
+<item name="wornBoots"/>
+<item name="shades"/>
+<item name="aviatorGoggles"/>
+<item name="footballHelmet"/>
+<item name="leatherDuster"/>
+<item name="leatherDusterBlack"/>
+<item group="hazmatGear"/>
+<item name="facialPiercings"/>
+</trader_item_group>
+
+<trader_item_group name="lightArmor">
+<item name="clothPants"/>
+<item name="clothJacket"/>
+<item name="clothBoots"/>
+<item name="clothGloves"/>
+<item name="leatherBoots"/>
+<item name="leatherPants"/>
+<item name="leatherJacket"/>
+<item name="leatherGloves"/>
+<item name="goggles"/>
+</trader_item_group>
+
+<trader_item_group name="heavyArmor">
+<item name="ironBoots"/>
+<item name="ironLegArmor"/>
+<item name="ironChestArmor"/>
+<item name="ironGloves"/>
+<item name="swatHelmet"/>
+<item name="miningHelmet"/>
+</trader_item_group>
+
+<trader_item_group name="militaryArmor">
+<item name="militaryGloves"/>
+<item name="militaryHelmet"/>
+<item name="militaryBoots"/>
+<item name="militaryLegArmor"/>
+<item name="militaryVest"/>
+<item name="nightvisionGoggles"/>
+</trader_item_group>
+
+<trader_item_group name="Armor">
+<item group="clothes"                   prob="0.500"/>
+<item group="lightArmor"                prob="0.300"/>
+<item group="heavyArmor"                prob="0.100"/>
+<item group="banditArmor"               prob="0.050"/>
+<item group="militaryArmor"             prob="0.050"/>
+</trader_item_group>
 
 <trader_item_group name="questTreasure">
 <item name="qt_taylor"                  prob="0.100"/>
@@ -1050,15 +511,15 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="oil"                        count="5,25"        prob="0.070"/>
 <item name="spring"                     count="5,25"        prob="0.050"/>
 <item name="scrapPlastics"              count="10,50"       prob="0.070"/>
-<item name="mechanicalParts"            count="5,25"        prob="0.100"/>
-<item name="insulator"                  count="5,10"        prob="0.025"/>
+<item name="mechanicalParts"            count="5,25"        prob="0.075"/>
+<item name="electricParts"              count="5,25"        prob="0.050"/>
 <item name="paint"                      count="10,100"      prob="0.005"/>
 <item name="emptyJar"                   count="5,15"        prob="0.050"/>
 <item name="candyTin"                   count="5,15"        prob="0.005"/>
 <item name="paper"                      count="10,50"       prob="0.050"/>
 </trader_item_group>
 
-<trader_item_group name="MaterialsRare">
+<trader_item_group name="MaterialsUncommon">
 <item name="cement"                     count="100,1000"    prob="0.075"/>
 <item name="concreteMix"                count="100,1000"    prob="0.250"/>
 <item name="steelPolish"                count="50,500"      prob="0.150"/>
@@ -1069,6 +530,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="electronicParts"            count="5,25"        prob="0.050"/>
 <item name="hubcap"                     count="10,50"       prob="0.025"/>
 <item name="airFilter"                  count="10,50"       prob="0.025"/>
+</trader_item_group>
+
+<trader_item_group name="MaterialsRare">
+<item name="concreteMix"                count="1000"        prob="0.400"/>
+<item name="steelPolish"                count="250"         prob="0.300"/>
+<item name="forgedSteel"                count="250"         prob="0.300"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingStations">
@@ -1105,11 +572,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 </trader_item_group>
 
 <trader_item_group name="BuildingTraps">
-<item name="dartTrap"                   count="1,2"         prob="0.200"/>
+<item name="dartTrap"                   count="2,4"         prob="0.150"/>
 <item name="shotgunTurret"              count="1,2"         prob="0.150"/>
 <item name="autoTurret"                 count="1,2"         prob="0.150"/>
-<item name="bladeTrap"                  count="1,4"         prob="0.250"/>
-<item name="spotlightPlayer"            count="1,4"         prob="0.250"/>
+<item name="bladeTrap"                  count="1,4"         prob="0.200"/>
+<item name="spotlightPlayer"            count="1,4"         prob="0.150"/>
+<item name="trapSpikesNew"              count="50,100"      prob="0.100"/>
+<item name="scrapIronLogSpike4"         count="25,50"       prob="0.100"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksCommon">
@@ -1119,20 +588,28 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item name="woodFrameBlock"             count="25,125"      prob="0.200"/>
 </trader_item_group>
 
-<trader_item_group name="BuildingBlocksRare">
+<trader_item_group name="BuildingBlocksUncommon">
 <item name="brickBlock"                 count="50,250"      prob="0.200"/>
 <item name="pouredConcreteBlock"        count="25,125"      prob="0.400"/>
 <item name="rebarFrameBlock"            count="25,125"      prob="0.300"/>
 <item name="ironBars"                   count="10,50"       prob="0.100"/>
 </trader_item_group>
 
-<trader_item_group name="HordeModeBasicMaterials">
+<trader_item_group name="BuildingBlocksRare">
+<item name="steelBlock"                 count="25,125"      prob="0.150"/>
+<item name="pouredConcreteBlock"        count="25,125"      prob="0.200"/>
+<item name="rebarFrameBlock"            count="25,125"      prob="0.200"/>
+<item name="rConcreteBlock"             count="25,125"      prob="0.350"/>
+<item name="steelBars"                  count="5,25"        prob="0.100"/>
+</trader_item_group>
+
+<trader_item_group name="BasicMaterials">
 <item group="MaterialsBasic"            prob="0.600"/>
 <item group="MaterialsCommon"           prob="0.350"/>
 <item group="BuildingBlocksCommon"      prob="0.050"/>
 </trader_item_group>
 
-<trader_item_group name="HordeModeBasicSupplies">
+<trader_item_group name="BasicSupplies">
 <item group="GunsNormal"                prob="0.030"/>
 <item group="FirearmAmmoLG"             prob="0.350"/>
 <item group="WeaponAmmo"                prob="0.100"/>
@@ -1147,125 +624,125 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Supplies"                  prob="0.040"/>
 <item group="Armor"                     prob="0.170"/>
 <item group="questTreasure"             prob="0.010"/>
-<!--<item name="q_GnamodZombieKilling"      prob="0.010"/>-->
 </trader_item_group>
 
 </trader_item_groups>
 
 <!-- General Trader -->
-<trader_info id="1" min_inventory="15" max_inventory="30" min_items_swapped="15" max_items_swapped="30" reset_interval="3" open_time="6:05" close_time="21:50">
+<trader_info id="1" min_inventory="20" max_inventory="40" min_items_swapped="20" max_items_swapped="40" reset_interval="3" open_time="6:05" close_time="21:50">
 <trader_items count="all">
-<item group="HordeModeBasicSupplies"/>
-<item group="HordeModeBasicMaterials"/>
+<item group="BasicSupplies"/>
+<item group="BasicMaterials"/>
 </trader_items>
 
-<tier_items level="1,499"           count="all">
-<item group="GunsNormal"            count="1"/>
-<item group="GunsModified"          count="0,1"/>
-<item group="GunsMilitary"          count="0,1"/>
-<item group="FirearmAmmoLG"         count="1"/>
-<item group="FirearmAmmoNG"         count="0,1"/>
-<item group="FirearmAmmoMG"         count="0,1"/>
-<item group="Explosives"            count="0,1"/>
-<item group="Weapons"               count="1"/>
-<item group="Tools"                 count="1"/>
-<item group="FoodCooked"            count="1"/>
-<item group="FoodDrinks"            count="1"/>
-<item group="MedicalHealing"        count="1"/>
-<item group="MedicalRemedy"         count="1"/>
-<item group="Supplies"              count="1"/>
-<item group="MaterialsBasic"        count="1"/>
-<item group="MaterialsCommon"       count="1"/>
-<item group="MaterialsRare"         count="0,1"/>
-<item group="BuildingBlocksCommon"  count="1"/>
-<item group="BuildingBlocksRare"    count="0,1"/>
-<item group="BuildingStations"      count="0,1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="1,499"             count="all">
+<item group="GunsNormal"              count="1"/>
+<item group="GunsModified"            count="0,1"/>
+<item group="GunsMilitary"            count="0,1"/>
+<item group="FirearmAmmoLG"           count="1"/>
+<item group="FirearmAmmoNG"           count="0,1"/>
+<item group="FirearmAmmoMG"           count="0,1"/>
+<item group="Explosives"              count="0,1"/>
+<item group="Weapons"                 count="1"/>
+<item group="Tools"                   count="1"/>
+<item group="FoodCooked"              count="1"/>
+<item group="FoodDrinks"              count="1"/>
+<item group="MedicalHealing"          count="1"/>
+<item group="MedicalRemedy"           count="1"/>
+<item group="Supplies"                count="1"/>
+<item group="MaterialsBasic"          count="1"/>
+<item group="MaterialsCommon"         count="1"/>
+<item group="MaterialsUncommon"       count="0,1"/>
+<item group="BuildingBlocksCommon"    count="1"/>
+<item group="BuildingBlocksUncommon"  count="0,1"/>
+<item group="BuildingStations"        count="0,1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
 </tier_items>
 
-<tier_items level="500,999"         count="all">
-<item group="GunsNormal"            count="1"/>
-<item group="GunsModified"          count="1"/>
-<item group="GunsMilitary"          count="0,1"/>
-<item group="FirearmAmmoLG"         count="1"/>
-<item group="FirearmAmmoNG"         count="1"/>
-<item group="FirearmAmmoMG"         count="0,1"/>
-<item group="Explosives"            count="1"/>
-<item group="Weapons"               count="1"/>
-<item group="Tools"                 count="1"/>
-<item group="FoodCooked"            count="1"/>
-<item group="FoodDrinks"            count="1"/>
-<item group="MedicalHealing"        count="1"/>
-<item group="MedicalRemedy"         count="1"/>
-<item group="Supplies"              count="1"/>
-<item group="MaterialsBasic"        count="1"/>
-<item group="MaterialsCommon"       count="1"/>
-<item group="MaterialsRare"         count="1"/>
-<item group="BuildingBlocksCommon"  count="1"/>
-<item group="BuildingBlocksRare"    count="1"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="500,999"           count="all">
+<item group="GunsNormal"              count="1"/>
+<item group="GunsModified"            count="1"/>
+<item group="GunsMilitary"            count="0,1"/>
+<item group="FirearmAmmoLG"           count="1"/>
+<item group="FirearmAmmoNG"           count="1"/>
+<item group="FirearmAmmoMG"           count="0,1"/>
+<item group="Explosives"              count="1"/>
+<item group="Weapons"                 count="1"/>
+<item group="Tools"                   count="1"/>
+<item group="FoodCooked"              count="1"/>
+<item group="FoodDrinks"              count="1"/>
+<item group="MedicalHealing"          count="1"/>
+<item group="MedicalRemedy"           count="1"/>
+<item group="Supplies"                count="1"/>
+<item group="MaterialsBasic"          count="1"/>
+<item group="MaterialsCommon"         count="1"/>
+<item group="MaterialsUncommon"       count="1"/>
+<item group="BuildingBlocksCommon"    count="1"/>
+<item group="BuildingBlocksUncommon"  count="1"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
 </tier_items>
 
-<tier_items level="1000,1499"       count="all">
-<item group="GunsNormal"            count="2"/>
-<item group="GunsModified"          count="1"/>
-<item group="GunsMilitary"          count="1"/>
-<item group="FirearmAmmoLG"         count="2"/>
-<item group="FirearmAmmoNG"         count="1"/>
-<item group="FirearmAmmoMG"         count="1"/>
-<item group="Explosives"            count="1"/>
-<item group="Weapons"               count="1"/>
-<item group="Tools"                 count="1"/>
-<item group="FoodCooked"            count="1"/>
-<item group="FoodDrinks"            count="1"/>
-<item group="MedicalHealing"        count="1"/>
-<item group="MedicalRemedy"         count="1"/>
-<item group="Supplies"              count="1"/>
-<item group="MaterialsBasic"        count="2"/>
-<item group="MaterialsCommon"       count="1"/>
-<item group="MaterialsRare"         count="1"/>
-<item group="BuildingBlocksCommon"  count="1"/>
-<item group="BuildingBlocksRare"    count="1"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="1000,1499"         count="all">
+<item group="GunsNormal"              count="2"/>
+<item group="GunsModified"            count="1"/>
+<item group="GunsMilitary"            count="1"/>
+<item group="FirearmAmmoLG"           count="2"/>
+<item group="FirearmAmmoNG"           count="1"/>
+<item group="FirearmAmmoMG"           count="1"/>
+<item group="Explosives"              count="1"/>
+<item group="Weapons"                 count="1"/>
+<item group="Tools"                   count="1"/>
+<item group="FoodCooked"              count="1"/>
+<item group="FoodDrinks"              count="1"/>
+<item group="MedicalHealing"          count="1"/>
+<item group="MedicalRemedy"           count="1"/>
+<item group="Supplies"                count="1"/>
+<item group="MaterialsBasic"          count="2"/>
+<item group="MaterialsCommon"         count="1"/>
+<item group="MaterialsUncommon"       count="1"/>
+<item group="BuildingBlocksCommon"    count="1"/>
+<item group="BuildingBlocksUncommon"  count="1"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
 </tier_items>
 
-<tier_items level="1500,-1"         count="all">
-<item group="GunsNormal"            count="2"/>
-<item group="GunsModified"          count="2"/>
-<item group="GunsMilitary"          count="2"/>
-<item group="FirearmAmmoLG"         count="2"/>
-<item group="FirearmAmmoNG"         count="2"/>
-<item group="FirearmAmmoMG"         count="2"/>
-<item group="Explosives"            count="1"/>
-<item group="Weapons"               count="2"/>
-<item group="Tools"                 count="2"/>
-<item group="FoodCooked"            count="1"/>
-<item group="FoodDrinks"            count="1"/>
-<item group="MedicalHealing"        count="1"/>
-<item group="MedicalRemedy"         count="1"/>
-<item group="Supplies"              count="1"/>
-<item group="MaterialsBasic"        count="1"/>
-<item group="MaterialsCommon"       count="1"/>
-<item group="MaterialsRare"         count="1"/>
-<item group="BuildingBlocksCommon"  count="1"/>
-<item group="BuildingBlocksRare"    count="1"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="1500,-1"           count="all">
+<item group="GunsNormal"              count="2"/>
+<item group="GunsModified"            count="2"/>
+<item group="GunsMilitary"            count="2"/>
+<item group="FirearmAmmoLG"           count="2"/>
+<item group="FirearmAmmoNG"           count="2"/>
+<item group="FirearmAmmoMG"           count="2"/>
+<item group="Explosives"              count="1"/>
+<item group="Weapons"                 count="2"/>
+<item group="Tools"                   count="2"/>
+<item group="FoodCooked"              count="1"/>
+<item group="FoodDrinks"              count="1"/>
+<item group="MedicalHealing"          count="1"/>
+<item group="MedicalRemedy"           count="1"/>
+<item group="Supplies"                count="1"/>
+<item group="MaterialsBasic"          count="1"/>
+<item group="MaterialsCommon"         count="1"/>
+<item group="MaterialsUncommon"       count="1"/>
+<item group="MaterialsRare"           count="1"/>
+<item group="BuildingBlocksCommon"    count="1"/>
+<item group="BuildingBlocksUncommon"  count="1"/>
+<item group="BuildingBlocksRare"      count="1"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
 </tier_items>
-
 </trader_info>
 
 <!-- Player Owned - Vending Machine -->
 <trader_info id="3" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" player_owned="true" />
 
 <!-- Vending Machines -->
-<trader_info id="4" reset_interval="9999" override_buy_markup="2.0" allow_sell="false" min_inventory="1" max_inventory="10" min_items_swapped="10" max_items_swapped="10">
+<trader_info id="4" reset_interval="9999" override_buy_markup="2.0" allow_sell="false" min_inventory="1" max_inventory="10" min_items_swapped="10" max_items_swapped="10" >
 <trader_items count="all">
 <item group="FoodCanned"/>
 <item group="FoodDrinks"/>
@@ -1277,34 +754,34 @@ quality_mod: adjusts the price range of all items with a quality level.
 -->
 <trader_info id="5" reset_interval="7" override_buy_markup="2.0" allow_sell="false" min_inventory="5" max_inventory="5" min_items_swapped="5" max_items_swapped="5">
 <trader_items count="all">
-<item group="HordeModeBasicSupplies"/>
-<item group="HordeModeBasicMaterials"/>
+<item group="BasicSupplies"/>
+<item group="BasicMaterials"/>
 </trader_items>
 </trader_info>
 <!-- Disposal Station -->
-<trader_info id="6" reset_interval="1" override_buy_markup="2.0" override_sell_markup="2.0" allow_sell="true" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100" />
+<trader_info id="6" reset_interval="1" override_buy_markup="3.0" override_sell_markup="0.50" allow_sell="true" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100" />
 
 <!-- Supplies Cache -->
-<trader_info id="7" reset_interval="1" allow_sell="false" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100">
+<trader_info id="7" reset_interval="1" allow_sell="false" min_inventory="200" max_inventory="200" min_items_swapped="200" max_items_swapped="200">
 <trader_items count="all">
-<item group="HordeModeBasicSupplies"/>
 </trader_items>
 
 <tier_items level="1,99"            count="all">
-<item group="GunsNormal"            count="2"/>
+<item group="GunsNormal"            count="1,2"/>
 <item group="GunsModified"          count="0,2"/>
 <item group="GunsMilitary"          count="0,1"/>
 <item group="FirearmAmmoLG"         count="5"/>
-<item group="FirearmAmmoNG"         count="0,3"/>
+<item group="FirearmAmmoNG"         count="1,3"/>
 <item group="FirearmAmmoMG"         count="0,2"/>
 <item group="Explosives"            count="0,2"/>
 <item group="Weapons"               count="1,2"/>
 <item group="Tools"                 count="2,3"/>
-<item group="FoodCooked"            count="0,2"/>
-<item group="FoodDrinks"            count="0,2"/>
-<item group="MedicalHealing"        count="0,2"/>
+<item group="FoodCooked"            count="1,2"/>
+<item group="FoodDrinks"            count="1,2"/>
+<item group="MedicalHealing"        count="1,2"/>
 <item group="MedicalRemedy"         count="0,2"/>
 <item group="Supplies"              count="0,2"/>
+<item group="BasicSupplies"         count="40"/>
 </tier_items>
 
 <tier_items level="100,199"         count="all">
@@ -1322,6 +799,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="1,2"/>
 <item group="MedicalRemedy"         count="1,2"/>
 <item group="Supplies"              count="1,2"/>
+<item group="BasicSupplies"         count="40"/>
 </tier_items>
 
 <tier_items level="200,299"         count="all">
@@ -1339,6 +817,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="2"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
+<item group="BasicSupplies"         count="40"/>
 </tier_items>
 
 <tier_items level="300,399"         count="all">
@@ -1356,6 +835,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="2"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
+<item group="BasicSupplies"         count="50"/>
 </tier_items>
 
 <tier_items level="400,499"         count="all">
@@ -1373,6 +853,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="5"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
+<item group="BasicSupplies"         count="50"/>
 </tier_items>
 
 <tier_items level="500,599"         count="all">
@@ -1390,6 +871,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="6"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
+<item group="BasicSupplies"         count="60"/>
 </tier_items>
 
 <tier_items level="600,699"         count="all">
@@ -1407,6 +889,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="6"/>
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
+<item group="BasicSupplies"         count="60"/>
 </tier_items>
 
 <tier_items level="700,799"         count="all">
@@ -1425,6 +908,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 <item name="Railgun"                count="0,1"/>
+<item group="BasicSupplies"         count="70"/>
 </tier_items>
 
 <tier_items level="800,899"         count="all">
@@ -1443,6 +927,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="3"/>
 <item group="Supplies"              count="3"/>
 <item name="Railgun"                count="0,1"/>
+<item group="BasicSupplies"         count="80"/>
 </tier_items>
 
 <tier_items level="900,999"         count="all">
@@ -1461,6 +946,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="4"/>
 <item group="Supplies"              count="4"/>
 <item name="Railgun"                count="1"/>
+<item group="BasicSupplies"         count="90"/>
 </tier_items>
 
 <tier_items level="1000,-1"         count="all">
@@ -1479,142 +965,165 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="4"/>
 <item group="Supplies"              count="4"/>
 <item name="Railgun"                count="1"/>
+<item group="BasicSupplies"         count="100"/>
 </tier_items>
 </trader_info>
 
 <!-- Materials Cache -->
-<trader_info id="8" reset_interval="1" allow_sell="false" min_inventory="100" max_inventory="100" min_items_swapped="100" max_items_swapped="100">
-
+<trader_info id="8" reset_interval="1" allow_sell="false" min_inventory="200" max_inventory="200" min_items_swapped="200" max_items_swapped="200">
 <trader_items count="all">
-<item group="HordeModeBasicMaterials"/>
 </trader_items>
 
-<tier_items level="1,99"            count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="1,5"/>
-<item group="BuildingBlocksCommon"  count="3,5"/>
-<item group="BuildingBlocksRare"    count="1,5"/>
-<item group="BuildingStations"      count="0,2"/>
-<item group="BuildingTraps"         count="0,2"/>
-<item group="BuildingElectricity"   count="0,2"/>
+<tier_items level="1,99"              count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="1,5"/>
+<item group="BuildingBlocksCommon"    count="3,5"/>
+<item group="BuildingBlocksUncommon"  count="1,5"/>
+<item group="BuildingStations"        count="0,2"/>
+<item group="BuildingTraps"           count="0,2"/>
+<item group="BuildingElectricity"     count="0,2"/>
+<item group="BasicMaterials"          count="25"/>
 </tier_items>
 
-<tier_items level="100,199"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="4"/>
-<item group="BuildingBlocksCommon"  count="3,5"/>
-<item group="BuildingBlocksRare"    count="4"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="100,199"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="BuildingBlocksCommon"    count="3,5"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="25"/>
 </tier_items>
 
-<tier_items level="200,299"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="5"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="5"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="200,299"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="5"/>
+<item group="BuildingBlocksCommon"    count="5"/>
+<item group="BuildingBlocksUncommon"  count="5"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="25"/>
 </tier_items>
 
-<tier_items level="300,399"         count="all">
-<item group="MaterialsBasic"        count="9"/>
-<item group="MaterialsCommon"       count="10"/>
-<item group="MaterialsRare"         count="5"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="5"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="300,399"           count="all">
+<item group="MaterialsBasic"          count="9"/>
+<item group="MaterialsCommon"         count="10"/>
+<item group="MaterialsUncommon"       count="5"/>
+<item group="BuildingBlocksCommon"    count="5"/>
+<item group="BuildingBlocksUncommon"  count="5"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="50"/>
 </tier_items>
 
-<tier_items level="400,499"         count="all">
-<item group="MaterialsBasic"        count="9"/>
-<item group="MaterialsCommon"       count="10"/>
-<item group="MaterialsRare"         count="10"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="5"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="400,499"           count="all">
+<item group="MaterialsBasic"          count="9"/>
+<item group="MaterialsCommon"         count="10"/>
+<item group="MaterialsUncommon"       count="8"/>
+<item group="MaterialsRare"           count="2"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="1"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="50"/>
 </tier_items>
 
-<tier_items level="500,599"         count="all">
-<item group="MaterialsBasic"        count="9"/>
-<item group="MaterialsCommon"       count="10"/>
-<item group="MaterialsRare"         count="10"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="12"/>
-<item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="3"/>
-<item group="BuildingElectricity"   count="3"/>
+<tier_items level="500,599"           count="all">
+<item group="MaterialsBasic"          count="9"/>
+<item group="MaterialsCommon"         count="10"/>
+<item group="MaterialsUncommon"       count="6"/>
+<item group="MaterialsRare"           count="4"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="8"/>
+<item group="BuildingBlocksRare"      count="4"/>
+<item group="BuildingStations"        count="3"/>
+<item group="BuildingTraps"           count="3"/>
+<item group="BuildingElectricity"     count="3"/>
+<item group="BasicMaterials"          count="60"/>
 </tier_items>
 
-<tier_items level="600,699"         count="all">
-<item group="MaterialsBasic"        count="10"/>
-<item group="MaterialsCommon"       count="10"/>
-<item group="MaterialsRare"         count="15"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="14"/>
-<item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="4"/>
-<item group="BuildingElectricity"   count="4"/>
+<tier_items level="600,699"           count="all">
+<item group="MaterialsBasic"          count="10"/>
+<item group="MaterialsCommon"         count="10"/>
+<item group="MaterialsUncommon"       count="10"/>
+<item group="MaterialsRare"           count="5"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="8"/>
+<item group="BuildingBlocksRare"      count="6"/>
+<item group="BuildingStations"        count="3"/>
+<item group="BuildingTraps"           count="4"/>
+<item group="BuildingElectricity"     count="4"/>
+<item group="BasicMaterials"          count="60"/>
 </tier_items>
 
-<tier_items level="700,799"         count="all">
-<item group="MaterialsBasic"        count="7"/>
-<item group="MaterialsCommon"       count="7"/>
-<item group="MaterialsRare"         count="29"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="18"/>
-<item group="BuildingStations"      count="3"/>
-<item group="BuildingTraps"         count="4"/>
-<item group="BuildingElectricity"   count="4"/>
+<tier_items level="700,799"           count="all">
+<item group="MaterialsBasic"          count="7"/>
+<item group="MaterialsCommon"         count="7"/>
+<item group="MaterialsUncommon"       count="19"/>
+<item group="MaterialsRare"           count="10"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="10"/>
+<item group="BuildingBlocksRare"      count="8"/>
+<item group="BuildingStations"        count="3"/>
+<item group="BuildingTraps"           count="4"/>
+<item group="BuildingElectricity"     count="4"/>
+<item group="BasicMaterials"          count="70"/>
 </tier_items>
 
-<tier_items level="800,899"         count="all">
-<item group="MaterialsBasic"        count="8"/>
-<item group="MaterialsCommon"       count="8"/>
-<item group="MaterialsRare"         count="32"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="20"/>
-<item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="4"/>
-<item group="BuildingElectricity"   count="4"/>
+<tier_items level="800,899"           count="all">
+<item group="MaterialsBasic"          count="8"/>
+<item group="MaterialsCommon"         count="8"/>
+<item group="MaterialsUncommon"       count="17"/>
+<item group="MaterialsRare"           count="15"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="10"/>
+<item group="BuildingBlocksRare"      count="10"/>
+<item group="BuildingStations"        count="4"/>
+<item group="BuildingTraps"           count="4"/>
+<item group="BuildingElectricity"     count="4"/>
+<item group="BasicMaterials"          count="80"/>
 </tier_items>
 
-<tier_items level="900,999"         count="all">
-<item group="MaterialsBasic"        count="9"/>
-<item group="MaterialsCommon"       count="9"/>
-<item group="MaterialsRare"         count="36"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="24"/>
-<item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="4"/>
-<item group="BuildingElectricity"   count="4"/>
+<tier_items level="900,999"           count="all">
+<item group="MaterialsBasic"          count="9"/>
+<item group="MaterialsCommon"         count="9"/>
+<item group="MaterialsUncommon"       count="16"/>
+<item group="MaterialsRare"           count="20"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="10"/>
+<item group="BuildingBlocksRare"      count="14"/>
+<item group="BuildingStations"        count="4"/>
+<item group="BuildingTraps"           count="4"/>
+<item group="BuildingElectricity"     count="4"/>
+<item group="BasicMaterials"          count="90"/>
 </tier_items>
 
-<tier_items level="1000,-1"         count="all">
-<item group="MaterialsBasic"        count="7"/>
-<item group="MaterialsCommon"       count="7"/>
-<item group="MaterialsRare"         count="34"/>
-<item group="BuildingBlocksCommon"  count="10"/>
-<item group="BuildingBlocksRare"    count="30"/>
-<item group="BuildingStations"      count="4"/>
-<item group="BuildingTraps"         count="4"/>
-<item group="BuildingElectricity"   count="4"/>
+<tier_items level="1000,-1"           count="all">
+<item group="MaterialsBasic"          count="7"/>
+<item group="MaterialsCommon"         count="7"/>
+<item group="MaterialsUncommon"       count="14"/>
+<item group="MaterialsRare"           count="20"/>
+<item group="BuildingBlocksCommon"    count="10"/>
+<item group="BuildingBlocksUncommon"  count="10"/>
+<item group="BuildingBlocksRare"      count="20"/>
+<item group="BuildingStations"        count="4"/>
+<item group="BuildingTraps"           count="4"/>
+<item group="BuildingElectricity"     count="4"/>
+<item group="BasicMaterials"          count="100"/>
 </tier_items>
 </trader_info>
 
 <!-- Supplies Cache Small -->
-<trader_info id="9" reset_interval="1" allow_sell="false" min_inventory="50" max_inventory="50" min_items_swapped="50" max_items_swapped="50">
+<trader_info id="9" reset_interval="1" allow_sell="false" min_inventory="80" max_inventory="80" min_items_swapped="80" max_items_swapped="80">
 <trader_items count="all">
-<item group="HordeModeBasicSupplies"/>
 </trader_items>
 
 <tier_items level="1,99"            count="all">
@@ -1627,11 +1136,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="Explosives"            count="0,1"/>
 <item group="Weapons"               count="1"/>
 <item group="Tools"                 count="1,2"/>
-<item group="FoodCooked"            count="0,1"/>
-<item group="FoodDrinks"            count="0,1"/>
+<item group="FoodCooked"            count="1"/>
+<item group="FoodDrinks"            count="1"/>
 <item group="MedicalHealing"        count="0,1"/>
 <item group="MedicalRemedy"         count="0,1"/>
 <item group="Supplies"              count="0,1"/>
+<item group="BasicSupplies"         count="20"/>
 </tier_items>
 
 <tier_items level="100,199"         count="all">
@@ -1649,6 +1159,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="1"/>
 <item group="MedicalRemedy"         count="1"/>
 <item group="Supplies"              count="1"/>
+<item group="BasicSupplies"         count="20"/>
 </tier_items>
 
 <tier_items level="200,299"         count="all">
@@ -1666,6 +1177,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="1"/>
 <item group="MedicalRemedy"         count="1"/>
 <item group="Supplies"              count="1"/>
+<item group="BasicSupplies"         count="25"/>
 </tier_items>
 
 <tier_items level="300,399"         count="all">
@@ -1683,6 +1195,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="1"/>
 <item group="MedicalRemedy"         count="1"/>
 <item group="Supplies"              count="1"/>
+<item group="BasicSupplies"         count="25"/>
 </tier_items>
 
 <tier_items level="400,499"         count="all">
@@ -1700,6 +1213,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="3"/>
 <item group="MedicalRemedy"         count="1"/>
 <item group="Supplies"              count="1"/>
+<item group="BasicSupplies"         count="25"/>
 </tier_items>
 
 <tier_items level="500,599"         count="all">
@@ -1717,6 +1231,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="3"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
+<item group="BasicSupplies"         count="30"/>
 </tier_items>
 
 <tier_items level="600,699"         count="all">
@@ -1734,6 +1249,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="3"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
+<item group="BasicSupplies"         count="30"/>
 </tier_items>
 
 <tier_items level="700,799"         count="all">
@@ -1752,6 +1268,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
 <item name="Railgun"                count="0,1"/>
+<item group="BasicSupplies"         count="35"/>
 </tier_items>
 
 <tier_items level="800,899"         count="all">
@@ -1770,6 +1287,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
 <item name="Railgun"                count="0,1"/>
+<item group="BasicSupplies"         count="40"/>
 </tier_items>
 
 <tier_items level="900,999"         count="all">
@@ -1787,7 +1305,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalHealing"        count="4"/>
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
-<item name="Railgun"                count="1"/>
+<item name="Railgun"                count="0,1"/>
+<item group="BasicSupplies"         count="45"/>
 </tier_items>
 
 <tier_items level="1000,-1"         count="all">
@@ -1806,135 +1325,159 @@ quality_mod: adjusts the price range of all items with a quality level.
 <item group="MedicalRemedy"         count="2"/>
 <item group="Supplies"              count="2"/>
 <item name="Railgun"                count="1"/>
+<item group="BasicSupplies"         count="50"/>
 </tier_items>
 </trader_info>
 
 <!-- Materials Cache Small -->
-<trader_info id="10" reset_interval="1" allow_sell="false" min_inventory="50" max_inventory="50" min_items_swapped="50" max_items_swapped="50">
-
+<trader_info id="10" reset_interval="1" allow_sell="false" min_inventory="80" max_inventory="80" min_items_swapped="80" max_items_swapped="80">
 <trader_items count="all">
-<item group="HordeModeBasicMaterials"/>
 </trader_items>
 
-<tier_items level="1,99"            count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="1,5"/>
-<item group="BuildingBlocksCommon"  count="3,5"/>
-<item group="BuildingBlocksRare"    count="1,5"/>
-<item group="BuildingStations"      count="0,1"/>
-<item group="BuildingTraps"         count="0,1"/>
-<item group="BuildingElectricity"   count="0,1"/>
+<tier_items level="1,99"              count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="3"/>
+<item group="BuildingBlocksCommon"    count="3"/>
+<item group="BuildingBlocksUncommon"  count="2"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="0,1"/>
+<item group="BuildingElectricity"     count="0,1"/>
+<item group="BasicMaterials"          count="20"/>
 </tier_items>
 
-<tier_items level="100,199"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="3"/>
-<item group="BuildingBlocksCommon"  count="3,5"/>
-<item group="BuildingBlocksRare"    count="3"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="100,199"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="BuildingBlocksCommon"    count="3"/>
+<item group="BuildingBlocksUncommon"  count="3"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
+<item group="BasicMaterials"          count="22"/>
 </tier_items>
 
-<tier_items level="200,299"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="3"/>
-<item group="BuildingBlocksCommon"  count="3"/>
-<item group="BuildingBlocksRare"    count="1"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="200,299"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
+<item group="BasicMaterials"          count="24"/>
 </tier_items>
 
-<tier_items level="300,399"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="3"/>
-<item group="BuildingBlocksCommon"  count="3"/>
-<item group="BuildingBlocksRare"    count="3"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="300,399"           count="all">
+<item group="MaterialsBasic"          count="5"/>
+<item group="MaterialsCommon"         count="6"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
+<item group="BasicMaterials"          count="26"/>
 </tier_items>
 
-<tier_items level="400,499"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="5"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="3"/>
-<item group="BuildingStations"      count="1"/>
-<item group="BuildingTraps"         count="1"/>
-<item group="BuildingElectricity"   count="1"/>
+<tier_items level="400,499"           count="all">
+<item group="MaterialsBasic"          count="5"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="5"/>
+<item group="MaterialsRare"           count="2"/>
+<item group="BuildingBlocksCommon"    count="5"/>
+<item group="BuildingBlocksUncommon"  count="2"/>
+<item group="BuildingBlocksRare"      count="1"/>
+<item group="BuildingStations"        count="1"/>
+<item group="BuildingTraps"           count="1"/>
+<item group="BuildingElectricity"     count="1"/>
+<item group="BasicMaterials"          count="28"/>
 </tier_items>
 
-<tier_items level="500,599"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="5"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="6"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="500,599"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="4"/>
+<item group="MaterialsUncommon"       count="3"/>
+<item group="MaterialsRare"           count="2"/>
+<item group="BuildingBlocksCommon"    count="5"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="2"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="30"/>
 </tier_items>
 
-<tier_items level="600,699"         count="all">
-<item group="MaterialsBasic"        count="5"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="7"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="7"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="600,699"           count="all">
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="4"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="MaterialsRare"           count="3"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="3"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="32"/>
 </tier_items>
 
-<tier_items level="700,799"         count="all">
-<item group="MaterialsBasic"        count="3"/>
-<item group="MaterialsCommon"       count="3"/>
-<item group="MaterialsRare"         count="14"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="9"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="700,799"           count="all">
+<item group="MaterialsBasic"          count="3"/>
+<item group="MaterialsCommon"         count="3"/>
+<item group="MaterialsUncommon"       count="8"/>
+<item group="MaterialsRare"           count="5"/>
+<item group="BuildingBlocksCommon"    count="5"/>
+<item group="BuildingBlocksUncommon"  count="5"/>
+<item group="BuildingBlocksRare"      count="4"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="34"/>
 </tier_items>
 
-<tier_items level="800,899"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="4"/>
-<item group="MaterialsRare"         count="16"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="10"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="800,899"           count="all">
+<item group="MaterialsBasic"          count="3"/>
+<item group="MaterialsCommon"         count="4"/>
+<item group="MaterialsUncommon"       count="6"/>
+<item group="MaterialsRare"           count="5"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="4"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="36"/>
 </tier_items>
 
-<tier_items level="900,999"         count="all">
-<item group="MaterialsBasic"        count="4"/>
-<item group="MaterialsCommon"       count="5"/>
-<item group="MaterialsRare"         count="18"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="12"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="900,999"           count="all">
+<item group="MaterialsBasic"          count="3"/>
+<item group="MaterialsCommon"         count="3"/>
+<item group="MaterialsUncommon"       count="5"/>
+<item group="MaterialsRare"           count="7"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="6"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="38"/>
 </tier_items>
 
-<tier_items level="1000,-1"         count="all">
-<item group="MaterialsBasic"        count="3"/>
-<item group="MaterialsCommon"       count="4"/>
-<item group="MaterialsRare"         count="17"/>
-<item group="BuildingBlocksCommon"  count="5"/>
-<item group="BuildingBlocksRare"    count="15"/>
-<item group="BuildingStations"      count="2"/>
-<item group="BuildingTraps"         count="2"/>
-<item group="BuildingElectricity"   count="2"/>
+<tier_items level="1000,-1"           count="all">
+<item group="MaterialsBasic"          count="2"/>
+<item group="MaterialsCommon"         count="2"/>
+<item group="MaterialsUncommon"       count="6"/>
+<item group="MaterialsRare"           count="8"/>
+<item group="BuildingBlocksCommon"    count="4"/>
+<item group="BuildingBlocksUncommon"  count="4"/>
+<item group="BuildingBlocksRare"      count="8"/>
+<item group="BuildingStations"        count="2"/>
+<item group="BuildingTraps"           count="2"/>
+<item group="BuildingElectricity"     count="2"/>
+<item group="BasicMaterials"          count="40"/>
 </tier_items>
 </trader_info>
 </traders>

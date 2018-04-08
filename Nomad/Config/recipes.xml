@@ -117,7 +117,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="foodYuccaJuice" craft_area="campfire">                                                        <ingredient name="foodYuccaFruit" count="5"/> <ingredient name="emptyJar"/> </recipe>
 <recipe name="goldenRodTea" craft_area="campfire" craft_tool="cookingPot">                                  <ingredient name="goldenrodPlant" count="4"/> <ingredient name="bottledWater"/> </recipe>
 <recipe name="redTea" craft_area="campfire" craft_tool="cookingPot">                                        <ingredient name="chrysanthemumPlant" count="4"/> <ingredient name="bottledWater"/> </recipe>
-<recipe name="snowberryJuice" craft_area="campfire" craft_tool="cookingPot">                                <ingredient name="snowberryPlant"/> <ingredient name="blueberries" count="4"/> <ingredient name="emptyJar"/> </recipe>
+<recipe name="snowberryJuice" craft_area="campfire">                                                        <ingredient name="snowberryPlant"/> <ingredient name="blueberries" count="4"/> <ingredient name="emptyJar"/> </recipe>
 <recipe name="coffee" craft_area="campfire" craft_tool="cookingPot">                                        <ingredient name="coffeeBeans"/> <ingredient name="bottledWater"/> </recipe>
 <recipe name="beer" craft_area="campfire" craft_tool="beaker">                                              <ingredient name="hopsFlower" count="6"/> <ingredient name="bottledWater"/> </recipe>
 <recipe name="beer" count="5" craft_area="chemistryStation">                                                <ingredient name="hopsFlower" count="20"/> <ingredient name="bottledRiverWater" count="5"/></recipe>
@@ -126,6 +126,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="grainAlcohol" count="5" craft_area="chemistryStation">                                        <ingredient name="cornMeal" count="20"/> <ingredient name="bottledRiverWater" count="5"/></recipe>
 <recipe name="grainAlcohol" craft_area="chemistryStation">                                                  <ingredient name="cornMeal" count="4"/> <ingredient name="bottledWater"/> </recipe>
 <recipe name="cornMeal" count="1">                                                                          <ingredient name="corn"/> </recipe>
+<recipe name="emptyJar" count="1">                                                                          <ingredient name="bottledRiverWater" count="1"/>  </recipe>
+<recipe name="canEmpty" count="1">                                                                          <ingredient name="canMurkyWater" count="1"/>  </recipe>
 
 <!-- Medical and Consumable Recipes -->
 <recipe name="antibiotics" craft_area="campfire" craft_tool="beaker">                                       <ingredient name="moldyBread" count="2"/> <ingredient name="bottledWater"/> <ingredient name="potassiumNitratePowder" count="10"/> </recipe>
@@ -162,11 +164,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="clothJacket" count="1">                                                                       <ingredient name="cloth" count="20"/> <ingredient name="yuccaFibers" count="20"/> </recipe>
 <recipe name="clothPants" count="1">                                                                        <ingredient name="cloth" count="20"/> <ingredient name="yuccaFibers" count="20"/> </recipe>
 <!-- Hide Armor Recipes -->
-<recipe name="animalHideBoots" count="1">                                                                   <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
-<recipe name="animalHideGloves" count="1">                                                                  <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
-<recipe name="animalHideHood" count="1">                                                                    <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
-<recipe name="animalHideChestArmor" count="1">                                                              <ingredient name="animalHide" count="20"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
-<recipe name="animalHideLegArmor" count="1">                                                                <ingredient name="animalHide" count="20"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
+<recipe name="animalHideBoots" count="1">                                                                   <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> </recipe>
+<recipe name="animalHideGloves" count="1">                                                                  <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> </recipe>
+<recipe name="animalHideHood" count="1">                                                                    <ingredient name="animalHide" count="10"/> <ingredient name="cloth" count="5"/> </recipe>
+<recipe name="animalHideChestArmor" count="1">                                                              <ingredient name="animalHide" count="20"/> <ingredient name="cloth" count="5"/> </recipe>
+<recipe name="animalHideLegArmor" count="1">                                                                <ingredient name="animalHide" count="20"/> <ingredient name="cloth" count="5"/> </recipe>
 <!-- Leather Armor Recipes -->
 <recipe name="leatherBoots" count="1">                                                                      <ingredient name="leather" count="10"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>
 <recipe name="leatherGloves" count="1">                                                                     <ingredient name="leather" count="10"/> <ingredient name="cloth" count="5"/> <ingredient name="ductTape"/> </recipe>

@@ -33,6 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{C00445
 		Base\Config\spawning.xml = Base\Config\spawning.xml
 		Base\Config\traders.xml = Base\Config\traders.xml
 		Base\Config\utilityai.xml = Base\Config\utilityai.xml
+		Base\Config\weathersurvival.xml = Base\Config\weathersurvival.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mods", "Mods", "{FCEDA37B-1092-4355-AB74-CBFCFB5FD166}"
@@ -630,6 +631,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{ECD50E
 		HordeMP\Config\spawning.xml = HordeMP\Config\spawning.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HordeHC", "HordeHC", "{7B1C7B1C-A8FA-492D-B35E-BE5C218FD1FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{159D951A-9EC2-4DF8-AF38-C93D575A81B0}"
+	ProjectSection(SolutionItems) = preProject
+		HordeHC\Config\biomes.xml = HordeHC\Config\biomes.xml
+		HordeHC\Config\entityclasses.xml = HordeHC\Config\entityclasses.xml
+		HordeHC\Config\gamestages.xml = HordeHC\Config\gamestages.xml
+		HordeHC\Config\progression.xml = HordeHC\Config\progression.xml
+		HordeHC\Config\quests.xml = HordeHC\Config\quests.xml
+		HordeHC\Config\rwgmixer.xml = HordeHC\Config\rwgmixer.xml
+		HordeHC\Config\spawning.xml = HordeHC\Config\spawning.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -645,6 +659,7 @@ Global
 		{CD36D664-F427-4C5D-ADEE-51E921F852E0} = {161525C4-417F-4C3C-B0E3-202B6343FE26}
 		{92341991-822F-40AB-A8D8-5F6A3882FF3C} = {7B1FEDC0-3C1E-4942-BD97-BA5CA087F70B}
 		{ECD50E6E-8342-4C19-B695-4F5037BB7804} = {6EB10018-C505-432B-95DD-7DB9F09AAB1F}
+		{159D951A-9EC2-4DF8-AF38-C93D575A81B0} = {7B1C7B1C-A8FA-492D-B35E-BE5C218FD1FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}

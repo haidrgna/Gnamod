@@ -2,7 +2,7 @@
 <rwgmixer><world ruleset="base"/>
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/>  </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/> </ruleset>
 <!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisSmallHub" prob="1"/> <cell_rule name="necropolisHub" position="0,0" prob="1"/>  </ruleset>
@@ -900,8 +900,38 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output-->
-<output module="WorldBuilding"/>
+<!-- Final Output
+<output module="WorldBuilding"/> -->
+
+			<module name="distanceBaseBase" type="Cylinders">
+				<property name="frequency" value="256"/>
+			</module><!--Elev 1@center / Elev -1@radius1-->
+			<module name="distanceBase" type="ScaleInput">
+				<property name="sourceModule" value="distanceBaseBase"/>
+				<property name="x" value="0.00005"/>
+				<property name="z" value="0.00005"/>
+				<property name="y" value="0"/>
+			</module><!--Elev 1@center / Elev -1@radius20,000-->
+  
+			<module name="distanceOut" type="ScaleBiasOutput">
+				<property name="sourceModule" value="distanceBase"/>
+				<property name="scale" value="-10000"/>
+				<property name="bias" value="10000"/>
+			</module><!--Elev 0@center / Elev 20,000@radius20,000-->  
+
+			<module name="constant5" type="Constant"><!-- 5 -->
+				<property name="constant" value="5"/>
+			</module>
+
+			<module name="centerFlatten" type="Select">
+				<property name="controlModule" value="distanceOut"/>
+				<property name="sourceModule1" value="FinalScale"/>
+				<property name="sourceModule2" value="WorldBase"/>
+				<property name="bounds" value="-1000000 ,1500"/><!--0 to 1000 is flat-->
+				<property name="edgeFalloff" value="2000"/><!--900 to 1100 is transition area-->
+			</module>
+
+			<output module="centerFlatten"/>
 </terrain_generator>
 
 <!-- Classic Terrain -->
@@ -1366,8 +1396,38 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output-->
-<output module="WorldBuilding"/>
+<!-- Final Output
+<output module="WorldBuilding"/> -->
+
+			<module name="distanceBaseBase" type="Cylinders">
+				<property name="frequency" value="256"/>
+			</module><!--Elev 1@center / Elev -1@radius1-->
+			<module name="distanceBase" type="ScaleInput">
+				<property name="sourceModule" value="distanceBaseBase"/>
+				<property name="x" value="0.00005"/>
+				<property name="z" value="0.00005"/>
+				<property name="y" value="0"/>
+			</module><!--Elev 1@center / Elev -1@radius20,000-->
+  
+			<module name="distanceOut" type="ScaleBiasOutput">
+				<property name="sourceModule" value="distanceBase"/>
+				<property name="scale" value="-10000"/>
+				<property name="bias" value="10000"/>
+			</module><!--Elev 0@center / Elev 20,000@radius20,000-->  
+
+			<module name="constant5" type="Constant"><!-- 5 -->
+				<property name="constant" value="5"/>
+			</module>
+
+			<module name="centerFlatten" type="Select">
+				<property name="controlModule" value="distanceOut"/>
+				<property name="sourceModule1" value="FinalScale"/>
+				<property name="sourceModule2" value="WorldBase"/>
+				<property name="bounds" value="-1000000 ,1500"/><!--0 to 1000 is flat-->
+				<property name="edgeFalloff" value="2000"/><!--900 to 1100 is transition area-->
+			</module>
+
+			<output module="centerFlatten"/>
 </terrain_generator>  
 
 <!-- Flat World (for testing) -->
@@ -1424,7 +1484,7 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output-->
+<!-- Final Output -->
 <output module="WorldBuilding"/>
 </terrain_generator>
 </terrain_generators>

@@ -47,80 +47,79 @@
 <!-- Burnt Forest -->
 <biome name="burnt_forest">
 <!-- Zombies Day -->
-<spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesCrispy"/>
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesHotBiomes"/>
+<spawn maxcount="2"   respawndelay="1"  time="Day"    entitygroup="ZombiesCrispy"/>
+<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="ZombiesHotBiomes"/>
 <!-- Zombies Night -->
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesCrispy"/>
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage3"/>
+<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesCrispy"/>
+<spawn maxcount="4"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage3"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeForestWasteland"/>
+<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Snow Flats -->
 <biome name="city">
-<!-- Zombies Day -->
-<spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesJack"/>
-<spawn maxcount="4"   respawndelay="1"   time="Any"   entitygroup="ZombiesMountainBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesJack"/>
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage3"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="1"   respawndelay="999" time="Any"   entitygroup="ZombiesJack"/>
+<spawn maxcount="4"   respawndelay="999" time="Any"   entitygroup="ZombiesMountainBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="2"   respawndelay="1"  time="Day"    entitygroup="WildlifeSnowFlats"/>
+<spawn maxcount="2"   respawndelay="1"   time="Day"   entitygroup="WildlifeSnowFlats"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Alpine Forest -->
 <biome name="snow">
-<!-- Zombies Day -->
-<spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesJack"/>
-<spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesMountainBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesJack"/>
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="1"   respawndelay="999" time="Any"   entitygroup="ZombiesJack"/>
+<spawn maxcount="4"   respawndelay="999" time="Any"   entitygroup="ZombiesMountainBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeAlpineForest"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeAlpineForest"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Pine Forest -->
 <biome name="pine_forest">
-<!-- Zombies Day -->
-<spawn maxcount="5"   respawndelay="1"   time="Any"   entitygroup="ZombiesMountainBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifePineForest"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifePineForest"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Dense Forests -->
 <biome name="forest">
-<!-- Zombies Day -->
-<spawn maxcount="5"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeDenseForest"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeDenseForest"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Grasslands -->
 <biome name="plains">
-<!-- Zombies Day -->
-<spawn maxcount="5"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeGrasslands"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeGrasslands"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Wetlands -->
 <biome name="water">
-<!-- Zombies Day -->
-<spawn maxcount="5"   respawndelay="1"   time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeWetlands"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeWetlands"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>  
 <!-- Desert -->  
 <biome name="desert">
-<!-- Zombies Day -->
-<spawn maxcount="5"   respawndelay="1"   time="Any"   entitygroup="ZombiesHotBiomes"/>
-<!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<!-- Zombies Horde Mode -->
+<spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesHotBiomes"/>
+<spawn maxcount="4"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
 <!-- Animals -->
-<spawn maxcount="2"   respawndelay="1"  time="Day"    entitygroup="WildlifeDesert"/>
+<spawn maxcount="2"   respawndelay="1"   time="Day"   entitygroup="WildlifeDesert"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 
 <!-- Scout and Heat Hordes -->

@@ -9,12 +9,12 @@
 
 <Noise ID="1" range="8" volume="7" time="5" muffled_when_crouched="0.5"/>
 <Noise ID="2" range="14" volume="11" time="4" muffled_when_crouched="0.5"/>
-<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
-<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
-<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
+<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
+<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 <Noise ID="6" range="28" volume="16" time="6" muffled_when_crouched="0.5"/>   Footsteps
-<Noise ID="7" range="120" volume="24" time="2" heat_map_strength="1.0" heat_map_time="750"/>
-<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="750"/>
+<Noise ID="7" range="120" volume="24" time="2" heat_map_strength="1.0" heat_map_time="2160"/>
+<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="2160"/>
 -->
 
 <!--
@@ -429,12 +429,12 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0"/> <NoiseScale name="0"/> <MaxVoices name="18"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="Flag_Oneshots"> <AudioSource name="Sounds/AudioSource_Amb_Med_1Shot"/>
-<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="750"/>
+<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="2160"/>
 <AudioClip ClipName="Sounds/Ambient_Loops/a_flag_oneshot1"/>
 <LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0"/> <NoiseScale name="0"/> <MaxVoices name="8"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="FlagLP"> <AudioSource name="Sounds/AudioSource_Amb_Med"/>
-<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="750"/>
+<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="2160"/>
 <AudioClip ClipName="Sounds/Ambient_Loops/a_flag_lp" Loop="true"/>
 <LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0"/> <NoiseScale name="0"/> <MaxVoices name="18"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -480,7 +480,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Idle">
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_idle" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -490,7 +490,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Fire_Start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/Auger_Fire_Start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_fire_lp" Loop="true"/>
@@ -509,12 +509,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_idle">
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_idle" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp" Loop="true"/>
@@ -522,7 +522,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_rev"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev1"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev2"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
@@ -535,7 +535,7 @@
 	<!-- Nailgun -->
 
 <SoundDataNode name="nailgun_fire"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Nailgun/nailgun_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Nailgun/nailgun_fire2"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Nailgun/nailgun_fire3"/>
@@ -629,12 +629,12 @@
 	<!-- 44 -->
 
 <SoundDataNode name="44magnum_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/44magnum/44magnum_fire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="44deagle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-  <Noise ID="7" range="120" volume="24" time="2" heat_map_strength="1.0" heat_map_time="750"/>
+  <Noise ID="7" range="120" volume="24" time="2" heat_map_strength="1.0" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/44magnum/44magnum_fire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>  
   
@@ -654,7 +654,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="ak47_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/AK47/ak47_fire_start"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/AK47/ak47_fire_lp" Loop ="true"/>
@@ -665,7 +665,7 @@
 	<!-- Blunderbuss -->
 
 <SoundDataNode name="blunderbuss_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire2"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire3"/>
@@ -723,7 +723,7 @@
 	<!-- Hunting Rifle -->
 
 <SoundDataNode name="hunting_rifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/hunting_rifle/hunting_rifle_fire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -736,7 +736,7 @@
 	<!-- 136 -->
 
 <SoundDataNode name="m136_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+  <Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/m136/m136_fire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -746,6 +746,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="m136_rocket_lp"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+  <Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/m136/m136_rocket_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -771,7 +772,7 @@
 	<!-- Pistol -->
 
 <SoundDataNode name="Pistol_Fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/Pistol/Pistol_Fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/Pistol/Pistol_Fire2"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/Pistol/Pistol_Fire3"/>
@@ -787,7 +788,7 @@
 	<!-- Pump shotgun -->
 
 <SoundDataNode name="pump_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire2"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire3"/>
@@ -798,7 +799,7 @@
 	<!-- sawedoff shotgun -->
 
 <SoundDataNode name="sawed_off_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire1"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire2"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire3"/>
@@ -813,7 +814,7 @@
 	<!-- sniper -->
 
 <SoundDataNode name="sniperrifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_fire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -875,7 +876,7 @@
 
   <!-- Boar SFX -->
 <SoundDataNode name="boaralert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-  <Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+  <Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Boar/boaralert1"/>
   <AudioClip ClipName="Sounds/Animals/Boar/boaralert2"/>
 	<Channel name="Mouth"/>
@@ -893,7 +894,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
   <SoundDataNode name="boardeath"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-  <Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+  <Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Boar/boardeath1"/>
   <AudioClip ClipName="Sounds/Animals/Boar/boardeath2"/>
   <AudioClip ClipName="Sounds/Animals/Boar/boardeath3"/>
@@ -946,7 +947,7 @@
 
 
 <SoundDataNode name="rabbitdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/rabbitdeath1"/>
 	<Channel name="Mouth"/>
 	<Priority name="0"/>
@@ -959,7 +960,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="stagdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/stagdeath1"/>
 	<Channel name="Mouth"/>
 	<Priority name="0"/>
@@ -978,7 +979,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="bearalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Bear/bearalert"/>
 	<Channel name="Mouth"/>
 	<Priority name="3"/>
@@ -993,7 +994,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="beardeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Bear/beardeath1"/>
 	<AudioClip ClipName="Sounds/Animals/Bear/beardeath2"/>
 	<Channel name="Mouth"/>
@@ -1043,7 +1044,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="chickendeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Chicken/chickendeath1"/>
 	<AudioClip ClipName="Sounds/Animals/Chicken/chickendeath2"/>
 	<AudioClip ClipName="Sounds/Animals/Chicken/chickendeath3"/>
@@ -1068,7 +1069,7 @@
 
 
 <SoundDataNode name="wolfalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfalert1"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfalert2"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfalert3"/>
@@ -1089,7 +1090,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="wolfdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfdeath1"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfdeath2"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfdeath3"/>
@@ -1138,7 +1139,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="wolfsense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfsense1"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfsense2"/>
 	<AudioClip ClipName="Sounds/Animals/Wolf/wolfsense3"/>
@@ -1182,7 +1183,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="vulturedeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturedeath1"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturedeath2"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturedeath3"/>
@@ -1220,7 +1221,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="vulturesense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturesense1"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturesense2"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturesense3"/>
@@ -1290,7 +1291,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="playerlandheavy"> <AudioSource name="Sounds/AudioSource_Player"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/playerlandheavy"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
@@ -1309,7 +1310,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player2death"> <AudioSource name="Sounds/AudioSource_PlayerDeath"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2death1"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2death2"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2death3"/>
@@ -1319,7 +1320,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player2drowndeath"> <AudioSource name="Sounds/AudioSource_PlayerDeath"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2drowndeath1"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
@@ -1346,7 +1347,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player2landHard"> <AudioSource name="Sounds/AudioSource_Player"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2landHard1"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2landHard2"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2landHard3"/>
@@ -1354,7 +1355,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player2painlg"> <AudioSource name="Sounds/AudioSource_Player"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2painlg1"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2painlg2"/>
 	<AudioClip ClipName="Sounds/Player_Female/player2painlg3"/>
@@ -1401,7 +1402,7 @@
 
 
 <SoundDataNode name="player1death"> <AudioSource name="Sounds/AudioSource_PlayerDeath"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1death1"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1death2"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1death3"/>
@@ -1412,7 +1413,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player1drowndeath"> <AudioSource name="Sounds/AudioSource_PlayerDeath"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1drowndeath1"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
@@ -1447,7 +1448,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player1landHard"> <AudioSource name="Sounds/AudioSource_Player"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1landHard1"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1landHard2"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1landHard3"/>
@@ -1456,7 +1457,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="player1painlg"> <AudioSource name="Sounds/AudioSource_Player"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1painlg1"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1painlg2"/>
 	<AudioClip ClipName="Sounds/Player_Male/player1painlg3"/>
@@ -1502,7 +1503,7 @@
 
 
 <SoundDataNode name="avalanche"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/avalanche1"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -1551,46 +1552,46 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="glassdestroy"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy1"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy2"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy3"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="glassdestroy1"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy1"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="glassdestroy2"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy2"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="glassdestroy3"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/glassdestroy3"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metaldestroy"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy1"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy2"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy3"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metaldestroy1"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy1"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metaldestroy2"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy2"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metaldestroy3"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/DestroyBlock/metaldestroy3"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -1716,7 +1717,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="bullethitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/bullethitmetal1"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/bullethitmetal2"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/bullethitmetal3"/>
@@ -1762,7 +1763,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
   
 <SoundDataNode name="stonehitglass"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/stonehitglass1"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/stonehitglass2"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/stonehitglass3"/>
@@ -1784,14 +1785,14 @@
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metalhitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal1"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal2"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal3"/>
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="metalhitglass"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass1"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass2"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass3"/>
@@ -1900,7 +1901,7 @@
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="stonehitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/stonehitmetal1"/>
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -1948,7 +1949,7 @@
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
   
  <SoundDataNode name="woodhitglass"> <AudioSource name="Sounds/AudioSource_Impact"/>
-   <Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+   <Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/woodhitglass1"/>
   <AudioClip ClipName="Sounds/ImpactSurface/woodhitglass2"/>
   <AudioClip ClipName="Sounds/ImpactSurface/woodhitglass3"/>
@@ -1956,7 +1957,7 @@
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="woodhitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ImpactSurface/woodhitmetal1"/>
 	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2281,12 +2282,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_cash_register"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_cash_register"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_cash_register"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_cash_register"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2331,32 +2332,32 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_door_metal"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_door_metal"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_door_metal"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_door_metal"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_door_vault"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_door_vault"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_door_vault"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_door_vault"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
   
   <SoundDataNode name="open_door_jail"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_door_jail"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_door_jail"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_door_jail"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2381,12 +2382,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_file_cabinet"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_file_cabinet"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_file_cabinet"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_file_cabinet"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2411,12 +2412,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_locker"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_locker"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_locker"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_locker"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2451,32 +2452,32 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_safe"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_safe"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_safe"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_safe"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_shopping_basket"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_shopping_basket"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_shopping_basket"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_shopping_basket"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_shopping_cart"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_shopping_cart"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_shopping_cart"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_shopping_cart"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2501,32 +2502,32 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_trashcan"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_trashcan"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_trashcan"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_trashcan"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_vehicle"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_vehicle"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_vehicle"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_vehicle"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_dumpster"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_dumpster"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_dumpster"> <AudioSource name="Sounds/AudioSource_UseAction"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_dumpster"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2644,12 +2645,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_hatch_scrap"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_hatch_scrap"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_hatch_scrap"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_hatch_scrap"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -2664,43 +2665,43 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_hatch_vault"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_hatch_vault"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_hatch_vault"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_hatch_vault"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_bridge"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_bridge"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="3.193"/> </SoundDataNode>
 
 	<SoundDataNode name="close_bridge"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_bridge"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="5.571"/> </SoundDataNode>
 
 
 <SoundDataNode name="open_garage_door"> <AudioSource name="Sounds/AudioSource_Interact_Large"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_garage_door"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_garage_door"> <AudioSource name="Sounds/AudioSource_Interact_Large"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_garage_door"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="open_vending"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/open_vending"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="close_vending"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/UseActions/close_vending"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -3145,7 +3146,7 @@
 	<!-- Alarms   -->
 
 <SoundDataNode name="alarm1"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
-<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="750"/>
+<Noise ID="8" range="500" volume="48" time="10" heat_map_strength="0.05" heat_map_time="2160"/>
 <AudioClip ClipName="Sounds/Electricity/Alarms/alarm1_lp" Loop="true"/>
 <LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
@@ -3157,7 +3158,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="turret_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/turret_fire1"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/turret_fire2"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/turret_fire3"/>
@@ -3183,17 +3184,17 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
 <SoundDataNode name="bladetrap_fire_lp"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/BladeTrap/bladetrap_fire_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
 <SoundDataNode name="bladetrap_dm1_lp"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/BladeTrap/bladetrap_fire_dmg1_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
 <SoundDataNode name="bladetrap_dm2_lp"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/BladeTrap/bladetrap_fire_dmg2_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
@@ -3218,7 +3219,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="darttrap_fire_lp"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/DartTrap/darttrap_fire_lp" Loop="true"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -3228,7 +3229,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="darttrap_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Electricity/DartTrap/darttrap_fire1"/>
 	<AudioClip ClipName="Sounds/Electricity/DartTrap/darttrap_fire2"/>
 	<AudioClip ClipName="Sounds/Electricity/DartTrap/darttrap_fire3"/>
@@ -3294,17 +3295,17 @@
 
 
 <SoundDataNode name="explosion1"> <AudioSource name="Sounds/AudioSource_Explosion"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Explosions/explosion1"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="explosion2"> <AudioSource name="Sounds/AudioSource_Explosion"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Explosions/explosion2"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="explosion3"> <AudioSource name="Sounds/AudioSource_Explosion"/>
-	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="600"/>
+	<Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Explosions/explosion3"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -3317,7 +3318,7 @@
 
 
 <SoundDataNode name="molotov_explosion"> <AudioSource name="Sounds/AudioSource_Explosion"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode1"/>
 	<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode2"/>
 	<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode3"/>
@@ -3331,7 +3332,7 @@
 
 
 <SoundDataNode name="treefallimpact"> <AudioSource name="Sounds/AudioSource_Impact_Large"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+  <Noise ID="5" range="100" volume="20" time="2" heat_map_strength="0.75" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Foliage/treefallimpact1"/>
 	<AudioClip ClipName="Sounds/Foliage/treefallimpact2"/>
 	<AudioClip ClipName="Sounds/Foliage/treefallimpact3"/>
@@ -3340,7 +3341,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="treelogimpact"> <AudioSource name="Sounds/AudioSource_Impact_Large"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Foliage/treelogimpact1"/>
 	<AudioClip ClipName="Sounds/Foliage/treelogimpact2"/>
 	<AudioClip ClipName="Sounds/Foliage/treelogimpact3"/>
@@ -3349,7 +3350,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="trunkbreak"> <AudioSource name="Sounds/AudioSource_Impact_Large"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Foliage/trunkbreak1"/>
 	<AudioClip ClipName="Sounds/Foliage/trunkbreak2"/>
 	<AudioClip ClipName="Sounds/Foliage/trunkbreak3"/>
@@ -3456,7 +3457,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="throwmetalhitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/ThrowImpact/throwmetalhitmetal1"/>
 	<AudioClip ClipName="Sounds/ThrowImpact/throwmetalhitmetal2"/>
 	<AudioClip ClipName="Sounds/ThrowImpact/throwmetalhitmetal3"/>
@@ -3589,7 +3590,7 @@
 
 
 <SoundDataNode name="minibike_accel_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_accel_1"/>
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_accel_2"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
@@ -3606,7 +3607,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="minibike_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_horn1"/>
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_horn2"/>
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_horn3"/>
@@ -4678,7 +4679,7 @@
 	<!-- Male Hate -->
 
 <SoundDataNode name="malehatealert"> <AudioSource name="Sounds/AudioSource_VO"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_01"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_02"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_03"/>
@@ -4711,7 +4712,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
 <SoundDataNode name="malehatedeath"> <AudioSource name="Sounds/AudioSource_VO"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_01"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_02"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_03"/>
@@ -4763,7 +4764,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
 <SoundDataNode name="malehatesense"> <AudioSource name="Sounds/AudioSource_VO"/>
-	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="500"/>
+	<Noise ID="3" range="28" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.25" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_01"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_02"/>
 	<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_03"/>
@@ -4778,17 +4779,17 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
 <SoundDataNode name="trader_announce_open"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Trader/Announcements/trader_announce_open"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="5.79"/> </SoundDataNode>
 
 <SoundDataNode name="trader_announce_closing"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Trader/Announcements/trader_announce_closing"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="6.92"/> </SoundDataNode>
 
 <SoundDataNode name="trader_announce_closed"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
-	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="500"/>
+	<Noise ID="4" range="50" volume="20" time="2" heat_map_strength="0.50" heat_map_time="2160"/>
 	<AudioClip ClipName="Sounds/VO/Trader/Announcements/trader_announce_closed"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="5.36"/> </SoundDataNode>
 

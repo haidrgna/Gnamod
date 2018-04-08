@@ -706,7 +706,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="40"/>
 <property name="DamageBlock"                    value="300"/>
-<property name="Buff"                           value="bleeding,infection1,stunnedStrong"/>
+<property name="Buff"                           value="bleeding,infection2,stunnedStrong"/>
 <property name="Buff_chance"                    value="0.25,0.15,0.6"/>
 </property>
 <property class="Action1">
@@ -723,7 +723,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="50"/>
 <property name="DamageBlock"                    value="400"/>
-<property name="Buff"                           value="bleeding,infection1,stunnedStrong"/>
+<property name="Buff"                           value="bleeding,infection2,stunnedStrong"/>
 <property name="Buff_chance"                    value="0.25,0.25,0.5"/>
 </property>
 <property class="Action1">
@@ -739,8 +739,8 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="75"/>
 <property name="DamageBlock"                    value="500"/>
-<property name="Buff"                           value="bleeding,infection1,stunnedStrong"/>
-<property name="Buff_chance"                    value="0.25,0.25,0.6"/>
+<property name="Buff"                           value="bleeding,infection2,stunnedStrong,infection4"/>
+<property name="Buff_chance"                    value="0.25,0.25,0.6,0.005"/>
 </property>
 <property class="Action1">
 <property name="Delay"                          value="0.25"/>
@@ -2424,6 +2424,7 @@ Mesh files no longer used:
 	<property name="Insulation" value="4"/>
 	<property name="Encumbrance" value="0.02"/>
 	<property name="Material" value="leather"/>
+  <property name="Weight" value="25"/>
 	<property name="RepairTools" value="leather"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="20"/>
@@ -2455,6 +2456,7 @@ Mesh files no longer used:
 
 <item id="365" name="animalHideLegArmor"> <!-- hideArmor -->
 	<property name="Extends" value="animalHideBoots"/>
+  <property name="Weight" value="50"/>
 	<property name="FuelValue" value="40"/>
 	<property name="EconomicValue" value="240"/>
 	<property name="EquipSlot" value="Legs"/>
@@ -2470,6 +2472,7 @@ Mesh files no longer used:
 
 <item id="366" name="animalHideChestArmor"> <!-- hideArmor -->
 	<property name="Extends" value="animalHideBoots"/>
+  <property name="Weight" value="50"/>
 	<property name="FuelValue" value="40"/>
 	<property name="EconomicValue" value="240"/>
 	<property name="EquipSlot" value="Chest"/>
@@ -4968,14 +4971,12 @@ Mesh files no longer used:
 <item id="658" name="firstAidKit">
 	<property name="Extends" value="bandage"/>
 	<property class="Action0">
-		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
-		<property name="Buff" value="firstAidLarge"/>
+		<property name="Buff" value="firstAid,firstAidLarge"/>
 	</property>
 	<property class="Action1">
-		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
-		<property name="Buff" value="firstAidLarge"/>
+		<property name="Buff" value="firstAid,firstAidLarge"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -5049,7 +5050,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-2"/>
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Debuff" value="dysentery"/>
+		<property name="Debuff" value="dysentery,foodPoisoning"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -5277,7 +5278,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="40"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Debuff" value="infection"/>
+		<property name="Debuff" value="infection,dysentery,dysentery2,foodPoisoning"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking,Science"/>
@@ -7429,7 +7430,7 @@ Mesh files no longer used:
     <property name="Gain_health" value="0"/>
     <property name="Gain_food" value="0"/>
     <property name="Buff" value="dysentery"/>
-    <property name="Buff_chance" value="0.01"/>
+    <property name="Buff_chance" value="0.02"/>
     <property name="Gain_water" value="1"/>
     <property name="Gain_wellness" value="0"/>
     <property name="Sound_start" value="player_eating"/>
@@ -9233,6 +9234,7 @@ Mesh files no longer used:
 <property name="BlockDamage"                  value="10,10"/>
 <property name="ApplyBuff"                    value="1,1" param1="burning"/>
 </property>
+<property name="CraftingSkillGroup"           value="craftSkillScience"/>
 <property name="EconomicValue"                value="24"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9300,7 +9302,6 @@ Mesh files no longer used:
 <property name="Explosion.RadiusEntities"     value="4"/>
 <property name="Explosion.BlastPower"         value="200"/>
 </property>
-<property name="CraftingSkillGroup"           value="craftSkillScience"/>
 <property name="EconomicValue"                value="72"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -10935,7 +10936,7 @@ Mesh files no longer used:
 <property name="PartType"                     value="Barrel"/>
 <property name="Weight"                       value="35"/>
 <property class="Attributes">
-<property name="FalloffRange"                 value="70,150"/>
+<property name="FalloffRange"                 value="90,150"/>
 <property name="DegradationMax"               value="1000,7000"/>
 </property>
 <property name="EconomicValue"                value="300"/>
@@ -10944,7 +10945,7 @@ Mesh files no longer used:
 <property name="Extends"                      value="partsHuntingRifle_barrel"/>
 <property name="DescriptionKey"               value="partsHuntingRifleGroupDesc"/>
 <property class="Attributes">
-<property name="FalloffRange"                 value="80,160"/>
+<property name="FalloffRange"                 value="100,160"/>
 <property name="DegradationMax"               value="1500,10500"/>
 </property>
 <property name="EconomicValue"                value="900"/>
@@ -10995,7 +10996,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="5"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03"/>
+  <property name="Magazine_item_ray_spreads"  value="0.015,0.015,0.015,0.015,0.015,0.015,0.015,0.015"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.5"/>
   <property name="DamageBonus.torso"          value="0.5"/>
@@ -11037,7 +11038,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02"/>
+  <property name="Magazine_item_ray_spreads"  value="0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="5.75"/>
 </property>
@@ -11069,7 +11070,7 @@ Mesh files no longer used:
   <property name="Magazine_size"              value="8"/>
   <property name="Magazine_items"             value="762mmBullet,762mmBulletNG,762mmBulletMG,No Ammo,50BMGBullet,50BMGBulletNG,50BMGBulletMG,No Ammo"/>
   <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1,1"/>
-  <property name="Magazine_item_ray_spreads"  value="0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01"/>
+  <property name="Magazine_item_ray_spreads"  value="0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005"/>
   <!-- Damage Behavior -->
   <property name="DamageBonus.head"           value="6"/>
 </property>
@@ -11148,7 +11149,7 @@ Mesh files no longer used:
 <property name="PartType"                     value="Barrel"/>
 <property name="Weight"                       value="40"/>
 <property class="Attributes">
-<property name="FalloffRange"                 value="80,160"/>
+<property name="FalloffRange"                 value="120,160"/>
 <property name="DegradationMax"               value="1000,7000"/>
 </property>
 <property name="EconomicValue"                value="400"/>
@@ -11157,7 +11158,7 @@ Mesh files no longer used:
 <property name="Extends"                      value="partsSniperRifle_barrel"/>
 <property name="DescriptionKey"               value="partsSniperRifleGroupDesc"/>
 <property class="Attributes">
-<property name="FalloffRange"                 value="100,180"/>
+<property name="FalloffRange"                 value="140,180"/>
 <property name="DegradationMax"               value="1500,10500"/>
 </property>
 <property name="EconomicValue"                value="1200"/>

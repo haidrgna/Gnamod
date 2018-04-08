@@ -2440,14 +2440,15 @@
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.0025"/>
 <decoration type="block" blockname="scrapMetalPile"                       prob="0.0015"/>
 <!-- Traps -->
-<decoration type="block" blockname="mineCandyTin"                         prob="0.0075"/>
-<decoration type="block" blockname="mineHubcap"                           prob="0.001"/>
-<decoration type="block" blockname="hubcapNoMine"                         prob="0.011"/>
+<decoration type="block" blockname="mineCandyTin"                         prob="0.0010"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.0003"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.0017"/>
+<decoration type="block" blockname="mineAirFilter"                        prob="0.0002"/>
 <decoration type="block" blockname="trapSpikesDamage1"                    prob="0.0001"/>
 <decoration type="block" blockname="trapSpikesDamage3"                    prob="0.0001"/>
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0001"/>
 </decorations>
-</subbiome>     
+</subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
@@ -2490,60 +2491,61 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.015" rotatemax="3"/>
 <!-- Prefabs -->
-<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.18"/>
-<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.18"/>
-<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.18"/>
-<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.45"/>
-<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.45"/>
-<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.45"/>
-<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.45"/>
-<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.45"/>
-<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.45"/>
+<decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.06"/>
+<decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.06"/>
+<decoration type="prefab" name="waste_rubble_bldg_03"                     prob="0.06"/>
+<decoration type="prefab" name="waste_rubble_bldg_09"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_bldg_04"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_bldg_05"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_bldg_06"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_bldg_07"                     prob="0.15"/>
+<decoration type="prefab" name="waste_rubble_bldg_08"                     prob="0.25"/>
  
-<decoration type="prefab" name="business_red_brick_01"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_02"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_03"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_04"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_05"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_06"                    prob="0.40"/>
-<decoration type="prefab" name="business_red_brick_07"                    prob="0.40"/>
-<decoration type="prefab" name="business_strip_old_01"                    prob="0.40"/>
-<decoration type="prefab" name="business_strip_old_02"                    prob="0.40"/>
-<decoration type="prefab" name="business_tan_brick_01"                    prob="0.40"/>
-<decoration type="prefab" name="business_tan_brick_02"                    prob="0.40"/>
-<decoration type="prefab" name="business_tan_brick_03"                    prob="0.40"/>
-<decoration type="prefab" name="business_tan_brick_04"                    prob="0.40"/>
-<decoration type="prefab" name="business_tan_brick_05"                    prob="0.40"/>  
+<decoration type="prefab" name="business_red_brick_01"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_02"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_03"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_04"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_05"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_06"                    prob="0.0040"/>
+<decoration type="prefab" name="business_red_brick_07"                    prob="0.0040"/>
+<decoration type="prefab" name="business_strip_old_01"                    prob="0.0040"/>
+<decoration type="prefab" name="business_strip_old_02"                    prob="0.0040"/>
+<decoration type="prefab" name="business_tan_brick_01"                    prob="0.0040"/>
+<decoration type="prefab" name="business_tan_brick_02"                    prob="0.0040"/>
+<decoration type="prefab" name="business_tan_brick_03"                    prob="0.0040"/>
+<decoration type="prefab" name="business_tan_brick_04"                    prob="0.0040"/>
+<decoration type="prefab" name="business_tan_brick_05"                    prob="0.0040"/>  
   
-<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.60"/>
-<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.60"/>  
-<decoration type="prefab" name="mp_waste_bldg_06_intact"                  prob="0.30"/>
-<decoration type="prefab" name="mp_waste_bldg_07_intact"                  prob="0.30"/>
-<decoration type="prefab" name="mp_waste_bldg_governer_08"                prob="0.30"/>
-<decoration type="prefab" name="mp_waste_bldg_ornate_01_intact"           prob="0.30"/>
-<decoration type="prefab" name="mp_waste_bldg_ornate_02_intact"           prob="0.30"/>
-<decoration type="prefab" name="mp_waste_bldg_ornate_03_intact"           prob="0.30"/>
+<decoration type="prefab" name="mp_waste_bldg_01_white"                   prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_03_white"                   prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_04_white"                   prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_01_red"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_02_red"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_03_red"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_04_red"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_04_grey"                    prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_05_grey"                    prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_06_grey"                    prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_01_tan"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_02_tan"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_03_tan"                     prob="0.0060"/>
+<decoration type="prefab" name="mp_waste_bldg_04_tan"                     prob="0.0060"/>  
+<decoration type="prefab" name="mp_waste_bldg_06_intact"                  prob="0.0030"/>
+<decoration type="prefab" name="mp_waste_bldg_07_intact"                  prob="0.0030"/>
+<decoration type="prefab" name="mp_waste_bldg_governer_08"                prob="0.0030"/>
+<decoration type="prefab" name="mp_waste_bldg_ornate_01_intact"           prob="0.0030"/>
+<decoration type="prefab" name="mp_waste_bldg_ornate_02_intact"           prob="0.0030"/>
+<decoration type="prefab" name="mp_waste_bldg_ornate_03_intact"           prob="0.0030"/>
 
 <decoration type="prefab" name="street_light_01"                          prob="0.00025"/>
 <!-- Misc -->
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.00035"/>
 <decoration type="block" blockname="scrapMetalPile"                       prob="0.00035"/>
 <!-- Traps -->
-<decoration type="block" blockname="mineCandyTin"                         prob="0.00075"/>
-<decoration type="block" blockname="mineHubcap"                           prob="0.0001"/>
-<decoration type="block" blockname="hubcapNoMine"                         prob="0.0011"/>
+<decoration type="block" blockname="mineCandyTin"                         prob="0.00010"/>
+<decoration type="block" blockname="mineHubcap"                           prob="0.00003"/>
+<decoration type="block" blockname="hubcapNoMine"                         prob="0.00017"/>
+<decoration type="block" blockname="mineAirFilter"                        prob="0.00002"/>
 <decoration type="block" blockname="trapSpikesDamage1"                    prob="0.00001"/>
 <decoration type="block" blockname="trapSpikesDamage3"                    prob="0.00001"/>
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>

@@ -329,25 +329,7 @@ tbnsew:
 	<property name="EconomicValue" value="20"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
-
- <block id="17" name="concrete">
-	<property name="Material" value="Mconcrete"/>
-	<property name="Shape" value="Terrain"/>
-	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="8"/>
-	<property name="ImposterExchange" value="imposterBlock" param1="4"/>
-	<property name="DropScale" value="2"/>
-	<property name="Map.Color" value="222,222,222"/>
-	<property class="RepairItems"><property name="concreteMix" value="5"/></property>
-	<property name="Group" value="Building"/>
-	<drop event="Harvest" name="rockSmall" count="25" tool_category="harvestingTools"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="CanMobsSpawnOn" value="true"/>
-	<property name="EconomicValue" value="45"/>
-	<property name="EconomicBundleSize" value="20"/>
-</block> 
-  
+ 
 <block id="18" name="ice">
 	<property name="Material" value="snow"/>
 	<property name="Shape" value="Terrain"/>
@@ -378,22 +360,7 @@ tbnsew:
 	<property name="PlantGrowing.GrowOnTop" value="treeTallGrassDiagonal"/>
 	<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 </block>
-<!-- commenting out for optimization
-<block id="21" name="gore">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Gore"/>
-	<property name="Material" value="organic"/>
-	<property name="Shape" value="Terrain"/>
-	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="22"/>
-	<property name="Tag" value="Gore"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Density" value="0.9"/>
-	<property name="FallDamage" value="false"/>
-	<drop event="Destroy" count="0" prob="1"/>
-	<property name="UpgradeRated.ToBlock" value="air"/>
-	<property name="UpgradeRated.Rate" value="15"/>
-</block>-->
+
 
 <block id="22" name="fertileFarmland">
 	<property name="Material" value="Mfarmland"/>
@@ -1461,7 +1428,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="scrapIron" count="15" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="160"/>
+	<property name="EconomicValue" value="100"/>
 	<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 </block>
 
@@ -1483,7 +1450,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="25"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
-	<property name="EconomicValue" value="7"/>
+	<property name="EconomicValue" value="50"/>
 	<property name="DescriptionKey" value="rConcreteBlockGroupDesc"/>
 </block>
 
@@ -2844,17 +2811,16 @@ group desc for stuff like metal siding
 <block id="267" name="animalGore">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="organic"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="Tag" value="Gore"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
+  <property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FallDamage" value="false"/>
   <property name="Class" value="TorchHeatMap"/>
-  <property name="HeatMapStrength" value="5.0"/>
-  <property name="HeatMapTime" value="2400"/>
+  <property name="HeatMapStrength" value="3.334"/>
+  <property name="HeatMapTime" value="540"/>
   <property name="HeatMapFrequency" value="1"/>
-	<drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+  <drop event="Harvest" name="rottenFlesh" count="0,1" tool_category="Butcher"/>
 	<drop event="Destroy" name="femur" count="1"/>
 </block>
 
@@ -3187,9 +3153,9 @@ group desc for stuff like metal siding
 	<property name="ParticleName" value="campfire"/>
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
+  <property name="HeatMapStrength" value="1.67"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="1"/>
 	<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger"/>
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
@@ -4279,14 +4245,14 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="1,2"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Tools/Traps,Science"/>
-	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="50"/>
   	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodLogSpike1"/>
 		<property name="Item" value="wood"/>
 		<property name="ItemCount" value="15"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+  <property name="EconomicValue" value="1"/>
+  <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="409" name="trapSpikesDamage1">
@@ -4388,8 +4354,8 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
-	<property name="EconomicValue" value="30"/>
-	<property name="EconomicBundleSize" value="20"/>
+  <property name="EconomicValue" value="2"/>
+  <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="419" name="corrugatedMetalCNRInside">
@@ -4430,9 +4396,9 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
+  <property name="HeatMapStrength" value="5.00"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="1"/>
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
 		<property name="Modules" value="output,fuel,input"/>
@@ -4631,6 +4597,7 @@ group desc for stuff like metal siding
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 <property name="CanPlayersSpawnOn" value="false"/>
+<property name="Stacknumber" value="1"/>
 <drop event="Destroy" count="0"/>
 </block>
   
@@ -4697,9 +4664,9 @@ group desc for stuff like metal siding
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267,267,320,320,320,320"/>
 <property name="Class" value="TorchHeatMap"/>
-<property name="HeatMapStrength" value="100.0"/>
-<property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="4"/>
+<property name="HeatMapStrength" value="25.0"/>
+<property name="HeatMapTime" value="2160"/>
+<property name="HeatMapFrequency" value="1"/>
 <property name="DowngradeBlock" value="BeaconBrokenSection"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="CanPlayersSpawnOn" value="false"/>
@@ -4770,9 +4737,9 @@ group desc for stuff like metal siding
 <property name="Material" value="Mbeacon"/>
 <property name="Texture" value="355,355,267,267,267,267"/>
 <property name="Class" value="TorchHeatMap"/>
-<property name="HeatMapStrength" value="10"/>
-<property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="2"/>
+<property name="HeatMapStrength" value="1.67"/>
+<property name="HeatMapTime" value="2160"/>
+<property name="HeatMapFrequency" value="1"/>
 <property name="ParticleName" value="signal_flarePrefab"/>
 <property name="CanPlayersSpawnOn" value="false"/>
 <property name="DowngradeBlock" value="BeaconBrokenSectionSmall"/>
@@ -4791,9 +4758,9 @@ group desc for stuff like metal siding
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="OnlySimpleRotations" value="true"/>
 <property name="Class" value="TorchHeatMap"/>
-<property name="HeatMapStrength" value="10"/>
-<property name="HeatMapTime" value="2400"/>
-<property name="HeatMapFrequency" value="2"/>
+<property name="HeatMapStrength" value="1.67"/>
+<property name="HeatMapTime" value="2160"/>
+<property name="HeatMapFrequency" value="1"/>
 <property name="ParticleName" value="candle_flame"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="DowngradeBlock" value="BeaconFlagBroken"/>
@@ -4876,6 +4843,10 @@ group desc for stuff like metal siding
 <property name="Class" value="CarExplode"/>
 <property name="DowngradeBlock" value="BeaconBrokenSectionSmall"/>
 <property name="CanPlayersSpawnOn" value="false"/>
+<property name="Class" value="TorchHeatMap"/>
+<property name="HeatMapStrength" value="0.8334"/>
+<property name="HeatMapTime" value="2160"/>
+<property name="HeatMapFrequency" value="1"/>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
 </block>
@@ -5769,10 +5740,9 @@ group desc for stuff like metal siding
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	<!-- <property name="BuffsWhenWalkedOn" value="burningSmall"/> dont think the forge class supports this -->
+  <property name="HeatMapStrength" value="3.334"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="1"/>
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="forge"/>
@@ -7512,10 +7482,6 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FallDamage" value="false"/>
   <property name="Class" value="Gore"/>
-  <property name="HeatMapStrength" value="1.0"/>
-  <property name="HeatMapTime" value="2400"/>
-  <property name="HeatMapFrequency" value="1"/>
-  
   <property name="LootList" value="63"/>
 	<drop event="Harvest" name="rottingFlesh" count="3" prob="0.75" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="2" prob="0.33" tool_category="Butcher"/>
@@ -8620,6 +8586,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="water_full"/>
 	<property name="Texture" value="223"/>
 	<property name="Map.Color" value="20,20,120"/>
+  <property name="BuffsWhenWalkedOn" value="enemyWaterSpeed"/> 
 </block>
 
 <block id="824" name="waterStaticBucket">
@@ -8633,6 +8600,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="water_full"/>
 	<property name="Texture" value="223"/>
 	<property name="Map.Color" value="20,20,120"/>
+  <property name="BuffsWhenWalkedOn" value="enemyWaterSpeed"/>
 </block>
 
 <block id="825" name="waterMoving">
@@ -8647,6 +8615,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="223"/>
 	<property name="Map.Color" value="20,20,120"/>
 	<property name="Map.Color" value="119,136,204"/>
+  <property name="BuffsWhenWalkedOn" value="enemyWaterSpeed"/>
 </block>
 
 <block id="826" name="water">
@@ -8662,6 +8631,7 @@ group desc for stuff like metal siding
 	<property name="Map.Color" value="20,20,120"/>
 	<property name="Map.Color" value="119,136,204"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+  <property name="BuffsWhenWalkedOn" value="enemyWaterSpeed"/>
 </block>
 	<!-- 1 Free -->
 
@@ -9005,7 +8975,74 @@ group desc for stuff like metal siding
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="Texture" value="306"/>
 </block>
-	<!-- 4 Free -->
+<!--
+<block id="865" name="animalGoreBones">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="organic"/>
+	<property name="Shape" value="Ext3dModel"/> 
+  <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Rocks/Rock01" param1="main_mesh"/>
+	<property name="Collide" value="melee"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+  <property name="Class" value="TorchHeatMap"/>
+  <property name="HeatMapStrength" value="100.0"/>
+  <property name="HeatMapTime" value="2400"/>
+  <property name="HeatMapFrequency" value="1"/>
+  <drop event="Harvest" name="" count="0" tool_category="Butcher"/>
+	<drop event="Destroy" name="femur" count="1"/>
+</block>
+
+<block id="866" name="animalGoreDissipate">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="dirt"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
+  <property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+  <property name="Class" value="PlantGrowing"/>
+  <property name="PlantGrowing.Next" value="animalGoreGone"/>
+  <property name="PlantGrowing.GrowthRate" value="0.5"/>
+  <property name="PlantGrowing.FertileLevel" value="0"/>
+  <property name="PlantGrowing.IsRandom" value="false"/>
+  <property name="PlantGrowing.LightLevelGrow" value="0"/>
+  <property name="PlantGrowing.LightLevelStay" value="0"/>
+  <property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+  <drop event="Harvest" name="rottenFlesh" count="1" tool_category="Butcher"/>
+	<drop event="Destroy" name="femur" count="0"/>
+</block>
+
+<block id="867" name="animalGoreGone">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="dirt"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/LootContainers/fridgePrefab"/>
+  <property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+  <property name="Class" value="PlantGrowing"/>
+  <property name="PlantGrowing.Next" value="lootGoreHelper"/>
+  <property name="PlantGrowing.GrowthRate" value="0.01"/>
+  <property name="PlantGrowing.FertileLevel" value="0"/>
+  <property name="PlantGrowing.IsRandom" value="false"/>
+  <property name="PlantGrowing.LightLevelGrow" value="0"/>
+  <property name="PlantGrowing.LightLevelStay" value="0"/>
+  <property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+  <drop event="Harvest" name="rottenFlesh" count="1" tool_category="Butcher"/>
+	<drop event="Destroy" name="femur" count="0"/>
+</block>
+
+<block id="868" name="lootGoreHelper">
+  <property name="Extends" value="lootWastelandHelper"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/LootContainers/fridgePrefab"/>
+  <property name="MultiBlockDim" value="1,2,1"/>
+  <property name="CreativeMode" value="Dev"/>
+  <property name="PlantGrowing.Next" value="lootGoreHelper"/>
+</block>
+-->
 
 <block id="869" name="plantedChrysanthemum1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
@@ -10343,6 +10380,7 @@ group desc for stuff like metal siding
 </block>
 	<!-- 14 Free -->
 
+ 
 <block id="1092" name="scrapIronBlock">
 	<property name="Extends" value="scrapIronMaster"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronBlock"/> </property>
@@ -10639,11 +10677,19 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="hubcap" count="1"/>
 </block>
 
-<block id="1126" name="ironBars">
-	<property name="Extends" value="ironBarsCentered"/>
-	<property name="Model" value="iron_bars"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-</block>
+  <block id="1126" name="ironBars">
+    <property name="Extends" value="ironBarsCentered"/>
+    <property name="Model" value="iron_bars"/>
+    <property name="Place" value="TowardsPlacerInverted"/>
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="steelBars"/>
+      <property name="Item" value="steelPolish"/>
+      <property name="ItemCount" value="20"/>
+      <property name="UpgradeHitCount" value="8"/>
+    </property>
+  </block>
+
+
 
 <block id="1127" name="concreteWedge">
 	<property name="Extends" value="concreteMaster"/>
@@ -10801,6 +10847,17 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="plantedCotton1" count="1"/>
 </block>
 	<!-- 9 Free -->
+
+<block id="1147" name="steelBars">
+  <property name="Extends" value="ironBarsCentered"/>
+  <property name="Model" value="iron_bars"/>
+  <property name="Place" value="TowardsPlacerInverted"/>
+  <property name="Material" value="Msteel"/>
+  <property name="Texture" value="267"/>
+  <property name="EconomicValue" value="450"/>
+  <property name="EconomicBundleSize" value="1"/>
+  <property class="RepairItems"> <property name="forgedSteel" value="8"/>  <property name="steelPolish" value="2"/> </property>
+</block>
 
 <block id="1156" name="burntWoodWedge7">
 	<property name="Extends" value="burntWoodBlock1"/>
@@ -12179,9 +12236,6 @@ group desc for stuff like metal siding
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ParticleName" value="candleWall_flame"/>
 	<property name="CanPickup" value="true" param1="candle"/>
-	<property name="HeatMapStrength" value="1"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
 	<drop event="Destroy" name="candle" count="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="torchGroupDesc"/>
@@ -12580,10 +12634,10 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="wallTorch"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="2.0"/>
-	<property name="HeatMapTime" value="1200"/> <!-- str1, t600, f5 = 2.5; str1, t900, f5 = 4; str4.05, t1200, f15 = 4.05-8.1; -->
-	<property name="HeatMapFrequency" value="15"/>
+  <property name="Class" value="TorchHeatMap"/>
+  <property name="HeatMapStrength" value="0.3"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="10"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 </block>
 
@@ -12601,10 +12655,10 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="candleWall"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="1"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
+  <property name="Class" value="TorchHeatMap"/>
+  <property name="HeatMapStrength" value="0.2"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="10"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 </block>
 
@@ -13425,6 +13479,8 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="0"/>
 	<drop event="Destroy" name="scrapIron" count="15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+  <property name="EconomicValue" value="8"/>
+  <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="1433" name="rScrapIronLogSpike5"> <!-- log spike 5 rScrap -->
@@ -13923,6 +13979,7 @@ group desc for stuff like metal siding
 	<property name="Map.Color" value="20,20,120"/>
 	<property name="Map.Color" value="119,136,204"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+  <property name="BuffsWhenWalkedOn" value="enemyWaterSpeed"/>
 </block>
 
 <block id="1473" name="brickDestroyedBlock01">
@@ -14447,10 +14504,6 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="0.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
 	</property>
@@ -14515,11 +14568,6 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="HeatMapStrength" value="0.5"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	<!--<property name="RecipeList" value="backpack, workbench"/>-->
-	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property name="Stacknumber" value="1"/>
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
@@ -15106,10 +15154,10 @@ group desc for stuff like metal siding
 	<property name="Model" value="Entities/Industrial/barrel03_burningPrefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="4.05"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
+  <property name="Class" value="TorchHeatMap"/>
+  <property name="HeatMapStrength" value="0.3"/>
+  <property name="HeatMapTime" value="2160"/>
+  <property name="HeatMapFrequency" value="10"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 </block>
@@ -15457,6 +15505,22 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="SpawnEntity"/>
 	<property name="SpawnClass" value="npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJimmy"/>
+</block>
+
+<block id="1916" name="spawnAirdrop">
+	<property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRamp"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="sc_General"/>
+</block>
+
+<block id="1917" name="spawnBeaconDrop">
+	<property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRamp"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="sc_Beacon"/>
 </block>
 
 <block id="1924" name="flagPoleWhiteRiver">
@@ -16554,7 +16618,8 @@ group desc for stuff like metal siding
 <property name="PlantGrowing.IsRandom" value="false"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
-<property name="EconomicValue" value="10000"/>
+<property name="EconomicValue" value="15000"/>
+<property name="Stacknumber" value="1"/>
 <drop event="Destroy" name="cloth" count="0" />
 <drop event="Fall" name="StartingKitSelector" count="1" prob="1" stick_chance="1"/>
 </block>

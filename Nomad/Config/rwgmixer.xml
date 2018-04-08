@@ -883,8 +883,38 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output-->
-<output module="WorldBuilding"/>
+<!-- Final Output
+<output module="WorldBuilding"/> -->
+
+			<module name="distanceBaseBase" type="Cylinders">
+				<property name="frequency" value="256"/>
+			</module><!--Elev 1@center / Elev -1@radius1-->
+			<module name="distanceBase" type="ScaleInput">
+				<property name="sourceModule" value="distanceBaseBase"/>
+				<property name="x" value="0.00005"/>
+				<property name="z" value="0.00005"/>
+				<property name="y" value="0"/>
+			</module><!--Elev 1@center / Elev -1@radius20,000-->
+  
+			<module name="distanceOut" type="ScaleBiasOutput">
+				<property name="sourceModule" value="distanceBase"/>
+				<property name="scale" value="-10000"/>
+				<property name="bias" value="10000"/>
+			</module><!--Elev 0@center / Elev 20,000@radius20,000-->  
+
+			<module name="constant5" type="Constant"><!-- 5 -->
+				<property name="constant" value="5"/>
+			</module>
+
+			<module name="centerFlatten" type="Select">
+				<property name="controlModule" value="distanceOut"/>
+				<property name="sourceModule1" value="FinalScale"/>
+				<property name="sourceModule2" value="WorldBase"/>
+				<property name="bounds" value="-1000000 ,1500"/><!--0 to 1000 is flat-->
+				<property name="edgeFalloff" value="2000"/><!--900 to 1100 is transition area-->
+			</module>
+
+			<output module="centerFlatten"/>
 </terrain_generator>
 
 <!-- Classic Terrain -->
