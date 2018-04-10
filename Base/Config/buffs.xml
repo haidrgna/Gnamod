@@ -227,7 +227,7 @@ built-in buff variables:
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
 
 <buff id="warmByFire" duration="0" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
-<modify id="0" stat="coretemp" amount="0.2" rate="1"/>  </buff>
+<modify id="0" stat="coretemp" amount="0.3" rate="1"/>  </buff>
 
 <buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
 </buff>
