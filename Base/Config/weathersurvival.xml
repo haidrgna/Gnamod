@@ -15,7 +15,7 @@
 	<!-- How quickly in second it takes you to become fully soaked from snowfall -->
 	<property name="SnowfallSoakRate" value="300"/>
 	<!-- If players core temp is below this value they will not dry off. -->
-	<property name="DryTempCutoff" value="45"/>
+	<property name="DryTempCutoff" value="35"/>
 	<!-- Per degree over DryTempCutoff how many percent per-second to dry (1=100%) -->
 	<property name="DryPercentPerSecondPerDegree" value="0.00020833"/>
 	<!-- Max percent per second the player can dry off  (1=100%) -->
@@ -33,9 +33,9 @@
 	<!-- How much change you feel in the outside air temperature when you are 100% wet. -->
 	<property name="OutsideTempChangeWhenSoaked" value="-30"/>
 	<!-- Base temperature when you are wet. -->
-	<property name="BaseOutsideTempChangeWhenWet" value="-10"/>
+	<property name="BaseOutsideTempChangeWhenWet" value="0"/>
 	<!-- How much change you feel in the outside air temperature when wet and 100% windy. -->
-	<property name="WindyOutsideTempChangeWhenWet" value="-15"/>
+	<property name="WindyOutsideTempChangeWhenWet" value="-10"/>
 	<!-- How much change you feel in the outside air temperature when dry and 100% windy. -->
 	<property name="WindyOutsideTempChangeWhenDry" value="-5"/>
 	<!-- How much direct sunlight warms you. -->

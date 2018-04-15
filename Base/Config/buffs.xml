@@ -173,13 +173,13 @@ built-in buff variables:
 <buff id="wet" notificationClass="WetBuffNotification" duration="0" stack="discard" buffif="waterLevel greater 0" debuffif="waterLevel equals 0" icon="ui_game_symbol_wet" name_key="wet" description_key="wetDesc" tooltip_key="wetTooltip">
 </buff>
 
-<buff id="waterCool1" duration="0" stack="discard" mutex="waterCool2,waterCool3" buffif="waterLevel greater 0.10" debuffif="waterLevel less 0.10" icon="ui_game_symbol_cold" name_key="waterCool1" description_key="waterCoolDesc">
+<buff id="waterCool1" duration="0" stack="discard" mutex="waterCool2,waterCool3,warmByFire" buffif="waterLevel greater 0.25" debuffif="waterLevel less 0.25" icon="ui_game_symbol_cold" name_key="waterCool1" description_key="waterCoolDesc">
 <modify id="0" stat="coretemp" amount="-0.2" rate="1"/>  </buff>
 
-<buff id="waterCool2" duration="0" stack="discard" mutex="waterCool3" actions="debuff(waterCool1)" buffif="waterLevel greater 0.25" debuffif="waterLevel less 0.25" icon="ui_game_symbol_cold" name_key="waterCool2" description_key="waterCoolDesc">
+<buff id="waterCool2" duration="0" stack="discard" mutex="waterCool3,warmByFire" actions="debuff(waterCool1)" buffif="waterLevel greater 0.50" debuffif="waterLevel less 0.50" icon="ui_game_symbol_cold" name_key="waterCool2" description_key="waterCoolDesc">
 <modify id="0" stat="coretemp" amount="-0.4" rate="1"/>  </buff>
 
-<buff id="waterCool3" duration="0" stack="discard" actions="debuff(waterCool2);debuff(waterCool1)" buffif="waterLevel greater 0.50" debuffif="waterLevel less 0.50" icon="ui_game_symbol_cold" name_key="waterCool3" description_key="waterCoolDesc">
+<buff id="waterCool3" duration="0" stack="discard" mutex="warmByFire" actions="debuff(waterCool2);debuff(waterCool1)" buffif="waterLevel greater 0.75" debuffif="waterLevel less 0.75" icon="ui_game_symbol_cold" name_key="waterCool3" description_key="waterCoolDesc">
 <modify id="0" stat="coretemp" amount="-0.8" rate="1"/>  </buff>
 
 <buff id="metabolizeFoodBuff" buffif="CTRfood > 0" debuffif="CTRfood lequal 0" actions="increment(CTRfood, -1, 1, 0, 0);min(CTRfood, 0)"/>
@@ -226,11 +226,10 @@ built-in buff variables:
 <buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="extend">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
 
-<buff id="warmByFire" duration="0" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
-<modify id="0" stat="coretemp" amount="0.3" rate="1"/>  </buff>
+<buff id="warmByFire" duration="0" stack="discard" actions="debuff(waterCool1);debuff(waterCool2);debuff(waterCool3)" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
+<modify id="0" stat="coretemp" amount="0.5" rate="1"/>  </buff>
 
-<buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
-</buff>
+<buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">  </buff>
 
 <buff id="hitTag" duration="3" stack="extend" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="metalhitmetal">
 <modify id="0" stat="health" amount="-1" rate="1"/>  </buff>
