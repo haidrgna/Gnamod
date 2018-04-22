@@ -29,10 +29,11 @@
 <spawn maxcount="2"   respawndelay="1"   time="Any"   entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="13"  respawndelay="1"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <!-- Zombies Night -->
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesRadiatedBiomes"/>
-<spawn maxcount="4"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage4"/>
+<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesRadiatedBiomes"/>
+<spawn maxcount="6"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage4"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeCityWasteland"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeCityWasteland"/>
 </biome>
 <!-- Plains Wasteland -->
 <biome name="wasteland">
@@ -40,99 +41,108 @@
 <spawn maxcount="1"   respawndelay="1"   time="Any"   entitygroup="ZombiesRadiatedBiomes"/>
 <spawn maxcount="14"  respawndelay="1"   time="Any"   entitygroup="ZombiesWastelandBiomes"/>
 <!-- Zombies Night -->
-<spawn maxcount="5"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage3"/>
+<spawn maxcount="6"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage3"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifePlainsWasteland"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifePlainsWasteland"/>
 </biome>
 <!-- Burnt Forest -->
 <biome name="burnt_forest">
 <!-- Zombies Day -->
-<spawn maxcount="2"   respawndelay="1"  time="Day"    entitygroup="ZombiesCrispy"/>
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="ZombiesHotBiomes"/>
+<spawn maxcount="2"   respawndelay="1"   time="Day"   entitygroup="ZombiesCrispy"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="ZombiesHotBiomes"/>
 <!-- Zombies Night -->
-<spawn maxcount="2"   respawndelay="0"  time="Night"  entitygroup="ZombiesCrispy"/>
-<spawn maxcount="3"   respawndelay="0"  time="Night"  entitygroup="ZombiesGnahordeStage2"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesCrispy"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage2"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
-<spawn maxcount="3"   respawndelay="1"  time="Day"    entitygroup="WildlifeForestWasteland"/>
-<spawn maxcount="1"   respawndelay="0"  time="Night"  entitygroup="ZombiesVultures"/>
+<spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeForestWasteland"/>
 </biome>
 <!-- Snow Flats -->
 <biome name="city">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="1"   respawndelay="999" time="Any"   entitygroup="ZombiesJack"/>
 <spawn maxcount="4"   respawndelay="999" time="Any"   entitygroup="ZombiesMountainBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="2"   respawndelay="1"   time="Day"   entitygroup="WildlifeSnowFlats"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Alpine Forest -->
 <biome name="snow">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="1"   respawndelay="999" time="Any"   entitygroup="ZombiesJack"/>
 <spawn maxcount="4"   respawndelay="999" time="Any"   entitygroup="ZombiesMountainBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeAlpineForest"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Pine Forest -->
 <biome name="pine_forest">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifePineForest"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Dense Forests -->
 <biome name="forest">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeDenseForest"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Grasslands -->
 <biome name="plains">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeGrasslands"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 <!-- Wetlands -->
 <biome name="water">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesGreenBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="3"   respawndelay="1"   time="Day"   entitygroup="WildlifeWetlands"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>  
 <!-- Desert -->  
 <biome name="desert">
 <!-- Zombies Horde Mode -->
 <spawn maxcount="5"   respawndelay="999" time="Any"   entitygroup="ZombiesHotBiomes"/>
-<spawn maxcount="3"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="3"   respawndelay="1"   time="Night" entitygroup="ZombiesGnahordeStage1"/>
+<spawn maxcount="2"   respawndelay="0"   time="Night" entitygroup="ZombiesGnahordeStage0"/>
 <!-- Animals -->
 <spawn maxcount="2"   respawndelay="1"   time="Day"   entitygroup="WildlifeDesert"/>
-<spawn maxcount="1"   respawndelay="0"   time="Night" entitygroup="ZombiesVultures"/>
 </biome>
 
 <!-- Scout and Heat Hordes -->
 <entityspawner name="Scouts" dynamic="true" wrapMode="wrap">
 <day value="1">
 <property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesGnahordeStage0"/>
+<property name="EntityGroupName"    value="ZombiesGnahordeStage1"/>
+<property name="Time"               value="Night"/>
+<property name="DelayBetweenSpawns" value="2"/>
+<property name="TotalAlive"         value="1"/>
+<property name="TotalPerWave"       value="2"/>
+</day>
+<day value="2,3">
+<property name="ResetToday"         value="true"/>
+<property name="EntityGroupName"    value="ZombiesGnahordeStage1"/>
 <property name="Time"               value="Night"/>
 <property name="DelayBetweenSpawns" value="2"/>
 <property name="TotalAlive"         value="2"/>
-<property name="TotalPerWave"       value="4"/>
+<property name="TotalPerWave"       value="2"/>
 </day>
-<day value="2,3">
+<day value="4,5">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesGnahordeStage1"/>
 <property name="Time"               value="Night"/>
@@ -140,21 +150,13 @@
 <property name="TotalAlive"         value="3"/>
 <property name="TotalPerWave"       value="6"/>
 </day>
-<day value="4,5">
-<property name="ResetToday"         value="true"/>
-<property name="EntityGroupName"    value="ZombiesGnahordeStage0"/>
-<property name="Time"               value="Night"/>
-<property name="DelayBetweenSpawns" value="2"/>
-<property name="TotalAlive"         value="3"/>
-<property name="TotalPerWave"       value="9"/>
-</day>
 <day value="6,8">
 <property name="ResetToday"         value="true"/>
 <property name="EntityGroupName"    value="ZombiesGnahordeStage2"/>
 <property name="Time"               value="Night"/>
 <property name="DelayBetweenSpawns" value="2"/>
-<property name="TotalAlive"         value="5"/>
-<property name="TotalPerWave"       value="10"/>
+<property name="TotalAlive"         value="4"/>
+<property name="TotalPerWave"       value="8"/>
 </day>
 <day value="9,10">
 <property name="ResetToday"         value="true"/>
