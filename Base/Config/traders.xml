@@ -491,22 +491,21 @@
 <item name="oilShale"                   count="25,100"      prob="0.075"/>
 <item name="coal"                       count="50,500"      prob="0.075"/>
 <item name="potassiumNitratePowder"     count="50,500"      prob="0.075"/>
-<item name="scrapIron"                  count="2500"        prob="0.150"/>
+<item name="scrapIron"                  count="2500"        prob="0.125"/>
 <item name="scrapBrass"                 count="25,250"      prob="0.075"/>
 <item name="scrapLead"                  count="25,250"      prob="0.075"/>
 <item name="animalFat"                  count="5,25"        prob="0.075"/>
 <item name="femur"                      count="5,25"        prob="0.075"/>
 <item name="leather"                    count="5,25"        prob="0.075"/>
-<item name="feather"                    count="50,250"      prob="0.075"/>
 <item name="cloth"                      count="50,250"      prob="0.075"/>
+<item name="nail"                       count="50,100"      prob="0.100"/>
 </trader_item_group>
-    
+
 <trader_item_group name="MaterialsCommon">
 <item name="cobblestones"               count="100,1000"    prob="0.100"/>
 <item name="cement"                     count="50,500"      prob="0.025"/>
 <item name="forgedIron"                 count="50,500"      prob="0.100"/>
 <item name="shortMetalPipe"             count="5,25"        prob="0.100"/>
-<item name="nail"                       count="10,100"      prob="0.100"/>
 <item name="glue"                       count="5,50"        prob="0.050"/>
 <item name="oil"                        count="5,25"        prob="0.070"/>
 <item name="spring"                     count="5,25"        prob="0.050"/>
@@ -517,6 +516,7 @@
 <item name="emptyJar"                   count="5,15"        prob="0.050"/>
 <item name="candyTin"                   count="5,15"        prob="0.005"/>
 <item name="paper"                      count="10,50"       prob="0.050"/>
+<item name="feather"                    count="50,250"      prob="0.075"/>
 </trader_item_group>
 
 <trader_item_group name="MaterialsUncommon">
@@ -577,8 +577,8 @@
 <item name="autoTurret"                 count="1,2"         prob="0.150"/>
 <item name="bladeTrap"                  count="1,4"         prob="0.200"/>
 <item name="spotlightPlayer"            count="1,4"         prob="0.150"/>
-<item name="trapSpikesNew"              count="50,100"      prob="0.100"/>
-<item name="scrapIronLogSpike4"         count="25,50"       prob="0.100"/>
+<item name="trapSpikesNew"              count="100,500"     prob="0.100"/>
+<item name="scrapIronLogSpike4"         count="50,100"      prob="0.100"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksCommon">
@@ -975,27 +975,27 @@
 </trader_items>
 
 <tier_items level="1,99"              count="all">
-<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsBasic"          count="5"/>
 <item group="MaterialsCommon"         count="5"/>
 <item group="MaterialsUncommon"       count="1,5"/>
-<item group="BuildingBlocksCommon"    count="3,5"/>
+<item group="BuildingBlocksCommon"    count="5"/>
 <item group="BuildingBlocksUncommon"  count="1,5"/>
-<item group="BuildingStations"        count="0,2"/>
-<item group="BuildingTraps"           count="0,2"/>
+<item group="BuildingStations"        count="1,2"/>
+<item group="BuildingTraps"           count="1,2"/>
 <item group="BuildingElectricity"     count="0,2"/>
-<item group="BasicMaterials"          count="25"/>
+<item group="BasicMaterials"          count="30"/>
 </tier_items>
 
 <tier_items level="100,199"           count="all">
-<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsBasic"          count="5"/>
 <item group="MaterialsCommon"         count="5"/>
 <item group="MaterialsUncommon"       count="4"/>
-<item group="BuildingBlocksCommon"    count="3,5"/>
+<item group="BuildingBlocksCommon"    count="5"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingStations"        count="2"/>
 <item group="BuildingTraps"           count="1"/>
 <item group="BuildingElectricity"     count="2"/>
-<item group="BasicMaterials"          count="25"/>
+<item group="BasicMaterials"          count="35"/>
 </tier_items>
 
 <tier_items level="200,299"           count="all">
@@ -1007,7 +1007,7 @@
 <item group="BuildingStations"        count="2"/>
 <item group="BuildingTraps"           count="2"/>
 <item group="BuildingElectricity"     count="2"/>
-<item group="BasicMaterials"          count="25"/>
+<item group="BasicMaterials"          count="40"/>
 </tier_items>
 
 <tier_items level="300,399"           count="all">
