@@ -182,6 +182,8 @@
 <property name="ArmsExplosionDamageMultiplier"      value="0.75"/>
 <property name="HeadExplosionDamageMultiplier"      value="0.75"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.75"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff"/>
 </entity_class>
 
 <!-- FERAL ZOMBIES                                  *** Always runs, has more HP, harder to dismember and stronger base hand. *** -->
@@ -229,6 +231,8 @@
 <property name="ArmsExplosionDamageMultiplier"      value="0.60"/>
 <property name="HeadExplosionDamageMultiplier"      value="0.60"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.60"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 </entity_class>
 
 <!-- RADIATED ZOMBIES                               *** Default radiated zonbies, they glow in the dark and are overall tougher. They are not faster but have a special radiated hand. *** -->
@@ -275,6 +279,8 @@
 <property name="ArmsExplosionDamageMultiplier"      value=".45"/>
 <property name="HeadExplosionDamageMultiplier"      value=".45"/>
 <property name="ChestExplosionDamageMultiplier"     value=".45"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 </entity_class>
 
 <!-- FERAL RADIATED ZOMBIES                         *** The most badass zombies, they are fast, super strong and have a powerful hand. *** -->
@@ -295,6 +301,8 @@
 <property name="ArmsExplosionDamageMultiplier"      value="0.4"/>
 <property name="HeadExplosionDamageMultiplier"      value="0.5"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.5"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieStrongRegen"/>
 </entity_class>
 
 <!-- Basic Non-hostile Animal -->
@@ -644,7 +652,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 <property name="Mesh"                               value="Zombies/zombieStandardBoeRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -670,7 +677,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 <property name="Mesh"                               value="Zombies/zombieStandardBoeRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -712,7 +718,6 @@
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -733,7 +738,6 @@
 <property name="Mesh"                               value="Zombies/zombieStandardJoeRagdoll"/>
 <property name="TintMaterial2"                      value="79,40,26"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -799,7 +803,6 @@
 <property name="MaxHealth"                          value="600"/>
 <property name="TintMaterial2"                      value="41,38,34"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -828,7 +831,6 @@
 <property name="MaxHealth"                          value="900"/>
 <property name="TintMaterial2"                      value="41,38,34"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -868,7 +870,6 @@
 <entity_class name="zombieYoRadLimper"              extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -889,7 +890,6 @@
 <entity_class name="zombieYoRadFeral"               extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardYoRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -929,7 +929,6 @@
 <entity_class name="zombieSteveRadFlailer"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -950,7 +949,6 @@
 <property name="Mesh"                               value="Zombies/zombieStandardSteveRagdoll"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
 </entity_class>
@@ -989,7 +987,6 @@
 <entity_class name="zombieClarkeRadWalker"          extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -1009,7 +1006,6 @@
 <entity_class name="zombieClarkeRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardSuitRagdoll"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -1048,7 +1044,6 @@
 <entity_class name="zombieEugeneRadIntimidator"     extends="zombieTemplateRad">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -1068,7 +1063,6 @@
 <entity_class name="zombieEugeneRadFeral"           extends="zombieTemplateRadFeral">
 <property name="Mesh"                               value="Zombies/zombieStandardHoodieRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -1131,7 +1125,6 @@
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="TintMaterial2"                      value="41,41,41"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1159,7 +1152,6 @@
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="TintMaterial2"                      value="41,41,41"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1216,7 +1208,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 <property name="Mesh"                               value="Zombies/zombieStandardOldTimerRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -1242,7 +1233,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 <property name="Mesh"                               value="Zombies/zombieStandardOldTimerRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -1291,7 +1281,6 @@
 <property name="MaxHealth"                          value="400"/>
 <property name="TintMaterial1"                      value="84,84,84"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -1314,7 +1303,6 @@
 <property name="MaxHealth"                          value="1200"/>
 <property name="TintMaterial1"                      value="84,84,84"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -1443,7 +1431,6 @@
 <property name="Mesh"                               value="Zombies/zombieStandardHazmatRagdoll"/>
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -1465,7 +1452,6 @@
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -1484,7 +1470,8 @@
 <property name="SoundFootstepModifier"              value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 <property name="HandItem"                           value="handZombieBurning"/>
 <property name="ExperienceGain"                     value="1500"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen;fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1520,20 +1507,13 @@
 <property name="LegCrippleThreshold"                value="0"/>
 <property name="KnockdownProneDamageThreshold"      value="0"/>
 <property name="KnockdownKneelDamageThreshold"      value="0"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen;fireProtection"/>
 <!-- Puking --> 
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="10"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
@@ -1561,7 +1541,8 @@
 <property name="SoundFootstepModifier"              value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 <property name="HandItem"                           value="handZombieBurningFeral"/>
 <property name="ExperienceGain"                     value="2500"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen;fireProtection"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1582,7 +1563,8 @@
 <property name="HandItem"                           value="handZombieBurningRadiated"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen;fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1623,17 +1605,10 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen;fireProtection"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="10"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
@@ -1662,7 +1637,8 @@
 <property name="HandItem"                           value="handZombieBurningRadiated"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="fireProtection"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieStrongRegen;fireProtection"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1726,15 +1702,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="1"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -1784,7 +1752,6 @@
 <property name="NightApproachSpeed"                 value="1.70"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1826,15 +1793,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="1"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -1861,7 +1820,6 @@
 <property name="NightWanderSpeed"                   value="0.75"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1920,15 +1878,7 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2500"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="12"/>
@@ -1973,7 +1923,6 @@
 <property name="ExperienceGain"                     value="3000"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -2014,17 +1963,8 @@
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2500"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="12"/>
@@ -2050,7 +1990,6 @@
 <property name="ExperienceGain"                     value="4000"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
@@ -2114,7 +2053,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial1"                      value="56,50,40"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2142,7 +2080,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial1"                      value="56,50,40"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2206,7 +2143,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="32,24,20"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2234,7 +2170,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="32,24,20"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2298,7 +2233,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="41,25,25"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -2327,7 +2261,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="41,25,25"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="5"/>
@@ -2391,7 +2324,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -2419,7 +2351,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="7"/>
@@ -2483,7 +2414,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="83,79,64"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2511,7 +2441,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="TintMaterial2"                      value="83,79,64"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2565,15 +2494,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
@@ -2614,7 +2535,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2652,15 +2572,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="12"/>
@@ -2684,7 +2596,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2747,7 +2658,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2775,7 +2685,6 @@
 <property name="PhysicsBody"                        value="zombieStandardFemale"/>
 <property name="HandItem"                           value="handZombieInfectiousRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
@@ -2838,15 +2747,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombieBoss"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="12"/>
@@ -2899,7 +2800,6 @@
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
 <property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="TintMaterial0"                      value="172,242,172"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <property name="CanClimbVertical"                   value="true"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
@@ -2944,17 +2844,8 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombieBossRadiated"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="12"/>
@@ -2984,7 +2875,6 @@
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
 <property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="TintMaterial0"                      value="172,242,172"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <property name="CanClimbVertical"                   value="true"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
@@ -3053,15 +2943,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePuke"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3113,7 +2995,6 @@
 <property name="ExperienceGain"                     value="3000"/>
 <property name="TintMaterial2"                      value="64,63,62"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3155,18 +3036,9 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePukeRadiated"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="TintMaterial2"                      value="64,63,62"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3196,7 +3068,6 @@
 <property name="ExperienceGain"                     value="4000"/>
 <property name="TintMaterial2"                      value="64,63,62"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3257,15 +3128,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePuke"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3311,7 +3174,6 @@
 <property name="MaxHealth"                          value="1200"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3351,17 +3213,8 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePukeRadiated"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3388,7 +3241,6 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3440,15 +3292,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePuke"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3494,7 +3338,6 @@
 <property name="MaxHealth"                          value="1200"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3534,17 +3377,8 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePukeRadiated"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3571,7 +3405,6 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3629,15 +3462,7 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePuke"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3682,7 +3507,6 @@
 <property name="MaxHealth"                          value="1200"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3721,17 +3545,8 @@
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handZombiePukeRadiated"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="5"/>
@@ -3757,7 +3572,6 @@
 <property name="ExperienceGain"                     value="4000"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3780,15 +3594,7 @@
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="800"/>
 <property name="ExperienceGain"                     value="2000"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="NightApproachSpeed"                 value="0.80"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
@@ -3843,15 +3649,7 @@
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="1600"/>
 <property name="ExperienceGain"                     value="3000"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
@@ -3895,15 +3693,7 @@
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="1600"/>
 <property name="ExperienceGain"                     value="4000"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="NightApproachSpeed"                 value="0.80"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
@@ -3931,7 +3721,6 @@
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
 <property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="TintMaterial0"                      value="172,242,172"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="1"/>
@@ -3962,15 +3751,7 @@
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="3200"/>
 <property name="ExperienceGain"                     value="5000"/>
-<property name="AITask-1"                           value="BreakDoor"/>
-<property name="AITask-2"                           value="BreakBlock"/>
-<property name="AITask-3"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="AITask-4"                           value="ApproachAndAttackTarget"     param1="EntityPlayer"/>
-<property name="AITask-5"                           value="ApproachAndAttackTarget"     param1="EntityNPC"/>
-<property name="AITask-6"                           value="ApproachAndAttackTarget"     param1="EntityAnimalStag"/>
-<property name="AITask-7"                           value="ApproachAndAttackTarget"     param1="EntityEnemyAnimal"/>
-<property name="AITask-8"                           value="ApproachSpot"/>
-<property name="AITask-9"                           value="Wander"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="10"/>
@@ -3997,7 +3778,6 @@
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/rad_eye"/>
 <property name="ParticleOnSpawn"                    value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <property name="TintMaterial0"                      value="172,242,172"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
 <property name="WalkType"                           value="9"/>
@@ -4531,9 +4311,10 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="MaxHealth"                          value="500"/>
 <property name="ExperienceGain"                     value="3000"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4554,9 +4335,10 @@
 <property name="HandItem"                           value="handAnimalZombieBearRad"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="5000"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.25"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieStrongRegen"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4577,9 +4359,10 @@
 <property name="HandItem"                           value="handAnimalZombieVulture"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="3000"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
 <drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
@@ -4596,9 +4379,10 @@
 <property name="HandItem"                           value="handAnimalZombieDogRad"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2000"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.20"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4641,8 +4425,10 @@
 <property name="HandItem"                           value="handAnimalZombieDogRad"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="4500"/>
-<property name="Buffs"                              value="zombieRadiatedBuff80"/>
-<property name="CorpseBlockChance"                  value="0"/>
+<property name="CorpseBlock"                        value="HordeLoot"/>
+<property name="CorpseBlockChance"                  value="0.25"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4684,11 +4470,12 @@
 <property name="HandItem"                           value="handAnimalZombieDogRad"/>
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="750"/>
-<property name="Buffs"                              value="zombieRadiatedBuff40"/>
 <property name="ApproachSpeed"                      value="1.35"/>
 <property name="NightApproachSpeed"                 value="1.5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4920,7 +4707,7 @@
 <entity_class name="animalZombieVultureFlaming"     extends="animalZombieVulture">
 <property name="HandItem"                           value="handZombieBurning"/>
 <property name="MaxHealth"                          value="250"/>
-<property name="Buffs"                              value="ZombieBurning"/>
+<property name="Buffs"                              value="vultureIgnite"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
 <drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>

@@ -21,7 +21,6 @@
 	<!-- Player Skills -->
 	<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="500" group="health" >
 		<effect name="StaminaDegradation">
-			<!-- <multiply skill_level= and <multiply perk_level= are completely interchangeable. They parse as the same value. -->
 			<multiply skill_level="1,5" value="1.00,0.95"/>
 			<multiply skill_level="5,11" value="0.95,0.91"/>
 			<multiply skill_level="11,19" value="0.91,0.87"/>
@@ -43,48 +42,51 @@
       <multiply skill_level="1,100" value="2.0,1.75"/>
     </effect>
     <effect name="MinWellness">
-      <setvalue skill_level="0,100" value="10"/>
+      <setvalue skill_level="0,100" value="100"/>
     </effect>
 	</player_skill>
 <!-- always_fire="true" : If a perk has requirements then it MAY not always fire correctly if/when/because it's not called in conjunction with a skill. This flag skips the particular bit of code. -->
 <perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" always_fire="true" group="health">
-		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1"/>
-		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="10"/>
-		<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="20"/>
-		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="40"/>
-		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="60"/>
+		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="5"/>
+		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="20"/>
+    <requirement perk_level="3" required_player_level="50"/>
+		<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="40"/>
+    <requirement perk_level="4" required_player_level="75"/>
+		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="60"/>
+    <requirement perk_level="5" required_player_level="100"/>
+		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="80"/>
 		<effect name="MinWellness">
 			<add perk_level="0" value="0"/>
 			<add perk_level="1" value="5"/>
 			<add perk_level="2" value="10"/>
-			<add perk_level="3" value="20"/>
-			<add perk_level="4" value="30"/>
-			<add perk_level="5" value="50"/>
+			<add perk_level="3" value="25"/>
+			<add perk_level="4" value="50"/>
+			<add perk_level="5" value="100"/>
 		</effect>
 		<effect name="MaxWellness">
 			<add perk_level="0" value="0"/>
 			<add perk_level="1" value="5"/>
 			<add perk_level="2" value="10"/>
-			<add perk_level="3" value="20"/>
-			<add perk_level="4" value="30"/>
-			<add perk_level="5" value="50"/>
+			<add perk_level="3" value="25"/>
+			<add perk_level="4" value="50"/>
+			<add perk_level="5" value="100"/>
 		</effect>
 	</perk>
-	<perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" always_fire="true" group="health">
-		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1"/>
-		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="10"/>
-		<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="20"/>
-		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="40"/>
-		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="60"/>
-		<effect name="StaminaGain">
-			<add perk_level="0" value="0"/>
-			<add perk_level="1" value="0.1"/>
-			<add perk_level="2" value="0.2"/>
-			<add perk_level="3" value="0.4"/>
-			<add perk_level="4" value="0.6"/>
-			<add perk_level="5" value="1.0"/>
-		</effect>
-	</perk>
+  <perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" always_fire="true" group="health">
+    <requirement perk_level="1" required_skill_name="Athletics" required_skill_level="5"/>
+    <requirement perk_level="2" required_skill_name="Athletics" required_skill_level="20"/>
+    <requirement perk_level="3" required_skill_name="Athletics" required_skill_level="40"/>
+    <requirement perk_level="4" required_skill_name="Athletics" required_skill_level="60"/>
+    <requirement perk_level="5" required_skill_name="Athletics" required_skill_level="80"/>
+    <effect name="StaminaGain">
+      <add perk_level="0" value="0"/>
+      <add perk_level="1" value="0.1"/>
+      <add perk_level="2" value="0.2"/>
+      <add perk_level="3" value="0.4"/>
+      <add perk_level="4" value="0.6"/>
+      <add perk_level="5" value="1.0"/>
+    </effect>
+  </perk>
 
 	<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging">
 		<effect name="LootTime">

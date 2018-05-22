@@ -437,7 +437,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- ============================== Block Recipes =================================================================================================================================================================================================================================================================================================================================================== -->
 <!-- Cloth Blocks -->
-<recipe name="awningBlock" count="1">                                                                       <ingredient name="cloth" count="10"/> <ingredient name="wood" count="4"/> </recipe>
+<recipe name="awningBlock" count="1">                                                                       <ingredient name="cloth" count="4"/> <ingredient name="wood" count="4"/> </recipe>
 <recipe name="awningRamp" count="1">                                                                        <ingredient name="awningBlock"/> </recipe>
 <recipe name="awningCNRFull" count="1">                                                                     <ingredient name="awningBlock"/> </recipe>
 <recipe name="awningCNRInside" count="1">                                                                   <ingredient name="awningBlock"/> </recipe>
@@ -445,7 +445,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="awningPyramid" count="1">                                                                     <ingredient name="awningBlock"/> </recipe>
 <recipe name="awningCNRRound" count="1">                                                                    <ingredient name="awningBlock"/> </recipe>
 <recipe name="awningCNRRoundTop" count="1">                                                                 <ingredient name="awningBlock"/> </recipe>
-<recipe name="camoNetBlock" count="1">                                                                      <ingredient name="cloth" count="10"/> <ingredient name="dirtFragment"/> <ingredient name="yuccaFibers" count="10"/> </recipe>
+<recipe name="camoNetBlock" count="1">                                                                      <ingredient name="cloth" count="4"/> <ingredient name="dirtFragment"/> <ingredient name="yuccaFibers" count="10"/> </recipe>
 <recipe name="camoNetRamp" count="1">                                                                       <ingredient name="camoNetBlock"/> </recipe>
 <recipe name="camoNetCNRFull" count="1">                                                                    <ingredient name="camoNetBlock"/> </recipe>
 <recipe name="camoNetSheet" count="1">                                                                      <ingredient name="camoNetBlock"/> </recipe>
@@ -470,7 +470,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="brickWedgeTipStairs" count="1">                                                               <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickGable" count="1">                                                                        <ingredient name="brickBlock"/> </recipe>
 <!-- Flagstone Blocks -->
-<recipe name="flagstoneBlock" count="1">                                                                    <ingredient name="cobblestones" count="5"/> </recipe>
+<recipe name="flagstoneBlock" count="1">                                                                    <ingredient name="cobblestones" count="6"/> </recipe>
 <recipe name="flagstoneRamp" count="1">                                                                     <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstoneCNRFull" count="1">                                                                  <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstoneHalf" count="1">                                                                     <ingredient name="flagstoneBlock"/> </recipe>
@@ -552,7 +552,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="rebarFramePillar100" count="1">                                                               <ingredient name="rebarFrameBlock"/> </recipe>
 <recipe name="rebarFrameRamp" count="1">                                                                    <ingredient name="rebarFrameBlock"/> </recipe>
 <!-- Scrap Iron Frames -->
-<recipe name="scrapIronFrameBlock" count="1">                                                               <ingredient name="scrapIron" count="15"/> </recipe>
+<recipe name="scrapIronFrameBlock" craft_area="forge" craft_tool="anvil" material_based="true">             <ingredient name="unit_iron" count="15"/> <ingredient name="unit_clay" count="5"/> </recipe>
 <recipe name="scrapIronFrameCNRFull" count="1">                                                             <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameCNRInside" count="1">                                                           <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameRamp" count="1">                                                                <ingredient name="scrapIronFrameBlock"/> </recipe>
@@ -570,10 +570,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="scrapIronFrameWedgeStairs" count="1">                                                         <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameWedgeTipStairs" count="1">                                                      <ingredient name="scrapIronFrameBlock"/> </recipe>
 <!-- Scrap Iron Blocks -->
-<recipe name="scrapIronSheet" count="1">                                                                    <ingredient name="scrapIron" count="40"/> </recipe>
-<recipe name="scrapIronStairs25" count="1">                                                                 <ingredient name="scrapIron" count="40"/> </recipe>
-<recipe name="scrapIronArrowSlitHalf" count="1">                                                            <ingredient name="scrapIron" count="40"/> </recipe>
-<recipe name="scrapIronCTRpole" count="1">                                                                  <ingredient name="scrapIron" count="40"/> </recipe>
+<recipe name="scrapIronSheet" count="1">                                                                    <ingredient name="forgedIron" count="5"/> </recipe>
+<recipe name="scrapIronStairs25" count="1">                                                                 <ingredient name="forgedIron" count="5"/> </recipe>
+<recipe name="scrapIronArrowSlitHalf" count="1">                                                            <ingredient name="forgedIron" count="5"/> </recipe>
+<recipe name="scrapIronCTRpole" count="1">                                                                  <ingredient name="forgedIron" count="5"/> </recipe>
 <!-- Wood Frames -->
 <recipe name="woodFrameBlock" count="1">                                                                    <ingredient name="wood" count="5"/> <ingredient name="yuccaFibers"/> </recipe>
 <recipe name="woodFrameCNRFull" count="1">                                                                  <ingredient name="woodFrameBlock"/> </recipe>
