@@ -330,7 +330,7 @@ built-in buff variables:
 <modify id="1" stat="health" amount="5" rate="0.5"/>  </buff>
 
 <buff id="painkillerBuff" duration="200t" actions="debuff(naturalHealing)" stack="extend" type="healthup" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
-<modify id="1" stat="health" amount="0.1" rate="1"/>  </buff>
+<modify id="1" stat="health" amount="0.2" rate="1"/>  </buff>
 
 <buff id="splint" overrides="brokenLeg,sprainedLeg" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_splint" name_key="splintedLeg" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
 <modify id="0" stat="speedmodifier" mulValue="1.20"/>  <modify id="1" buff="brokenLeg" tickrate="3"/>  <modify id="2" buff="sprainedLeg" tickrate="3"/>  </buff>
