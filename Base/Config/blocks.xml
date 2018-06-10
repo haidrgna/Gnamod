@@ -1269,6 +1269,8 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="None"/>
 <property name="Collide" value="movement,melee,rocket"/>
 <property name="FuelValue" value="150"/>
+<property name="TakeDelay" value="0.1"/>
+<property name="Class" value="Light"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="woodMaster"/>
 <property name="Item" value="wood"/>
@@ -1423,6 +1425,8 @@ NOT the TextureNumber.
 <property name="ImposterDontBlock" value="true"/>
 <property name="Collide" value="movement,melee,rocket"/>
 <property name="CreativeMode" value="None"/>
+<property name="TakeDelay" value="0.1"/>
+<property name="Class" value="Light"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="scrapIronMaster"/>
 <property name="Item" value="forgedIron"/>
@@ -1863,7 +1867,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedge"/> </property>
 </block>
 
@@ -2443,7 +2447,7 @@ NOT the TextureNumber.
 <property name="Extends" value="woodFrameMaster"/>
 <property name="CreativeMode" value="Player"/>
 <property name="Group" value="Building,Basics"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property name="Mesh" value="opaque"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="Shape" value="New"/>
@@ -2481,7 +2485,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="ramp_inside_corner"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodCNRInside"/> </property>
 </block>
 
@@ -2519,7 +2523,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="ramp_outside_corner"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodCNRFull"/> </property>
 </block>
 
@@ -2997,22 +3001,24 @@ NOT the TextureNumber.
 <drop event="Destroy" name="brokenGlass" count="1,2"/>
 </block>
 
-<block id="287" name="securityGateCTRPlate">
-<property name="Material" value="Mmetal"/>
-<property name="MaxDamage" value="2000"/>
+<block id="287" name="ironSecurityGateCTR">
+<property name="Extends" value="rScrapIronMasterWeak"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="security_gate_centered"/>
 <property name="Texture" value="446"/>
-<property class="RepairItems"> <property name="forgedIron" value="8"/> </property>
-<drop event="Harvest" name="scrapIron" count="50" prob="1"/>
-<drop event="Destroy" count="0"/>
-<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
-<property name="EconomicValue" value="80"/>
+<property name="Collide" value="movement,melee,rocket"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="steelSecurityGateCTR"/>
+<property name="Item" value="forgedSteel"/>
+<property name="ItemCount" value="20"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
 </block>
 
-<block id="288" name="securityGatePlate">
-<property name="Extends" value="securityGateCTRPlate"/>
+<block id="288" name="ironSecurityGate">
+<property name="Extends" value="ironSecurityGateCTR"/>
 <property name="Model" value="security_gate_plate"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelSecurityGate"/> </property>
 </block>
 
 <block id="289" name="woodPyramid">
@@ -3071,7 +3077,6 @@ NOT the TextureNumber.
 <property name="Texture" value="241"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="Group" value="Building,Basics"/>
-<property name="CanPickup" value="true"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodBlock"/> </property>
 </block>
 
@@ -4042,8 +4047,7 @@ NOT the TextureNumber.
 </block>
 
 <block id="389" name="ladderMetal">
-<property name="Extends" value="corrugatedMetalNoUpgradeMaster" param1="DescriptionKey"/>
-<property name="MaxDamage" value="500"/>
+<property name="Extends" value="rScrapIronMasterWeak"/>
 <property name="Class" value="Ladder"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
@@ -4053,15 +4057,14 @@ NOT the TextureNumber.
 <property name="ImposterDontBlock" value="true"/>
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="ImposterExclude" value="true"/>
-<property name="Group" value="Building"/>
-<property name="EconomicValue" value="30"/>
+<property name="DescriptionKey" value="ladderMetalDesc"/>
+<property name="Collide" value="movement,melee,rocket"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="ladderSteel"/>
 <property name="Item" value="forgedSteel"/>
-<property name="ItemCount" value="5"/>
-<property name="UpgradeHitCount" value="4"/>
+<property name="ItemCount" value="20"/>
+<property name="UpgradeHitCount" value="8"/>
 </property>
-<property name="Collide" value="movement,melee,rocket"/>
 </block>
 
 <block id="390" name="brickCNRRamp">
@@ -4211,18 +4214,20 @@ NOT the TextureNumber.
 
 <block id="407" name="keystoneBlock">
 <property name="CreativeMode" value="Player"/>
-<property name="Material" value="Msteel"/>
+<property name="Material" value="MsteelStrong"/>
 <property name="Weight" value="200"/>
 <property name="Texture" value="189"/>
 <property class="RepairItems"> <property name="forgedIron" value="50"/> </property>
 <property name="IndexName" value="lpblock"/>
-<drop event="Destroy" name="keystoneBlock" count="1"/>
-<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 <property name="Stacknumber" value="1"/>
+<property name="Class" value="Powered"/>
+<property name="RequiredPower" value="1"/>
 <property name="TakeDelay" value="30"/>
 <property name="Group" value="Building"/>
 <property name="EconomicValue" value="160"/>
 <property name="ActivationDistance" value="14"/>
+<drop event="Destroy" name="keystoneBlock" count="1"/>
+<drop event="Fall" name="keystoneBlock" count="1" prob="1" stick_chance="0"/>
 </block>
 
 <block id="408" name="trapSpikesNew">
@@ -4384,7 +4389,7 @@ NOT the TextureNumber.
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60_incline"/>
 <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeIncline"/> </property>
 </block>
 
@@ -5845,9 +5850,8 @@ NOT the TextureNumber.
 <property name="EconomicValue" value="250"/> <!-- disassemble value -->
 </block>
 
-<block id="558" name="ironBarsCentered">
-<property name="CustomIcon" value="ironBars"/>
-<property name="Material" value="MrForgedIron"/>
+<block id="558" name="ironBarsCTR">
+<property name="Extends" value="rScrapIronMasterWeak"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="iron_bars_centered"/>
@@ -5855,14 +5859,16 @@ NOT the TextureNumber.
 <property name="ImposterExclude" value="true"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="Place" value="TowardsPlacer"/>
-<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
-<drop event="Harvest" name="scrapIron" count="32"/>
-<drop event="Destroy" count="0"/>
-<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-<property name="Group" value="Building"/>
-<property name="EconomicValue" value="50"/>
+<property name="Collide" value="movement,melee,rocket"/>
 <property name="DescriptionKey" value="ironBarsDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="steelBarsCTR"/>
+<property name="Item" value="forgedSteel"/>
+<property name="ItemCount" value="20"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
+<property name="EconomicValue" value="50"/>
+<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="559" name="treeJuniper6m">
@@ -7011,7 +7017,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New" />
 <property name="Model" value="wedge_stairs" /> <property name="Place" value="TowardsPlacerInverted" />
-<property name="CanPickup" value="true" />
+<!--<property name="CanPickup" value="true" />-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeStairs" /> </property>
 </block>
 
@@ -7653,7 +7659,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeFullCNROutside"/> </property>
 </block>
 
@@ -7938,7 +7944,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New" />
 <property name="Model" value="wedge_tip_stairs" /> <property name="Place" value="TowardsPlacerInverted" />
-<property name="CanPickup" value="true" />
+<!--<property name="CanPickup" value="true" />-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeTipStairs" /> </property>
 </block>
 
@@ -8162,7 +8168,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60_tip_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeTipCNROutside"/> </property>
 </block>
 
@@ -8336,9 +8342,9 @@ NOT the TextureNumber.
 </block>
 
 <block id="788" name="ladderWood">
+<property name="Extends" value="rWoodMasterWeak"/>
 <property name="Group" value="Building,Basics"/>
 <property name="Class" value="Ladder"/>
-<property name="Material" value="MwoodThin"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="ladder_square"/>
@@ -8346,19 +8352,14 @@ NOT the TextureNumber.
 <property name="UseGlobalUV" value="Local"/>
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="FuelValue" value="150"/>
-<property class="RepairItems"> <property name="wood" value="6"/> </property>
+<property name="ImposterExclude" value="true"/>
+<property name="Collide" value="movement,melee,rocket"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="ladderMetal"/>
 <property name="Item" value="forgedIron"/>
-<property name="ItemCount" value="5"/>
-<property name="UpgradeHitCount" value="4"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
 </property>
-<property name="ImposterExclude" value="true"/>
-<drop event="Destroy" name="wood" count="1,3"/>
-<property name="EconomicValue" value="6"/>
-<property name="EconomicBundleSize" value="20"/>
-<property name="Collide" value="movement,melee,rocket"/>
 </block>
 
 <block id="789" name="stainlessSteelPyramid">
@@ -8759,31 +8760,19 @@ NOT the TextureNumber.
 </block>
 
 <block id="833" name="woodStairs50">
-<property name="Material" value="Mwood"/>
+<property name="Extends" value="woodMasterStrong"/>
 <property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
 <property name="Model" value="stairs_filled_quarter_vertical_uv"/>
-<property name="Place" value="TowardsPlacerInverted"/>
-<property name="Texture" value="241"/>
-<property name="UseGlobalUV" value="Global"/>
-<property name="Stairs"/>
-<drop event="Destroy" name="wood" count="2,6"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-<property class="RepairItems"> <property name="wood" value="8"/> </property>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodStairs50"/> </property>
 </block>
 
 <block id="834" name="concreteStairs50">
-<property name="Material" value="Mconcrete"/>
-<property name="CustomIcon" value="rConcreteStairs50"/>
+<property name="Extends" value="concreteMasterStrong"/>
 <property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
 <property name="Model" value="stairs_filled_quarter_vertical_uv"/>
-<property name="Place" value="TowardsPlacerInverted"/>
-<property name="Texture" value="8"/>
-<property name="UseGlobalUV" value="Global"/>
-<property name="Stairs"/>
-<property class="RepairItems"> <property name="concreteMix" value="10"/> </property>
-<drop event="Harvest" name="rockSmall" count="25"/>
-<drop event="Destroy" count="0"/>
-<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteStairs50"/> </property>
 </block>
 
 <block id="835" name="woodFrameWedgeTipCNRInside">
@@ -8791,7 +8780,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60_inside_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeTipCNRInside"/> </property>
 </block>
 
@@ -9590,7 +9579,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge60_inside_corner_2"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeFullCNRInside"/> </property>
 </block>
 
@@ -9671,7 +9660,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="ramp_corner_filler"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodCNRRampFiller"/> </property>
 <property name="UseGlobalUV" value="Global"/>
 </block>
@@ -9898,10 +9887,8 @@ NOT the TextureNumber.
 </block>
 
 <block id="949" name="ladderSteel">
+<property name="Extends" value="steelMasterWeak"/>
 <property name="Class" value="Ladder"/>
-<property name="Material" value="Msteel"/>
-<property name="MaxDamage" value="2000"/>
-<property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="267"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
@@ -9910,14 +9897,8 @@ NOT the TextureNumber.
 <property name="ImposterDontBlock" value="true"/>
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="ImposterExclude" value="true"/>
-<property class="RepairItems"> <property name="forgedSteel" value="4"/> </property>
 <property name="CustomUpgradeSound" value="place_block_metal"/>
-<drop event="Harvest" name="scrapIron" count="15" prob="1"/>
-<drop event="Destroy" count="0"/>
-<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-<property name="EconomicValue" value="80"/>
 <property name="DescriptionKey" value="ladderMetalDesc"/>
-<property name="Group" value="Building"/>
 <property name="Collide" value="movement,melee,rocket"/>
 </block>
 
@@ -9949,132 +9930,102 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteEighth"/> </property>
 </block>
 
-<block id="954" name="woodArchFull">
-<property name="Extends" value="woodMasterStrong"/>
-<property name="MaxDamage" value="600"/>
+<block id="954" name="woodArchThick">
+<property name="Extends" value="woodMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property name="ModelOffset" value="0,0,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodArchThick"/> </property>
 </block>
 
-<block id="955" name="rWoodArchFull">
-<property name="Extends" value="rWoodMasterStrong"/>
-<property name="MaxDamage" value="1200"/>
+<block id="955" name="rWoodArchThick">
+<property name="Extends" value="rWoodMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property name="ModelOffset" value="1,0,0"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalArchThick"/> </property>
 </block>
 
-<block id="956" name="rWoodMetalArchFull">
-<property name="Extends" value="rWoodMetalMasterStrong"/>
-<property name="MaxDamage" value="2400"/>
+<block id="956" name="rWoodMetalArchThick">
+<property name="Extends" value="rWoodMetalMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronArchThick"/> </property>
 </block>
 
-<block id="957" name="scrapIronArchFull">
-<property name="Extends" value="scrapIronMasterStrong"/>
-<property name="MaxDamage" value="4800"/>
+<block id="957" name="scrapIronArchThick">
+<property name="Extends" value="scrapIronMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronArchThick"/> </property>
 </block>
 
-<block id="958" name="rScrapIronArchFull">
-<property name="Extends" value="rScrapIronMasterStrong"/>
-<property name="MaxDamage" value="9600"/>
+<block id="958" name="rScrapIronArchThick">
+<property name="Extends" value="rScrapIronMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArchThick"/> </property>
 </block>
 
-<block id="959" name="flagstoneArchFull">
-<property name="Extends" value="flagstoneMasterStrong"/>
-<property name="MaxDamage" value="2400"/>
+<block id="959" name="flagstoneArchThick">
+<property name="Extends" value="flagstoneMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneArchThick"/> </property>
 </block>
 
-<block id="960" name="cobblestoneArchFull">
-<property name="Extends" value="cobblestoneMasterStrong"/>
-<property name="MaxDamage" value="4800"/>
+<block id="960" name="cobblestoneArchThick">
+<property name="Extends" value="cobblestoneMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="brickArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="brickArchThick"/> </property>
 </block>
 
-<block id="961" name="brickArchFull">
-<property name="Extends" value="brickMasterStrong"/>
-<property name="MaxDamage" value="9600"/>
+<block id="961" name="brickArchThick">
+<property name="Extends" value="brickMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArchThick"/> </property>
 </block>
 
-<block id="962" name="pouredConcreteArchFull">
+<block id="962" name="pouredConcreteArchThick">
 <property name="Extends" value="pouredConcreteMaster"/>
-<property name="MaxDamage" value="1500"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property name="UpgradeRated.ToBlock" value="concreteArchFull"/>
+<property name="Model" value="arch_3m"/>
+<property name="UpgradeRated.ToBlock" value="concreteArchThick"/>
 </block>
 
-<block id="963" name="concreteArchFull">
-<property name="Extends" value="concreteMasterStrong"/>
-<property name="MaxDamage" value="18000"/>
+<block id="963" name="concreteArchThick">
+<property name="Extends" value="concreteMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteArchThick"/> </property>
 </block>
 
-<block id="964" name="pouredRConcreteArchFull">
+<block id="964" name="pouredRConcreteArchThick">
 <property name="Extends" value="pouredRConcreteMaster"/>
-<property name="MaxDamage" value="1500"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property name="UpgradeRated.ToBlock" value="rConcreteArchFull"/>
+<property name="Model" value="arch_3m"/>
+<property name="UpgradeRated.ToBlock" value="rConcreteArchThick"/>
 </block>
 
-<block id="965" name="rConcreteArchFull">
-<property name="Extends" value="rConcreteMasterStrong"/>
-<property name="MaxDamage" value="24000"/>
+<block id="965" name="rConcreteArchThick">
+<property name="Extends" value="rConcreteMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="steelArchFull"/> </property>
+<property name="Model" value="arch_3m"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelArchThick"/> </property>
 </block>
 
-<block id="966" name="steelArchFull">
-<property name="Extends" value="steelMasterStrong"/>
-<property name="MaxDamage" value="36000"/>
+<block id="966" name="steelArchThick">
+<property name="Extends" value="steelMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
+<property name="Model" value="arch_3m"/>
 <property name="Texture" value="356"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelArchFull"/> </property>
+<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelArchThick"/> </property>
 </block>
 
-<block id="967" name="stainlessSteelArchFull">
-<property name="Extends" value="stainlessSteelMasterStrong"/>
-<property name="MaxDamage" value="48000"/>
+<block id="967" name="stainlessSteelArchThick">
+<property name="Extends" value="stainlessSteelMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="arch_3m_full"/>
-<property name="MultiBlockDim" value="3,2,1"/>
+<property name="Model" value="arch_3m"/>
 </block>
 
 <block id="968" name="woodCurve3x3">
@@ -10295,7 +10246,7 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="Player"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="stairs_filled_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="CanPickup" value="true"/>
+<!--<property name="CanPickup" value="true"/>-->
 <property class="UpgradeBlock"> <property name="ToBlock" value="woodStairs25CornerCNR"/> </property>
 </block>
 
@@ -11360,7 +11311,7 @@ NOT the TextureNumber.
 <property name="Model" value="pyramid"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="cobblestonePyramid"/> </property>-
 </block>
-
+<!--
 <block id="1118" name="flagstoneArch3m">
 <property name="Material" value="Mbrick"/>
 <property name="Shape" value="New"/>
@@ -11379,7 +11330,7 @@ NOT the TextureNumber.
 <property name="Extends" value="flagstoneArch3m"/>
 <property name="Model" value="arch_3m_center"/>
 </block>
-
+-->
 <block id="1121" name="rConcreteWedgeStairs">
 <property name="Extends" value="rConcreteMaster"/>
 <property name="Shape" value="New"/>
@@ -11428,12 +11379,12 @@ NOT the TextureNumber.
 </block>
 
 <block id="1126" name="ironBars">
-<property name="Extends" value="ironBarsCentered"/>
+<property name="Extends" value="ironBarsCTR"/>
 <property name="Model" value="iron_bars"/>
 <property name="Place" value="TowardsPlacerInverted"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelBars"/>
-<property name="Item" value="steelPolish"/>
+<property name="Item" value="forgedSteel"/>
 <property name="ItemCount" value="20"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
@@ -11605,15 +11556,18 @@ NOT the TextureNumber.
 </block>
 
 <block id="1147" name="steelBars">
-<property name="Extends" value="ironBars"/>
-<property name="CustomIcon" value="steelBars"/>
+<property name="Extends" value="stainlessSteelMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="LightOpacity" value="0"/>
 <property name="Model" value="iron_bars"/>
-<property name="Place" value="TowardsPlacerInverted"/>
-<property name="Material" value="Msteel"/>
 <property name="Texture" value="267"/>
+<property name="ImposterExclude" value="true"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="Collide" value="movement,melee,rocket"/>
+<property name="DescriptionKey" value="ironBarsDesc"/>
 <property name="EconomicValue" value="450"/>
 <property name="EconomicBundleSize" value="1"/>
-<property class="RepairItems"> <property name="forgedSteel" value="8"/> <property name="steelPolish" value="2"/> </property>
 </block>
 
 <block id="1148" name="flagstoneQuarter">
@@ -12797,145 +12751,171 @@ NOT the TextureNumber.
 
 <block id="1271" name="woodCatwalk">
 <property name="Extends" value="rWoodMaster"/>
-<property name="Material" value="MrWood"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="catwalk"/>
 <property name="Texture" value="241"/>
 <property name="ImposterExchange" value="imposterPlate" param1="67"/>
-<property name="UseGlobalUV" value="Local"/> <!-- "0,X,0,0,0,0" -->
-<property class="RepairItems"> <property name="wood" value="20"/> </property>
+<property name="UseGlobalUV" value="Local"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalCatwalk"/>
 <property name="Item" value="forgedIron"/>
 <property name="ItemCount" value="8"/>
-<property name="UpgradeHitCount" value="4"/>
+<property name="UpgradeHitCount" value="8"/>
 </property>
 <property name="DescriptionKey" value="woodCatwalkGroupDesc"/>
-<property name="EconomicValue" value="20"/>
-<property name="EconomicBundleSize" value="20"/>
 </block>
 
 <block id="1272" name="woodCatwalkRailing">
-<property name="Extends" value="woodCatwalk"/>
-<property name="Model" value="catwalk_rail"/> <!-- "0,boards,W,0,E,0" -->
+<property name="Extends" value="rWoodMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="LightOpacity" value="6"/>
+<property name="Model" value="catwalk_rail"/>
+<property name="Texture" value="241"/>
+<property name="ImposterExchange" value="imposterPlate" param1="67"/>
+<property name="UseGlobalUV" value="Local"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalCatwalkRailing"/>
+<property name="Item" value="forgedIron"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
 </property>
+<property name="DescriptionKey" value="woodCatwalkGroupDesc"/>
 </block>
 
 <block id="1273" name="woodRailing">
-<property name="Extends" value="woodCatwalk"/>
-<property name="Material" value="MwoodThin"/>
+<property name="Extends" value="rWoodMasterWeak"/>
+<property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="wooden_rail"/>
 <property name="ImposterExclude" value="true"/>
-<property name="FuelValue" value="150"/>
-<property class="RepairItems"> <property name="wood" value="5"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalRailing"/>
-<property name="ItemCount" value="1"/>
+<property name="ItemCount" value="4"/>
 </property>
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="20"/>
 </block>
 
 <block id="1274" name="woodCatwalkRailingCNR">
-<property name="Extends" value="woodCatwalk"/>
-<property name="Model" value="catwalk_corner"/> <!-- "0,all,0,0,0,0" -->
+<property name="Extends" value="woodCatwalkRailing"/>
+<property name="Model" value="catwalk_corner"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalCatwalkRailingCNR"/>
 </property>
 </block>
 
-<block id="1275" name="woodStairsBoardRailing"> <!-- Note: 1619, woodStairsBoard -->
-<property name="Extends" value="woodCatwalk"/>
+<block id="1275" name="woodStairsBoardRailing">
+<property name="Extends" value="woodCatwalkRailing"/>
 <property name="Class" value="Stairs"/>
-<property name="Model" value="stairs_railing"/> <property name="Place" value="TowardsPlacerInverted"/> <!-- "steps,0,0,E,0,W" -->
+<property name="Model" value="stairs_railing"/>
+<property name="Place" value="TowardsPlacerInverted"/>
 <property name="MultiBlockDim" value="1,2,1"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalStairsBoardRailing"/>
 </property>
-<property name="DescriptionKey" value="woodStairsBoardDesc"/>
 </block>
 
 <block id="1276" name="woodCatwalkWedgeRailing">
-<property name="Extends" value="woodCatwalk"/>
-<property name="Model" value="catwalk_wedge_rail"/> <!-- "0,all,0,0,0,0" -->
+<property name="Extends" value="woodRailing"/>
+<property name="Model" value="catwalk_wedge_rail"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalCatwalkWedgeRailing"/>
 </property>
 </block>
 
 <block id="1277" name="woodCatwalkWedge">
-<property name="Extends" value="woodCatwalk"/>
-<property name="Model" value="catwalk_wedge"/> <!-- "0,all,0,0,0,0" -->
+<property name="Extends" value="woodRailing"/>
+<property name="Model" value="catwalk_wedge"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="metalCatwalkWedge"/>
 </property>
 </block>
 
 <block id="1278" name="metalCatwalk">
-<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
-<property name="Material" value="MrForgedIron"/> <!-- 2000 HP -->
+<property name="Extends" value="rScrapIronMaster"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="catwalk_metal"/>
 <property name="Texture" value="445,446,446,446,446,446"/>
 <property name="ImposterExchange" value="imposterPlate" param1="112"/>
 <property name="UseGlobalUV" value="Local"/>
-<property class="RepairItems"> <property name="forgedIron" value="8"/> </property>
 <property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
-<property name="EconomicValue" value="48"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="steelCatwalk"/>
+<property name="Item" value="forgedSteel"/>
+<property name="ItemCount" value="16"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
 </block>
 
 <block id="1279" name="metalCatwalkRailing">
-<property name="Extends" value="metalCatwalk"/>
+<property name="Extends" value="rScrapIronMasterStrong"/>
+<property name="Shape" value="New"/>
 <property name="Model" value="catwalk_rail_metal"/>
+<property name="Texture" value="445,446,446,446,446,446"/>
+<property name="ImposterExchange" value="imposterPlate" param1="112"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="steelCatwalkRailing"/>
+<property name="Item" value="forgedSteel"/>
+<property name="ItemCount" value="16"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
 </block>
 
 <block id="1280" name="metalRailing">
-<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+<property name="Extends" value="rScrapIronMasterWeak"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="metal_rail"/>
 <property name="Texture" value="446"/>
 <property name="ImposterExclude" value="true"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="steelRailing"/>
+<property name="Item" value="forgedSteel"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
 </block>
 
 <block id="1281" name="metalCatwalkRailingCNR">
 <property name="Extends" value="metalCatwalk"/>
 <property name="Model" value="catwalk_rail_metal_corner"/>
-
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelCatwalkRailingCNR"/> </property>
 </block>
 
 <block id="1282" name="metalStairsBoard">
 <property name="Extends" value="metalCatwalk"/>
 <property name="Class" value="Stairs"/>
 <property name="LightOpacity" value="6"/>
-<property name="Model" value="Stairs"/> <property name="Place" value="TowardsPlacerInverted"/>
+<property name="Model" value="Stairs"/>
+<property name="Place" value="TowardsPlacerInverted"/>
 <property name="MultiBlockDim" value="1,2,1"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairsBoard"/> </property>
 </block>
 
 <block id="1283" name="metalStairsBoardRailing">
-<property name="Extends" value="metalCatwalk"/> <property name="Place" value="TowardsPlacerInverted"/>
+<property name="Extends" value="metalCatwalkRailing"/>
+<property name="Place" value="TowardsPlacerInverted"/>
 <property name="Class" value="Stairs"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="stairs_railing_metal"/>
 <property name="MultiBlockDim" value="1,2,1"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairsBoardRailing"/> </property>
 </block>
 
 <block id="1284" name="metalCatwalkWedgeRailing">
-<property name="Extends" value="metalCatwalk"/>
+<property name="Extends" value="metalRailing"/>
 <property name="Model" value="catwalk_wedge_rail_metal"/>
 <property name="Texture" value="446,445,446,446,446,446"/>
-
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelCatwalkWedgeRailing"/> </property>
 </block>
 
 <block id="1285" name="metalCatwalkWedge">
-<property name="Extends" value="metalCatwalk"/>
+<property name="Extends" value="metalRailing"/>
 <property name="Model" value="catwalk_wedge_metal"/>
 <property name="Texture" value="446,445,446,446,446,446"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelCatwalkWedge"/> </property>
 </block>
 
 <block id="1286" name="corrugatedMetalSheetBent1">
@@ -13493,11 +13473,10 @@ NOT the TextureNumber.
 </block>
 
 <block id="1350" name="pouredConcreteStairs50">
-<property name="CreativeMode" value="Player"/>
 <property name="Extends" value="pouredConcreteMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="stairs_filled_quarter_vertical_uv"/> <property name="Place" value="TowardsPlacerInverted"/>
-<property name="Stairs"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
 <property name="UpgradeRated.ToBlock" value="concreteStairs50"/>
 </block>
 
@@ -13544,18 +13523,11 @@ NOT the TextureNumber.
 </block>
 
 <block id="1355" name="flagstoneStairs50">
-<property name="Extends" value="flagstoneMaster"/>
+<property name="Extends" value="flagstoneMasterStrong"/>
 <property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
 <property name="Model" value="stairs_filled_quarter_vertical_uv"/>
-<property name="Place" value="TowardsPlacerInverted"/>
-<property name="UseGlobalUV" value="Global"/>
-<property name="Stairs"/>
-<property class="UpgradeBlock">
-<property name="ToBlock" value="pouredConcreteStairs50"/>
-<property name="Item" value="concreteMix"/>
-<property name="ItemCount" value="10"/>
-<property name="UpgradeHitCount" value="4"/>
-</property>
+<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneStairs50"/> </property>
 </block>
 
 <block id="1356" name="steelWedgeTipStairs">
@@ -16344,7 +16316,7 @@ NOT the TextureNumber.
 <property name="Shape" value="New"/>
 <property name="Model" value="wedge_tip_half"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteGable"/> </property>
-</block>  
+</block>
 
 <block id="1601" name="iBeamSteelSmall">
 <property name="Group" value="Building"/>
@@ -16444,7 +16416,7 @@ NOT the TextureNumber.
 <property name="Extends" value="roadRailing"/>
 <property name="Model" value="road_railing_end2"/>
 </block>
-  
+
 <block id="1614" name="iBeamSteelCenteredFoundation">
 <property name="Extends" value="iBeamSteel"/>
 <property name="Model" value="i_beam_centered_foundation"/> <property name="HandleFace" value="Bottom"/>
@@ -16461,12 +16433,26 @@ NOT the TextureNumber.
 <property name="Extends" value="iBeamSteel"/>
 <property name="Model" value="i_beam_6way_centered"/>
 <property name="ImposterExchange" value="imposterDontBlockBlock" param1="144"/>
-</block> 
-  
-<!-- n Free -->
+</block>
+
+<block id="1617" name="rWoodStairs50">
+<property name="Extends" value="rWoodMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalStairs50"/> </property>
+</block>
+
+<block id="1618" name="rWoodMetalStairs50">
+<property name="Extends" value="rWoodMetalMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs50"/> </property>
+</block>
 
 <block id="1619" name="woodStairsBoard">
-<property name="Extends" value="woodStairsBoardRailing"/>
+<property name="Extends" value="woodCatwalk"/>
 <property name="Class" value="Stairs"/>
 <property name="Model" value="Stairs"/>
 <property class="UpgradeBlock">
@@ -16482,24 +16468,185 @@ NOT the TextureNumber.
 <property name="ImposterExchange" value="imposterBlock" param1="1"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRRound"/> </property>
 </block>
-<!-- n Free -->
+
+<block id="1921" name="scrapIronStairs50">
+<property name="Extends" value="scrapIronMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronStairs50"/> </property>
+</block>
 
 <block id="1622" name="awningCNRRound">
 <property name="Extends" value="awningMaster"/>
 <property name="Model" value="corner_round1m"/>
 <property name="ImposterExchange" value="imposterBlock" param1="8"/>
 </block>
-<!-- n Free -->
+
+<block id="1623" name="rScrapIronStairs50">
+<property name="Extends" value="rScrapIronMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50"/> </property>
+</block>
+
+<block id="1624" name="cobblestoneStairs50">
+<property name="Extends" value="cobblestoneMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="brickStairs50"/> </property>
+</block>
+
+<block id="1625" name="brickStairs50">
+<property name="Extends" value="brickMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs50"/> </property>
+</block>
+
+<block id="1626" name="pouredRConcreteStairs50">
+<property name="Extends" value="pouredRConcreteMaster"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property name="UpgradeRated.ToBlock" value="rConcreteStairs50"/>
+</block>
+
+<block id="1627" name="rConcreteStairs50">
+<property name="Extends" value="rConcreteMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs50"/> </property>
+</block>
 
 <block id="1628" name="cntCabinetOldCNRRoundFiller">
 <property name="Extends" value="woodWeakNoUpgradeMaster"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="counter_round1m"/>
 <property name="IsDecoration" value="true"/>
-<property name="Texture" value="78,8,84,84,84,84"/> <!-- 80=sink, 84=cabinetWood, 81=doors, 79=doors and drawers -->
+<property name="Texture" value="78,8,84,84,84,84"/>
 <property name="ImposterExchange" value="imposterBlock" param1="43"/>
 </block>
-<!-- n Free -->
+
+<block id="1629" name="steelStairs50">
+<property name="Extends" value="steelMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelStairs50"/> </property>
+</block>
+
+<block id="1630" name="stainlessSteelStairs50">
+<property name="Extends" value="stainlessSteelMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Mesh" value="opaque"/>
+<property name="Model" value="stairs_filled_quarter_vertical_uv"/>
+</block>
+
+<block id="1631" name="woodenBarsCTR">
+<property name="Extends" value="rWoodMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="LightOpacity" value="0"/>
+<property name="Model" value="iron_bars_centered"/>
+<property name="Texture" value="241"/>
+<property name="ImposterExclude" value="true"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="Place" value="TowardsPlacer"/>
+<property name="Collide" value="movement,melee,rocket"/>
+<property name="DescriptionKey" value="ironBarsDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="ironBarsCTR"/>
+<property name="Item" value="forgedIron"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
+</block>
+
+<block id="1632" name="woodenBars">
+<property name="Extends" value="woodenBarsCTR"/>
+<property name="Model" value="iron_bars"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="ironBars"/>
+<property name="Item" value="forgedIron"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
+</block>
+
+<block id="1633" name="steelBarsCTR">
+<property name="Extends" value="stainlessSteelMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="LightOpacity" value="0"/>
+<property name="Model" value="iron_bars_centered"/>
+<property name="Texture" value="267"/>
+<property name="ImposterExclude" value="true"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="Place" value="TowardsPlacer"/>
+<property name="Collide" value="movement,melee,rocket"/>
+<property name="DescriptionKey" value="ironBarsDesc"/>
+<property name="EconomicValue" value="450"/>
+<property name="EconomicBundleSize" value="1"/>
+</block>
+
+<block id="1634" name="steelCatwalk">
+<property name="Extends" value="rScrapIronMaster"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="catwalk_metal"/>
+<property name="Texture" value="445,267,267,267,267,267"/>
+<property name="ImposterExchange" value="imposterPlate" param1="112"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
+</block>
+
+<block id="1635" name="steelCatwalkRailing">
+<property name="Extends" value="rScrapIronMasterStrong"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="catwalk_rail_metal"/>
+<property name="Texture" value="445,267,267,267,267,267"/>
+<property name="ImposterExchange" value="imposterPlate" param1="112"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
+</block>
+
+<block id="1636" name="steelRailing">
+<property name="Extends" value="rScrapIronMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="metal_rail"/>
+<property name="Texture" value="267"/>
+<property name="ImposterExclude" value="true"/>
+<property name="UseGlobalUV" value="Local"/>
+<property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
+</block>
+
+<block id="1637" name="steelCatwalkRailingCNR">
+<property name="Extends" value="steelCatwalk"/>
+<property name="Model" value="catwalk_rail_metal_corner"/>
+</block>
+
+<block id="1638" name="steelStairsBoard">
+<property name="Extends" value="steelCatwalk"/>
+<property name="Class" value="Stairs"/>
+<property name="LightOpacity" value="6"/>
+<property name="Model" value="Stairs"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="MultiBlockDim" value="1,2,1"/>
+</block>
+
+<block id="1639" name="steelStairsBoardRailing">
+<property name="Extends" value="steelCatwalkRailing"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="Class" value="Stairs"/>
+<property name="LightOpacity" value="6"/>
+<property name="Model" value="stairs_railing_metal"/>
+<property name="MultiBlockDim" value="1,2,1"/>
+</block>
 
 <block id="1640" name="brickCNRRoundTop">
 <property name="Extends" value="brickMasterStrong"/>
@@ -16508,13 +16655,37 @@ NOT the TextureNumber.
 <property name="ImposterExchange" value="imposterBlock" param1="67"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRRoundTop"/> </property>
 </block>
-<!-- n Free -->
+
+<block id="1641" name="steelCatwalkWedgeRailing">
+<property name="Extends" value="steelRailing"/>
+<property name="Model" value="catwalk_wedge_rail_metal"/>
+<property name="Texture" value="267,445,267,267,267,267"/>
+</block>
 
 <block id="1642" name="awningCNRRoundTop">
 <property name="Extends" value="awningMaster"/>
 <property name="Model" value="corner_rounded"/>
 </block>
-<!-- n Free -->
+
+<block id="1643" name="steelCatwalkWedge">
+<property name="Extends" value="steelRailing"/>
+<property name="Model" value="catwalk_wedge_metal"/>
+<property name="Texture" value="267,445,267,267,267,267"/>
+</block>
+
+<block id="1644" name="woodenSecurityGateCTR">
+<property name="Extends" value="rWoodMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="security_gate_centered"/>
+<property name="Texture" value="241"/>
+<property name="Collide" value="movement,melee,rocket"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="ironSecurityGateCTR"/>
+<property name="Item" value="forgedIron"/>
+<property name="ItemCount" value="8"/>
+<property name="UpgradeHitCount" value="8"/>
+</property>
+</block>
 
 <block id="1645" name="corrugatedMetalCNRRoundTop">
 <property name="Extends" value="corrugatedMetalMaster"/>
@@ -16523,12 +16694,30 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRoundTop"/> </property>
 <property name="ImposterExchange" value="imposterBlock" param1="57"/>
 </block>
-<!-- n Free -->
+
+<block id="1646" name="woodenSecurityGate">
+<property name="Extends" value="woodenSecurityGateCTR"/>
+<property name="Model" value="security_gate_plate"/>
+<property class="UpgradeBlock"> <property name="ToBlock" value="ironSecurityGate"/> </property>
+</block>
+
+<block id="1647" name="steelSecurityGateCTR">
+<property name="Extends" value="steelMasterWeak"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="security_gate_centered"/>
+<property name="Texture" value="267"/>
+<property name="Collide" value="movement,melee,rocket"/>
+</block>
 
 <block id="1648" name="corrugatedMetalCNRRound">
 <property name="Extends" value="corrugatedMetalCNRRoundTop"/>
 <property name="Model" value="corner_round1m"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRound"/> </property>
+</block>
+
+<block id="1649" name="steelSecurityGate">
+<property name="Extends" value="steelSecurityGateCTR"/>
+<property name="Model" value="security_gate_plate"/>
 </block>
 <!-- n Free -->
 
@@ -18091,7 +18280,6 @@ NOT the TextureNumber.
 <property name="MaxDamage" value="200"/>
 <property name="DamageReceived" value="0.5"/>
 <property name="Model" value="Entities/Electrical/electric_fencePrefab"/> <property name="HandleFace" value="Bottom"/>
-<property class="RepairItems"> <property name="electronicParts" value="1"/> <property name="scrapIron" value="1"/> </property>
 <property name="ModelOffset" value="0,0.5,0"/>
 <property name="MultiBlockDim" value="1,2,1"/>
 <property name="ImposterDontBlock" value="true"/>
@@ -18273,5 +18461,10 @@ NOT the TextureNumber.
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-</blocks><!-- Block limit: No block can have an ID greater 2047. -->
 
+
+
+
+
+
+</blocks><!-- Block limit: No block can have an ID greater 2047. -->

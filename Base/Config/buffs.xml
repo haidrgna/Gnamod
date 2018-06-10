@@ -275,13 +275,13 @@ built-in buff variables:
 <buff id="megaCrushBuff" duration="200t" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
 <modify id="0" stat="stamina" amount="10" rate="1"/>  <modify id="0" stat="health" amount="0.1" rate="1"/>  </buff>
 
-<buff id="yuccaJuiceCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp less 10" actions="debuff(stewWarming);debuff(snowberryWarmingBuff);" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
+<buff id="yuccaJuiceCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp less 30" actions="debuff(stewWarming);debuff(snowberryWarmingBuff);" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
 <modify id="0" stat="coretemp" amount="-0.15" rate="1"/>  </buff>
 
-<buff id="stewWarming" duration="400t" stack="extend" type="staminaup" debuffif="coretemp greater 110" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling);" icon="ui_game_symbol_coffee" name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
+<buff id="stewWarming" duration="400t" stack="extend" type="staminaup" debuffif="coretemp greater 100" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling);" icon="ui_game_symbol_coffee" name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
 <modify id="0" stat="coretemp" amount="0.15" rate="1"/>  </buff>
 
-<buff id="redTeaCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp less 10" actions="debuff(stewWarming);debuff(snowberryWarmingBuff);" icon="ui_game_symbol_tea" name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
+<buff id="redTeaCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp less 30" actions="debuff(stewWarming);debuff(snowberryWarmingBuff);" icon="ui_game_symbol_tea" name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
 <modify id="0" stat="coretemp" amount="-0.15" rate="1"/>  </buff>
 
 <buff id="eatSnowberryTrigger" duration="1" actions="increment(CTRsnowberry, 144, 0, 0, 1)"/>
@@ -294,7 +294,7 @@ built-in buff variables:
 <buff id="snowberryPoisonBuff" duration="0" buffif="CTRsnowberry greater 1040" debuffif="CTRsnowberry less 1040" castsound="Player_*sick5" causes="snowberryPlant,snowberryJuice,snowberryExtract" type="disease" icon="ui_game_symbol_skull" name_key="snowberryPoisonName" description_key="snowberryPoisonDesc" tooltip_key="snowberryPoisonTooltip">
 <modify id="0" stat="health" amount="-1" rate="20"/>  <modify id="1" stat="wellness" amount="-.1" rate="20" />  </buff>
 
-<buff id="snowberryWarmingBuff" duration="210" stack="extend" type="staminaup" debuffif="coretemp greater 110" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling);" icon="ui_game_symbol_coffee" name_key="snowberryWarmingName" description_key="snowberryWarmingDesc" tooltip_key="snowberryWarmingTooltip" causes="snowberryJuice">
+<buff id="snowberryWarmingBuff" duration="210" stack="extend" type="staminaup" debuffif="coretemp greater 100" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling);" icon="ui_game_symbol_coffee" name_key="snowberryWarmingName" description_key="snowberryWarmingDesc" tooltip_key="snowberryWarmingTooltip" causes="snowberryJuice">
 <modify id="0" stat="coretemp" amount="0.2" rate="1"/>  </buff>
 
 <buff id="eatFood_1_Trigger" duration="1" actions="increment(CTRfood, 2, 0, 0, 1)"/>
