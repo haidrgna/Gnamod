@@ -7158,7 +7158,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="RepairAmount" value="30"/>
 <property name="HoldType" value="16"/>
 <property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="1"/>
+<property name="FuelValue" value="5"/>
 <property name="SellableToTrader" value="false"/>
 <property class="Action1">
 <property name="Class" value="PlaceAsBlock"/>
@@ -7912,7 +7912,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Basics"/>
 </item>
 
-<item id="1375" name="ironRebar">
+<item id="1375" name="rebar">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
 <property name="HoldType" value="45"/>
@@ -7923,7 +7923,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Basics"/>
 </item>
 
-<item id="1376" name="steelRebar">
+<item id="1376" name="brokenStone"> <!-- gravel -->
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
 <property name="HoldType" value="45"/>
@@ -7932,7 +7932,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="100"/>
 <property name="Group" value="Resources,Basics"/>
-</item>
+</item>  
   
 <item id="1380" name="hubcap">
 <property name="Meshfile" value="Items/Crafting/hubcap"/>
@@ -8211,6 +8211,39 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources"/>
 </item>
 
+<item id="1460" name="brickAndMortar">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Msteel"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="500"/> 
+<property name="Weight" value="10"/>
+<property name="EconomicValue" value="22"/>
+<property name="Group" value="Resources"/>
+</item>  
+
+<item id="1470" name="steelPlating">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Msteel"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="500"/> 
+<property name="Weight" value="10"/>
+<property name="EconomicValue" value="22"/>
+<property name="Group" value="Resources"/>
+</item>    
+
+<item id="1471" name="boardAndNail">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Msteel"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="500"/> 
+<property name="Weight" value="10"/>
+<property name="EconomicValue" value="22"/>
+<property name="Group" value="Resources"/>
+</item>      
+
 <!-- Workstation Tools -->
 <item id="1483" name="cookingPot">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
@@ -8305,7 +8338,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="MeltTimePerUnit"          value="0.25"/>
 <property name="UserHidden"               value="true"/>
 <property name="CraftingIngredientTime"   value="0.25"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="10"/>
 </item>
@@ -8314,7 +8347,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Extends"                  value="unit_iron"/>
 <property name="CustomIcon"               value="scrapBrass"/>
 <property name="Material"                 value="brass"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="1"/>
 </item>
@@ -8323,7 +8356,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Extends"                  value="unit_iron"/>
 <property name="CustomIcon"               value="scrapLead"/>
 <property name="Material"                 value="lead"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="5"/>
 </item>
@@ -8332,7 +8365,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Extends"                  value="unit_iron"/>
 <property name="CustomIcon"               value="brokenGlass"/>
 <property name="Material"                 value="glass"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="100"/>
 </item>
@@ -8341,7 +8374,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Extends"                  value="unit_iron"/>
 <property name="CustomIcon"               value="cobblestones"/>
 <property name="Material"                 value="stone"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="500"/>
 <property name="CraftingIngredientTime"   value="0.40"/>
@@ -8351,12 +8384,32 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Extends"                  value="unit_iron"/>
 <property name="CustomIcon"               value="clayLump"/>
 <property name="Material"                 value="clay"/>
-<property name="CreativeMode"             value="None" />
+<property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
 <property name="EconomicBundleSize"       value="500"/>
 <property name="CraftingIngredientTime"   value="0.20"/>
 </item>
 
+<item id="1496"                           name="unit_limestone">
+<property name="Extends"                  value="unit_iron"/>
+<!--<property name="CustomIcon"               value="clayLump"/>-->
+<property name="Material"                 value="limestone"/>
+<property name="CreativeMode"             value="None"/>
+<property name="EconomicValue"            value="1"/>
+<property name="EconomicBundleSize"       value="500"/>
+<property name="CraftingIngredientTime"   value="0.20"/>
+</item>  
+
+<item id="1496"                           name="unit_coal">
+<property name="Extends"                  value="unit_iron"/>
+<!--<property name="CustomIcon"               value="clayLump"/>-->
+<property name="Material"                 value="coal"/>
+<property name="CreativeMode"             value="None"/>
+<property name="EconomicValue"            value="1"/>
+<property name="EconomicBundleSize"       value="500"/>
+<property name="CraftingIngredientTime"   value="0.20"/>
+</item>  
+  
 <!-- ============================== GNAMOD ITEMS =========================================================================================================================================================================== -->
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= AMMUNITION +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- ==================== No Ammo ==================== -->

@@ -930,6 +930,18 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <property name="Experience" value="3.0"/>
 </material>
 
+<material id="limestone">
+<property name="damage_category" value="stone" />
+<property name="surface_category" value="stone" />
+<property name="forge_category" value="stone" />
+<property name="Hardness" type="float" value="1" />
+<property name="stepsound" value="stone" />
+<property name="stability_glue" value="120" />
+<property name="Mass" type="int" value="10" />
+<property name="MaxDamage" value="500" />
+<property name="Experience" value="3.0"/>
+</material>  
+  
 <material id="Mbedrock">
 <property name="damage_category" value="stone" />
 <property name="surface_category" value="stone" />
