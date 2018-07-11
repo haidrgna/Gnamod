@@ -1878,29 +1878,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
 
 
-<item id="190" name="rockSmall"> <!-- scrap material -->
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="Material" value="stone"/>
-<property name="HoldType" value="40"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="RepairAmount" value="300"/>
-<property name="Weight" value="5"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property class="Action0"> <!-- AttackActio+n -->
-<property name="Class" value="ThrowAway"/>
-<property name="Delay" value="1.2"/>
-<property name="Throw_strength_default" value="8"/>
-<property name="Throw_strength_max" value="25"/>
-<property name="Max_strain_time" value="1.5"/>
-<property name="Sound_start" value="swoosh"/>
-</property>
-<property name="ThrowableDecoy" value="true"/>
-<property name="DropScale" value="3"/>
-<property name="Group" value="Resources"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
+
 
 <item id="191" name="turd">
 <property name="Meshfile" value="Items/Crafting/clayPrefab"/>
@@ -7147,557 +7125,11 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 </property>
 </item>
 
-<!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
-
-<item id="1300" name="yuccaFibers"> <!-- scrap material -->
-<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Weight" value="1"/>
-<property name="Material" value="plants"/>
-<property name="RepairTime" value="1"/>
-<property name="RepairAmount" value="30"/>
-<property name="HoldType" value="16"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="5"/>
-<property name="SellableToTrader" value="false"/>
-<property class="Action1">
-<property name="Class" value="PlaceAsBlock"/>
-<property name="Delay" value="0.5"/>
-<property name="Blockname" value="treePlantedGrass"/>
-</property>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1301" name="wood"> <!-- scrap material -->
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="wood"/>
-<property name="Weight" value="5"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="50"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="RepairAmount" value="100"/>
-<property name="LootExpValue" value="1"/>
-<property name="DescriptionKey" value="woodDesc"/>
-<property name="CraftingIngredientTime" value="0.25"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1302" name="crushedSand">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="glass"/>
-<property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.1"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
-</item>
-
-<item id="1303" name="ironFragment">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Miron_scrap"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="HoldType" value="45"/>
-<property name="DropScale" value="3"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="2"/>
-</item>
-
-<item id="1305" name="scrapIron">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/scrapIronDroppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="Miron_scrap"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Group" value="Resources,Basics"/>
-<property name="RepairTime" value="0.5"/>
-<property name="RepairAmount" value="20"/>
-<property name="CraftingIngredientTime" value="0.2"/>
-<property name="MeltTimePerUnit" value="0.1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1306" name="forgedIron">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="MforgedIron"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="CraftingIngredientExp" value="10"/>
-<property name="CraftingIngredientTime" value="7"/>
-<property name="RepairTime" value="0.5"/>
-<property name="RepairAmount" value="270"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="3"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1307" name="shortMetalPipe">
-<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe"/>
-<property name="HoldType" value="16"/>
-<property name="Material" value="MforgedIron"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources"/>
-<property name="CraftingIngredientTime" value="5"/>
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="2"/>
-</item>
-
-<item id="1308" name="forgedSteel">
-<property name="Meshfile" value="Items/Crafting/ingotIron"/>
-<property name="HoldType" value="21"/>
-<property name="Material" value="Msteel"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="12"/>
-<property name="RepairTime" value="1"/>
-<property name="RepairAmount" value="400"/>
-<property name="EconomicValue" value="6"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1309" name="scrapPlastics">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="Mplastics"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="5"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1311" name="oilShale">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
-<property name="Material" value="MforgedIron"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="5"/>
-<property name="CraftingIngredientExp" value="2"/>
-<property name="DropScale" value="8"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1312" name="animalHide">
-<property name="Meshfile" value="Items/Crafting/animal_hidePrefab"/>
-<property name="HoldType" value="21"/>
-<property name="Material" value="organic"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="FuelValue" value="5"/>
-<property name="CraftingIngredientTime" value="15"/>
-<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1313" name="leather">
-<property name="Meshfile" value="Items/Crafting/leather"/>
-<property name="Material" value="leather"/>
-<property name="RepairAmount" value="80"/>
-<property name="HoldType" value="21"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="FuelValue" value="5"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="Weight" value="5"/>
-<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-<property name="Group" value="Resources,Clothing"/>
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1314" name="hopsFlower">
-<property name="CustomIcon" value="plantedHop3Harvest"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="SellableToTrader" value="false"/>
-<property name="CraftingIngredientTime" value="20"/>
-<property name="Group" value="Chemicals"/>
-</item>
-
-<item id="1315" name="aloePlant">
-<property name="CustomIcon" value="plantedAloe3Harvest"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="CraftingIngredientTime" value="5"/>
-<property name="Group" value="Chemicals"/>
-<property name="DescriptionKey" value="plantedAloe3HarvestDesc"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1316" name="chrysanthemumPlant">
-<property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="CraftingIngredientTime" value="5"/>
-<property name="Group" value="Food/Cooking"/>
-<property name="DescriptionKey" value="plantedChrysanthemum3HarvestDesc"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1317" name="scrapBrass">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Mbrass_scrap"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.3" />
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="Group" value="Resources,Basics"/>
-</item>
-
-<item id="1318" name="scrapLead">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/scrapLeadDroppedPrefab"/>
-<property name="Material" value="Mlead_scrap"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.3" />
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
-<property name="Group" value="Resources,Basics"/>
-</item>
-
-<item id="1319" name="clayLump">
-<property name="Meshfile" value="Items/Crafting/clay"/>
-<property name="Material" value="clay"/>
-<property name="Weight" value="5"/>
-<property name="HoldType" value="21"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Group" value="Resources,Basics"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="MeltTimePerUnit" value="0.5" />
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1320" name="dirtFragment">
-<property name="CustomIcon" value="fertileDirt"/>
-<property name="Meshfile" value="Items/Crafting/clay"/>
-<property name="HoldType" value="21"/>
-<property name="Material" value="dirt"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="SellableToTrader" value="false"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1321" name="snowBall">
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="HoldType" value="40"/>
-<property name="Material" value="snow"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="SellableToTrader" value="false"/>
-<property class="Action0">
-<property name="Class" value="ThrowAway"/>
-<property name="Delay" value="1.2"/>
-<property name="Throw_strength_default" value="10"/>
-<property name="Throw_strength_max" value="35"/>
-<property name="Max_strain_time" value="1"/>
-<property name="Sound_start" value="swoosh"/>
-</property>
-<property class="Action1">
-<property name="Class" value="Eat"/>
-<property name="Delay" value="1.0"/>
-<property name="Use_time" value="..."/>
-<property name="Gain_health" value="0"/>
-<property name="Gain_food" value="0"/>
-<property name="Buff" value="dysentery"/>
-<property name="Buff_chance" value="0.02"/>
-<property name="Gain_water" value="1"/>
-<property name="Gain_wellness" value="0"/>
-<property name="Sound_start" value="player_eating"/>
-</property>
-<property name="ThrowableDecoy" value="true"/>
-<property name="DropScale" value="3"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="50"/>
-</item>
-
-<item id="1322" name="cobblestones">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="stone"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="2500"/> 
-<property name="DropScale" value="1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
-<property name="Group" value="Building,Resources"/>
-</item>
-
-<item id="1323" name="cement">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="stone"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-<property name="Group" value="Building,Resources"/>
-</item>
-
-<item id="1324" name="concreteMix">
-<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Mconcrete"/>
-<property name="Weight" value="20"/>
-<property name="HoldType" value="34"/>
-<property name="Stacknumber" value="2500"/> 
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="Group" value="Building,Resources"/>
-</item>
-
-<item id="1325" name="fertilizer">
-<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
-<property name="Material" value="MfertilizedFarmland"/>
-<property name="HoldType" value="21"/>
-<property name="Stacknumber" value="2500"/> 
-<property name="Group" value="Chemicals,Resources"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="PickupJournalEntry" value="farmingTip"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1327" name="cloth">
-<property name="Meshfile" value="Items/Crafting/cloth"/>
-<property name="Material" value="cloth"/>
-<property name="HoldType" value="14"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="RepairAmount" value="50"/>
-<property name="FuelValue" value="1"/>
-<property name="Weight" value="5"/>
-<property name="Group" value="Resources,Clothing"/>
-<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="4"/>
-</item>
-
-<item id="1328" name="paper">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="paper"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="FuelValue" value="1"/>
-<property name="Weight" value="1"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1330" name="militaryFiber">
-<property name="Meshfile" value="Items/Crafting/cloth"/>
-<property name="Material" value="MmilitaryFiber"/>
-<property name="HoldType" value="14"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="CraftingIngredientExp" value="10"/>
-<property name="CraftingIngredientTime" value="10"/>
-<property name="RepairTime" value="0.6"/>
-<property name="RepairAmount" value="250"/>
-<property name="Weight" value="1"/>
-<property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="Group" value="Resources,Clothing"/>
-<property name="EconomicValue" value="20"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1331" name="electricParts">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="MelectricParts"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources,Science"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="25"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1332" name="electronicParts">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="MelectronicParts"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="EconomicValue" value="50"/>
-<property name="Group" value="Resources,Science"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="40"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1333" name="mechanicalParts">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="metal"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources,Science"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="45"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1334" name="cottonPlant">
-<property name="CustomIcon" value="plantedCotton3Harvest"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="CraftingIngredientTime" value="2"/>
-<property name="Group" value="Resources,Clothing"/>
-<property name="DescriptionKey" value="plantedCotton3HarvestDesc"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1335" name="goldenrodPlant">
-<property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="CraftingIngredientTime" value="5"/>
-<property name="Group" value="Food/Cooking"/>
-<property name="DescriptionKey" value="plantedGoldenrod3HarvestDesc"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1336" name="oldCash">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="paper"/>
-<property name="FuelValue" value="1"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="EconomicValue" value="7"/>
-<property name="Group" value="Decor/Miscellaneous"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1337" name="snowberryPlant">
-<property name="Extends" value="blueberries"/>
-<property name="CustomIcon" value="blueberries"/>
-<property name="CustomIconTint" value="ffffaf"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="plants"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="100"/> 
-<property name="CraftingIngredientTime" value="8"/>
-<property class="Action1">
-<property name="Delay" value="1.5"/>
-<property name="Gain_food" value="2"/>
-<property name="Buff" value="eatSnowberryTrigger,eatFood_1_Trigger"/>
-<property name="Gain_water" value="0"/>
-</property>
-<property name="Group" value="Food/Cooking,Science"/>
-<property name="EconomicValue" value="10"/>
-<property name="EconomicBundleSize" value="5"/>
-</item>
-
-<item id="1338" name="insulator">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="clay"/>
-<property name="Weight" value="15"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="SellableToTrader" value="false"/>
-<property name="Group" value="Resources,Science"/>
-<property name="CraftingIngredientExp" value="15"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-
-
-<item id="1345" name="coal">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
-<property name="Material" value="coal"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="20"/>
-<property name="DropScale" value="8"/>
-<property name="Group" value="Resources,Chemicals"/>
-<property name="CraftingIngredientTime" value="1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
-</item>
-
-<item id="1346" name="potassiumNitratePowder">
-<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
-<property name="Material" value="coal"/>
-<property name="HoldType" value="21"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="PickupJournalEntry" value="farmingTip"/>
-<property name="Group" value="Resources,Chemicals"/>
-<property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
-</item>
-
-
-
-<item id="1358" name="macheteBlade">
+  
+<!-- -->
+  
+<!-- Sort? -->
+<item id="1227" name="macheteBlade">
 <property name="CustomIcon" value="machete"/> <property name="CustomIconTint" value="a0a0ff"/>
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -7709,131 +7141,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicValue" value="30"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
+  
+<!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
 
-<item id="1359" name="repairKit">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Msteel"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="50"/>
-<property name="RepairTime" value="2"/>
-<property name="RepairAmount" value="2500"/>
-<property name="Group" value="Tools/Traps"/>
-<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-<property name="EconomicValue" value="100"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1360" name="oil">
-<property name="Meshfile" value="Items/Food/coffeePrefab"/>
-<property name="Material" value="organic"/>
-<property name="HoldType" value="3"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Group" value="Resources,Chemicals"/>
-<property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="EconomicValue" value="10"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1361" name="steelPolish">
-<property name="Meshfile" value="Items/Food/coffeePrefab"/>
-<property name="Material" value="Msteel"/>
-<property name="Weight" value="0"/>
-<property name="HoldType" value="3"/>
-<property name="Stacknumber" value="2500"/> 
-<property name="Group" value="Resources,Chemicals"/>
-<property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="EconomicValue" value="45"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1362" name="paint">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="organic"/>
-<property name="Stacknumber" value="2500"/>
-<property name="Group" value="Chemicals"/>
-<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-<property name="PickupJournalEntry" value="paintingTip"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1363" name="animalFat">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="organic"/>
-<property name="HoldType" value="45"/>
-<property name="FuelValue" value="20"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="CraftingIngredientTime" value="15"/>
-<property name="Group" value="Resources,Chemicals"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1364" name="tallow">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="organic"/>
-<property name="FuelValue" value="20"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="CraftingIngredientTime" value="15"/>
-<property name="Group" value="Resources,Chemicals"/>
-<property name="EconomicValue" value="3"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1367" name="canEmpty">
-<property name="Meshfile" value="Items/Food/can_empty"/>
-<property name="Material" value="metal"/>
-<property name="Weight" value="5"/>
-<property name="HoldType" value="14"/>
-<property name="Stacknumber" value="15"/>
-<property name="CraftingIngredientTime" value="9"/>
-<property class="Action1">
-<property name="Class" value="ExchangeItem"/>
-<property name="Delay" value="1.0"/>
-<property name="Change_item_to" value="canMurkyWater"/>
-<property name="Do_block_action" value="deplete1"/>
-<property name="Focused_blockname_1" value="water"/>
-<property name="Focused_blockname_2" value="waterMoving"/>
-<property name="Focused_blockname_3" value="waterStaticBucket"/>
-<property name="Focused_blockname_4" value="waterMovingBucket"/>
-<property name="Focused_blockname_5" value="waterSource8"/>
-<property name="Sound_start" value="bucketfill_water"/>
-</property>
-<property name="Group" value="Resources,Food/Cooking"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-</item>
-
-<item id="1368" name="emptyJar">
-<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
-<property name="Material" value="glass"/>
-<property name="HoldType" value="3"/>
-<property name="Stacknumber" value="60"/> 
-<property name="Weight" value="10"/>
-<property name="CraftingIngredientTime" value="9"/>
-<property class="Action1">
-<property name="Class" value="ExchangeItem"/>
-<property name="Delay" value="1.0"/>
-<property name="Change_item_to" value="bottledRiverWater"/>
-<property name="Do_block_action" value="deplete1"/>
-<property name="Focused_blockname_1" value="water"/>
-<property name="Focused_blockname_2" value="waterMoving"/>
-<property name="Focused_blockname_3" value="waterStaticBucket"/>
-<property name="Focused_blockname_4" value="waterMovingBucket"/>
-<property name="Focused_blockname_5" value="waterSource8"/>
-<property name="Sound_start" value="bucketfill_water"/>
-</property>
-<property name="Group" value="Resources,Food/Cooking"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
-</item>
-
+<!-- Tools -->
 <item id="1370" name="bucket">
 <property name="Meshfile" value="Items/Crafting/Metal/IronBucket"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -7878,98 +7189,123 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Tools/Traps"/>
 </item>
 
-<item id="1372" name="mortarMix">
-<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+<item id="1431" name="smallEngine">
+<property name="PartType" value="Receiver"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Mconcrete"/>
-<property name="Weight" value="20"/>
-<property name="HoldType" value="34"/>
-<property name="Stacknumber" value="2500"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="Group" value="Building,Resources"/>
+<property name="VehicleSlotType" value="engine"/>
+<property name="Material" value="Msteel"/>
+<property name="RepairTools" value="repairKit"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="1"/>
+<property name="Weight" value="100"/>
+<property name="Group" value="Tools/Traps,Science"/>
+<property name="DegradationBreaksAfter" value="false"/>
+<property class="Attributes">
+<property name="DegradationMax" value="1000,6000"/>
+<property name="VehicleNoise" value="1,0.1"/>
+<property name="VehicleMaxSpeed" value="5,18"/>
+<property name="VehicleAcceleration" value="7,14"/>
+<property name="VehicleMetersPerLiter" value="8,12"/>
+<property name="VehicleIdleSecondsPerLiter" value="6,12"/>
+<property name="VehicleStartDelayInSeconds" value="1,0.1"/>
+<property name="VehicleStartChance" value="0.5,0.99"/>
+<property name="VehicleTankSize" value="1000, 2000"/>
+</property>
+<property name="CraftingSkillGroup" value="craftSkillScience"/>
+<property name="EconomicValue" value="750"/>
 </item>
 
-<item id="1373" name="crushedLime">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="limestone"/>
-<property name="Weight" value="1"/>
-<property name="Stacknumber" value="5000"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
+<item id="1432" name="carBattery">
+<property name="Meshfile" value="Items/Misc/car_battery"/>
+<property name="Material" value="lead"/>
+<property name="RepairTools" value="repairKit"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="1"/>
+<property name="Weight" value="160"/>
+<property name="Group" value="Tools/Traps,Science"/>
+<property name="VehicleSlotType" value="battery"/>
+<property name="DegradationBreaksAfter" value="false"/>
+<property class="Attributes">
+<property name="DegradationMax" value="1000,6000"/>
+<property name="BatteryMaxLoadInVolts" value="24, 36"/>
+<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
+</property>
+<property name="EconomicValue" value="500"/>
 </item>
 
-<item id="1374" name="bricks">
-<property name="CustomIcon" value="coal"/>
+<item id="1436" name="solarCell">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="glass"/>
+<property name="Stacknumber" value="1"/>
 <property name="HoldType" value="45"/>
-<property name="Material" value="stone"/>
 <property name="Weight" value="10"/>
-<property name="Stacknumber" value="5000"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
+<property name="Group" value="Tools/Traps,Science"/>
+<property class="Attributes">
+<property name="DegradationMax" value="1000,6000"/>
+</property>
+<property name="EconomicValue" value="1500"/>
 </item>
 
-<item id="1375" name="rebar">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="metal"/>
-<property name="Stacknumber" value="5000"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
-</item>
-
-<item id="1376" name="brokenStone"> <!-- gravel -->
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
-<property name="HoldType" value="45"/>
-<property name="Material" value="metal"/>
-<property name="Stacknumber" value="5000"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
-</item>  
-  
-<item id="1380" name="hubcap">
-<property name="Meshfile" value="Items/Crafting/hubcap"/>
-<property name="Material" value="metal"/>
-<property name="HoldType" value="23"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Weight" value="10"/>
+<item id="1430" name="candle">
+<property name="Class" value="ItemClassTorch"/>
+<property name="Meshfile" value="Items/Tools/candlePrefab"/>
+<property name="Material" value="organic"/>
+<property name="HoldType" value="12"/>
+<property name="Stacknumber" value="50"/>
+<property name="FuelValue" value="16"/>
 <property class="Action1">
 <property name="Class" value="PlaceAsBlock"/>
 <property name="Delay" value="0.5"/>
-<property name="Blockname" value="hubcapNoMine"/>
+<property name="Blockname" value="candleWallPlayer"/>
 </property>
-<property name="EconomicValue" value="10"/>
-<property name="Group" value="Resources,Tools/Traps"/>
+<property name="Group" value="Basics,Decor/Miscellaneous"/>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1381" name="airFilter">
-<property name="Meshfile" value="Items/Crafting/air_filter"/>
-<property name="Material" value="metal"/>
-<property name="HoldType" value="23"/>
-<property name="Stacknumber" value="1000"/> 
-<property name="Weight" value="15"/>
-<property name="EconomicValue" value="15"/>
-<property name="Group" value="Resources,Tools/Traps"/>
+
+
+<!-- Repair Kits -->
+<item id="1359" name="repairKit">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Msteel"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="50"/>
+<property name="RepairTime" value="2"/>
+<property name="RepairAmount" value="2500"/>
+<property name="Group" value="Tools/Traps"/>
+<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+<property name="EconomicValue" value="100"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1382" name="candyTin">
-<property name="Meshfile" value="Items/Crafting/candy_tinPrefab"/>
-<property name="Material" value="metal"/>
-<property name="HoldType" value="21"/>
+<!-- Garbage Items -->
+<item id="1336" name="oldCash">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="paper"/>
+<property name="FuelValue" value="1"/>
+<property name="Weight" value="1"/>
 <property name="Stacknumber" value="1000"/> 
-<property name="Weight" value="5"/>
+<property name="EconomicValue" value="7"/>
+<property name="Group" value="Decor/Miscellaneous"/>
 <property name="EconomicValue" value="1"/>
-<property name="Group" value="Resources,Tools/Traps"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1435" name="casinoCoin">
+<property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
+<property name="Material" value="organic"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="25000"/> 
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
+<property name="SellableToTrader" value="false"/>
+<property name="Group" value="Special Items"/>
 </item>
 
 <item id="1383" name="doorKnob">
@@ -7991,6 +7327,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicValue" value="120"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 </item>
+
 <item id="1385" name="radiator">
 <property name="Meshfile" value="Items/Crafting/radiator"/>
 <property name="Material" value="brass"/>
@@ -8069,6 +7406,180 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="DescriptionKey" value="rareOresGroupDesc"/>
 </item>
 
+<!-- Food and Water Items -->
+<item id="1367" name="canEmpty">
+<property name="Meshfile" value="Items/Food/can_empty"/>
+<property name="Material" value="metal"/>
+<property name="Weight" value="5"/>
+<property name="HoldType" value="14"/>
+<property name="Stacknumber" value="15"/>
+<property name="CraftingIngredientTime" value="9"/>
+<property class="Action1">
+<property name="Class" value="ExchangeItem"/>
+<property name="Delay" value="1.0"/>
+<property name="Change_item_to" value="canMurkyWater"/>
+<property name="Do_block_action" value="deplete1"/>
+<property name="Focused_blockname_1" value="water"/>
+<property name="Focused_blockname_2" value="waterMoving"/>
+<property name="Focused_blockname_3" value="waterStaticBucket"/>
+<property name="Focused_blockname_4" value="waterMovingBucket"/>
+<property name="Focused_blockname_5" value="waterSource8"/>
+<property name="Sound_start" value="bucketfill_water"/>
+</property>
+<property name="Group" value="Resources,Food/Cooking"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1368" name="emptyJar">
+<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
+<property name="Material" value="glass"/>
+<property name="HoldType" value="3"/>
+<property name="Stacknumber" value="60"/> 
+<property name="Weight" value="10"/>
+<property name="CraftingIngredientTime" value="9"/>
+<property class="Action1">
+<property name="Class" value="ExchangeItem"/>
+<property name="Delay" value="1.0"/>
+<property name="Change_item_to" value="bottledRiverWater"/>
+<property name="Do_block_action" value="deplete1"/>
+<property name="Focused_blockname_1" value="water"/>
+<property name="Focused_blockname_2" value="waterMoving"/>
+<property name="Focused_blockname_3" value="waterStaticBucket"/>
+<property name="Focused_blockname_4" value="waterMovingBucket"/>
+<property name="Focused_blockname_5" value="waterSource8"/>
+<property name="Sound_start" value="bucketfill_water"/>
+</property>
+<property name="Group" value="Resources,Food/Cooking"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="5"/>
+</item> 
+ 
+<item id="1321" name="snowBall">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="HoldType" value="40"/>
+<property name="Material" value="snow"/>
+<property name="Weight" value="5"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="SellableToTrader" value="false"/>
+<property class="Action0">
+<property name="Class" value="ThrowAway"/>
+<property name="Delay" value="1.2"/>
+<property name="Throw_strength_default" value="10"/>
+<property name="Throw_strength_max" value="35"/>
+<property name="Max_strain_time" value="1"/>
+<property name="Sound_start" value="swoosh"/>
+</property>
+<property class="Action1">
+<property name="Class" value="Eat"/>
+<property name="Delay" value="1.0"/>
+<property name="Use_time" value="..."/>
+<property name="Gain_health" value="0"/>
+<property name="Gain_food" value="0"/>
+<property name="Buff" value="dysentery"/>
+<property name="Buff_chance" value="0.02"/>
+<property name="Gain_water" value="1"/>
+<property name="Gain_wellness" value="0"/>
+<property name="Sound_start" value="player_eating"/>
+</property>
+<property name="ThrowableDecoy" value="true"/>
+<property name="DropScale" value="3"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>  
+
+<item id="1314" name="hopsFlower">
+<property name="CustomIcon" value="plantedHop3Harvest"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
+<property name="SellableToTrader" value="false"/>
+<property name="CraftingIngredientTime" value="20"/>
+<property name="Group" value="Chemicals"/>
+</item>
+
+<item id="1315" name="aloePlant">
+<property name="CustomIcon" value="plantedAloe3Harvest"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="CraftingIngredientTime" value="5"/>
+<property name="Group" value="Chemicals"/>
+<property name="DescriptionKey" value="plantedAloe3HarvestDesc"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1316" name="chrysanthemumPlant">
+<property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="CraftingIngredientTime" value="5"/>
+<property name="Group" value="Food/Cooking"/>
+<property name="DescriptionKey" value="plantedChrysanthemum3HarvestDesc"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1334" name="cottonPlant">
+<property name="CustomIcon" value="plantedCotton3Harvest"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="CraftingIngredientTime" value="2"/>
+<property name="Group" value="Resources,Clothing"/>
+<property name="DescriptionKey" value="plantedCotton3HarvestDesc"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1335" name="goldenrodPlant">
+<property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="CraftingIngredientTime" value="5"/>
+<property name="Group" value="Food/Cooking"/>
+<property name="DescriptionKey" value="plantedGoldenrod3HarvestDesc"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1337" name="snowberryPlant">
+<property name="Extends" value="blueberries"/>
+<property name="CustomIcon" value="blueberries"/>
+<property name="CustomIconTint" value="ffffaf"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="plants"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="100"/> 
+<property name="CraftingIngredientTime" value="8"/>
+<property class="Action1">
+<property name="Delay" value="1.5"/>
+<property name="Gain_food" value="2"/>
+<property name="Buff" value="eatSnowberryTrigger,eatFood_1_Trigger"/>
+<property name="Gain_water" value="0"/>
+</property>
+<property name="Group" value="Food/Cooking,Science"/>
+<property name="EconomicValue" value="10"/>
+<property name="EconomicBundleSize" value="5"/>
+</item>
+
 <item id="1413" name="coffeeBeans">
 <property name="Meshfile" value="Items/Food/seed_blueberryPrefab"/>
 <property name="Material" value="plants"/>
@@ -8080,103 +7591,400 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="10"/>
 </item>
 
-<item id="1430" name="candle">
-<property name="Class" value="ItemClassTorch"/>
-<property name="Meshfile" value="Items/Tools/candlePrefab"/>
+
+
+
+
+
+
+
+
+
+
+<item id="1363" name="animalFat">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="organic"/>
-<property name="HoldType" value="12"/>
-<property name="Stacknumber" value="50"/>
-<property name="FuelValue" value="16"/>
+<property name="HoldType" value="45"/>
+<property name="FuelValue" value="20"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="CraftingIngredientTime" value="15"/>
+<property name="Group" value="Resources,Chemicals"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1364" name="tallow">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="organic"/>
+<property name="FuelValue" value="20"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="CraftingIngredientTime" value="15"/>
+<property name="Group" value="Resources,Chemicals"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<!-- Ores -->
+
+ 
+
+   
+
+<!-- Raw Materials -->
+<item id="1300" name="yuccaFibers">
+<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Weight" value="1"/>
+<property name="Material" value="plants"/>
+<property name="RepairTime" value="1"/>
+<property name="RepairAmount" value="30"/>
+<property name="HoldType" value="16"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="FuelValue" value="5"/>
+<property name="SellableToTrader" value="false"/>
 <property class="Action1">
 <property name="Class" value="PlaceAsBlock"/>
 <property name="Delay" value="0.5"/>
-<property name="Blockname" value="candleWallPlayer"/>
+<property name="Blockname" value="treePlantedGrass"/>
 </property>
-<property name="Group" value="Basics,Decor/Miscellaneous"/>
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="1"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1431" name="smallEngine">
-<property name="PartType" value="Receiver"/>
+<item id="1301" name="wood">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="VehicleSlotType" value="engine"/>
-<property name="Material" value="Msteel"/>
-<property name="RepairTools" value="repairKit"/>
+<property name="Material" value="wood"/>
+<property name="Weight" value="5"/>
 <property name="HoldType" value="45"/>
-<property name="Stacknumber" value="1"/>
-<property name="Weight" value="100"/>
-<property name="Group" value="Tools/Traps,Science"/>
-<property name="DegradationBreaksAfter" value="false"/>
-<property class="Attributes">
-<property name="DegradationMax" value="1000,6000"/>
-<property name="VehicleNoise" value="1,0.1"/>
-<property name="VehicleMaxSpeed" value="5,18"/>
-<property name="VehicleAcceleration" value="7,14"/>
-<property name="VehicleMetersPerLiter" value="8,12"/>
-<property name="VehicleIdleSecondsPerLiter" value="6,12"/>
-<property name="VehicleStartDelayInSeconds" value="1,0.1"/>
-<property name="VehicleStartChance" value="0.5,0.99"/>
-<property name="VehicleTankSize" value="1000, 2000"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="FuelValue" value="50"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="RepairAmount" value="100"/>
+<property name="LootExpValue" value="1"/>
+<property name="DescriptionKey" value="woodDesc"/>
+<property name="CraftingIngredientTime" value="0.25"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+</item>
+
+<item id="190" name="rockSmall">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="stone"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="RepairAmount" value="300"/>
+<property name="Weight" value="5"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property class="Action0">
+<property name="Class" value="ThrowAway"/>
+<property name="Delay" value="1.2"/>
+<property name="Throw_strength_default" value="8"/>
+<property name="Throw_strength_max" value="25"/>
+<property name="Max_strain_time" value="1.5"/>
+<property name="Sound_start" value="swoosh"/>
 </property>
-<property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="EconomicValue" value="750"/>
+<property name="ThrowableDecoy" value="true"/>
+<property name="DropScale" value="3"/>
+<property name="Group" value="Resources"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1432" name="carBattery">
-<property name="Meshfile" value="Items/Misc/car_battery"/>
-<property name="Material" value="lead"/>
-<property name="RepairTools" value="repairKit"/>
+<item id="1319" name="clayLump">
+<property name="Meshfile" value="Items/Crafting/clay"/>
+<property name="Material" value="clay"/>
+<property name="Weight" value="5"/>
 <property name="HoldType" value="21"/>
-<property name="Stacknumber" value="1"/>
-<property name="Weight" value="160"/>
-<property name="Group" value="Tools/Traps,Science"/>
-<property name="VehicleSlotType" value="battery"/>
-<property name="DegradationBreaksAfter" value="false"/>
-<property class="Attributes">
-<property name="DegradationMax" value="1000,6000"/>
-<property name="BatteryMaxLoadInVolts" value="24, 36"/>
-<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
-</property>
-<property name="EconomicValue" value="500"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Group" value="Resources,Basics"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="MeltTimePerUnit" value="0.5" />
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1434" name="headlight">
-<property name="VehicleSlotType" value="headlight"/>
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="glass"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="50"/> 
-<property name="Weight" value="10"/>
-<property name="Group" value="Resources,Science"/>
-<property name="EconomicValue" value="24"/>
-</item>
-
-<item id="1435" name="casinoCoin">
-<property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
-<property name="Material" value="organic"/>
+<item id="1320" name="dirtFragment">
+<property name="CustomIcon" value="fertileDirt"/>
+<property name="Meshfile" value="Items/Crafting/clay"/>
 <property name="HoldType" value="21"/>
-<property name="Stacknumber" value="25000"/> 
-<property name="EconomicValue" value="5"/>
-<property name="EconomicBundleSize" value="1"/>
+<property name="Material" value="dirt"/>
+<property name="Weight" value="5"/>
+<property name="Stacknumber" value="5000"/> 
 <property name="SellableToTrader" value="false"/>
-<property name="Group" value="Special Items"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1436" name="solarCell">
+<item id="1472" name="limestone">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="limestone"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="5"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+</item>
+
+<item id="1472" name="sandstone">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="glass"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="5"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+</item>
+
+<item id="1311" name="oilShale">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
+<property name="Material" value="MforgedIron"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="FuelValue" value="5"/>
+<property name="CraftingIngredientExp" value="2"/>
+<property name="DropScale" value="8"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1303" name="ironFragment">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="glass"/>
-<property name="Stacknumber" value="1"/>
+<property name="Material" value="Miron_scrap"/>
+<property name="Weight" value="5"/>
+<property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
-<property name="Weight" value="10"/>
-<property name="Group" value="Tools/Traps,Science"/>
-<property class="Attributes">
-<property name="DegradationMax" value="1000,6000"/>
-</property>
-<property name="EconomicValue" value="1500"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="2"/>
+</item>
+
+<item id="1302" name="crushedSand">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="glass"/>
+<property name="Weight" value="1"/>
+<property name="MeltTimePerUnit" value="0.1"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+<property name="Group" value="Resources,Basics"/>
+</item>
+
+<item id="1373" name="crushedLime">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="limestone"/>
+<property name="Weight" value="1"/>
+<property name="Stacknumber" value="5000"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+<property name="Group" value="Resources,Basics"/>
+</item> 
+ 
+<item id="1327" name="cloth">
+<property name="Meshfile" value="Items/Crafting/cloth"/>
+<property name="Material" value="cloth"/>
+<property name="HoldType" value="14"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="RepairAmount" value="50"/>
+<property name="FuelValue" value="1"/>
+<property name="Weight" value="5"/>
+<property name="Group" value="Resources,Clothing"/>
+<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="4"/>
+</item>
+
+<item id="1305" name="scrapIron">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/scrapIronDroppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="Miron_scrap"/>
+<property name="Weight" value="1"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Group" value="Resources,Basics"/>
+<property name="RepairTime" value="0.5"/>
+<property name="RepairAmount" value="20"/>
+<property name="CraftingIngredientTime" value="0.2"/>
+<property name="MeltTimePerUnit" value="0.1"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1317" name="scrapBrass">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Mbrass_scrap"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="1"/>
+<property name="MeltTimePerUnit" value="0.3" />
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+<property name="Group" value="Resources,Basics"/>
+</item>
+
+<item id="1318" name="scrapLead">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/scrapLeadDroppedPrefab"/>
+<property name="Material" value="Mlead_scrap"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="1"/>
+<property name="MeltTimePerUnit" value="0.3" />
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="5"/>
+<property name="Group" value="Resources,Basics"/>
+</item>
+
+<item id="1309" name="scrapPlastics">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="Mplastics"/>
+<property name="Weight" value="1"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="5"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1345" name="coal">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
+<property name="Material" value="coal"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="FuelValue" value="20"/>
+<property name="DropScale" value="8"/>
+<property name="Group" value="Resources,Chemicals"/>
+<property name="CraftingIngredientTime" value="1"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="5"/>
+</item>
+
+<item id="1346" name="potassiumNitratePowder">
+<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
+<property name="Material" value="coal"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="PickupJournalEntry" value="farmingTip"/>
+<property name="Group" value="Resources,Chemicals"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="5"/>
+</item>
+
+<item id="1312" name="animalHide">
+<property name="Meshfile" value="Items/Crafting/animal_hidePrefab"/>
+<property name="HoldType" value="21"/>
+<property name="Material" value="organic"/>
+<property name="Weight" value="5"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="FuelValue" value="5"/>
+<property name="CraftingIngredientTime" value="15"/>
+<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<!-- Intermediate Materials -->
+<item id="1306" name="forgedIron">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="MforgedIron"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="CraftingIngredientExp" value="10"/>
+<property name="CraftingIngredientTime" value="7"/>
+<property name="RepairTime" value="0.5"/>
+<property name="RepairAmount" value="270"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1308" name="forgedSteel">
+<property name="Meshfile" value="Items/Crafting/ingotIron"/>
+<property name="HoldType" value="21"/>
+<property name="Material" value="Msteel"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="12"/>
+<property name="RepairTime" value="1"/>
+<property name="RepairAmount" value="400"/>
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1307" name="shortMetalPipe">
+<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe"/>
+<property name="HoldType" value="16"/>
+<property name="Material" value="MforgedIron"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources"/>
+<property name="CraftingIngredientTime" value="5"/>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="2"/>
+</item>
+
+<item id="1313" name="leather">
+<property name="Meshfile" value="Items/Crafting/leather"/>
+<property name="Material" value="leather"/>
+<property name="RepairAmount" value="80"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="FuelValue" value="5"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="Weight" value="5"/>
+<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+<property name="Group" value="Resources,Clothing"/>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1439" name="glue">
@@ -8214,6 +8022,235 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources"/>
 </item>
 
+<item id="1434" name="headlight">
+<property name="VehicleSlotType" value="headlight"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="glass"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="50"/> 
+<property name="Weight" value="10"/>
+<property name="Group" value="Resources,Science"/>
+<property name="EconomicValue" value="24"/>
+</item>
+
+<item id="1380" name="hubcap">
+<property name="Meshfile" value="Items/Crafting/hubcap"/>
+<property name="Material" value="metal"/>
+<property name="HoldType" value="23"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Weight" value="10"/>
+<property class="Action1">
+<property name="Class" value="PlaceAsBlock"/>
+<property name="Delay" value="0.5"/>
+<property name="Blockname" value="hubcapNoMine"/>
+</property>
+<property name="EconomicValue" value="10"/>
+<property name="Group" value="Resources,Tools/Traps"/>
+</item>
+
+<item id="1381" name="airFilter">
+<property name="Meshfile" value="Items/Crafting/air_filter"/>
+<property name="Material" value="metal"/>
+<property name="HoldType" value="23"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Weight" value="15"/>
+<property name="EconomicValue" value="15"/>
+<property name="Group" value="Resources,Tools/Traps"/>
+</item>
+
+<item id="1382" name="candyTin">
+<property name="Meshfile" value="Items/Crafting/candy_tinPrefab"/>
+<property name="Material" value="metal"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Weight" value="5"/>
+<property name="EconomicValue" value="1"/>
+<property name="Group" value="Resources,Tools/Traps"/>
+</item>
+
+<item id="1374" name="bricks">
+<property name="CustomIcon" value="coal"/>
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="stone"/>
+<property name="Weight" value="10"/>
+<property name="Stacknumber" value="5000"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+<property name="Group" value="Resources,Basics"/>
+</item>
+
+<item id="1375" name="rebar">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="metal"/>
+<property name="Stacknumber" value="5000"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="100"/>
+<property name="Group" value="Resources,Basics"/>
+</item>
+
+<item id="1360" name="oil">
+<property name="Meshfile" value="Items/Food/coffeePrefab"/>
+<property name="Material" value="organic"/>
+<property name="HoldType" value="3"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources,Chemicals"/>
+<property name="CraftingSkillGroup" value="craftSkillScience"/>
+<property name="EconomicValue" value="10"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1338" name="insulator">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="clay"/>
+<property name="Weight" value="15"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="SellableToTrader" value="false"/>
+<property name="Group" value="Resources,Science"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1323" name="cement">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="stone"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+<property name="Group" value="Building,Resources"/>
+</item>
+
+<item id="1325" name="fertilizer">
+<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
+<property name="Material" value="MfertilizedFarmland"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="2500"/> 
+<property name="Group" value="Chemicals,Resources"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="CraftingSkillGroup" value="craftSkillScience"/>
+<property name="PickupJournalEntry" value="farmingTip"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1328" name="paper">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="paper"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="FuelValue" value="1"/>
+<property name="Weight" value="1"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1330" name="militaryFiber">
+<property name="Meshfile" value="Items/Crafting/cloth"/>
+<property name="Material" value="MmilitaryFiber"/>
+<property name="HoldType" value="14"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="CraftingIngredientExp" value="10"/>
+<property name="CraftingIngredientTime" value="10"/>
+<property name="RepairTime" value="0.6"/>
+<property name="RepairAmount" value="250"/>
+<property name="Weight" value="1"/>
+<property name="CraftingSkillGroup" value="craftSkillScience"/>
+<property name="Group" value="Resources,Clothing"/>
+<property name="EconomicValue" value="20"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1331" name="electricParts">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="MelectricParts"/>
+<property name="Weight" value="1"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources,Science"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="EconomicValue" value="25"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1332" name="electronicParts">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="MelectronicParts"/>
+<property name="Weight" value="1"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="EconomicValue" value="50"/>
+<property name="Group" value="Resources,Science"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="EconomicValue" value="40"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1333" name="mechanicalParts">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="metal"/>
+<property name="Weight" value="5"/>
+<property name="Stacknumber" value="1000"/> 
+<property name="Group" value="Resources,Science"/>
+<property name="CraftingIngredientExp" value="15"/>
+<property name="CraftingIngredientTime" value="2"/>
+<property name="EconomicValue" value="45"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<!-- Construction Materials -->
+<item id="1362" name="paint">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="HoldType" value="45"/>
+<property name="Material" value="organic"/>
+<property name="Stacknumber" value="2500"/>
+<property name="Group" value="Chemicals"/>
+<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+<property name="PickupJournalEntry" value="paintingTip"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1471" name="boardAndNails">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="wood"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="500"/> 
+<property name="EconomicValue" value="22"/>
+<property name="Group" value="Resources"/>
+</item>
+
+<item id="1372" name="mortarMix">
+<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Mconcrete"/>
+<property name="Weight" value="20"/>
+<property name="HoldType" value="34"/>
+<property name="Stacknumber" value="2500"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+<property name="Group" value="Building,Resources"/>
+</item>
+
 <item id="1460" name="brickAndMortar">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -8245,44 +8282,46 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="10"/>
 <property name="EconomicValue" value="22"/>
 <property name="Group" value="Resources"/>
-</item>    
-
-<item id="1471" name="boardAndNails">
+</item>
+  
+<item id="1361" name="steelPolish">
+<property name="Meshfile" value="Items/Food/coffeePrefab"/>
+<property name="Material" value="Msteel"/>
+<property name="Weight" value="0"/>
+<property name="HoldType" value="3"/>
+<property name="Stacknumber" value="2500"/> 
+<property name="Group" value="Resources,Chemicals"/>
+<property name="CraftingSkillGroup" value="craftSkillScience"/>
+<property name="EconomicValue" value="45"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+ 
+<item id="1322" name="cobblestones">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="wood"/>
+<property name="Material" value="stone"/>
 <property name="HoldType" value="45"/>
-<property name="Stacknumber" value="500"/> 
-<property name="EconomicValue" value="22"/>
-<property name="Group" value="Resources"/>
-</item>      
-
-<item id="1472" name="limestone"> <!-- scrap material -->
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="Material" value="limestone"/>
-<property name="HoldType" value="40"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="RepairAmount" value="300"/>
-<property name="Weight" value="5"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property class="Action0"> <!-- AttackActio+n -->
-<property name="Class" value="ThrowAway"/>
-<property name="Delay" value="1.2"/>
-<property name="Throw_strength_default" value="8"/>
-<property name="Throw_strength_max" value="25"/>
-<property name="Max_strain_time" value="1.5"/>
-<property name="Sound_start" value="swoosh"/>
-</property>
-<property name="ThrowableDecoy" value="true"/>
-<property name="DropScale" value="3"/>
-<property name="Group" value="Resources"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Stacknumber" value="2500"/> 
+<property name="DropScale" value="1"/>
 <property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>  
+<property name="EconomicBundleSize" value="5"/>
+<property name="Group" value="Building,Resources"/>
+</item>
+
+<item id="1324" name="concreteMix">
+<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="Mconcrete"/>
+<property name="Weight" value="20"/>
+<property name="HoldType" value="34"/>
+<property name="Stacknumber" value="2500"/> 
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
+<property name="Group" value="Building,Resources"/>
+</item>
   
 <!-- Workstation Tools -->
-<item id="1483" name="cookingPot">
+<item id="1480" name="cookingPot">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="Material"                 value="MforgedIron"/>
 <property name="HoldType"                 value="21"/>
@@ -8292,7 +8331,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize"       value="1"/>
 </item>
 
-<item id="1484" name="cookingGrill">
+<item id="1481" name="cookingGrill">
 <property name="Meshfile"                 value="Items/Crafting/cooking_grill"/>
 <property name="Material"                 value="MforgedIron"/>
 <property name="HoldType"                 value="21"/>
@@ -8302,7 +8341,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize"       value="1"/>
 </item>
 
-<item id="1485" name="beaker">
+<item id="1482" name="beaker">
 <property name="Meshfile"                 value="Items/Crafting/beaker"/>
 <property name="Material"                 value="glass"/>
 <property name="HoldType"                 value="3"/>
@@ -8312,7 +8351,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group"                    value="Tools/Traps,Chemicals"/>
 </item>
 
-<item id="1486" name="bellows">
+<item id="1483" name="bellows">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"             value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material"                 value="leather"/>
@@ -8325,7 +8364,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize"       value="1"/>
 </item>
 
-<item id="1487" name="anvil">
+<item id="1484" name="anvil">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"             value="Items/Misc/sack_droppedPrefab"/>
 <property name="HoldType"                 value="45"/>
@@ -8337,7 +8376,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize"       value="1"/>
 </item>
 
-<item id="1488" name="toolAndDieSet">
+<item id="1485" name="toolAndDieSet">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"             value="Items/Misc/sack_droppedPrefab"/>
 <property name="HoldType"                 value="45"/>
@@ -8349,7 +8388,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="CraftingSkillGroup"       value="craftSkillTools"/>
 </item>
 
-<item id="1489" name="forgeCrucible">
+<item id="1486" name="forgeCrucible">
 <property name="Meshfile"                 value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile"             value="Items/Misc/sack_droppedPrefab"/>
 <property name="HoldType"                 value="45"/>
