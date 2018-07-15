@@ -4,98 +4,29 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 -->
 <recipes>
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
-<recipe name="militaryFiber" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
+<recipe name="militaryFiber" tooltip="ttScrapMetalBrass">   <wildcard_forge_category/> </recipe>
+<recipe name="scrapPlastics" tooltip="ttScrapMetalBrass">   <wildcard_forge_category/> </recipe>
+<recipe name="electricParts" tooltip="ttScrapMetalBrass">   <wildcard_forge_category/> </recipe>
+<recipe name="electronicParts" tooltip="ttScrapMetalBrass"> <wildcard_forge_category/> </recipe>
+<recipe name="brokenGlass" tooltip="ttScrapMetalBrass">     <wildcard_forge_category/> </recipe>
+<recipe name="cloth" tooltip="ttScrapMetalBrass">           <wildcard_forge_category/> </recipe>
+<recipe name="leather" tooltip="ttScrapMetalBrass">         <wildcard_forge_category/> </recipe>
+<recipe name="paper" tooltip="ttScrapMetalBrass">           <wildcard_forge_category/> </recipe>
+<recipe name="rockSmall" tooltip="ttScrapMetalBrass">       <wildcard_forge_category/> </recipe>
+<recipe name="scrapBrass" tooltip="ttScrapMetalBrass">      <wildcard_forge_category/> </recipe>
+<recipe name="scrapIron" tooltip="ttScrapMetalIron">        <wildcard_forge_category/> </recipe>
+<recipe name="scrapLead" tooltip="ttScrapMetalLead">        <wildcard_forge_category/> </recipe>
+<recipe name="wood" tooltip="ttScrapMetalLead">             <wildcard_forge_category/> </recipe>
+<recipe name="yuccaFibers" tooltip="ttScrapMetalBrass">     <wildcard_forge_category/> </recipe>
+<recipe name="crushedLime" tooltip="ttScrapMetalBrass">     <wildcard_forge_category/> </recipe>
+<recipe name="coal" tooltip="ttScrapMetalBrass">            <wildcard_forge_category/> </recipe>
 
-<recipe name="scrapPlastics" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="electricParts" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="electronicParts" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="brokenGlass" tooltip="ttScrapMetalBrass" >
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="cloth" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="leather" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="paper" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="rockSmall" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="scrapBrass" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="scrapIron" tooltip="ttScrapMetalIron">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="scrapLead" tooltip="ttScrapMetalLead">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="wood" tooltip="ttScrapMetalLead">
- <wildcard_forge_category />
-</recipe>
-
-<recipe name="yuccaFibers" tooltip="ttScrapMetalBrass">
- <wildcard_forge_category />
-</recipe>
-
-  <recipe name="crushedLime" tooltip="ttScrapMetalBrass">
-    <wildcard_forge_category />
-  </recipe>
-
-  <recipe name="coal" tooltip="ttScrapMetalBrass">
-    <wildcard_forge_category />
-  </recipe>
-
-  <recipe name="brokenGlass" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
-    <ingredient name="unit_glass" count="5"/>
-  </recipe>
-<!--
-  <recipe name="rockSmall" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
-    <ingredient name="unit_stone" count="5"/>
-  </recipe>
--->
-  <recipe name="scrapBrass" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
-    <ingredient name="unit_brass"/>
-  </recipe>
-  
-  <recipe name="scrapIron" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
-    <ingredient name="unit_iron"/>
-  </recipe>
-
-  <recipe name="scrapLead" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
- <ingredient name="unit_lead"/>
-</recipe>
-  
-  <recipe name="clayLump" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">
-    <ingredient name="unit_clay" count="5"/>
-  </recipe>  
-  
-<!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
-
-
-
+<recipe name="brokenGlass" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">  <ingredient name="unit_glass" count="1"/> </recipe>
+<recipe name="scrapBrass" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">   <ingredient name="unit_brass" count="1"/> </recipe>
+<recipe name="scrapIron" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">    <ingredient name="unit_iron" count="1"/>  </recipe>
+<recipe name="scrapLead" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">    <ingredient name="unit_lead" count="1"/>  </recipe>
+<recipe name="clayLump" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">     <ingredient name="unit_clay" count="5"/>  </recipe>  
+<recipe name="crushedLime" craft_area="forge" material_based="true" craft_time = "0.1" craft_exp_gain="0">  <ingredient name="unit_lime" count="1"/>  </recipe>
 
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Base Recipes =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- ============================== Item Recipes ==================================================================================================================================================================================================================================================================================================================================================== -->
@@ -411,9 +342,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="minibikeSeat" craft_area="workbench">                                                         <ingredient name="ductTape" count="4"/> <ingredient name="leather" count="7"/> <ingredient name="cottonPlant" count="15"/> <ingredient name="shortMetalPipe" count="4"/> </recipe>
 
 <!-- Materials -->
-<recipe name="glue" count="1" craft_area="campfire" craft_tool="cookingPot">                                <ingredient name="femur" count="3"/> <ingredient name="bottledRiverWater"/> </recipe>
-<recipe name="glue" count="1" craft_area="campfire" craft_tool="beaker">                                    <ingredient name="femur" count="2"/> <ingredient name="bottledRiverWater"/> </recipe>
-<recipe name="glue" count="1" craft_area="chemistryStation">                                                <ingredient name="femur"/> <ingredient name="bottledRiverWater"/> </recipe>
+<recipe name="glue" count="1" craft_area="campfire" craft_tool="cookingPot">                                <ingredient name="crushedLime" count="6"/> <ingredient name="bottledRiverWater"/> </recipe>
+<recipe name="glue" count="1" craft_area="campfire" craft_tool="beaker">                                    <ingredient name="crushedLime" count="4"/> <ingredient name="bottledRiverWater"/> </recipe>
+<recipe name="glue" count="1" craft_area="chemistryStation">                                                <ingredient name="crushedLime" count="2"/> <ingredient name="bottledRiverWater"/> </recipe>
 <recipe name="gasCan" count="100" craft_area="campfire" craft_tool="beaker">                                <ingredient name="animalFat" count="3"/> <ingredient name="grainAlcohol"/> </recipe>
 <recipe name="gasCan" count="100" craft_area="chemistryStation">                                            <ingredient name="oilShale" count="12"/> </recipe>
 <recipe name="gasCan" count="100" craft_area="chemistryStation">                                            <ingredient name="animalFat" count="2"/> <ingredient name="cornMeal" count="4"/> <ingredient name="bottledRiverWater"/> </recipe>
@@ -423,19 +354,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="tallow" count="1" craft_area="campfire" craft_tool="cookingPot">                              <ingredient name="animalFat"/> </recipe>
 <recipe name="tallow" count="1" craft_area="chemistryStation">                                              <ingredient name="animalFat"/> </recipe>
 <recipe name="paint" count="50" craft_area="chemistryStation">                                              <ingredient name="chrysanthemumPlant" count="5"/> <ingredient name="cottonPlant" count="5"/> <ingredient name="goldenrodPlant" count="5"/> <ingredient name="bottledRiverWater"/> </recipe>
-
 <recipe name="cloth" count="1">                                                                             <ingredient name="cottonPlant" count="2"/> <ingredient name="yuccaFibers" count="2"/> </recipe>
-
-
 <recipe name="ductTape" count="1">                                                                          <ingredient name="glue"/> <ingredient name="cloth" count="2"/> </recipe>
 <recipe name="fertilizer" count="1" craft_area="cementMixer">                                               <ingredient name="rottingFlesh" count="1"/> <ingredient name="dirtFragment" count="1"/> <ingredient name="potassiumNitratePowder" count="1"/> </recipe>
 <recipe name="forgedIron" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="6"/> <ingredient name="unit_clay" count="3"/> </recipe>
-<recipe name="forgedSteel" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="18"/> <ingredient name="unit_clay" count="9"/> </recipe>
+<recipe name="forgedSteel" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="18"/> <ingredient name="unit_clay" count="9"/> <ingredient name="unit_lime" count="5"/> </recipe>
 <recipe name="leather" count="1" craft_area="campfire" craft_tool="cookingPot">                             <ingredient name="animalHide" count="2"/> </recipe>
 <recipe name="leather" count="1" craft_area="campfire" craft_tool="beaker">                                 <ingredient name="animalHide" count="1"/> </recipe>
 <recipe name="leather" count="1" craft_area="chemistryStation">                                             <ingredient name="animalHide" count="1"/> </recipe>
 <recipe name="nail" count="10" craft_area="forge" craft_tool="anvil" material_based="true">                 <ingredient name="unit_iron" count="5"/> <ingredient name="unit_clay"/> </recipe>
-<recipe name="crushedSand" count="1" craft_area="cementMixer">                                              <ingredient name="rockSmall"/> </recipe>
+<recipe name="crushedSand" count="5" craft_area="cementMixer">                                              <ingredient name="sandstone"/> </recipe>
+<recipe name="crushedSand" count="10" craft_area="cementMixer">                                             <ingredient name="desertSand"/> </recipe>
+<recipe name="crushedLime" count="5" craft_area="cementMixer">                                              <ingredient name="lime"/> </recipe>
 <recipe name="spring" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">        <ingredient name="unit_iron" count="60"/> <ingredient name="unit_lead" count="10"/> <ingredient name="unit_clay" count="60"/> </recipe>
 <recipe name="mechanicalParts" craft_area="forge" craft_tool="forgeCrucible" material_based="true">         <ingredient name="unit_iron" count="40"/> <ingredient name="unit_brass" count="20"/> <ingredient name="unit_lead" count="20"/> <ingredient name="unit_clay" count="40"/> </recipe>
 <recipe name="shortMetalPipe" count="1" craft_area="forge" craft_tool="anvil" material_based="true">        <ingredient name="unit_iron" count="10"/> <ingredient name="unit_lead" count="2"/> <ingredient name="unit_clay" count="5"/> </recipe>
@@ -445,10 +375,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Building Materials --> 
 <recipe name="boardAndNails" count="1">                                                                     <ingredient name="wood" count="2"/> <ingredient name="nail"/> </recipe>  
-<recipe name="ironPlate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">             <ingredient name="unit_iron" count="12"/> <ingredient name="unit_clay" count="6"/> </recipe>
-<recipe name="steelPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">    <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> </recipe>
+<recipe name="ironPlates" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="12"/> <ingredient name="unit_clay" count="6"/> </recipe>
+<recipe name="steelPlates" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> <ingredient name="unit_lime" count="9"/> </recipe>
 <recipe name="cement" count="1" craft_area="campfire" craft_tool="cookingPot">                              <ingredient name="crushedLime" count="10"/> </recipe>
-<recipe name="cement" count="1" craft_area="forge" material_based="true">                                   <ingredient name="unit_limestone" count="5"/> </recipe>
+<recipe name="cement" count="1" craft_area="forge" material_based="true">                                   <ingredient name="unit_lime" count="5"/> </recipe>
 <recipe name="cobblestones" count="12">                                                                     <ingredient name="rockSmall" count="9"/> <ingredient name="clayLump" count="12"/> <ingredient name="cement" count="3"/>  </recipe>
 <recipe name="bricks" count="1" craft_area="forge" material_based="true">                                   <ingredient name="unit_clay" count="10"/> </recipe>
 <recipe name="brickAndMortar" count="1">                                                                    <ingredient name="bricks" count="3"/> <ingredient name="mortarMix" count="1"/> </recipe>
@@ -479,7 +409,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="woodFrameArch" count="3">                                                                     <ingredient name="woodFrameBlock"/> </recipe>
 <recipe name="woodFrameCurve3x3" count="1">                                                                 <ingredient name="woodFrameBlock" count="3"/> </recipe>
 <recipe name="woodFrameCap" count="3">                                                                      <ingredient name="woodFrameBlock"/> </recipe>
-<recipe name="woodFrameSpike" count="2">                                                                    <ingredient name="woodFrameBlock"/> </recipe>
+<recipe name="woodFrameSpike" count="1">                                                                    <ingredient name="woodFrameBlock"/> </recipe>
 <recipe name="woodFramePlateCurved" count="3">                                                              <ingredient name="woodFrameBlock"/> </recipe>
 <recipe name="woodFrameStairs25" count="2">                                                                 <ingredient name="woodFrameBlock"/> </recipe>
 <recipe name="woodFrameStairs25CornerCNR" count="3">                                                        <ingredient name="woodFrameBlock"/> </recipe>
@@ -522,7 +452,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="scrapIronFrameArch" count="3">                                                                <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameCurve3x3" count="1">                                                            <ingredient name="scrapIronFrameBlock" count="3"/> </recipe>
 <recipe name="scrapIronFrameCap" count="3">                                                                 <ingredient name="scrapIronFrameBlock"/> </recipe>
-<recipe name="scrapIronFrameSpike" count="2">                                                               <ingredient name="scrapIronFrameBlock"/> </recipe>
+<recipe name="scrapIronFrameSpike" count="1">                                                               <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFramePlateCurved" count="3">                                                         <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameStairs25" count="2">                                                            <ingredient name="scrapIronFrameBlock"/> </recipe>
 <recipe name="scrapIronFrameStairs25CornerCNR" count="3">                                                   <ingredient name="scrapIronFrameBlock"/> </recipe>
@@ -565,7 +495,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="flagstoneArch" count="3">                                                                     <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstoneCurve3x3" count="1">                                                                 <ingredient name="flagstoneBlock" count="3"/> </recipe>
 <recipe name="flagstoneCap" count="3">                                                                      <ingredient name="flagstoneBlock"/> </recipe>
-<recipe name="flagstoneSpike" count="2">                                                                    <ingredient name="flagstoneBlock"/> </recipe>
+<recipe name="flagstoneSpike" count="1">                                                                    <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstonePlateCurved" count="3">                                                              <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstoneStairs25" count="2">                                                                 <ingredient name="flagstoneBlock"/> </recipe>
 <recipe name="flagstoneStairs25CornerCNR" count="3">                                                        <ingredient name="flagstoneBlock"/> </recipe>
@@ -591,6 +521,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="flagstoneArchThick" count="2">                                                                <ingredient name="flagstoneBlock"/> </recipe>
 <!-- Brick -->
 <recipe name="brickBlock" count="1">                                                                        <ingredient name="bricks" count="9"/> <ingredient name="mortarMix" count="3"/> </recipe>
+<recipe name="brickBlock" count="1">                                                                        <ingredient name="brickAndMortar" count="3"/> </recipe>
 <recipe name="brickHalf" count="2">                                                                         <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickQuarter" count="3">                                                                      <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickEighth" count="3">                                                                       <ingredient name="brickBlock"/> </recipe>
@@ -608,7 +539,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="brickArch" count="3">                                                                         <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickCurve3x3" count="1">                                                                     <ingredient name="brickBlock" count="3"/> </recipe>
 <recipe name="brickCap" count="3">                                                                          <ingredient name="brickBlock"/> </recipe>
-<recipe name="brickSpike" count="2">                                                                        <ingredient name="brickBlock"/> </recipe>
+<recipe name="brickSpike" count="1">                                                                        <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickPlateCurved" count="3">                                                                  <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickStairs25" count="2">                                                                     <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickStairs25CornerCNR" count="3">                                                            <ingredient name="brickBlock"/> </recipe>
@@ -651,7 +582,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="pouredConcreteArch" count="3">                                                                <ingredient name="pouredConcreteBlock"/> </recipe>
 <recipe name="pouredConcreteCurve3x3" count="1">                                                            <ingredient name="pouredConcreteBlock" count="3"/> </recipe>
 <recipe name="pouredConcreteCap" count="3">                                                                 <ingredient name="pouredConcreteBlock"/> </recipe>
-<recipe name="pouredConcreteSpike" count="2">                                                               <ingredient name="pouredConcreteBlock"/> </recipe>
+<recipe name="pouredConcreteSpike" count="1">                                                               <ingredient name="pouredConcreteBlock"/> </recipe>
 <recipe name="pouredConcretePlateCurved" count="3">                                                         <ingredient name="pouredConcreteBlock"/> </recipe>
 <recipe name="pouredConcreteStairs25" count="2">                                                            <ingredient name="pouredConcreteBlock"/> </recipe>
 <recipe name="pouredConcreteStairs25CornerCNR" count="3">                                                   <ingredient name="pouredConcreteBlock"/> </recipe>
@@ -694,7 +625,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="pouredRConcreteArch" count="3">                                                               <ingredient name="pouredRConcreteBlock"/> </recipe>
 <recipe name="pouredRConcreteCurve3x3" count="1">                                                           <ingredient name="pouredRConcreteBlock" count="3"/> </recipe>
 <recipe name="pouredRConcreteCap" count="3">                                                                <ingredient name="pouredRConcreteBlock"/> </recipe>
-<recipe name="pouredRConcreteSpike" count="2">                                                              <ingredient name="pouredRConcreteBlock"/> </recipe>
+<recipe name="pouredRConcreteSpike" count="1">                                                              <ingredient name="pouredRConcreteBlock"/> </recipe>
 <recipe name="pouredRConcretePlateCurved" count="3">                                                        <ingredient name="pouredRConcreteBlock"/> </recipe>
 <recipe name="pouredRConcreteStairs25" count="2">                                                           <ingredient name="pouredRConcreteBlock"/> </recipe>
 <recipe name="pouredRConcreteStairs25CornerCNR" count="3">                                                  <ingredient name="pouredRConcreteBlock"/> </recipe>
@@ -719,7 +650,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="pouredRConcreteStairs50" count="1">                                                           <ingredient name="pouredRConcreteBlock"/> </recipe>
 <recipe name="pouredRConcreteArchThick" count="2">                                                          <ingredient name="pouredRConcreteBlock"/> </recipe>
 <!-- Steel -->
-<recipe name="steelBlock" craft_area="forge" craft_tool="forgeCrucible" material_based="true">              <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> </recipe> <!-- name="unit_coal" -->
+<recipe name="steelBlock" craft_area="forge" craft_tool="forgeCrucible" material_based="true">              <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> <ingredient name="unit_lime" count="27"/> </recipe>
 <recipe name="steelHalf" count="2">                                                                         <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelQuarter" count="3">                                                                      <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelEighth" count="3">                                                                       <ingredient name="steelBlock"/> </recipe>
@@ -737,7 +668,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelArch" count="3">                                                                         <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelCurve3x3" count="1">                                                                     <ingredient name="steelBlock" count="3"/> </recipe>
 <recipe name="steelCap" count="3">                                                                          <ingredient name="steelBlock"/> </recipe>
-<recipe name="steelSpike" count="2">                                                                        <ingredient name="steelBlock"/> </recipe>
+<recipe name="steelSpike" count="1">                                                                        <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelPlateCurved" count="3">                                                                  <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelStairs25" count="2">                                                                     <ingredient name="steelBlock"/> </recipe>
 <recipe name="steelStairs25CornerCNR" count="3">                                                            <ingredient name="steelBlock"/> </recipe>
@@ -792,23 +723,84 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="camoNetSheet" count="1">                                                                      <ingredient name="camoNetBlock"/> </recipe>  
 
 <!-- ============================== Other Block Recipes ============================================================================================================================================================================================================================================================================================================================================= -->
-<!-- Catwalks -->
-<recipe name="woodCatwalk" count="1">                                                                       <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodCatwalkRailing" count="1">                                                                <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodCatwalkRailingCNR" count="1">                                                             <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodCatwalkWedgeRailing" count="1">                                                           <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodStairsBoard" count="1">                                                                   <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodStairsBoardRailing" count="1">                                                            <ingredient name="wood" count="15"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodRailing" count="1">                                                                       <ingredient name="wood" count="5"/> <ingredient name="nail"/> </recipe>
-  
-<!-- Defensive Blocks -->
-<recipe name="plainWoodWindowPlug" count="1">                                                               <ingredient name="wood" count="5"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="100"/> <ingredient name="unit_clay" count="20"/> </recipe>
-<recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCTR"/> </recipe>
-<recipe name="ironBarsCTR" count="1">                                                                  <ingredient name="ironBars"/> </recipe>
-<recipe name="keystoneBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true">         <ingredient name="unit_iron" count="1500"/> <ingredient name="unit_clay" count="1500"/> </recipe>
-<recipe name="metalTrussingBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true">    <ingredient name="unit_iron" count="50"/> <ingredient name="unit_clay" count="10"/> </recipe>
+<!-- Wood Catwalks -->
+<recipe name="woodCatwalk" count="1">                                                                       <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodCatwalkRailing" count="1">                                                                <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkRailingCNR" count="1">                                                             <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkWedgeRailing" count="1">                                                           <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodStairsBoard" count="1">                                                                   <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodStairsBoardRailing" count="1">                                                            <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodRailing" count="1">                                                                       <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodCatwalkWedge" count="1">                                                                  <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<!-- Forged Iron Catwalks -->
+<recipe name="metalCatwalk" count="1">                                                                      <ingredient name="ironPlates" count="4"/> </recipe>
+<recipe name="metalCatwalkRailing" count="1">                                                               <ingredient name="ironPlates" count="6"/> </recipe>
+<recipe name="metalCatwalkRailingCNR" count="1">                                                            <ingredient name="ironPlates" count="6"/> </recipe>
+<recipe name="metalCatwalkWedgeRailing" count="1">                                                          <ingredient name="ironPlates" count="2"/> </recipe>
+<recipe name="metalStairsBoard" count="1">                                                                  <ingredient name="ironPlates" count="4"/> </recipe>
+<recipe name="metalStairsBoardRailing" count="1">                                                           <ingredient name="ironPlates" count="6"/> </recipe>
+<recipe name="metalRailing" count="1">                                                                      <ingredient name="ironPlates" count="2"/> </recipe>
+<recipe name="metalCatwalkWedge" count="1">                                                                 <ingredient name="ironPlates" count="2"/> </recipe>
+<!-- Steel Catwalks -->
+<recipe name="steelCatwalk" count="1">                                                                      <ingredient name="steelPlates" count="4"/> </recipe>
+<recipe name="steelCatwalkRailing" count="1">                                                               <ingredient name="steelPlates" count="6"/> </recipe>
+<recipe name="steelCatwalkRailingCNR" count="1">                                                            <ingredient name="steelPlates" count="6"/> </recipe>
+<recipe name="steelCatwalkWedgeRailing" count="1">                                                          <ingredient name="steelPlates" count="2"/> </recipe>
+<recipe name="steelStairsBoard" count="1">                                                                  <ingredient name="steelPlates" count="4"/> </recipe>
+<recipe name="steelStairsBoardRailing" count="1">                                                           <ingredient name="steelPlates" count="6"/> </recipe>
+<recipe name="steelRailing" count="1">                                                                      <ingredient name="steelPlates" count="2"/> </recipe>
+<recipe name="steelCatwalkWedge" count="1">                                                                 <ingredient name="steelPlates" count="2"/> </recipe>
+<!-- Wood Bars and Gates -->
+<recipe name="woodBars" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodBars" count="1">                                                                          <ingredient name="woodBarsCTR" count="1"/> </recipe>
+<recipe name="woodBarsCTR" count="1">                                                                       <ingredient name="woodBars" count="1"/> </recipe>
+<recipe name="woodGate" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodGate" count="1">                                                                          <ingredient name="woodGateCTR" count="1"/> </recipe>
+<recipe name="woodGateCTR" count="1">                                                                       <ingredient name="woodGate" count="1"/> </recipe>
+<!-- Iron Bars and Gates -->
+<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCTR" count="1"/> </recipe>
+<recipe name="ironBarsCTR" count="1">                                                                       <ingredient name="ironBars" count="1"/> </recipe>
+<recipe name="ironGate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="ironGate" count="1">                                                                          <ingredient name="ironGateCTR" count="1"/> </recipe>
+<recipe name="ironGateCTR" count="1">                                                                       <ingredient name="ironGate" count="1"/> </recipe>
+<!-- Iron Bars and Gates -->
+<recipe name="steelBars" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="steelBars" count="1">                                                                         <ingredient name="steelBarsCTR" count="1"/> </recipe>
+<recipe name="steelBarsCTR" count="1">                                                                      <ingredient name="steelBars" count="1"/> </recipe>
+<recipe name="steelGate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> </recipe>
+<recipe name="steelGate" count="1">                                                                         <ingredient name="steelGateCTR" count="1"/> </recipe>
+<recipe name="steelGateCTR" count="1">                                                                      <ingredient name="steelGate" count="1"/> </recipe>
+<!-- Iron IBeams -->
+<recipe name="iBeam" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                 <ingredient name="unit_iron" count="48"/> <ingredient name="unit_clay" count="24"/> </recipe>
+<recipe name="iBeamSmall" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="iBeamCorner" count="1">                                                                       <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamSupport" count="1">                                                                      <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamFoundation" count="1">                                                                   <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamCentered" count="1">                                                                     <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamCornerCentered" count="1">                                                               <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamTCentered" count="1">                                                                    <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeamCenteredFoundation" count="1">                                                           <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeam5wayCentered" count="1">                                                                 <ingredient name="iBeam" count="1"/> </recipe>
+<recipe name="iBeam6wayCentered" count="1">                                                                 <ingredient name="iBeam" count="1"/> </recipe>  
+<!-- Steel IBeams -->
+<recipe name="iBeamSteel" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">    <ingredient name="unit_iron" count="144"/> <ingredient name="unit_clay" count="48"/> </recipe>
+<recipe name="iBeamSteelSmall" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">    <ingredient name="unit_iron" count="48"/> <ingredient name="unit_clay" count="24"/> </recipe>
+<recipe name="iBeamSteelCorner" count="1">                                                                  <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelSupport" count="1">                                                                 <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelFoundation" count="1">                                                              <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelCentered" count="1">                                                                <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelCornerCentered" count="1">                                                          <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelTCentered" count="1">                                                               <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteelCenteredFoundation" count="1">                                                      <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteel5wayCentered" count="1">                                                            <ingredient name="iBeamSteel" count="1"/> </recipe>
+<recipe name="iBeamSteel6wayCentered" count="1">                                                            <ingredient name="iBeamSteel" count="1"/> </recipe>
+<!-- Trussing -->
+<recipe name="metalTrussingBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true">    <ingredient name="unit_iron" count="48"/> <ingredient name="unit_clay" count="24"/> </recipe>
 <recipe name="metalTrussingRamp" count="1">                                                                 <ingredient name="metalTrussingBlock"/> </recipe>
+
+<!-- Other Blocks -->
+<recipe name="keystoneBlock" count="1" craft_area="forge" craft_tool="anvil" material_based="true">         <ingredient name="unit_iron" count="1000"/> <ingredient name="unit_clay" count="1500"/>  <ingredient name="unit_lime" count="500"/> </recipe>
 
 <!-- Terrain Blocks -->
 <recipe name="asphalt" count="1" craft_area="cementMixer">                                                  <ingredient name="crushedSand" count="5"/> <ingredient name="rockSmall" count="10"/> <ingredient name="oilShale" count="1"/> </recipe>
@@ -824,8 +816,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="stone" count="1" craft_area="cementMixer">                                                    <ingredient name="crushedSand" count="10"/> <ingredient name="rockSmall" count="20"/> <ingredient name="cement"/> </recipe>
 
 <!-- Traps and Defenses -->
-<recipe name="barbedFence" count="1">                                                                       <ingredient name="forgedIron" count="2"/> <ingredient name="wood" count="5"/> </recipe>
-<recipe name="barbedWireSheet" count="1">                                                                   <ingredient name="forgedIron" count="2"/> </recipe>
+<recipe name="barbedFence" count="1">                                                                       <ingredient name="barbedWireSheet" count="1"/> <ingredient name="wood" count="5"/> </recipe>
+<recipe name="barbedWireSheet"  count="1" craft_area="forge" craft_tool="anvil" material_based="true">      <ingredient name="unit_iron" count="15"/>  <ingredient name="unit_clay" count="8"/> </recipe>
 <recipe name="trapSpikesNew" count="1">                                                                     <ingredient name="wood" count="10"/> </recipe>
 <recipe name="looseBoardsTrapBlock1x1" count="1">                                                           <ingredient name="wood" count="10"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="looseBoardsTrapBlock3x3" count="1">                                                           <ingredient name="wood" count="90"/> <ingredient name="nail" count="9"/> </recipe>
