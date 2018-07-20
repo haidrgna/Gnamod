@@ -128,7 +128,10 @@ built-in buff variables:
 <buffs>
 <!-- Player Character Buffs -->
 <buff id="isPlayer" buffif="+full > 0" actions="increment(@wellness,-999,1,0,1);damage(40,2,0,1)" tooltip_key="justSpawnedTooltip"/>
-<!--<modify id="0" stat="stamina" modifyMaxValue="100"/>  </buff>  -->
+<!--<buff id="isPlayer" buffif="+full > 0" actions="increment(@wellness,-999,1,0,1)" tooltip_key="justSpawnedTooltip"/>-->
+<!--<buff id="spawned" buffif="+full > 0" actions="setvar(CTRSpawned,2);increment(CTRSpawned,2,1,0,1)" icon="ui_game_symbol_hunger"/>
+<buff id="respawned" buffif="CTRSpawned > gequal 2" mutex="spawned" actions="damage(40,2,0,1)" icon="ui_game_symbol_thirst"/>-->
+
 <buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
   <!-- ADD PAINKILLER OVERDOSE EFFECT -->
 <buff id="naturalHealing" mutex="bleeding,fullBuff,painkillerBuff,firstAid" buffif="+full > 0.25" debuffif="+starve > 1" icon="ui_game_symbol_natural_healing" name_key="naturalHealing" description_key="naturalHealingDesc" tooltip_key="naturalHealingTooltip">
@@ -166,13 +169,13 @@ built-in buff variables:
 <buff id="hypo3" mutex="hot,overheated,heat1,heat2" duration="0" stack="discard" buffif="coretemp lequal 1" debuffif="coretemp greater 1" actions="damage(0,8,0,0);debuff(freezing);debuff(hypo2);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_cold" name_key="hypo3" description_key="hypo3Desc" tooltip_key="hypo3Tooltip" cures="coffee,meatStew,leatherDuster,hoodedSweatshirtWhite,denimPants">
 <modify id="0" stat="speedmodifier" mulValue="0.5"/>  <modify id="1" stat="food" amount="-1" rate="5"/> <modify id="2" stat="stamina" amount="-3" rate="1"/>  <modify id="3" stat="health" amount="-1" rate="4"/>  </buff>
 
-<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" actions="addtip(hotWeatherTip)" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" actions="debuff(warmByFire);addtip(hotWeatherTip)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="1" stat="water" amount="-1" rate="10"/>  </buff>
 
-<buff id="heat1" mutex="heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 110" debuffif="coretemp less 110" actions="debuff(overheated)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat1" description_key="heat1Desc" tooltip_key="heat1Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="heat1" mutex="heat2,cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 110" debuffif="coretemp less 110" actions="debuff(overheated);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat1" description_key="heat1Desc" tooltip_key="heat1Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="0" stat="speedmodifier" mulValue="0.7"/>  <modify id="1" stat="water" amount="-1" rate="7"/>  <modify id="2" stat="stamina" amount="-1" rate="1"/>  </buff>
 
-<buff id="heat2" mutex="cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 120" debuffif="coretemp less 120" actions="damage(0,8,0,0);debuff(overheated);debuff(heat1)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat2" description_key="heat2Desc" tooltip_key="heat2Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="heat2" mutex="cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 120" debuffif="coretemp less 120" actions="damage(0,8,0,0);debuff(overheated);debuff(heat1);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat2" description_key="heat2Desc" tooltip_key="heat2Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="0" stat="speedmodifier" mulValue="0.5"/>  <modify id="1" stat="water" amount="-1" rate="5"/>  <modify id="2" stat="stamina" amount="-3" rate="1"/>  <modify id="3" stat="health" amount="-1" rate="4" />  </buff>
 
 <buff id="wet" notificationClass="WetBuffNotification" duration="0" stack="discard" buffif="waterLevel greater 0" debuffif="waterLevel equals 0" icon="ui_game_symbol_wet" name_key="wet" description_key="wetDesc" tooltip_key="wetTooltip">
@@ -273,15 +276,15 @@ built-in buff variables:
 <modify id="0" stat="stamina" amount="2" rate="1"/> <modify id="1" stat="coretemp" amount="0.05" rate="1"/> </buff>
 
 <buff id="megaCrushBuff" duration="200t" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
-<modify id="0" stat="stamina" amount="10" rate="1"/>  <modify id="0" stat="health" amount="0.1" rate="1"/>  </buff>
+<modify id="0" stat="stamina" amount="10" rate="1"/>  <modify id="1" stat="health" amount="0.1" rate="1"/> <modify id="2" stat="speedmodifier" modifyMaxValue="1.1"/>  <modify id="3" stat="speedmodifier" modifyValue="1.1"/>  </buff>
 
-<buff id="yuccaJuiceCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp lequal 40" actions="debuff(stewWarming);debuff(snowberryWarmingBuff)" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
+<buff id="yuccaJuiceCooling" duration="300t" stack="reset" type="staminaup" debuffif="coretemp lequal 45" actions="debuff(stewWarming);debuff(snowberryWarmingBuff)" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
 <modify id="0" stat="coretemp" amount="-0.15" rate="1"/>  </buff>
 
-<buff id="stewWarming" duration="400t" stack="extend" type="staminaup" debuffif="coretemp gequal 95" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling)" icon="ui_game_symbol_coffee" name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
+<buff id="stewWarming" duration="300t" stack="reset" type="staminaup" debuffif="coretemp gequal 90" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling)" icon="ui_game_symbol_coffee" name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
 <modify id="0" stat="coretemp" amount="0.15" rate="1"/>  </buff>
 
-<buff id="redTeaCooling" duration="200t" stack="extend" type="staminaup" debuffif="coretemp lequal 40" actions="debuff(stewWarming);debuff(snowberryWarmingBuff)" icon="ui_game_symbol_tea" name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
+<buff id="redTeaCooling" duration="300t" stack="reset" type="staminaup" debuffif="coretemp lequal 45" actions="debuff(stewWarming);debuff(snowberryWarmingBuff)" icon="ui_game_symbol_tea" name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
 <modify id="0" stat="coretemp" amount="-0.15" rate="1"/>  </buff>
 
 <buff id="eatSnowberryTrigger" duration="1" actions="increment(CTRsnowberry, 144, 0, 0, 1)"/>
@@ -294,7 +297,7 @@ built-in buff variables:
 <buff id="snowberryPoisonBuff" duration="0" buffif="CTRsnowberry greater 1040" debuffif="CTRsnowberry less 1040" castsound="Player_*sick5" causes="snowberryPlant,snowberryJuice,snowberryExtract" type="disease" icon="ui_game_symbol_skull" name_key="snowberryPoisonName" description_key="snowberryPoisonDesc" tooltip_key="snowberryPoisonTooltip">
 <modify id="0" stat="health" amount="-1" rate="20"/>  <modify id="1" stat="wellness" amount="-.1" rate="20" />  </buff>
 
-<buff id="snowberryWarmingBuff" duration="210" stack="extend" type="staminaup" debuffif="coretemp gequal 95" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling)" icon="ui_game_symbol_coffee" name_key="snowberryWarmingName" description_key="snowberryWarmingDesc" tooltip_key="snowberryWarmingTooltip" causes="snowberryJuice">
+<buff id="snowberryWarmingBuff" duration="300t" stack="reset" type="staminaup" debuffif="coretemp gequal 90" actions="debuff(yuccaJuiceCooling);debuff(redTeaCooling)" icon="ui_game_symbol_coffee" name_key="snowberryWarmingName" description_key="snowberryWarmingDesc" tooltip_key="snowberryWarmingTooltip" causes="snowberryJuice">
 <modify id="0" stat="coretemp" amount="0.2" rate="1"/>  </buff>
 
 <buff id="eatFood_1_Trigger" duration="1" actions="increment(CTRfood, 2, 0, 0, 1)"/>
@@ -466,4 +469,6 @@ name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="blue
 </buff>
 <buff id="bluePillFixer" buffif="CTRbluePill > 0" duration="1" actions="debuff(sprainedLeg);debuff(brokenLeg);debuff(splint);debuff(dysentery);debuff(infection);debuff(infection1);debuff(infection2)"/>
 
+<buff id="testbuff" stack="reset" icon="ui_game_symbol_hammer">
+<modify id="0" stat="wellness" modifyMaxValue="500"/>  </buff>
 </buffs>

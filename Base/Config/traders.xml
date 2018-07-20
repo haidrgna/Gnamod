@@ -448,11 +448,10 @@
 </trader_item_group>
 
 <trader_item_group name="FoodDrinks">
-<item name="bottledRiverWater"          count="5,15"        prob="0.050"/>
 <item name="bottledWater"               count="5,15"        prob="0.150"/>
 <item name="foodYuccaJuice"             count="5,15"        prob="0.100"/>
-<item name="goldenRodTea"               count="5,15"        prob="0.100"/>
-<item name="redTea"                     count="5,15"        prob="0.100"/>
+<item name="goldenRodTea"               count="5,15"        prob="0.125"/>
+<item name="redTea"                     count="5,15"        prob="0.125"/>
 <item name="snowberryJuice"             count="1,5"         prob="0.100"/>
 <item name="megaCrush"                  count="1,5"         prob="0.100"/>
 <item name="beer"                       count="1,5"         prob="0.100"/>
@@ -482,60 +481,75 @@
 </trader_item_group>
     
 <trader_item_group name="MaterialsBasic">
-<item name="yuccaFibers"                count="100,1000"    prob="0.075"/>
-<item name="wood"                       count="5000"        prob="0.175"/>
-<item name="rockSmall"                  count="5000"        prob="0.175"/>
-<item name="clayLump"                   count="5000"        prob="0.150"/>
-<item name="crushedSand"                count="5000"        prob="0.100"/>
-<item name="ironFragment"               count="1000,2000"   prob="0.125"/>
-<item name="oilShale"                   count="25,100"      prob="0.075"/>
-<item name="coal"                       count="50,500"      prob="0.075"/>
-<item name="potassiumNitratePowder"     count="50,500"      prob="0.075"/>
-<item name="scrapIron"                  count="2500"        prob="0.125"/>
-<item name="scrapBrass"                 count="25,250"      prob="0.075"/>
-<item name="scrapLead"                  count="25,250"      prob="0.075"/>
+<item name="wood"                       count="2500,5000"   prob="0.125"/>
+<item name="rockSmall"                  count="2500,5000"   prob="0.075"/>
+<item name="rock"                       count="2500,5000"   prob="0.025"/>
+<item name="lime"                       count="2500,5000"   prob="0.100"/>
+<item name="sandstone"                  count="2500,5000"   prob="0.025"/>
+<item name="desertSand"                 count="2500,5000"   prob="0.025"/>
+<item name="clayLump"                   count="2500,5000"   prob="0.075"/>
+<item name="ironFragment"               count="2500,5000"   prob="0.075"/>
+<item name="crushedSand"                count="1000,2000"   prob="0.075"/>
+<item name="crushedLime"                count="1000,2000"   prob="0.075"/>
+<item name="clayFragment"               count="1000,2000"   prob="0.025"/>
+<item name="scrapIron"                  count="1000,2000"   prob="0.050"/>
+<item name="oilShale"                   count="100,500"     prob="0.050"/>
+<item name="coal"                       count="200,1000"    prob="0.050"/>
+<item name="potassiumNitratePowder"     count="200,1000"    prob="0.050"/>
+<item name="scrapBrass"                 count="100,500"     prob="0.050"/>
+<item name="scrapLead"                  count="100,500"     prob="0.050"/>
 <item name="animalFat"                  count="5,25"        prob="0.075"/>
-<item name="femur"                      count="5,25"        prob="0.075"/>
-<item name="leather"                    count="5,25"        prob="0.075"/>
-<item name="cloth"                      count="50,250"      prob="0.075"/>
-<item name="nail"                       count="50,100"      prob="0.100"/>
+<item name="animalHide"                 count="5,25"        prob="0.025"/>
 </trader_item_group>
 
 <trader_item_group name="MaterialsCommon">
-<item name="cobblestones"               count="100,1000"    prob="0.100"/>
-<item name="cement"                     count="50,500"      prob="0.025"/>
-<item name="forgedIron"                 count="50,500"      prob="0.100"/>
-<item name="shortMetalPipe"             count="5,25"        prob="0.100"/>
-<item name="glue"                       count="5,50"        prob="0.050"/>
-<item name="oil"                        count="5,25"        prob="0.070"/>
-<item name="spring"                     count="5,25"        prob="0.050"/>
-<item name="scrapPlastics"              count="10,50"       prob="0.070"/>
-<item name="mechanicalParts"            count="5,25"        prob="0.075"/>
-<item name="electricParts"              count="5,25"        prob="0.050"/>
-<item name="paint"                      count="10,100"      prob="0.005"/>
-<item name="emptyJar"                   count="5,15"        prob="0.050"/>
-<item name="candyTin"                   count="5,15"        prob="0.005"/>
-<item name="paper"                      count="10,50"       prob="0.050"/>
-<item name="feather"                    count="50,250"      prob="0.075"/>
+<item name="cobblestones"               count="200,1000"    prob="0.125"/>
+<item name="cement"                     count="100,500"     prob="0.100"/>
+<item name="nail"                       count="100,500"     prob="0.125"/>
+<item name="boardAndNails"              count="100,500"     prob="0.100"/>
+<item name="forgedIron"                 count="100,500"     prob="0.075"/>
+<item name="ironPlates"                 count="25,250"      prob="0.075"/>
+<item name="paint"                      count="500"         prob="0.025"/>
+<item name="emptyJar"                   count="30,60"       prob="0.025"/>  
+<item name="bottledRiverWater"          count="30,60"       prob="0.050"/>
+<item name="shortMetalPipe"             count="5,25"        prob="0.050"/>
+<item name="glue"                       count="5,25"        prob="0.075"/>
+<item name="oil"                        count="5,25"        prob="0.050"/>
+<item name="scrapPlastics"              count="5,25"        prob="0.075"/>
+<item name="canEmpty"                   count="5,25"        prob="0.025"/>
+<item name="paper"                      count="5,25"        prob="0.025"/>
+<item name="feather"                    count="100,500"     prob="0.025"/>
+<item name="cloth"                      count="100,500"     prob="0.050"/>
+<item name="leather"                    count="10,50"       prob="0.025"/>
 </trader_item_group>
 
 <trader_item_group name="MaterialsUncommon">
-<item name="cement"                     count="100,1000"    prob="0.075"/>
-<item name="concreteMix"                count="100,1000"    prob="0.250"/>
-<item name="steelPolish"                count="50,500"      prob="0.150"/>
-<item name="forgedSteel"                count="50,500"      prob="0.250"/>
-<item name="ductTape"                   count="5,50"        prob="0.100"/>
-<item name="militaryFiber"              count="5,25"        prob="0.025"/>
-<item name="electricParts"              count="5,25"        prob="0.050"/>
-<item name="electronicParts"            count="5,25"        prob="0.050"/>
+<item name="cement"                     count="250,1000"    prob="0.100"/>
+<item name="bucket"                     count="1,10"        prob="0.050"/>
+<item name="bucketWater"                count="1,10"        prob="0.025"/>
+<item name="bricks"                     count="100,500"     prob="0.100"/>
+<item name="mortarMix"                  count="100,500"     prob="0.100"/>
+<item name="ironPlates"                 count="100,500"     prob="0.100"/>
+<item name="steelPlates"                count="15,150"      prob="0.050"/>
+<item name="rebar"                      count="250,1000"    prob="0.075"/>
+<item name="concreteMix"                count="250,1000"    prob="0.075"/>
+<item name="forgedSteel"                count="25,250"      prob="0.075"/>
+<item name="ductTape"                   count="10,50"       prob="0.075"/>
+<item name="militaryFiber"              count="10,50"       prob="0.025"/>
+<item name="spring"                     count="10,50"       prob="0.025"/>
+<item name="mechanicalParts"            count="10,50"       prob="0.075"/>
+<item name="electricParts"              count="10,50"       prob="0.075"/>
+<item name="electronicParts"            count="10,50"       prob="0.025"/>
 <item name="hubcap"                     count="10,50"       prob="0.025"/>
 <item name="airFilter"                  count="10,50"       prob="0.025"/>
 </trader_item_group>
 
 <trader_item_group name="MaterialsRare">
-<item name="concreteMix"                count="1000"        prob="0.400"/>
-<item name="steelPolish"                count="250"         prob="0.300"/>
-<item name="forgedSteel"                count="250"         prob="0.300"/>
+<item name="cement"                     count="500,2000"    prob="0.100"/>
+<item name="concreteMix"                count="500,2000"    prob="0.250"/>
+<item name="rebar"                      count="500,2000"    prob="0.250"/>
+<item name="steelPlates"                count="100,500"     prob="0.250"/>
+<item name="steelPolish"                count="100,500"     prob="0.150"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingStations">
@@ -547,17 +561,17 @@
 
 <trader_item_group name="Generatorbank" count="all">
 <item name="generatorbank"              count="1"/>
-<item name="smallEngine"                count="1,2"/>
+<item name="smallEngine"                count="1,4"/>
 </trader_item_group>
 
 <trader_item_group name="Solarbank"     dount="all">
 <item name="solarbank"                  count="1"/>
-<item name="solarCell"                  count="1,2"/>
+<item name="solarCell"                  count="1,4"/>
 </trader_item_group>
 
 <trader_item_group name="Batterybank"   count="all">
 <item name="batterybank"                count="1"/>
-<item name="carBattery"                 count="1,2"/>
+<item name="carBattery"                 count="1,4"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingElectricity">
@@ -566,41 +580,45 @@
 <item group="Solarbank"                                     prob="0.200"/>
 <item name="electricwirerelay"          count="2,10"        prob="0.050"/>
 <item name="electricfencepost"          count="4,10"        prob="0.200"/>
-<item name="smallEngine"                count="1,2"         prob="0.050"/>
-<item name="carBattery"                 count="1,2"         prob="0.050"/>
-<item name="solarCell"                  count="1,2"         prob="0.050"/>
+<item name="smallEngine"                count="1,3"         prob="0.050"/>
+<item name="carBattery"                 count="1,3"         prob="0.050"/>
+<item name="solarCell"                  count="1,3"         prob="0.050"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingTraps">
-<item name="dartTrap"                   count="2,4"         prob="0.150"/>
-<item name="shotgunTurret"              count="1,2"         prob="0.150"/>
-<item name="autoTurret"                 count="1,2"         prob="0.150"/>
-<item name="bladeTrap"                  count="1,4"         prob="0.200"/>
-<item name="spotlightPlayer"            count="1,4"         prob="0.150"/>
+<item name="dartTrap"                   count="2,8"         prob="0.150"/>
+<item name="shotgunTurret"              count="2,4"         prob="0.150"/>
+<item name="autoTurret"                 count="2,4"         prob="0.150"/>
+<item name="bladeTrap"                  count="2,8"         prob="0.200"/>
+<item name="spotlightPlayer"            count="2,8"         prob="0.150"/>
 <item name="trapSpikesNew"              count="100,500"     prob="0.100"/>
-<item name="scrapIronSpike"         count="50,100"      prob="0.100"/>
+<item name="barbedWireSheet"            count="25,250"      prob="0.100"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksCommon">
-<item name="flagstoneBlock"             count="25,125"      prob="0.250"/>
-<item name="brickBlock"                 count="25,125"      prob="0.100"/>
-<item name="scrapIronFrameBlock"        count="25,125"      prob="0.100"/>
-<item name="woodFrameBlock"             count="25,125"      prob="0.200"/>
+<item name="woodFrameBlock"             count="25,250"      prob="0.250"/>
+<item name="flagstoneBlock"             count="25,250"      prob="0.250"/>
+<item name="scrapIronFrameBlock"        count="15,150"      prob="0.250"/>
+<item name="brickBlock"                 count="15,150"      prob="0.100"/>
+<item name="woodBars"                   count="5,50"        prob="0.075"/>
+<item name="woodGate"                   count="5,50"        prob="0.075"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksUncommon">
-<item name="brickBlock"                 count="50,250"      prob="0.200"/>
-<item name="pouredConcreteBlock"        count="25,125"      prob="0.400"/>
-<!--<item name="rebarFrameBlock"            count="25,125"      prob="0.300"/>-->
-<item name="ironBars"                   count="10,50"       prob="0.100"/>
+<item name="scrapIronFrameBlock"        count="25,250"      prob="0.200"/>
+<item name="brickBlock"                 count="25,250"      prob="0.300"/>
+<item name="pouredConcreteBlock"        count="15,150"      prob="0.250"/>
+<item name="pouredRConcreteBlock"       count="15,150"      prob="0.100"/>
+<item name="ironBars"                   count="5,50"        prob="0.075"/>
+<item name="ironGate"                   count="5,50"        prob="0.075"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksRare">
-<item name="steelBlock"                 count="25,125"      prob="0.150"/>
-<item name="pouredConcreteBlock"        count="25,125"      prob="0.200"/>
-<!--<item name="rebarFrameBlock"            count="25,125"      prob="0.200"/>-->
-<item name="rConcreteBlock"             count="25,125"      prob="0.350"/>
-<item name="steelBars"                  count="5,25"        prob="0.100"/>
+<item name="pouredConcreteBlock"        count="25,250"      prob="0.400"/>
+<item name="pouredRConcreteBlock"       count="25,250"      prob="0.300"/>
+<item name="steelBlock"                 count="15,150"      prob="0.150"/>
+<item name="steelBars"                  count="5,25"        prob="0.075"/>
+<item name="steelGate"                  count="5,25"        prob="0.075"/>  
 </trader_item_group>
 
 <trader_item_group name="BasicMaterials">
@@ -622,7 +640,7 @@
 <item group="MedicalHealing"            prob="0.020"/>
 <item group="MedicalRemedy"             prob="0.020"/>
 <item group="Supplies"                  prob="0.040"/>
-<item group="Armor"                     prob="0.170"/>
+<item group="Armor"                     count="2,3" prob="0.170"/>
 <item group="questTreasure"             prob="0.010"/>
 </trader_item_group>
 

@@ -267,10 +267,8 @@
 </property>
 <property name="EconomicValue" value="45"/>
 <property name="EconomicBundleSize" value="20"/>
-<!--
 <property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
--->
 </block>
 
 <block id="16" name="gravel">
@@ -1175,8 +1173,8 @@ NOT the TextureNumber.
 <drop event="Destroy" count="0"/>
 <drop event="Fall" name="cloth" count="1" prob="0.3" stick_chance="0"/>
 <property name="EconomicValue" value="25"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="96" name="corrugatedMetalNoUpgradeMaster">
@@ -1190,8 +1188,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="12"/>
 <property name="DescriptionKey" value="scrapIronGroupDesc"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="97" name="corrugatedMetalMaster">
@@ -1213,8 +1211,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="15"/>
 <property name="EconomicBundleSize" value="2"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="98" name="woodWeakNoUpgradeMaster">
@@ -1232,8 +1230,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="5"/>
 <property name="EconomicBundleSize" value="20"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="99" name="woodNoUpgradeMaster">
@@ -1250,8 +1248,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="10"/>
 <property name="EconomicBundleSize" value="20"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="100" name="woodFrameMaster">
@@ -1333,8 +1331,8 @@ NOT the TextureNumber.
 <drop event="Harvest" name="nail" prob="0.25" count="2"/>
 <drop event="Destroy" name="wood" count="2"/>
 <drop event="Fall" name="wood" count="8" prob="0.25" stick_chance="0"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="104" name="woodMasterStrong">
@@ -1381,8 +1379,8 @@ NOT the TextureNumber.
 <drop event="Harvest" name="nail" prob="0.25" count="4"/>
 <drop event="Destroy" name="wood" count="4"/>
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="107" name="rWoodMasterStrong">
@@ -1431,8 +1429,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="scrapIron" count="6"/>
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapIron" count="24" prob="0.25" stick_chance="0"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="110" name="rWoodMetalMasterStrong">
@@ -1475,8 +1473,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="scrapIron" count="12"/>
 <drop event="Fall" name="scrapMetalPile" count="1" prob="0.5" stick_chance="1"/>
 <drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="113" name="scrapIronFrameMaster">
@@ -1553,8 +1551,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="scrapIron" count="12"/>
 <drop event="Fall" name="scrapIron" count="32" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapMetalPile" count="1" prob="0.25" stick_chance="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="117" name="scrapIronMasterStrong">
@@ -1600,8 +1598,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="scrapIron" count="18"/>
 <drop event="Fall" name="scrapIron" count="52" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapMetalPile" count="1" prob="0.25" stick_chance="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="120" name="rScrapIronMasterStrong">
@@ -1642,8 +1640,8 @@ NOT the TextureNumber.
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="false"/>
 <property name="DescriptionKey" value="buildingBlockGroupDesc"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="123" name="flagstoneMaster">
@@ -1665,8 +1663,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="2"/>
 <property name="EconomicBundleSize" value="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="124" name="flagstoneMasterStrong">
@@ -1714,8 +1712,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="rockSmall" count="6"/>
 <drop event="Fall" name="cobblestones" count="10" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="127" name="cobblestoneMasterStrong">
@@ -1763,8 +1761,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="4"/>
 <property name="EconomicBundleSize" value="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="130" name="brickMasterStrong">
@@ -1814,8 +1812,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="30"/>
 <property name="EconomicBundleSize" value="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="133" name="pouredRConcreteMaster">
@@ -1836,8 +1834,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="60"/>
 <property name="EconomicBundleSize" value="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="134" name="concreteMaster">
@@ -1860,8 +1858,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="rockSmall" count="2"/>
 <drop event="Fall" name="rockSmall" count="8" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="135" name="concreteMasterStrong">
@@ -1913,8 +1911,8 @@ NOT the TextureNumber.
 <drop event="Destroy" name="rockSmall" count="4"/>
 <drop event="Fall" name="rockSmall" count="16" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="138" name="rConcreteMasterStrong">
@@ -1967,8 +1965,8 @@ NOT the TextureNumber.
 <drop event="Fall" name="scrapSteelPile" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="80"/>
 <property name="EconomicBundleSize" value="1"/>
-<!--<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="141" name="steelMasterStrong">

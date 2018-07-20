@@ -1039,7 +1039,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Repair_amount" value="100"/>
 <property name="Upgrade_hit_offset" value="0"/>
 <property name="Sound_start" value="repair_block"/>
-<property name="Allowed_upgrade_items" value="wood,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
+<property name="Allowed_upgrade_items" value="wood,boardAndNails,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage" value="4,10"/>
@@ -1404,7 +1404,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Repair_amount" value="750"/>
 <property name="Upgrade_hit_offset" value="-5"/>
 <property name="Sound_start" value="repair_block"/>
-<property name="Allowed_upgrade_items" value="wood,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
+<property name="Allowed_upgrade_items" value="wood,boardAndNails,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage" value="4,10"/>
@@ -1455,7 +1455,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Repair_amount" value="500"/>
 <property name="Upgrade_hit_offset" value="-2"/>
 <property name="Sound_start" value="repair_block"/>
-<property name="Allowed_upgrade_items" value="wood,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
+<property name="Allowed_upgrade_items" value="wood,boardAndNails,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage" value="8,20"/>
@@ -1517,7 +1517,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Upgrade_hit_offset" value="-6"/>
 <property name="Repair_action_sound" value="nailgun_fire"/>
 <property name="Upgrade_action_sound" value="nailgun_fire"/>
-<property name="Allowed_upgrade_items" value="wood,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
+<property name="Allowed_upgrade_items" value="wood,boardAndNails,scrapIron,forgedIron,ironPlates,cobblestones,mortarMix,brickAndMortar,concreteMix,forgedSteel,steelPlates,steelPolish"/>
 </property>
 <property name="Group" value="Tools/Traps"/>
 <property name="ActionSkillGroup" value="Construction Tools"/>
@@ -7122,7 +7122,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicValue" value="30"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
-  
+<!--
 <item id="1343" name="candyTin">
 <property name="Meshfile" value="Items/Crafting/candy_tinPrefab"/>
 <property name="Material" value="metal"/>
@@ -7132,7 +7132,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicValue" value="1"/>
 <property name="Group" value="Resources,Tools/Traps"/>
 </item>
-
+-->
 <!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
 
 <!-- Tools -->
@@ -7142,11 +7142,24 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material" value="metal"/>
 <property name="HoldType" value="34"/>
 <property name="Stacknumber" value="1"/>
-<property name="EconomicValue" value="84"/>
+<!--
 <property class="Action0">
 <property name="Class" value="BailLiquid"/>
 <property name="Delay" value="0.35"/>
 <property name="Sound_start" value="bucketbail_water"/>
+</property>
+-->
+<property class="Action0">
+<property name="Class" value="ExchangeItem"/>
+<property name="Delay" value="0.35"/>
+<property name="Change_item_to" value="bucket"/>
+<property name="Do_block_action" value="deplete3"/>
+<property name="Focused_blockname_1" value="water"/>
+<property name="Focused_blockname_2" value="waterMoving"/>
+<property name="Focused_blockname_3" value="waterSource8"/>
+<property name="Focused_blockname_3" value="waterMovingBucket"/>
+<property name="Focused_blockname_3" value="waterStaticBucket"/>
+<property name="Sound_start" value="bucketfill_water"/>
 </property>
 <property class="Action1">
 <property name="Class" value="ExchangeItem"/>
@@ -7155,12 +7168,12 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Do_block_action" value="deplete3"/>
 <property name="Focused_blockname_1" value="water"/>
 <property name="Focused_blockname_2" value="waterMoving"/>
-<property name="Focused_blockname_3" value="waterStaticBucket"/>
-<property name="Focused_blockname_4" value="waterMovingBucket"/>
-<property name="Focused_blockname_5" value="waterSource8"/>
+<property name="Focused_blockname_3" value="waterSource8"/>
 <property name="Sound_start" value="bucketfill_water"/>
 </property>
 <property name="Group" value="Tools/Traps"/>
+<property name="EconomicValue" value="40"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1345" name="bucketWater">
@@ -7169,7 +7182,6 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material" value="metal"/>
 <property name="HoldType" value="34"/>
 <property name="Stacknumber" value="1"/>
-<property name="EconomicValue" value="88"/>
 <property class="Action1">
 <property name="Class" value="PlaceAsBlock"/>
 <property name="Delay" value="0.5"/>
@@ -7178,6 +7190,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Sound_start" value="bucketplace_water"/>
 </property>
 <property name="Group" value="Tools/Traps"/>
+<property name="EconomicValue" value="50"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1346" name="smallEngine">
@@ -7342,7 +7356,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1459" name="casinoCoin">
+<item id="1359" name="casinoCoin">
 <property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
 <property name="Material" value="organic"/>
 <property name="HoldType" value="21"/>
@@ -7635,7 +7649,161 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
-<!-- Raw Materials -->
+<!-- Ores and Stones -->
+<item id="1380" name="rock">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="stone"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="6"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+
+<item id="1381" name="rockGranite">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="stone"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="12"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+
+<item id="1382" name="sandstone">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="stone"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="6"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+
+<item id="1383" name="lime">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="lime"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="6"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+
+<item id="1384" name="clayLump">
+<property name="Meshfile" value="Items/Crafting/clay"/>
+<property name="Material" value="clay"/>
+<property name="Weight" value="12"/>
+<property name="HoldType" value="21"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Group" value="Resources,Basics"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="MeltTimePerUnit" value="0.5" />
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+  
+<item id="1385" name="desertSand">
+<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+<property name="Material" value="glass"/>
+<property name="HoldType" value="40"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="Weight" value="12"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="CraftingIngredientTime" value="0.5"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="50"/>
+</item>
+
+<item id="1386" name="oilShale">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
+<property name="Material" value="organic"/>
+<property name="HoldType" value="45"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="FuelValue" value="5"/>
+<property name="CraftingIngredientExp" value="2"/>
+<property name="DropScale" value="8"/>
+<property name="Group" value="Resources"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
+</item>
+
+<item id="1387" name="ironFragment">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="metal"/>
+<property name="Weight" value="6"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="HoldType" value="45"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="1"/>
+</item>
+
+<item id="1388" name="leadFragment">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="lead"/>
+<property name="Weight" value="6"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="HoldType" value="45"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="2"/>
+</item>
+
+<item id="1389" name="nitrateFragment">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="organic"/>
+<property name="Weight" value="6"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="HoldType" value="45"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="2"/>
+</item>
+
+<item id="1390" name="coalFragment">
+<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="Material" value="organic"/>
+<property name="Weight" value="6"/>
+<property name="Stacknumber" value="5000"/> 
+<property name="HoldType" value="45"/>
+<property name="DropScale" value="3"/>
+<property name="MeltTimePerUnit" value="0.5"/>
+<property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="2"/>
+</item>
+
+<!-- Materials -->
 <item id="1399" name="yuccaFibers">
 <property name="Meshfile" value="Items/Crafting/plant_fibers"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -7694,7 +7862,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="40"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="RepairAmount" value="300"/>
-<property name="Weight" value="5"/>
+<property name="Weight" value="1"/>
 <property name="MeltTimePerUnit" value="0.5"/>
 <property class="Action0">
 <property name="Class" value="ThrowAway"/>
@@ -7712,15 +7880,14 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1403" name="clayLump">
+<item id="1403" name="clayFragment">
 <property name="Meshfile" value="Items/Crafting/clay"/>
 <property name="Material" value="clay"/>
-<property name="Weight" value="5"/>
+<property name="Weight" value="1"/>
 <property name="HoldType" value="21"/>
-<property name="Stacknumber" value="5000"/> 
+<property name="Stacknumber" value="5000"/>
 <property name="Group" value="Resources,Basics"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="MeltTimePerUnit" value="0.5" />
+<property name="MeltTimePerUnit" value="0.1"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="100"/>
 </item>
@@ -7738,78 +7905,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1405" name="lime">
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="Material" value="lime"/>
-<property name="HoldType" value="40"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Weight" value="5"/>
-<property name="DropScale" value="3"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1406" name="sandstone">
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="Material" value="stone"/>
-<property name="HoldType" value="40"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Weight" value="5"/>
-<property name="DropScale" value="3"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1407" name="desertSand">
-<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
-<property name="CustomIcon" value="sand"></property>
-<property name="Material" value="glass"/>
-<property name="HoldType" value="40"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="Weight" value="10"/>
-<property name="DropScale" value="3"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property name="CraftingIngredientTime" value="0.5"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
-</item>
-
-<item id="1408" name="oilShale">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
-<property name="Material" value="MforgedIron"/>
-<property name="HoldType" value="45"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="FuelValue" value="5"/>
-<property name="CraftingIngredientExp" value="2"/>
-<property name="DropScale" value="8"/>
-<property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
-</item>
-
-<item id="1409" name="ironFragment">
-<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="Miron_scrap"/>
-<property name="Weight" value="5"/>
-<property name="Stacknumber" value="5000"/> 
-<property name="HoldType" value="45"/>
-<property name="DropScale" value="3"/>
-<property name="MeltTimePerUnit" value="0.5"/>
-<property name="Group" value="Resources,Basics"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="2"/>
-</item>
-
-<item id="1410" name="crushedSand">
+<item id="1405" name="crushedSand">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
 <property name="HoldType" value="45"/>
@@ -7817,30 +7913,32 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="1"/>
 <property name="MeltTimePerUnit" value="0.1"/>
 <property name="Stacknumber" value="5000"/> 
+<property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
 </item>
 
-<item id="1411" name="crushedLime">
+<item id="1406" name="crushedLime">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/crushedSandDroppedPrefab"/>
 <property name="HoldType" value="45"/>
 <property name="Material" value="lime"/>
 <property name="Weight" value="1"/>
+<property name="MeltTimePerUnit" value="0.1"/>
 <property name="Stacknumber" value="5000"/>
+<property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="100"/>
-<property name="Group" value="Resources,Basics"/>
 </item> 
 
-<item id="1412" name="brokenGlass">
+<item id="1407" name="brokenGlass">
 <property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="glass"/>
 <property name="HoldType" value="23"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
+<property name="MeltTimePerUnit" value="0.1"/>
 <property class="Action1">
 <property name="Class" value="Eat"/>
 <property name="Delay" value="1.0"/>
@@ -7854,10 +7952,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 </property>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="2"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
-<item id="1413" name="scrapIron">
+<item id="1408" name="scrapIron">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/scrapIronDroppedPrefab"/>
 <property name="HoldType" value="45"/>
@@ -7870,10 +7968,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="CraftingIngredientTime" value="0.2"/>
 <property name="MeltTimePerUnit" value="0.1"/>
 <property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
+<property name="EconomicBundleSize" value="3"/>
 </item>
 
-<item id="1414" name="scrapBrass">
+<item id="1409" name="scrapBrass">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="Mbrass_scrap"/>
@@ -7886,7 +7984,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Basics"/>
 </item>
 
-<item id="1415" name="scrapLead">
+<item id="1410" name="scrapLead">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/scrapLeadDroppedPrefab"/>
 <property name="Material" value="Mlead_scrap"/>
@@ -7899,7 +7997,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Basics"/>
 </item>
 
-<item id="1416" name="scrapPlastics">
+<item id="1411" name="scrapPlastics">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="HoldType" value="45"/>
@@ -7913,7 +8011,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1417" name="coal">
+<item id="1412" name="coal">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
 <property name="Material" value="coal"/>
@@ -7927,7 +8025,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="5"/>
 </item>
 
-<item id="1418" name="potassiumNitratePowder">
+<item id="1413" name="potassiumNitratePowder">
 <property name="Meshfile" value="Items/Food/cornmealPrefab"/>
 <property name="Material" value="coal"/>
 <property name="HoldType" value="21"/>
@@ -7939,7 +8037,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="5"/>
 </item>
 
-<item id="1419" name="animalHide">
+<item id="1414" name="animalHide">
 <property name="Meshfile" value="Items/Crafting/animal_hidePrefab"/>
 <property name="HoldType" value="21"/>
 <property name="Material" value="organic"/>
@@ -7955,10 +8053,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1420" name="femur">
+<item id="1415" name="femur">
 <property name="Meshfile" value="Items/Crafting/femur"/>
 <property name="Material" value="lime"/>
-<property name="Weight" value="2"/>
+<property name="Weight" value="3"/>
 <property name="HoldType" value="2"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="EconomicValue" value="5"/>
@@ -7976,8 +8074,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="ToolCategory.Butcher" value="0" param1="10"/>
 </property>
 <property name="Group" value="Basics,Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="100"/>
 </item>
 
 <!--<item id="1421" name="zombieFat">
@@ -8019,7 +8117,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="CraftingIngredientTime" value="12"/>
 <property name="RepairTime" value="1"/>
 <property name="RepairAmount" value="400"/>
-<property name="EconomicValue" value="6"/>
+<property name="EconomicValue" value="9"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8042,7 +8140,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Stacknumber" value="1000"/> 
 <property name="Weight" value="10"/>
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="22"/>
+<property name="EconomicValue" value="35"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8071,7 +8169,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Science"/>
 <property name="CraftingIngredientExp" value="15"/>
 <property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="25"/>
+<property name="EconomicValue" value="40"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8086,7 +8184,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Science"/>
 <property name="CraftingIngredientExp" value="15"/>
 <property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="40"/>
+<property name="EconomicValue" value="20"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8100,7 +8198,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Resources,Science"/>
 <property name="CraftingIngredientExp" value="15"/>
 <property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="45"/>
+<property name="EconomicValue" value="60"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8210,7 +8308,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="10"/>
 <property name="Stacknumber" value="1000"/> 
 <property name="Group" value="Resources,Chemicals"/>
-<property name="EconomicValue" value="10"/>
+<property name="EconomicValue" value="30"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8222,7 +8320,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="5"/>
 <property name="Stacknumber" value="1000"/> 
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="12"/>
+<property name="EconomicValue" value="40"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
@@ -8258,7 +8356,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Group" value="Building,Resources"/>
-<property name="EconomicValue" value="1"/>
+<property name="EconomicValue" value="2"/>
 <property name="EconomicBundleSize" value="10"/>
 </item>  
   
@@ -8270,8 +8368,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="10"/>
 <property name="Stacknumber" value="5000"/>
 <property name="Group" value="Building,Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1459" name="rebar">
@@ -8281,8 +8379,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material" value="metal"/>
 <property name="Stacknumber" value="5000"/>
 <property name="Group" value="Building,Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="100"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
 </item>
 
 <item id="1460" name="fertilizer">
@@ -8318,8 +8416,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1463" name="mortarMix">
@@ -8330,8 +8428,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="34"/>
 <property name="Stacknumber" value="2500"/>
 <property name="Group" value="Building,Resources"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
+<property name="EconomicValue" value="4"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1464" name="brickAndMortar">
@@ -8341,7 +8439,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
+<property name="EconomicValue" value="2"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>  
 
@@ -8375,7 +8473,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Resources,Chemicals"/>
 <property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="EconomicValue" value="45"/>
+<property name="EconomicValue" value="50"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
  
@@ -8385,10 +8483,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material" value="stone"/>
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/> 
-<property name="DropScale" value="1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
 <property name="Group" value="Building,Resources"/>
+<property name="DropScale" value="1"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1469" name="concreteMix">
@@ -8398,9 +8496,9 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Weight" value="20"/>
 <property name="HoldType" value="34"/>
 <property name="Stacknumber" value="2500"/> 
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
 <property name="Group" value="Building,Resources"/>
+<property name="EconomicValue" value="5"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <!-- Workstation Tools -->
@@ -8498,7 +8596,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="CraftingIngredientTime"   value="0.25"/>
 <property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
-<property name="EconomicBundleSize"       value="10"/>
+<property name="EconomicBundleSize"       value="3"/>
 </item>
 
 <item id="1491"                           name="unit_brass">
@@ -8530,7 +8628,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material"                 value="clay"/>
 <property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
-<property name="EconomicBundleSize"       value="500"/>
+<property name="EconomicBundleSize"       value="100"/>
 <property name="CraftingIngredientTime"   value="0.20"/>
 </item>
 
@@ -8539,7 +8637,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material"                 value="lime"/>
 <property name="CreativeMode"             value="None"/>
 <property name="EconomicValue"            value="1"/>
-<property name="EconomicBundleSize"       value="500"/>
+<property name="EconomicBundleSize"       value="100"/>
 <property name="CraftingIngredientTime"   value="0.20"/>
 </item>  
   
@@ -9700,7 +9798,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 </property>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
 <property name="EconomicValue"                value="1"/>
-<property name="EconomicBundleSize"           value="10"/>
+<property name="EconomicBundleSize"           value="5"/>
 </item>
 
 <!-- Special Projectiles -->

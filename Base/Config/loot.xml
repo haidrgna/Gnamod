@@ -679,6 +679,18 @@
 <loot quality="150,250"   prob="0.275"/>
 </qualitytemplate>
 </lootqualitytemplate>
+  
+<!-- GNAMOD HORDE MODE Airdrop & Treasure -->
+<lootqualitytemplate name="hordeTreasure">
+<qualitytemplate level="0,1"  default_quality="150,600">
+<loot quality="500,600"   prob="0.025"/>
+<loot quality="450,500"   prob="0.050"/>
+<loot quality="400,450"   prob="0.100"/>
+<loot quality="350,400"   prob="0.275"/>
+<loot quality="250,350"   prob="0.325"/>
+<loot quality="150,250"   prob="0.225"/>
+</qualitytemplate>
+</lootqualitytemplate>
 </lootqualitytemplates>
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD Base Lootgroups =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <lootgroup name="nothing"/>
@@ -953,7 +965,7 @@
 </lootgroup>
 <!-- Specific Tool Base Groups -->
 <lootgroup name="toolsMechanized">                    <item group="toolsPartsNailgun" prob="40"/>   <item group="toolsPartsChainsaw" prob="30"/> <item group="toolsPartsAuger" prob="30"/>                        </lootgroup>
-<lootgroup name="toolsForge">                         <item name="anvil" prob="50"/>   <item name="toolAndDieSet" prob="25"/>  <item name="forgeCrucible" prob="25"/>  <!-- <item name="calipers"/> -->                 </lootgroup>
+<lootgroup name="toolsForge">                         <item name="bellows" prob="20"/>  <item name="anvil" prob="40"/>   <item name="toolAndDieSet" prob="20"/>  <item name="forgeCrucible" prob="20"/>  <!-- <item name="calipers"/> -->                 </lootgroup>
 <lootgroup name="toolsIron">                          <item name="sledgehammer" prob="15"/>  <item name="pickaxeIron" prob="15"/>  <item name="shovelIron" prob="20"/>  <item name="fireaxeIron" prob="15"/> <item name="hoeIron" prob="15"/> <item name="clawHammer" prob="20"/>       </lootgroup>
 <lootgroup name="toolsSteel">                         <item name="pickaxeSteel" prob="20"/>  <item name="fireaxeSteel" prob="25"/>  <item name="shovelSteel" prob="25"/>  <item name="wrench" prob="30"/>                  </lootgroup>
 <lootgroup name="toolsOther">                         <item name="repairKit" count="2,4" prob="30"/> <item name="flashlight02" prob="30"/>  <item name="miningHelmet" prob="20"/>  <item name="paintTool" prob="10"/> <item name="wireTool" prob="10"/>            </lootgroup>
@@ -1013,7 +1025,14 @@
 <!-- Blinds Base Group -->
 <lootgroup name="blocksBlinds"          count="all">  <item name="miniblindTopSheet" count="5"/>  <item name="miniblindBottomSheet" count="5"/>                          </lootgroup>
 <!-- Block Frames Base Group -->
-<lootgroup name="blocksFrames">                       <item name="woodFrameBlock" count="25,75" prob="50"/> <item name="scrapIronFrameBlock" count="25,75" prob="30"/> <!-- <item name="rebarFrameBlock" count="25,75" prob="20"/>  -->                 </lootgroup>
+<lootgroup name="blocksBase">
+<item name="woodFrameBlock"             count="25,100" prob="25"/>
+<item name="scrapIronFrameBlock"        count="25,100" prob="20"/>
+<item name="flagstoneBlock"             count="25,100" prob="25"/>
+<item name="pouredConcreteBlock"        count="25,100" prob="15"/>
+<item name="pouredRConcreteBlock"       count="25,100" prob="10"/>
+<item name="steelBlock"                 count="25,100" prob="5"/>
+</lootgroup>
 <!-- Workstations Base Group -->
 <lootgroup name="blocksWorkstation">                  <item name="forge" prob="35"/>    <item name="workbench" prob="20"/>    <item name="cementMixer" prob="35"/>   <item name="chemistryStation" prob="10"/>             </lootgroup>
 <!-- Electrical Power Base Groups -->
@@ -1029,9 +1048,24 @@
 <item group="blocksSolBank"             prob="20"/>
 </lootgroup>
 <!-- Electricity Blocks Base Groups -->
-<lootgroup name="blocksElectric">                     <item group="blocksPower"/>  <item name="pressureplate" count="1,5"/>  <item name="wallLight01_player" count="1,6"/>  <item name="ceilingLight01_player" count="1,6"/>  <item name="ceilingLight02_player" count="1,6"/>
-                                                      <item name="switch" count="3,9"/> <item name="ceilingLight07_player" count="1,5"/> <item name="industrialLight01_player" count="1,5"/> <item name="porchLight01_player" count="1,6"/>   <item name="electrictimerrelay" count="1,3"/>
-                                                      <item name="speaker" count="1,2"/> <item name="electricwirerelay" count="5,15"/>  <item name="motionsensor" count="1,2"/>                       </lootgroup>
+<lootgroup name="blocksElectric">
+<item group="blocksPower"/>
+<item name="pressureplate"              count="1,5"/>
+<item name="wallLight01_player"         count="1,6"/>
+<item name="ceilingLight01_player"      count="1,6"/>
+<item name="ceilingLight02_player"      count="1,6"/>
+<item name="ceilingLight07_player"      count="1,5"/>
+<item name="industrialLight01_player"   count="1,5"/>
+<item name="porchLight01_player"        count="1,6"/>
+<item name="switch"                     count="1,2"/>
+<item name="electrictimerrelay"         count="1"/>
+<item name="electricwirerelay"          count="2,6"/>
+<item name="dartTrap"                   count="1,2"/>
+<item name="shotgunTurret"              count="1,2"/>
+<item name="autoTurret"                 count="1,2"/>
+<item name="bladeTrap"                  count="1,2"/>
+<item name="electricfencepost"          count="4,8"/>
+</lootgroup>
 <!-- Decorative Blocks Group -->  <!-- ADD ALL BLOCKS -->
 <lootgroup name="blocksDecorative">                   <item group="blocksCurtains"/>  <item group="blocksBlinds"/>  <item name="airConditioner"/>  <item name="chaulkboardPlate"/>  <item name="cntBookcase"/>  <item name="cntCabinetOldSink"/>  <item name="cntCashRegister"/>
                                                       <item name="cntCooler"/>  <item name="cntFileCabinet"/>  <item name="cntFurnaceDrawer"/>  <item name="cntGasPump"/>  <item name="cntGraniteSink"/>  <item name="cntGreenDrawer"/>   <item name="cntLockers"/>
@@ -1384,9 +1418,9 @@
 <lootgroup name="weaponsBackpack">                    <item group="weaponsMelee" prob="50"/>   <item group="weaponsPrimitive" prob="40"/>  <item group="ammoBombs" prob="5"/>   <item group="ammoMines" prob="5"/>              </lootgroup> 
 <!-- =========================== Generic Items Base Groups ===================================================================================================================================================================================================================================================================================================================== -->
 <!-- Common Trash Groups -->
-<lootgroup name="itemsTrash">                         <item name="ironArrowHead" count="1,4" prob="5"/> <item name="canEmpty" count="1" prob="5"/>  <item name="oldCash" count="1,2" prob="2.5"/>  <item name="cloth" count="1,2" prob="5"/> <item name="trophy" count="1" prob="5"/> <item name="brokenGlass" count="1,4" prob="2.5"/>
+<lootgroup name="itemsTrash">                         <item name="ironArrowHead" count="1,4" prob="5"/> <item name="canEmpty" count="1" prob="6"/>  <item name="oldCash" count="1,2" prob="2.5"/>  <item name="cloth" count="1,2" prob="5"/> <item name="trophy" count="1" prob="5"/> <item name="brokenGlass" count="1,4" prob="2.5"/>
                                                       <item name="scrapBrass" count="1,4" prob="5"/>  <item name="fishingWeight" count="1,2" prob="1"/> <item name="scrapLead"  count="1,4" prob="5"/>  <item name="wood" count="1,10" prob="5"/> <item name="rockSmall" count="1,4" prob="5"/> <item name="nail" count="4,8" prob="10"/>
-                                                      <item name="feather" count="1,10" prob="5"/>  <item name="casinoCoin" count="1,5" prob="2.5"/> <item name="femur" prob="5"/>    <item name="candyTin" count="1,2" prob="1"/> <item group="foodRotten" prob="10"/>  <item group="seedsFood" prob="4"/>
+                                                      <item name="feather" count="1,10" prob="5"/>  <item name="casinoCoin" count="1,5" prob="2.5"/> <item name="femur" prob="5"/> <item group="foodRotten" prob="10"/>  <item group="seedsFood" prob="4"/>
                                                       <item group="seedsResources" prob="6"/>   <item name="glue" prob="2.5"/>  <item name="painkillers" prob="1"/> <item name="bulletCasingLG" count="1,10" prob="0.5"/> <item name="largeBulletCasingLG" count="1,10" prob="0.5"/> <item name="bulletTipLG" count="1,10" prob="0.5"/> 
                                                       <item name="largeBulletTipLG" count="1,10" prob="0.5"/> <item name="casingShotgunPaper" count="1,10" prob="2"/>                           </lootgroup>
 <lootgroup name="itemsCommon">                        <item name="brokenGlass" count="3,5" prob="2"/>  <item name="scrapPlastics" count="1,2" prob="2"/> <item name="scrapBrass" count="1,25" prob="2"/>  <item name="trophy" prob="2"/>   <item name="candleStick" prob="2"/>  <item name="doorKnob" prob="2"/>
@@ -1419,7 +1453,7 @@
 <lootgroup name="lootSurvivor"          count="all">  <item group="weaponsBackpack"/>    <item group="gunsComplete"/>    <item group="clothGeneralRS"/>    <item group="armorRS"/>               </lootgroup>
 <lootgroup name="lootFeral"             count="all">  <item group="gunsComplete" count="0,1" />  <item group="gunsCommon" count="0,1" />   <item group="gunsUncommon" count="0,1" />                   </lootgroup>
 <lootgroup name="lootSoldier"           count="all">  <item group="gunsComplete"/>    <item group="rocketLauncher" count="0,1"/>  <item group="armorMilitary" count="0,1"/>  <item group="armorMilitaryMisc" count="0,1"/>            </lootgroup>
-<lootgroup name="lootHerbal"            count="1,3">  <!-- <item name="herbalAntibioticsRecipe" prob="20"/> --> <item name="herbalAntibiotics" prob="70"/>  <item group="matsRareOres" prob="10"/>                   </lootgroup>
+<lootgroup name="lootHerbal"            count="1,3">  <item name="herbalAntibiotics" prob="70"/>  <item group="matsRareOres" prob="10"/>                   </lootgroup>
 <lootgroup name="lootToilet"            count="all">  <item name="bottledRiverWater" count="0,2"/>  <item name="turd" count="0,2"/>    <item name="gunPistol" count="0,1"/>                    </lootgroup> 
 <lootgroup name="lootPurse">                          <item name="bottledWater" prob="2.5"/>   <item name="bottledRiverWater" prob="7.5"/>  <item group="itemsCash" prob="5"/>   <item group="schemBasic" prob="10"/>  <item group="schemCommon" prob="5"/>
                                                       <item group="medicalBasic" prob="10"/>   <item group="foodCanned" prob="40"/>   <item group="foodRations" prob="20"/>                    </lootgroup>
@@ -1429,17 +1463,17 @@
 <lootgroup name="lootStump">                          <item name="flashlight02" prob="5"/>  <item name="foodHoney" prob="10"/>  <item group="clothGeneral" prob="9"/> <item group="armorMilitaryMisc" prob="1"/>  <item group="gunsCommon" prob="10"/>  <item group="gunsUncommon" prob="8"/> 
                                                       <item group="gunsComplete" prob="1.5"/> <item group="foodCanned" count="1,3" prob="25"/>  <item group="foodRations" count="1,3" prob="10"/> <item group="itemsCookware" prob="10"/> <item group="medicalBasic" prob="10"/>  <item group="lootHerbal" prob="0.5"/>  </lootgroup>
 <!-- Hardware Crate Loot -->
-<lootgroup name="lootHWTools">                        <item group="toolsMechanized" prob="5"/>    <item group="toolsForge" prob="15"/>     <item group="toolsSteel" prob="25"/>     <item group="toolsIron" prob="35"/>    <item group="toolsOther" prob="20"/>         </lootgroup>
+<lootgroup name="lootHWTools">                        <item group="toolsMechanized" prob="5"/>    <item group="toolsForge" prob="5"/>     <item group="toolsSteel" prob="25"/>     <item group="toolsIron" prob="45"/>    <item group="toolsOther" prob="20"/>         </lootgroup>
 <lootgroup name="lootHWMats">                         <item group="matsBasic" prob="25"/>     <item group="matsOres" prob="10"/>    <item group="matsScrap" prob="20"/>     <item group="matsConstruction" prob="15"/>   <item group="matsForged" prob="20"/>    <item group="matsMisc" prob="10"/>   </lootgroup>
-<lootgroup name="lootHWBlocks">                       <item group="blocksFrames" prob="30"/>    <item group="blocksWorkstation" prob="10"/>    <item group="blocksDecorative" count="3,5" prob="2"/>  <item group="blocksElectric" prob="10"/>   <item group="blocksOther" prob="48"/>         </lootgroup>
+<lootgroup name="lootHWBlocks">                       <item group="blocksBase" prob="30"/>    <item group="blocksWorkstation" prob="10"/>    <item group="blocksDecorative" count="3,5" prob="2"/>  <item group="blocksElectric" prob="10"/>   <item group="blocksOther" prob="48"/>         </lootgroup>
 <!-- Treasure Chest Loot -->
-<lootgroup name="lootTreasureBasic">                  <item name="casinoCoin" count="1000,5000" prob="20"/> <item name="oldCash" count="50,250" prob="5"/>  <item group="medicalAdvanced" count="3,7" prob="25"/> <item group="gunsComplete" prob="15"/>  <item group="ammoGuns" count="5,15" prob="25"/> <item group="matsRareOres" count="4,7" prob="10"/>  </lootgroup>
+<lootgroup name="lootTreasureBasic">                  <item name="casinoCoin" count="1000,5000" prob="20"/> <item name="oldCash" count="50,2500" prob="5"/>  <item group="medicalAdvanced" count="3,7" prob="25"/> <item group="gunsComplete" prob="15"/>  <item group="ammoGuns" count="10,25" prob="25"/> <item group="matsRareOres" count="4,10" prob="10"/>  </lootgroup>
 <!-- Airdrop Loot -->
-<lootgroup name="lootADBase"            count="3,5">  <item group="gunsBalanced" prob="15"/>   <item group="gunsComplete" prob="5"/>    <item group="ammoGuns" count="2,4" prob="25"/>  <item group="medicalAdvanced" count="1,3" prob="15"/>
+<lootgroup name="lootADBase"            count="3,5">  <item group="gunsBalanced" prob="15"/>   <item group="gunsComplete" prob="5"/>    <item group="ammoGuns" count="6,12" prob="25"/>  <item group="medicalAdvanced" count="3,5" prob="15"/>
                                                       <item group="foodStock" count="5" prob="5"/>  <item group="foodRations" count="3" prob="15"/>  <item group="toolsBasic" prob="20"/>                    </lootgroup>
-<lootgroup name="lootADMedical"         count="3,5">  <item group="medicalAdvanced" count="1,3" prob="60"/> <item group="medicalAdvanced" count="2,4" prob="15"/> <item group="medicalAdvanced" count="3,5" prob="5"/>                  </lootgroup>
+<lootgroup name="lootADMedical"         count="3,5">  <item group="medicalAdvanced" count="2,4" prob="60"/> <item group="medicalAdvanced" count="3,5" prob="15"/> <item group="medicalAdvanced" count="4,6" prob="5"/>                  </lootgroup>
 <lootgroup name="lootADFood"            count="3,5">  <item group="foodStock" count="2,5" prob="25"/>  <item group="foodStock" count="3,7" prob="15"/>  <item group="foodRations" count="1,5" prob="35"/> <item group="foodRations" count="3,7" prob="25"/>           </lootgroup>
-<lootgroup name="lootADGunsAmmo"        count="3,5">  <item group="gunsBalanced" prob="35"/>   <item group="gunsComplete" prob="10"/>  <item group="ammoGuns" count="2,4" prob="35"/>  
+<lootgroup name="lootADGunsAmmo"        count="3,5">  <item group="gunsBalanced" prob="35"/>   <item group="gunsComplete" prob="10"/>  <item group="ammoGuns" count="8,16" prob="35"/>  
                                                       <item group="ammoBombs" prob="10"/>    <item group="ammoMines" prob="10"/>                           </lootgroup>
 <lootgroup name="lootADTools"           count="4">    <item group="toolsMechanized" prob="20"/>  <item group="toolsIron" prob="30"/>   <item group="toolsSteel" prob="15"/>   <item group="toolsOther" prob="15"/>  <item group="lootADBase" count="1,2" prob="20"/>           </lootgroup>
 <lootgroup name="lootADArmor"           count="4">    <item group="armorLight" prob="40"/>   <item group="armorHeavy" prob="30"/>   <item group="armorRS" prob="9"/>   <item group="armorMilitaryMisc" prob="1"/>  <item group="lootADBase" count="1,2" prob="20"/>          </lootgroup>
@@ -1757,14 +1791,14 @@ loot_quality_template=  "leveledNormal">
 <!-- Chance of Default Loot -->
 <item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
-<!-- =========================== GREEN DRAWER ================================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt007"> <item group="nothing" prob="100"/>  </lootgroup>
+<!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt007"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
 <lootcontainer id="7" count="1" size="9,9" open_time="0" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_dumpster"
 sound_close=            "UseActions/close_dumpster"
-loot_quality_template=  "leveledNormal">
-<item group="cnt007" count="1" prob="100"/>
+loot_quality_template=  "hordeTreasure">
+<item group="cnt007" count="5,10" prob="100"/>
 </lootcontainer>
 <!-- 7 - 10 Free -->
   
@@ -2604,19 +2638,19 @@ loot_quality_template=  "leveledLight">
 <!-- Chance of Default Loot -->
 <item group="cnt069" loot_prob_template="nothing33"/>
 </lootcontainer>
-<!-- =========================== AIRDROPS (SPECIAL) ============================================================================================================================================================================================================================================================================================================================ -->
-<lootgroup name="cnt070"> <item group="lootADBase" prob="35"/>  <item group="lootADMedical" prob="10"/> <item group="lootADFood" prob="12"/>  <item group="lootADGunsAmmo" prob="12"/>  <item group="lootADTools" prob="12"/> <item group="lootADArmor" prob="12"/> <item group="lootADBuild" prob="1"/>  <item group="lootADStock" prob="6"/>  </lootgroup>
+<!-- =========================== AIRDROPS (HORDE) ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt070"> <item name="casinoCoin" count="5000,20000" prob="20"/> <item group="ammoGuns" count="5,10"/> <item group="lootADBase" prob="5"/>  <item group="lootADMedical" prob="15"/> <item group="lootADFood" prob="5"/>  <item group="lootADGunsAmmo" prob="24"/>  <item group="lootADTools" prob="7"/> <item group="lootADArmor" prob="12"/> <item group="lootADBuild" prob="1"/>  <item group="lootADStock" prob="6"/>  </lootgroup>
 <lootcontainer id="70" count="1" size="7,7" open_time="3" 
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_supply_crate"
 sound_close=            "UseActions/close_supply_crate"
-loot_quality_template=  "unleveled">
+loot_quality_template=  "hordeTreasure">
 <!-- Chance of Loot: 80 -->
-<item group="cnt070" count="2" prob="20"/>
-<item group="cnt070" count="3" prob="55"/>
-<item group="cnt070" count="4" prob="5"/>
+<item group="cnt070" count="3,4" prob="20"/>
+<item group="cnt070" count="4,5" prob="55"/>
+<item group="cnt070" count="5,6" prob="5"/>
 <!-- Chance of Default Loot -->
-<item name="casinoCoin" count="2500,5000" loot_prob_template="nothing50"/>
+<item group="cnt070" count="3" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== TREASURE CHESTS (BASIC) ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt071"> <item group="lootTreasureBasic" prob="100"/>  </lootgroup>
@@ -2626,25 +2660,25 @@ sound_open=             "UseActions/open_apache_artifact_chest"
 sound_close=            "UseActions/close_apache_artifact_chest"
 loot_quality_template=  "unleveled">
 <!-- Chance of Loot: 80 -->
-<item group="cnt071" count="3,5" prob="75"/>
-<item group="cnt071" count="5,8" prob="4"/>
+<item group="cnt071" count="5,6" prob="75"/>
+<item group="cnt071" count="6,9" prob="4"/>
 <item group="cnt071" count="10" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt071" count="2,3" loot_prob_template="nothing33"/>
+<item group="cnt071" count="4" loot_prob_template="nothing33"/>
 </lootcontainer>
-<!-- =========================== TREASURE CHESTS (SPECIAL) ===================================================================================================================================================================================================================================================================================================================== -->
+<!-- =========================== TREASURE CHESTS (HORDE) ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt072"> <item group="lootTreasureBasic" prob="100"/>  </lootgroup>
 <lootcontainer id="72" count="1" size="9,9" open_time="8" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_apache_artifact_chest"
 sound_close=            "UseActions/close_apache_artifact_chest"
-loot_quality_template=  "unleveled">
+loot_quality_template=  "hordeTreasure">
 <!-- Chance of Loot: 80 -->
-<item group="cnt072" count="3,5" prob="75"/>
-<item group="cnt072" count="5,8" prob="4"/>
+<item group="cnt072" count="6,7" prob="75"/>
+<item group="cnt072" count="7,9" prob="4"/>
 <item group="cnt072" count="10" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt072" count="2,3" loot_prob_template="nothing33"/>
+<item group="cnt072" count="5" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== MOUNTAIN MAN CHEST ============================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt073"> <item name="herbalAntibiotics" count="2,5" prob="25"/> <item group="lootHerbal" prob="75"/>  </lootgroup>
@@ -3076,12 +3110,12 @@ loot_quality_template=  "leveledLight">
 </lootcontainer>
   
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt150"> <item group="lootBaseZombie" prob="4.5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="15"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="10"/> <item name="Railgun" prob="0.5"/> </lootgroup>
+<lootgroup name="cnt150">  <item name="casinoCoin" count="1332,2674" prob="10"/> <item group="lootBaseZombie" prob="4.5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="5"/> <item name="Railgun" prob="0.5"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="1" 
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "leveledLight">
+loot_quality_template=  "hordeTreasure">
 <!-- Chance of Loot: 80 -->
 <item group="cnt150" count="1" prob="50"/>
 <item group="cnt150" count="2" prob="25"/>
