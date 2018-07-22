@@ -169,13 +169,13 @@ built-in buff variables:
 <buff id="hypo3" mutex="hot,overheated,heat1,heat2" duration="0" stack="discard" buffif="coretemp lequal 1" debuffif="coretemp greater 1" actions="damage(0,8,0,0);debuff(freezing);debuff(hypo2);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_cold" name_key="hypo3" description_key="hypo3Desc" tooltip_key="hypo3Tooltip" cures="coffee,meatStew,leatherDuster,hoodedSweatshirtWhite,denimPants">
 <modify id="0" stat="speedmodifier" mulValue="0.5"/>  <modify id="1" stat="food" amount="-1" rate="5"/> <modify id="2" stat="stamina" amount="-3" rate="1"/>  <modify id="3" stat="health" amount="-1" rate="4"/>  </buff>
 
-<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" actions="debuff(warmByFire);addtip(hotWeatherTip)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" actions="debuff(warmByFire);addtip(hotWeatherTip)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="1" stat="water" amount="-1" rate="10"/>  </buff>
 
-<buff id="heat1" mutex="heat2,cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 110" debuffif="coretemp less 110" actions="debuff(overheated);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat1" description_key="heat1Desc" tooltip_key="heat1Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="heat1" mutex="heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 110" debuffif="coretemp less 110" actions="debuff(overheated);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat1" description_key="heat1Desc" tooltip_key="heat1Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="0" stat="speedmodifier" mulValue="0.7"/>  <modify id="1" stat="water" amount="-1" rate="7"/>  <modify id="2" stat="stamina" amount="-1" rate="1"/>  </buff>
 
-<buff id="heat2" mutex="cold,freezing,hypo1,hypo2,warmByFire" duration="0" stack="discard" buffif="coretemp gequal 120" debuffif="coretemp less 120" actions="damage(0,8,0,0);debuff(overheated);debuff(heat1);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat2" description_key="heat2Desc" tooltip_key="heat2Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="heat2" mutex="cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 120" debuffif="coretemp less 120" actions="damage(0,8,0,0);debuff(overheated);debuff(heat1);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat2" description_key="heat2Desc" tooltip_key="heat2Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="0" stat="speedmodifier" mulValue="0.5"/>  <modify id="1" stat="water" amount="-1" rate="5"/>  <modify id="2" stat="stamina" amount="-3" rate="1"/>  <modify id="3" stat="health" amount="-1" rate="4" />  </buff>
 
 <buff id="wet" notificationClass="WetBuffNotification" duration="0" stack="discard" buffif="waterLevel greater 0" debuffif="waterLevel equals 0" icon="ui_game_symbol_wet" name_key="wet" description_key="wetDesc" tooltip_key="wetTooltip">
@@ -234,7 +234,7 @@ built-in buff variables:
 <buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="extend">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
 
-<buff id="warmByFire" duration="0" stack="discard" actions="debuff(waterCool1);debuff(waterCool2);debuff(waterCool3)" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
+<buff id="warmByFire" duration="0" mutex="overheated,heat1,heat2" stack="discard" actions="debuff(waterCool1);debuff(waterCool2);debuff(waterCool3)" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 <modify id="0" stat="coretemp" amount="0.5" rate="1"/>  </buff>
 
 <buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">  </buff>
@@ -276,7 +276,10 @@ built-in buff variables:
 <modify id="0" stat="stamina" amount="2" rate="1"/> <modify id="1" stat="coretemp" amount="0.05" rate="1"/> </buff>
 
 <buff id="megaCrushBuff" duration="200t" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
-<modify id="0" stat="stamina" amount="10" rate="1"/>  <modify id="1" stat="health" amount="0.1" rate="1"/> <modify id="2" stat="speedmodifier" modifyMaxValue="1.1"/>  <modify id="3" stat="speedmodifier" modifyValue="1.1"/>  </buff>
+<modify id="0" stat="stamina" amount="10" rate="1"/>  <modify id="1" stat="health" amount="0.1" rate="1"/> </buff>
+
+<buff id="megaSpeed" duration="200t" stack="extend" type="staminaup">
+<modify id="2" stat="speedmodifier" modifyMaxValue="1.10"/>  <modify id="3" stat="speedmodifier" modifyValue="0.20"/>  </buff>
 
 <buff id="yuccaJuiceCooling" duration="300t" stack="reset" type="staminaup" debuffif="coretemp lequal 45" actions="debuff(stewWarming);debuff(snowberryWarmingBuff)" icon="ui_game_symbol_tea" name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
 <modify id="0" stat="coretemp" amount="-0.15" rate="1"/>  </buff>
@@ -372,15 +375,15 @@ built-in buff variables:
 <buff id="infection3" mutex="cured" duration="1200t" actions="damage(20,1200t,0,0);increment(@wellness, -1.00, 1200t, 0, 0);debuff(infection);debuff(infection1);debuff(infection2)" onexpired="infection4" type="sickness" icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antibiotics">
 <modify id="0" stat="stamina" amount="-2" rate="1"/>  <modify id="1" stat="health" amount="-1" rate="3"/>  </buff>
 
-<buff id="infection4" actions="kill" icon="ui_game_symbol_infection" name_key="infection4" description_key="infection4Desc" tooltip_key="infection4Tooltip"/>
+<buff id="infection4" mutex="cured" actions="kill" icon="ui_game_symbol_infection" name_key="infection4" description_key="infection4Desc" tooltip_key="infection4Tooltip"/>
 
 <buff id="internalBleeding" duration="100t" stack="reset" actions="damage(0,1,0,1);damage(0,3,0,0)" type="bleeding" icon="ui_game_symbol_critical" name_key="internalBleeding" description_key="internalBleedingDesc" tooltip_key="internalBleedingTooltip" causes="brokenGlass">
 <modify id="0" stat="stamina" amount="-15" rate="1"/>  <modify id="1" stat="health" amount="-15" rate="1"/>  </buff>
 
-<buff id="sprainedLeg" duration="2400t" mutex="brokenLeg" type="speedmodifier" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
+<buff id="sprainedLeg" duration="2400t" mutex="brokenLeg,megaSpeed" type="speedmodifier" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
 <modify id="0" stat="speedmodifier" mulValue="0.80"/>  </buff>
 
-<buff id="brokenLeg" duration="7200t" stack="reset" actions="debuff(firstAid);debuff(splint);debuff(sprainedLeg)" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="brokenLeg" description_key="brokenLegDesc" tooltip_key="brokenLegTooltip" cures="splint">
+<buff id="brokenLeg" duration="7200t" mutex="megaSpeed" stack="reset" actions="debuff(firstAid);debuff(splint);debuff(sprainedLeg)" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="brokenLeg" description_key="brokenLegDesc" tooltip_key="brokenLegTooltip" cures="splint">
 <modify id="0" stat="speedmodifier" mulValue="0.60"/>  </buff>
 
 <!-- Burning Effects -->
@@ -471,4 +474,5 @@ name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="blue
 
 <buff id="testbuff" stack="reset" icon="ui_game_symbol_hammer">
 <modify id="0" stat="wellness" modifyMaxValue="500"/>  </buff>
+
 </buffs>
