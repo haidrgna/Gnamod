@@ -757,24 +757,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelRailing" count="1">                                                                      <ingredient name="steelPlates" count="2"/> </recipe>
 <recipe name="steelCatwalkWedge" count="1">                                                                 <ingredient name="steelPlates" count="2"/> </recipe>
 <!-- Wood Bars and Gates -->
-<recipe name="woodBars" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodBars" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodBars" count="1">                                                                          <ingredient name="woodBarsCTR" count="1"/> </recipe>
 <recipe name="woodBarsCTR" count="1">                                                                       <ingredient name="woodBars" count="1"/> </recipe>
-<recipe name="woodGate" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodGate" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodGate" count="1">                                                                          <ingredient name="woodGateCTR" count="1"/> </recipe>
 <recipe name="woodGateCTR" count="1">                                                                       <ingredient name="woodGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->
-<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> </recipe>
 <recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCTR" count="1"/> </recipe>
 <recipe name="ironBarsCTR" count="1">                                                                       <ingredient name="ironBars" count="1"/> </recipe>
-<recipe name="ironGate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="24"/> <ingredient name="unit_clay" count="12"/> </recipe>
+<recipe name="ironGate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> </recipe>
 <recipe name="ironGate" count="1">                                                                          <ingredient name="ironGateCTR" count="1"/> </recipe>
 <recipe name="ironGateCTR" count="1">                                                                       <ingredient name="ironGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->
-<recipe name="steelBars" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="24"/> </recipe>
+<recipe name="steelBars" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> <ingredient name="unit_lime" count="27"/> </recipe>
 <recipe name="steelBars" count="1">                                                                         <ingredient name="steelBarsCTR" count="1"/> </recipe>
 <recipe name="steelBarsCTR" count="1">                                                                      <ingredient name="steelBars" count="1"/> </recipe>
-<recipe name="steelGate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="24"/> </recipe>
+<recipe name="steelGate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> <ingredient name="unit_lime" count="27"/> </recipe>
 <recipe name="steelGate" count="1">                                                                         <ingredient name="steelGateCTR" count="1"/> </recipe>
 <recipe name="steelGateCTR" count="1">                                                                      <ingredient name="steelGate" count="1"/> </recipe>
 <!-- Iron IBeams -->

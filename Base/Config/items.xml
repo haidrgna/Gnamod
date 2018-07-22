@@ -7142,13 +7142,6 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Material" value="metal"/>
 <property name="HoldType" value="34"/>
 <property name="Stacknumber" value="1"/>
-<!--
-<property class="Action0">
-<property name="Class" value="BailLiquid"/>
-<property name="Delay" value="0.35"/>
-<property name="Sound_start" value="bucketbail_water"/>
-</property>
--->
 <property class="Action0">
 <property name="Class" value="ExchangeItem"/>
 <property name="Delay" value="0.35"/>
@@ -7157,8 +7150,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Focused_blockname_1" value="water"/>
 <property name="Focused_blockname_2" value="waterMoving"/>
 <property name="Focused_blockname_3" value="waterSource8"/>
-<property name="Focused_blockname_3" value="waterMovingBucket"/>
-<property name="Focused_blockname_3" value="waterStaticBucket"/>
+<property name="Focused_blockname_4" value="waterMovingBucket"/>
+<property name="Focused_blockname_5" value="waterStaticBucket"/>
 <property name="Sound_start" value="bucketfill_water"/>
 </property>
 <property class="Action1">
@@ -7967,8 +7960,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="RepairAmount" value="20"/>
 <property name="CraftingIngredientTime" value="0.2"/>
 <property name="MeltTimePerUnit" value="0.1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="3"/>
+<property name="EconomicValue" value="4"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1409" name="scrapBrass">
@@ -7978,10 +7971,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.3" />
+<property name="MeltTimePerUnit" value="0.3"/>
+<property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
-<property name="Group" value="Resources,Basics"/>
 </item>
 
 <item id="1410" name="scrapLead">
@@ -7991,10 +7984,10 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.3" />
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
+<property name="MeltTimePerUnit" value="0.3"/>
 <property name="Group" value="Resources,Basics"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1411" name="scrapPlastics">
@@ -8021,8 +8014,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="DropScale" value="8"/>
 <property name="Group" value="Resources,Chemicals"/>
 <property name="CraftingIngredientTime" value="1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1413" name="potassiumNitratePowder">
@@ -8033,8 +8026,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="PickupJournalEntry" value="farmingTip"/>
 <property name="Group" value="Resources,Chemicals"/>
 <property name="CraftingIngredientTime" value="2"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="5"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="10"/>
 </item>
 
 <item id="1414" name="animalHide">

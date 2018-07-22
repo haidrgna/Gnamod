@@ -3250,7 +3250,12 @@ NOT the TextureNumber.
 <property name="DescriptionKey" value="barsAndGratesDesc"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelGateCTR"/>
+<property name="Item" value="steelPlates"/>
+<property name="ItemCount" value="4"/>
+<property name="UpgradeHitCount" value="8"/>
 </property>
+<property name="EconomicValue" value="15"/>
+<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="288" name="ironGate">
@@ -6087,10 +6092,10 @@ NOT the TextureNumber.
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelBarsCTR"/>
 <property name="Item" value="steelPlates"/>
-<property name="ItemCount" value="10"/>
+<property name="ItemCount" value="4"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
-<property name="EconomicValue" value="50"/>
+<property name="EconomicValue" value="15"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -11759,9 +11764,6 @@ NOT the TextureNumber.
 <property name="Place" value="TowardsPlacerInverted"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelBars"/>
-<property name="Item" value="steelPlates"/>
-<property name="ItemCount" value="10"/>
-<property name="UpgradeHitCount" value="8"/>
 </property>
 </block>
 
@@ -11954,7 +11956,7 @@ NOT the TextureNumber.
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="Collide" value="movement,melee,rocket"/>
 <property name="DescriptionKey" value="barsAndGratesDesc"/>
-<property name="EconomicValue" value="450"/>
+<property name="EconomicValue" value="60"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -16971,7 +16973,7 @@ NOT the TextureNumber.
 <property name="ItemCount" value="4"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
-<property name="EconomicValue" value="5"/>
+<property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
 
@@ -17102,6 +17104,8 @@ NOT the TextureNumber.
 <property name="ItemCount" value="4"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="1645" name="corrugatedMetalCNRRoundTop">
@@ -17125,6 +17129,8 @@ NOT the TextureNumber.
 <property name="Texture" value="312"/>
 <property name="Collide" value="movement,melee,rocket"/>
 <property name="DescriptionKey" value="barsAndGratesDesc"/>
+<property name="EconomicValue" value="15"/>
+<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="1648" name="corrugatedMetalCNRRound">
