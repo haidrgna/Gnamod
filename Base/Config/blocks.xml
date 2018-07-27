@@ -1809,7 +1809,7 @@ NOT the TextureNumber.
 <property name="UpgradeHitCount" value="4"/>
 </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="2"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
 <drop event="Fall" name="cobblestones" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="2"/>
@@ -1825,7 +1825,7 @@ NOT the TextureNumber.
 <property class="RepairItems"> <property name="cobblestones" value="9"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="4"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
 <drop event="Fall" name="cobblestones" count="6" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="3"/>
@@ -1840,7 +1840,7 @@ NOT the TextureNumber.
 <property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="1"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
 <drop event="Fall" name="cobblestones" count="2" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="1"/>
@@ -1860,7 +1860,7 @@ NOT the TextureNumber.
 <property name="UpgradeHitCount" value="4"/>
 </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="7"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
 <drop event="Fall" name="cobblestones" count="10" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <!--<property name="LightOpacity" value="0"/>
@@ -1874,7 +1874,7 @@ NOT the TextureNumber.
 <property class="RepairItems"> <property name="cobblestones" value="8"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="12"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
+<drop event="Destroy" name="rockSmall" count="30"/>
 <drop event="Fall" name="cobblestones" count="15" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
@@ -1887,7 +1887,7 @@ NOT the TextureNumber.
 <property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="cobblestones" prob="0.25" count="3"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
 <drop event="Fall" name="cobblestones" count="5" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
@@ -1907,8 +1907,8 @@ NOT the TextureNumber.
 <property name="UpgradeHitCount" value="4"/>
 </property>
 <drop event="Harvest" name="bricks" prob="0.25" count="4"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
-<drop event="Fall" name="rockSmall" count="12" prob="0.25" stick_chance="0"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
+<drop event="Fall" name="rockSmall" count="60" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="4"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -1923,8 +1923,8 @@ NOT the TextureNumber.
 <property class="RepairItems"> <property name="mortarMix" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
 <drop event="Harvest" name="bricks" prob="0.25" count="6"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
-<drop event="Fall" name="rockSmall" count="18" prob="0.25" stick_chance="0"/>
+<drop event="Destroy" name="rockSmall" count="30"/>
+<drop event="Fall" name="rockSmall" count="90" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -1937,9 +1937,9 @@ NOT the TextureNumber.
 <property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="mortarMix" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
-<drop event="Harvest" name="bricks" prob="0.25" count="6"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
-<drop event="Fall" name="rockSmall" count="18" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="bricks" prob="0.25" count="2"/>
+<drop event="Destroy" name="rockSmall" count="10"/>
+<drop event="Fall" name="rockSmall" count="30" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <property name="EconomicValue" value="2"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -2005,9 +2005,9 @@ NOT the TextureNumber.
 <property name="CustomUpgradeSound" value="place_block_concrete"/>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="14"/>
 <drop event="Destroy" name="scrapIron" count="4"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="6"/>
-<drop event="Destroy" name="rockSmall" count="2"/>
-<drop event="Fall" name="rockSmall" count="8" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="30"/>
+<drop event="Destroy" name="rockSmall" count="10"/>
+<drop event="Fall" name="rockSmall" count="40" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <!--<property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
@@ -2021,9 +2021,9 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="21"/>
 <drop event="Destroy" name="scrapIron" count="6"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="9"/>
-<drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="rockSmall" count="12" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="45"/>
+<drop event="Destroy" name="rockSmall" count="15"/>
+<drop event="Fall" name="rockSmall" count="60" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
 
@@ -2036,9 +2036,9 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> </property>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="7"/>
 <drop event="Destroy" name="scrapIron" count="2"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="3"/>
-<drop event="Destroy" name="rockSmall" count="1"/>
-<drop event="Fall" name="rockSmall" count="4" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="15"/>
+<drop event="Destroy" name="rockSmall" count="5"/>
+<drop event="Fall" name="rockSmall" count="20" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
 
@@ -2058,9 +2058,9 @@ NOT the TextureNumber.
 <property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="14"/>
 <drop event="Destroy" name="scrapIron" count="4"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="12"/>
-<drop event="Destroy" name="rockSmall" count="4"/>
-<drop event="Fall" name="rockSmall" count="16" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="60"/>
+<drop event="Destroy" name="rockSmall" count="20"/>
+<drop event="Fall" name="rockSmall" count="80" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 <!--<property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
@@ -2074,9 +2074,9 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="21"/>
 <drop event="Destroy" name="scrapIron" count="6"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="18"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
-<drop event="Fall" name="rockSmall" count="24" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="90"/>
+<drop event="Destroy" name="rockSmall" count="30"/>
+<drop event="Fall" name="rockSmall" count="120" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
 
@@ -2089,9 +2089,9 @@ NOT the TextureNumber.
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="scrapIron" prob="0.25" count="7"/>
 <drop event="Destroy" name="scrapIron" count="2"/>
-<drop event="Harvest" name="rockSmall" prob="0.25" count="6"/>
-<drop event="Destroy" name="rockSmall" count="2"/>
-<drop event="Fall" name="rockSmall" count="8" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" prob="0.25" count="30"/>
+<drop event="Destroy" name="rockSmall" count="10"/>
+<drop event="Fall" name="rockSmall" count="40" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
 </block>
 
@@ -3816,8 +3816,10 @@ NOT the TextureNumber.
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="1"/>
 <property class="RepairItems"> <property name="wood" value="10"/> </property>
-<drop event="Destroy" name="wood" count="1,5"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="332" name="cntChest02">
@@ -3882,8 +3884,10 @@ NOT the TextureNumber.
 <property name="FuelValue" value="150"/>
 <property name="DescriptionKey" value="furnitureGroupDesc"/>
 <property class="RepairItems"> <property name="wood" value="20"/> </property>
-<drop event="Destroy" name="wood" count="1,3"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="6"/>
 </block>
 
@@ -3913,8 +3917,10 @@ NOT the TextureNumber.
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="1"/>
 <property class="RepairItems"> <property name="wood" value="10"/> </property>
-<drop event="Destroy" name="wood" count="1,3"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<drop event="Harvest" name="wood" prob="0.25" count="4"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="2"/>
+<drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="340" name="cntTrashPile01">
@@ -4247,8 +4253,10 @@ NOT the TextureNumber.
 <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="71"/>
-<drop event="Destroy" name="wood" count="1,3"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="373" name="oilBarrel"> <!-- gasBarrel fuelBarrel -->
@@ -4823,7 +4831,7 @@ NOT the TextureNumber.
 <property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="12"/>
-<drop event="Harvest" name="cloth" count="2"/>
+<drop event="Harvest" name="cloth" count="5" prob="0.5"/>
 <drop event="Destroy" name="cloth" count="1"/>
 </block>
 
@@ -5766,9 +5774,12 @@ NOT the TextureNumber.
 <property name="LootList" value="47"/>
 <property name="DescriptionKey" value="furnitureGroupDesc"/>
 <property class="RepairItems"> <property name="wood" value="15"/> </property>
-<drop event="Destroy" name="wood" count="2,6" prob="1"/>
 <property name="EconomicValue" value="23"/>
 <property name="EconomicBundleSize" value="20"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="520" name="cntDesk02">
@@ -6580,8 +6591,8 @@ NOT the TextureNumber.
 <property name="IsTerrainDecoration" value="true"/>
 <property name="BigDecorationRadius" value="2"/>
 <property name="IsPlant" value="true"/>
-<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools"/>
-<drop event="Destroy" count="0"/>
+<drop event="Harvest" name="wood" count="15,40" tool_category="harvestingTools"/>
+<drop event="Destroy" name="wood" count="10"/>
 </block>
 
 <block id="586" name="treeWinterEverGreen">
@@ -6623,8 +6634,8 @@ NOT the TextureNumber.
 <property name="BigDecorationRadius" value="2"/>
 <property name="IsPlant" value="true"/> <!-- it shall never be placed on rocks -->
 <property name="LootList" value="19"/>
-<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools"/>
-<drop event="Destroy" count="0"/>
+<drop event="Harvest" name="wood" count="15,40" tool_category="harvestingTools"/>
+<drop event="Destroy" name="wood" count="10"/>
 </block>
 
 <block id="589" name="treeWinterPine02">
@@ -9243,11 +9254,13 @@ NOT the TextureNumber.
 <property name="FuelValue" value="150"/>
 <property name="DescriptionKey" value="furnitureGroupDesc"/>
 <property class="RepairItems"> <property name="wood" value="10"/> <property name="cobblestones" value="5"/> </property>
-<drop event="Destroy" name="wood" count="1,3"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 <property name="EconomicValue" value="17"/>
 <property name="EconomicBundleSize" value="20"/>
 <property name="ImposterExchange" value="imposterBlock" param1="108"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="838" name="cntCabinet">
@@ -12494,6 +12507,10 @@ NOT the TextureNumber.
 <block id="1183" name="cntLootCrateShamway">
 <property name="Extends" value="cntGarageStorage"/>
 <property name="LootList" value="25"/>
+<drop event="Harvest" name="wood" prob="0.25" count="4"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="2"/>
+<drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="1184" name="scrapIronPoleSupport">
@@ -13210,7 +13227,10 @@ NOT the TextureNumber.
 <property name="Texture" value="572"/>
 <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
 <property class="RepairItems"> <property name="wood" value="20"/> </property>
-<drop event="Destroy" count="0"/>
+<drop event="Harvest" name="wood" prob="0.25" count="6"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="2"/>
+<drop event="Fall" name="wood" count="8" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="1258" name="cobblestoneHalf">
@@ -13237,8 +13257,10 @@ NOT the TextureNumber.
 <property name="Texture" value="25,25,55,55,55,55"/> <!-- 55 wood -->
 <property name="Place" value="TowardsPlacer90"/>
 <property name="LootList" value="54"/>
-<drop event="Destroy" name="wood" count="1,3"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<drop event="Harvest" name="wood" prob="0.25" count="8"/>
+<drop event="Harvest" name="nail" prob="0.25" count="3"/>
+<drop event="Destroy" name="wood" count="4"/>
+<drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
 <block id="1261" name="cntBeerCooler">
