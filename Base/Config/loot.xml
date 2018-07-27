@@ -303,16 +303,6 @@
 <block name="cntTrashPile09"                    prob="0.04"/>
 </placeholder>
 
-<!-- Random stone/resource -->
-<placeholder name="lootStoneHelper">
-<block name="stone"                             prob="0.80"/>
-<block name="ironOre"                           prob="0.12"/>
-<block name="coalOre"                           prob="0.025"/>
-<block name="potassiumNitrate"                  prob="0.025"/>
-<block name="leadOre"                           prob="0.025"/>
-<block name="silverOre"                         prob="0.005"/>
-</placeholder>
-
 <placeholder name="lootToolsAndForgeHelper">
 <block name="cntShippingCrateWorkingStiffs"     prob="0.25"/>
 <block name="cntGarageStorage"                  prob="0.20"/>
@@ -402,6 +392,16 @@
 <block name="cntTrashPile07"                    prob="0.10"/>
 <block name="cntTrashPile08"                    prob="0.10"/>
 <block name="cntTrashPile09"                    prob="0.10"/>
+</placeholder>
+
+<placeholder name="boulderHelper">
+<block name="rockResource"                      prob="0.30"/>
+<block name="rockResourceBroke1"                prob="0.10"/>
+<block name="rockResourceBroke2"                prob="0.10"/>
+<block name="rockResource02"                    prob="0.30"/>
+<block name="rockResource02Broke1"              prob="0.07"/>
+<block name="rockResource02Broke2"              prob="0.07"/>
+<block name="rockResource02Broke3"              prob="0.06"/>
 </placeholder>
 
 <!-- GNAMOD STARTER KITS -->
@@ -1005,9 +1005,9 @@
 <lootgroup name="matsBasic">                          <item name="clayLump" count="50,250" prob="19"/> <item name="rockSmall" count="50,250" prob="19"/> <item name="wood" count="50,250" prob="19"/>  <item name="crushedSand" count="50,250" prob="19"/> <item name="dirtFragment" count="50,250" prob="19"/>
                                                       <item name="fertilizer" count="10,100" prob="5"/>                                  </lootgroup>
 <!-- Ores Base Group -->
-<lootgroup name="matsOres">                           <item name="ironFragment" count="25,100" prob="40"/> <item name="coal" count="25,100" prob="20"/>  <item name="potassiumNitratePowder" count="25,100" prob="20"/> <item name="oilShale" count="25,100" prob="20"/>            </lootgroup>
+<lootgroup name="matsOres">                           <item name="ironOre" count="25,100" prob="40"/> <item name="coal" count="25,100" prob="20"/>  <item name="nitratePowder" count="25,100" prob="20"/> <item name="oilShale" count="25,100" prob="20"/>            </lootgroup>
 <!-- Rare Ores Base Group -->
-<lootgroup name="matsRareOres">                       <item name="silverNugget" count="1,4" prob="60"/> <item name="goldNugget" count="1,3" prob="30"/>  <item name="rawDiamond" count="1,2" prob="10"/>                     </lootgroup>
+<lootgroup name="matsRareOres">                       <item name="silverOre" count="1,4" prob="60"/> <item name="goldOre" count="1,3" prob="30"/>  <item name="diamondOre" count="1,2" prob="10"/>                     </lootgroup>
 <!-- Scrap Materials Base Group -->
 <lootgroup name="matsScrap">                          <item name="scrapIron" count="50,250" prob="30"/> <item name="brokenGlass" count="50,250" prob="30"/> <item name="scrapPlastics" count="10,50" prob="15"/> <item name="scrapBrass" count="50,250" prob="10"/> <item name="scrapLead" count="50,250" prob="15"/>      </lootgroup>
 <!-- Construction Materials Base Group -->
@@ -2114,7 +2114,7 @@ loot_quality_template=  "leveledNormal">
 <item group="itemsTrash" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== KITCHEN SINKS (OLD HOUSES) ==================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt033"> <item group="itemsTrash" prob="25"/>  <item name="shortMetalPipe" prob="10"/> <item group="toolsHousehold" prob="10"/>  <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="10"/> <item name="coffeeBeans" count="1,4" prob="15"/>  <item name="potassiumNitratePowder" count="2,6" prob="10"/> <item name="scrapLead" count="1,10" prob="15"/>  </lootgroup>
+<lootgroup name="cnt033"> <item group="itemsTrash" prob="25"/>  <item name="shortMetalPipe" prob="10"/> <item group="toolsHousehold" prob="10"/>  <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="10"/> <item name="coffeeBeans" count="1,4" prob="15"/>  <item name="nitratePowder" count="2,6" prob="10"/> <item name="scrapLead" count="1,10" prob="15"/>  </lootgroup>
 <lootcontainer id="33" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_cupboard"
@@ -2128,7 +2128,7 @@ loot_quality_template=  "leveledNormal">
 <item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== KITCHEN SINKS (EXPENSIVE HOUSES) ============================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt034"> <item name="shortMetalPipe" prob="10"/>  <item group="toolsHousehold" prob="15"/>  <item group="itemsCookware" prob="7.5"/>  <item group="itemsCommon" prob="25"/> <item name="coffeeBeans" count="1,9" prob="15"/>  <item name="potassiumNitratePowder" count="5,10" prob="12.5"/> <item name="scrapLead" count="5,15" prob="15"/> </lootgroup>
+<lootgroup name="cnt034"> <item name="shortMetalPipe" prob="10"/>  <item group="toolsHousehold" prob="15"/>  <item group="itemsCookware" prob="7.5"/>  <item group="itemsCommon" prob="25"/> <item name="coffeeBeans" count="1,9" prob="15"/>  <item name="nitratePowder" count="5,10" prob="12.5"/> <item name="scrapLead" count="5,15" prob="15"/> </lootgroup>
 <lootcontainer id="34" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_cupboard"
@@ -2495,7 +2495,7 @@ loot_quality_template=  "leveledNormal">
 <item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== MORTICIAN DRAWER ============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt060"> <item name="rottingFlesh" count="1,2" prob="25"/> <item name="femur" count="1,2" prob="20"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="goldNugget" prob="10"/> <item group="itemsTrash" prob="20"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  </lootgroup>
+<lootgroup name="cnt060"> <item name="rottingFlesh" count="1,2" prob="25"/> <item name="femur" count="1,2" prob="20"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="goldOre" prob="10"/> <item group="itemsTrash" prob="20"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  </lootgroup>
 <lootcontainer id="60" count="1" size="7,7" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_fridge"
@@ -2509,7 +2509,7 @@ loot_quality_template=  "leveledNormal">
 <item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== FURNACE DRAWER ================================================================================================================================================================================================================================================================================================================================ -->
-<lootgroup name="cnt061"> <item name="coal" count="5,15" prob="35"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="femur" count="1,2" prob="30"/>  <item name="goldNugget" prob="10"/> <item group="itemsCommon" prob="15"/>  </lootgroup>
+<lootgroup name="cnt061"> <item name="coal" count="5,15" prob="35"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="femur" count="1,2" prob="30"/>  <item name="goldOre" prob="10"/> <item group="itemsCommon" prob="15"/>  </lootgroup>
 <lootcontainer id="61" count="1" size="7,7" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_fridge"
@@ -2537,7 +2537,7 @@ loot_quality_template=  "leveledNormal">
 <item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== COFFIN (CORPSE) =============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt063"> <item name="rottingFlesh" count="1,2" prob="30"/> <item name="femur" count="1,2" prob="25"/>  <item name="fertilizer" count="5,30" prob="5"/>  <item name="goldNugget" prob="5"/>  <item group="itemsTrash" prob="15"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  <item group="lootSurvivor" prob="5"/>  </lootgroup>
+<lootgroup name="cnt063"> <item name="rottingFlesh" count="1,2" prob="30"/> <item name="femur" count="1,2" prob="25"/>  <item name="fertilizer" count="5,30" prob="5"/>  <item name="goldOre" prob="5"/>  <item group="itemsTrash" prob="15"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  <item group="lootSurvivor" prob="5"/>  </lootgroup>
 <lootcontainer id="63" count="1" size="5,5" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_corpse"
@@ -2755,7 +2755,7 @@ loot_quality_template=  "leveledNormal">
 <item group="matsConstruction" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED CHEMISTRY STATION ===================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt084"> <item group="itemsTrash" prob="10"/>  <item name="wood" count="10,100" prob="10"/>  <item name="paint" count="25,75" prob="5"/> <item name="glue" count="1,5" prob="5"/>  <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="15"/> <item name="coal" count="10,50" prob="10"/> <item name="oilShale" count="10,50" prob="5"/>  <item name="beaker" prob="5"/>  <item group="medicalAdvanced" prob="5"/>  <item name="potassiumNitratePowder" count="10,50" prob="10"/>  </lootgroup>
+<lootgroup name="cnt084"> <item group="itemsTrash" prob="10"/>  <item name="wood" count="10,100" prob="10"/>  <item name="paint" count="25,75" prob="5"/> <item name="glue" count="1,5" prob="5"/>  <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="15"/> <item name="coal" count="10,50" prob="10"/> <item name="oilShale" count="10,50" prob="5"/>  <item name="beaker" prob="5"/>  <item group="medicalAdvanced" prob="5"/>  <item name="nitratePowder" count="10,50" prob="10"/>  </lootgroup>
 <lootcontainer id="84" count="1" size="3,2" open_time="3" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/chem_station_open"

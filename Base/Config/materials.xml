@@ -930,6 +930,28 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <property name="Experience" value="3.0"/>
 </material>
 
+<material id="MstoneDeposit">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="120"/>
+<property name="Mass" type="int" value="10"/>
+<property name="MaxDamage" value="2000"/>
+<property name="Experience" value="9.0"/>
+</material>
+
+<material id="MmetalDeposit">
+<property name="damage_category" value="metal"/>
+<property name="surface_category" value="metal"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="120"/>
+<property name="Mass" type="int" value="10"/>
+<property name="MaxDamage" value="2000"/>
+<property name="Experience" value="9.0"/>
+</material>
+
 <material id="lime">
 <property name="damage_category" value="stone" />
 <property name="surface_category" value="stone" />
@@ -941,7 +963,20 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <property name="MaxDamage" value="500" />
 <property name="Experience" value="3.0"/>
 </material>  
-  
+
+<material id="Masphalt">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="forge_category" value="stone"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="120"/>
+<property name="Mass" type="int" value="7"/>
+<property name="explosionresistance" value="1.1"/>
+<property name="MaxDamage" value="2000"/>
+<property name="Experience" value="6"/>
+</material>
+
 <material id="Mbedrock">
 <property name="damage_category" value="stone" />
 <property name="surface_category" value="stone" />
@@ -954,13 +989,24 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 </material>
 
 <material id="coal">
-<property name="damage_category" value="stone" />
-<property name="surface_category" value="stone" />
-<property name="Hardness" type="float" value="1" />
-<property name="stepsound" value="stone" />
-<property name="stability_glue" value="20" />
-<property name="Mass" type="int" value="10" />
-<property name="MaxDamage" value="500" />
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="20"/>
+<property name="Mass" type="int" value="12"/>
+<property name="MaxDamage" value="500"/>
+<property name="Experience" value="6"/>
+</material>
+
+<material id="nitrate">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="20"/>
+<property name="Mass" type="int" value="12"/>
+<property name="MaxDamage" value="500"/>
 <property name="Experience" value="6"/>
 </material>
 
@@ -1240,16 +1286,30 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 </material>
 
 <material id="snow">
-<property name="damage_category" value="earth" />
-<property name="surface_category" value="earth" />
-<property name="particle_category" value="snow" />
-<property name="particle_destroy_category" value="snow" />
-<property name="Hardness" type="float" value="1" />
-<property name="stepsound" value="snow" />
-<property name="fertile_level" value="1" />
-<property name="stability_glue" value="15" />
-<property name="Mass" type="int" value="5" />
-<property name="MaxDamage" value="100" />
+<property name="damage_category" value="earth"/>
+<property name="surface_category" value="earth"/>
+<property name="particle_category" value="snow"/>
+<property name="particle_destroy_category" value="snow"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="snow"/>
+<property name="fertile_level" value="1"/>
+<property name="stability_glue" value="15"/>
+<property name="Mass" type="int" value="5"/>
+<property name="MaxDamage" value="100"/>
+<property name="Experience" value="3.0"/>
+</material>
+
+<material id="Mice">
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="particle_category" value="snow"/>
+<property name="particle_destroy_category" value="snow"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="stepsound" value="snow"/>
+<property name="fertile_level" value="0"/>
+<property name="stability_glue" value="15"/>
+<property name="Mass" type="int" value="5"/>
+<property name="MaxDamage" value="250"/>
 <property name="Experience" value="3.0"/>
 </material>
 
@@ -1329,15 +1389,15 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 </material>
 
 <material id="Mboulder">
-<property name="damage_category" value="stone" />
-<property name="surface_category" value="stone" />
-<property name="particle_destroy_category" value="boulder" />
-<property name="Hardness" type="float" value="1" />
-<property name="explosionresistance" value="3" />
-<property name="stepsound" value="stone" />
-<property name="stability_glue" value="1" />
-<property name="Mass" type="int" value="1" />
-<property name="MaxDamage" value="500" />
+<property name="damage_category" value="stone"/>
+<property name="surface_category" value="stone"/>
+<property name="particle_destroy_category" value="boulder"/>
+<property name="Hardness" type="float" value="1"/>
+<property name="explosionresistance" value="3"/>
+<property name="stepsound" value="stone"/>
+<property name="stability_glue" value="1"/>
+<property name="Mass" type="int" value="1"/>
+<property name="MaxDamage" value="500"/>
 <property name="Experience" value="3.0"/>
 </material>
 

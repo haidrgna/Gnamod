@@ -113,9 +113,9 @@
 <property name="Mesh" value="terrain"/>
 <property name="Texture" value="300"/>
 <property name="DropScale" value="2"/>
-<drop event="Harvest" name="potassiumNitratePowder" count="20" tool_category="harvestingTools"/>
+<drop event="Harvest" name="nitratePowder" count="20" tool_category="harvestingTools"/>
 <drop event="Destroy" count="0"/>
-<drop event="Fall" name="potassiumNitratePowder" count="20" prob="0.5" stick_chance="0"/>
+<drop event="Fall" name="nitratePowder" count="20" prob="0.5" stick_chance="0"/>
 <property name="CanMobsSpawnOn" value="true"/>
 </block>
 
@@ -867,7 +867,7 @@ NOT the TextureNumber.
 
 <block id="72" name="gravelPlusPotassium">
 <property name="Extends" value="gravel"/>
-<drop event="Destroy" name="potassiumNitratePowder" count="1"/>
+<drop event="Destroy" name="nitratePowder" count="1"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Texture" value="11,11,11,11,11,11"/>
 </block>
@@ -6880,7 +6880,7 @@ NOT the TextureNumber.
 <drop event="Harvest" name="rockSmall" count="33" tool_category="harvestingTools"/>
 <drop event="Harvest" name="ironFragment" count="11" tool_category="harvestingTools"/>
 <drop event="Harvest" name="coal" count="10" prob="0.33" tool_category="harvestingTools"/>
-<drop event="Harvest" name="potassiumNitratePowder" count="10" prob="0.33" tool_category="harvestingTools"/>
+<drop event="Harvest" name="nitratePowder" count="10" prob="0.33" tool_category="harvestingTools"/>
 <drop event="Harvest" name="scrapLead" count="10" prob="0.33" tool_category="harvestingTools"/>
 <drop event="Destroy" count="0"/>
 <property name="DowngradeBlock" value="rockResourceBroke1"/>
@@ -14192,9 +14192,9 @@ NOT the TextureNumber.
 <property name="ImposterDontBlock" value="true"/>
 <property name="Collide" value="movement,melee"/>
 <property name="Model" value="OutdoorDecor/stalactite01" param1="main_mesh"/>
-<drop event="Harvest" name="potassiumNitratePowder" count="10"/>
+<drop event="Harvest" name="nitratePowder" count="10"/>
 <drop event="Destroy" count="0"/>
-<drop event="Fall" name="potassiumNitratePowder" count="10" prob="0.5" stick_chance="0"/>
+<drop event="Fall" name="nitratePowder" count="10" prob="0.5" stick_chance="0"/>
 </block>
 
 <block id="1385" name="stalactite02">

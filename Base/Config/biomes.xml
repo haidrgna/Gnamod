@@ -74,8 +74,8 @@
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -123,8 +123,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0015"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0015"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
@@ -182,8 +181,8 @@
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -226,8 +225,7 @@
 <decoration type="block" blockname="rock05"                               prob="0.004"/>
 <decoration type="block" blockname="rock06"                               prob="0.004"/>
 <decoration type="block" blockname="rock07"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0005"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0005"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
@@ -324,8 +322,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -372,8 +370,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.006"/>
 <decoration type="block" blockname="rock04"                               prob="0.006"/>
-<decoration type="block" blockname="rockResource"                         prob="0.01"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.01"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.02"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.005"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.00007"/>
@@ -405,8 +402,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -453,8 +450,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.000025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.000025"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.000050"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
@@ -543,8 +539,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -590,8 +586,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.00025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.00025"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
@@ -715,8 +710,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -760,8 +755,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.003"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.003"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.006"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00015"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0015"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
@@ -804,8 +798,8 @@
 <layer depth="2"  blockname="forestGround">   <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -835,8 +829,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.00025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.00025"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
@@ -845,8 +838,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -890,8 +883,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0015"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0015"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0005"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
@@ -984,8 +976,8 @@
 <layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1030,8 +1022,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.008"/>
 <decoration type="block" blockname="rock02"                               prob="0.008"/>
 <decoration type="block" blockname="rock04"                               prob="0.008"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0075"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.015"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.005"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.00035"/>
@@ -1063,8 +1054,8 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1096,8 +1087,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.003"/>
 <decoration type="block" blockname="rock04"                               prob="0.003"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0025"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0025"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.005"/>
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
@@ -1106,8 +1096,8 @@
 <layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1149,8 +1139,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.010"/>
 <decoration type="prefab" name="house_new_02"                             prob="0.010"/>
@@ -1279,8 +1268,8 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1322,8 +1311,8 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1356,8 +1345,8 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1394,8 +1383,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.003"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0005"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0005"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
 <decoration type="prefab" name="desert_arch"                              prob="0.0005"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00001"/>
 <decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00001"/>
@@ -1495,8 +1483,8 @@
 <layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1540,8 +1528,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
@@ -1656,8 +1643,8 @@
 <layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1689,8 +1676,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -1820,8 +1806,8 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1855,8 +1841,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -1883,8 +1868,8 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.1"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -1916,8 +1901,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -2006,8 +1990,8 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2058,8 +2042,8 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2097,8 +2081,8 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2143,8 +2127,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.002"/>
 <decoration type="block" blockname="rock02"                               prob="0.002"/>
 <decoration type="block" blockname="rock04"                               prob="0.002"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0003"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.0004"/>
@@ -2244,8 +2227,8 @@
 <layer depth="2"  blockname="snow">         <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">        <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">        <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">        <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2298,8 +2281,8 @@
 <layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2387,8 +2370,8 @@
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="1" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2415,8 +2398,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.001"/>
 <decoration type="block" blockname="rock02"                               prob="0.001"/>
 <decoration type="block" blockname="rock04"                               prob="0.001"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -2455,8 +2437,8 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="potassiumNitrate"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2480,8 +2462,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.0003"/>
 <decoration type="block" blockname="rock02"                               prob="0.0003"/>
 <decoration type="block" blockname="rock04"                               prob="0.0003"/>
-<decoration type="block" blockname="rockResource"                         prob="0.0003"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.0003"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0006"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.00008"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.00008"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.00008"/>
@@ -2595,8 +2576,8 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="radiated"          cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
+<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -2628,8 +2609,7 @@
 <decoration type="block" blockname="rock01"                               prob="0.004"/>
 <decoration type="block" blockname="rock02"                               prob="0.004"/>
 <decoration type="block" blockname="rock04"                               prob="0.004"/>
-<decoration type="block" blockname="rockResource"                         prob="0.001"/>
-<decoration type="block" blockname="rockResource02"                       prob="0.001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0007"/>
 <decoration type="prefab" name="mp_waste_pile_01"                         prob="0.005"/>
@@ -2685,8 +2665,7 @@
 <decoration type="block" blockname="stalagmite02" prob="0.02" rotatemax="7"/>
 <decoration type="block" blockname="stalagmite03" prob="0.02" rotatemax="7"/>
 <decoration type="block" blockname="stalagmite04" prob="0.02" rotatemax="7"/>
-<decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
-<decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
+<decoration type="block" blockname="boulderHelper" prob ="0.0010" rotatemax="3"/>
 <decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
 <decoration type="block" blockname="campfire" prob=".00004" rotatemax="3"/>
 <decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>

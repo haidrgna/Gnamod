@@ -7432,7 +7432,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Group" value="Decor/Miscellaneous"/>
 </item>
 
-<item id="1367" name="silverNugget">
+<item id="1367" name="silverOre">
+<property name="CustomIcon" value="silverNugget"/>
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="organic"/>
@@ -7444,15 +7445,17 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="DescriptionKey" value="rareOresGroupDesc"/>
 </item>
 
-<item id="1368" name="goldNugget">
-<property name="Extends" value="silverNugget"/>
+<item id="1368" name="goldOre">
+<property name="Extends" value="silverOre"/>
+<property name="CustomIcon" value="goldNugget"/>
 <property name="EconomicValue" value="700"/>
 <property name="CraftingIngredientTime" value="15"/>
 <property name="DescriptionKey" value="rareOresGroupDesc"/>
 </item>
 
-<item id="1369" name="rawDiamond">
-<property name="Extends" value="silverNugget"/>
+<item id="1369" name="diamondOre">
+<property name="Extends" value="silverOre"/>
+<property name="CustomIcon" value="rawDiamond"/>
 <property name="EconomicValue" value="1500"/>
 <property name="CraftingIngredientTime" value="60"/>
 <property name="DescriptionKey" value="rareOresGroupDesc"/>
@@ -7740,11 +7743,12 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="10"/>
 </item>
 
-<item id="1387" name="ironFragment">
+<item id="1387" name="ironOre">
+<property name="CustomIcon" value="ironFragment"/>
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="metal"/>
-<property name="Weight" value="6"/>
+<property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
 <property name="DropScale" value="3"/>
@@ -7754,11 +7758,11 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="1"/>
 </item>
 
-<item id="1388" name="leadFragment">
+<item id="1388" name="leadOre">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="lead"/>
-<property name="Weight" value="6"/>
+<property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
 <property name="DropScale" value="3"/>
@@ -7768,11 +7772,12 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="2"/>
 </item>
 
-<item id="1389" name="nitrateFragment">
+<item id="1389" name="nitrateOre">
+<property name="CustomIcon" value="potassiumNitrate"/>
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="organic"/>
-<property name="Weight" value="6"/>
+<property name="Material" value="nitrate"/>
+<property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
 <property name="DropScale" value="3"/>
@@ -7782,11 +7787,11 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="2"/>
 </item>
 
-<item id="1390" name="coalFragment">
+<item id="1390" name="coalOre">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="organic"/>
-<property name="Weight" value="6"/>
+<property name="Material" value="coal"/>
+<property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
 <property name="DropScale" value="3"/>
@@ -8008,6 +8013,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
 <property name="Material" value="coal"/>
+<property name="Weight" value="1"/>
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="FuelValue" value="20"/>
@@ -8018,9 +8024,11 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="EconomicBundleSize" value="10"/>
 </item>
 
-<item id="1413" name="potassiumNitratePowder">
+<item id="1413" name="nitratePowder">
+<property name="CustomIcon" value="potassiumNitratePowder"/>
 <property name="Meshfile" value="Items/Food/cornmealPrefab"/>
-<property name="Material" value="coal"/>
+<property name="Material" value="nitrate"/>
+<property name="Weight" value="1"/>
 <property name="HoldType" value="21"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="PickupJournalEntry" value="farmingTip"/>
