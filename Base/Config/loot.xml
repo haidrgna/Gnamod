@@ -399,9 +399,44 @@
 <block name="rockResourceBroke1"                prob="0.10"/>
 <block name="rockResourceBroke2"                prob="0.10"/>
 <block name="rockResource02"                    prob="0.30"/>
-<block name="rockResource02Broke1"              prob="0.07"/>
-<block name="rockResource02Broke2"              prob="0.07"/>
-<block name="rockResource02Broke3"              prob="0.06"/>
+<block name="rockResource02Broke1"              prob="0.10"/>
+<block name="rockResource02Broke2"              prob="0.10"/>
+</placeholder>
+
+<placeholder name="rockHelper">
+<block name="rock01"                            prob="0.08"/>
+<block name="rock02"                            prob="0.08"/>
+<block name="rock03"                            prob="0.08"/>
+<block name="rock04"                            prob="0.08"/>
+<block name="rock05"                            prob="0.09"/>
+<block name="rock06"                            prob="0.09"/>
+<block name="rock07"                            prob="0.10"/>
+<block name="rock08"                            prob="0.08"/>
+<block name="rock09"                            prob="0.08"/>
+<block name="rock10"                            prob="0.08"/>
+<block name="rock11"                            prob="0.08"/>
+<block name="rock12"                            prob="0.08"/>
+</placeholder>
+
+<placeholder name="oreHelper">
+<block name="oreHelperCommon"                   prob="0.80"/>
+<block name="airPocket"                         prob="0.15"/>
+<block name="oreHelperRare"                     prob="0.05"/>
+</placeholder>
+
+<placeholder name="oreHelperCommon">
+<block name="nitrateDeposit"                    prob="0.10"/>
+<block name="coalDeposit"                       prob="0.10"/>
+<block name="ironDeposit"                       prob="0.50"/>
+<block name="leadDeposit"                       prob="0.15"/>
+<block name="oilDeposit"                        prob="0.10"/>
+<block name="silverDeposit"                     prob="0.05"/>
+</placeholder>
+
+<placeholder name="oreHelperRare">
+<block name="silverDeposit"                     prob="0.60"/>
+<block name="goldDeposit"                       prob="0.30"/>
+<block name="diamondDeposit"                    prob="0.10"/>
 </placeholder>
 
 <!-- GNAMOD STARTER KITS -->

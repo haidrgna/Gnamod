@@ -74,8 +74,22 @@
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">
+<resource blockname="ironDeposit" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.0130" rwgGenerationType="all"/>
+<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>
+<resource blockname="silverDeposit" cluster="1" prob="0.015" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="stone">
+<resource blockname="ironDeposit" cluster="1" prob="0.0130" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>
+<resource blockname="silverDeposit" cluster="1" prob="0.030" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/>
+</layer>
 <layer depth="2"  blockname="stone"/>
 <layer depth="3"  blockname="bedrock"/>
 </layers>
@@ -120,9 +134,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0004"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0006"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
@@ -222,9 +234,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0006"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0004"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock05"                               prob="0.004"/>
-<decoration type="block" blockname="rock06"                               prob="0.004"/>
-<decoration type="block" blockname="rock07"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
@@ -367,9 +377,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.004"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.006"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.006"/>
-<decoration type="block" blockname="rock04"                               prob="0.006"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.016"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.02"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.005"/>
@@ -447,9 +455,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0006"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0004"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.000050"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
@@ -583,9 +589,7 @@
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0009"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
@@ -752,9 +756,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0005"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.003"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.006"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00015"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0015"/>
@@ -826,9 +828,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0005"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.003"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
 </decorations>
 </subbiome>
@@ -880,9 +880,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.003"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.00005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.0005"/>
@@ -1019,9 +1017,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0002"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.008"/>
-<decoration type="block" blockname="rock02"                               prob="0.008"/>
-<decoration type="block" blockname="rock04"                               prob="0.008"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.024"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.015"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.005"/>
@@ -1084,9 +1080,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0002"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.003"/>
-<decoration type="block" blockname="rock02"                               prob="0.003"/>
-<decoration type="block" blockname="rock04"                               prob="0.003"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.009"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.005"/>
 </decorations>
 </subbiome> 
@@ -1136,9 +1130,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0002"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.010"/>
@@ -1380,9 +1372,7 @@
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.0001"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.003"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
 <decoration type="prefab" name="desert_arch"                              prob="0.0005"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.00001"/>
@@ -1525,9 +1515,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.001"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.001"/>
@@ -1673,9 +1661,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
@@ -1838,9 +1824,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0017"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
@@ -1898,9 +1882,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0001"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0009"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
@@ -2124,9 +2106,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0017"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.002"/>
-<decoration type="block" blockname="rock02"                               prob="0.002"/>
-<decoration type="block" blockname="rock04"                               prob="0.002"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.006"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0003"/>
@@ -2256,9 +2236,7 @@
 <decoration type="block" blockname="lootForestHelper"                     prob="0.00005"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.00009"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock05"                               prob="0.0008"/>
-<decoration type="block" blockname="rock06"                               prob="0.0008"/>
-<decoration type="block" blockname="rock07"                               prob="0.0008"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0024"/>
 <!-- Cabins -->  
 <decoration type="prefab" name="ranger_station1"                          prob="0.02"/>
 <!-- Snow -->
@@ -2310,9 +2288,7 @@
 <decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock05"                               prob="0.004"/>
-<decoration type="block" blockname="rock06"                               prob="0.004"/>
-<decoration type="block" blockname="rock07"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <!-- Cabins -->  
 <decoration type="prefab" name="ranger_station1"                          prob="0.02"/>
 <!-- Snow -->
@@ -2395,9 +2371,7 @@
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.005" rotatemax="3"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.001"/>
-<decoration type="block" blockname="rock02"                               prob="0.001"/>
-<decoration type="block" blockname="rock04"                               prob="0.001"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.003"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
@@ -2459,9 +2433,7 @@
 <decoration type="block" blockname="treeDeadTree02"                       prob="0.00012"/>
 <decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.0003"/>
-<decoration type="block" blockname="rock02"                               prob="0.0003"/>
-<decoration type="block" blockname="rock04"                               prob="0.0003"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.0009"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0006"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.00008"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.00008"/>
@@ -2606,9 +2578,7 @@
 <decoration type="block" blockname="cntTreeStump"                         prob="0.01"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.24"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rock01"                               prob="0.004"/>
-<decoration type="block" blockname="rock02"                               prob="0.004"/>
-<decoration type="block" blockname="rock04"                               prob="0.004"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0007"/>
@@ -2665,8 +2635,8 @@
 <decoration type="block" blockname="stalagmite02" prob="0.02" rotatemax="7"/>
 <decoration type="block" blockname="stalagmite03" prob="0.02" rotatemax="7"/>
 <decoration type="block" blockname="stalagmite04" prob="0.02" rotatemax="7"/>
-<decoration type="block" blockname="boulderHelper" prob ="0.0010" rotatemax="3"/>
-<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
+<decoration type="block" blockname="boulderHelper" prob ="0.0010"/>
+<decoration type="block" blockname="rockHelper" prob="0.012"/>
 <decoration type="block" blockname="campfire" prob=".00004" rotatemax="3"/>
 <decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
 </decorations>
