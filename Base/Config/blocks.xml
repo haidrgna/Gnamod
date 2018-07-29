@@ -38,7 +38,6 @@
 <drop event="Destroy" name="nitrateOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="coalOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="rock" count="1"/>
-<drop event="Fall" name="rock" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="stone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -56,11 +55,10 @@
 <property name="ItemCount" value="0"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<drop event="Harvest" name="dirtFragment" count="8" tool_category="harvestingTools"/>
+<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
 <drop event="Harvest" name="clayFragment" count="4" tool_category="harvestingTools"/>
 <drop event="Harvest" name="yuccaFibers" count="2" tool_category="harvestingTools"/>
-<drop event="Destroy" name="dirtFragment" count="2"/>
-<drop event="Fall" name="dirtFragment" count="8" prob="0.25" stick_chance="0"/>
+<drop event="Destroy" name="dirtFragment" count="0"/>
 <drop event="Fall" name="grass" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -78,13 +76,11 @@
 <property name="ItemCount" value="0"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<drop event="Harvest" name="dirtFragment" count="8" tool_category="harvestingTools"/>
-<drop event="Harvest" name="clayFragment" count="8" tool_category="harvestingTools"/>
+<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="clayFragment" count="10" tool_category="harvestingTools"/>
 <drop event="Harvest" name="clayLump" count="1" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Destroy" name="dirtFragment" count="2"/>
-<drop event="Destroy" name="clayFragment" count="2"/>
-<drop event="Fall" name="dirtFragment" count="8" prob="0.125" stick_chance="0"/>
-<drop event="Fall" name="clayFragment" count="8" prob="0.125" stick_chance="0"/>
+<drop event="Destroy" name="dirtFragment" count="0"/>
+<drop event="Destroy" name="clayFragment" count="0"/>
 <drop event="Fall" name="dirt" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -95,11 +91,10 @@
 <property name="Texture" value="396,570,570,570,570,570"/>
 <property name="ImposterExchange" value="imposterBlock" param1="118"/>
 <property name="Map.Color" value="110,95,49"/>
-<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="dirtFragment" count="12" tool_category="harvestingTools"/>
 <drop event="Harvest" name="clayFragment" count="2" tool_category="harvestingTools"/>
 <drop event="Harvest" name="yuccaFibers" count="2" tool_category="harvestingTools"/>
-<drop event="Destroy" name="dirtFragment" count="2"/>
-<drop event="Fall" name="dirtFragment" count="10" prob="0.25" stick_chance="0"/>
+<drop event="Destroy" name="dirtFragment" count="0"/>
 <drop event="Fall" name="plainsGround" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -127,7 +122,6 @@
 <drop event="Harvest" name="nitratePowder" count="12" tool_category="harvestingTools"/>
 <drop event="Destroy" name="nitrateOre" count="1"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="nitrateOre" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="nitrateDeposit" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -144,7 +138,6 @@
 <drop event="Harvest" name="ironOre" count="4,10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="ironOre" count="1"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="ironOre" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="ironDeposit" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -152,15 +145,13 @@
 <property name="CreativeMode" value="Dev"/>
 <property name="Extends" value="terrainMaster"/>
 <property name="Material" value="sand"/>
-<property name="Texture" value="2,570,570,570,570,570"/>
+<property name="Texture" value="185,570,570,570,570,570"/>
 <property name="Map.Color" value="167,136,107"/>
 <drop event="Harvest" name="crushedSand" count="3" tool_category="harvestingTools"/>
 <drop event="Harvest" name="desertSand" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Harvest" name="sandStone" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="crushedSand" count="3"/>
 <drop event="Destroy" name="desertSand" count="1"/>
-<drop event="Fall" name="crushedSand" count="30" prob="0.125" stick_chance="0"/>
-<drop event="Fall" name="desertSand" count="3" prob="0.125" stick_chance="0"/>
 <drop event="Fall" name="sand" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -171,11 +162,9 @@
 <property name="Texture" value="6,569,569,569,569,569"/>
 <property name="ImposterExchange" value="imposterBlock" param1="62"/>
 <property name="Map.Color" value="230,230,255"/>
-<drop event="Harvest" name="snowBall" count="9" tool_category="harvestingTools"/>
-<drop event="Harvest" name="dirtFragment" count="5" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Destroy" name="snowBall" count="3"/>
-<drop event="Destroy" name="dirtFragment" count="1"/>
-<drop event="Fall" name="snowBall" count="12" prob="0.125" stick_chance="0"/>
+<drop event="Harvest" name="snowBall" count="12" tool_category="harvestingTools"/>
+<drop event="Harvest" name="dirtFragment" count="6" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Destroy" name="snowBall" count="0"/>
 <drop event="Fall" name="snow" count="1" prob="0.02" stick_chance="1"/>
 <drop event="Fall" name="ice" count="1" prob="0.08" stick_chance="1"/>
 </block>
@@ -184,15 +173,12 @@
 <property name="CreativeMode" value="Dev"/>
 <property name="Extends" value="terrainMaster"/>
 <property name="Material" value="clay"/>
-<property name="Texture" value="570,570,301,301,301,301"/>
+<property name="Texture" value="2,570,570,570,570,570"/>
 <property name="Map.Color" value="107,78,57"/>
-<drop event="Harvest" name="dirtFragment" count="5" tool_category="harvestingTools"/>
-<drop event="Harvest" name="clayFragment" count="6" tool_category="harvestingTools"/>
+<drop event="Harvest" name="dirtFragment" count="6" tool_category="harvestingTools"/>
+<drop event="Harvest" name="clayFragment" count="12" tool_category="harvestingTools"/>
 <drop event="Harvest" name="clayLump" count="2,4" tool_category="harvestingTools"/>
-<drop event="Destroy" name="dirtFragment" count="1"/>
-<drop event="Destroy" name="clayFragment" count="6"/>
-<drop event="Fall" name="clayFragment" count="30" prob="0.125" stick_chance="0"/>
-<drop event="Fall" name="clayLump" count="3" prob="0.125" stick_chance="0"/>
+<drop event="Destroy" name="clayFragment" count="0"/>
 <drop event="Fall" name="clay" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -209,7 +195,6 @@
 <drop event="Harvest" name="leadOre" count="3,6" tool_category="harvestingTools"/>
 <drop event="Destroy" name="leadOre" count="1"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="leadOre" count="5" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="leadDeposit" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -238,7 +223,6 @@
 <drop event="Destroy" name="nitrateOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="coalOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="sandstone" count="1"/>
-<drop event="Fall" name="sandstone" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="sandStone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -269,9 +253,8 @@
 <property name="ItemCount" value="6"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
-<drop event="Harvest" name="rockSmall" count="24" tool_category="harvestingTools"/>
-<drop event="Destroy" name="rockSmall" count="6"/>
-<drop event="Fall" name="rockSmall" count="32" prob="0.25" stick_chance="0"/>
+<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
+<drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="destroyedAsphalt" count="1" prob="0.10" stick_chance="1"/>
 <!--
 <property name="LightOpacity" value="0"/>
@@ -298,12 +281,11 @@
 <property name="Map.Color" value="158,139,124"/>
 <drop event="Harvest" name="lime" count="2" tool_category="harvestingTools"/>
 <drop event="Harvest" name="crushedLime" count="7" tool_category="harvestingTools"/>
-<drop event="Destroy" name="ironOre" count="1" prob="0.05" tool_category="harvestingTools"/>
-<drop event="Destroy" name="leadOre" count="1" prob="0.05" tool_category="harvestingTools"/>
-<drop event="Destroy" name="nitrateOre" count="1" prob="0.05" tool_category="harvestingTools"/>
-<drop event="Destroy" name="coalOre" count="1" prob="0.05" tool_category="harvestingTools"/>
+<drop event="Destroy" name="ironOre" count="1" prob="0.20" tool_category="harvestingTools"/>
+<drop event="Destroy" name="leadOre" count="1" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Destroy" name="nitrateOre" count="1" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Destroy" name="coalOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="lime" count="1"/>
-<drop event="Fall" name="lime" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="limestone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -347,8 +329,6 @@
 <drop event="Harvest" name="clayFragment" count="2" tool_category="harvestingTools"/>
 <drop event="Destroy" name="dirtFragment" count="4,8"/>
 <drop event="Destroy" name="clayFragment" count="4,8"/>
-<drop event="Fall" name="dirtFragment" count="10" prob="0.125" stick_chance="0"/>
-<drop event="Fall" name="clayFragment" count="10" prob="0.125" stick_chance="0"/>
 <drop event="Fall" name="fertileFarmland" count="1" prob="0.10" stick_chance="1"/>
 </block>
   
@@ -365,8 +345,6 @@
 <drop event="Destroy" name="dirtFragment" count="4,8"/>
 <drop event="Destroy" name="clayFragment" count="4,8"/>
 <drop event="Destroy" name="fertilizer" count="4,8"/>
-<drop event="Fall" name="dirtFragment" count="10" prob="0.125" stick_chance="0"/>
-<drop event="Fall" name="clayFragment" count="10" prob="0.125" stick_chance="0"/>
 <drop event="Fall" name="fertileFarmland" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -415,7 +393,6 @@
 <drop event="Harvest" name="fertilizer" count="4" prob="0.25" tool_category="harvestingTools"/>
 <drop event="Harvest" name="yuccaFibers" count="2" tool_category="harvestingTools"/>
 <drop event="Destroy" name="dirtFragment" count="2"/>
-<drop event="Fall" name="dirtFragment" count="8" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="burntForestGround" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -434,10 +411,10 @@
 <property name="Texture" value="200"/>
 <property name="ImposterExchange" value="imposterBlock" param1="95"/>
 <property name="Map.Color" value="152,149,63"/>
-<drop event="Harvest" name="rockSmall" count="1,7" tool_category="harvestingTools"/>
-<drop event="Harvest" name="bricks" count="1,3" tool_category="harvestingTools"/>
-<drop event="Harvest" name="crushedSand" count="1,5" tool_category="harvestingTools"/>
-<drop event="Harvest" name="crushedLime" count="1,5" tool_category="harvestingTools"/>
+<drop event="Harvest" name="rockSmall" count="2,10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="bricks" count="1,5" tool_category="harvestingTools"/>
+<drop event="Harvest" name="crushedSand" count="2,7" tool_category="harvestingTools"/>
+<drop event="Harvest" name="crushedLime" count="2,7" tool_category="harvestingTools"/>
 <drop event="Harvest" name="scrapIron" count="2,10" tool_category="harvestingTools"/>
   
 <drop event="Harvest" name="scrapBrass" count="2,10" prob="0.025"/>
@@ -451,14 +428,7 @@
 <drop event="Harvest" name="silverOre" count="1" prob="0.005"/>
 <drop event="Harvest" name="goldOre" count="1" prob="0.005"/>
 
-<drop event="Destroy" name="rockSmall" count="1,4"/>
-<drop event="Destroy" name="bricks" count="1"/>
-<drop event="Destroy" name="crushedSand" count="1,2"/> 
-<drop event="Destroy" name="crushedLime" count="1,2"/>  
-<drop event="Destroy" name="scrapIron" count="1,5"/>
-<drop event="Fall" name="rockSmall" count="12" prob="0.10" stick_chance="0"/>
-<drop event="Fall" name="crushedLime" count="12" prob="0.10" stick_chance="0"/>
-<drop event="Fall" name="scrapIron" count="12" prob="0.10" stick_chance="0"/>
+<drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="destroyedStone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -475,7 +445,6 @@
 <drop event="Harvest" name="coalOre" count="3,9" tool_category="harvestingTools"/>
 <drop event="Destroy" name="coalOre" count="1"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="coalOre" count="6" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="coalDeposit" count="1" prob="0.10" stick_chance="1"/> 
 </block>
 
@@ -502,7 +471,6 @@
 <drop event="Harvest" name="silverOre" count="3" tool_category="harvestingTools"/>
 <drop event="Destroy" name="goldOre" count="1"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="goldOre" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="goldDeposit" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -565,7 +533,6 @@
 <drop event="Harvest" name="oilShale" count="6,18" tool_category="harvestingTools"/>
 <drop event="Destroy" name="oilShale" count="2"/>
 <drop event="Destroy" name="rockSmall" count="3"/>
-<drop event="Fall" name="oilShale" count="20" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="oilDeposit" count="1" prob="0.10" stick_chance="1"/> 
 </block>
 
@@ -747,7 +714,6 @@
 </property>
 <drop event="Harvest" name="concreteMix" prob="0.25" count="3"/>
 <drop event="Destroy" name="rockSmall" count="6"/>
-<drop event="Fall" name="rockSmall" count="18" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="concrete" count="1" prob="0.25" stick_chance="1"/>
 <!--<property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
@@ -768,19 +734,16 @@
 <drop event="Destroy" name="nitrateOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="coalOre" count="1" prob="0.10" tool_category="harvestingTools"/>
 <drop event="Destroy" name="rock" count="1"/>
-<drop event="Fall" name="rock" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="stone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
 <block id="51" name="terrainWater">
 <property name="CreativeMode" value="Dev"/>
-<property name="Extends" value="terrainMaster"/>
-<property name="CustomIcon" value="ice"/>
-<property name="Texture" value="178"/>
-<property name="CanMobsSpawnOn" value="true"/>
+<property name="Extends" value="dirt"/>
+<property name="CustomIcon" value="waterSource8"/>
 <property name="Class" value="PlantGrowing"/>
-<property name="PlantGrowing.Next" value="waterMoving"/>
-<property name="PlantGrowing.GrowthRate" value="0.005"/>
+<property name="PlantGrowing.Next" value="terrainWater"/>
+<property name="PlantGrowing.GrowthRate" value="0.01"/>
 <property name="PlantGrowing.FertileLevel" value="0"/>
 <property name="PlantGrowing.IsRandom" value="false"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
@@ -832,7 +795,16 @@
 <property name="PlantGrowing.GrowOnTop" value="oreHelper"/>
 </block>
 
-<block id="56" name="harvestLayer">
+<block id="56" name="crater">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="oreHelper"/>
+<property name="PlantGrowing.GrowthRate" value="0.001"/>
+<property name="PlantGrowing.Next" value="barbedFence"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="PlantGrowing.GrowOnTop" value="explosive"/>
+</block>
+
+<block id="57" name="harvestLayer">
 <property name="CreativeMode" value="Dev"/>
 <property name="Extends" value="terrainMaster"/>
 <property name="CustomIcon" value="stone"/>
@@ -850,7 +822,6 @@
 <drop event="Destroy" name="rock" count="100"/>
 <drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
-<!-- Free -->
 
 <block id="58" name="airPocket">
 <property name="CreativeMode" value="Dev"/>
@@ -4930,7 +4901,6 @@
 <property name="MultiBlockDim" value="3,1,3"/>
 <property name="Shape" value="New"/>
 <property name="UseGlobalUV" value="Global"/>
-<!--<property name="Texture" value="267,267,320,320,320,320"/>-->
 <property name="Texture" value="8"/>
 <property name="Class" value="TorchHeatMap"/>
 <property name="HeatMapStrength" value="25.0"/>
@@ -11730,50 +11700,22 @@
 <property class="UpgradeBlock"> <property name="ToBlock" value="cobblestonePyramid"/> </property>-
 </block>
 
-<block id="1118" name="scrapSteelPile">
-<property name="Material" value="MmetalNoGlue"/>
-<property name="MaxDamage" value="50"/>
-<property name="StabilitySupport" value="false"/>
+<block id="1118" name="flagstoneArch3m">
+<property name="Extends" value="stoneNoUpgradeMaster"/>
 <property name="Shape" value="New"/>
-<property name="Model" value="broken_girder_beam"/>
-<property name="Texture" value="312"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="IsDecoration" value="true"/>
-<property name="Collide" value="melee,bullet,arrow,rocket"/>
-<drop event="Harvest" name="scrapIron" count="48" prob="0.5" tool_category="harvestingTools"/>
-<drop event="Destroy" name="scrapIron" count="24"/>
-</block>  
-  
-<block id="1119" name="boulderHelper">
-<property name="Extends" value="lootWastelandHelper"/>
-<property name="CreativeMode" value="Dev"/>
-<property name="Material" value="MstoneDeposit"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="BigDecorationRadius" value="2"/>
-<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
-<property name="MultiBlockDim" value="3,2,3"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-<property name="PlantGrowing.Next" value="boulderHelper"/>
+<property name="Model" value="arch_3m"/>
+<property name="Texture" value="226"/>
+<property name="UseGlobalUV" value="Local"/>
 </block>
 
-<block id="1120" name="rockHelper">
-<property name="CreativeMode" value="Dev"/>
-<property name="Extends" value="lootWastelandHelper"/>
-<property name="Material" value="stone"/>
-<property name="MaxDamage" value="100"/>
-<property name="StabilitySupport" value="false"/>
-<property name="Shape" value="Ext3dModel"/>
-<property name="Texture" value="293"/>
-<property name="Mesh" value="models"/>
-<property name="Model" value="Rocks/Rock01" param1="main_mesh"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="Collide" value="melee,bullet,arrow,rocket"/>
-<property name="CanPickup" value="true" param1="rock"/>
-<property name="PlantGrowing.Next" value="rockHelper"/>
-<drop event="Destroy" name="rockSmall" count="6,12"/>
+<block id="1119" name="flagstoneArch3m_tip">
+<property name="Extends" value="flagstoneArch3m"/>
+<property name="Model" value="arch_3m_tip"/>
+</block>
+
+<block id="1120" name="flagstoneArch3m_center">
+<property name="Extends" value="flagstoneArch3m"/>
+<property name="Model" value="arch_3m_center"/>
 </block>
 
 <block id="1121" name="rConcreteWedgeStairs">
@@ -15770,16 +15712,16 @@
 <property name="Model" value="wedge_tip_half"/>
 <property name="UpgradeRated.ToBlock" value="concreteGable"/>
 </block>
-<!-- Free
-<block id="1500" name="rebarFrameCNRInside">
-<property name="Extends" value="rebarFrameMaster"/>
-<property name="CreativeMode" value="Player"/>
-<property name="Shape" value="New"/>
-<property name="Model" value="ramp_inside_corner"/>
-<property name="CanPickup" value="true"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteCNRInside"/> </property>
-</block>
--->
+
+<block id="1500" name="explosive">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="stoneNoUpgradeMaster"/>
+<property name="Material" value="MbeaconUnstable"/>
+<drop event="Fall" name="largeCraterTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Fall" name="smallCraterTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
+</block> 
+
 <block id="1501" name="concreteGable">
 <property name="Extends" value="concreteMasterWeak"/>
 <property name="CreativeMode" value="Dev"/>
@@ -15964,39 +15906,39 @@
 <property name="Extends" value="ductSoft"/>
 <property name="Model" value="pipe_thin_corner_down"/>
 </block>
-<!-- Free
-<block id="1530" name="scrapIronWindowPlug05CTRPlate">
-<property name="Material" value="MforgedIron"/>
-<property name="Shape" value="New"/>
-<property name="Model" value="plate_centered"/>
-<property name="Texture" value="307"/>
-<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
-<property class="UpgradeBlock">
-<property name="ToBlock" value="rScrapIronWindowPlug06CTRPlate"/>
-<property name="Item" value="scrapIron"/>
-<property name="ItemCount" value="40"/>
-<property name="UpgradeHitCount" value="4"/>
-</property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
-<drop event="Destroy" count="0"/>
+
+<block id="1530" name="boulderHelper">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="Material" value="MstoneDeposit"/>
+<property name="Shape" value="ModelEntity"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="BigDecorationRadius" value="2"/>
+<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+<property name="MultiBlockDim" value="3,2,3"/>
+<property name="ImposterDontBlock" value="true"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<property name="PlantGrowing.Next" value="boulderHelper"/>
 </block>
 
-<block id="1531" name="rScrapIronWindowPlug06CTRPlate">
-<property name="Material" value="MforgedIron"/>
-<property name="Shape" value="New"/>
-<property name="Model" value="plate_centered"/>
-<property name="Texture" value="352"/>
-<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
-<property class="UpgradeBlock">
-<property name="ToBlock" value="pouredRConcreteCTRPlate"/>
-<property name="Item" value="concreteMix"/>
-<property name="ItemCount" value="10"/>
-<property name="UpgradeHitCount" value="4"/>
-</property>
-<property name="CustomUpgradeSound" value="place_block_concrete"/>
-<drop event="Destroy" count="0"/>
+<block id="1531" name="rockHelper">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="Material" value="stone"/>
+<property name="MaxDamage" value="100"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Texture" value="293"/>
+<property name="Mesh" value="models"/>
+<property name="Model" value="Rocks/Rock01" param1="main_mesh"/>
+<property name="ImposterDontBlock" value="true"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="Collide" value="melee,bullet,arrow,rocket"/>
+<property name="CanPickup" value="true" param1="rock"/>
+<property name="PlantGrowing.Next" value="rockHelper"/>
+<drop event="Destroy" name="rockSmall" count="6,12"/>
 </block>
--->
+
 <block id="1532" name="rConcreteCTRPlate">
 <property name="Extends" value="rConcreteMasterWeak"/>
 <property name="CreativeMode" value="Dev"/>
@@ -16836,13 +16778,21 @@
 <property name="Model" value="i_beam_corner"/>
 <property name="ImposterExchange" value="imposterDontBlockBlock" param1="144"/>
 </block>
-<!-- Free
-<block id="1604" name="iBeamSteelBent">
-<property name="Extends" value="iBeamSteel"/>
-<property name="Model" value="i_beam_bent"/>
-<property class="UpgradeBlock"> <property name="ItemCount" value="20"/> </property>
-</block>
--->
+
+<block id="1604" name="scrapSteelPile">
+<property name="Material" value="MsteelWeak"/>
+<property name="MaxDamage" value="2000"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="broken_girder_beam"/>
+<property name="Texture" value="312"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="IsDecoration" value="true"/>
+<property name="Collide" value="melee,bullet,arrow,rocket"/>
+<drop event="Harvest" name="scrapIron" count="24,96" tool_category="harvestingTools"/>
+<drop event="Destroy" name="scrapIron" count="12,36"/>
+</block> 
+
 <block id="1605" name="iBeamSteelSupport">
 <property name="Extends" value="iBeamSteel"/>
 <property name="Model" value="i_beam_support"/>

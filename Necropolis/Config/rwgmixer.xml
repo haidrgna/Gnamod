@@ -1540,11 +1540,12 @@
 
 <!-- Gnamod Necropolis Biome Spawning -->
 <biome_spawn_rules>
-<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="plains">          <distance_from_center range="0,3600"/>        </biome_spawn_rule>
 <biome_spawn_rule name="city">            <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <biome_generator range="0.55,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.55,0.65"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.65,0.70"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.95,0.999"/>         </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.001,0.05"/>         </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.05,0.20"/>          </biome_spawn_rule>
@@ -1559,7 +1560,7 @@
 <biome_spawn_rule name="city">            <distance_from_center range="2800,3200"/>     </biome_spawn_rule>
 <biome_spawn_rule name="wasteland_hub">   <distance_from_center range="3200,4000"/>     </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <distance_from_center range="4000,5000"/>     </biome_spawn_rule>
-<biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
 
 <!-- Biome Test

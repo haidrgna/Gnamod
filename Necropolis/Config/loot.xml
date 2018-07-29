@@ -82,16 +82,16 @@
 <block name="garbage_decor1"                    prob="0.01"/>
 <block name="garbage_decor2"                    prob="0.01"/>
 <block name="garbage_decor3"                    prob="0.01"/>
-<block name="metalRivetSheet"                   prob="0.005"/>
-<block name="corrugatedMetalSheet"              prob="0.005"/>
-<block name="metalTrussingSheet"                prob="0.005"/>
-<block name="woodFenceSheet"                    prob="0.005"/>
-<block name="whitePicketFenceSheet"             prob="0.005"/>
-<block name="wroughtIronFenceSheet"             prob="0.005"/>
-<block name="railingBlackSheet"                 prob="0.01"/>
-<block name="railingMetalSheet"                 prob="0.01"/>
-<block name="railingWoodWhiteSheet"             prob="0.005"/>
-<block name="treePlant02"                       prob="0.01"/>
+<block name="metalRivetSheet"                   prob="0.0025"/>
+<block name="corrugatedMetalSheet"              prob="0.0025"/>
+<block name="metalTrussingSheet"                prob="0.0025"/>
+<block name="woodFenceSheet"                    prob="0.0025"/>
+<block name="whitePicketFenceSheet"             prob="0.0025"/>
+<block name="wroughtIronFenceSheet"             prob="0.0025"/>
+<block name="railingBlackSheet"                 prob="0.0025"/>
+<block name="railingMetalSheet"                 prob="0.0025"/>
+<block name="railingWoodWhiteSheet"             prob="0.0025"/>
+<block name="treePlant02"                       prob="0.0075"/>
 <block name="endTable"                          prob="0.005"/>
 <block name="endTableLamp"                      prob="0.005"/>
 <block name="leatherCouchSofa"                  prob="0.01"/>
@@ -101,15 +101,15 @@
 <block name="bed01Frame"                        prob="0.005"/>
 <block name="mattressFlat"                      prob="0.005"/>
 <block name="bed02"                             prob="0.01"/>
-<block name="barStool"                          prob="0.01"/>
+<block name="barStool"                          prob="0.0075"/>
 <block name="mineCandyTin"                      prob="0.005"/>
 <block name="mineHubcap"                        prob="0.005"/>
 <block name="mineAirFilter"                     prob="0.005"/>
-<block name="mineCookingPot"                    prob="0.005"/>
+<block name="mineCookingPot"                    prob="0.0025"/>
 <block name="rScrapIronPlateMine"               prob="0.005"/>
 <block name="hubcapNoMine"                      prob="0.01"/>
 <block name="roadRailingPole"                   prob="0.015"/>
-<block name="metalPipeStraight"                 prob="0.01"/>
+<block name="metalPipeStraight"                 prob="0.005"/>
 <block name="metalPipeCorner"                   prob="0.005"/>
 <block name="metalPipeJoint"                    prob="0.005"/>
 <block name="metalPipeCap"                      prob="0.01"/>
@@ -132,17 +132,19 @@
 <block name="shoppingCartEmpty"                 prob="0.01"/>
 <block name="shoppingBasketEmpty"               prob="0.01"/>
 <!-- Debris or Grass (0.34) -->
-<block name="treeBrownGrassDiagonal"            prob="0.09"/>
+<block name="treeBrownGrassDiagonal"            prob="0.075"/>
 <block name="treeDeadShrub"                     prob="0.01"/>
-<block name="brickDestroyedBlock01"             prob="0.015"/>
-<block name="brickDestroyedBlock02"             prob="0.015"/>
-<block name="brickDestroyedBlock03"             prob="0.015"/>
-<block name="cinderBlocks01"                    prob="0.015"/>
-<block name="cinderBlocks02"                    prob="0.015"/>
-<block name="cinderBlocks03"                    prob="0.015"/>
-<block name="scrapMetalPile"                    prob="0.05"/>
+<block name="brickDestroyedBlock01"             prob="0.01"/>
+<block name="brickDestroyedBlock02"             prob="0.01"/>
+<block name="brickDestroyedBlock03"             prob="0.01"/>
+<block name="cinderBlocks01"                    prob="0.01"/>
+<block name="cinderBlocks02"                    prob="0.01"/>
+<block name="cinderBlocks03"                    prob="0.01"/>
+<block name="scrapMetalPile"                    prob="0.04"/>
+<block name="scrapSteelPile"                    prob="0.05"/>
 <block name="destroyedStone"                    prob="0.05"/>
-<block name="woodDebris"                        prob="0.05"/>  
+<block name="woodDebris"                        prob="0.10"/>
+<!--<block name="crater"                            prob="0.05"/> -->
 </placeholder>
 
 <placeholder name="lootDesertHelper">
@@ -401,6 +403,46 @@
 <block name="rockResource02"                    prob="0.30"/>
 <block name="rockResource02Broke1"              prob="0.10"/>
 <block name="rockResource02Broke2"              prob="0.10"/>
+</placeholder>
+
+<placeholder name="rockHelper">
+<block name="rock01"                            prob="0.08"/>
+<block name="rock02"                            prob="0.09"/>
+<block name="rock03"                            prob="0.08"/>
+<block name="rock04"                            prob="0.09"/>
+<block name="rock05"                            prob="0.08"/>
+<block name="rock06"                            prob="0.08"/>
+<block name="rock07"                            prob="0.09"/>
+<block name="rock08"                            prob="0.08"/>
+<block name="rock09"                            prob="0.08"/>
+<block name="rock10"                            prob="0.09"/>
+<block name="rock11"                            prob="0.08"/>
+<block name="rock12"                            prob="0.08"/>
+</placeholder>
+
+<placeholder name="oreHelper">
+<block name="oreHelperCommon"                   prob="0.80"/>
+<block name="airPocket"                         prob="0.15"/>
+<block name="oreHelperRare"                     prob="0.05"/>
+</placeholder>
+
+<placeholder name="oreHelperCommon">
+<block name="nitrateDeposit"                    prob="0.10"/>
+<block name="coalDeposit"                       prob="0.10"/>
+<block name="ironDeposit"                       prob="0.50"/>
+<block name="leadDeposit"                       prob="0.15"/>
+<block name="oilDeposit"                        prob="0.10"/>
+<block name="silverDeposit"                     prob="0.05"/>
+</placeholder>
+
+<placeholder name="oreHelperRare">
+<block name="silverDeposit"                     prob="0.60"/>
+<block name="goldDeposit"                       prob="0.30"/>
+<block name="diamondDeposit"                    prob="0.10"/>
+</placeholder>
+
+<placeholder name="terrainWater">
+<block name="water"                             prob="1"/>
 </placeholder>
 
 <!-- GNAMOD STARTER KITS -->
@@ -1732,7 +1774,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt001" count="2" prob="15"/>
 <item group="cnt001" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== PLAYER MADE BOXES ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt002"> <item group="lootHousehold" prob="45"/> <item group="itemsCommon" prob="30"/> <item group="itemsCookware" prob="5"/>  </lootgroup>
@@ -1746,7 +1788,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt002" count="2" prob="15"/>
 <item group="cnt002" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== MINIBIKE STORAGE ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt003"> <item group="itemsCommon" count="1,2" prob="55"/> <item group="toolsCar" prob="20"/>  <item group="matsMisc" prob="15"/>  <item group="automotiveMinibike" prob="10"/>  </lootgroup>
@@ -1760,7 +1802,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt003" count="2" prob="35"/>
 <item group="cnt003" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== PLAYER BACKPACK =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt004"> <item group="lootBackpacks" prob="65"/> <item group="lootHousehold" count="0,2" prob="35"/>  </lootgroup>
@@ -1774,7 +1816,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt004" count="1" prob="60"/>
 <item group="cnt004" count="2,3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== DESTROYED CONTAINER BACKPACK ================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt005"> <item group="lootBackpacks" prob="65"/> <item group="lootHousehold" count="0,2" prob="35"/>  </lootgroup>
@@ -1788,7 +1830,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt005" count="1" prob="60"/>
 <item group="cnt005" count="2,3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt007"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
@@ -1814,7 +1856,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt011" count="2" prob="35"/>
 <item group="cnt011" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="0,1" loot_prob_template="nothing75EX"/>  </lootcontainer>  
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing66"/>  </lootcontainer>  
 <!-- =========================== BACKPACKS ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt012"> <item group="lootBackpacks" prob="65"/> <item group="lootHousehold" count="0,2" prob="35"/>  </lootgroup>
 <lootcontainer id="12" count="1" size="5,5" open_time="3" 
@@ -1827,7 +1869,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt012" count="1" prob="60"/>
 <item group="cnt012" count="2,3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== DUFFLEBAG ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt013"> <item group="lootBackpacks" prob="55"/> <item group="lootHousehold" count="0,2" prob="35"/>  <item group="gunsComplete" prob="5"/> <item group="ammoGuns" prob="5"/>  </lootgroup>
@@ -1841,7 +1883,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt013" count="1" prob="60"/>
 <item group="cnt013" count="2,3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== PURSE ========================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt014"> <item group="pistol" prob="10"/>  <item group="lootPurse" count="1,3" prob="90"/>  </lootgroup>
@@ -1855,7 +1897,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt014" count="2" prob="9"/>
 <item group="cnt014" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="foodCanned" loot_prob_template="nothing66EX"/>
+<item group="foodCanned" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== SUITCASE ====================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt015"> <item name="bottledWater" prob="15"/> <item group="foodCanned" count="1,2" prob="25"/> <item group="itemsCommon" prob="25"/>  <item group="toolsBasic" prob="10"/>  <item group="medicalBasic" prob="10"/>  <item group="weaponsBackpack" prob="10"/> <item group="gunsCommon" prob="5"/>  </lootgroup>
@@ -1869,7 +1911,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt015" count="2" prob="40"/>
 <item group="cnt015" count="3" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="0,3" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="0,3" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== COOLERS ======================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt016"> <item name="emptyJar" prob="10"/> <item name="bottledRiverWater" prob="15"/>  <item name="bottledWater" prob="5"/>  <item name="foodHoney" prob="10"/>  <item group="foodDrinks" prob="5"/> <item group="foodPrepared" prob="5"/> <item group="foodCanned" prob="6"/> <item group="foodRations" prob="3"/>  <item group="foodStock" prob="1"/>  <item group="foodMeat" prob="5"/> <item group="foodRotten" prob="35"/>  </lootgroup>
@@ -1883,7 +1925,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt016" count="2,3" prob="40"/>
 <item group="cnt016" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="foodRotten" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="foodRotten" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== CARS ========================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt017"> <item group="itemsCommon" count="1,2" prob="55"/> <item group="toolsCar" prob="20"/>  <item group="matsMisc" prob="15"/>  <item group="automotiveMinibike" prob="10"/>  </lootgroup>
@@ -1897,7 +1939,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt017" count="2" prob="45"/>
 <item group="cnt017" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="1,3" loot_prob_template="nothing66"/>
+<item group="itemsTrash" count="1,3" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== BIRD NEST ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt018"> <item name="feather" count="3,7" prob="75"/>  <item group="lootNest" prob="25"/>  </lootgroup>
@@ -1911,7 +1953,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt018" count="2,3" prob="30"/>
 <item group="cnt018" count="3,4" prob="20"/>
 <!-- Chance of Default Loot -->
-<item name="feather" count="3,7" loot_prob_template="nothing66"/>
+<item name="feather" count="3,7" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== STUMP (COLD) ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt019"> <item group="itemsCommon" count="1,2" prob="15"/> <item group="clothCW" prob="15"/>  <item group="lootStump" prob="70"/>  </lootgroup>
@@ -1925,7 +1967,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt019" count="2" prob="25"/>
 <item group="cnt019" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="lootNest" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="lootNest" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer> 
 <!-- =========================== STUMP (WARM) ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt020"> <item group="itemsCommon" count="1,2" prob="15"/> <item group="clothWW" prob="15"/>  <item group="lootStump" prob="70"/>  </lootgroup>
@@ -1939,7 +1981,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt020" count="2" prob="25"/>
 <item group="cnt020" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="lootNest" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="lootNest" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer> 
 
 <!-- Boxes and Lootcrates -->
@@ -1955,7 +1997,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt021" count="2" prob="45"/>
 <item group="cnt021" count="3" prob="15"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" loot_prob_template="nothing75EX"/>  </lootcontainer>
+<item group="itemsTrash" loot_prob_template="nothing66"/>  </lootcontainer>
 <!-- =========================== GARAGE BOX ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt022"> <item group="matsMisc" count="1,2" prob="70"/>  <item group="blocksElectric" prob="10"/>  <item group="automotiveMinibike" prob="20"/>  </lootgroup>
 <lootcontainer id="22" count="1" size="5,5" open_time="3" 
@@ -1968,7 +2010,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt022" count="2" prob="35"/>
 <item group="cnt022" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCommon" count="1,3" loot_prob_template="nothing66EX"/>
+<item group="itemsCommon" count="1,3" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== WEAPON CRATE ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt023"> <item name="mechanicalParts" count="3,5" prob="10"/>  <item name="scrapPlastics" count="5,10" prob="5"/>  <item group="ammoParts" count="1,2" prob="5"/>  <item group="ammoGuns" count="1,3" prob="10"/> <item group="gunsBalanced" prob="45"/>  <item group="gunsComplete" prob="10"/>  <item group="schemFirearm" prob="10"/> <item group="ammoBombs" prob="3"/>   <item group="ammoMines" prob="2"/>  </lootgroup>
@@ -1982,7 +2024,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt023" count="3,4" prob="25"/>
 <item group="cnt023" count="5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="gunsBalanced" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="gunsBalanced" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== HARDWARE CRATE ================================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt024"> <item group="lootHWTools" prob="55"/> <item group="lootHWMats" prob="35"/>  <item group="lootHWBlocks" prob="10"/>  </lootgroup>
@@ -1996,7 +2038,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt024" count="4,5" prob="25"/>
 <item group="cnt024" count="6" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt024" count="1,2" loot_prob_template="nothing66EX"/>
+<item group="cnt024" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== FOOD CRATE ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt025"> <item name="paper" count="1,10" prob="5"/>  <item name="scrapPlastics" count="1,8" prob="5"/> <item name="canHam" count="1,5" prob="20"/> <item name="foodHoney" count="1" prob="5"/> <item group="foodCanned" count="1,3" prob="10"/>  <item group="foodStock" count="1,2" prob="20"/> <item group="foodDrinks" count="1,2" prob="10"/> <item name="shamSandwich" count="1,5" prob="30"/>  </lootgroup>
@@ -2010,7 +2052,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt025" count="4" prob="40"/>
 <item group="cnt025" count="5" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="cnt025" count="2" loot_prob_template="nothing66EX"/>
+<item group="cnt025" count="2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BOOKSTORE SHIPPING CRATE ======================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt026"> <item group="schemAll" prob="75"/>  <item name="scrapPlastics" count="1,4" prob="25"/>  </lootgroup>
@@ -2024,7 +2066,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt026" count="2,3" prob="40"/>
 <item group="cnt026" count="4" prob="15"/>
 <!-- Chance of Default Loot -->
-<item group="schemAll" loot_prob_template="nothing75EX"/>
+<item group="schemAll" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== CAR PARTS SHIPPING CRATE ======================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt027"> <item name="paper" count="2,8" prob="5"/> <item name="repairKit" count="2,5" prob="5"/> <item name="headlight" count="1,2" prob="5"/> <item name="partsHandlebars" prob="5"/> <item name="toolAndDieSet" prob="1"/> <item group="toolsBasic" prob="10"/>  <item group="matsScrap" prob="10"/> <item group="matsForged" prob="10"/>  <item group="matsMisc" prob="10"/>  <item group="automotiveMinibike" prob="39"/>  </lootgroup>
@@ -2038,7 +2080,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt027" count="2" prob="20"/>
 <item group="cnt027" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="automotiveMinibike" loot_prob_template="nothing66EX"/>
+<item group="automotiveMinibike" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== CONSTRUCTION SHIPPING CRATE ===================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt028"> <item group="itemsCommon" prob="20"/> <item name="pickaxeSteel" prob="5"/>  <item name="fireaxeSteel" prob="5"/>  <item name="shovelSteel" prob="5"/> <item name="sledgehammer" prob="5"/>  <item group="toolsBasic" prob="20"/>  <item group="toolsMechanized" prob="10"/> <item group="lootHWMats" prob="15"/> <item group="lootHWBlocks" prob="15"/>  </lootgroup>
@@ -2052,7 +2094,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt028" count="2" prob="20"/>
 <item group="cnt028" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="toolsBasic" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="toolsBasic" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== LOOTCRATE HERO ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt029"> <item group="gunsBalanced" prob="20"/>  <item group="gunsComplete" prob="10"/>  <item group="armorLight" prob="15"/>  <item group="armorHeavy" prob="10"/>  <item group="armorRS" prob="10"/> <item group="schemAll" prob="15"/>  <item group="matsRareOres" prob="10"/>  </lootgroup>
@@ -2066,7 +2108,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt029" count="2" prob="40"/>
 <item group="cnt029" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="gunsBalanced" loot_prob_template="nothing75EX"/>
+<item group="gunsBalanced" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== LAB EQUIPMENT CRATE ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt030"> <item group="itemsCommon" prob="20"/> <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="10"/> <item group="schemAll" prob="20"/>  <item group="medicalAdvanced" prob="40"/>  </lootgroup>
@@ -2080,7 +2122,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt030" count="3,4" prob="40"/>
 <item group="cnt030" count="5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="medicalBasic" count="1,2" loot_prob_template="nothing75EX"/>
+<item group="medicalBasic" count="1,2" loot_prob_template="nothing33"/>
 </lootcontainer>
 
 <!-- Household Loot -->
@@ -2096,7 +2138,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt031" count="2" prob="45"/>
 <item group="cnt031" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== CUPBOARDS (EXPENSIVE HOUSES) ================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt032"> <item group="lootHousehold" prob="55"/> <item group="itemsCommon" prob="40"/> <item group="itemsCookware" prob="5"/>  </lootgroup>
@@ -2110,7 +2152,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt032" count="2" prob="15"/>
 <item group="cnt032" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== KITCHEN SINKS (OLD HOUSES) ==================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt033"> <item group="itemsTrash" prob="25"/>  <item name="shortMetalPipe" prob="10"/> <item group="toolsHousehold" prob="10"/>  <item group="itemsCookware" prob="5"/>  <item group="itemsCommon" prob="10"/> <item name="coffeeBeans" count="1,4" prob="15"/>  <item name="nitratePowder" count="2,6" prob="10"/> <item name="scrapLead" count="1,10" prob="15"/>  </lootgroup>
@@ -2124,7 +2166,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt033" count="2" prob="35"/>
 <item group="cnt033" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== KITCHEN SINKS (EXPENSIVE HOUSES) ============================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt034"> <item name="shortMetalPipe" prob="10"/>  <item group="toolsHousehold" prob="15"/>  <item group="itemsCookware" prob="7.5"/>  <item group="itemsCommon" prob="25"/> <item name="coffeeBeans" count="1,9" prob="15"/>  <item name="nitratePowder" count="5,10" prob="12.5"/> <item name="scrapLead" count="5,15" prob="15"/> </lootgroup>
@@ -2138,7 +2180,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt034" count="2" prob="45"/>
 <item group="cnt034" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STOVES (OLD HOUSES) =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt035"> <item name="scrapIron" count="5,15" prob="40"/> <item name="coal" count="4,12" prob="10"/>  <item group="itemsCookware" prob="15"/> <item group="itemsCommon" prob="5"/>  <item group="foodMeat" count="1,2" prob="10"/>  <item group="foodRotten" count="1,2" prob="20"/>  </lootgroup>
@@ -2152,7 +2194,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt035" count="2" prob="35"/>
 <item group="cnt035" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== STOVES (EXPENSIVE HOUSES) ===================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt036"> <item name="scrapIron" count="5,15" prob="40"/> <item name="coal" count="4,12" prob="10"/>  <item group="itemsCookware" prob="15"/> <item group="itemsCommon" prob="5"/>  <item group="foodMeat" count="1,2" prob="10"/>  <item group="foodRotten" count="1,2" prob="20"/>  </lootgroup>
@@ -2166,7 +2208,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt036" count="2" prob="45"/>
 <item group="cnt036" count="3" prob="15"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BIG FRIDGES =================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt037"> <item group="foodCanned" prob="25"/>  <item group="foodRations" prob="5"/>  <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="30"/>  <item group="foodStock" prob="5"/>  </lootgroup>
@@ -2180,7 +2222,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt037" count="2,5" prob="15"/>
 <item group="cnt037" count="3,6" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt037" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="cnt037" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>  
 <!-- =========================== CHROME FRIDGES (TOP/BOTTOM) =================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt038"> <item group="foodCanned" prob="25"/>  <item group="foodRations" prob="5"/>  <item group="foodCooled" prob="35"/>  <item group="foodRotten" prob="25"/>  <item group="foodStock" prob="10"/>  </lootgroup>
@@ -2194,7 +2236,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt038" count="1,3" prob="35"/>
 <item group="cnt038" count="2,5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt038" count="0,1" loot_prob_template="nothing75EX"/>
+<item group="cnt038" count="0,1" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== TRASH COMPACTORS ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt039"> <item group="itemsTrash" count="1,2" prob="40"/>  <item group="itemsCommon" prob="50"/> <item group="clothGeneral" prob="7.5"/> <item group="foodCanned" prob="2.5"/> </lootgroup>
@@ -2208,7 +2250,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt039" count="2,3" prob="40"/>
 <item group="cnt039" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== WASHING MACHINE =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt040"> <item group="clothGeneral" prob="90"/>  <item name="cloth" count="4,16" prob="10"/>  </lootgroup>
@@ -2222,7 +2264,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt040" count="2" prob="45"/>
 <item group="cnt040" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item name="cloth" count="0,8" loot_prob_template="nothing66EX"/>
+<item name="cloth" count="0,8" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== NIGHT STANDS ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt041"> <item name="flashlight02" prob="5"/>  <item group="clothGeneral" prob="35"/>  <item group="itemsCommon" prob="15"/> <item group="ammoGuns" count="1,2" prob="5"/> <item group="schemBasic" prob="10"/>  <item group="schemCommon" prob="5"/>  <item group="medicalBasic" prob="15"/>  <item group="pistol" prob="5"/>  </lootgroup>
@@ -2236,7 +2278,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt041" count="2" prob="35"/>
 <item group="cnt041" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="clothGeneral" count="0,1" loot_prob_template="nothing75EX"/>
+<item group="clothGeneral" count="0,1" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== HOUSEHOLD MEDICINE CABINETS =================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt042"> <item group="medicalBasic" prob="75"/>  <item group="medicalPills" count="1,3" prob="25"/>  </lootgroup>
@@ -2250,7 +2292,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt042" count="2" prob="25"/>
 <item group="cnt042" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="medicalPills" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="medicalPills" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== TOILETS (OLD HOUSES) ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt043"> <item name="bottledRiverWater" count="1,2" prob="40"/>  <item name="turd" count="1,2" prob="40"/> <item group="lootToilet" prob="20"/>  </lootgroup>
@@ -2278,7 +2320,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt044" count="1,2" prob="4"/>
 <item group="cnt044" count="2" prob="1"/>
 <!-- Chance of Default Loot -->
-<item name="bottledRiverWater" count="0,1" loot_prob_template="nothing66EX"/>
+<item name="bottledRiverWater" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== MAILBOXES ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt045"> <item name="paper" count="0,25" prob="50"/> <item name="feather" count="3,14" prob="10"/> <item group="schemAll" prob="15"/>  <item group="lootNest" count="1,2" prob="25"/>  </lootgroup>
@@ -2292,7 +2334,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt045" count="2,3" prob="55"/>
 <item group="cnt045" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="lootNest" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="lootNest" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== TRASHCANS ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt046"> <item group="itemsTrash" prob="30"/>  <item group="itemsCommon" prob="70"/>  </lootgroup>
@@ -2306,7 +2348,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt046" count="3,4" prob="30"/>
 <item group="cnt046" count="5" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 
 
@@ -2323,7 +2365,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt047" count="2" prob="35"/>
 <item group="cnt047" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCommon" count="0,1" loot_prob_template="nothing75EX"/>
+<item group="itemsCommon" count="0,1" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== IRON DESK ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt048"> <item group="itemsCommon" count="1,2" prob="40"/> <item group="ammoGuns" count="1,2" prob="15"/>  <item group="schemAll" prob="10"/>  <item group="medicalBasic" count="1,2" prob="15"/>  <item group="pistol" prob="10"/>  <item name="flashlight02" prob="10"/>  </lootgroup>
@@ -2337,7 +2379,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt048" count="2" prob="40"/>
 <item group="cnt048" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCommon" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsCommon" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== CASH REGISTER (CLOSED) ======================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt049"> <item name="casinoCoin" count="1,25" prob="55"/>  <item group="itemsCash" prob="45"/>  </lootgroup>
@@ -2351,7 +2393,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt049" count="2" prob="35"/>
 <item group="cnt049" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== CASH REGISTER (OPEN) ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt050"> <item name="casinoCoin" count="1,25" prob="15"/> <item group="itemsCash" prob="45"/> <item group="nothing" prob="40"/>  </lootgroup>
@@ -2365,7 +2407,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt050" count="2" prob="9"/>
 <item group="cnt050" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing90EX"/>
+<item group="nothing" loot_prob_template="nothing75"/>
 </lootcontainer>
 <!-- =========================== FILE CABINETS ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt051"> <item name="painkillers" prob="15"/>  <item name="paper" count="1,10" prob="15"/> <item group="itemsCash" prob="30"/> <item group="ammoGuns" prob="5"/> <item group="schemBasic" prob="10"/>  <item group="schemCommon" prob="5"/>  <item group="schemPainting" prob="5"/>  <item group="itemsCommon" prob="15"/>  </lootgroup>
@@ -2379,7 +2421,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt051" count="2" prob="40"/>
 <item group="cnt051" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BOOKCASE (COMMON) ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt052"> <item name="paper" count="1,10" prob="55"/> <item group="schemBasic" prob="15"/>  <item group="schemCommon" prob="20"/> <item group="schemRare" prob="10"/>  </lootgroup>
@@ -2393,7 +2435,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt052" count="2" prob="39"/>
 <item group="cnt052" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== BOOKCASE (BOOKSTORE) ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt053"> <item name="paper" count="1,10" prob="30"/> <item group="schemAll" prob="70"/>  </lootgroup>
@@ -2407,7 +2449,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt053" count="2,3" prob="40"/>
 <item group="cnt053" count="4" prob="15"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== PILL RACK ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt054"> <item group="medicalBasic" prob="30"/>  <item group="medicalAdvanced" prob="70"/>  </lootgroup>
@@ -2421,7 +2463,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt054" count="2,3" prob="40"/>
 <item group="cnt054" count="4" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="medicalBasic" loot_prob_template="nothing66EX"/>
+<item group="medicalBasic" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BEVERAGE COOLER =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt055"> <item name="beer" count="1,2" prob="30"/> <item name="molotovCocktail" count="1,4" prob="5"/> <item group="foodDrinks" prob="65" count="1,2"/>  </lootgroup>
@@ -2435,7 +2477,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt055" count="2" prob="45"/>
 <item group="cnt055" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== SHOPPING CARTS ================================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt056"> <item name="scrapPlastics" count="1,2" prob="15"/>  <item group="lootHousehold" prob="40"/> <item group="foodDrinks" prob="25"/>  <item group="foodCanned" prob="10"/>  </lootgroup>
@@ -2449,7 +2491,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt056" count="3,4" prob="25"/>
 <item group="cnt056" count="5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/> 
+<item group="nothing" loot_prob_template="nothing50"/> 
 </lootcontainer>
 <!-- =========================== SHOPPING BASKET =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt057"> <item name="scrapPlastics" count="1,2" prob="15"/>  <item group="lootHousehold" prob="40"/> <item group="foodDrinks" prob="15"/>  <item group="foodCanned" prob="10"/>  </lootgroup>
@@ -2463,7 +2505,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt057" count="2" prob="25"/>
 <item group="cnt057" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== GAZZ PUMP ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt058"> <item name="gasCan" count="25,100" prob="100"/>  </lootgroup>
@@ -2477,7 +2519,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt058" count="3,5" prob="40"/>
 <item group="cnt058" count="6" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsTrash" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== DUMPSTER ====================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt059"> <item group="itemsTrash" prob="38"/>  <item group="itemsCommon" prob="60"/> <item group="lootHousehold" prob="1"/>  <item group="lootSurvivor" prob="1"/>  </lootgroup>
@@ -2491,7 +2533,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt059" count="3,4" prob="50"/>
 <item group="cnt059" count="5,6" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== MORTICIAN DRAWER ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt060"> <item name="rottingFlesh" count="1,2" prob="25"/> <item name="femur" count="1,2" prob="20"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="goldOre" prob="10"/> <item group="itemsTrash" prob="20"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  </lootgroup>
@@ -2505,7 +2547,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt060" count="2,3" prob="25"/>
 <item group="cnt060" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== FURNACE DRAWER ================================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt061"> <item name="coal" count="5,15" prob="35"/>  <item name="fertilizer" count="5,25" prob="10"/> <item name="femur" count="1,2" prob="30"/>  <item name="goldOre" prob="10"/> <item group="itemsCommon" prob="15"/>  </lootgroup>
@@ -2519,7 +2561,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt061" count="2" prob="25"/>
 <item group="cnt061" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== GREEN DRAWER ================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt062"> <item group="itemsTrash" prob="55"/>  <item group="itemsCommon" count="1,2" prob="40"/> <item group="lootSafesBasic" prob="5"/>  </lootgroup>
@@ -2533,7 +2575,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt062" count="2" prob="25"/>
 <item group="cnt062" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== COFFIN (CORPSE) =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt063"> <item name="rottingFlesh" count="1,2" prob="30"/> <item name="femur" count="1,2" prob="25"/>  <item name="fertilizer" count="5,30" prob="5"/>  <item name="goldOre" prob="5"/>  <item group="itemsTrash" prob="15"/>  <item group="itemsCommon" prob="10"/> <item group="schemCommon" prob="5"/>  <item group="lootSurvivor" prob="5"/>  </lootgroup>
@@ -2548,7 +2590,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt063" count="2" prob="30"/>
 <item group="cnt063" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>                                          </lootcontainer>
+<item group="nothing" loot_prob_template="nothing50"/>                                          </lootcontainer>
 
 <!-- Secure Lootsources -->
 <!-- =========================== DESK SAFES ==================================================================================================================================================================================================================================================================================================================================== -->
@@ -2563,7 +2605,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt064" count="2" prob="30"/>
 <item group="cnt064" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="cnt064" loot_prob_template="nothing66EX"/>
+<item group="cnt064" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== WALL SAFES ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt065"> <item group="lootSafesBasic" prob="90"/>  <item group="lootSafesRich" prob="10"/>  </lootgroup>
@@ -2577,7 +2619,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt065" count="2" prob="30"/>
 <item group="cnt065" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="cnt065" loot_prob_template="nothing66EX"/>
+<item group="cnt065" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== AMMO CHEST ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt066"> <item group="ammoGuns" count="2,3" prob="65"/> <item group="ammoParts" count="2,3" prob="25"/>  <item group="ammoBombs" prob="5"/>  <item group="ammoMines" prob="5"/>  <item group="gunsCommon" prob="2"/> <item group="gunsUncommon" prob="2"/> <item group="gunsRare" prob="1"/>  </lootgroup>
@@ -2591,7 +2633,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt066" count="5,6" prob="45"/>
 <item group="cnt066" count="7,9" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="ammoGuns" count="3,5" loot_prob_template="nothing66EX"/>
+<item group="ammoGuns" count="3,5" loot_prob_template="nothing50"/>
 </lootcontainer> 
 <!-- =========================== GUN SAFES ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt067"> <item group="ammoGuns" count="2,3" prob="10"/> <item group="ammoParts" count="2,3" prob="5"/>  <item group="ammoBombs" prob="2"/>  <item group="ammoMines" prob="2"/>  <item group="gunsCommon" count="1" prob="43"/>  <item group="gunsUncommon" prob="28"/>  <item group="gunsRare" prob="5"/> <item group="gunsComplete" prob="2.5"/> <item group="schemFirearm" prob="2.5"/>  </lootgroup>
@@ -2605,7 +2647,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt067" count="4,5" prob="60"/>
 <item group="cnt067" count="6" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="gunsBalanced" count="2,4" loot_prob_template="nothing66"/>
+<item group="gunsBalanced" count="2,4" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== LOCKERS ======================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt068"> <item group="ammoParts" count="1,2" prob="3"/>  <item name="footballHelmet" prob="6"/>  <item name="miningHelmet" prob="1"/>  <item name="paper" count="3,5" prob="3"/> <item group="clothGeneral" prob="50"/>  <item group="toolsOther" prob="2"/> <item group="gunsCommon" prob="3"/> <item group="ammoGuns" prob="3"/> <item group="medicalBasic" prob="4"/> <item group="schemBasic" prob="3"/> <item group="schemCommon" prob="2"/>  <item group="itemsCommon" prob="20"/>  </lootgroup>
@@ -2619,7 +2661,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt068" count="2,4" prob="50"/>
 <item group="cnt068" count="5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="clothGeneral" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="clothGeneral" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 
 <!-- Special -->
@@ -2635,7 +2677,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt069" count="2" prob="55"/>
 <item group="cnt069" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt069" loot_prob_template="nothing50"/>
+<item group="cnt069" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== AIRDROPS (HORDE) ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt070"> <item name="casinoCoin" count="5000,20000" prob="20"/> <item group="ammoGuns" count="5,10"/> <item group="lootADBase" prob="5"/>  <item group="lootADMedical" prob="15"/> <item group="lootADFood" prob="5"/>  <item group="lootADGunsAmmo" prob="24"/>  <item group="lootADTools" prob="7"/> <item group="lootADArmor" prob="12"/> <item group="lootADBuild" prob="1"/>  <item group="lootADStock" prob="6"/>  </lootgroup>
@@ -2649,7 +2691,7 @@ loot_quality_template=  "hordeTreasure">
 <item group="cnt070" count="4,5" prob="55"/>
 <item group="cnt070" count="5,6" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt070" count="3" loot_prob_template="nothing66EX"/>
+<item group="cnt070" count="3" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== TREASURE CHESTS (BASIC) ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt071"> <item group="lootTreasureBasic" prob="100"/>  </lootgroup>
@@ -2663,7 +2705,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt071" count="6,9" prob="4"/>
 <item group="cnt071" count="10" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt071" count="4" loot_prob_template="nothing66"/>
+<item group="cnt071" count="4" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== TREASURE CHESTS (HORDE) ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt072"> <item group="lootTreasureBasic" prob="100"/>  </lootgroup>
@@ -2677,7 +2719,7 @@ loot_quality_template=  "hordeTreasure">
 <item group="cnt072" count="7,9" prob="4"/>
 <item group="cnt072" count="10" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt072" count="5" loot_prob_template="nothing66"/>
+<item group="cnt072" count="5" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== MOUNTAIN MAN CHEST ============================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt073"> <item name="herbalAntibiotics" count="2,5" prob="25"/> <item group="lootHerbal" prob="75"/>  </lootgroup>
@@ -2691,7 +2733,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt073" count="2" prob="50"/>
 <item group="cnt073" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="lootHerbal" loot_prob_template="nothing66"/>
+<item group="lootHerbal" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== TAZAS ARTIFACT CHEST ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt074a"> <item group="lootTazas"/>  </lootgroup>     <lootgroup name="cnt074b" count="all"> <item group="lootTazas"/> <item group="matsRareOres" count="1,2"/>  </lootgroup>   <lootgroup name="cnt074c" count="all"> <item group="lootTazas"/> <item group="matsRareOres" count="3,8"/> </lootgroup>
@@ -2705,7 +2747,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt074b" count="1" prob="40"/>
 <item group="cnt074c" count="1" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="cnt074a" loot_prob_template="nothing66EX"/>
+<item group="cnt074a" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- 75 - 80 free -->
 
@@ -2723,7 +2765,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt081" count="2" prob="40"/>
 <item group="cnt081" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="matsScrap" loot_prob_template="nothing75EX"/>
+<item group="matsScrap" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED WORKBENCH ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt082"> <item group="matsBasic" prob="10"/> <item group="matsScrap" prob="10"/> <item group="matsForged" prob="20"/>  <item group="matsMisc" prob="20"/>  <item group="toolsIron" prob="10"/> <item group="toolsSteel" prob="10"/>  <item group="ammoParts" prob="10"/> <item group="ammoParts" prob="10"/>  </lootgroup>
@@ -2737,7 +2779,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt082" count="2" prob="40"/>
 <item group="cnt082" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="matsScrap" loot_prob_template="nothing66EX"/>
+<item group="matsScrap" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED CEMENTMIXER =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt083"> <item name="rottingFlesh" count="5,15" prob="20"/>  <item group="matsBasic" prob="40"/> <item group="matsOres" prob="10"/>  <item group="matsConstruction" prob="30"/>  </lootgroup>
@@ -2751,7 +2793,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt083" count="2" prob="40"/>
 <item group="cnt083" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="matsConstruction" loot_prob_template="nothing66EX"/>
+<item group="matsConstruction" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED CHEMISTRY STATION ===================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt084"> <item group="itemsTrash" prob="10"/>  <item name="wood" count="10,100" prob="10"/>  <item name="paint" count="25,75" prob="5"/> <item name="glue" count="1,5" prob="5"/>  <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="15"/> <item name="coal" count="10,50" prob="10"/> <item name="oilShale" count="10,50" prob="5"/>  <item name="beaker" prob="5"/>  <item group="medicalAdvanced" prob="5"/>  <item name="nitratePowder" count="10,50" prob="10"/>  </lootgroup>
@@ -2765,7 +2807,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt084" count="2" prob="30"/>
 <item group="cnt084" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="itemsTrash" count="3,5" loot_prob_template="nothing75EX"/>
+<item group="itemsTrash" count="3,5" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED BATTERYBANK =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt085"> <item name="scrapLead" count="25,150" prob="30"/>  <item group="batteries" prob="70"/>  </lootgroup>
@@ -2779,7 +2821,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt085" count="2" prob="50"/>
 <item group="cnt085" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item name="scrapLead" count="0,50" loot_prob_template="nothing75EX"/>
+<item name="scrapLead" count="0,50" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== COLLAPSED GENERATORBANK ========================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt086"> <item name="scrapIron" count="25,125" prob="30"/>  <item group="engines" prob="70"/>  </lootgroup>
@@ -2793,7 +2835,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt086" count="2" prob="50"/>
 <item group="cnt086" count="3" prob="10"/>
 <!-- Chance of Default Loot -->
-<item name="scrapIron" count="0,50" loot_prob_template="nothing75EX"/>
+<item name="scrapIron" count="0,50" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!--  87 - 100 free -->
   
@@ -2810,7 +2852,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt101" count="2" prob="25"/>
 <item group="cnt101" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing75EX"/>
+<item group="nothing" loot_prob_template="nothing66"/>
 </lootcontainer>
 <!-- =========================== STRONG BASIC ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt102"> <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="10"/> <item group="lootStrongZombie" prob="40"/>  </lootgroup>
@@ -2824,7 +2866,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt102" count="2" prob="45"/>
 <item group="cnt102" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt102" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="cnt102" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== COP ZOMBIE ===================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt103"> <item group="lootBaseZombie" prob="30"/>  <item group="lootCopZombie" prob="70"/> </lootgroup>
@@ -2838,7 +2880,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt103" count="2" prob="35"/>
 <item group="cnt103" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt103" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="cnt103" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG COP ZOMBIE ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt104"> <item group="lootBaseZombie" prob="5"/> <item group="lootCopZombie" prob="95"/> </lootgroup>
@@ -2852,7 +2894,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt104" count="2" prob="55"/>
 <item group="cnt104" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt104" count="1" loot_prob_template="nothing66EX"/>
+<item group="cnt104" count="1" loot_prob_template="nothing50"/>
   </lootcontainer>
 <!-- =========================== MEDICAL ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt105"> <item name="firstAidBandage" prob="25"/>  <item group="medicalBasic" prob="25"/>  <item group="medicalAdvanced" prob="50"/> </lootgroup>
@@ -2866,7 +2908,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt105" count="2" prob="35"/>
 <item group="cnt105" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="medicalBasic" count="1" loot_prob_template="nothing66EX"/>
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG MEDICAL ZOMBIE ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt106"> <item name="firstAidBandage" prob="15"/>  <item group="medicalBasic" prob="15"/>  <item group="medicalAdvanced" prob="70"/> </lootgroup>
@@ -2880,7 +2922,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt106" count="2" prob="45"/>
 <item group="cnt106" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="medicalAdvanced" count="1" loot_prob_template="nothing66EX"/>
+<item group="medicalAdvanced" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== SPECIAL ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt107"> <item group="lootBaseZombie" prob="75"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2894,7 +2936,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt107" count="2" prob="25"/>
 <item group="cnt107" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG SPECIAL ZOMBIE =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt108"> <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/> </lootgroup>
@@ -2908,7 +2950,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt108" count="2" prob="35"/>
 <item group="cnt108" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>  
 <!-- 109 Free -->
 <!-- =========================== GHOUL ZOMBIE ===================================================================================================================================================================================================================================================================================================================================== -->
@@ -2923,7 +2965,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt110" count="2" prob="29"/>
 <item group="cnt110" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt110" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="cnt110" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG GHOUL ZOMBIE =============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt111"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootFeralZombie" prob="60"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2937,7 +2979,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt111" count="3" prob="29"/>
 <item group="cnt111" count="4" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="cnt111" count="1" loot_prob_template="nothing66EX"/>
+<item group="cnt111" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== HAZMAT ZOMBIE ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt112"> <item group="lootBaseZombie" prob="50"/>  <item group="lootStrongZombie" prob="4"/> <item group="lootHazmatZombie" prob="45"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2951,7 +2993,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt112" count="2" prob="19"/>
 <item group="cnt112" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="medicalBasic" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="medicalBasic" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG HAZMAT ZOMBIE =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt113"> <item group="lootBaseZombie" prob="15"/>  <item group="lootStrongZombie" prob="29"/> <item group="lootHazmatZombie" prob="55"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2965,7 +3007,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt113" count="2" prob="29"/>
 <item group="cnt113" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="medicalBasic" count="1" loot_prob_template="nothing66EX"/>
+<item group="medicalBasic" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== ZOMBIE LUMBERJACK ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt114"> <item group="lootBaseZombie" prob="30"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootLumberZombie" prob="40"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2979,7 +3021,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt114" count="2" prob="19"/>
 <item group="cnt114" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG ZOMBIE LUMBERJACK ======================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt115"> <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="39"/>  <item group="lootLumberZombie" prob="50"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -2993,7 +3035,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt115" count="2" prob="29"/>
 <item group="cnt115" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="lootLumberZombie" count="0,1" loot_prob_template="nothing75EX"/>
+<item group="lootLumberZombie" count="0,1" loot_prob_template="nothing33"/>
 </lootcontainer>
 <!-- =========================== ZOMBIE STRIPPER ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt116"> <item group="itemsCash" count="2,5" prob="90"/> <item group="itemsCash" count="5,10" prob="10"/>   </lootgroup>
@@ -3007,7 +3049,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt116" count="2" prob="30"/>
 <item group="cnt116" count="3" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCash" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsCash" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG ZOMBIE STRIPPER =========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt117"> <item group="itemsCash" count="2,5" prob="30"/> <item group="itemsCash" count="5,10" prob="70"/>   </lootgroup>
@@ -3021,7 +3063,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt117" count="3" prob="30"/>
 <item group="cnt117" count="4" prob="20"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCash" count="2" loot_prob_template="nothing66EX"/>
+<item group="itemsCash" count="2" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== ZOMBIE SOLDIER ================================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt118"> <item group="lootBaseZombie" prob="10"/>  <item group="lootStrongZombie" prob="29"/>  <item group="lootSoldierZombie" prob="60"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -3035,7 +3077,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt118" count="2" prob="4"/>
 <item group="cnt118" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="lootStrongZombie" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="lootStrongZombie" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG ZOMBIE SOLDIER ========================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt119"> <item group="lootBaseZombie" prob="5"/>  <item group="lootStrongZombie" prob="19"/>  <item group="lootSoldierZombie" prob="75"/> <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -3049,7 +3091,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt119" count="2" prob="4"/>
 <item group="cnt119" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="lootStrongZombie" count="1" loot_prob_template="nothing66EX"/>
+<item group="lootStrongZombie" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== ZOMBIE UTILITY WORKER ========================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt120"> <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/> </lootgroup>
@@ -3063,7 +3105,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt120" count="2" prob="4"/>
 <item group="cnt120" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG ZOMBIE UTILITY WORKER ================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt121"> <item group="lootBaseZombie" prob="40"/>  <item group="lootStrongZombie" prob="15"/>  <item group="lootUtilityZombie" prob="45"/> </lootgroup>
@@ -3077,7 +3119,7 @@ loot_quality_template=  "leveledNormal">
 <item group="cnt121" count="2" prob="4"/>
 <item group="cnt121" count="3" prob="1"/>
 <!-- Chance of Default Loot -->
-<item group="nothing" loot_prob_template="nothing66EX"/>
+<item group="nothing" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== BURLY ZOMBIES =================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt122"> <item group="lootBaseZombie" prob="50"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="24"/>  <item group="lootSurvivor" prob="1"/> </lootgroup>
@@ -3091,7 +3133,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt122" count="2" prob="25"/>
 <item group="cnt122" count="3" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="itemsCommon" count="0,1" loot_prob_template="nothing66EX"/>
+<item group="itemsCommon" count="0,1" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== STRONG BURLY ZOMBIES ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt123"> <item group="lootBaseZombie" prob="25"/>  <item group="lootFoodZombie" prob="25"/>  <item group="lootStrongZombie" prob="48"/>  <item group="lootSurvivor" prob="2"/>  </lootgroup>
@@ -3105,7 +3147,7 @@ loot_quality_template=  "leveledLight">
 <item group="cnt123" count="3" prob="25"/>
 <item group="cnt123" count="4" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt123" count="1" loot_prob_template="nothing66EX"/>
+<item group="cnt123" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
   
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->

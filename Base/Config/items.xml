@@ -12418,6 +12418,30 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property name="CustomIconTint"               value="ffa0a0"/>
 </item>
 
+<item id="1823" name="largeCraterTurd">
+<property name="Extends"                      value="blastingTurd"/>
+<property name="CreativeMode"                 value="Dev"/>
+<property name="Explosion.BlockDamage"        value="10000"/>
+<property name="Explosion.EntityDamage"       value="0"/>
+<property name="Explosion.ParticleIndex"      value="4"/>
+<property name="Explosion.RadiusBlocks"       value="6"/>
+<property name="Explosion.RadiusEntities"     value="1"/>
+<property name="CustomIcon"                   value="turd"/>
+<property name="CustomIconTint"               value="ffa0a0"/>
+</item>
+
+<item id="1824" name="smallCraterTurd">
+<property name="Extends"                      value="blastingTurd"/>
+<property name="CreativeMode"                 value="Dev"/>
+<property name="Explosion.BlockDamage"        value="10000"/>
+<property name="Explosion.EntityDamage"       value="0"/>
+<property name="Explosion.ParticleIndex"      value="4"/>
+<property name="Explosion.RadiusBlocks"       value="3"/>
+<property name="Explosion.RadiusEntities"     value="1"/>
+<property name="CustomIcon"                   value="turd"/>
+<property name="CustomIconTint"               value="ffa0a0"/>
+</item>
+
 <!-- Gnamod Quest Items -->
 <item id="1851" name="q_GnamodBasic"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
 <property class="Action1">  <property name="QuestGiven" value="quest_GnamodBasic1"/> </property>

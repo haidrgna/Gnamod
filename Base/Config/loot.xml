@@ -82,16 +82,16 @@
 <block name="garbage_decor1"                    prob="0.01"/>
 <block name="garbage_decor2"                    prob="0.01"/>
 <block name="garbage_decor3"                    prob="0.01"/>
-<block name="metalRivetSheet"                   prob="0.005"/>
-<block name="corrugatedMetalSheet"              prob="0.005"/>
-<block name="metalTrussingSheet"                prob="0.005"/>
-<block name="woodFenceSheet"                    prob="0.005"/>
-<block name="whitePicketFenceSheet"             prob="0.005"/>
-<block name="wroughtIronFenceSheet"             prob="0.005"/>
-<block name="railingBlackSheet"                 prob="0.01"/>
-<block name="railingMetalSheet"                 prob="0.01"/>
-<block name="railingWoodWhiteSheet"             prob="0.005"/>
-<block name="treePlant02"                       prob="0.01"/>
+<block name="metalRivetSheet"                   prob="0.0025"/>
+<block name="corrugatedMetalSheet"              prob="0.0025"/>
+<block name="metalTrussingSheet"                prob="0.0025"/>
+<block name="woodFenceSheet"                    prob="0.0025"/>
+<block name="whitePicketFenceSheet"             prob="0.0025"/>
+<block name="wroughtIronFenceSheet"             prob="0.0025"/>
+<block name="railingBlackSheet"                 prob="0.0025"/>
+<block name="railingMetalSheet"                 prob="0.0025"/>
+<block name="railingWoodWhiteSheet"             prob="0.0025"/>
+<block name="treePlant02"                       prob="0.0075"/>
 <block name="endTable"                          prob="0.005"/>
 <block name="endTableLamp"                      prob="0.005"/>
 <block name="leatherCouchSofa"                  prob="0.01"/>
@@ -101,15 +101,15 @@
 <block name="bed01Frame"                        prob="0.005"/>
 <block name="mattressFlat"                      prob="0.005"/>
 <block name="bed02"                             prob="0.01"/>
-<block name="barStool"                          prob="0.01"/>
+<block name="barStool"                          prob="0.0075"/>
 <block name="mineCandyTin"                      prob="0.005"/>
 <block name="mineHubcap"                        prob="0.005"/>
 <block name="mineAirFilter"                     prob="0.005"/>
-<block name="mineCookingPot"                    prob="0.005"/>
+<block name="mineCookingPot"                    prob="0.0025"/>
 <block name="rScrapIronPlateMine"               prob="0.005"/>
 <block name="hubcapNoMine"                      prob="0.01"/>
 <block name="roadRailingPole"                   prob="0.015"/>
-<block name="metalPipeStraight"                 prob="0.01"/>
+<block name="metalPipeStraight"                 prob="0.005"/>
 <block name="metalPipeCorner"                   prob="0.005"/>
 <block name="metalPipeJoint"                    prob="0.005"/>
 <block name="metalPipeCap"                      prob="0.01"/>
@@ -132,17 +132,19 @@
 <block name="shoppingCartEmpty"                 prob="0.01"/>
 <block name="shoppingBasketEmpty"               prob="0.01"/>
 <!-- Debris or Grass (0.34) -->
-<block name="treeBrownGrassDiagonal"            prob="0.09"/>
+<block name="treeBrownGrassDiagonal"            prob="0.075"/>
 <block name="treeDeadShrub"                     prob="0.01"/>
-<block name="brickDestroyedBlock01"             prob="0.015"/>
-<block name="brickDestroyedBlock02"             prob="0.015"/>
-<block name="brickDestroyedBlock03"             prob="0.015"/>
-<block name="cinderBlocks01"                    prob="0.015"/>
-<block name="cinderBlocks02"                    prob="0.015"/>
-<block name="cinderBlocks03"                    prob="0.015"/>
-<block name="scrapMetalPile"                    prob="0.05"/>
+<block name="brickDestroyedBlock01"             prob="0.01"/>
+<block name="brickDestroyedBlock02"             prob="0.01"/>
+<block name="brickDestroyedBlock03"             prob="0.01"/>
+<block name="cinderBlocks01"                    prob="0.01"/>
+<block name="cinderBlocks02"                    prob="0.01"/>
+<block name="cinderBlocks03"                    prob="0.01"/>
+<block name="scrapMetalPile"                    prob="0.04"/>
+<block name="scrapSteelPile"                    prob="0.05"/>
 <block name="destroyedStone"                    prob="0.05"/>
-<block name="woodDebris"                        prob="0.05"/>  
+<block name="woodDebris"                        prob="0.10"/>
+<!--<block name="crater"                            prob="0.05"/> -->
 </placeholder>
 
 <placeholder name="lootDesertHelper">
@@ -405,15 +407,15 @@
 
 <placeholder name="rockHelper">
 <block name="rock01"                            prob="0.08"/>
-<block name="rock02"                            prob="0.08"/>
+<block name="rock02"                            prob="0.09"/>
 <block name="rock03"                            prob="0.08"/>
-<block name="rock04"                            prob="0.08"/>
-<block name="rock05"                            prob="0.09"/>
-<block name="rock06"                            prob="0.09"/>
-<block name="rock07"                            prob="0.10"/>
+<block name="rock04"                            prob="0.09"/>
+<block name="rock05"                            prob="0.08"/>
+<block name="rock06"                            prob="0.08"/>
+<block name="rock07"                            prob="0.09"/>
 <block name="rock08"                            prob="0.08"/>
 <block name="rock09"                            prob="0.08"/>
-<block name="rock10"                            prob="0.08"/>
+<block name="rock10"                            prob="0.09"/>
 <block name="rock11"                            prob="0.08"/>
 <block name="rock12"                            prob="0.08"/>
 </placeholder>
@@ -437,6 +439,10 @@
 <block name="silverDeposit"                     prob="0.60"/>
 <block name="goldDeposit"                       prob="0.30"/>
 <block name="diamondDeposit"                    prob="0.10"/>
+</placeholder>
+
+<placeholder name="terrainWater">
+<block name="water"                             prob="1"/>
 </placeholder>
 
 <!-- GNAMOD STARTER KITS -->

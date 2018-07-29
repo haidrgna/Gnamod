@@ -68,189 +68,17 @@
 <!-- Replacements -->
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.50"> <!-- Pine Forest -->
-<layers>
-<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
-
-  
-<decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.02"/>
-<decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.001"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.001"/>
-<decoration type="block" blockname="treeSnowyDeadBush"                    prob="0.002"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.002"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0001"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.004"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.00005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.00005"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeWinterEverGreen"                  prob="0.015"/>
-<decoration type="block" blockname="treeWinterPine01"                     prob="0.015"/>
-<decoration type="block" blockname="treeWinterPine02"                     prob="0.015"/>
-<decoration type="block" blockname="treeWinterPine03"                     prob="0.015"/>
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.02"/>
-<decoration type="block" blockname="treeMountainPine8m"                   prob="0.02"/>
-<decoration type="block" blockname="treeMountainPine13m"                  prob="0.02"/>
-<decoration type="block" blockname="treeMountainPine16m"                  prob="0.03"/>
-<decoration type="block" blockname="treeMountainPine19m"                  prob="0.03"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.05"/>
-<decoration type="block" blockname="treeMountainPine20m"                  prob="0.05"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0004"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0006"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.003"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
-<!-- Houses -->
-<decoration type="prefab" name="abandoned_house_01"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_02"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_03"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_04"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_05"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_06"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_07"                       prob="0.02"/>
-<decoration type="prefab" name="abandoned_house_08"                       prob="0.02"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.015"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.015"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.015"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.015"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.025"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.025"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.015"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.015"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.025"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
-<!-- Camps -->
-<decoration type="prefab" name="campsite_01"                              prob="0.007"/>
-<decoration type="prefab" name="campsite_02"                              prob="0.008"/>
-<decoration type="prefab" name="campsite_03"                              prob="0.009"/>
-<decoration type="prefab" name="campsite_04"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_06"                              prob="0.011"/>
-<decoration type="prefab" name="campsite_06a"                             prob="0.012"/>
-<decoration type="prefab" name="campsite_07"                              prob="0.013"/>
-<decoration type="prefab" name="campsite_07a"                             prob="0.014"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.025"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.025"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.025"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
-</decorations>
-</subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.14"/>
-<decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.01"/>
-<decoration type="block" blockname="treeSnowyDeadBush"                    prob="0.002"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0004"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.003"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeWinterEverGreen"                  prob="0.04"/>
-<decoration type="block" blockname="treeWinterPine01"                     prob="0.04"/>
-<decoration type="block" blockname="treeWinterPine02"                     prob="0.04"/>
-<decoration type="block" blockname="treeWinterPine03"                     prob="0.04"/>
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.01"/>
-<decoration type="block" blockname="treeMountainPine8m"                   prob="0.01"/>
-<decoration type="block" blockname="treeMountainPine13m"                  prob="0.01"/>
-<decoration type="block" blockname="treeMountainPine16m"                  prob="0.01"/>
-<decoration type="block" blockname="treeMountainPine19m"                  prob="0.01"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.03"/>
-<decoration type="block" blockname="treeMountainPine20m"                  prob="0.03"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0006"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0004"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
-<!-- Houses -->
-<decoration type="prefab" name="abandoned_house_01"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_02"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_03"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_04"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_05"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_06"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_07"                       prob="0.01"/>
-<decoration type="prefab" name="abandoned_house_08"                       prob="0.01"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
-<!-- Snow -->
-<decoration type="prefab" name="snowy_ski_lodge"                          prob="0.08"/>
-<decoration type="prefab" name="cabin_snow_hidden_01"                     prob="0.08"/>
-<decoration type="prefab" name="sawmill_01_snow"                          prob="0.08"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.008"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.008"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.008"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.008"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.016"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.016"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.008"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.008"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.016"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
-<!-- Camps -->
-<decoration type="prefab" name="campsite_01"                              prob="0.003"/>
-<decoration type="prefab" name="campsite_02"                              prob="0.004"/>
-<decoration type="prefab" name="campsite_03"                              prob="0.004"/>
-<decoration type="prefab" name="campsite_04"                              prob="0.005"/>
-<decoration type="prefab" name="campsite_06"                              prob="0.005"/>
-<decoration type="prefab" name="campsite_06a"                             prob="0.005"/>
-<decoration type="prefab" name="campsite_07"                              prob="0.006"/>
-<decoration type="prefab" name="campsite_07a"                             prob="0.006"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.015"/>
-<decoration type="prefab" name="pond02"                                   prob="0.020"/>
 </decorations>
 
 <terrain class="Mountains" />
@@ -286,333 +114,80 @@
 <Wind             min="50"    max="75"    prob="0.09"/>
 <Wind             min="75"    max="100"   prob="0.01"/>
 <!-- ===== Particles ============================== -->
+<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="9"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.20"> <!-- Open Space -->
+<subbiome prob="0.10"> <!-- Lake -->
 <layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.45"/>
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.15"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.002"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.0001"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.0009"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.0001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.0001"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0009"/>
-<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0004"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0002"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0006"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.00005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.00005"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeBirch10m"                         prob="0.000016"/>
-<decoration type="block" blockname="treeBirch12m"                         prob="0.000018"/>
-<decoration type="block" blockname="treeBirch15m"                         prob="0.000020"/>
-<decoration type="block" blockname="treeMaple6m"                          prob="0.000010"/>
-<decoration type="block" blockname="treeMaple13m"                         prob="0.000022"/>
-<decoration type="block" blockname="treeMaple15m"                         prob="0.000024"/>
-<decoration type="block" blockname="treeMaple16m"                         prob="0.000028"/>
-<decoration type="block" blockname="treeMaple17m"                         prob="0.00003"/>
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.00005"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.004"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.006"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.016"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.02"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.005"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.00007"/>
-<!-- Camps -->
-<decoration type="prefab" name="campsite_01"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_02"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_03"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_04"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_06"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_06a"                             prob="0.02"/>
-<decoration type="prefab" name="campsite_07"                              prob="0.02"/>
-<decoration type="prefab" name="campsite_07a"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.02"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.03"/>
-<decoration type="prefab" name="pond02"                                   prob="0.03"/>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
 </decorations>
-</subbiome>
-
-<subbiome prob="0.30"> <!-- Birch Cluster -->
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
-
-  
-<decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.17"/>
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.03"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.004"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.009"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.0001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.0001"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0018"/>
-<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0002"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0002"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0003"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.0005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.0005"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeBirch10m"                         prob="0.045"/>
-<decoration type="block" blockname="treeBirch12m"                         prob="0.050"/>
-<decoration type="block" blockname="treeBirch15m"                         prob="0.060"/>
-<decoration type="block" blockname="treeMaple6m"                          prob="0.00010"/>
-<decoration type="block" blockname="treeMaple13m"                         prob="0.00022"/>
-<decoration type="block" blockname="treeMaple15m"                         prob="0.00024"/>
-<decoration type="block" blockname="treeMaple16m"                         prob="0.00028"/>
-<decoration type="block" blockname="treeMaple17m"                         prob="0.0003"/>
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.0005"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0006"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0004"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.00005"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
-<!-- Houses -->
-<decoration type="prefab" name="house_new_01"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_02"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_03"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_04"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_05"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_06"                             prob="0.012"/>
-<decoration type="prefab" name="house_new_mansion_01"                     prob="0.012"/>
-<decoration type="prefab" name="house_new_mansion_02"                     prob="0.012"/>
-<decoration type="prefab" name="house_new_mansion_03"                     prob="0.012"/>
-<decoration type="prefab" name="house_trailer_blue_01"                    prob="0.012"/>
-<decoration type="prefab" name="house_trailer_green_01"                   prob="0.012"/>
-<decoration type="prefab" name="house_trailer_tan_01"                     prob="0.012"/>
-<decoration type="prefab" name="house_trailer_white_01"                   prob="0.012"/>
-<decoration type="prefab" name="house_trailer_yellow_01"                  prob="0.012"/>
-<decoration type="prefab" name="houseblue1"                               prob="0.012"/>
-<decoration type="prefab" name="houseblue1_eric"                          prob="0.012"/>
-<decoration type="prefab" name="housebrick1"                              prob="0.012"/>
-<decoration type="prefab" name="housegreen1"                              prob="0.012"/>
-<decoration type="prefab" name="houseranchblue1"                          prob="0.012"/>
-<decoration type="prefab" name="houseranchtan1"                           prob="0.012"/>
-<decoration type="prefab" name="houseranchtan2"                           prob="0.012"/>
-<decoration type="prefab" name="houseranchwhite1"                         prob="0.012"/>
-<decoration type="prefab" name="housestucco1"                             prob="0.012"/>
-<decoration type="prefab" name="housestucco2"                             prob="0.012"/>
-<decoration type="prefab" name="housestucco3"                             prob="0.012"/>
-<decoration type="prefab" name="housetan2"                                prob="0.012"/>
-<decoration type="prefab" name="housetanpyramid2"                         prob="0.012"/>
-<decoration type="prefab" name="housewhite1"                              prob="0.012"/>
-<decoration type="prefab" name="housewhite1basement"                      prob="0.012"/>
-<decoration type="prefab" name="housewhite2"                              prob="0.012"/>
-<decoration type="prefab" name="housewhitepyramid1"                       prob="0.012"/>
-<decoration type="prefab" name="housewhitepyramid2"                       prob="0.012"/>
-<decoration type="prefab" name="housewhitepyramid3"                       prob="0.012"/>
-<decoration type="prefab" name="houseyellow1"                             prob="0.012"/>
-<decoration type="prefab" name="houseyellowpyramid3"                      prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_01"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_02"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_03"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_04"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_05"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_06"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_07"                       prob="0.012"/>
-<decoration type="prefab" name="abandoned_house_08"                       prob="0.012"/>
-<decoration type="prefab" name="trailer_01"                               prob="0.012"/>
-<decoration type="prefab" name="trailer_02"                               prob="0.012"/>
-<decoration type="prefab" name="trailer_03"                               prob="0.012"/>
-<decoration type="prefab" name="trailer_04"                               prob="0.012"/>
-<!-- Special -->
-<decoration type="prefab" name="trailer_park_01"                          prob="0.02"/>
-<decoration type="prefab" name="church_sm_01"                             prob="0.02"/>
-<decoration type="prefab" name="settlement_01"                            prob="0.02"/>
-<decoration type="prefab" name="cemetery_01"                              prob="0.02"/>
-<decoration type="prefab" name="cemetery_02"                              prob="0.02"/>
-<decoration type="prefab" name="church_graveyard1"                        prob="0.02"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.02"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.02"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.02"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.02"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.02"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.02"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.02"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.02"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.02"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.01"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.03"/>
-<decoration type="prefab" name="pond02"                                   prob="0.03"/>
-</decorations>
-</subbiome>
+</subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironOre"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="leadOre"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverOre"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldOre" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="diamondOre" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
-</layers>
--->
-<!-- Gnamod Nomad Mode -->
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layers>                <layer filluptorg="58" blockname="water"/>
+<layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.30"/>
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.05"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.05"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.001"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.009"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.0001"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.0001"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0015"/>
-<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0005"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0003"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.0005"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.0005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.0005"/>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.15" />
+<decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.35" />
+<decoration type="block" blockname="treeAzalea"                           prob="0.003"/>
+<decoration type="block" blockname="treePlainsTree2"                      prob="0.007"/>
+<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.001"/>
+<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.005"/>
+<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.015"/>
+<decoration type="block" blockname="driftwood"                            prob="0.001"/>
+<decoration type="block" blockname="driftwood2"                           prob="0.001"/>
 <!-- Trees -->
-<decoration type="block" blockname="treeBirch10m"                         prob="0.012"/>
-<decoration type="block" blockname="treeBirch12m"                         prob="0.013"/>
-<decoration type="block" blockname="treeBirch15m"                         prob="0.014"/>
-<decoration type="block" blockname="treeMaple6m"                          prob="0.025"/>
-<decoration type="block" blockname="treeMaple13m"                         prob="0.035"/>
-<decoration type="block" blockname="treeMaple15m"                         prob="0.035"/>
-<decoration type="block" blockname="treeMaple16m"                         prob="0.040"/>
-<decoration type="block" blockname="treeMaple17m"                         prob="0.045"/>
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.005"/>
+<decoration type="block" blockname="treeMountainPineDry"                  prob="0.005"/>
+<decoration type="block" blockname="treeDeadShrub"                        prob="0.005"/>
+<decoration type="block" blockname="treeDeadTree02"                       prob="0.005"/>
+<decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.01"/>
+<decoration type="block" blockname="treePlainsTree"                       prob="0.0015"/>
+<decoration type="block" blockname="treeBurntPine01"                      prob="0.0015"/>
+<decoration type="block" blockname="treeBurntPine02"                      prob="0.0010"/>
+<decoration type="block" blockname="treeBurntPine03"                      prob="0.0005"/>
+
 <!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0009"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0009"/>
+<decoration type="block" blockname="lootStreetHelper"                     prob="0.0005"/>
+<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
+<decoration type="block" blockname="cntTreeStump"                         prob="0.0002"/>
+<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
+<decoration type="block" blockname="randomCarsHelper"                     prob="0.001"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
-<!-- Houses -->
-<decoration type="prefab" name="house_new_01"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_02"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_03"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_04"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_05"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_06"                             prob="0.009"/>
-<decoration type="prefab" name="house_new_mansion_01"                     prob="0.009"/>
-<decoration type="prefab" name="house_new_mansion_02"                     prob="0.009"/>
-<decoration type="prefab" name="house_new_mansion_03"                     prob="0.009"/>
-<decoration type="prefab" name="house_trailer_blue_01"                    prob="0.009"/>
-<decoration type="prefab" name="house_trailer_green_01"                   prob="0.009"/>
-<decoration type="prefab" name="house_trailer_tan_01"                     prob="0.009"/>
-<decoration type="prefab" name="house_trailer_white_01"                   prob="0.009"/>
-<decoration type="prefab" name="house_trailer_yellow_01"                  prob="0.009"/>
-<decoration type="prefab" name="houseblue1"                               prob="0.009"/>
-<decoration type="prefab" name="houseblue1_eric"                          prob="0.009"/>
-<decoration type="prefab" name="housebrick1"                              prob="0.009"/>
-<decoration type="prefab" name="housegreen1"                              prob="0.009"/>
-<decoration type="prefab" name="houseranchblue1"                          prob="0.009"/>
-<decoration type="prefab" name="houseranchtan1"                           prob="0.009"/>
-<decoration type="prefab" name="houseranchtan2"                           prob="0.009"/>
-<decoration type="prefab" name="houseranchwhite1"                         prob="0.009"/>
-<decoration type="prefab" name="housestucco1"                             prob="0.009"/>
-<decoration type="prefab" name="housestucco2"                             prob="0.009"/>
-<decoration type="prefab" name="housestucco3"                             prob="0.009"/>
-<decoration type="prefab" name="housetan2"                                prob="0.009"/>
-<decoration type="prefab" name="housetanpyramid2"                         prob="0.009"/>
-<decoration type="prefab" name="housewhite1"                              prob="0.009"/>
-<decoration type="prefab" name="housewhite1basement"                      prob="0.009"/>
-<decoration type="prefab" name="housewhite2"                              prob="0.009"/>
-<decoration type="prefab" name="housewhitepyramid1"                       prob="0.009"/>
-<decoration type="prefab" name="housewhitepyramid2"                       prob="0.009"/>
-<decoration type="prefab" name="housewhitepyramid3"                       prob="0.009"/>
-<decoration type="prefab" name="houseyellow1"                             prob="0.009"/>
-<decoration type="prefab" name="houseyellowpyramid3"                      prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_01"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_02"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_03"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_04"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_05"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_06"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_07"                       prob="0.009"/>
-<decoration type="prefab" name="abandoned_house_08"                       prob="0.009"/>
-<decoration type="prefab" name="trailer_01"                               prob="0.009"/>
-<decoration type="prefab" name="trailer_02"                               prob="0.009"/>
-<decoration type="prefab" name="trailer_03"                               prob="0.009"/>
-<decoration type="prefab" name="trailer_04"                               prob="0.009"/>
-<!-- Special -->
-<decoration type="prefab" name="trailer_park_01"                          prob="0.01"/>
-<decoration type="prefab" name="church_sm_01"                             prob="0.01"/>
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
-<decoration type="prefab" name="cemetery_01"                              prob="0.01"/>
-<decoration type="prefab" name="cemetery_02"                              prob="0.01"/>
-<decoration type="prefab" name="church_graveyard1"                        prob="0.01"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.01"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.01"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.01"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.01"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.01"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.01"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.01"/>
-<decoration type="prefab" name="pond02"                                   prob="0.01"/>
+<!-- Misc -->
+<decoration type="block" blockname="emberPile1"                           prob="0.000025"/>
+<decoration type="block" blockname="emberPile2"                           prob="0.000025"/>
+<decoration type="block" blockname="emberPile3"                           prob="0.00025"/>
+<decoration type="block" blockname="emberPile4"                           prob="0.00025"/>
+<!-- Traps -->
+<decoration type="block" blockname="trapSpikesDamage1"                    prob="0.0003"/>
+<decoration type="block" blockname="trapSpikesDamage3"                    prob="0.0004"/>
+<decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0003"/>
 </decorations>
 
-<terrain class="Forest" />
-<spectrum name="forest" />
+<terrain class="Water"/>
+<spectrum name="pine_forest"/>
 </biome>  
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= PINE FOREST BIOME          +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="pine_forest" biomemapcolor="#004000">
@@ -646,193 +221,17 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.30"> <!-- Open Space -->
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
-
-  
-<decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.25"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.0005"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.0005"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.002"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.0005"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.0005"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0001"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.010"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0003"/>
-<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0004"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.00005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.00005"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.00015"/>
-<decoration type="block" blockname="treeMountainPine8m"                   prob="0.00025"/>
-<decoration type="block" blockname="treeMountainPine13m"                  prob="0.00035"/>
-<decoration type="block" blockname="treeMountainPine16m"                  prob="0.00035"/>
-<decoration type="block" blockname="treeMountainPine19m"                  prob="0.00045"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.00055"/>
-<decoration type="block" blockname="treeMountainPine20m"                  prob="0.00065"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0005"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.006"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00015"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0015"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.01"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.01"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.020"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.020"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.01"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.01"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.020"/>
-<!-- Camps -->
-<decoration type="prefab" name="campsite_01"                              prob="0.009"/>
-<decoration type="prefab" name="campsite_02"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_03"                              prob="0.011"/>
-<decoration type="prefab" name="campsite_04"                              prob="0.012"/>
-<decoration type="prefab" name="campsite_06"                              prob="0.013"/>
-<decoration type="prefab" name="campsite_06a"                             prob="0.015"/>
-<decoration type="prefab" name="campsite_07"                              prob="0.015"/>
-<decoration type="prefab" name="campsite_07a"                             prob="0.015"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
-</decorations>
-</subbiome>
-  
-<subbiome prob="0.10"> <!-- Dead Trees -->
-<layers>
-<layer depth="2"  blockname="forestGround"> <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
-
-
-<decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
-<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.05" />
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.002"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.005"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.050"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0018"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0005"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0005"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
-</decorations>
-</subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
-<decoration type="block" blockname="forestFlower"                         prob="0.0005"/>
-<decoration type="block" blockname="treeAzalea"                           prob="0.0005"/>
-<decoration type="block" blockname="treeDeadShrub"                        prob="0.002"/>
-<decoration type="block" blockname="plantedBlueberry3Harvest"             prob="0.002"/>
-<decoration type="block" blockname="snowberry3Harvest"                    prob="0.002"/>
-<decoration type="block" blockname="plantedPotato3Harvest"                prob="0.0002"/>
-<decoration type="block" blockname="plantedCotton3Harvest"                prob="0.01"/>
-<decoration type="block" blockname="plantedChrysanthemum3Harvest"         prob="0.0009"/>
-<decoration type="block" blockname="plantedGoldenrod3Harvest"             prob="0.0004"/>
-<decoration type="block" blockname="mushroom01"                           prob="0.0005"/>
-<decoration type="block" blockname="mushroom02"                           prob="0.0005"/>
-<!-- Trees -->
-<decoration type="block" blockname="treeJuniper6m"                        prob="0.015"/>
-<decoration type="block" blockname="treeMountainPine8m"                   prob="0.025"/>
-<decoration type="block" blockname="treeMountainPine13m"                  prob="0.035"/>
-<decoration type="block" blockname="treeMountainPine16m"                  prob="0.035"/>
-<decoration type="block" blockname="treeMountainPine19m"                  prob="0.045"/>
-<decoration type="block" blockname="treeMountainPineDry"                  prob="0.005"/>
-<decoration type="block" blockname="treeMountainPine20m"                  prob="0.065"/>
-<!-- Lootcontainers -->
-<decoration type="block" blockname="lootForestHelper"                     prob="0.0005"/>
-<decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
-<decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
-<decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
-<!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.003"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00005"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0005"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
-<!-- Houses -->
-<decoration type="prefab" name="abandoned_house_01"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_02"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_03"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_04"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_05"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_06"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_07"                       prob="0.03"/>
-<decoration type="prefab" name="abandoned_house_08"                       prob="0.03"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
-<!-- Cabins -->  
-<decoration type="prefab" name="cabin_01"                                 prob="0.03"/>
-<decoration type="prefab" name="cabin_02_sm"                              prob="0.03"/>
-<decoration type="prefab" name="cabin_03_lg"                              prob="0.03"/>
-<decoration type="prefab" name="cabin_04_md"                              prob="0.03"/>
-<decoration type="prefab" name="cabin_05_lg"                              prob="0.03"/>
-<decoration type="prefab" name="cabin_06_lg"                              prob="0.03"/>
-<decoration type="prefab" name="bombshelter_lg_01"                        prob="0.03"/>
-<decoration type="prefab" name="bombshelter_md_01"                        prob="0.03"/>  
-<decoration type="prefab" name="ranger_station1"                          prob="0.03"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
-<!-- Camps -->
-<decoration type="prefab" name="campsite_01"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_02"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_03"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_04"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_06"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_06a"                             prob="0.010"/>
-<decoration type="prefab" name="campsite_07"                              prob="0.010"/>
-<decoration type="prefab" name="campsite_07a"                             prob="0.010"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
 </decorations>
 
 <terrain class="Mountains"/>
@@ -874,7 +273,8 @@
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="0" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -926,7 +326,8 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>  
@@ -1044,14 +445,32 @@
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="10"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.01"> <!-- Lake -->
+<layers>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
+
 <subbiome prob="0.50"> <!-- Wasteland Sub Biome -->
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="desertGround"      cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.1"/>
@@ -1136,10 +555,10 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.25"/>
@@ -1206,12 +625,29 @@
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="9"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.02"> <!-- Lake -->
+<layers>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
+</layers>
 
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<layers>                <layer filluptorg="58" blockname="water" />
+<layers>                <layer filluptorg="58" blockname="water"/>
 <layer depth="2"  blockname="grass">            <resource blockname="burntForestGround" cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -1300,9 +736,9 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1445,11 +881,30 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.01"> <!-- Lake -->
+<layers>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
+
 <subbiome prob="0.40"> <!-- Dead Plains -->
 <layers>
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -1602,13 +1057,31 @@
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="3"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.02"> <!-- Lake -->
+<layers>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
+
 <subbiome prob="0.20"> <!-- Dead Pine Forest -->
 <layers>
 <layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1673,9 +1146,9 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
   
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1805,9 +1278,9 @@
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="snow"              cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
   
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1894,9 +1367,9 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
   
 <decorations>
 <!-- Grass & Shrubs -->  
@@ -1964,9 +1437,9 @@
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="0" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
   
 <decorations>
 <!-- Grass & Shrubs -->
@@ -2017,7 +1490,8 @@
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>  
@@ -2137,13 +1611,30 @@
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.02"> <!-- Lake -->
+<layers>
+<layer depth="2"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="radiated"          cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="17" blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="burntForestGround"><resource blockname="radiated"          cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
-
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -2256,11 +1747,12 @@
 <decal texture="13" face="0" prob="0.001"/>
 <decal texture="14" face="0" prob="0.001"/>
 <decal texture="15" face="0" prob="0.001"/>
-<blockontop blockname="lootStreetHelper"        prob="0.010"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0095"/>
+<blockontop blockname="crater"                  prob="0.0005"/>
 <blockontop blockname="treeBrownGrassDiagonal"  prob="0.025"/>
 <blockontop blockname="randomCars"              prob="0.0030"/>
 <blockontop blockname="destroyedAsphalt"        prob="0.045"   offset="-1"/>
-<blockontop blockname="destroyedAsphalt"        prob="0.9170"  offset="-2"/>
+<blockontop blockname="asphalt"                 prob="0.9170"  offset="-2"/>
 </poi>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= COUNTRY ROADS              +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->    
 <poi name="Country Road Asphalt" poimapcolor="#272f48" blockname="asphalt" smoothness="10">
@@ -2280,11 +1772,12 @@
 <decal texture="13" face="0" prob="0.005"/>
 <decal texture="14" face="0" prob="0.005"/>
 <decal texture="15" face="0" prob="0.005"/>
-<blockontop blockname="lootStreetHelper"        prob="0.010"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0095"/>
+<blockontop blockname="crater"                  prob="0.0005"/>
 <blockontop blockname="treeBrownGrassDiagonal"  prob="0.025"/>
 <blockontop blockname="randomCars"              prob="0.0030"/>
 <blockontop blockname="destroyedAsphalt"        prob="0.045"   offset="-1"/>
-<blockontop blockname="destroyedAsphalt"        prob="0.9170"  offset="-2"/>
+<blockontop blockname="asphalt"                 prob="0.9170"  offset="-2"/>
 </poi>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= POI ROADS                  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
 <poi name="Road Gravel" poimapcolor="#806f52" blockname="asphalt" smoothness="10">
@@ -2304,11 +1797,12 @@
 <decal texture="13" face="0" prob="0.005"/>
 <decal texture="14" face="0" prob="0.005"/>
 <decal texture="15" face="0" prob="0.005"/>
-<blockontop blockname="lootStreetHelper"        prob="0.010"/>
+<blockontop blockname="lootStreetHelper"        prob="0.0095"/>
+<blockontop blockname="crater"                  prob="0.0005"/>
 <blockontop blockname="treeBrownGrassDiagonal"  prob="0.025"/>
 <blockontop blockname="randomCars"              prob="0.0020"/>
 <blockontop blockname="destroyedAsphalt"        prob="0.045"   offset="-1"/>
-<blockontop blockname="destroyedAsphalt"        prob="0.9180"  offset="-2"/>
+<blockontop blockname="asphalt"                 prob="0.9180"  offset="-2"/>
 </poi>
 
 <poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
