@@ -1004,7 +1004,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <item id="105" name="stoneAxe">
 <property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab"/>
 <property name="Material" value="stone"/>
-<property name="RepairTools" value="rockSmall"/>
+<!--<property name="RepairTools" value="rockSmall"/>-->
 <property name="HoldType" value="32"/>
 <property name="EconomicValue" value="5"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -1044,7 +1044,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property class="Attributes">
 <property name="EntityDamage" value="4,10"/>
 <property name="BlockDamage" value="22.8,30"/>
-<property name="DegradationMax" value="100,600"/>
+<property name="DegradationMax" value="250,1000"/>
 <property name="DegradationRate" value="1,1"/>
 <property name="DismembermentBaseChance" value="0,0"/>
 <property name="DismembermentBonus" value="0,0"/>
@@ -1059,6 +1059,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <item id="106" name="tazasStoneaxe">
 <property name="DescriptionKey" value="tazasStoneaxeDesc"/>
 <property name="Extends" value="stoneAxe"/>
+<property name="RepairTools" value="repairKit"/>
 <property name="EconomicValue" value="200"/>
 <property name="CustomIcon" value="stoneAxe"/> <property name="CustomIconTint" value="ffb0b0"/>
 <property class="Action0">
@@ -1067,7 +1068,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property class="Attributes">
 <property name="EntityDamage" value="10,20"/>
 <property name="BlockDamage" value="45.6,60"/>
-<property name="DegradationMax" value="350,800"/>
+<property name="DegradationMax" value="500,2000"/>
 <property name="DegradationRate" value="1,1"/>
 </property>
 </item>
@@ -1206,7 +1207,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <item id="117" name="stoneShovel">
 <property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
 <property name="Material" value="stone"/>
-<property name="RepairTools" value="rockSmall"/>
+<!--<property name="RepairTools" value="rockSmall"/>-->
 <property name="HoldType" value="18"/>
 <property name="DegradationBreaksAfter" value="false"/>
 <property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1237,7 +1238,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property class="Attributes">
 <property name="EntityDamage" value="4,12"/>
 <property name="BlockDamage" value="15,19.7"/>
-<property name="DegradationMax" value="60,600"/>
+<property name="DegradationMax" value="250,1000"/>
 <property name="DegradationRate" value="1,1"/>
 </property>
 <property name="Group" value="Tools/Traps,Basics"/>
@@ -7202,8 +7203,8 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 <property class="Attributes">
 <property name="DegradationMax" value="1000,6000"/>
 <property name="VehicleNoise" value="1,0.1"/>
-<property name="VehicleMaxSpeed" value="5,18"/>
-<property name="VehicleAcceleration" value="7,14"/>
+<property name="VehicleMaxSpeed" value="7,10"/>
+<property name="VehicleAcceleration" value="7,10"/>
 <property name="VehicleMetersPerLiter" value="8,12"/>
 <property name="VehicleIdleSecondsPerLiter" value="6,12"/>
 <property name="VehicleStartDelayInSeconds" value="1,0.1"/>
@@ -7995,7 +7996,7 @@ Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface
 
 <item id="1411" name="scrapPlastics">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
-<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+<property name="DropMeshfile" value="Items/Crafting/cloth"/>
 <property name="HoldType" value="45"/>
 <property name="Material" value="Mplastics"/>
 <property name="Weight" value="1"/>

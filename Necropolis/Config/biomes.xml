@@ -38,30 +38,32 @@
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="-60"   max="-50"   prob="0.10"/>
-<Temperature      min="-70"   max="-60"   prob="0.20"/>
-<Temperature      min="-80"   max="-70"   prob="0.50"/>
-<Temperature      min="-100"  max="-80"   prob="0.20"/>
+<Temperature      min="45"    max="55"    prob="0.15"/>
+<Temperature      min="35"    max="45"    prob="0.10"/>
+<Temperature      min="20"    max="35"    prob="0.20"/>
+<Temperature      min="10"    max="20"    prob="0.05"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-30"   max="0"     prob="0.20"/>
+<Temperature      min="-40"   max="-10"   prob="0.10"/>
+<Temperature      min="-70"   max="-40"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.05"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="95"    prob="0.25"/>
-<CloudThickness   min="95"    max="100"   prob="0.50"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.60"/>
-<Wind             min="0"     max="50"    prob="0.30"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="14"/>
 </weather>
@@ -81,40 +83,43 @@
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.14"/>
 </decorations>
 
-<terrain class="Mountains" />
-<spectrum name="snow" />
+<terrain class="Mountains"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= DENSE FOREST BIOME         +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="forest" biomemapcolor="#008D00">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="10"    max="25"    prob="0.10"/>
-<Temperature      min="5"     max="10"    prob="0.20"/>
-<Temperature      min="-35"   max="5"     prob="0.50"/>
-<Temperature      min="-50"   max="-35"   prob="0.20"/>
+<Temperature      min="45"    max="55"    prob="0.15"/>
+<Temperature      min="35"    max="45"    prob="0.10"/>
+<Temperature      min="20"    max="35"    prob="0.20"/>
+<Temperature      min="10"    max="20"    prob="0.05"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-40"   max="0"     prob="0.20"/>
+<Temperature      min="-50"   max="-20"   prob="0.10"/>
+<Temperature      min="-80"   max="-50"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.30"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="70"    prob="0.20"/>
-<CloudThickness   min="70"    max="100"   prob="0.30"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.50"/>
-<Precipitation    min="0"     max="50"    prob="0.20"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.15"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.65"/>
-<Wind             min="0"     max="50"    prob="0.25"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="9"/>
+<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.10"> <!-- Lake -->
@@ -187,37 +192,39 @@
 </decorations>
 
 <terrain class="Water"/>
-<spectrum name="pine_forest"/>
+<spectrum name="radiated"/>
 </biome>  
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= PINE FOREST BIOME          +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="pine_forest" biomemapcolor="#004000">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="10"    max="25"    prob="0.10"/>
-<Temperature      min="5"     max="10"    prob="0.20"/>
-<Temperature      min="-35"   max="5"     prob="0.50"/>
-<Temperature      min="-50"   max="-35"   prob="0.20"/>
+<Temperature      min="45"    max="55"    prob="0.15"/>
+<Temperature      min="35"    max="45"    prob="0.10"/>
+<Temperature      min="20"    max="35"    prob="0.20"/>
+<Temperature      min="10"    max="20"    prob="0.05"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-30"   max="0"     prob="0.20"/>
+<Temperature      min="-40"   max="-10"   prob="0.10"/>
+<Temperature      min="-70"   max="-40"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.30"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="70"    prob="0.20"/>
-<CloudThickness   min="70"    max="100"   prob="0.30"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.50"/>
-<Precipitation    min="0"     max="50"    prob="0.20"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.15"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.65"/>
-<Wind             min="0"     max="50"    prob="0.25"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
@@ -235,38 +242,42 @@
 </decorations>
 
 <terrain class="Mountains"/>
-<spectrum name="pine_forest"/>
+<spectrum name="radiated"/>
 </biome>  
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GRASSLANDS BIOME           +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="plains" biomemapcolor="#11F02B">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="25"    max="35"    prob="0.10"/>
-<Temperature      min="20"    max="25"    prob="0.20"/>
-<Temperature      min="-45"   max="20"    prob="0.50"/>
-<Temperature      min="-60"   max="-45"   prob="0.20"/>
+<Temperature      min="45"    max="55"    prob="0.15"/>
+<Temperature      min="35"    max="45"    prob="0.10"/>
+<Temperature      min="20"    max="35"    prob="0.20"/>
+<Temperature      min="10"    max="20"    prob="0.05"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-30"   max="0"     prob="0.20"/>
+<Temperature      min="-40"   max="-10"   prob="0.10"/>
+<Temperature      min="-70"   max="-40"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.30"/>
-<CloudThickness   min="70"    max="100"   prob="0.40"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
 <Precipitation    min="0"     max="0"     prob="0.35"/>
-<Precipitation    min="25"    max="50"    prob="0.15"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.40"/>
-<Wind             min="0"     max="50"    prob="0.35"/>
-<Wind             min="50"    max="75"    prob="0.20"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
+<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
+<ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.25"> <!-- Desolate -->
@@ -348,6 +359,8 @@
 <decoration type="block" blockname="cinderBlocks03"                       prob="0.0015"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.015" rotatemax="3"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.000025"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.000025"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.06"/>
 <decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.06"/>
@@ -409,38 +422,40 @@
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
 </decorations>
 
-<terrain class="Wasteland" />
-<spectrum name="plains" />
+<terrain class="Wasteland"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= DESERT BIOME               +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="desert" biomemapcolor="#FFE477">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="0"    max="10"     prob="0.10"/>
-<Temperature      min="20"   max="30"     prob="0.20"/>
-<Temperature      min="30"   max="40"     prob="0.50"/>
-<Temperature      min="40"   max="50"     prob="0.20"/>
+<Temperature      min="75"    max="95"    prob="0.05"/>
+<Temperature      min="65"    max="75"    prob="0.10"/>
+<Temperature      min="60"    max="65"    prob="0.15"/>
+<Temperature      min="50"    max="60"    prob="0.20"/>
+<Temperature      min="40"    max="50"    prob="0.20"/>
+<Temperature      min="30"    max="40"    prob="0.15"/>
+<Temperature      min="10"    max="30"    prob="0.10"/>
+<Temperature      min="-20"   max="10"    prob="0.05"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="95"    prob="0.40"/>
-<CloudThickness   min="95"    max="100"   prob="0.20"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.20"/>
-<Precipitation    min="25"    max="50"    prob="0.50"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.15"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.55"/>
-<Wind             min="0"     max="50"    prob="0.35"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="10"/>
 </weather>
@@ -590,39 +605,42 @@
 </decorations>
 
 <terrain class="Desert"/>
-<spectrum name="desert"/>
+<spectrum name="radiated"/>
 </biome>  
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= WETLANDS BIOME             +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="water" biomemapcolor="#0063ff">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="10"    max="25"    prob="0.10"/>
-<Temperature      min="5"     max="10"    prob="0.20"/>
-<Temperature      min="-35"   max="5"     prob="0.50"/>
-<Temperature      min="-50"   max="-35"   prob="0.20"/>
+<Temperature      min="25"    max="35"    prob="0.05"/>
+<Temperature      min="15"    max="25"    prob="0.10"/>
+<Temperature      min="10"    max="15"    prob="0.15"/>
+<Temperature      min="0"     max="10"    prob="0.20"/>
+<Temperature      min="-20"   max="0"     prob="0.20"/>
+<Temperature      min="-30"   max="-20"   prob="0.15"/>
+<Temperature      min="-50"   max="-30"   prob="0.10"/>
+<Temperature      min="-80"   max="-50"   prob="0.05"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.30"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="70"    prob="0.20"/>
-<CloudThickness   min="70"    max="100"   prob="0.30"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.50"/>
-<Precipitation    min="0"     max="50"    prob="0.20"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.15"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.65"/>
-<Wind             min="0"     max="50"    prob="0.25"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="9"/>
+<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.02"> <!-- Lake -->
@@ -695,7 +713,7 @@
 </decorations>
 
 <terrain class="Water"/>
-<spectrum name="pine_forest"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED WASTELAND BIOME   +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
 <biome name="radiated" biomemapcolor="#FF0000" radiationlevel="2">
@@ -712,15 +730,13 @@
 <Fog              min="50"    max="75"    prob="0.40"/>
 <Fog              min="75"    max="100"   prob="0.20"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.05"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="75"    prob="0.25"/>
-<CloudThickness   min="75"    max="100"   prob="0.50"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.15"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.35"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.45"/>
 <Wind             min="0"     max="50"    prob="0.35"/>
@@ -752,6 +768,8 @@
 <decoration type="block" blockname="treeDeadTree02"                       prob="0.003"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.005"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.0001"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.0001"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
@@ -846,39 +864,43 @@
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0003"/>
 </decorations>
 
-<terrain class="hills" />
-<spectrum name="radiated" />
+<terrain class="hills"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= PLAINS WASTELAND BIOME     +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="wasteland" biomemapcolor="#D9B31A">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="25"    max="35"    prob="0.10"/>
-<Temperature      min="20"    max="25"    prob="0.20"/>
-<Temperature      min="-45"   max="20"    prob="0.50"/>
-<Temperature      min="-60"   max="-45"   prob="0.20"/>
+<Temperature      min="45"    max="55"    prob="0.15"/>
+<Temperature      min="35"    max="45"    prob="0.10"/>
+<Temperature      min="20"    max="35"    prob="0.20"/>
+<Temperature      min="10"    max="20"    prob="0.05"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-30"   max="0"     prob="0.20"/>
+<Temperature      min="-40"   max="-10"   prob="0.10"/>
+<Temperature      min="-70"   max="-40"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.30"/>
-<CloudThickness   min="70"    max="100"   prob="0.40"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
 <Precipitation    min="0"     max="0"     prob="0.35"/>
-<Precipitation    min="25"    max="50"    prob="0.15"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.40"/>
-<Wind             min="0"     max="50"    prob="0.35"/>
-<Wind             min="50"    max="75"    prob="0.20"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
+<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
+<ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.01"> <!-- Lake -->
@@ -921,6 +943,8 @@
 <decoration type="block" blockname="treeDeadTree02"                       prob="0.020"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.005"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.000025"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.000025"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0012"/>
 <decoration type="block" blockname="cntTreeStump"                         prob="0.0003"/>
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0017"/>
@@ -1021,38 +1045,40 @@
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0003"/>
 </decorations>
 
-<terrain class="Wasteland" />
-<spectrum name="plains" />
+<terrain class="Wasteland"/>
+<spectrum name="radiated"/>
 </biome> 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= FOREST WASTELAND BIOME     +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="burnt_forest" biomemapcolor="#142909">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="10"    max="20"    prob="0.10"/>
-<Temperature      min="20"    max="30"    prob="0.20"/>
-<Temperature      min="30"    max="40"    prob="0.50"/>
-<Temperature      min="40"    max="40"    prob="0.20"/>
+<Temperature      min="55"    max="65"    prob="0.15"/>
+<Temperature      min="45"    max="55"    prob="0.10"/>
+<Temperature      min="30"    max="45"    prob="0.20"/>
+<Temperature      min="20"    max="30"    prob="0.05"/>
+<Temperature      min="0"     max="20"    prob="0.05"/>
+<Temperature      min="-30"   max="0"     prob="0.20"/>
+<Temperature      min="-40"   max="-10"   prob="0.10"/>
+<Temperature      min="-70"   max="-40"   prob="0.15"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.10"/>
-<CloudThickness   min="70"    max="100"   prob="0.70"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.65"/>
-<Wind             min="0"     max="50"    prob="0.25"/>
-<Wind             min="50"    max="75"    prob="0.09"/>
-<Wind             min="75"    max="100"   prob="0.01"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="3"/>
 </weather>
@@ -1234,37 +1260,39 @@
 </decorations>
 
 <terrain class="Mountains"/>
-<spectrum name="forest"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= SNOW FLATS BIOME           +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <biome name="city" biomemapcolor="#FFFFFF">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
-<Temperature      min="-50"   max="-30"   prob="0.20"/>
-<Temperature      min="-70"   max="-50"   prob="0.20"/>
-<Temperature      min="-80"   max="-70"   prob="0.40"/>
-<Temperature      min="-100"  max="-80"   prob="0.20"/>
+<Temperature      min="0"     max="10"    prob="0.05"/>
+<Temperature      min="-10"   max="0"     prob="0.10"/>
+<Temperature      min="-20"   max="-10"   prob="0.15"/>
+<Temperature      min="-30"   max="-20"   prob="0.20"/>
+<Temperature      min="-40"   max="-30"   prob="0.20"/>
+<Temperature      min="-50"   max="-40"   prob="0.15"/>
+<Temperature      min="-70"   max="-50"   prob="0.10"/>
+<Temperature      min="-100"  max="-70"   prob="0.05"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.05"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="95"    prob="0.25"/>
-<CloudThickness   min="95"    max="100"   prob="0.50"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.05"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.45"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
-<Wind             min="0"     max="0"     prob="0.50"/>
-<Wind             min="0"     max="50"    prob="0.30"/>
-<Wind             min="50"    max="75"    prob="0.10"/>
-<Wind             min="75"    max="100"   prob="0.10"/>
+<Wind             min="0"     max="0"     prob="0.40"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
 </weather>
@@ -1289,6 +1317,8 @@
 <decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.005" rotatemax="3"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.000025"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.000025"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.003"/>
@@ -1395,39 +1425,43 @@
 <decoration type="prefab" name="campsite_07a"                             prob="0.0012"/>
 </decorations>
 
-<terrain class="Mountains" />
-<spectrum name="snow" />
+<terrain class="Mountains"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= CITY WASTELAND BIOME       +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
 <biome name="city_wasteland" biomemapcolor="#35F0ED">
 <!-- Weather -->
 <weather>
 <!-- ===== Temperature ============================ -->
+<Temperature      min="35"    max="45"    prob="0.05"/>
 <Temperature      min="25"    max="35"    prob="0.10"/>
-<Temperature      min="20"    max="25"    prob="0.20"/>
-<Temperature      min="-45"   max="20"    prob="0.50"/>
-<Temperature      min="-60"   max="-45"   prob="0.20"/>
+<Temperature      min="20"    max="25"    prob="0.15"/>
+<Temperature      min="10"    max="20"    prob="0.20"/>
+<Temperature      min="0"     max="10"    prob="0.20"/>
+<Temperature      min="-10"   max="0"     prob="0.15"/>
+<Temperature      min="-30"   max="-10"   prob="0.10"/>
+<Temperature      min="-60"   max="-30"   prob="0.05"/>
 <!-- ===== Fog ==================================== -->
-<Fog              min="0"     max="0"     prob="0.70"/>
-<Fog              min="0"     max="50"    prob="0.10"/>
-<Fog              min="50"    max="75"    prob="0.10"/>
-<Fog              min="75"    max="100"   prob="0.10"/>
+<Fog              min="0"     max="0"     prob="0.50"/>
+<Fog              min="0"     max="50"    prob="0.20"/>
+<Fog              min="50"    max="75"    prob="0.15"/>
+<Fog              min="75"    max="100"   prob="0.15"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.20"/>
-<CloudThickness   min="0"     max="50"    prob="0.10"/>
-<CloudThickness   min="50"    max="70"    prob="0.30"/>
-<CloudThickness   min="70"    max="100"   prob="0.40"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
 <Precipitation    min="0"     max="0"     prob="0.35"/>
-<Precipitation    min="25"    max="50"    prob="0.15"/>
-<Precipitation    min="50"    max="75"    prob="0.15"/>
-<Precipitation    min="75"    max="100"   prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.40"/>
-<Wind             min="0"     max="50"    prob="0.35"/>
-<Wind             min="50"    max="75"    prob="0.20"/>
-<Wind             min="75"    max="100"   prob="0.05"/>
+<Wind             min="0"     max="70"    prob="0.35"/>
+<Wind             min="70"    max="80"    prob="0.20"/>
+<Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
+<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="4"/>
+<ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="6"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <subbiome prob="0.25"> <!-- Desolate -->
@@ -1447,6 +1481,8 @@
 <decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.005" rotatemax="3"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.0001"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.0001"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0006"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.003"/>
@@ -1509,6 +1545,8 @@
 <decoration type="block" blockname="cinderBlocks03"                       prob="0.0015"/>
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootWastelandHelper"                  prob="0.015" rotatemax="3"/>
+<decoration type="block" blockname="lootCrateHelper"                      prob="0.0001"/>
+<decoration type="block" blockname="lootCrateOpenHelper"                  prob="0.0001"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="waste_rubble_bldg_01"                     prob="0.06"/>
 <decoration type="prefab" name="waste_rubble_bldg_02"                     prob="0.06"/>
@@ -1570,8 +1608,8 @@
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.00001"/>
 </decorations>
 
-<terrain class="Wasteland" />
-<spectrum name="wasteland" />
+<terrain class="Wasteland"/>
+<spectrum name="wasteland"/>
 </biome>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED FOREST BIOME      +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->  
 <biome name="wasteland_hub" biomemapcolor="#ED1384" radiationlevel="1">
@@ -1588,15 +1626,13 @@
 <Fog              min="50"    max="75"    prob="0.40"/>
 <Fog              min="75"    max="100"   prob="0.20"/>
 <!-- ===== Clouds ================================= -->
-<CloudThickness   min="0"     max="0"     prob="0.05"/>
-<CloudThickness   min="0"     max="50"    prob="0.20"/>
-<CloudThickness   min="50"    max="75"    prob="0.25"/>
-<CloudThickness   min="75"    max="100"   prob="0.50"/>
+<CloudThickness   min="0"     max="0"     prob="0.50"/>
+<CloudThickness   min="70"     max="80"   prob="0.10"/>
+<CloudThickness   min="80"    max="100"   prob="0.40"/>
 <!-- ===== Precipitation ========================== -->
-<Precipitation    min="0"     max="0"     prob="0.15"/>
-<Precipitation    min="25"    max="50"    prob="0.25"/>
-<Precipitation    min="50"    max="75"    prob="0.25"/>
-<Precipitation    min="75"    max="100"   prob="0.35"/>
+<Precipitation    min="0"     max="0"     prob="0.35"/>
+<Precipitation    min="70"    max="80"    prob="0.15"/>
+<Precipitation    min="80"    max="100"   prob="0.50"/>
 <!-- ===== Winds ================================== -->
 <Wind             min="0"     max="0"     prob="0.45"/>
 <Wind             min="0"     max="50"    prob="0.35"/>
@@ -1693,8 +1729,8 @@
 <decoration type="prefab" name="house_trailer_burnt_01_intact"            prob="0.01"/>
 </decorations>
 
-<terrain class="hills" />
-<spectrum name="radiated" />
+<terrain class="hills"/>
+<spectrum name="radiated"/>
 </biome>
 <!-- Cave Floor Biome -->
 <biome name="caveFloor" biomemapcolor="#a1a1a1" >
