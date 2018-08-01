@@ -1548,12 +1548,13 @@
 <biome_spawn_rule name="forest">          <biome_generator range="0.65,0.70"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.95,0.999"/>         </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.001,0.05"/>         </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <biome_generator range="0.05,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.05,0.18"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.18,0.20"/>          </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="radiated">        <distance_from_center range="0,100"/>         </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <distance_from_center range="100,750"/>       </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <distance_from_center range="0,250"/>         </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <distance_from_center range="250,900"/>       </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.50,0.55"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.80,0.95"/>          </biome_spawn_rule>

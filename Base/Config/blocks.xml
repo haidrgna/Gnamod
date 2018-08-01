@@ -11342,7 +11342,7 @@
 </block>
 
 <block id="1108" name="plywoodOsbCTRPlate"> 
-<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+<property name="Extends" value="woodMasterWeak"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="plate_centered"/>
 <property name="Texture" value="65"/>
@@ -12160,7 +12160,7 @@
 </block>
 
 <block id="1191" name="sidingWhiteBurntCTRPlate">
-<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="Extends" value="woodMasterWeak"/>
 <property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="plate_centered"/>
@@ -12297,7 +12297,7 @@
 </block>
 
 <block id="1205" name="window03Frame">
-<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+<property name="Extends" value="woodMasterWeak"/>
 <property name="LightOpacity" value="0"/>
 <property name="Shape" value="Ext3dModel"/>
 <property name="Texture" value="293"/>
@@ -12366,13 +12366,14 @@
 </block>
 
 <block id="1211" name="window04Frame">
-<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+<property name="Extends" value="woodMasterWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="Buildings/window04_frame" param1="main_mesh"/>
 <property name="Place" value="TowardsPlacer"/>
-<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+<property name="Collide" value="movement,melee,rocket"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="plainWoodWindowPlug"/>
 <property name="Item" value="boardAndNails"/>
@@ -12386,7 +12387,8 @@
 <block id="1212" name="window04">
 <property name="Material" value="glass"/>
 <property name="LightOpacity" value="0"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="Buildings/window04" param1="main_mesh"/>
 <property name="Place" value="TowardsPlacer"/>
@@ -13910,7 +13912,6 @@
 <property name="Texture" value="408"/>
 <property name="IsDecoration" value="true"/>
 <property name="StabilitySupport" value="false"/>
-<property class="RepairItems"> <property name="wood" value="10"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="WindowPlug03"/>
 <property name="Item" value="boardAndNails"/>
@@ -13926,7 +13927,10 @@
 <property name="Texture" value="408,408,23,408,23,408"/>
 <property name="ImposterExchange" value="imposterCTRPlate" param1="126"/>
 <property name="UseGlobalUV" value="L,L,D,D,D,D"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="WindowPlug03"/> </property>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="WindowPlug03"/>
+<property name="ItemCount" value="3"/>
+</property>
 </block>
 
 <block id="1379" name="WindowPlug02">
@@ -13935,7 +13939,10 @@
 <property name="Texture" value="408,408,23,408,23,408"/>
 <property name="ImposterExchange" value="imposterCTRPlate" param1="126"/>
 <property name="UseGlobalUV" value="L,L,D,D,D,D"/>
-<property class="UpgradeBlock"> <property name="ToBlock" value="WindowPlug03"/> </property>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="WindowPlug03"/>
+<property name="ItemCount" value="2"/>
+</property>
 </block>
 
 <block id="1380" name="WindowPlug03">
@@ -13948,9 +13955,6 @@
 <property name="UseGlobalUV" value="L,L,D,D,D,D"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="WindowPlug04"/>
-<property name="Item" value="scrapIron"/>
-<property name="ItemCount" value="32"/>
-<property name="UpgradeHitCount" value="4"/>
 </property>
 <property name="CustomUpgradeSound" value="place_block_metal"/>
 </block>
