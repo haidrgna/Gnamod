@@ -540,6 +540,7 @@
 <property name="ImposterExchange" value="imposterBlock" param1="78"/>
 <property name="PlaceAltBlockValue" value="grassFromDirt,fertileDirtGrass"/> 
 <property name="CanMobsSpawnOn" value="false"/>
+<property name="DescriptionKey" value="grassDesc"/>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="grassPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -584,6 +585,7 @@
 <property name="ImposterExchange" value="imposterBlock" param1="118"/>
 <property name="PlaceAltBlockValue" value="plainsFromDirt,fertileDirtPlains"/> 
 <property name="CanMobsSpawnOn" value="false"/>
+<property name="DescriptionKey" value="plainsGroundDesc"/>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="plainsPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -628,6 +630,7 @@
 <property name="ImposterExchange" value="imposterBlock" param1="118"/>
 <property name="PlaceAltBlockValue" value="forestFromDirt,fertileDirtForest"/> 
 <property name="CanMobsSpawnOn" value="false"/>
+<property name="DescriptionKey" value="forestGroundDesc"/>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="plainsPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -4302,11 +4305,11 @@
 <property name="Model" value="Plate"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePlate"/> </property>
 </block>
-<!-- Free -->
-<block id="398" name="lootMPHelper">
+
+<block id="398" name="window02Helper">
 <property name="Extends" value="lootWastelandHelper"/>
 <property name="CreativeMode" value="Dev"/>
-<property name="PlantGrowing.Next" value="lootMPHelper"/>
+<property name="PlantGrowing.Next" value="window02Helper"/>
 </block>
 
 <block id="399" name="camoNetSheet">
@@ -5160,31 +5163,13 @@
 <drop event="Harvest" name="cloth" count="2,10"/>
 <drop event="Destroy" count="0"/>
 </block>
-<!-- Free
-<block id="467" name="shapedChargeBlockTest">
+
+<block id="467" name="windowIndustrialHelper">
+<property name="Extends" value="lootWastelandHelper"/>
 <property name="CreativeMode" value="Dev"/>
-<property name="Class" value="TNT"/>
-<property name="CustomIcon" value="tnt"/> <property name="CustomIconTint" value="00a000"/>
-<property name="Material" value="MDynamite"/>
-<property name="StabilitySupport" value="false"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-<property name="Mesh" value="models"/>
-<property name="Model" value="Traps/dynamite_bundle" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="Stacknumber" value="10"/>
-<property class="Explosion">
-<property name="ParticleIndex" value="4"/>
-<property name="RadiusBlocks" value="1"/>
-<property name="BlockDamage" value="500"/>
-<property name="RadiusEntities" value="1"/>
-<property name="EntityDamage" value="110"/>
-</property>
-<property name="LPHardnessScale" value="0"/>
-<property name="CanPickup" value="true"/>
-<property name="Group" value="Science"/>
-<property name="EconomicValue" value="885"/>
+<property name="PlantGrowing.Next" value="windowIndustrialHelper"/>
 </block>
--->
+
 <block id="468" name="driftwood">
 <property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 <property name="Material" value="MwoodThin"/>
@@ -7051,7 +7036,6 @@
 
 <block id="655" name="window02Frame">
 <property name="Extends" value="woodMaster"/>
-<property name="Material" value="MwoodThin"/>
 <property name="LightOpacity" value="0"/>
 <property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
 <property name="Tag" value="Window"/>
@@ -7125,7 +7109,7 @@
 <property name="LightOpacity" value="0"/>
 <property name="StabilitySupport" value="false"/>
 <property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/LootContainers/vending_machine_playerPrefab"/>
+<property name="Model" value="Entities/LootContainers/vending_machinePrefab"/>
 <property name="MultiBlockDim" value="1,2,1"/>
 <property name="ImposterExchange" value="imposterBlock" param1="143"/>
 <property name="OnlySimpleRotations" value="true"/>
@@ -11342,7 +11326,7 @@
 </block>
 
 <block id="1108" name="plywoodOsbCTRPlate"> 
-<property name="Extends" value="woodMasterWeak"/>
+<property name="Extends" value="woodMaster"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="plate_centered"/>
 <property name="Texture" value="65"/>
@@ -12297,7 +12281,7 @@
 </block>
 
 <block id="1205" name="window03Frame">
-<property name="Extends" value="woodMasterWeak"/>
+<property name="Extends" value="woodMaster"/>
 <property name="LightOpacity" value="0"/>
 <property name="Shape" value="Ext3dModel"/>
 <property name="Texture" value="293"/>
@@ -13906,7 +13890,7 @@
 </block>
 
 <block id="1377" name="plainWoodWindowPlug">
-<property name="Extends" value="woodMaster"/>
+<property name="Extends" value="woodMasterStrong"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="plate_centered"/>
 <property name="Texture" value="408"/>
@@ -13948,7 +13932,8 @@
 <block id="1380" name="WindowPlug03">
 <property name="Extends" value="rWoodMaster"/>
 <property name="Shape" value="New"/>
-<property name="Material" value="MrWoodStrong"/>
+<property name="Model" value="plate_centered"/>
+<property name="IsDecoration" value="true"/>
 <property name="Model" value="WindowPlug03"/>
 <property name="Texture" value="408,408,23,408,23,408"/>
 <property name="ImposterExchange" value="imposterCTRPlate" param1="126"/>
@@ -13961,8 +13946,9 @@
 
 <block id="1381" name="WindowPlug04">
 <property name="Extends" value="rWoodMetalMaster"/>
-<property name="Extends" value="WindowPlug03"/>
-<property name="Material" value="Mmetal"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="plate_centered"/>
+<property name="IsDecoration" value="true"/>
 <property name="Model" value="WindowPlug04"/>
 <property name="Texture" value="408,408,384,408,384,408"/>
 <property name="ImposterExchange" value="imposterCTRPlate" param1="57"/>
@@ -14110,12 +14096,11 @@
 <property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronHalf"/> </property>
 </block>
 
-<!-- Free
-<block id="1401" name="treeHauntedTreeWasteland42">
-<property name="Extends" value="treeBurntPine03"/>
+<block id="1401" name="window03WoodHelper">
+<property name="Extends" value="lootWastelandHelper"/>
 <property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="window03WoodHelper"/>
 </block>
--->
 
 <block id="1402" name="treeAzalea">
 <property name="Class" value="Plant"/>
@@ -16346,25 +16331,12 @@
 <property name="Group" value="Building"/>
 </block>
 
-<!-- Free
-<block id="1587" name="elevatorTest">
+<block id="1587" name="window03Helper">
+<property name="Extends" value="lootWastelandHelper"/>
 <property name="CreativeMode" value="Dev"/>
-<property name="Class" value="DoorSecure"/>
-<property name="Material" value="Mwood"/>
-<property name="LightOpacity" value="1"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/Elevators/elevator_testPrefab"/>
-<property name="MultiBlockDim" value="2,1,2"/>
-<property name="Tag" value="Door"/>
-<property name="PlaceEverywhere" value="true"/>
-<property name="Place" value="Door"/>
-<property name="Mesh-Damage-1" value="Platform"/>
-<property name="OpenSound" value="open_door_wood"/>
-<property name="CloseSound" value="close_door_wood"/>
-<drop event="Destroy" count="0"/>
-<property name="Group" value="Building,Science"/>
+<property name="PlantGrowing.Next" value="window03Helper"/>
 </block>
--->
+
 <block id="1588" name="brickWedgeTip">
 <property name="Extends" value="brickMasterWeak"/>
 <property name="Shape" value="New"/>

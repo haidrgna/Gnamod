@@ -64,22 +64,20 @@
 <Wind             min="70"    max="80"    prob="0.20"/>
 <Wind             min="80"    max="100"   prob="0.05"/>
 <!-- ===== Particles ============================== -->
-<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="14"/>
+<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
+<ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="12"/>
 </weather>
-<!-- Replacements -->
-<replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="harvestLayer"/>
-<layer depth="20" blockname="bedrock"/>
+<layer depth="21" blockname="bedrock"/>
 </layers>
 
 <decorations>
 <!-- Grass & Shrubs -->  
-<decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.14"/>
+<decoration type="prefab" name="gnamod_wastedeco10x10_brick01" prob="0.020"/>
 </decorations>
 
 <terrain class="Mountains"/>
@@ -458,11 +456,11 @@
 <subbiome prob="0.01"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.75"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.85"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.95"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="17" blockname="bedrock"/>
 </layers>
@@ -965,11 +963,11 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Nomad Mode -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -1136,7 +1134,8 @@
 <layers>
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="20" blockname="bedrock"/>
 </layers>
 
 

@@ -172,7 +172,7 @@ built-in buff variables:
 <buff id="hypo3" mutex="hot,overheated,heat1,heat2" duration="0" stack="discard" buffif="coretemp lequal 1" debuffif="coretemp greater 1" actions="damage(0,8,0,0);debuff(freezing);debuff(hypo2);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_cold" name_key="hypo3" description_key="hypo3Desc" tooltip_key="hypo3Tooltip" cures="coffee,meatStew,leatherDuster,hoodedSweatshirtWhite,denimPants">
 <modify id="0" stat="speedmodifier" mulValue="0.5"/>  <modify id="1" stat="food" amount="-1" rate="5"/> <modify id="2" stat="stamina" amount="-3" rate="1"/>  <modify id="3" stat="health" amount="-1" rate="4"/>  </buff>
 
-<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" actions="debuff(warmByFire);addtip(hotWeatherTip)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
+<buff id="overheated" mutex="heat1,heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 100" debuffif="coretemp less 100" actions="debuff(warmByFire);addtip(hotWeatherTip)" onexpired="triggerWarmByFire" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="overheated" description_key="overheatedDesc" tooltip_key="overheatedTooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
 <modify id="1" stat="water" amount="-1" rate="10"/>  </buff>
 
 <buff id="heat1" mutex="heat2,cold,freezing,hypo1,hypo2" duration="0" stack="discard" buffif="coretemp gequal 110" debuffif="coretemp less 110" actions="debuff(overheated);debuff(warmByFire)" type="coretemp" notificationClass="TemperatureBuffNotification" icon="ui_game_symbol_hot" name_key="heat1" description_key="heat1Desc" tooltip_key="heat1Tooltip" cures="foodYuccaJuice,redTea,animalHidePoncho,plantFiberHat,tankTopWhite,denimShortsPants">
@@ -236,6 +236,8 @@ built-in buff variables:
 
 <buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="extend">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
+
+<buff id="triggerWarmByFire" duration="3" mutex="overheated,heat1,heat2" stack="discard" debuffif="+heatSource less 1" actions="buff(warmByFire);"/>
 
 <buff id="warmByFire" duration="0" mutex="overheated,heat1,heat2" stack="discard" actions="debuff(waterCool1);debuff(waterCool2);debuff(waterCool3)" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 <modify id="0" stat="coretemp" amount="0.5" rate="1"/>  </buff>

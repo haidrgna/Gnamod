@@ -28,6 +28,7 @@
 <entity name="animalDireWolfRad"            prob="1.00"/>
 <entity name="animalSnakeRad"               prob="1.00"/>
 <entity name="animalZombieVultureRad"       prob="1.00"/>
+<entity name="animalBoarRad"                prob="1.00"/>
 </entitygroup>
 <entitygroup name="AnimalsAll">
 <entity name="animalDummy"                  prob="47.50"/>
@@ -56,6 +57,7 @@
 <entity name="animalDireWolfRad"            prob="0.00"/>
 <entity name="animalSnakeRad"               prob="0.00"/>
 <entity name="animalZombieVultureRad"       prob="0.00"/>
+<entity name="animalBoarRad"                prob="0.00"/>
 </entitygroup>
 <entitygroup name="AnimalsBoom">
 <entity name="animalDireWolfBoom"           prob="5"/>
@@ -73,8 +75,9 @@
 <entity name="animalDireWolf"               prob="5.000"/>
 </entitygroup>
 <entitygroup name="AnimalsBoarpack">
-<entity name="animalBoar"                   prob="70.00"/>
+<entity name="animalBoar"                   prob="69.00"/>
 <entity name="animalRabbidBoar"             prob="30.00"/>
+<entity name="animalBoarRad"                prob="1.000"/>
 </entitygroup>
 <!-- ========== BIOME WILDLIFE LISTS ================= -->
 <!-- +-+-+-+-+- Radiated Wasteland +-+-+-+-+-+-+-+-+-+ -->
@@ -99,12 +102,13 @@
 <entity name="animalZombieVulture" 	        prob="7.00"/>
 <entity name="animalZombieVultureFlaming"   prob="0.00"/>
 <!-- Radiated -->
-<entity name="animalZombieDogRad"           prob="10.00"/>
+<entity name="animalZombieDogRad"           prob="7.00"/>
 <entity name="animalZombieBearRad"          prob="3.00"/>
 <entity name="animalWolfRad"                prob="5.00"/>
 <entity name="animalDireWolfRad"            prob="2.00"/>
 <entity name="animalSnakeRad"               prob="3.00"/>
-<entity name="animalZombieVultureRad"       prob="8.00"/>
+<entity name="animalZombieVultureRad"       prob="7.00"/>
+<entity name="animalBoarRad"                prob="4.00"/>
 </entitygroup>
 <!-- +-+-+-+-+- Radiated Forest +-+-+-+-+-+-+-+-+-+-+- -->
 <entitygroup name="WildlifeRadiatedForest">
@@ -130,10 +134,11 @@
 <!-- Radiated -->
 <entity name="animalZombieDogRad"           prob="3.00"/>
 <entity name="animalZombieBearRad"          prob="1.00"/>
-<entity name="animalWolfRad"                prob="14.00"/>
+<entity name="animalWolfRad"                prob="11.00"/>
 <entity name="animalDireWolfRad"            prob="6.00"/>
 <entity name="animalSnakeRad"               prob="9.00"/>
 <entity name="animalZombieVultureRad"       prob="4.00"/>
+<entity name="animalBoarRad"                prob="3.00"/>
 </entitygroup>
 <!-- +-+-+-+-+- City Wasteland +-+-+-+-+-+-+-+-+-+-+-+ -->
 <entitygroup name="WildlifeCityWasteland">
@@ -442,17 +447,18 @@
 <entity name="animalWolf"                   prob="4.50"/>
 <entity name="animalDireWolf"               prob="0.50"/>
 <!-- Zombiefied -->
-<entity name="animalZombieDog"              prob="4.50"/>
+<entity name="animalZombieDog"              prob="4.30"/>
 <entity name="animalZombieBear"             prob="1.50"/>
 <entity name="animalZombieVulture" 	        prob="6.00"/>
 <entity name="animalZombieVultureFlaming"   prob="0.10"/>
 <!-- Radiated -->
 <entity name="animalZombieDogRad"           prob="0.10"/>
 <entity name="animalZombieBearRad"          prob="0.05"/>
-<entity name="animalWolfRad"                prob="0.05"/>
+<entity name="animalWolfRad"                prob="0.10"/>
 <entity name="animalDireWolfRad"            prob="0.05"/>
-<entity name="animalSnakeRad"               prob="0.05"/>
+<entity name="animalSnakeRad"               prob="0.10"/>
 <entity name="animalZombieVultureRad"       prob="0.05"/>
+<entity name="animalBoarRad"                prob="0.10"/>
 </entitygroup>
 <!-- ========== ENEMY BASIC LIST ===================== -->
 <entitygroup name="EnemiesAll"> <!-- 0.175 = 98% on 560 zeds. 2% for animals -->
@@ -10941,10 +10947,11 @@
 <entity name="animalZombieVultureRad"       prob="5.00"/>
 </entitygroup>
 <entitygroup name="ZombiesBears">
-<entity name="animalZombieBear"             prob="40.00"/>
+<entity name="animalZombieBear"             prob="39.00"/>
 <entity name="animalZombieBearRad"          prob="50.00"/>
 <entity name="animalBearBoom"               prob="9.000"/>
 <entity name="animalSnakeRad"               prob="1.000"/>
+<entity name="animalBoarRad"                prob="1.000"/>
 </entitygroup>
 <entitygroup name="ZombiesBadass">
 <entity name="zombieRyanSwagger"            prob="2.000"/>

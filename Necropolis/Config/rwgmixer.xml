@@ -1486,7 +1486,7 @@
 </biome_intensity_generator>
 </biome_intensity_generators>
 
-<!-- Gnamod Base Biome Spawning -->
+<!-- Gnamod Base Biome Spawning
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
@@ -1522,7 +1522,8 @@
 
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
-
+-->
+  
 <!-- Gnamod Horde Mode Biome Spawning 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
@@ -1564,12 +1565,12 @@
 <biome_spawn_rule name="forest">          <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
 
-<!-- Biome Test
+
+<!-- Biome Test 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <terrain_generator range="-60,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <terrain_generator range="-60,255"/>          </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 </biome_spawn_rules>
 -->
-
  </rwgmixer>
