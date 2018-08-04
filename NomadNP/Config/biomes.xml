@@ -119,14 +119,16 @@
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.05"> <!-- Lake -->
+<subbiome prob="0.10"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -452,14 +454,16 @@
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="10"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.005"> <!-- Lake -->
+<subbiome prob="0.01"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.75"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.85"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.95"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -635,11 +639,13 @@
 <subbiome prob="0.02"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -891,11 +897,13 @@
 <subbiome prob="0.01"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -1065,14 +1073,16 @@
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="3"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.01"> <!-- Lake -->
+<subbiome prob="0.02"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>
@@ -1279,22 +1289,6 @@
 <!-- Replacements -->
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.005"> <!-- Frozen Lake -->
-<layers>
-<layer depth="2"  blockname="ice"/>
-<layer depth="1"  blockname="ice">              <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="ice">              <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="ice">              <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
-</layers>
-
-<decorations>
-<!-- Grass & Shrubs -->
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
-</decorations>
-</subbiome> 
-
 <subbiome prob="0.50"> <!-- Wasteland Sub Biome -->
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="snow"              cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
@@ -1638,14 +1632,16 @@
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.005"> <!-- Lake -->
+<subbiome prob="0.02"> <!-- Lake -->
 <layers>
 <layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="radiated"          cluster="0" prob="0.25"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.35"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
+<layer depth="17" blockname="bedrock"/>
 </layers>
 
 <decorations>

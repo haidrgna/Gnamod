@@ -1056,9 +1056,27 @@
 </lootgroup>
 -->
 <!-- Vanilla Challenges Group -->
-<lootgroup name="questSkill">                         <item name="qc_silenceofthelambs"/>  <item name="qc_drunkanddisorderly"/> <item name="qc_nurseyoubacktohealth"/> <item name="qc_copanattitude"/>  <item name="qc_dogdaysareover"/>  <item name="qc_itsbitsyspider"/> <item name="qc_ladykiller"/> 
-                                                      <item name="qc_maneater"/>   <item name="qc_imalumberjackandimokay"/> <item name="qc_yournothingspecial"/> <item name="qc_killthewabbit"/>  <item name="qc_nailsomechicks"/> <item name="qc_thatlldopig"/>   <item name="qc_stagparty"/> 
-                                                      <item name="qc_dontfeedthebears"/>   <item name="qc_buythefarm"/>                                    </lootgroup>
+<lootgroup name="questSkill">
+<item name="paper" count="1,5" prob="1"/>
+<!--
+<item name="qc_silenceofthelambs"/>
+<item name="qc_drunkanddisorderly"/>
+<item name="qc_nurseyoubacktohealth"/>
+<item name="qc_copanattitude"/>
+<item name="qc_dogdaysareover"/>
+<item name="qc_itsbitsyspider"/>
+<item name="qc_ladykiller"/>
+<item name="qc_maneater"/>
+<item name="qc_imalumberjackandimokay"/>
+<item name="qc_yournothingspecial"/>
+<item name="qc_killthewabbit"/>
+<item name="qc_nailsomechicks"/>
+<item name="qc_thatlldopig"/>
+<item name="qc_stagparty"/>
+<item name="qc_dontfeedthebears"/>
+<item name="qc_buythefarm"/>
+-->
+</lootgroup>
 <!-- Vanilla Treasure Maps Group -->
 <lootgroup name="questTreasureMap">                   <item name="qt_taylor"/>   <item name="qt_nickole"/>  <item name="qt_stephan"/>  <item name="qt_jennifer"/>  <item name="qt_claude"/>   <item name="qt_sarah"/>   <item name="qt_raphael"/>     </lootgroup>
 <!-- Painting Magazines -->
@@ -1143,28 +1161,89 @@
                                                       <item name="treePlantedMountainPine1m" count="1,4" prob="20"/>  <item name="treePlantedMaple1m" count="1,4" prob="20"/>  <item name="treePlantedWinterPine1m" count="1,4" prob="20"/> </lootgroup>
 <!-- =========================== Materials Base Groups ========================================================================================================================================================================================================================================================================================================================= -->
 <!-- Basic Materials Group -->
-<lootgroup name="matsBasic">                          <item name="clayLump" count="50,250" prob="19"/> <item name="rockSmall" count="50,250" prob="19"/> <item name="wood" count="50,250" prob="19"/>  <item name="crushedSand" count="50,250" prob="19"/> <item name="dirtFragment" count="50,250" prob="19"/>
-                                                      <item name="fertilizer" count="10,100" prob="5"/>                                  </lootgroup>
+<lootgroup name="matsBasic">
+<item name="clayLump"                   count="75,150"  prob="12"/>
+<item name="clayFragment"               count="150,300" prob="4"/>
+<item name="rock"                       count="75,150"  prob="12"/>
+<item name="rockGranite"                count="75,150"  prob="4"/>
+<item name="rockSmall"                  count="150,300" prob="4"/>
+<item name="wood"                       count="300,600" prob="16"/>
+<item name="sandstone"                  count="75,150"  prob="4"/>
+<item name="desertSand"                 count="150,300" prob="12"/>
+<item name="crushedSand"                count="75,150"  prob="4"/>
+<item name="lime"                       count="75,150"  prob="12"/>
+<item name="crushedLime"                count="150,300" prob="4"/>
+<item name="dirtFragment"               count="150,300" prob="8"/>
+<item name="fertilizer"                 count="10,150"  prob="4"/>
+</lootgroup>
 <!-- Ores Base Group -->
-<lootgroup name="matsOres">                           <item name="ironOre" count="25,100" prob="40"/> <item name="coal" count="25,100" prob="20"/>  <item name="nitratePowder" count="25,100" prob="20"/> <item name="oilShale" count="25,100" prob="20"/>            </lootgroup>
+<lootgroup name="matsOres">
+<item name="ironOre"                    count="25,100"  prob="30"/>
+<item name="leadOre"                    count="25,100"  prob="20"/>
+<item name="coalOre"                    count="25,100"  prob="15"/>
+<item name="nitrateOre"                 count="25,100"  prob="15"/>
+<item name="oilShale"                   count="25,100"  prob="20"/>
+</lootgroup>
 <!-- Rare Ores Base Group -->
-<lootgroup name="matsRareOres">                       <item name="silverOre" count="1,4" prob="60"/> <item name="goldOre" count="1,3" prob="30"/>  <item name="diamondOre" count="1,2" prob="10"/>                     </lootgroup>
+<lootgroup name="matsRareOres">
+<item name="silverOre"                  count="1,4"     prob="60"/>
+<item name="goldOre"                    count="1,3"     prob="30"/>
+<item name="diamondOre"                 count="1,2"     prob="10"/>
+</lootgroup>
 <!-- Scrap Materials Base Group -->
-<lootgroup name="matsScrap">                          <item name="scrapIron" count="50,250" prob="30"/> <item name="brokenGlass" count="50,250" prob="30"/> <item name="scrapPlastics" count="10,50" prob="15"/> <item name="scrapBrass" count="50,250" prob="10"/> <item name="scrapLead" count="50,250" prob="15"/>      </lootgroup>
+<lootgroup name="matsScrap">
+<item name="scrapIron"                  count="50,250"  prob="30"/>
+<item name="brokenGlass"                count="50,250"  prob="30"/>
+<item name="scrapPlastics"              count="10,50"   prob="15"/>
+<item name="scrapBrass"                 count="50,250"  prob="10"/>
+<item name="scrapLead"                  count="50,250"  prob="15"/>
+</lootgroup>
 <!-- Construction Materials Base Group -->
-<lootgroup name="matsConstruction">                   <item name="cobblestones" count="50,250" prob="45"/> <item name="cement" count="50,250" prob="30"/>  <item name="concreteMix" count="50,250" prob="15"/> <item name="paint" count="25,75" prob="10"/>  <!-- Bricks -->           </lootgroup>
+<lootgroup name="matsConstruction">
+<item name="cement"                     count="150,300" prob="15"/>
+<item name="bricks"                     count="150,300" prob="13"/>
+<item name="boardAndNails"              count="150,300" prob="15"/>
+<item name="mortarMix"                  count="150,300" prob="13"/>
+<item name="brickAndMortar"             count="75,150"  prob="13"/>
+<item name="steelPolish"                count="75,150"  prob="1"/>
+<item name="cobblestones"               count="300,600" prob="10"/>
+<item name="concreteMix"                count="150,300" prob="10"/>
+<item name="paint"                      count="150,300" prob="10"/>
+</lootgroup>
 <!-- Forged Materials Base Group -->
-<lootgroup name="matsForged">                         <item name="nail" count="25,100" prob="35"/>  <item name="shortMetalPipe" count="1,10" prob="30"/> <item name="forgedIron" count="5,25" prob="20"/> <item name="forgedSteel" count="5,25" prob="10"/> <item name="spring" count="1,4" prob="5"/>       </lootgroup>
+<lootgroup name="matsForged">
+<item name="nail"                       count="150,300" prob="15"/>
+<item name="rebar"                      count="150,300" prob="15"/>
+<item name="shortMetalPipe"             count="1,10"    prob="20"/>
+<item name="forgedIron"                 count="5,25"    prob="15"/>
+<item name="forgedSteel"                count="5,25"    prob="10"/>
+<item name="ironPlates"                 count="50,100"  prob="15"/>
+<item name="steelPlates"                count="50,100"  prob="5"/>
+<item name="spring"                     count="1,4"     prob="10"/>
+</lootgroup>
 <!-- Misc Materials Base Group -->
-<lootgroup name="matsMisc">                           <item name="electricParts" count="1,4" prob="2.5"/> <item name="electronicParts" count="1,4" prob="2.5"/> <item name="mechanicalParts" count="1,4" prob="1.25"/> <item name="headlight" prob="5"/>   <item name="radiator" prob="5"/>
-                                                      <item name="carBattery" prob="1.25"/>    <item name="hubcap" count="1,4" prob="7.5"/>  <item name="airFilter" count="1,4" prob="7.5"/>  <item name="oil" count="1,4" prob="10"/>   <item name="gasCan" count="25,250" prob="10"/>
-                                                      <item name="cloth" count="5,25" prob="10"/>  <item name="leather" count="1,10" prob="7.5"/>  <item name="militaryFiber" count="1,4" prob="5"/> <item name="glue" count="3,10" prob="10"/>  <item name="ductTape" count="3,10" prob="7.5"/>
-                                                      <item name="steelPolish" count="5,10" prob="2.5"/>                           </lootgroup>
+<lootgroup name="matsMisc">
+<item name="electricParts"              count="1,4"     prob="2.5"/>
+<item name="electronicParts"            count="1,4"     prob="2.5"/>
+<item name="mechanicalParts"            count="1,4"     prob="1.25"/>
+<item name="headlight"                  count="1,2"     prob="5"/>
+<item name="radiator"                   count="1,2"     prob="5"/>
+<item name="carBattery"                 count="1,2"     prob="2.5"/>
+<item name="smallEngine"                count="1,2"     prob="1.25"/>
+<item name="hubcap"                     count="1,4"     prob="7.5"/>
+<item name="airFilter"                  count="1,4"     prob="7.5"/>
+<item name="oil"                        count="1,4"     prob="10"/>
+<item name="gasCan"                     count="150,300" prob="10"/>
+<item name="cloth"                      count="5,25"    prob="10"/>
+<item name="leather"                    count="1,10"    prob="7.5"/>
+<item name="militaryFiber"              count="1,4"     prob="5"/>
+<item name="glue"                       count="3,10"    prob="10"/>
+<item name="ductTape"                   count="3,10"    prob="7.5"/>
+</lootgroup>
 <!-- =========================== Blocks Base Groups ============================================================================================================================================================================================================================================================================================================================ -->
-<!-- Curtains Base Group -->
-<lootgroup name="blocksCurtains"        count="all">  <item name="curtain_top1Sheet3" count="5"/>  <item name="curtain_bottom1Sheet3" count="5"/>                          </lootgroup>
-<!-- Blinds Base Group -->
-<lootgroup name="blocksBlinds"          count="all">  <item name="miniblindTopSheet" count="5"/>  <item name="miniblindBottomSheet" count="5"/>                          </lootgroup>
+<!-- Curtains Base Groups -->
+<lootgroup name="blocksCurtains"        count="all">  <item name="curtain_top1Sheet3" count="5"/>  <item name="curtain_bottom1Sheet3" count="5"/> </lootgroup>
+<lootgroup name="blocksBlinds"          count="all">  <item name="miniblindTopSheet" count="5"/>  <item name="miniblindBottomSheet" count="5"/> </lootgroup>
 <!-- Block Frames Base Group -->
 <lootgroup name="blocksBase">
 <item name="woodFrameBlock"             count="25,100" prob="25"/>
@@ -1175,14 +1254,19 @@
 <item name="steelBlock"                 count="25,100" prob="5"/>
 </lootgroup>
 <!-- Workstations Base Group -->
-<lootgroup name="blocksWorkstation">                  <item name="forge" prob="35"/>    <item name="workbench" prob="20"/>    <item name="cementMixer" prob="35"/>   <item name="chemistryStation" prob="10"/>             </lootgroup>
+<lootgroup name="blocksWorkstation">
+<item name="forge"                      prob="35"/>
+<item name="workbench"                  prob="20"/>
+<item name="cementMixer"                prob="35"/>
+<item name="chemistryStation"           prob="10"/>
+</lootgroup>
 <!-- Electrical Power Base Groups -->
-<lootgroup name="engines">                            <item name="smallEngine" prob="80"/> <item name="smallEngine" count="2,3" prob="15"/> <item name="smallEngine" count="4,6" prob="5"/>                      </lootgroup>
-<lootgroup name="batteries">                          <item name="carBattery" prob="70"/> <item name="carBattery" count="2,3" prob="15"/>  <item name="carBattery" count="4,6" prob="5"/>                      </lootgroup>
-<lootgroup name="solarcells">                         <item name="solarCell" prob="70"/> <item name="solarCell" count="2,3" prob="15"/>  <item name="solarCell" count="4,6" prob="5"/>                      </lootgroup>
-<lootgroup name="blocksGenBank"         count="all">  <item name="generatorbank"/> <item group="engines" count="0,1"/>                              </lootgroup>
-<lootgroup name="blocksBatBank"         count="all">  <item name="batterybank"/> <item group="batteries" count="0,1"/>                              </lootgroup>
-<lootgroup name="blocksSolBank"         count="all">  <item name="solarbank"/> <item group="solarcells" count="0,1"/>                              </lootgroup>
+<lootgroup name="engines">                            <item name="smallEngine" prob="80"/> <item name="smallEngine" count="2,3" prob="15"/> <item name="smallEngine" count="4,6" prob="5"/> </lootgroup>
+<lootgroup name="batteries">                          <item name="carBattery" prob="70"/> <item name="carBattery" count="2,3" prob="15"/>  <item name="carBattery" count="4,6" prob="5"/> </lootgroup>
+<lootgroup name="solarcells">                         <item name="solarCell" prob="70"/> <item name="solarCell" count="2,3" prob="15"/>  <item name="solarCell" count="4,6" prob="5"/> </lootgroup>
+<lootgroup name="blocksGenBank"         count="all">  <item name="generatorbank"/> <item group="engines" count="0,1"/> </lootgroup>
+<lootgroup name="blocksBatBank"         count="all">  <item name="batterybank"/> <item group="batteries" count="0,1"/> </lootgroup>
+<lootgroup name="blocksSolBank"         count="all">  <item name="solarbank"/> <item group="solarcells" count="0,1"/> </lootgroup>
 <lootgroup name="blocksPower">
 <item group="blocksGenBank"             prob="50"/>
 <item group="blocksBatBank"             prob="30"/>
@@ -1207,15 +1291,36 @@
 <item name="bladeTrap"                  count="1,2"/>
 <item name="electricfencepost"          count="4,8"/>
 </lootgroup>
-<!-- Decorative Blocks Group -->  <!-- ADD ALL BLOCKS -->
-<lootgroup name="blocksDecorative">                   <item group="blocksCurtains"/>  <item group="blocksBlinds"/>  <item name="airConditioner"/>  <item name="chaulkboardPlate"/>  <item name="cntBookcase"/>  <item name="cntCabinetOldSink"/>  <item name="cntCashRegister"/>
-                                                      <item name="cntCooler"/>  <item name="cntFileCabinet"/>  <item name="cntFurnaceDrawer"/>  <item name="cntGasPump"/>  <item name="cntGraniteSink"/>  <item name="cntGreenDrawer"/>   <item name="cntLockers"/>
-                                                      <item name="cntMunitionsBox"/>  <item name="cntOven"/>   <item name="faucet02"/>   <item name="faucet04"/>   <item name="faucetBrass02"/>  <item name="faucetBrass04"/>   <item name="fountain"/>
-                                                      <item name="fusebox"/>   <item name="mattress"/>   <item name="mattressFlat"/>  <item name="metalPipeCap"/>  <item name="metalPipeCorner"/>  <item name="metalPipeFlange"/>   <item name="metalPipeJoint"/>
-                                                      <item name="metalPipeStraight"/> <item name="metalPipeValve"/>  <item name="shoppingCartEmpty"/> <item name="barStool"/>   <item name="cntTrash_can01"/>  <item name="cntBin"/>    <item name="window02"/>
-                                                      <item name="shutters1Plate"/>                                    </lootgroup>
-<!-- Building Blocks Base Group -->  <!-- ADD MORE USEFUL BLOCKS -->
-<lootgroup name="blocksOther">                        <item name="asphalt" count="10,50" prob="35"/>  <item name="ironBars" count="4,12" prob="20"/>   <item name="ironDoor1_v1" prob="35"/>   <item name="vaultDoor01" prob="10"/>             </lootgroup>
+<!-- Other Blocks -->
+<lootgroup name="blocksOther">
+<item name="asphalt"                    count="10,50" prob="12"/>
+<item name="concrete"                   count="10,50" prob="7"/>
+<item name="woodBars"                   count="4,12" prob="4"/>
+<item name="ironBars"                   count="4,12" prob="3"/>
+<item name="steelBars"                  count="4,12" prob="3"/>
+<item name="woodGate"                   count="4,12" prob="4"/>
+<item name="ironGate"                   count="4,12" prob="3"/>
+<item name="steelGate"                  count="4,12" prob="3"/>
+<item name="ladderWood"                 count="4,12" prob="4"/>
+<item name="ladderMetal"                count="4,12" prob="3"/>
+<item name="ladderSteel"                count="4,12" prob="3"/>
+<item name="iBeam"                      count="4,12" prob="5"/>
+<item name="iBeamSteel"                 count="4,12" prob="1"/>
+<item name="metalTrussingBlock"         count="4,12" prob="5"/>
+<item name="houseFrontDoor1_v1"         count="1,2" prob="5"/>
+<item name="houseFrontDoor2_v1"         count="1,2" prob="5"/>
+<item name="secureDoorWooden"           count="1,2" prob="6"/>
+<item name="woodHatch1_v1"              count="1,2" prob="5"/>
+<item name="commercialDoor1_v1"         count="1,2" prob="4"/>
+<item name="commercialDoor2_v1"         count="1,2" prob="4"/>
+<item name="ironDoor1_v1"               count="1,2" prob="3"/>
+<item name="scrapHatch_v1"              count="1,2" prob="3"/>
+<item name="vaultDoor01"                count="1,2" prob="1"/>
+<item name="vaultHatch_v1"              count="1,2" prob="1"/>
+<item name="jailDoor"                   count="1,2" prob="1"/>
+<item name="garageDoorMetal_v1"         count="1,2" prob="1"/>
+<item name="metalReinforcedWoodDrawBridge" count="1" prob="1"/>
+</lootgroup>
 <!-- =========================== Automotive Base Groups ======================================================================================================================================================================================================================================================================================================================== -->
 <!-- Minibike Base Groups -->
 <lootgroup name="automotiveMBOne">                    <item name="minibikeChassis" prob="7.5"/> <item name="minibikeSeat" prob="7.5"/> <item name="minibikeWheels" prob="7.5"/> <item name="minibikeHandlebars" prob="7.5"/> <item name="padlock" prob="25"/> <item name="smallEngine" prob="20"/>  <item name="carBattery" prob="25"/> </lootgroup>
@@ -1606,7 +1711,7 @@
 <!-- Hardware Crate Loot -->
 <lootgroup name="lootHWTools">                        <item group="toolsMechanized" prob="5"/>    <item group="toolsForge" prob="5"/>     <item group="toolsSteel" prob="25"/>     <item group="toolsIron" prob="45"/>    <item group="toolsOther" prob="20"/>         </lootgroup>
 <lootgroup name="lootHWMats">                         <item group="matsBasic" prob="25"/>     <item group="matsOres" prob="10"/>    <item group="matsScrap" prob="20"/>     <item group="matsConstruction" prob="15"/>   <item group="matsForged" prob="20"/>    <item group="matsMisc" prob="10"/>   </lootgroup>
-<lootgroup name="lootHWBlocks">                       <item group="blocksBase" prob="30"/>    <item group="blocksWorkstation" prob="10"/>    <item group="blocksDecorative" count="3,5" prob="2"/>  <item group="blocksElectric" prob="10"/>   <item group="blocksOther" prob="48"/>         </lootgroup>
+<lootgroup name="lootHWBlocks">                       <item group="blocksBase" prob="30"/> <item group="blocksWorkstation" prob="10"/> <item group="blocksElectric" prob="10"/> <item group="blocksOther" prob="50"/> </lootgroup>
 <!-- Treasure Chest Loot -->
 <lootgroup name="lootTreasureBasic">                  <item name="casinoCoin" count="1000,5000" prob="20"/> <item name="oldCash" count="50,2500" prob="5"/>  <item group="medicalAdvanced" count="3,7" prob="25"/> <item group="gunsComplete" prob="15"/>  <item group="ammoGuns" count="10,25" prob="25"/> <item group="matsRareOres" count="4,10" prob="10"/>  </lootgroup>
 <!-- Airdrop Loot -->
@@ -1941,7 +2046,25 @@ sound_close=            "UseActions/close_dumpster"
 loot_quality_template=  "hordeTreasure">
 <item group="cnt007" count="5,10" prob="100"/>
 </lootcontainer>
-<!-- 7 - 10 Free -->
+<!-- =========================== LAST STAND LOOT =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt008"> <item group="lootBackpacks" prob="5"/> <item group="lootADFood" prob="15"/> <item group="lootADMedical" prob="10"/> <item group="lootHWMats" prob="25"/> <item group="lootHWBlocks" prob="15"/> <item group="gunsBalanced" prob="20"/> <item group="gunsComplete" prob="5"/> <item group="armorRS" prob="5"/> </lootgroup>
+<lootcontainer id="8" count="1" size="5,5" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt008" count="25" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND BASICS ============================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt009"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
+<lootcontainer id="9" count="1" size="9,9" open_time="0" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt009" count="25" prob="100"/>
+</lootcontainer>
+<!-- 10 Free -->
   
 <!-- General World Loot  -->
 <!-- =========================== GARBAGE BAGS ================================================================================================================================================================================================================================================================================================================================== -->
@@ -2125,7 +2248,7 @@ loot_quality_template=  "unleveled">
 <item group="cnt023" count="3,4" prob="25"/>
 <item group="cnt023" count="5" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="gunsBalanced" count="1,2" loot_prob_template="nothing66Ex"/>
+<item group="cnt023" count="1,2" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
 <!-- =========================== HARDWARE CRATE ================================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt024"> <item group="lootHWTools" prob="55"/> <item group="lootHWMats" prob="35"/>  <item group="lootHWBlocks" prob="10"/>  </lootgroup>
@@ -2135,11 +2258,11 @@ sound_open=             "UseActions/open_cardboard"
 sound_close=            "UseActions/close_cardboard"
 loot_quality_template=  "unleveled">
 <!-- Chance of Loot: 80 -->
-<item group="cnt024" count="2,4" prob="50"/>
+<item group="cnt024" count="3,4" prob="50"/>
 <item group="cnt024" count="4,5" prob="25"/>
 <item group="cnt024" count="6" prob="5"/>
 <!-- Chance of Default Loot -->
-<item group="cnt024" count="1,2" loot_prob_template="nothing66Ex"/>
+<item group="cnt024" count="2,3" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
 <!-- =========================== FOOD CRATE ==================================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt025"> <item name="paper" count="1,10" prob="5"/>  <item name="scrapPlastics" count="1,8" prob="5"/> <item name="canHam" count="1,5" prob="20"/> <item name="foodHoney" count="1" prob="5"/> <item group="foodCanned" count="1,3" prob="10"/>  <item group="foodStock" count="1,2" prob="20"/> <item group="foodDrinks" count="1,2" prob="10"/> <item name="shamSandwich" count="1,5" prob="30"/>  </lootgroup>
@@ -2205,11 +2328,11 @@ sound_open=             "UseActions/open_cardboard"
 sound_close=            "UseActions/close_cardboard"
 loot_quality_template=  "unleveled">
 <!-- Chance of Loot: 80 -->
-<item group="cnt029" count="1" prob="30"/>
-<item group="cnt029" count="2" prob="40"/>
-<item group="cnt029" count="3" prob="10"/>
+<item group="cnt029" count="4" prob="30"/>
+<item group="cnt029" count="5" prob="40"/>
+<item group="cnt029" count="6" prob="10"/>
 <!-- Chance of Default Loot -->
-<item group="gunsBalanced" loot_prob_template="nothing50"/>
+<item group="cnt029" count="3" loot_prob_template="nothing50"/>
 </lootcontainer>
 <!-- =========================== LAB EQUIPMENT CRATE ============================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt030"> <item group="itemsCommon" prob="20"/> <item name="emptyJar" count="1,20" prob="10"/>  <item name="animalFat" count="5,10" prob="10"/> <item group="schemAll" prob="20"/>  <item group="medicalAdvanced" prob="40"/>  </lootgroup>

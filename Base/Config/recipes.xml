@@ -266,10 +266,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="machete" craft_area="workbench" craft_time="60">                                              <ingredient name="macheteBlade"/> <ingredient name="leather"/> </recipe>
 
 <!-- Mines -->
-<!--
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowder" count="4"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
-<recipe name="mineCandyTin" count="1">                                                                      <ingredient name="candyTin"/> <ingredient name="gunPowderNG" count="2"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
--->  
 <recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowder" count="4"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
 <recipe name="mineCandyTin" count="1">                                                                      <ingredient name="canEmpty"/> <ingredient name="gunPowderNG" count="2"/> <ingredient name="nail"/> <ingredient name="Scattershot" count="2"/> </recipe>
 <recipe name="mineCookingPot" count="1">                                                                    <ingredient name="cookingPot"/> <ingredient name="gunPowder" count="4"/> <ingredient name="gasCan" count="30"/> <ingredient name="nail"/> </recipe>
@@ -387,12 +383,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="boardAndNails" count="1">                                                                     <ingredient name="wood" count="2"/> <ingredient name="nail"/> </recipe>  
 <recipe name="ironPlates" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="12"/> <ingredient name="unit_clay" count="6"/> </recipe>
 <recipe name="steelPlates" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> <ingredient name="unit_lime" count="9"/> </recipe>
-<recipe name="cement" count="1" craft_area="campfire" craft_tool="cookingPot">                              <ingredient name="crushedLime" count="10"/> </recipe>
+<recipe name="cement" count="1" craft_area="campfire" craft_tool="cookingPot">                              <ingredient name="crushedLime" count="7"/> </recipe>
 <recipe name="cement" count="1" craft_area="forge" material_based="true">                                   <ingredient name="unit_lime" count="5"/> </recipe>
-<recipe name="cobblestones" count="12">                                                                     <ingredient name="rockSmall" count="9"/> <ingredient name="clayFragment" count="60"/> <ingredient name="cement" count="3"/>  </recipe>
+<recipe name="cobblestones" count="12">                                                                     <ingredient name="rockSmall" count="24"/> <ingredient name="clayFragment" count="24"/> <ingredient name="cement" count="1"/>  </recipe>
+<recipe name="cobblestones" count="12">                                                                     <ingredient name="rock" count="2"/> <ingredient name="clayLump" count="2"/> <ingredient name="cement" count="1"/>  </recipe>
 <recipe name="bricks" count="1" craft_area="forge" material_based="true">                                   <ingredient name="unit_clay" count="10"/> </recipe>
 <recipe name="brickAndMortar" count="1">                                                                    <ingredient name="bricks" count="3"/> <ingredient name="mortarMix" count="1"/> </recipe>
-<recipe name="mortarMix" count="120" craft_area="workbench">                                                <ingredient name="cement" count="30"/> <ingredient name="bottledRiverWater"/> <ingredient name="crushedSand" count="90"/>  <ingredient name="crushedLime" count="30"/> </recipe>
+<recipe name="mortarMix" count="120">                                                                       <ingredient name="cement" count="30"/> <ingredient name="bottledRiverWater"/> <ingredient name="crushedSand" count="90"/>  <ingredient name="crushedLime" count="30"/> </recipe>
 <recipe name="mortarMix" count="1200" craft_area="cementMixer">                                             <ingredient name="cement" count="300"/> <ingredient name="bucketWater"/> <ingredient name="crushedSand" count="900"/>  <ingredient name="crushedLime" count="300"/> </recipe>
 <recipe name="concreteMix" count="90" craft_area="workbench">                                               <ingredient name="cement" count="30"/> <ingredient name="bottledRiverWater"/> <ingredient name="crushedSand" count="60"/> <ingredient name="rockSmall" count="90"/> <ingredient name="crushedLime" count="30"/> </recipe>
 <recipe name="concreteMix" count="900" craft_area="cementMixer">                                            <ingredient name="cement" count="300"/> <ingredient name="bucketWater"/> <ingredient name="crushedSand" count="600"/> <ingredient name="rockSmall" count="900"/> <ingredient name="crushedLime" count="300"/> </recipe>
@@ -760,10 +757,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelRailing" count="1">                                                                      <ingredient name="steelPlates" count="2"/> </recipe>
 <recipe name="steelCatwalkWedge" count="1">                                                                 <ingredient name="steelPlates" count="2"/> </recipe>
 <!-- Wood Bars and Gates -->
-<recipe name="woodBars" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodBars" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodBars" count="1">                                                                          <ingredient name="woodBarsCTR" count="1"/> </recipe>
 <recipe name="woodBarsCTR" count="1">                                                                       <ingredient name="woodBars" count="1"/> </recipe>
-<recipe name="woodGate" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodGate" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodGate" count="1">                                                                          <ingredient name="woodGateCTR" count="1"/> </recipe>
 <recipe name="woodGateCTR" count="1">                                                                       <ingredient name="woodGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->

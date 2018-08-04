@@ -347,9 +347,9 @@
 </prefab_rule>
 
 <prefab_rule name="hordeCentral">
-<prefab name="gnamod_beacon_21_MP_3" min_count="1" max_count="1"/>
-<prefab name="gnamod_42x42_asphalt" min_count="2" max_count="2" prob="99"/>
-<prefab name="gnamod_21x21_asphalt" min_count="1"/>
+<prefab name="gnamod_beacon21x21_01" min_count="1" max_count="1"/>
+<prefab name="gnamod_flat_42x42_asphalt01" min_count="2" max_count="2" prob="99"/>
+<prefab name="gnamod_flat_21x21_asphalt01"/>
 </prefab_rule>
 
 <prefab_rule name="wildernessBase">
@@ -1348,8 +1348,8 @@
 <!-- Final Processing -->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="20"/>
-<property name="bias"                     value="20"/>
+<property name="scale"                    value="10"/>
+<property name="bias"                     value="10"/>
 </module>
 <module name="WorldBuilding"              type="ClampOutput">
 <property name="sourceModule"             value="FinalScale"/>

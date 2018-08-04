@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rwgmixer><world ruleset="base"/>
+<rwgmixer><world ruleset="necropolis"/>
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/> </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/>  </ruleset>
 <!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisSmallHub" prob="1"/> <cell_rule name="necropolisHub" position="0,0" prob="1"/>  </ruleset>
@@ -169,7 +169,7 @@
 </hub_rule>
 
 <hub_rule name="necropolisSmall">
-<hub_type value="city"/> <width value="250, 500" />  <height value="250, 500" /> <path_material value="asphalt" /> <path_radius value="11"/>
+<hub_type value="city"/> <width value="250, 750" />  <height value="250, 750" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="cityNecropolis"/> <street_gen level="10" length_multiplier="3">
 
 <axiom value="[*][B]"/>
@@ -220,7 +220,23 @@
 <hub_type value="city"/> <width value="750, 1750" />  <height value="750, 1750" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="none"/> <street_gen level="10" length_multiplier="3">
 
-<axiom value="F"/>
+<axiom value="[*][-*][-*][-*][-*][-*][-*][-*][-*][-*]"/>
+<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/>
+<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/>
+<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/>
+<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/>
+<rule char="E" replace_with="F[F][FF*]+[FF*]"/>
+<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/>
+<rule char="H" replace_with="F[F]-[FF*]"/>
+<rule char="Z" replace_with="F[F]+[FF*]"/>
+<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/>
+<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/>
+<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/>
+<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
 </street_gen>
 </hub_rule>
 
@@ -237,7 +253,7 @@
 <wilderness_rules>
 <wilderness_rule name="wildernessBase"          spawn_min_max="2,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNomad"         spawn_min_max="3,10"> <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNecropolis"    spawn_min_max="3,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="cityNecropolis" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNecropolis"    spawn_min_max="3,10"> <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="cityNecropolis" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessHorde"         spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="none" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNone"          spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="0" /> <path_adjust_terrain value="false"/>   <prefab_rule name="none" prob="1"/>  </wilderness_rule>
 </wilderness_rules>
@@ -354,10 +370,11 @@
 </prefab_rule>
 
 <prefab_rule name="hordeCentral">
-<prefab name="gnamod_beacon21x21_01" min_count="1" max_count="1"/>
-<prefab name="gnamod_flat_42x42_asphalt01" min_count="2" max_count="2" prob="99"/>
-<prefab name="gnamod_flat_21x21_asphalt01"/>
-</prefab_rule>
+<!--
+<prefab name="gnamod_42x42_asphalt"/>
+<prefab name="gnamod_beacon_20" max_count="1"/>
+-->
+</prefab_rule>    
 
 <prefab_rule name="wildernessBase">
 <prefab rule="buildingsBusiness"/>
@@ -897,38 +914,8 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output
-<output module="WorldBuilding"/> -->
-
-			<module name="distanceBaseBase" type="Cylinders">
-				<property name="frequency" value="256"/>
-			</module><!--Elev 1@center / Elev -1@radius1-->
-			<module name="distanceBase" type="ScaleInput">
-				<property name="sourceModule" value="distanceBaseBase"/>
-				<property name="x" value="0.00005"/>
-				<property name="z" value="0.00005"/>
-				<property name="y" value="0"/>
-			</module><!--Elev 1@center / Elev -1@radius20,000-->
-  
-			<module name="distanceOut" type="ScaleBiasOutput">
-				<property name="sourceModule" value="distanceBase"/>
-				<property name="scale" value="-10000"/>
-				<property name="bias" value="10000"/>
-			</module><!--Elev 0@center / Elev 20,000@radius20,000-->  
-
-			<module name="constant5" type="Constant"><!-- 5 -->
-				<property name="constant" value="5"/>
-			</module>
-
-			<module name="centerFlatten" type="Select">
-				<property name="controlModule" value="distanceOut"/>
-				<property name="sourceModule1" value="FinalScale"/>
-				<property name="sourceModule2" value="WorldBase"/>
-				<property name="bounds" value="-1000000 ,1500"/><!--0 to 1000 is flat-->
-				<property name="edgeFalloff" value="2000"/><!--900 to 1100 is transition area-->
-			</module>
-
-			<output module="centerFlatten"/>
+<!-- Final Output-->
+<output module="WorldBuilding"/>
 </terrain_generator>
 
 <!-- Classic Terrain -->
@@ -1386,57 +1373,8 @@
 <!-- Final Processing -->
 <module name="FinalScale"                 type="ScaleBiasOutput">
 <property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="70"/>
+<property name="scale"                    value="120"/>
 <property name="bias"                     value="20"/>
-</module>
-<module name="WorldBuilding"              type="ClampOutput">
-<property name="sourceModule"             value="FinalScale"/>
-<property name="bounds"                   value="-26,255"/>
-</module>
-<!-- Final Output
-<output module="WorldBuilding"/> -->
-
-			<module name="distanceBaseBase" type="Cylinders">
-				<property name="frequency" value="256"/>
-			</module><!--Elev 1@center / Elev -1@radius1-->
-			<module name="distanceBase" type="ScaleInput">
-				<property name="sourceModule" value="distanceBaseBase"/>
-				<property name="x" value="0.00005"/>
-				<property name="z" value="0.00005"/>
-				<property name="y" value="0"/>
-			</module><!--Elev 1@center / Elev -1@radius20,000-->
-  
-			<module name="distanceOut" type="ScaleBiasOutput">
-				<property name="sourceModule" value="distanceBase"/>
-				<property name="scale" value="-10000"/>
-				<property name="bias" value="10000"/>
-			</module><!--Elev 0@center / Elev 20,000@radius20,000-->  
-
-			<module name="constant5" type="Constant"><!-- 5 -->
-				<property name="constant" value="5"/>
-			</module>
-
-			<module name="centerFlatten" type="Select">
-				<property name="controlModule" value="distanceOut"/>
-				<property name="sourceModule1" value="FinalScale"/>
-				<property name="sourceModule2" value="WorldBase"/>
-				<property name="bounds" value="-1000000 ,1500"/><!--0 to 1000 is flat-->
-				<property name="edgeFalloff" value="2000"/><!--900 to 1100 is transition area-->
-			</module>
-
-			<output module="centerFlatten"/>
-</terrain_generator>  
-
-<!-- Flat World (for testing) -->
-<terrain_generator                        name="gnamodHordeFlat">
-<module name="Final"                      type="Constant">
-<property name="constant"                 value="30"/>
-</module>
-<!-- Final Processing -->
-<module name="FinalScale"                 type="ScaleBiasOutput">
-<property name="sourceModule"             value="Final"/>
-<property name="scale"                    value="250"/>
-<property name="bias"                     value="-1"/>
 </module>
 <module name="WorldBuilding"              type="ClampOutput">
 <property name="sourceModule"             value="FinalScale"/>
@@ -1444,8 +1382,7 @@
 </module>
 <!-- Final Output-->
 <output module="WorldBuilding"/>
-</terrain_generator>
-
+</terrain_generator>  
 
 <!-- Flat World (for testing) -->
 <terrain_generator                        name="flatworld" use_old_final="false">
@@ -1481,7 +1418,7 @@
 <property name="sourceModule"             value="FinalScale"/>
 <property name="bounds"                   value="-26,255"/>
 </module>
-<!-- Final Output -->
+<!-- Final Output-->
 <output module="WorldBuilding"/>
 </terrain_generator>
 </terrain_generators>
@@ -1549,7 +1486,7 @@
 </biome_intensity_generator>
 </biome_intensity_generators>
 
-<!-- Gnamod Base Biome Spawning -->
+<!-- Gnamod Base Biome Spawning
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
@@ -1585,7 +1522,8 @@
 
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
-
+-->
+  
 <!-- Gnamod Horde Mode Biome Spawning 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
@@ -1601,37 +1539,38 @@
 </biome_spawn_rules>
 -->
 
-<!-- Gnamod Necropolis Biome Spawning 
+<!-- Gnamod Necropolis Biome Spawning -->
 <biome_spawn_rules>
-<biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="plains">          <distance_from_center range="0,3600"/>        </biome_spawn_rule>
 <biome_spawn_rule name="city">            <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <biome_generator range="0.30,0.40"/>          </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <biome_generator range="0.55,0.70"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.55,0.65"/>          </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <biome_generator range="0.65,0.70"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.95,0.999"/>         </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.001,0.05"/>         </biome_spawn_rule>
-<biome_spawn_rule name="wasteland">       <biome_generator range="0.05,0.20"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.05,0.18"/>          </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.18,0.20"/>          </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.20,0.30"/>          </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <biome_generator range="0.40,0.50"/>          </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <biome_generator range="0.70,0.80"/>          </biome_spawn_rule>
-<biome_spawn_rule name="radiated">        <distance_from_center range="0,100"/>         </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <distance_from_center range="100,750"/>       </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <distance_from_center range="0,250"/>         </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <distance_from_center range="250,900"/>       </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.50,0.55"/>          </biome_spawn_rule>
 <biome_spawn_rule name="desert">          <biome_generator range="0.80,0.95"/>          </biome_spawn_rule>
 <biome_spawn_rule name="city">            <distance_from_center range="2800,3200"/>     </biome_spawn_rule>
 <biome_spawn_rule name="wasteland_hub">   <distance_from_center range="3200,4000"/>     </biome_spawn_rule>
 <biome_spawn_rule name="radiated">        <distance_from_center range="4000,5000"/>     </biome_spawn_rule>
-<biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
--->
 
-<!-- Biome Test
+
+<!-- Biome Test 
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="city_wasteland">  <terrain_generator range="-60,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <terrain_generator range="-60,255"/>          </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 </biome_spawn_rules>
 -->
-
  </rwgmixer>

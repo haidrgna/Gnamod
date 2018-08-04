@@ -82,7 +82,7 @@ icon="ui_game_symbol_zombie" difficulty="insane">
 </quest>
 
 <!-- Nomad Mode -->
-<quest id="quest_BasicSurvival1" group_name="Gnamod Nomad Mode" category_key="quest"
+<quest id="quest_BasicSurvival1c" group_name="Gnamod Nomad Mode" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
 description="Welcome to Gnamod. This is the Nomad Mode start."
 offer="Welcome to Gnamod!"
@@ -107,6 +107,19 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <reward type="Item" id="torch" value="1"/>
 <reward type="Item" id="keystoneBlock" value="1"/>
 <reward type="Item" id="q_GnamodZombieKilling" value="1"/>
+</quest>
+
+<!-- Last Stand -->
+<quest id="quest_BasicSurvival1" group_name="The Last Stand" category_key="quest"
+name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
+description="Welcome to Gnamod. The Last Stand!"
+offer="Welcome to Gnamod!"
+icon="ui_game_symbol_zombie" difficulty="veryeasy">
+
+<reward type="Item" id="StartingKit" value="1"/>
+<reward type="Item" id="bedroll" value="1"/>
+<reward type="Item" id="torch" value="1"/>
+<reward type="Item" id="keystoneBlock" value="1"/>
 </quest>
 
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->

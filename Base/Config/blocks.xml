@@ -1211,6 +1211,7 @@
 <property name="Class" value="Light"/>
 <property name="RequiredPower" value="0"/>
 <property name="TakeDelay" value="0.1"/>
+<property name="Weight" value="10"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="woodMaster"/>
@@ -1230,6 +1231,7 @@
 <property name="Extends" value="woodFrameMaster"/>
 <property name="CreativeMode" value="None"/>
 <property name="FuelValue" value="315"/>
+<property name="Weight" value="15"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="wood" count="1,5"/>
@@ -1243,6 +1245,7 @@
 <property name="Extends" value="woodFrameMaster"/>
 <property name="CreativeMode" value="None"/>
 <property name="FuelValue" value="105"/>
+<property name="Weight" value="5"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="wood" count="1,2"/>
@@ -1432,6 +1435,7 @@
 <property name="CreativeMode" value="None"/>
 <property name="TakeDelay" value="0.1"/>
 <property name="Class" value="Light"/>
+<property name="Weight" value="10"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="scrapIronMaster"/>
@@ -1450,6 +1454,7 @@
 <block id="114" name="scrapIronFrameMasterStrong">
 <property name="Extends" value="scrapIronFrameMaster"/>
 <property name="CreativeMode" value="None"/>
+<property name="Weight" value="15"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
@@ -1462,6 +1467,7 @@
 <block id="115" name="scrapIronFrameMasterWeak">
 <property name="Extends" value="scrapIronFrameMaster"/>
 <property name="CreativeMode" value="None"/>
+<property name="Weight" value="5"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="scrapIron" count="2,6"/>
@@ -2968,7 +2974,8 @@
 <property name="CustomIcon" value="lootWastelandHelper"/>
 <property name="DescriptionKey" value="randomLootSpawnerDesc"/>
 <property name="Material" value="stone"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/>
 <property name="ImposterExclude" value="true"/>
@@ -2976,7 +2983,7 @@
 <property name="PlantGrowing.Next" value="lootWastelandHelper"/>
 <property name="PlantGrowing.GrowthRate" value="0.005"/>
 <property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.IsRandom" value="true"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 </block>
@@ -5088,7 +5095,23 @@
 <drop event="Destroy" count="0"/>
 </block>
 
-<!-- 459 - 462 Free -->
+<block id="459" name="BeaconChestFull">
+<property name="CreativeMode" value="None"/>
+<property name="Class" value="Loot"/>
+<property name="Material" value="MbeaconUnstable"/>
+<property name="Shape" value="New"/>
+<property name="Model" value="mortician_drawer"/>
+<property name="Place" value="TowardsPlacerInverted"/>
+<property name="UseGlobalUV" value="Global"/>
+<property name="Texture" value="267"/>
+<property name="LootList" value="9"/>
+<property name="StabilitySupport" value="false"/>
+<property class="RepairItems"> <property name="casinoCoin" value="2500"/> </property>
+<drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
+<drop event="Destroy" count="0"/>
+</block>
+
+<!-- 460 - 462 Free -->
 
 <block id="463" name="bed01">
 <property name="Material" value="furniture"/>
@@ -9179,6 +9202,20 @@
 <property name="Texture" value="306"/>
 </block>
 
+<block id="865" name="cntCrateLastStand">
+<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CustomIcon" value="cntShippingCrateShamway"/>
+<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>
+<property name="Texture" value="423"/>
+<drop event="Destroy" count="0"/>
+<property name="DowngradeBlock" value="cntLootLastStand"/>
+</block>
+
+<block id="866" name="cntLootLastStand">
+<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
+<property name="LootList" value="8"/>
+</block>
+
 <!-- Free-->
 
 <block id="869" name="plantedChrysanthemum1">
@@ -9942,6 +9979,7 @@
 
 <block id="949" name="ladderSteel">
 <property name="Extends" value="stainlessSteelMasterWeak"/>
+<property name="CustomIcon" value="ladderSteel"/>
 <property name="Class" value="Ladder"/>
 <property name="Texture" value="312"/>
 <property name="Shape" value="New"/>
@@ -12397,7 +12435,7 @@
 <property name="Model" value="Buildings/door_frame_white1" param1="main_mesh"/>
 <property name="Place" value="TowardsPlacer"/>
 <property name="Collide" value="melee,bullet,arrow,rocket"/>
-<drop event="Harvest" name="scrapIron" count="1,8"/>
+<drop event="Harvest" name="wood" count="1,4"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -12410,12 +12448,14 @@
 <property name="Extends" value="doorFrameWhite1"/>
 <property name="Material" value="MmetalWeak"/>
 <property name="Model" value="Buildings/door_frame_metal1" param1="main_mesh"/>
+<drop event="Harvest" name="scrapIron" count="1,8"/>
 </block>
 
 <block id="1216" name="doorFrameMetal2">
 <property name="Extends" value="doorFrameWhite1"/>
 <property name="Material" value="MmetalWeak"/>
 <property name="Model" value="Buildings/door_frame_metal2" param1="main_mesh"/>
+<drop event="Harvest" name="scrapIron" count="1,8"/>
 </block>
 
 <block id="1217" name="doorFrameWhiteBoarded1">
@@ -14677,17 +14717,18 @@
 <property name="CreativeMode" value="Dev"/>
 <property name="CustomIcon" value="lootWastelandHelper"/>
 <property name="DescriptionKey" value="randomLootSpawnerDesc"/>
-<property name="Material" value="stone"/>
-<property name="Shape" value="Ext3dModel"/>
-<property name="Texture" value="293"/>
-<property name="Mesh" value="models"/>
-<property name="Model" value="LootContainers/trash_pile01" param1="main_mesh"/>
+<property name="Material" value="MstainlessSteelStrong"/>
+<property name="Shape" value="ModelEntity"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="Place" value="TowardsPlacer"/>
+<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
+<property name="MultiBlockDim" value="2,2,6"/>
 <property name="ImposterExclude" value="true"/>
 <property name="Class" value="PlantGrowing"/>
 <property name="PlantGrowing.Next" value="randomCarsHelper"/>
-<property name="PlantGrowing.GrowthRate" value="0.001"/>
+<property name="PlantGrowing.GrowthRate" value="0.008"/>
 <property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.IsRandom" value="true"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="BigDecorationRadius" value="7"/>
@@ -14792,13 +14833,12 @@
 
 <block id="1452" name="randomCarsHelper">
 <property name="CustomIcon" value="cntCar03SedanDamage0"/>
-<property name="Material" value="Mmetal"/>
-<property name="Class" value="Loot"/>
-<property name="LootList" value="17"/>
+<property name="Material" value="MstainlessSteelStrong"/>
 <property name="Shape" value="ModelEntity"/>
 <property name="IsTerrainDecoration" value="true"/>
 <property name="Place" value="TowardsPlacer"/>
-<property name="Model" value="Entities/Vehicles/car03_dmg0_Prefab"/>
+<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
+<property name="MultiBlockDim" value="2,2,6"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="ShowModelOnFall" value="false"/>
 <drop event="Destroy" count="0"/>
@@ -14806,6 +14846,14 @@
 <property name="CanDecorateOnSlopes" value="false"/>
 <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/>
 <property name="ActivationDistance" value="8"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="randomCarsHelper"/>
+<property name="PlantGrowing.GrowthRate" value="0.008"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="true"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="BigDecorationRadius" value="7"/>
 </block>
 
 <block id="1453" name="cntCar03SedanDamage0">
@@ -18661,23 +18709,15 @@
 <property name="LootList" value="154"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
-<!-- Free
-<block id="2038" name="cntBeaconChest">
+
+<block id="2038" name="treasureChestHorde">
 <property name="CreativeMode" value="None"/>
-<property name="Class" value="Loot"/>
-<property name="Material" value="MrWood"/>
-<property name="StabilitySupport" value="false"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-<property name="Mesh" value="models"/>
-<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
-<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="LootList" value="155"/>
-<property class="RepairItems"> <property name="wood" value="10"/> </property>
-<drop event="Destroy" name="wood" count="1,5"/>
-<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+<property name="CustomIcon" value="cntBackpack02"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="72"/>
+<drop event="Destroy" name="cloth" count="3"/>
 </block>
--->
+
 <block id="2039" name="HordeLoot">
 <property name="CreativeMode" value="None"/>
 <property name="Material" value="MTreasureBags"/>

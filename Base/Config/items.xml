@@ -338,7 +338,7 @@ Mesh files no longer used:
 <property name="DamageBonus.head" value="5"/>
 <property name="DamageBonus.glass" value="1"/>
 <property name="DamageBonus.cloth" value="2"/>
-<property name="DamageBonus.organic" value="8"/>
+<property name="DamageBonus.organic" value="5"/>
 <property name="ToolCategory.Butcher" value="0.51" param1="10"/>
 <property name="Sound_harvesting" value="open_animal" param1="organic"/>
 </property>
@@ -1412,12 +1412,12 @@ Mesh files no longer used:
 <property name="DamageBonus.glass" value="1"/>
 <property name="DamageBonus.stone" value="0.5"/>
 <property name="DamageBonus.wood" value="1"/>
-<property name="DamageBonus.metal" value="2"/>
+<property name="DamageBonus.metal" value="2.5"/>
 <property name="DamageBonus.organic" value="0.5"/>
 <property name="ActionExp" value="4"/>
-<property name="ToolCategory.Disassemble" value="1" param1="2"  />
-<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
-    <property name="Particle_harvesting" value="true" param1="metal" />
+<property name="ToolCategory.Disassemble" value="1" param1="2"/>
+<property name="Sound_harvesting" value="wrench_harvest" param1="metal"/>
+<property name="Particle_harvesting" value="true" param1="metal"/>
 <property name="ToolCategory.Butcher" value="0" param1="10"/>
 </property>
 <property class="Action1"> <!-- UseAction -->
@@ -6956,11 +6956,7 @@ Mesh files no longer used:
 <property name="QuestGiven" value="quest_BasicSurvival1"/>
 </property>
 </item>
-
-  
-  
-  
-  
+<!--
 <item id="1180" name="qc_silenceofthelambs">
 <property name="Extends" value="challengeQuestMaster"/>
 <property class="Action1">
@@ -7078,7 +7074,7 @@ Mesh files no longer used:
 <property name="QuestGiven" value="challenge_buythefarm"/>
 </property>
 </item>
-
+-->
 <item id="1220" name="qt_taylor">
 <property name="Extends" value="treasureQuestMaster"/>
 <property class="Action1">
@@ -7128,9 +7124,6 @@ Mesh files no longer used:
 </property>
 </item>
 
-  
-<!-- -->
-  
 <!-- Sort? -->
 <item id="1342" name="macheteBlade">
 <property name="CustomIcon" value="machete"/> <property name="CustomIconTint" value="a0a0ff"/>
@@ -7224,8 +7217,8 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="DegradationMax" value="1000,6000"/>
 <property name="VehicleNoise" value="1,0.1"/>
-<property name="VehicleMaxSpeed" value="7,10"/>
-<property name="VehicleAcceleration" value="7,10"/>
+<property name="VehicleMaxSpeed" value="8,12"/>
+<property name="VehicleAcceleration" value="8,12"/>
 <property name="VehicleMetersPerLiter" value="8,12"/>
 <property name="VehicleIdleSecondsPerLiter" value="6,12"/>
 <property name="VehicleStartDelayInSeconds" value="1,0.1"/>
@@ -7981,7 +7974,7 @@ Mesh files no longer used:
 <property name="Group" value="Resources,Basics"/>
 <property name="RepairTime" value="0.5"/>
 <property name="RepairAmount" value="20"/>
-<property name="MeltTimePerUnit" value="0.2"/>
+<property name="MeltTimePerUnit" value="0.4"/>
 <property name="CraftingIngredientTime" value="0.4"/>
 <property name="MeltTimePerUnit" value="0.1"/>
 <property name="EconomicValue" value="4"/>
@@ -12479,14 +12472,12 @@ Mesh files no longer used:
 <property class="Action1">  <property name="QuestGiven" value="quest_GnamodNomadTrail"/> </property>
 </item>
 
-<item id="1855" name="q_GnamodHorde"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
-<property class="Action1">  <property name="QuestGiven" value="quest_GnamodHorde1"/> </property>
-</item>
-
-<item id="1856" name="q_GnamodZombieKilling"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
+<item id="1855" name="q_GnamodZombieKilling"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
 <property class="Action1">  <property name="QuestGiven" value="quest_KillingForDukes1"/> </property>
 </item>
 
-
+<item id="1856" name="q_GnamodTreasureHunt"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
+<property class="Action1">  <property name="QuestGiven" value="treasure_horde"/> </property>
+</item>
   
 </items>
