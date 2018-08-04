@@ -25,6 +25,8 @@ Server Name=""
 <Servers>
 <ServerGroup Name="Gnamod" Logo="" Description="Gnamod is a collection of mods that aims to create a unique and mostly challenging experience to players that have beaten the base game but find that it does not offer them the same challenge it did when they first started playing. Gnamod will bring back that feeling again to veteran players and will offer a diverse range of challenge modes. 
 Gnamod is based around one central mod that is called Gnamod Base, the other challenge modes are all extensions or modifications of this mod, using most of the rules set there. This means that many aspects that make Gnamod unique are in this version. It is also the closest to the vanilla game and offers similar but far more challenging gameplay. Survival in Gnamod is not guaranteed, adapt or die trying.">
+
+<!-- Version 1.0 -->
 <Server Name="Gnamod 1.0 - Base" Logo="">
 <Description>
 ===============Current Version 1.03===============
@@ -140,19 +142,19 @@ You are left behind by your friends with a backpack full of supplies and weapons
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/master.zip</Download>  </Downloads>
 </Server>
   
-  
-<Server Name="Gnamod 1.1 - Horde Mode (BETA)" Logo="">
+<!-- Version 1.1 -->
+<Server Name="Gnamod 1.1 - Horde Mode (Regular)" Logo="">
 <Description>
 ===============Current Version 1.1 BETA===============
-Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 4-6 players.
-This is the beta of the upcoming version of Gnamod, its the Multiplayer Version.
+Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 1-2 players.
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
-<Exclude>HordeSP</Exclude>
 <Exclude>HordeHC</Exclude>
+<Exclude>HordeMP</Exclude>
 <Exclude>Necropolis</Exclude>
 <Exclude>Nomad</Exclude>
+<Exclude>NomadNP</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>
 <Exclude>Gnamod.sln</Exclude>
@@ -160,18 +162,62 @@ This is the beta of the upcoming version of Gnamod, its the Multiplayer Version.
 </Excludes>
 <Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/GnamodDevelopment1.1.zip</Download>  </Downloads>
 </Server> 
-  
-<Server Name="Gnamod 1.0 - Necropolis (BETA)" Logo="">
+
+<Server Name="Gnamod 1.1 - Horde Mode (Hard)" Logo="">
+<Description>
+===============Current Version 1.1 BETA===============
+Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 3-6 players.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>HordeHC</Exclude>
+<Exclude>HordeSP</Exclude>
+<Exclude>LastStand</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>NomadNP</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/GnamodDevelopment1.1.zip</Download>  </Downloads>
+</Server>
+
+<Server Name="Gnamod 1.1 - Horde Mode (Insane)" Logo="">
+<Description>
+===============Current Version 1.1 BETA===============
+Horde Mode is an arcade style tower defense version of 7 Days to Die. In this mode you have but one goal, defend your Beacon against nightly hordes. The Beacon comes with a set of Vendors that sell you building materials and supplies. You will earn more cash by slaying zombies or selling the contents of lootbags they drop. A special Vendoneer perk allows you to decrease prices and increase the Secret Stash stock of the Vendors. Build an effective base to stay alive as long as possible or die trying. This version is suitable for 4+ players.
+</Description>
+<ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
+<Excludes>
+<Exclude>HordeHC</Exclude>
+<Exclude>HordeSP</Exclude>
+<Exclude>LastStand</Exclude>
+<Exclude>Necropolis</Exclude>
+<Exclude>Nomad</Exclude>
+<Exclude>NomadNP</Exclude>
+<Exclude>.gitattributes</Exclude>
+<Exclude>.gitignore</Exclude>
+<Exclude>Gnamod.sln</Exclude>
+<Exclude>ModLauncher.xml</Exclude>
+</Excludes>
+<Downloads> <Download>https://github.com/haidrgna/Gnamod/archive/GnamodDevelopment1.1.zip</Download>  </Downloads>
+</Server>
+
+<Server Name="Gnamod 1.1 - Necropolis (Regular)" Logo="">
 <Description>
 ===============Current Version 1.1 BETA===============
 You are one of the few humans left alive in the remains of a once great metropolis, which is now a Necropolis. It is now the home of the living dead and littered with the remains of warfare. This is your home, you have no choice but to endure and survive. During the day the zombies mostly hide in the bigger buildings that are still standing or bathing in the radiation that surrounds the city, but at night they roam the land in search of food: You!
 </Description>
 <ReleaseNotes>https://7daystodie.com/forums/showthread.php?73963-Gnamod</ReleaseNotes>
 <Excludes>
+<Exclude>HordeHC</Exclude>
 <Exclude>HordeMP</Exclude>
 <Exclude>HordeSP</Exclude>
-<Exclude>HordeHC</Exclude>
+<Exclude>LastStand</Exclude>
 <Exclude>Nomad</Exclude>
+<Exclude>NomadNP</Exclude>
 <Exclude>.gitattributes</Exclude>
 <Exclude>.gitignore</Exclude>
 <Exclude>Gnamod.sln</Exclude>
