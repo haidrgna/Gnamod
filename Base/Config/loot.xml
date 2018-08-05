@@ -829,7 +829,7 @@
 <loot quality="400,450"   prob="0.100"/>
 <loot quality="350,400"   prob="0.275"/>
 <loot quality="250,350"   prob="0.325"/>
-<loot quality="150,250"   prob="0.225"/>
+<loot quality="100,250"   prob="0.225"/>
 </qualitytemplate>
 </lootqualitytemplate>
 </lootqualitytemplates>
@@ -1168,7 +1168,7 @@
 <item name="rock"                       count="75,150"  prob="12"/>
 <item name="rockGranite"                count="75,150"  prob="4"/>
 <item name="rockSmall"                  count="150,300" prob="4"/>
-<item name="wood"                       count="300,600" prob="16"/>
+<item name="wood"                       count="600,1200" prob="16"/>
 <item name="sandstone"                  count="75,150"  prob="4"/>
 <item name="desertSand"                 count="150,300" prob="12"/>
 <item name="crushedSand"                count="75,150"  prob="4"/>
@@ -1193,11 +1193,13 @@
 </lootgroup>
 <!-- Scrap Materials Base Group -->
 <lootgroup name="matsScrap">
-<item name="scrapIron"                  count="50,250"  prob="30"/>
-<item name="brokenGlass"                count="50,250"  prob="30"/>
+<item name="scrapIron"                  count="50,250"  prob="25"/>
+<item name="brokenGlass"                count="50,250"  prob="25"/>
 <item name="scrapPlastics"              count="10,50"   prob="15"/>
 <item name="scrapBrass"                 count="50,250"  prob="10"/>
 <item name="scrapLead"                  count="50,250"  prob="15"/>
+<item name="coal"                       count="50,250"  prob="5"/>
+<item name="nitratePowder"              count="50,250"  prob="5"/>
 </lootgroup>
 <!-- Construction Materials Base Group -->
 <lootgroup name="matsConstruction">
@@ -1277,19 +1279,13 @@
 <lootgroup name="blocksElectric">
 <item group="blocksPower"/>
 <item name="pressureplate"              count="1,5"/>
-<item name="wallLight01_player"         count="1,6"/>
-<item name="ceilingLight01_player"      count="1,6"/>
-<item name="ceilingLight02_player"      count="1,6"/>
-<item name="ceilingLight07_player"      count="1,5"/>
-<item name="industrialLight01_player"   count="1,5"/>
-<item name="porchLight01_player"        count="1,6"/>
 <item name="switch"                     count="1,2"/>
 <item name="electrictimerrelay"         count="1"/>
 <item name="electricwirerelay"          count="2,6"/>
-<item name="dartTrap"                   count="1,2"/>
-<item name="shotgunTurret"              count="1,2"/>
-<item name="autoTurret"                 count="1,2"/>
-<item name="bladeTrap"                  count="1,2"/>
+<item name="dartTrap"                   count="1,4"/>
+<item name="shotgunTurret"              count="1,3"/>
+<item name="autoTurret"                 count="1,3"/>
+<item name="bladeTrap"                  count="1,4"/>
 <item name="electricfencepost"          count="4,8"/>
 </lootgroup>
 <!-- Other Blocks -->
@@ -1651,18 +1647,28 @@
 <item group="SPumpShotgunRNG"           prob="12"/>
 <item group="LPumpShotgunRNG"           prob="8"/>
 <item group="DBShotgunRNG"              prob="6"/>
-<item group="rocketLauncher"            prob="2"/>
-<item group="compoundBow"               prob="10"/>
+<item name="gunRocketLauncher"          prob="2"/>
+<item name="compoundBow"                prob="10"/>
 </lootgroup>
-
 <!-- =========================== Primitive Weapons Base Groups ================================================================================================================================================================================================================================================================================================================= -->
 <!-- Weapon Base Groups -->
-<lootgroup name="clubs">                              <item name="torch" prob="25"/>    <item name="clubWood" prob="25"/>   <item name="clubIron" prob="20"/>   <item name="clubBarbed" prob="15"/>  <item name="clubSpiked" prob="10"/>  <item name="sledgehammer" prob="5"/>  </lootgroup>
-<lootgroup name="knifes">                             <item name="boneShiv" prob="40"/>   <item name="huntingKnife" prob="40"/>   <item name="machete" prob="15"/>   <item name="macheteBlade" prob="5"/>              </lootgroup>
+<lootgroup name="clubs">
+<item name="torch" prob="30"/>
+<item name="clubIron" prob="25"/>
+<item name="clubBarbed" prob="20"/>
+<item name="clubSpiked" prob="15"/>
+<item name="sledgehammer" prob="10"/>
+</lootgroup>
+<lootgroup name="knifes">
+<item name="torch" prob="30"/>
+<item name="huntingKnife" prob="50"/>
+<item name="machete" prob="15"/>
+<item name="macheteBlade" prob="5"/>
+</lootgroup>
 <!-- Total Weapon Base Groups -->
-<lootgroup name="weaponsMelee">                       <item group="clubs" prob="60"/>    <item group="knifes" prob="40"/>                            </lootgroup>
-<lootgroup name="weaponsPrimitive">                   <item group="woodenBow" prob="40"/>   <item group="crossbow" prob="30"/>   <item group="blunderbuss" prob="25"/>   <item group="compoundBow" prob="5"/>              </lootgroup>
-<lootgroup name="weaponsBackpack">                    <item group="weaponsMelee" prob="50"/>   <item group="weaponsPrimitive" prob="40"/>  <item group="ammoBombs" prob="5"/>   <item group="ammoMines" prob="5"/>              </lootgroup> 
+<lootgroup name="weaponsMelee">                       <item group="clubs" prob="60"/> <item group="knifes" prob="40"/> </lootgroup>
+<lootgroup name="weaponsPrimitive">                   <item group="crossbow" prob="30"/> <item group="blunderbuss" prob="40"/> <item group="compoundBow" prob="30"/> </lootgroup>
+<lootgroup name="weaponsBackpack">                    <item group="weaponsMelee" prob="70"/> <item group="weaponsPrimitive" prob="20"/> <item group="ammoBombs" prob="5"/> <item group="ammoMines" prob="5"/> </lootgroup> 
 <!-- =========================== Generic Items Base Groups ===================================================================================================================================================================================================================================================================================================================== -->
 <!-- Common Trash Groups -->
 <lootgroup name="itemsTrash">                         <item name="ironArrowHead" count="1,4" prob="5"/> <item name="canEmpty" count="1" prob="6"/>  <item name="oldCash" count="1,2" prob="2.5"/>  <item name="cloth" count="1,2" prob="5"/> <item name="trophy" count="1" prob="5"/> <item name="brokenGlass" count="1,4" prob="2.5"/>
@@ -1711,7 +1717,7 @@
                                                       <item group="gunsComplete" prob="1.5"/> <item group="foodCanned" count="1,3" prob="25"/>  <item group="foodRations" count="1,3" prob="10"/> <item group="itemsCookware" prob="10"/> <item group="medicalBasic" prob="10"/>  <item group="lootHerbal" prob="0.5"/>  </lootgroup>
 <!-- Hardware Crate Loot -->
 <lootgroup name="lootHWTools">                        <item group="toolsMechanized" prob="5"/>    <item group="toolsForge" prob="5"/>     <item group="toolsSteel" prob="25"/>     <item group="toolsIron" prob="45"/>    <item group="toolsOther" prob="20"/>         </lootgroup>
-<lootgroup name="lootHWMats">                         <item group="matsBasic" prob="25"/>     <item group="matsOres" prob="10"/>    <item group="matsScrap" prob="20"/>     <item group="matsConstruction" prob="15"/>   <item group="matsForged" prob="20"/>    <item group="matsMisc" prob="10"/>   </lootgroup>
+<lootgroup name="lootHWMats">                         <item group="matsBasic" count="5,10" prob="25"/> <item group="matsOres" count="5,10" prob="10"/> <item group="matsScrap" count="5,10" prob="20"/> <item group="matsConstruction" count="5,10" prob="15"/> <item group="matsForged" count="5,10" prob="20"/> <item group="matsMisc" count="5,10" prob="10"/> </lootgroup>
 <lootgroup name="lootHWBlocks">                       <item group="blocksBase" prob="30"/> <item group="blocksWorkstation" prob="10"/> <item group="blocksElectric" prob="10"/> <item group="blocksOther" prob="50"/> </lootgroup>
 <!-- Treasure Chest Loot -->
 <lootgroup name="lootTreasureBasic">                  <item name="casinoCoin" count="1000,5000" prob="20"/> <item name="oldCash" count="50,2500" prob="5"/>  <item group="medicalAdvanced" count="3,7" prob="25"/> <item group="gunsComplete" prob="15"/>  <item group="ammoGuns" count="10,25" prob="25"/> <item group="matsRareOres" count="4,10" prob="10"/>  </lootgroup>
@@ -1768,7 +1774,7 @@
 <item group="kitBanditArmor"            prob="5"/>
 <item group="kitMilitaryArmor"          prob="5"/>
 </lootgroup>
-<!-- Starting Kit Ammo Groups -->
+<!-- Starting Kit Ammo Groups --> 
 <lootgroup name="kitPistolAmmo">                      <item name="22LRBullet" count="175,425" prob="35"/>    <item name="22LRBulletNG" count="175,425" prob="15"/>    <item name="22LRBulletMG" count="175,425" prob="10"/>    <item name="9mmBullet" count="175,425" prob="30"/>           <item name="9mmBulletNG" count="175,425" prob="10"/>     <item name="9mmBulletMG" count="175,425" prob="5"/>    </lootgroup>
 <lootgroup name="kitRevolverAmmo">                    <item name="357MagBullet" count="175,425" prob="35"/>  <item name="357MagBulletNG" count="175,425" prob="15"/>  <item name="357MagBulletMG" count="175,425" prob="10"/>  <item name="44MagBullet" count="175,425" prob="30"/>         <item name="44MagBulletNG" count="175,425" prob="10"/>   <item name="44MagBulletMG" count="175,425" prob="5"/>  </lootgroup>
 <lootgroup name="kitDeagleAmmo">                      <item name="357MagBullet" count="175,425" prob="35"/>  <item name="357MagBulletNG" count="175,425" prob="15"/>  <item name="357MagBulletMG" count="175,425" prob="10"/>  <item name="50BMGBullet" count="175,425" prob="30"/>         <item name="50BMGBulletNG" count="175,425" prob="10"/>   <item name="50BMGBulletMG" count="175,425" prob="5"/>  </lootgroup>
@@ -1780,7 +1786,21 @@
 <lootgroup name="kitLPShotgunAmmo">                   <item name="12GAShell" count="175,425" prob="35"/>     <item name="12GAShellNG" count="175,425" prob="15"/>     <item name="12GAShellMG" count="175,425" prob="10"/>     <item name="12GASlug" count="175,425" prob="30"/>            <item name="12GASlugNG" count="175,425" prob="10"/>      <item name="12GASlugMG" count="175,425" prob="5"/>     </lootgroup>
 <lootgroup name="kitDBShotgunAmmo">                   <item name="10GAShell" count="175,425" prob="35"/>     <item name="10GAShellNG" count="175,425" prob="15"/>     <item name="10GAShellMG" count="175,425" prob="10"/>     <item name="10GASlug" count="175,425" prob="30"/>            <item name="10GASlugNG" count="175,425" prob="10"/>      <item name="10GASlugMG" count="175,425" prob="5"/>     </lootgroup>
 <lootgroup name="kitExplosives">                      <item name="pipeBomb" count="3,10" prob="25"/>         <item name="heavyPipeBomb" count="3,10" prob="10"/>      <item name="molotovCocktail" count="3,10" prob="25"/>    <item name="heavyMolotovCocktail" count="3,10" prob="10"/>   <item name="mineCandyTin" count="3,10" prob="25"/>       <item name="mineHubcap" count="3,10" prob="5"/>        </lootgroup>
-<!-- Starting Kit Firearms Groups -->
+<!-- Kit All Ammo -->
+<lootgroup name="kitAllAmmo">
+<item group="kitPistolAmmo"             prob="10"/>
+<item group="kitRevolverAmmo"           prob="10"/>
+<item group="kitDeagleAmmo"             prob="9"/>
+<item group="kitMP5Ammo"                prob="10"/>
+<item group="kitAK47Ammo"               prob="9"/>
+<item group="kitHRifleAmmo"             prob="10"/>
+<item group="kitSRifleAmmo"             prob="9"/>
+<item group="kitSPShotgunAmmo"          prob="10"/>
+<item group="kitLPShotgunAmmo"          prob="10"/>
+<item group="kitDBShotgunAmmo"          prob="9"/>
+<item group="ammoRocket"                prob="4" count="5,10"/>
+</lootgroup>
+  <!-- Starting Kit Firearms Groups -->
 <lootgroup name="kitPistol"             count="all">  <item group="pistolRNG"/>                 <item group="kitPistolAmmo"    count="2"/>  </lootgroup>
 <lootgroup name="kitRevolver"           count="all">  <item group="revolverRNG"/>               <item group="kitRevolverAmmo"  count="2"/>  </lootgroup>
 <lootgroup name="kitDeagle"             count="all">  <item group="deagleRNG"/>                 <item group="kitDeagleAmmo"    count="2"/>  </lootgroup>
@@ -2038,34 +2058,7 @@ loot_quality_template=  "leveledNormal">
 <!-- Chance of Default Loot -->
 <item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
-<!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt007"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
-<lootcontainer id="7" count="1" size="9,9" open_time="0" 
-destroy_on_close=       "false"
-sound_open=             "UseActions/open_dumpster"
-sound_close=            "UseActions/close_dumpster"
-loot_quality_template=  "hordeTreasure">
-<item group="cnt007" count="5,10" prob="100"/>
-</lootcontainer>
-<!-- =========================== LAST STAND LOOT =============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt008"> <item group="lootBackpacks" prob="5"/> <item group="lootADFood" prob="15"/> <item group="lootADMedical" prob="10"/> <item group="lootHWMats" prob="25"/> <item group="lootHWBlocks" prob="15"/> <item group="gunsBalanced" prob="20"/> <item group="gunsComplete" prob="5"/> <item group="armorRS" prob="5"/> </lootgroup>
-<lootcontainer id="8" count="1" size="5,5" open_time="3" 
-destroy_on_close=       "false"
-sound_open=             "UseActions/open_cardboard"
-sound_close=            "UseActions/close_cardboard"
-loot_quality_template=  "hordeTreasure">
-<item group="cnt008" count="25" prob="100"/>
-</lootcontainer>
-<!-- =========================== LAST STAND BASICS ============================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt009"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
-<lootcontainer id="9" count="1" size="9,9" open_time="0" 
-destroy_on_close=       "false"
-sound_open=             "UseActions/open_dumpster"
-sound_close=            "UseActions/close_dumpster"
-loot_quality_template=  "hordeTreasure">
-<item group="cnt009" count="25" prob="100"/>
-</lootcontainer>
-<!-- 10 Free -->
+<!-- 6 - 10 Free -->
   
 <!-- General World Loot  -->
 <!-- =========================== GARBAGE BAGS ================================================================================================================================================================================================================================================================================================================================== -->
@@ -3455,13 +3448,55 @@ loot_quality_template=  "unleveled">
 <item group="startingKitBasics"         prob="5"/>
 <item group="startingKitBase"           prob="5"/>
 </lootcontainer>  
-<!-- =========================== BEACON CHEST ============================================================================================================================================================================================================================================================================================================================ -->
-<lootcontainer id="155" count="1" size="1,1" open_time="1" 
-destroy_on_close=       "true"
-sound_open=             "UseActions/open_apache_artifact_chest"
-sound_close=            "UseActions/close_apache_artifact_chest"
-loot_quality_template=  "startingKit">
-
-<item name="PlaceBeacon" count="1" prob="100"/>
+<!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
+<lootgroup name="cnt155"> <item group="blocksBase" count="1,3" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="5"/> <item group="lootHWMats" count="4,10" prob="65"/>  <item group="lootHWTools" prob="17"/>  </lootgroup>
+<lootcontainer id="155" count="1" size="9,9" open_time="0" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt155" count="5,10" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND LOOT =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt156a"> <item name="firstAidKit" count="2,5" prob="20"/> <item group="medicalBandage" count="2,5" prob="20"/> <item group="medicalPills" count="3,6" prob="20"/> <item group="medicalSupply" count="2,5" prob="40"/> </lootgroup>
+<lootgroup name="cnt156b"> <item group="foodMeat" count="5" prob="20"/> <item group="foodStock" count="5" prob="20"/> <item group="foodPrepared" count="5" prob="10"/> <item group="foodDrinks" count="5" prob="20"/> <item group="foodCanned" count="5" prob="30"/> </lootgroup>
+<lootgroup name="cnt156c"> <item group="clothGeneral" prob="50"/> <item group="armorRS" prob="50"/> </lootgroup>
+<lootgroup name="cnt156d"> <item group="lootHWTools" prob="95"/> <item name="repairKit" count="3,7" prob="5"/>  </lootgroup>
+<lootcontainer id="156" count="1" size="9,9" open_time="1" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt156a" count="300" prob="25"/>
+<item group="cnt156b" count="300" prob="45"/>
+<item group="cnt156c" count="100" prob="15"/>
+<item group="cnt156d" count="100" prob="15"/>
+</lootcontainer>
+<!-- =========================== LAST STAND CRATE ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt157"> <item group="blocksBase" count="10,15" prob="10"/> <item group="blocksWorkstation" count="3" prob="1"/> <item group="blocksElectric" count="5" prob="20"/> <item group="lootHWMats" count="25" prob="69"/>  </lootgroup>
+<lootcontainer id="157" count="1" size="7,7" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt157" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND AMMO =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt158"> <item group="kitAllAmmo" prob="60"/> <item group="kitExplosives" count="5" prob="20"/> <item group="kitArrows" count="2,3" prob="3"/> <item group="kitBolts" count="2,3" prob="3"/> <item group="ammoParts" count="10,15" prob="16"/>  </lootgroup>
+<lootcontainer id="158" count="1" size="9,9" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_chest"
+sound_close=            "UseActions/close_chest"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt158" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND GUNS =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt159"> <item name="blunderbuss" prob="2"/> <item name="crossbow" prob="2"/> <item name="compoundBow" prob="2"/> <item group="weaponsMelee" prob="16"/> <item group="gunsComplete" prob="78"/>  </lootgroup>
+<lootcontainer id="159" count="1" size="9,9" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_safe"
+sound_close=            "UseActions/close_safe"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt159" count="100" prob="100"/>
 </lootcontainer>
 </lootcontainers>

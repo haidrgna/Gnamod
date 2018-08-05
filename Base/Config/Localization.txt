@@ -4683,8 +4683,11 @@ BeaconSuppliesSmall,blocks,Container,EnChanged,Supplies Cache,,,,
 BeaconBuildingSmall,blocks,Container,EnChanged,Building Cache,,,,
 BeaconDisposalSmall,blocks,Container,EnChanged,Disposal Unit,,,,
 BeaconChestSmall,blocks,Container,EnChanged,Beacon Drawer,,,,
-cntHordeZombieLoot,blocks,Container,EnChanged,Bag with Loot,,
-cntBeaconChest,blocks,Container,EnChanged,B.E.A.C.O.N. (Manual Deployable Self Assembly Unit).,,
+BeaconChestFull,blocks,Container,EnChanged,Beacon Drawer,,,,
+cntHordeZombieLoot,blocks,Container,EnChanged,Bag with Loot,,,,
+cntLootLastStand,blocks,Container,EnChanged,Military Building Cache,,,,
+cntLastStandAmmo,blocks,Container,EnChanged,Military Ammo Cache,,,,
+cntLastStandGuns,blocks,Container,EnChanged,Military Weapons Cache,,,,
 
 patchworkPufferCoat,items,Ammo,EnChanged,Patchwork Puffercoat,,,,
 patchworkPufferCoatDesc,items,Ammo,EnChanged,A puffercoat you taped together from some cloth and plastic bags. It might protect you from cold weather for a while...,,,,
@@ -6007,6 +6010,7 @@ barsAndGratesDesc,blocks,Block,KgNone,You can see and shoot through bars and gra
 grassPlayer,blocks,Terrain,KgNone,Grassy Ground,Terrain herbeux,Grasboden,,Suelo de hierba
 plainsPlayer,blocks,Terrain,KgNone,Plains Ground,Sol de plaine,Ebenenboden,,Llanuras
 forestPlayer,blocks,Terrain,KgNone,Forest Ground,Sol de forêt,Waldboden,,Superficie forestal
+stonePlayer,blocks,Terrain,KgNone,Stone,Pierre,Stein,nagh,Piedra
 
 crushedLime,items,Item,KgNone,Powdered Lime,,,,
 crushedLimeDesc,items,Item,KgNone,Powdered Lime is composed of Calcium Oxide and can be used in the productiom of mortar or concrete. When heated it can be turned into cement.,,,,
