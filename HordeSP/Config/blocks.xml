@@ -6683,7 +6683,7 @@
 <property name="EconomicValue" value="300"/>
 <drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 <drop event="Harvest" name="scrapPlastics" count="1,5"/>
-<drop event="Harvest" name="mechanicalParts" count="1"/>
+<drop event="Harvest" name="mechanicalParts" count="0,1"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -8311,7 +8311,7 @@
 <property name="FuelValue" value="300"/>
 <property name="DescriptionKey" value="woodLogPillar100Desc"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPillar100"/> </property>
-<drop event="Harvest" name="wood" count="8,32" tool_category="harvestingTools"/>
+<drop event="Harvest" name="wood" count="24,48" tool_category="harvestingTools"/>
 <drop event="Destroy" count="0"/>
 </block>
 

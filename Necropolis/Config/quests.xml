@@ -110,16 +110,14 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 </quest>
 
 <!-- Last Stand -->
-<quest id="quest_BasicSurvival1e" group_name="The Last Stand" category_key="quest"
+<quest id="quest_BasicSurvival1" group_name="The Last Stand" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
 description="Welcome to Gnamod. The Last Stand!"
 offer="Welcome to Gnamod!"
 icon="ui_game_symbol_zombie" difficulty="veryeasy">
 
-<reward type="Item" id="StartingKit" value="1"/>
 <reward type="Item" id="bedroll" value="1"/>
-<reward type="Item" id="torch" value="1"/>
-<reward type="Item" id="keystoneBlock" value="1"/>
+<reward type="Item" id="q_GnamodTheLastStand" value="1"/>
 </quest>
 
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->
@@ -614,4 +612,18 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <reward type="Item" id="casinoCoin" value="20000"/>
 </quest>
 
+<!-- The Last Stand -->
+<quest id="quest_GnamodTheLastStand" group_name="The Last Stand" category="quest"
+name="The Last Stand" subtitle="Finale"
+description="The first thing you need to do is gather the most basic materials from around you, materials that if you look carefully can be found almost everywhere: Wood, Plant Fibers, Stone and Feathers. Look for birdnests on the ground as they may contain feathers you need to fletch arrows from. The following instructions will teach you how to craft basic tools and weapons from these materials, tools you will need if you want to gather larger quantities of these materials."
+offer="Soldier, \nWe barely managed to escape to this last post. The enemy is inbound from all directions. Build up a perimeter and fortify the area as best as you can. Equip yourself with whatever supplies we have left. May Haidr bless us all and may we live to see the next dawn.\n\nHail Haidr!"
+icon="ui_game_symbol_critical" difficulty="insane">
+<action type="TrackQuest" />
+
+<objective type="FetchKeep" id="firstAidKit" value="1"/>
+<objective type="FetchKeep" id="repairKit" value="1"/>
+<objective type="BlockPlace" id="bedroll" value="1" />
+
+<reward type="SkillPoints" value="20"/>
+</quest>
 </quests>

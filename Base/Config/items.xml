@@ -6029,7 +6029,7 @@ Mesh files no longer used:
 <property name="Material" value="metal"/>
 <property name="Weight" value="5"/>
 <property name="HoldType" value="14"/>
-<property name="Stacknumber" value="15"/> 
+<property name="Stacknumber" value="60"/> 
 <property name="CraftingIngredientTime" value="10"/>
 <!--
 <property class="Action0">
@@ -6065,7 +6065,7 @@ Mesh files no longer used:
 <property name="Material" value="metal"/>
 <property name="Weight" value="5"/>
 <property name="HoldType" value="14"/>
-<property name="Stacknumber" value="1"/>
+<property name="Stacknumber" value="15"/>
 <property name="CraftingIngredientTime" value="10"/>
 <!--
 <property class="Action0">
@@ -7481,7 +7481,7 @@ Mesh files no longer used:
 <property name="Material" value="metal"/>
 <property name="Weight" value="5"/>
 <property name="HoldType" value="14"/>
-<property name="Stacknumber" value="15"/>
+<property name="Stacknumber" value="60"/>
 <property name="CraftingIngredientTime" value="9"/>
 <property class="Action1">
 <property name="Class" value="ExchangeItem"/>
@@ -12479,5 +12479,8 @@ Mesh files no longer used:
 <item id="1856" name="q_GnamodTreasureHunt"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
 <property class="Action1">  <property name="QuestGiven" value="treasure_horde"/> </property>
 </item>
-  
+
+<item id="1857" name="q_GnamodTheLastStand"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodTheLastStand"/> </property>
+</item>
 </items>
