@@ -1217,12 +1217,12 @@
 <lootgroup name="matsForged">
 <item name="nail"                       count="150,300" prob="15"/>
 <item name="rebar"                      count="150,300" prob="15"/>
-<item name="shortMetalPipe"             count="1,10"    prob="20"/>
-<item name="forgedIron"                 count="5,25"    prob="15"/>
-<item name="forgedSteel"                count="5,25"    prob="10"/>
-<item name="ironPlates"                 count="50,100"  prob="15"/>
+<item name="shortMetalPipe"             count="5,25"    prob="20"/>
+<item name="forgedIron"                 count="5,125"   prob="15"/>
+<item name="forgedSteel"                count="5,125"   prob="10"/>
+<item name="ironPlates"                 count="150,300"  prob="15"/>
 <item name="steelPlates"                count="50,100"  prob="5"/>
-<item name="spring"                     count="1,4"     prob="10"/>
+<item name="spring"                     count="5,25"     prob="10"/>
 </lootgroup>
 <!-- Misc Materials Base Group -->
 <lootgroup name="matsMisc">
@@ -1249,12 +1249,12 @@
 <lootgroup name="blocksBlinds"          count="all">  <item name="miniblindTopSheet" count="5"/>  <item name="miniblindBottomSheet" count="5"/> </lootgroup>
 <!-- Block Frames Base Group -->
 <lootgroup name="blocksBase">
-<item name="woodFrameBlock"             count="25,100" prob="25"/>
-<item name="scrapIronFrameBlock"        count="25,100" prob="20"/>
-<item name="flagstoneBlock"             count="25,100" prob="25"/>
+<item name="woodFrameBlock"             count="25,200" prob="25"/>
+<item name="scrapIronFrameBlock"        count="25,200" prob="20"/>
+<item name="flagstoneBlock"             count="25,200" prob="25"/>
 <item name="pouredConcreteBlock"        count="25,100" prob="15"/>
-<item name="pouredRConcreteBlock"       count="25,100" prob="10"/>
-<item name="steelBlock"                 count="25,100" prob="5"/>
+<item name="pouredRConcreteBlock"       count="25,50" prob="10"/>
+<item name="steelBlock"                 count="25,50" prob="5"/>
 </lootgroup>
 <!-- Workstations Base Group -->
 <lootgroup name="blocksWorkstation">
