@@ -4425,8 +4425,8 @@
 <property name="ItemCount" value="5"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<drop event="Harvest" name="wood" count="0,1"/>
-<drop event="Destroy" name="wood" count="0,1"/>
+<drop event="Harvest" name="wood" count="1,5"/>
+<drop event="Destroy" name="wood" count="0"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
@@ -6683,7 +6683,7 @@
 <property name="EconomicValue" value="300"/>
 <drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 <drop event="Harvest" name="scrapPlastics" count="1,5"/>
-<drop event="Harvest" name="mechanicalParts" count="0,1"/>
+<drop event="Harvest" name="mechanicalParts" count="1"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -8311,7 +8311,7 @@
 <property name="FuelValue" value="300"/>
 <property name="DescriptionKey" value="woodLogPillar100Desc"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPillar100"/> </property>
-<drop event="Harvest" name="wood" count="24,48" tool_category="harvestingTools"/>
+<drop event="Harvest" name="wood" count="8,32" tool_category="harvestingTools"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -17642,7 +17642,7 @@
 </block>
 
 <block id="1910" name="sandbagCorner2">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_1" param1="MultiDimBlock"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17651,6 +17651,7 @@
 <property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="OutdoorDecor/sandbag_corner_2" param1="main_mesh"/>
+<!--<property name="MultiBlockDim" value="1,1,1"/>-->
 <property name="ImposterExchange" value="imposterBlock" param1="1"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="IsTerrainDecoration" value="true"/>
@@ -17659,7 +17660,7 @@
 </block>
 
 <block id="1911" name="sandbagCorner2DMG1">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbagCorner2"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17675,7 +17676,7 @@
 </block>
 
 <block id="1912" name="sandbag_5">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_1" param1="MultiDimBlock"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17683,6 +17684,7 @@
 <property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="OutdoorDecor/sandbag_5" param1="main_mesh"/>
+<!--<property name="MultiBlockDim" value="1,1,1"/>-->
 <property name="ImposterExchange" value="imposterBlock" param1="1"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="IsTerrainDecoration" value="true"/>
@@ -17691,7 +17693,7 @@
 </block>
 
 <block id="1913" name="sandbag_5DMG1">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_5"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>

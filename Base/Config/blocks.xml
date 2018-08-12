@@ -17644,7 +17644,7 @@
 </block>
 
 <block id="1910" name="sandbagCorner2">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_1" param1="MultiDimBlock"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17653,6 +17653,7 @@
 <property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="OutdoorDecor/sandbag_corner_2" param1="main_mesh"/>
+<!--<property name="MultiBlockDim" value="1,1,1"/>-->
 <property name="ImposterExchange" value="imposterBlock" param1="1"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="IsTerrainDecoration" value="true"/>
@@ -17661,7 +17662,7 @@
 </block>
 
 <block id="1911" name="sandbagCorner2DMG1">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbagCorner2"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17677,7 +17678,7 @@
 </block>
 
 <block id="1912" name="sandbag_5">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_1" param1="MultiDimBlock"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
@@ -17685,6 +17686,7 @@
 <property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="OutdoorDecor/sandbag_5" param1="main_mesh"/>
+<!--<property name="MultiBlockDim" value="1,1,1"/>-->
 <property name="ImposterExchange" value="imposterBlock" param1="1"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="IsTerrainDecoration" value="true"/>
@@ -17693,7 +17695,7 @@
 </block>
 
 <block id="1913" name="sandbag_5DMG1">
-<property name="Extends" value="sandbag_1"/>
+<property name="Extends" value="sandbag_5"/>
 <property name="Group" value="Decor/Miscellaneous"/>
 <property name="DescriptionKey" value="sandbagsGroupDesc"/>
 <property name="Material" value="sand"/>
