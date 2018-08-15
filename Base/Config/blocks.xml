@@ -142,10 +142,10 @@
 <property name="Texture" value="185,570,570,570,570,570"/>
 <property name="Map.Color" value="167,136,107"/>
 <drop event="Harvest" name="crushedSand" count="3" tool_category="harvestingTools"/>
-<drop event="Harvest" name="desertSand" count="1" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Harvest" name="sandStone" count="1" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="desertSand" count="1" tool_category="harvestingTools"/>
+<drop event="Harvest" name="sandStone" count="0,1" tool_category="harvestingTools"/>
 <drop event="Harvest" name="crushedSand" count="3"/>
-<drop event="Harvest" name="desertSand" count="1"/>
+<drop event="Destroy" name="desertSand" count="1"/>
 <drop event="Fall" name="sand" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -525,9 +525,15 @@
 
 <block id="35" name="clayInSandstone">
 <property name="CreativeMode" value="Dev"/>
-<property name="Extends" value="clay"/>
+<property name="Extends" value="terrainMaster"/>
+<property name="Material" value="clay"/>
 <property name="CustomIcon" value="sandStone"/>
 <property name="Texture" value="301,184,184,184,184,184"/>
+<property name="Map.Color" value="107,78,57"/>
+<drop event="Harvest" name="crushedSand" count="6" tool_category="harvestingTools"/>
+<drop event="Harvest" name="clayFragment" count="12" tool_category="harvestingTools"/>
+<drop event="Harvest" name="clayLump" count="2,4" tool_category="harvestingTools"/>
+<drop event="Fall" name="clayInSandstone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
 <block id="36" name="grassPlayer">
@@ -4715,7 +4721,7 @@
 
 <block id="434" name="cntToilet01">
 <property name="Extends" value="metalNoUpgradeMaster"/>
-<property name="Material" value="MmetalWeak"/>
+<property name="Material" value="MmetalThin"/>
 <property name="StabilitySupport" value="false"/>
 <property name="Shape" value="Ext3dModel"/>
 <property name="Texture" value="293"/>
@@ -4730,7 +4736,7 @@
 <drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 <drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 <drop event="Harvest" name="scrapIron" count="5,10" tool_category="Disassemble"/>
-<drop event="Harvest" name="shortMetalPipe" count="1" prob="1"/>
+<drop event="Destroy" name="shortMetalPipe" count="1" prob="1"/>
 </block>
 
 <block id="435" name="cntToilet02">
@@ -4741,8 +4747,10 @@
 
 <block id="436" name="cntToilet03">
 <property name="Extends" value="cntToilet01"/>
+<property name="Material" value="MmetalWeak"/>
 <property name="LootList" value="44"/>
 <property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
+<drop event="Harvest" name="wood" count="1,6"/>
 </block>
 
 <!-- Gnamod Horde Mode Blocks -->
