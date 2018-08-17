@@ -12483,4 +12483,18 @@ Mesh files no longer used:
 <item id="1857" name="q_GnamodTheLastStand"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
 <property class="Action1">  <property name="QuestGiven" value="quest_GnamodTheLastStand"/> </property>
 </item>
+  
+<item id="1900" name="handZombieGina">
+<property name="Extends"                        value="handMaster"/>
+<property name="CreativeMode"                   value="None"/>
+<property class="Action0">
+<property name="DamageEntity"                   value="0"/>
+<property name="DamageBlock"                    value="0"/>
+<property name="Buff"                           value="ginaBuff"/>
+<property name="Buff_chance"                    value="0.25"/>
+<property name="DamageBonus.stone"              value="1.2"/>
+<property name="DamageBonus.metal"              value="1.2"/>
+<property name="DamageBonus.wood"               value="0.5"/>
+</property>
+</item>
 </items>

@@ -4741,16 +4741,16 @@
 
 <block id="435" name="cntToilet02">
 <property name="Extends" value="cntToilet01"/>
-<property name="LootList" value="43"/>
+<property name="Material" value="MmetalWeak"/>
+<property name="LootList" value="44"/>
 <property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
+<drop event="Harvest" name="wood" count="1,6"/>
 </block>
 
 <block id="436" name="cntToilet03">
 <property name="Extends" value="cntToilet01"/>
-<property name="Material" value="MmetalWeak"/>
-<property name="LootList" value="44"/>
+<property name="LootList" value="43"/>
 <property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
-<drop event="Harvest" name="wood" count="1,6"/>
 </block>
 
 <!-- Gnamod Horde Mode Blocks -->

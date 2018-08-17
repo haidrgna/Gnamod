@@ -480,4 +480,6 @@ name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="blue
 <buff id="testbuff" stack="reset" icon="ui_game_symbol_hammer">
 <modify id="0" stat="wellness" modifyMaxValue="500"/>  </buff>
 
+<buff id="ginaBuff" duration="6" type="bleeding" icon="ui_game_symbol_critical" tooltip_key="gina loves you">
+<modify id="0" stat="stamina" amount="-25" rate="5"/>  <modify id="1" stat="speedmodifier" mulValue="0.25"/> </buff>
 </buffs>
