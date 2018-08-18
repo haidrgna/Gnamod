@@ -3268,13 +3268,7 @@
 <entity_class name="zombieDaveHater"                extends="zombieDaveSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/> <property name="ApproachSpeed" value="1.30"/> <property name="NightApproachSpeed" value="1.60"/> <property name="SoundRandomTime" value="30.0"/> <property name="SoundAlertTime" value="15.0"/> </entity_class>  
 
 <entity_class name="zombieDavePuke"                 extends="zombieTemplate">
-<property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
-<property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
-<property name="SoundAttack"                        value="Enemies/Acid_Puking_Hulk/hulkattack"/>
-<property name="SoundHurt"                          value="Enemies/Acid_Puking_Hulk/hulkpain"/>
-<property name="SoundDeath"                         value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
-<property name="SoundSense"                         value="Enemies/Acid_Puking_Hulk/hulksense"/>
+<property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="1200"/>
@@ -3306,13 +3300,7 @@
 </entity_class>    
   
 <entity_class name="zombieDaveFeral"                extends="zombieTemplateFeral">
-<property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
-<property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
-<property name="SoundAttack"                        value="Enemies/Acid_Puking_Hulk/hulkattack"/>
-<property name="SoundHurt"                          value="Enemies/Acid_Puking_Hulk/hulkpain"/>
-<property name="SoundDeath"                         value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
-<property name="SoundSense"                         value="Enemies/Acid_Puking_Hulk/hulksense"/>
+<property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <property name="HandItem"                           value="handZombieBuffedFeral"/>
 <property name="PhysicsBody"                        value="zombieFat"/>
@@ -3325,13 +3313,7 @@
 </entity_class>  
 
 <entity_class name="zombieDaveRadSwagger"           extends="zombieTemplateRad">
-<property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
-<property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
-<property name="SoundAttack"                        value="Enemies/Acid_Puking_Hulk/hulkattack"/>
-<property name="SoundHurt"                          value="Enemies/Acid_Puking_Hulk/hulkpain"/>
-<property name="SoundDeath"                         value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
-<property name="SoundSense"                         value="Enemies/Acid_Puking_Hulk/hulksense"/>
+<property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="PhysicsBody"                        value="zombieFat"/>
@@ -3353,13 +3335,7 @@
 <entity_class name="zombieDaveRadHater"             extends="zombieDaveRadSwagger">  <property name="WalkType" value="9"/> <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/> <property name="ApproachSpeed" value="1.40"/> <property name="NightApproachSpeed" value="1.70"/> <property name="SoundRandomTime" value="30.0"/> <property name="SoundAlertTime" value="15.0"/> </entity_class>  
  
 <entity_class name="zombieDaveRadPuke"              extends="zombieTemplateRad">
-<property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
-<property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
-<property name="SoundAttack"                        value="Enemies/Acid_Puking_Hulk/hulkattack"/>
-<property name="SoundHurt"                          value="Enemies/Acid_Puking_Hulk/hulkpain"/>
-<property name="SoundDeath"                         value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
-<property name="SoundSense"                         value="Enemies/Acid_Puking_Hulk/hulksense"/>
+<property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <property name="PhysicsBody"                        value="zombieFat"/>
 <property name="MaxHealth"                          value="1800"/>
@@ -3392,13 +3368,7 @@
 </entity_class>
 
 <entity_class name="zombieDaveRadFeral"             extends="zombieTemplateRadFeral">
-<property name="Mesh"                               value="Zombies/zombieStandardHawaiianRagdoll"/>
-<property name="SoundRandom"                        value="Enemies/Acid_Puking_Hulk/hulkroam"/>
-<property name="SoundAlert"                         value="Enemies/Acid_Puking_Hulk/hulkalert"/>
-<property name="SoundAttack"                        value="Enemies/Acid_Puking_Hulk/hulkattack"/>
-<property name="SoundHurt"                          value="Enemies/Acid_Puking_Hulk/hulkpain"/>
-<property name="SoundDeath"                         value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
-<property name="SoundSense"                         value="Enemies/Acid_Puking_Hulk/hulksense"/>
+<property name="Mesh"                               value="Zombies/zombieStandardBikerRagdoll"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
 <property name="PhysicsBody"                        value="zombieFat"/>
