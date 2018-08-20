@@ -68,40 +68,70 @@
 <!-- Replacements -->
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.50"> <!-- Pine Forest -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="23" blockname="stone">
-<resource blockname="ironDeposit" cluster="1" prob="0.1000" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.0130" rwgGenerationType="all"/>
-<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>
-<resource blockname="silverDeposit" cluster="1" prob="0.015" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="stone">
-<resource blockname="ironDeposit" cluster="1" prob="0.0130" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.1000" rwgGenerationType="all"/>
-<resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>
-<resource blockname="silverDeposit" cluster="1" prob="0.030" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.02"/>
@@ -135,11 +165,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0006"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0015"/>
 <!-- Houses -->
 <decoration type="prefab" name="abandoned_house_01"                       prob="0.02"/>
 <decoration type="prefab" name="abandoned_house_02"                       prob="0.02"/>
@@ -149,8 +175,6 @@
 <decoration type="prefab" name="abandoned_house_06"                       prob="0.02"/>
 <decoration type="prefab" name="abandoned_house_07"                       prob="0.02"/>
 <decoration type="prefab" name="abandoned_house_08"                       prob="0.02"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
 <!-- Cabins -->  
 <decoration type="prefab" name="cabin_01"                                 prob="0.015"/>
 <decoration type="prefab" name="cabin_02_sm"                              prob="0.015"/>
@@ -161,11 +185,6 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.015"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.015"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.025"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
 <!-- Camps -->
 <decoration type="prefab" name="campsite_01"                              prob="0.007"/>
 <decoration type="prefab" name="campsite_02"                              prob="0.008"/>
@@ -175,38 +194,30 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.012"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.013"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.014"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.025"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.025"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.025"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.14"/>
@@ -236,10 +247,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
 <!-- Houses -->
 <decoration type="prefab" name="abandoned_house_01"                       prob="0.01"/>
 <decoration type="prefab" name="abandoned_house_02"                       prob="0.01"/>
@@ -249,8 +256,6 @@
 <decoration type="prefab" name="abandoned_house_06"                       prob="0.01"/>
 <decoration type="prefab" name="abandoned_house_07"                       prob="0.01"/>
 <decoration type="prefab" name="abandoned_house_08"                       prob="0.01"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
 <!-- Snow -->
 <decoration type="prefab" name="snowy_ski_lodge"                          prob="0.08"/>
 <decoration type="prefab" name="cabin_snow_hidden_01"                     prob="0.08"/>
@@ -265,11 +270,6 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.008"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.008"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.016"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
 <!-- Camps -->
 <decoration type="prefab" name="campsite_01"                              prob="0.003"/>
 <decoration type="prefab" name="campsite_02"                              prob="0.004"/>
@@ -279,16 +279,8 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.005"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.006"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.006"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.015"/>
-<decoration type="prefab" name="pond02"                                   prob="0.020"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01frozen"         prob="0.10"/>
 </decorations>
 
 <terrain class="Mountains" />
@@ -326,26 +318,70 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.20"> <!-- Open Space -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.45"/>
@@ -378,10 +414,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.006"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.016"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.02"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.005"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.00007"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.01"/>
 <!-- Camps -->
 <decoration type="prefab" name="campsite_01"                              prob="0.02"/>
 <decoration type="prefab" name="campsite_02"                              prob="0.02"/>
@@ -391,39 +424,31 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.02"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.02"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.02"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.02"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.03"/>
-<decoration type="prefab" name="pond02"                                   prob="0.03"/>
 </decorations>
 </subbiome>
 
 <subbiome prob="0.30"> <!-- Birch Cluster -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.17"/>
@@ -457,9 +482,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.000050"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.012"/>
 <decoration type="prefab" name="house_new_02"                             prob="0.012"/>
@@ -525,18 +547,6 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.02"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.02"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.02"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.01"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.03"/>
-<decoration type="prefab" name="pond02"                                   prob="0.03"/>
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
@@ -545,20 +555,23 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.30"/>
@@ -591,9 +604,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0001"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.009"/>
 <decoration type="prefab" name="house_new_02"                             prob="0.009"/>
@@ -659,18 +669,8 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.01"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.01"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.01"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.01"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.01"/>
-<decoration type="prefab" name="pond02"                                   prob="0.01"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Forest" />
@@ -708,26 +708,70 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.30"> <!-- Open Space -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.25"/>
@@ -758,10 +802,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.006"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00015"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0015"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
 <!-- Cabins -->  
 <decoration type="prefab" name="cabin_01"                                 prob="0.01"/>
 <decoration type="prefab" name="cabin_02_sm"                              prob="0.01"/>
@@ -781,38 +821,30 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.015"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.015"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.015"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
 </decorations>
 </subbiome>
   
 <subbiome prob="0.10"> <!-- Dead Trees -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="forestGround">   <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="forestGround"> <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Grass & Shrubs -->  
@@ -838,20 +870,23 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeTallGrassDiagonal"                prob="0.20"/>
@@ -881,11 +916,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0030"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.00005"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.0005"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00035"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00035"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0015"/>
 <!-- Houses -->
 <decoration type="prefab" name="abandoned_house_01"                       prob="0.03"/>
 <decoration type="prefab" name="abandoned_house_02"                       prob="0.03"/>
@@ -895,8 +926,6 @@
 <decoration type="prefab" name="abandoned_house_06"                       prob="0.03"/>
 <decoration type="prefab" name="abandoned_house_07"                       prob="0.03"/>
 <decoration type="prefab" name="abandoned_house_08"                       prob="0.03"/>
-<!-- Special -->
-<decoration type="prefab" name="settlement_01"                            prob="0.01"/>
 <!-- Cabins -->  
 <decoration type="prefab" name="cabin_01"                                 prob="0.03"/>
 <decoration type="prefab" name="cabin_02_sm"                              prob="0.03"/>
@@ -907,11 +936,6 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.03"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.03"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.03"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.05"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.05"/>
 <!-- Camps -->
 <decoration type="prefab" name="campsite_01"                              prob="0.010"/>
 <decoration type="prefab" name="campsite_02"                              prob="0.010"/>
@@ -921,16 +945,8 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.010"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.010"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.010"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.020"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.020"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.020"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.020"/>
-<decoration type="prefab" name="pond01"                                   prob="0.025"/>
-<decoration type="prefab" name="pond02"                                   prob="0.030"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Mountains"/>
@@ -968,26 +984,70 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="leadDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="leadDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+  
 <subbiome prob="0.30"> <!-- Rock Cluster -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">          <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.22"/>
@@ -1010,7 +1070,6 @@
 <decoration type="block" blockname="treeMaple17m"                         prob="0.00045"/>
 <decoration type="block" blockname="treeJuniper6m"                        prob="0.00005"/>
 <decoration type="block" blockname="treePlainsTree"                       prob="0.010"/>
-
 <!-- Lootcontainers -->
 <decoration type="block" blockname="lootPlainsHelper"                     prob="0.0005"/>
 <decoration type="block" blockname="cntBirdnest"                          prob="0.0016"/>
@@ -1019,9 +1078,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.024"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.015"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.005"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.00035"/>
 <!-- Camps -->
 <decoration type="prefab" name="campsite_01"                              prob="0.010"/>
 <decoration type="prefab" name="campsite_02"                              prob="0.010"/>
@@ -1031,16 +1087,6 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.010"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.010"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.010"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.010"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.010"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.010"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.02"/>
-<decoration type="prefab" name="pond02"                                   prob="0.02"/>
 </decorations>
 </subbiome>
   
@@ -1050,20 +1096,23 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.18"/>
@@ -1085,25 +1134,27 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeForestGrassDiagonal"              prob="0.40"/>
@@ -1131,7 +1182,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0008"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.010"/>
 <decoration type="prefab" name="house_new_02"                             prob="0.010"/>
@@ -1196,11 +1247,6 @@
 <decoration type="prefab" name="bombshelter_lg_01"                        prob="0.010"/>
 <decoration type="prefab" name="bombshelter_md_01"                        prob="0.010"/>  
 <decoration type="prefab" name="ranger_station1"                          prob="0.010"/>
-<!-- Traders -->
-<decoration type="prefab" name="settlement_trader_01"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_02"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_03"                     prob="0.01"/>
-<decoration type="prefab" name="settlement_trader_05"                     prob="0.01"/>
 <!-- Farming -->
 <decoration type="prefab" name="barn_01"                                  prob="0.005"/>
 <decoration type="prefab" name="barn_02"                                  prob="0.005"/>
@@ -1209,13 +1255,8 @@
 <decoration type="prefab" name="farm_shed2"                               prob="0.005"/>
 <decoration type="prefab" name="farm_shed3"                               prob="0.005"/>
 <decoration type="prefab" name="farm_shed4"                               prob="0.005"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.03"/>
-<decoration type="prefab" name="pond02"                                   prob="0.03"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Forest"/>
@@ -1254,26 +1295,70 @@
 <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="10"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="desertGround" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oilDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oilDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.20"> <!-- Clustered Cacti -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.10"/>
@@ -1298,25 +1383,27 @@
 </subbiome>
   
 <subbiome prob="0.20"> <!-- Desolate -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.0010"/>
@@ -1337,20 +1424,23 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">              <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="oilDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="sandStone" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.25"/>
@@ -1373,12 +1463,8 @@
 <decoration type="block" blockname="randomCarsHelper"                     prob="0.0001"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.0012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0010"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0005"/>
 <decoration type="prefab" name="desert_arch"                              prob="0.0005"/>
-<decoration type="prefab" name="resource_coal_pile"                       prob="0.00001"/>
-<decoration type="prefab" name="resource_oilshale_pile"                   prob="0.00001"/>
-<decoration type="prefab" name="resource_nitrate_pile"                    prob="0.00001"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.00001"/>
 <!-- Houses -->
 <decoration type="prefab" name="abandoned_house_01"                       prob="0.003"/>
 <decoration type="prefab" name="abandoned_house_02"                       prob="0.003"/>
@@ -1418,17 +1504,8 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.001"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.001"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.001"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.001"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.001"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.001"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="cave_01"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_02"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_03"                                  prob="0.01"/>
-<decoration type="prefab" name="cave_04"                                  prob="0.01"/>
-<decoration type="prefab" name="pond01"                                   prob="0.001"/>
-<decoration type="prefab" name="pond02"                                   prob="0.001"/>
-  
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Desert"/>
@@ -1466,27 +1543,57 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.005"> <!-- Lake -->
+<layers>
+<layer depth="3"  blockname="terrainWater"/>
+<layer depth="1"  blockname="terrainWater">   <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">   <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">   <resource blockname="clay"              cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="terrainWater">   <resource blockname="dirt"              cluster="0" prob="0.75"    rwgGenerationType="all"/> </layer>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
 
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
+</decorations>
+</subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="58" blockname="water" />
 <layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="10" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="58" blockname="water" />
-<layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.15" />
@@ -1517,9 +1624,6 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
-<decoration type="prefab" name="rock_form02"                              prob="0.0001"/>
-<decoration type="prefab" name="rock_form01"                              prob="0.001"/>
-<decoration type="prefab" name="resource_lead_pile"                       prob="0.0007"/>
 <!-- Houses -->
 <decoration type="prefab" name="house_new_01"                             prob="0.002"/>
 <decoration type="prefab" name="house_new_02"                             prob="0.002"/>
@@ -1582,9 +1686,6 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.004"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.003"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.002"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.0001"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.0001"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.0001"/>
 </decorations>
 
 <terrain class="Water"/>
@@ -1625,25 +1726,69 @@
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="radiated" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1664,7 +1809,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0007"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -1751,6 +1896,8 @@
 <decoration type="block" blockname="trapSpikesDamage1"                    prob="0.0003"/>
 <decoration type="block" blockname="trapSpikesDamage3"                    prob="0.0004"/>
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0003"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="hills" />
@@ -1788,25 +1935,69 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="silverDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="silverDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.40"> <!-- Dead Plains -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -1849,25 +2040,27 @@
 </decorations>
 </subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.1"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.09"/>
@@ -1887,7 +2080,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0009"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.0004"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.0004"/>
@@ -1932,6 +2125,8 @@
 <decoration type="block" blockname="trapSpikesDamage1"                    prob="0.0003"/>
 <decoration type="block" blockname="trapSpikesDamage3"                    prob="0.0004"/>
 <decoration type="block" blockname="trapSpikesDamage5"                    prob="0.0003"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Wasteland" />
@@ -1970,25 +2165,69 @@
 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="3"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.20"> <!-- Dead Pine Forest -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-  
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -2023,24 +2262,26 @@
 </subbiome> 
   
 <subbiome prob="0.15"> <!-- Buildings -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Lootcontainers -->
@@ -2067,20 +2308,23 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="coalDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.04"/>
@@ -2111,7 +2355,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.0017"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.006"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0003"/>
 <decoration type="prefab" name="resource_coal_pile"                       prob="0.0004"/>
@@ -2159,12 +2403,8 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.0005"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.0005"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.0005"/>
-<decoration type="prefab" name="army_camp_01"                             prob="0.0005"/>
-<decoration type="prefab" name="army_camp_02"                             prob="0.0005"/>
-<decoration type="prefab" name="army_camp_03"                             prob="0.0005"/>
-<!-- Wilderness -->
-<decoration type="prefab" name="pond01"                                   prob="0.008"/>
-<decoration type="prefab" name="pond02"                                   prob="0.008"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="Mountains"/>
@@ -2205,26 +2445,70 @@
 <!-- Replacements -->
 <replacements> <replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal" /> </replacements>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.50"> <!-- Desolate Space -->
-<!-- Gnamod Base -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
 <layers>
-<layer depth="2"  blockname="snow">         <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
+<subbiome prob="0.50"> <!-- Desolate Space -->
+<layers>
+<layer depth="2"  blockname="snow">         <resource blockname="ice"               cluster="2" prob="0.1"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">        <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">        <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-  
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="snow">         <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
+
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.018"/>
@@ -2258,25 +2542,27 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/>      <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->  
-  
 <decorations>
 <!-- Grass & Shrubs -->  
 <decoration type="block" blockname="treeSnowyGrassDiagonal"               prob="0.18"/>
@@ -2307,6 +2593,8 @@
 <decoration type="prefab" name="campsite_06a"                             prob="0.010"/>
 <decoration type="prefab" name="campsite_07"                              prob="0.011"/>
 <decoration type="prefab" name="campsite_07a"                             prob="0.012"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01frozen"         prob="0.10"/>
 </decorations>
 
 <terrain class="Mountains" />
@@ -2344,26 +2632,70 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.025"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="dirt" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="goldDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
+
 <subbiome prob="0.25"> <!-- Desolate -->
-<!-- Gnamod Base -->
 <layers>
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="1" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>
-<layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="0" prob="0.2"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.1"/>
@@ -2410,25 +2742,27 @@
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="nitrateDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
 
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
-  
 <decorations>  
 <!-- Grass & Shrubs -->
 <decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.045"/>
@@ -2438,7 +2772,7 @@
 <decoration type="block" blockname="treeDeadPineLeaf"                     prob="0.0010"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.0009"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.0006"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.0003"/>
 <decoration type="block" blockname="brickDestroyedBlock01"                prob="0.00008"/>
 <decoration type="block" blockname="brickDestroyedBlock02"                prob="0.00008"/>
 <decoration type="block" blockname="brickDestroyedBlock03"                prob="0.00008"/>
@@ -2548,25 +2882,68 @@
 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="12"/>
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
+<subbiome prob="0.07"> <!-- Stone and Ore Layer -->
+<layers>
+<layer depth="1"  blockname="stone">
+<resource blockname="radiated" cluster="0" prob="0.30" rwgGenerationType="all"/>
+<resource blockname="limestone" cluster="0" prob="0.30" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.40" rwgGenerationType="all"/>
+</layer>
+<layer depth="26" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
+</layers>
+
+<decorations>
+<!-- Grass & Shrubs -->
+<decoration type="block" blockname="treeBrownGrassDiagonal"               prob="0.010"/>
+<decoration type="block" blockname="plantedAloe3Harvest"                  prob="0.005"/>
+<!-- Lootcontainers -->
+<decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
+<!-- Rocks & Stones -->
+<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
+<decoration type="prefab" name="rock_form02"                              prob="0.020"/>
+<decoration type="prefab" name="rock_form01"                              prob="0.030"/>
+</decorations>
+</subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
-<!-- Gnamod Base -->
 <layers>                <layer filluptorg="60" blockname="water" />
 <layer depth="2"  blockname="burntForestGround"><resource blockname="radiated"          cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.015" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.005" rwgGenerationType="all"/> </layer>
-<layer depth="*"  blockname="stone">            <resource blockname="ironDeposit"           cluster="1" prob="0.0130" rwgGenerationType="all"/> <resource blockname="ironDeposit"  cluster="1" prob="0.1000" rwgGenerationType="all"/> <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all"/> <resource blockname="silverDeposit"  cluster="1" prob="0.030" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.020" rwgGenerationType="all"/> <resource blockname="goldDeposit" cluster="1" prob="0.010" rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="stone"/>
-<layer depth="3"  blockname="bedrock"/>
+<layer depth="23" blockname="stone">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="*" blockname="granite">
+<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0250" rwgGenerationType="all"/>
+</layer>
+<layer depth="2"  blockname="granite"/>
+<layer depth="1"  blockname="harvestLayer"/>
+<layer depth="2"  blockname="bedrock"/>
 </layers>
-
-<!-- Gnamod Nomad Mode
-<layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="burntForestGround"><resource blockname="radiated"          cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
-<layer depth="21" blockname="bedrock"/>
-</layers>
--->
 
 <decorations>
 <!-- Grass & Shrubs -->
@@ -2587,7 +2964,7 @@
 <decoration type="block" blockname="cntTreeStumpNoLoot"                   prob="0.24"/>
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
-<decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<decoration type="block" blockname="boulderHelper"                        prob="0.001"/>
 <!-- Prefabs -->
 <decoration type="prefab" name="resource_nitrate_pile"                    prob="0.0007"/>
 <decoration type="prefab" name="mp_waste_pile_01"                         prob="0.005"/>
@@ -2628,6 +3005,8 @@
 <decoration type="prefab" name="houseburnt5"                              prob="0.01"/>
 <decoration type="prefab" name="house_trailer_burnt_01"                   prob="0.01"/>
 <decoration type="prefab" name="house_trailer_burnt_01_intact"            prob="0.01"/>
+<!-- Water -->
+<decoration type="prefab" name="gnamod_pond10x10_terrain01"               prob="0.10"/>
 </decorations>
 
 <terrain class="hills" />

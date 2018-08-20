@@ -266,7 +266,7 @@
 <property name="Extends" value="terrainMaster"/>
 <property name="CustomIcon" value="gravel"/>
 <property name="Material" value="lime"/>
-<property name="Texture" value="11,570,570,570,570,570"/>
+<property name="Texture" value="11"/> <!-- ,570,570,570,570,570 -->
 <property name="ImposterExchange" value="imposterBlock" param1="46"/>
 <property name="Map.Color" value="158,139,124"/>
 <drop event="Harvest" name="lime" count="2" tool_category="harvestingTools"/>
@@ -714,13 +714,13 @@
 <property name="Texture" value="322"/>
 <property name="Map.Color" value="100,100,100"/>
 <property name="ImposterExchange" value="imposterBlock" param1="97"/>
-<drop event="Harvest" name="rock" count="2" tool_category="harvestingTools"/>
-<drop event="Harvest" name="rockSmall" count="7" tool_category="harvestingTools"/>
-<drop event="Harvest" name="ironOre" count="1" prob="0.20" tool_category="harvestingTools"/>
-<drop event="Harvest" name="leadOre" count="1" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Harvest" name="nitrateOre" count="1" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Harvest" name="coalOre" count="1" prob="0.10" tool_category="harvestingTools"/>
-<drop event="Destroy" name="rock" count="1"/>
+<drop event="Harvest" name="rockGranite" count="4" tool_category="harvestingTools"/>
+<drop event="Harvest" name="rockSmall" count="14" tool_category="harvestingTools"/>
+<drop event="Harvest" name="ironOre" count="2" prob="0.20" tool_category="harvestingTools"/>
+<drop event="Harvest" name="leadOre" count="2" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="nitrateOre" count="2" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Harvest" name="coalOre" count="2" prob="0.10" tool_category="harvestingTools"/>
+<drop event="Destroy" name="rockGranite" count="1"/>
 <drop event="Fall" name="stone" count="1" prob="0.10" stick_chance="1"/>
 </block>
 
@@ -780,7 +780,7 @@
 <property name="Extends" value="oreHelper"/>
 <property name="PlantGrowing.GrowthRate" value="0.005"/>
 <property name="PlantGrowing.Next" value="stone"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
 <property name="PlantGrowing.GrowOnTop" value="oreHelper"/>
 </block>
 
@@ -820,8 +820,8 @@
 <property name="PlantGrowing.GrowthRate" value="60"/>
 <property name="PlantGrowing.FertileLevel" value="0"/>
 <property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="8"/>
-<property name="PlantGrowing.LightLevelStay" value="8"/>
+<property name="PlantGrowing.LightLevelGrow" value="100"/>
+<property name="PlantGrowing.LightLevelStay" value="100"/>
 <property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
 <drop event="Destroy" count="0"/>
 </block>
@@ -1627,8 +1627,8 @@
 <property name="Extends" value="flagstoneMaster"/>
 <property name="Material" value="MflagstoneStrong"/>
 <property name="CreativeMode" value="None"/>
-<property class="RepairItems"> <property name="cobblestones" value="9"/> </property>
-<property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
+<property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
+<property class="UpgradeBlock"> <property name="ItemCount" value="9"/> </property>
 <drop event="Harvest" name="cobblestones" count="2,6"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="6" prob="0.25" stick_chance="0"/>
@@ -1642,8 +1642,8 @@
 <property name="Material" value="MflagstoneWeak"/>
 <property name="LightOpacity" value="0"/>
 <property name="CreativeMode" value="None"/>
-<property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
-<property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
+<property class="RepairItems"> <property name="cobblestones" value="1"/> </property>
+<property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="cobblestones" count="1,2"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="2" prob="0.25" stick_chance="0"/>
@@ -2389,10 +2389,11 @@
 
 <block id="193" name="blockSpawnHelper">
 <property name="CreativeMode" value="Dev"/>
-<property name="Material" value="organic"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
-<property name="Collide" value="melee,bullet,arrow,rocket"/>
+<property name="Material" value="MTreasureBags"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
+<property name="Collide" value="melee"/>
 <property name="IsTerrainDecoration" value="true"/>
 <property name="Class" value="PlantGrowing"/>
 <property name="PlantGrowing.Next" value="blockSpawnHelper"/>
@@ -2401,8 +2402,7 @@
 <property name="PlantGrowing.IsRandom" value="false"/>
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
-<drop event="Harvest" name="rottenFlesh" count="0,1" tool_category="Butcher"/>
-<drop event="Destroy" name="femur" count="1"/>
+<drop event="Destroy" count="0"/>
 </block>
 
 <block id="194" name="rConcreteQuarter">
@@ -14724,12 +14724,11 @@
 <block id="1447" name="randomCars">
 <property name="CreativeMode" value="Dev"/>
 <property name="CustomIcon" value="lootWastelandHelper"/>
-<property name="DescriptionKey" value="randomLootSpawnerDesc"/>
-<property name="Material" value="MstainlessSteelStrong"/>
-<property name="Shape" value="ModelEntity"/>
 <property name="IsTerrainDecoration" value="true"/>
-<property name="Place" value="TowardsPlacer"/>
-<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
+<property name="Material" value="MTreasureBags"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
 <property name="MultiBlockDim" value="2,2,6"/>
 <property name="ImposterExclude" value="true"/>
 <property name="Class" value="PlantGrowing"/>
@@ -14740,6 +14739,7 @@
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="BigDecorationRadius" value="7"/>
+<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1448" name="spotlightNailedDownPOI">
@@ -14840,20 +14840,14 @@
 </block>
 
 <block id="1452" name="randomCarsHelper">
-<property name="CustomIcon" value="cntCar03SedanDamage0"/>
-<property name="Material" value="MstainlessSteelStrong"/>
-<property name="Shape" value="ModelEntity"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="CustomIcon" value="lootWastelandHelper"/>
 <property name="IsTerrainDecoration" value="true"/>
-<property name="Place" value="TowardsPlacer"/>
-<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
-<property name="MultiBlockDim" value="2,2,6"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="ShowModelOnFall" value="false"/>
-<drop event="Destroy" count="0"/>
-<property name="BigDecorationRadius" value="7"/>
-<property name="CanDecorateOnSlopes" value="false"/>
-<property name="RandomTintColor1" value="0,255,0" param1="car03_white"/>
-<property name="ActivationDistance" value="8"/>
+<property name="Material" value="MTreasureBags"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
+<property name="ImposterExclude" value="true"/>
 <property name="Class" value="PlantGrowing"/>
 <property name="PlantGrowing.Next" value="randomCarsHelper"/>
 <property name="PlantGrowing.GrowthRate" value="0.008"/>
@@ -14862,6 +14856,7 @@
 <property name="PlantGrowing.LightLevelGrow" value="0"/>
 <property name="PlantGrowing.LightLevelStay" value="0"/>
 <property name="BigDecorationRadius" value="7"/>
+<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1453" name="cntCar03SedanDamage0">
