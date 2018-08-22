@@ -137,18 +137,16 @@
 <block name="shoppingCartEmpty"                 prob="0.0100"/>
 <block name="shoppingBasketEmpty"               prob="0.0100"/>
 <!-- Debris or Grass (0.34) -->
-<block name="treeBrownGrassDiagonal"            prob="0.0750"/>
-<block name="treeDeadShrub"                     prob="0.0100"/>
-<block name="brickDestroyedBlock01"             prob="0.0100"/>
-<block name="brickDestroyedBlock02"             prob="0.0100"/>
-<block name="brickDestroyedBlock03"             prob="0.0100"/>
-<block name="cinderBlocks01"                    prob="0.0100"/>
-<block name="cinderBlocks02"                    prob="0.0100"/>
-<block name="cinderBlocks03"                    prob="0.0100"/>
-<block name="scrapMetalPile"                    prob="0.0400"/>
-<block name="scrapSteelPile"                    prob="0.0500"/>
-<block name="destroyedStone"                    prob="0.0500"/>
-<block name="woodDebris"                        prob="0.0990"/>
+<block name="treeBrownGrassDiagonal"            prob="0.0850"/>
+<block name="treeDeadShrub"                     prob="0.0200"/>
+<block name="brickDestroyedBlock01"             prob="0.0200"/>
+<block name="brickDestroyedBlock02"             prob="0.0200"/>
+<block name="brickDestroyedBlock03"             prob="0.0200"/>
+<block name="cinderBlocks01"                    prob="0.0200"/>
+<block name="cinderBlocks02"                    prob="0.0200"/>
+<block name="cinderBlocks03"                    prob="0.0200"/>
+<block name="scrapMetalPile"                    prob="0.0600"/>
+<block name="scrapSteelPile"                    prob="0.0890"/>
 <block name="crater"                            prob="0.0010"/>
 </placeholder>
 
@@ -1238,10 +1236,11 @@
 <item name="oil"                        count="2,8"     prob="10"/>
 <item name="gasCan"                     count="150,300" prob="10"/>
 <item name="cloth"                      count="5,25"    prob="10"/>
-<item name="leather"                    count="5,25"    prob="7.5"/>
+<item name="leather"                    count="5,25"    prob="5"/>
 <item name="militaryFiber"              count="2,8"     prob="5"/>
 <item name="glue"                       count="5,10"    prob="10"/>
 <item name="ductTape"                   count="5,10"    prob="7.5"/>
+<item name="paper"                      count="5,25"    prob="2.5"/>
 </lootgroup>
 <!-- =========================== Blocks Base Groups ============================================================================================================================================================================================================================================================================================================================ -->
 <!-- Curtains Base Groups -->

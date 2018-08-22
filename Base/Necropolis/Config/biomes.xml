@@ -70,15 +70,16 @@
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="60" blockname="water" />
-<layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
+<layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="20" blockname="bedrock"/>
 </layers>
 
 <decorations>
-<!-- Grass & Shrubs -->  
-<decoration type="prefab" name="gnamod_wastedeco10x10_brick01" prob="0.020"/>
+<!--<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>-->
+<decoration type="prefab" name="gnamod_pond10x10_dirt01frozen" prob="0.010"/>
+<decoration type="prefab" name="gnamod_pond10x10_dirt02frozen" prob="0.010"/>
 </decorations>
 
 <terrain class="Mountains"/>
@@ -130,7 +131,6 @@
 </layers>
 
 <decorations>
-<!-- Grass & Shrubs -->
 <decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
 </decorations>
 </subbiome> 

@@ -434,17 +434,17 @@ built-in buff variables:
 
 <buff id="zombieSuicideTimer" duration="800t" onexpired="suicideBomber"> </buff>
 
-<buff id="zombieDefaultBuff" duration="45" onexpired="zombieSpeedBoost">
-<modify id="0" stat="health" amount="50" rate="40"/>  </buff>
+<buff id="zombieDefaultBuff" duration="40" onexpired="zombieSpeedBoost">
+<modify id="0" stat="health" amount="50" rate="35"/>  </buff>
 
-<buff id="zombieSpeedBoost" duration="15" onexpired="zombieDefaultBuff">
+<buff id="zombieSpeedBoost" duration="20" onexpired="zombieDefaultBuff">
 <modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>  <modify id="1" stat="speedmodifier" modifyValue="1.2"/>  </buff>
 
-<buff id="zombieDefaultBuffHorde" duration="45" onexpired="zombieSpeedBoost">
-<modify id="0" stat="health" amount="100" rate="40"/>  </buff>
+<buff id="zombieDefaultBuffHorde" duration="40" onexpired="zombieSpeedBoost">
+<modify id="0" stat="health" amount="100" rate="35"/>  </buff>
 
-<buff id="zombieSpeedBoostHorde" duration="15" onexpired="zombieDefaultBuff">
-<modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2.0"/>  </buff>
+<buff id="zombieSpeedBoostHorde" duration="20" onexpired="zombieDefaultBuff">
+<modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>  <modify id="1" stat="speedmodifier" modifyValue="1.5"/>  </buff>
 
 <buff id="zombieWeakRegen" duration="0">
 <modify id="0" stat="health" amount="20" rate="20"/>  </buff>

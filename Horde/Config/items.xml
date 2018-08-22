@@ -7872,7 +7872,6 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="RepairAmount" value="300"/>
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.5"/>
 <property class="Action0">
 <property name="Class" value="ThrowAway"/>
 <property name="Delay" value="1.2"/>
@@ -7920,7 +7919,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Material" value="glass"/>
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
@@ -7933,7 +7932,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Material" value="lime"/>
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property name="Stacknumber" value="5000"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
@@ -7947,7 +7946,7 @@ Mesh files no longer used:
 <property name="HoldType" value="23"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property class="Action1">
 <property name="Class" value="Eat"/>
 <property name="Delay" value="1.0"/>
@@ -7974,7 +7973,7 @@ Mesh files no longer used:
 <property name="Group" value="Resources,Basics"/>
 <property name="RepairTime" value="0.5"/>
 <property name="RepairAmount" value="20"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property name="CraftingIngredientTime" value="0.4"/>
 <property name="MeltTimePerUnit" value="0.1"/>
 <property name="EconomicValue" value="4"/>
@@ -7988,7 +7987,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -8001,7 +8000,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="1"/>
-<property name="MeltTimePerUnit" value="0.4"/>
+<property name="MeltTimePerUnit" value="0.5"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="2"/>
 <property name="EconomicBundleSize" value="10"/>
@@ -8365,7 +8364,8 @@ Mesh files no longer used:
 <item id="1457" name="cement">
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-<property name="Material" value="stone"/>
+<property name="Material" value="lime"/>
+<property name="Weight" value="5"/>
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Group" value="Building,Resources"/>
@@ -8463,7 +8463,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/>
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
+<property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>    
   
@@ -8474,7 +8474,7 @@ Mesh files no longer used:
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Resources"/>
-<property name="EconomicValue" value="1"/>
+<property name="EconomicValue" value="18"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
   
@@ -8494,6 +8494,7 @@ Mesh files no longer used:
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="stone"/>
+<property name="Weight" value="5"/>
 <property name="HoldType" value="45"/>
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Building,Resources"/>
@@ -8604,7 +8605,7 @@ Mesh files no longer used:
 <property name="Weight"                   value="1"/>
 <property name="Group"                    value="Resources"/>
 <property name="ResourceUnit"             value="true"/>
-<property name="MeltTimePerUnit"          value="0.40"/>
+<property name="MeltTimePerUnit"          value="0.50"/>
 <property name="UserHidden"               value="true"/>
 <property name="CraftingIngredientTime"   value="0.25"/>
 <property name="CreativeMode"             value="None"/>
@@ -9793,6 +9794,7 @@ Mesh files no longer used:
 <property name="Meshfile"                     value="Items/Tools/nailProjectilePrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material"                     value="metal"/>
+<property name="Weight"                       value="1"/>
 <property name="HoldType"                     value="45"/>
 <property name="Stacknumber"                  value="5000"/>
 <property class="Action1">
