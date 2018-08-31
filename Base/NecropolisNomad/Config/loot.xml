@@ -3405,7 +3405,7 @@ sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "startingKit">
 
-<item group="startingKitBase"  count="1" prob="100"/>
+<item group="startingKitBase"  count="2" prob="100"/>
 </lootcontainer>
 <!-- =========================== STARTERKIT (LUCKY) ============================================================================================================================================================================================================================================================================================================================== -->
 <lootcontainer id="152" count="1" size="9,9" open_time="5" 
@@ -3414,7 +3414,7 @@ sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "startingKit">
 
-<item group="startingKitLucky"  count="1" prob="100"/>
+<item group="startingKitLucky"  count="2" prob="100"/>
 </lootcontainer>
 <!-- =========================== STARTERKIT (FOOD) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootcontainer id="153" count="1" size="9,9" open_time="5" 
@@ -3423,7 +3423,7 @@ sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "startingKit">
 
-<item group="startingKitFood" count="1" prob="100"/>
+<item group="startingKitFood" count="2" prob="100"/>
 </lootcontainer>
 <!-- =========================== QUEST BAG ======================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="questBag1"                count="all">  <item group="lootBackpacks"/>   <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
