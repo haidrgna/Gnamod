@@ -811,19 +811,11 @@
 <drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
 
-<block id="58" name="airPocket">
+<block id="58" name="beaconTerrain">
 <property name="CreativeMode" value="Dev"/>
-<property name="Extends" value="terrainMaster"/>
-<property name="CustomIcon" value="stone"/>
-<property name="Class" value="PlantGrowing"/>
-<property name="PlantGrowing.Next" value="airPocket"/>
-<property name="PlantGrowing.GrowthRate" value="60"/>
-<property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="100"/>
-<property name="PlantGrowing.LightLevelStay" value="100"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
-<drop event="Destroy" count="0"/>
+<property name="Extends" value="concrete"/>
+<property name="CustomIcon" value="concreteTerrain"/>
+<drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
 
 <block id="59" name="imposterBlock"> <!-- Do not move. Code references this block ID. -->
@@ -4984,7 +4976,9 @@
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267"/>
 <property name="LootList" value="155"/>
-<property name="StabilitySupport" value="false"/>
+<property name="StabilitySupport" value="true"/>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property class="RepairItems"> <property name="casinoCoin" value="2500"/> </property>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
@@ -5113,7 +5107,9 @@
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267"/>
 <property name="LootList" value="156"/>
-<property name="StabilitySupport" value="false"/>
+<property name="StabilitySupport" value="true"/>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property class="RepairItems"> <property name="casinoCoin" value="2500"/> </property>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
@@ -5313,12 +5309,12 @@
 <property name="Model" value="Signs/sign_no_hazardous_waste" param1="main_mesh"/>
 </block>
 
-<!-- Free
-<block id="484" name="signRoadRightOnly">
-<property name="Extends" value="signRoadArrowheadApache"/>
-<property name="Model" value="Signs/sign_right_only" param1="main_mesh"/>
+<block id="484" name="randomWorkstation">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomWorkstation"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
--->
 
 <block id="485" name="signRoadWork">
 <property name="Extends" value="signRoadArrowheadApache"/>
@@ -6416,22 +6412,12 @@
 <property name="Texture" value="377"/>
 </block>
 
-<!-- Free
-<block id="592" name="cntBackpackDropped">
-<property name="CreativeMode" value="None"/>
-<property name="CustomIcon" value="cntBackpack01"/>
-<property name="Class" value="Backpack"/>
-<property name="Material" value="MdroppedBackpack"/>
-<property name="LightOpacity" value="0"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/LootContainers/backpack_droppedPrefab"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="Collide" value="melee,bullet,arrow,rocket"/>
-<property name="LootList" value="41"/>
-<drop event="Destroy" count="0"/>
+<block id="592" name="randomLastStandCrate">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomLastStandCrate"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
--->
 
 <block id="593" name="looseBoardsTrapBlock1x1">
 <property name="Extends" value="woodWeakNoUpgradeMaster"/>
@@ -9212,19 +9198,34 @@
 
 <block id="865" name="cntCrateLastStand">
 <property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="Dev"/>
 <property name="CustomIcon" value="cntShippingCrateShamway"/>
-<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>
-<property name="Texture" value="423"/>
-<drop event="Destroy" count="0"/>
-<property name="DowngradeBlock" value="cntLootLastStand"/>
+<property name="Texture" value="549,423,423,423,423,423"/>
+<property name="DowngradeBlock" value="randomLastStandLoot"/>
 </block>
 
-<block id="866" name="cntLootLastStand">
-<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
-<property name="LootList" value="157"/>
+<block id="866" name="randomLastStandLoot">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomLastStandLoot"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
 
-<!-- Free-->
+<block id="867" name="cntLSRawMats">
+<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="None"/>
+<property name="Texture" value="549,572,419,419,419,419"/>
+<property name="Class" value="Loot"/>
+<property name="LootList" value="160"/>
+</block>
+
+<block id="868" name="cntLSBlocks">
+<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="None"/>
+<property name="Texture" value="549,572,419,419,419,419"/>
+<property name="Class" value="Loot"/>
+<property name="LootList" value="161"/>
+</block>
 
 <block id="869" name="plantedChrysanthemum1">
 <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>

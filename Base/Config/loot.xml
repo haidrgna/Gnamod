@@ -543,6 +543,27 @@
 <block name="treeBrownGrassDiagonal"            prob="0.30"/>
 </placeholder>
 
+<placeholder name="randomWorkstation">
+<block name="forge"                             prob="0.25"/>
+<block name="cntCollapsedForge"                 prob="0.08"/>
+<block name="workbench"                         prob="0.25"/>
+<block name="cntCollapsedWorkbench"             prob="0.08"/>
+<block name="cementMixer"                       prob="0.12"/>
+<block name="cntCollapsedCementMixer"           prob="0.05"/>
+<block name="chemistryStation"                  prob="0.12"/>
+<block name="cntCollapsedChemistryStation"      prob="0.05"/>
+</placeholder>
+
+<placeholder name="randomLastStandCrate">
+<block name="cntCrateLastStand"                 prob="0.85"/>
+<block name="randomLastStandLoot"               prob="0.15"/>
+</placeholder>
+
+<placeholder name="randomLastStandLoot">
+<block name="cntLSRawMats"                      prob="0.90"/>
+<block name="cntLSBlocks"                       prob="0.10"/>
+</placeholder>
+  
 <!-- GNAMOD STARTER KITS -->
 <placeholder name="StartingKitSelector">
 <block name="StartingKitLucky"                  prob="0.05"/>
@@ -3471,7 +3492,7 @@ loot_quality_template=  "hordeTreasure">
 <item group="cnt156c" count="100" prob="15"/>
 <item group="cnt156d" count="100" prob="15"/>
 </lootcontainer>
-<!-- =========================== LAST STAND CRATE ============================================================================================================================================================================================================================================================================================================================== -->
+<!-- =========================== LAST STAND BUILD ============================================================================================================================================================================================================================================================================================================================== -->
 <lootgroup name="cnt157"> <item group="blocksBase" count="10,15" prob="10"/> <item group="blocksWorkstation" count="3" prob="1"/> <item group="blocksElectric" count="5" prob="20"/> <item group="lootHWMats" count="25" prob="69"/>  </lootgroup>
 <lootcontainer id="157" count="1" size="7,7" open_time="1"
 destroy_on_close=       "false"
@@ -3497,5 +3518,23 @@ sound_open=             "UseActions/open_safe"
 sound_close=            "UseActions/close_safe"
 loot_quality_template=  "hordeTreasure">
 <item group="cnt159" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND MATS =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt160"> <item group="lootHWMats" count="25" prob="100"/>  </lootgroup>
+<lootcontainer id="160" count="1" size="7,7" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt160" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND BUILD ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt161"> <item group="blocksBase" count="10,15" prob="60"/> <item group="blocksWorkstation" count="3" prob="10"/> <item group="blocksElectric" count="5" prob="30"/> </lootgroup>
+<lootcontainer id="161" count="1" size="7,7" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt161" count="100" prob="100"/>
 </lootcontainer>
 </lootcontainers>
