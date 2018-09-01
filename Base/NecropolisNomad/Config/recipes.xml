@@ -758,51 +758,51 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- ============================== Other Block Recipes ============================================================================================================================================================================================================================================================================================================================================= -->
 <!-- Wood Catwalks -->
-<recipe name="woodCatwalk" count="1" craft_area="workbench">                                                <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
-<recipe name="woodCatwalkRailing" count="1" craft_area="workbench">                                         <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodCatwalkRailingCNR" count="1" craft_area="workbench">                                      <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodCatwalkWedgeRailing" count="1" craft_area="workbench">                                    <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodStairsBoard" count="1" craft_area="workbench">                                            <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
-<recipe name="woodStairsBoardRailing" count="1" craft_area="workbench">                                     <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodRailing" count="1" craft_area="workbench">                                                <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodCatwalkWedge" count="1" craft_area="workbench">                                           <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodCatwalk" count="1">                                                                       <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodCatwalkRailing" count="1">                                                                <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkRailingCNR" count="1">                                                             <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkWedgeRailing" count="1">                                                           <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodStairsBoard" count="1">                                                                   <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodStairsBoardRailing" count="1">                                                            <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodRailing" count="1">                                                                       <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodCatwalkWedge" count="1">                                                                  <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <!-- Forged Iron Catwalks -->
-<recipe name="metalCatwalk" count="1" craft_area="workbench">                                               <ingredient name="ironPlates" count="4"/> </recipe>
-<recipe name="metalCatwalkRailing" count="1" craft_area="workbench">                                        <ingredient name="ironPlates" count="6"/> </recipe>
-<recipe name="metalCatwalkRailingCNR" count="1" craft_area="workbench">                                     <ingredient name="ironPlates" count="6"/> </recipe>
-<recipe name="metalCatwalkWedgeRailing" count="1" craft_area="workbench">                                   <ingredient name="ironPlates" count="2"/> </recipe>
-<recipe name="metalStairsBoard" count="1" craft_area="workbench">                                           <ingredient name="ironPlates" count="4"/> </recipe>
-<recipe name="metalStairsBoardRailing" count="1" craft_area="workbench">                                    <ingredient name="ironPlates" count="6"/> </recipe>
-<recipe name="metalRailing" count="1" craft_area="workbench">                                               <ingredient name="ironPlates" count="2"/> </recipe>
-<recipe name="metalCatwalkWedge" count="1" craft_area="workbench">                                          <ingredient name="ironPlates" count="2"/> </recipe>
+<recipe name="metalCatwalk" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                      <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
+<recipe name="metalCatwalkRailing" count="1" craft_area="forge" craft_tool="anvil" material_based="true">               <ingredient name="unit_iron" count="84"/> <ingredient name="unit_clay" count="38"/> </recipe>
+<recipe name="metalCatwalkRailingCNR" count="1" craft_area="forge" craft_tool="anvil" material_based="true">            <ingredient name="unit_iron" count="84"/> <ingredient name="unit_clay" count="38"/> </recipe>
+<recipe name="metalCatwalkWedgeRailing" count="1" craft_area="forge" craft_tool="anvil" material_based="true">          <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
+<recipe name="metalStairsBoard" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                  <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
+<recipe name="metalStairsBoardRailing" count="1" craft_area="forge" craft_tool="anvil" material_based="true">           <ingredient name="unit_iron" count="84"/> <ingredient name="unit_clay" count="38"/> </recipe>
+<recipe name="metalRailing" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                      <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
+<recipe name="metalCatwalkWedge" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                 <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
 <!-- Steel Catwalks -->
-<recipe name="steelCatwalk" count="1" craft_area="workbench">                                               <ingredient name="steelPlates" count="4"/> </recipe>
-<recipe name="steelCatwalkRailing" count="1" craft_area="workbench">                                        <ingredient name="steelPlates" count="6"/> </recipe>
-<recipe name="steelCatwalkRailingCNR" count="1" craft_area="workbench">                                     <ingredient name="steelPlates" count="6"/> </recipe>
-<recipe name="steelCatwalkWedgeRailing" count="1" craft_area="workbench">                                   <ingredient name="steelPlates" count="2"/> </recipe>
-<recipe name="steelStairsBoard" count="1" craft_area="workbench">                                           <ingredient name="steelPlates" count="4"/> </recipe>
-<recipe name="steelStairsBoardRailing" count="1" craft_area="workbench">                                    <ingredient name="steelPlates" count="6"/> </recipe>
-<recipe name="steelRailing" count="1" craft_area="workbench">                                               <ingredient name="steelPlates" count="2"/> </recipe>
-<recipe name="steelCatwalkWedge" count="1" craft_area="workbench">                                          <ingredient name="steelPlates" count="2"/> </recipe>
+<recipe name="steelCatwalk" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">              <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
+<recipe name="steelCatwalkRailing" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">       <ingredient name="unit_iron" count="156"/> <ingredient name="unit_clay" count="74"/> <ingredient name="unit_lime" count="36"/> </recipe>
+<recipe name="steelCatwalkRailingCNR" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">    <ingredient name="unit_iron" count="156"/> <ingredient name="unit_clay" count="74"/> <ingredient name="unit_lime" count="36"/> </recipe>
+<recipe name="steelCatwalkWedgeRailing" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">  <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
+<recipe name="steelStairsBoard" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">          <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
+<recipe name="steelStairsBoardRailing" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">   <ingredient name="unit_iron" count="156"/> <ingredient name="unit_clay" count="74"/> <ingredient name="unit_lime" count="36"/> </recipe>
+<recipe name="steelRailing" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">              <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
+<recipe name="steelCatwalkWedge" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">         <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
 <!-- Wood Bars and Gates -->
-<recipe name="woodBars" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodBars" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodBars" count="1">                                                                          <ingredient name="woodBarsCTR" count="1"/> </recipe>
 <recipe name="woodBarsCTR" count="1">                                                                       <ingredient name="woodBars" count="1"/> </recipe>
-<recipe name="woodGate" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodGate" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodGate" count="1">                                                                          <ingredient name="woodGateCTR" count="1"/> </recipe>
 <recipe name="woodGateCTR" count="1">                                                                       <ingredient name="woodGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->
-<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> </recipe>
+<recipe name="ironBars" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
 <recipe name="ironBars" count="1">                                                                          <ingredient name="ironBarsCTR" count="1"/> </recipe>
 <recipe name="ironBarsCTR" count="1">                                                                       <ingredient name="ironBars" count="1"/> </recipe>
-<recipe name="ironGate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="36"/> <ingredient name="unit_clay" count="18"/> </recipe>
+<recipe name="ironGate" count="1" craft_area="forge" craft_tool="anvil" material_based="true">              <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
 <recipe name="ironGate" count="1">                                                                          <ingredient name="ironGateCTR" count="1"/> </recipe>
 <recipe name="ironGateCTR" count="1">                                                                       <ingredient name="ironGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->
-<recipe name="steelBars" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> <ingredient name="unit_lime" count="27"/> </recipe>
+<recipe name="steelBars" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="78"/> <ingredient name="unit_clay" count="37"/> <ingredient name="unit_lime" count="18"/> </recipe>
 <recipe name="steelBars" count="1">                                                                         <ingredient name="steelBarsCTR" count="1"/> </recipe>
 <recipe name="steelBarsCTR" count="1">                                                                      <ingredient name="steelBars" count="1"/> </recipe>
-<recipe name="steelGate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="108"/> <ingredient name="unit_clay" count="54"/> <ingredient name="unit_lime" count="27"/> </recipe>
+<recipe name="steelGate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">     <ingredient name="unit_iron" count="78"/> <ingredient name="unit_clay" count="37"/> <ingredient name="unit_lime" count="18"/> </recipe>
 <recipe name="steelGate" count="1">                                                                         <ingredient name="steelGateCTR" count="1"/> </recipe>
 <recipe name="steelGateCTR" count="1">                                                                      <ingredient name="steelGate" count="1"/> </recipe>
 <!-- Iron IBeams -->

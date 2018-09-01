@@ -543,6 +543,27 @@
 <block name="treeBrownGrassDiagonal"            prob="0.30"/>
 </placeholder>
 
+<placeholder name="randomWorkstation">
+<block name="forge"                             prob="0.25"/>
+<block name="cntCollapsedForge"                 prob="0.08"/>
+<block name="workbench"                         prob="0.25"/>
+<block name="cntCollapsedWorkbench"             prob="0.08"/>
+<block name="cementMixer"                       prob="0.12"/>
+<block name="cntCollapsedCementMixer"           prob="0.05"/>
+<block name="chemistryStation"                  prob="0.12"/>
+<block name="cntCollapsedChemistryStation"      prob="0.05"/>
+</placeholder>
+
+<placeholder name="randomLastStandCrate">
+<block name="cntCrateLastStand"                 prob="0.85"/>
+<block name="randomLastStandLoot"               prob="0.15"/>
+</placeholder>
+
+<placeholder name="randomLastStandLoot">
+<block name="cntLSRawMats"                      prob="0.90"/>
+<block name="cntLSBlocks"                       prob="0.10"/>
+</placeholder>
+
 <!-- GNAMOD STARTER KITS -->
 <placeholder name="StartingKitSelector">
 <block name="StartingKitLucky"                  prob="0.05"/>
@@ -1203,13 +1224,13 @@
 <lootgroup name="matsConstruction">
 <item name="cement"                     count="150,300" prob="15"/>
 <item name="bricks"                     count="150,300" prob="18"/>
-<item name="boardAndNails"              count="150,300" prob="15"/>
-<item name="mortarMix"                  count="150,300" prob="13"/>
-<item name="brickAndMortar"             count="75,150"  prob="10"/>
+<item name="boardAndNails"              count="150,300" prob="16"/>
+<item name="mortarMix"                  count="150,300" prob="15"/>
+<item name="brickAndMortar"             count="75,150"  prob="12"/>
 <item name="steelPolish"                count="1,50"    prob="1"/>
-<item name="cobblestones"               count="300,600" prob="10"/>
-<item name="concreteMix"                count="150,300" prob="8"/>
-<item name="paint"                      count="150,300" prob="10"/>
+<item name="cobblestones"               count="300,600" prob="12"/>
+<item name="concreteMix"                count="150,300" prob="10"/>
+<item name="paint"                      count="30,3000" prob="1"/>
 </lootgroup>
 <!-- Forged Materials Base Group -->
 <lootgroup name="matsForged">
@@ -1281,6 +1302,7 @@
 <item name="switch"                     count="1,2"/>
 <item name="electrictimerrelay"         count="1"/>
 <item name="electricwirerelay"          count="2,6"/>
+<item name="motionsensor"               count="1,2"/>
 <item name="dartTrap"                   count="1,4"/>
 <item name="shotgunTurret"              count="1,3"/>
 <item name="autoTurret"                 count="1,3"/>
@@ -3448,7 +3470,7 @@ loot_quality_template=  "unleveled">
 <item group="startingKitBase"           prob="5"/>
 </lootcontainer>  
 <!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt155"> <item group="blocksBase" count="1,2" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="10"/> <item group="lootHWMats" count="3,4" prob="52"/>  <item group="lootHWTools" prob="25"/>  </lootgroup>
+<lootgroup name="cnt155"> <item group="blocksBase" count="2,3" prob="10"/>  <item group="blocksWorkstation" prob="5"/> <item group="blocksElectric" prob="10"/> <item group="lootHWMats" count="3,4" prob="50"/>  <item group="lootHWTools" count="1,3" prob="25"/>  </lootgroup>
 <lootcontainer id="155" count="1" size="9,9" open_time="0" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_dumpster"
@@ -3457,7 +3479,7 @@ loot_quality_template=  "hordeTreasure">
 <item group="cnt155" count="3,10" prob="100"/>
 </lootcontainer>
 <!-- =========================== LAST STAND LOOT =============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt156a"> <item name="firstAidKit" count="2,5" prob="20"/> <item group="medicalBandage" count="2,5" prob="20"/> <item group="medicalPills" count="3,6" prob="20"/> <item group="medicalSupply" count="2,5" prob="40"/> </lootgroup>
+<lootgroup name="cnt156a"> <item name="firstAidKit" count="2,5" prob="19.9"/> <item group="medicalBandage" count="2,5" prob="20"/> <item group="medicalPills" count="3,6" prob="20"/> <item group="medicalSupply" count="2,5" prob="40"/> <item name="beaker" count="1" prob="0.1"/> </lootgroup>
 <lootgroup name="cnt156b"> <item group="foodMeat" count="5" prob="20"/> <item group="foodStock" count="5" prob="20"/> <item group="foodPrepared" count="5" prob="10"/> <item group="foodDrinks" count="5" prob="20"/> <item group="foodCanned" count="5" prob="30"/> </lootgroup>
 <lootgroup name="cnt156c"> <item group="clothGeneral" prob="50"/> <item group="armorRS" prob="50"/> </lootgroup>
 <lootgroup name="cnt156d"> <item group="lootHWTools" prob="95"/> <item name="repairKit" count="3,7" prob="5"/>  </lootgroup>
@@ -3497,5 +3519,23 @@ sound_open=             "UseActions/open_safe"
 sound_close=            "UseActions/close_safe"
 loot_quality_template=  "hordeTreasure">
 <item group="cnt159" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND MATS =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt160"> <item group="lootHWMats" count="25" prob="100"/>  </lootgroup>
+<lootcontainer id="160" count="1" size="7,7" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt160" count="100" prob="100"/>
+</lootcontainer>
+<!-- =========================== LAST STAND BUILD ============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt161"> <item group="blocksBase" count="5" prob="35"/> <item group="blocksOther" count="5" prob="20"/> <item group="blocksWorkstation" count="1" prob="15"/> <item group="blocksElectric" count="5" prob="30"/> <item name="keystoneBlock" count="1" prob="1"/>  </lootgroup>
+<lootcontainer id="161" count="1" size="7,7" open_time="1"
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_cardboard"
+sound_close=            "UseActions/close_cardboard"
+loot_quality_template=  "hordeTreasure">
+<item group="cnt161" count="100" prob="100"/>
 </lootcontainer>
 </lootcontainers>

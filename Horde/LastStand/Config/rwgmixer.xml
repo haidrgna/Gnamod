@@ -131,8 +131,9 @@
 <hub_type value="city"/> <width value="250, 250" />  <height value="250, 250" /> <path_material value="asphalt" /> <path_radius value="11"/>
 <prefab_rule name="hordeCentral"/> <street_gen level="10" length_multiplier="2">
 
-<axiom value="[F+FF][-F-FF][+F-FF][++F+FF]"/>
+<axiom value="+F-F[+FFFFFFF]F-F[+FFFFFFF]F-F[+FFFFFFF]F-F[+FFFFFFF]"/>
 <rule char="A" replace_with="FF+FF+FF+F[F]+F-F-F-F-F"/>
+<rule char="B" replace_with="[F+FF][-F-FF][+F-FF][++F+FF]"/>
 <alt_commands chars="A"/>
 </street_gen>
 </hub_rule>
@@ -347,9 +348,7 @@
 </prefab_rule>
 
 <prefab_rule name="hordeCentral">
-<prefab name="gnamod_beacon21x21_02" min_count="2" max_count="2"/>
-<prefab name="gnamod_flat_42x42_asphalt01" min_count="2" max_count="2" prob="99"/>
-<!--<prefab name="gnamod_flat_21x21_asphalt01"/>-->
+<prefab name="gnamod_beacon61x61_02" min_count="1" max_count="1"/>
 </prefab_rule>
 
 <prefab_rule name="wildernessBase">
