@@ -1133,7 +1133,7 @@ icon="misc_crafting" description_key="craftSkillMiscellaneousDesc" title_key="cr
 <material_group name="txGroupWood" unlock_level="1"/>
 </perk>
 -->
-<!-- Gnamod Bartering 
+<!-- Gnamod Bartering -->
 <player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 <effect name="Bartering">
 <add skill_level="1,10" value="0.00,0.15"/>
@@ -1160,9 +1160,9 @@ icon="misc_crafting" description_key="craftSkillMiscellaneousDesc" title_key="cr
 <add skill_level="3" value="1500"/>
 </effect>
 </perk>
--->
 
-<!-- Gnamod Horde Mode Bartering -->
+
+<!-- Gnamod Horde Mode Bartering
 <player_skill name="Barter" exp_to_level="26" experience_multiplier="1.0606" icon="coin" max_level="1" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 <effect name="Bartering">
 <add skill_level="1" value="0.0,0.0"/>
@@ -1211,7 +1211,7 @@ icon="misc_crafting" description_key="craftSkillMiscellaneousDesc" title_key="cr
 </effect>
 
 </perk>
-
+-->
 </skills>
 
 </progression>

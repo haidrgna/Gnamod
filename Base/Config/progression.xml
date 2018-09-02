@@ -287,7 +287,7 @@ skill_point_cost_per_level="1" >
 </action_skill>
 
 <perk name="Miner 69er" icon="mining" description_key="miner69erDesc" title_key="miner69er" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="tools">
-<requirement perk_level="1" required_skill_name="Mining Tools" required_skill_level="1"/>
+<requirement perk_level="1" required_skill_name="Mining Tools" required_skill_level="5"/>
 <requirement perk_level="2" required_skill_name="Mining Tools" required_skill_level="10"/>
 <requirement perk_level="3" required_skill_name="Mining Tools" required_skill_level="20"/>
 <requirement perk_level="4" required_skill_name="Mining Tools" required_skill_level="40"/>
@@ -310,10 +310,10 @@ skill_point_cost_per_level="1" >
 </effect>
 <effect name="HarvestCount">
 <multiply perk_level="0" value="1"/>
-<multiply perk_level="1" value="1.00"/>
-<multiply perk_level="2" value="1.00"/>
-<multiply perk_level="3" value="1.10"/>
-<multiply perk_level="4" value="1.25"/>
+<multiply perk_level="1" value="1.05"/>
+<multiply perk_level="2" value="1.10"/>
+<multiply perk_level="3" value="1.20"/>
+<multiply perk_level="4" value="1.30"/>
 <multiply perk_level="5" value="1.50"/>
 </effect>
 </perk>

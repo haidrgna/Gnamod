@@ -555,7 +555,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="flagstoneArchThick" count="2">                                                                <ingredient name="flagstoneBlock"/> </recipe>
 <!-- Brick -->
 <recipe name="brickBlock" count="1" craft_area="workbench">                                                 <ingredient name="bricks" count="9"/> <ingredient name="mortarMix" count="3"/> </recipe>
-<recipe name="brickBlock" count="1">                                                                        <ingredient name="brickAndMortar" count="3"/> </recipe>
+<recipe name="brickBlock" count="1" craft_area="workbench">                                                 <ingredient name="brickAndMortar" count="3"/> </recipe>
 <recipe name="brickHalf" count="2">                                                                         <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickQuarter" count="3">                                                                      <ingredient name="brickBlock"/> </recipe>
 <recipe name="brickEighth" count="3">                                                                       <ingredient name="brickBlock"/> </recipe>
