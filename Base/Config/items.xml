@@ -366,14 +366,14 @@ Mesh files no longer used:
 <property name="Stamina_usage" value="5.5"/>
 <property name="DamageBonus.head" value="5"/>
 <property name="DamageBonus.glass" value="1"/>
-<property name="DamageBonus.leaves" value="25"/>
-<property name="DamageBonus.organic" value="10"/>
+<property name="DamageBonus.cloth" value="2"/>
+<property name="DamageBonus.organic" value="5"/>
 <property name="ToolCategory.Butcher" value="0.75" param1="10"/>
 <property name="Sound_harvesting" value="open_animal" param1="organic" />
 </property>
 <property class="Attributes">
 <property name="EntityDamage" value="10,20"/>
-<property name="BlockDamage" value="1,2"/>
+<property name="BlockDamage" value="5,6"/>
 <property name="DegradationMax" value="200,600"/>
 <property name="DegradationRate" value="1,1"/>
 <property name="DismembermentBaseChance" value="0.01,0.02"/>
@@ -406,14 +406,14 @@ Mesh files no longer used:
 <property name="DamageBonus.wood" value="3"/>
 <property name="DamageBonus.head" value="5"/>
 <property name="DamageBonus.glass" value="1"/>
-<property name="DamageBonus.leaves" value="25"/>
-<property name="DamageBonus.organic" value="3"/>
+<property name="DamageBonus.cloth" value="2"/>
+<property name="DamageBonus.organic" value="5"/>
 <property name="ToolCategory.Butcher" value="1" param1="7"/>
 <property name="Sound_harvesting" value="open_animal" param1="organic" />
 </property>
 <property class="Attributes">
 <property name="EntityDamage" value="12,30"/>
-<property name="BlockDamage" value="4,10"/>
+<property name="BlockDamage" value="5,6"/>
 <property name="DegradationMax" value="200,800"/>
 <property name="DegradationRate" value="1,1"/>
 <property name="DismembermentBaseChance" value="0.01,0.03"/>
@@ -7655,7 +7655,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="6"/>
 <property name="DropScale" value="3"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="3"/>
 <property name="EconomicBundleSize" value="50"/>
@@ -7668,7 +7668,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="12"/>
 <property name="DropScale" value="3"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="50"/>
@@ -7681,7 +7681,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="6"/>
 <property name="DropScale" value="3"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="3"/>
 <property name="EconomicBundleSize" value="50"/>
@@ -7694,7 +7694,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="12"/>
 <property name="DropScale" value="3"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="50"/>
@@ -7707,7 +7707,7 @@ Mesh files no longer used:
 <property name="HoldType" value="21"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="Group" value="Resources,Basics"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="50"/>
 </item>
@@ -7719,7 +7719,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="Weight" value="12"/>
 <property name="DropScale" value="3"/>
-<property name="CraftingIngredientTime" value="0.5"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="6"/>
 <property name="EconomicBundleSize" value="50"/>
@@ -7733,6 +7733,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="5000"/> 
 <property name="FuelValue" value="5"/>
 <property name="CraftingIngredientExp" value="2"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="DropScale" value="8"/>
 <property name="Group" value="Resources"/>
 <property name="EconomicValue" value="1"/>
@@ -7747,6 +7748,7 @@ Mesh files no longer used:
 <property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="DropScale" value="3"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="3"/>
@@ -7760,6 +7762,7 @@ Mesh files no longer used:
 <property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="DropScale" value="3"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
@@ -7771,8 +7774,9 @@ Mesh files no longer used:
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="nitrate"/>
 <property name="Weight" value="12"/>
-<property name="Stacknumber" value="5000"/> 
+<property name="Stacknumber" value="5000"/>
 <property name="HoldType" value="45"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="DropScale" value="3"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
@@ -7786,6 +7790,7 @@ Mesh files no longer used:
 <property name="Weight" value="12"/>
 <property name="Stacknumber" value="5000"/> 
 <property name="HoldType" value="45"/>
+<property name="CraftingIngredientTime" value="12"/>
 <property name="DropScale" value="3"/>
 <property name="Group" value="Resources,Basics"/>
 <property name="EconomicValue" value="1"/>
@@ -7863,7 +7868,6 @@ Mesh files no longer used:
 <property name="ThrowableDecoy" value="true"/>
 <property name="DropScale" value="3"/>
 <property name="Group" value="Resources"/>
-<property name="CraftingIngredientTime" value="0.5"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="100"/>
 </item>
@@ -9877,6 +9881,7 @@ Mesh files no longer used:
 <property name="Material"                     value="dirt"/>
 <property name="HoldType"                     value="21"/>
 <property name="Stacknumber"                  value="1000"/>
+<property name="CraftingIngredientTime"       value="3"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
@@ -9885,6 +9890,7 @@ Mesh files no longer used:
 
 <item id="1601"                               name="gunPowderNG">
 <property name="Extends"                      value="gunPowder"/>
+<property name="CraftingIngredientTime"       value="6"/>
 <property name="EconomicValue"                value="2"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9895,6 +9901,7 @@ Mesh files no longer used:
 <property name="Material"                     value="lead"/>
 <property name="HoldType"                     value="45"/>
 <property name="Stacknumber"                  value="1000"/>
+<property name="CraftingIngredientTime"       value="4"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
@@ -9903,6 +9910,7 @@ Mesh files no longer used:
 
 <item id="1603"                               name="largeBulletTipNG">
 <property name="Extends"                      value="bulletTipNG"/>
+<property name="CraftingIngredientTime"       value="8"/>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9913,6 +9921,7 @@ Mesh files no longer used:
 <property name="Material"                     value="lead"/>
 <property name="HoldType"                     value="45"/>
 <property name="Stacknumber"                  value="1000"/>
+<property name="CraftingIngredientTime"       value="3"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
@@ -9921,24 +9930,28 @@ Mesh files no longer used:
   
 <item id="1605"                               name="largeBulletTipLG">
 <property name="Extends"                      value="bulletTipNG"/>
+<property name="CraftingIngredientTime"       value="6"/>
 <property name="EconomicValue"                value="3"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
 
 <item id="1606"                               name="buckshot20GA">
 <property name="Extends"                      value="bulletTipNG"/>
+<property name="CraftingIngredientTime"       value="2"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="2"/>
 </item>
 
 <item id="1607"                               name="buckshot12GA">
 <property name="Extends"                      value="bulletTipNG"/>
+<property name="CraftingIngredientTime"       value="3"/>
 <property name="EconomicValue"                value="1"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
 <item id="1608"                               name="buckshot10GA">
 <property name="Extends"                      value="bulletTipNG"/>
+<property name="CraftingIngredientTime"       value="4"/>
 <property name="EconomicValue"                value="2"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9948,24 +9961,28 @@ Mesh files no longer used:
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="brass"/>
 <property name="HoldType"                     value="21"/>
+<property name="CraftingIngredientTime"       value="4"/>
 <property name="EconomicValue"                value="7"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
 <item id="1610"                               name="largeBulletCasingNG">
 <property name="Extends"                      value="bulletCasingNG"/>
+<property name="CraftingIngredientTime"       value="5"/>
 <property name="EconomicValue"                value="14"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
 <item id="1611"                               name="bulletCasingLG">
 <property name="Extends"                      value="bulletCasingNG"/>
+<property name="CraftingIngredientTime"       value="8"/>
 <property name="EconomicValue"                value="5"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
   
 <item id="1612"                               name="largeBulletCasingLG">
 <property name="Extends"                      value="bulletCasingNG"/>
+<property name="CraftingIngredientTime"       value="10"/>
 <property name="EconomicValue"                value="10"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9975,6 +9992,7 @@ Mesh files no longer used:
 <property name="Meshfile"                     value="Items/Crafting/bullet_casingPrefab"/>
 <property name="Material"                     value="paper"/>
 <property name="HoldType"                     value="21"/>
+<property name="CraftingIngredientTime"       value="8"/>
 <property name="EconomicValue"                value="2"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -9982,6 +10000,7 @@ Mesh files no longer used:
 <item id="1614"                               name="casingShotgunPlastic">
 <property name="Extends"                      value="casingShotgunPaper"/>
 <property name="Material"                     value="Mplastics"/>
+<property name="CraftingIngredientTime"       value="12"/>
 <property name="EconomicValue"                value="8"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -10001,6 +10020,7 @@ Mesh files no longer used:
 <property name="Stacknumber"                  value="1000"/> 
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"           value="craftSkillGuns"/>
+<property name="CraftingIngredientTime"       value="20"/>
 <property name="EconomicValue"                value="20"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
@@ -10013,6 +10033,7 @@ Mesh files no longer used:
 <property name="Stacknumber"                  value="1000"/> 
 <property name="Group"                        value="Resources,Ammo/Weapons"/>
 <property name="CraftingSkillGroup"           value="craftSkillGuns"/>
+<property name="CraftingIngredientTime"       value="30"/>
 <property name="EconomicValue"                value="10"/>
 <property name="EconomicBundleSize"           value="1"/>
 </item>
