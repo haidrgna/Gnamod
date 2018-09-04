@@ -17,48 +17,48 @@ diminishingReturns ="0.2"/>
 <difficultyModifier name="hard" amount="250"/>
 
 <!-- LOOTROOM SLEEPER GROUPS -->
-<group name="S_LootRoom_XS"           emptyChance="0">  <spawner name="SleeperGSList" count="1,3"/>   </group>
-<group name="S_LootRoom_S"            emptyChance="0">  <spawner name="SleeperGSList" count="3,5"/>   </group>
-<group name="S_LootRoom_Med"          emptyChance="0">  <spawner name="SleeperGSList" count="5,7"/>   </group>
-<group name="S_LootRoom_L"            emptyChance="0">  <spawner name="SleeperGSList" count="7,10"/>  </group>
-<group name="S_LootRoom_XL"           emptyChance="0">  <spawner name="SleeperGSList" count="10,12"/> </group>
+<group name="S_LootRoom_XS"           emptyChance="0">  <spawner name="SleeperGSList" count="1,2"/>   </group>
+<group name="S_LootRoom_S"            emptyChance="0">  <spawner name="SleeperGSList" count="2,4"/>   </group>
+<group name="S_LootRoom_Med"          emptyChance="0">  <spawner name="SleeperGSList" count="4,6"/>   </group>
+<group name="S_LootRoom_L"            emptyChance="0">  <spawner name="SleeperGSList" count="6,9"/>   </group>
+<group name="S_LootRoom_XL"           emptyChance="0">  <spawner name="SleeperGSList" count="9,12"/>  </group>
 <!-- DEFAULT SLEEPER GROUPS -->
-<group name="S_Default_XS"            emptyChance="0.25" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="1,3"/>   </group>
-<group name="S_Default_S"             emptyChance="0.20" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="3,5"/>   </group>
-<group name="S_Default_Med"           emptyChance="0.15" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="5,7"/>   </group>
-<group name="S_Default_L"             emptyChance="0.10" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="7,10"/>  </group>
-<group name="S_Default_XL"            emptyChance="0.05" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="10,12"/> </group>
+<group name="S_Default_XS"            emptyChance="0.25" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="1,2"/>   </group>
+<group name="S_Default_S"             emptyChance="0.20" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="2,4"/>   </group>
+<group name="S_Default_Med"           emptyChance="0.15" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="4,6"/>   </group>
+<group name="S_Default_L"             emptyChance="0.10" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="6,9"/>   </group>
+<group name="S_Default_XL"            emptyChance="0.05" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="9,12"/>  </group>
 <!-- UNIQUE SLEEPER GROUPS -->
-<group name="S_AbandonedHouse_1"      emptyChance="0.50" decoyChance="0.50" decoy1hpChance="0.10">  <spawner name="SleeperGSList"   count="1,3"/>   </group>
-<group name="S_ZombieDogs_S"          emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="1,5"/>   </group>
-<group name="S_ZombieDogs_Med"        emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="5,10"/>  </group>
-<group name="S_ZombieDogs_L"          emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="10,15"/> </group>
-<group name="S_SnowZombies_Med"       emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperSnow"     count="5,7"/>   </group>
-<group name="S_FeralZombies_S"        emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFeral"    count="2,5"/>   </group>
-<group name="S_BikerBar_Med"          emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="5,7"/>   </group>
-<group name="S_BikerBar_L"            emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="5,10"/>  </group>
-<group name="S_FootballStadium_Med"   emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFootball" count="3,7"/>   </group>
-<group name="S_FootballStadium_L"     emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFootball" count="4,9"/>   </group>
-<group name="S_GhostTown_S"           emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="2,4"/>   </group>
-<group name="S_GhostTown_Med"         emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="3,7"/>   </group>
-<group name="S_ZomSoldier_S"          emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="3,5"/>   </group>
-<group name="S_ZomSoldier_Med"        emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="5,7"/>   </group>
-<group name="S_ZomSoldier_L"          emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="10,12"/> </group>
-<group name="S_ZomUtilityWorker_S"    emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="3,5"/>   </group>
-<group name="S_ZomUtilityWorker_Med"  emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="5,7"/>   </group>
-<group name="S_ZomUtilityWorker_L"    emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="10,12"/> </group>
-<group name="S_BusinessMan_XS"        emptyChance="0.25" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="1,3"/>   </group>
-<group name="S_BusinessMan_S"         emptyChance="0.20" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="3,5"/>   </group>
-<group name="S_BusinessMan_Med"       emptyChance="0.15" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="5,7"/>   </group>
-<group name="S_BusinessMan_L"         emptyChance="0.10" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="7,10"/>  </group>
-<group name="S_Badass_XS"             emptyChance="0.25" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="1,3"/>   </group>
-<group name="S_Badass_S"              emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="3,6"/>   </group>
-<group name="S_Badass_Med"            emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="6,9"/>   </group>
-<group name="S_Badass_L"              emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="9,12"/>  </group>
+<group name="S_AbandonedHouse_1"      emptyChance="0.50" decoyChance="0.50" decoy1hpChance="0.10">  <spawner name="SleeperGSList"   count="1,2"/>   </group>
+<group name="S_ZombieDogs_S"          emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="1,4"/>   </group>
+<group name="S_ZombieDogs_Med"        emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="4,9"/>   </group>
+<group name="S_ZombieDogs_L"          emptyChance="0.25" decoyChance="0.50" decoy1hpChance="0.01">  <spawner name="SleeperDogs"     count="9,15"/>  </group>
+<group name="S_SnowZombies_Med"       emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperSnow"     count="4,6"/>   </group>
+<group name="S_FeralZombies_S"        emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFeral"    count="1,4"/>   </group>
+<group name="S_BikerBar_Med"          emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="4,6"/>   </group>
+<group name="S_BikerBar_L"            emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="4,9"/>   </group>
+<group name="S_FootballStadium_Med"   emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFootball" count="2,6"/>   </group>
+<group name="S_FootballStadium_L"     emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperFootball" count="3,8"/>   </group>
+<group name="S_GhostTown_S"           emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="1,3"/>   </group>
+<group name="S_GhostTown_Med"         emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="2,6"/>   </group>
+<group name="S_ZomSoldier_S"          emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="2,4"/>   </group>
+<group name="S_ZomSoldier_Med"        emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="4,6"/>   </group>
+<group name="S_ZomSoldier_L"          emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperMilitary" count="9,12"/>  </group>
+<group name="S_ZomUtilityWorker_S"    emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="2,4"/>   </group>
+<group name="S_ZomUtilityWorker_Med"  emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="4,6"/>   </group>
+<group name="S_ZomUtilityWorker_L"    emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="9,12"/>  </group>
+<group name="S_BusinessMan_XS"        emptyChance="0.25" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="1,2"/>   </group>
+<group name="S_BusinessMan_S"         emptyChance="0.20" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="2,4"/>   </group>
+<group name="S_BusinessMan_Med"       emptyChance="0.15" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="4,6"/>   </group>
+<group name="S_BusinessMan_L"         emptyChance="0.10" decoyChance="0.25" decoy1hpChance="0.01">  <spawner name="SleeperGSList"   count="6,9"/>   </group>
+<group name="S_Badass_XS"             emptyChance="0.25" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="1,2"/>   </group>
+<group name="S_Badass_S"              emptyChance="0.20" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="2,5"/>   </group>
+<group name="S_Badass_Med"            emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="5,8"/>   </group>
+<group name="S_Badass_L"              emptyChance="0.10" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="8,12"/>  </group>
 <group name="S_Badass_XL"             emptyChance="0.07" decoyChance="0.20" decoy1hpChance="0.01">  <spawner name="SleeperBadass"   count="12,15"/> </group>
-<group name="S_TestChamberDecoy_XS"   emptyChance="0.20" decoyChance="0.90" decoy1hpChance="0.10">  <spawner name="SleeperTestChamberGSList" count="1,3"/>  </group>
-<group name="S_TestChamberDecoy_S"    emptyChance="0.15" decoyChance="0.80" decoy1hpChance="0.20">  <spawner name="SleeperTestChamberGSList" count="3,5"/>  </group>
-<group name="S_TestChamberDecoy_Med"  emptyChance="0.10" decoyChance="0.70" decoy1hpChance="0.20">  <spawner name="SleeperTestChamberGSList" count="5,7"/>  </group>
+<group name="S_TestChamberDecoy_XS"   emptyChance="0.20" decoyChance="0.90" decoy1hpChance="0.10">  <spawner name="SleeperTestChamberGSList" count="1,2"/>  </group>
+<group name="S_TestChamberDecoy_S"    emptyChance="0.15" decoyChance="0.80" decoy1hpChance="0.20">  <spawner name="SleeperTestChamberGSList" count="2,4"/>  </group>
+<group name="S_TestChamberDecoy_Med"  emptyChance="0.10" decoyChance="0.70" decoy1hpChance="0.20">  <spawner name="SleeperTestChamberGSList" count="4,6"/>  </group>
 
 <!-- Special Spawners -->
 <spawner name="SleeperTestChamberGSList">

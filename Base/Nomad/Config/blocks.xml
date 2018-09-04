@@ -4412,7 +4412,7 @@
 
 <block id="408" name="trapSpikesNew">
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="5"/>
+<property name="Damage" value="7"/>
 <property name="Damage_received" value="33"/>
 <property name="Material" value="MtrapSpikes1"/>
 <property name="Shape" value="Ext3dModel"/>
@@ -4421,7 +4421,7 @@
 <property name="Model" value="Traps/trap_spikes01" param1="main_mesh"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property name="FuelValue" value="300"/>
-<property name="BuffsWhenWalkedOn" value="trapDamageZombie"/>
+<property name="BuffsWhenWalkedOn" value="trapDamageZombieA;trapDamageZombieB;trapDamageZombieC"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property name="DowngradeBlock" value="trapSpikesDamage1"/>
 <property name="Group" value="Tools/Traps,Science"/>
@@ -4431,14 +4431,15 @@
 <property name="ItemCount" value="5"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<drop event="Harvest" name="wood" count="1,5"/>
-<drop event="Destroy" name="wood" count="0"/>
+<drop event="Harvest" name="wood" count="0,1"/>
+<drop event="Destroy" name="wood" count="0,1"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="409" name="trapSpikesDamage1">
 <property name="Extends" value="trapSpikesNew"/>
+<property name="Damage" value="6"/>
 <property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage2"/>
 <property class="UpgradeBlock">
@@ -4452,6 +4453,7 @@
 
 <block id="410" name="trapSpikesDamage2">
 <property name="Extends" value="trapSpikesDamage1"/>
+<property name="Damage" value="5"/>
 <property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage3"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
@@ -4459,6 +4461,7 @@
 
 <block id="411" name="trapSpikesDamage3">
 <property name="Extends" value="trapSpikesDamage1"/>
+<property name="Damage" value="4"/>
 <property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage4"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="6"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
@@ -4466,12 +4469,14 @@
 
 <block id="412" name="trapSpikesDamage4">
 <property name="Extends" value="trapSpikesDamage1"/>
+<property name="Damage" value="3"/>
 <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage5"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="8"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
 </block>
 
 <block id="413" name="trapSpikesDamage5">
+<property name="Damage" value="2"/>
 <property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock"/>
 <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="10"/> <property name="ToBlock" value="trapSpikesNew"/> </property>

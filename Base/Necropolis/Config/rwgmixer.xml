@@ -327,7 +327,7 @@
 <prefab rule="buildingsCivics" min_count="4" prob="15"/>
 <prefab rule="buildingsFuneral" prob="10"/>
 <prefab rule="buildingsIndustrial" min_count="4" prob="10"/>
-<prefab rule="buildingsSkyscrapers" min_count="4" max_count="8" prob="10"/>
+<prefab rule="buildingsSkyscrapers" min_count="1" max_count="3" prob="10"/>
 <prefab rule="buildingsSettlements" min_count="1" max_count="1" prob="10"/>
 <prefab rule="buildingsBroken" prob="5"/>
 <prefab rule="buildingsOldWest" prob="10"/>
@@ -342,7 +342,7 @@
 
 <prefab_rule name="cityNecropolis">
 <prefab name="settlement_trader_04" max_count="1"/>
-<prefab rule="buildingsSkyscrapers" min_count="4" prob="50"/>
+<prefab rule="buildingsSkyscrapers" max_count="2" prob="50"/>
 <prefab rule="buildingsCars" min_count="1" max_count="3"/>
 <prefab rule="buildingsHotel"/>
 <prefab rule="buildingsNightlife" min_count="2"/>

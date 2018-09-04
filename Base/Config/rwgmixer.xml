@@ -2,7 +2,7 @@
 <rwgmixer><world ruleset="base"/>
 
 <rulesets>
-<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="800"     cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/> </ruleset>
+<!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/> </ruleset>
 <!-- Base Nomad -->         <ruleset name="nomad"             cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="nomadHub" prob="1"/>  </ruleset>
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisSmallHub" prob="1"/> <cell_rule name="necropolisHub" position="0,0" prob="1"/>  </ruleset>
@@ -23,10 +23,10 @@
  
 <cell_rule name="baseHub">  
 <cave_count value="0,5"/> <path_material value="asphalt" /> <path_radius value="11"/>
-<hub_rule name="hugeCity"  prob="0.85"/>
-<hub_rule name="roadsideHotel"  prob="0.09"/>
-<hub_rule name="militaryBase"  prob="0.03"/>
-<hub_rule name="ruralTown"  prob="0.03"/>
+<hub_rule name="hugeCity"  prob="0.65"/>
+<hub_rule name="roadsideHotel"  prob="0.19"/>
+<hub_rule name="militaryBase"  prob="0.08"/>
+<hub_rule name="ruralTown"  prob="0.08"/>
 <wilderness_rule name="wildernessBase"/>
 </cell_rule>
 
@@ -311,7 +311,7 @@
 <prefab rule="buildingsCivics" min_count="4" prob="15"/>
 <prefab rule="buildingsFuneral" prob="10"/>
 <prefab rule="buildingsIndustrial" min_count="4" prob="10"/>
-<prefab rule="buildingsSkyscrapers" min_count="4" max_count="8" prob="10"/>
+<prefab rule="buildingsSkyscrapers" min_count="1" max_count="3" prob="10"/>
 <prefab rule="buildingsSettlements" min_count="1" max_count="1" prob="10"/>
 <prefab rule="buildingsBroken" prob="5"/>
 <prefab rule="buildingsOldWest" prob="10"/>
@@ -326,7 +326,7 @@
 
 <prefab_rule name="cityNecropolis">
 <prefab name="settlement_trader_04" max_count="1"/>
-<prefab rule="buildingsSkyscrapers" min_count="4" prob="50"/>
+<prefab rule="buildingsSkyscrapers" max_count="2" prob="50"/>
 <prefab rule="buildingsCars" min_count="1" max_count="3"/>
 <prefab rule="buildingsHotel"/>
 <prefab rule="buildingsNightlife" min_count="2"/>

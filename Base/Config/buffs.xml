@@ -231,8 +231,14 @@ built-in buff variables:
 <buff id="trapDamage1Effect" buffif="CTRtrapDmg1 greater 0" debuffif="CTRtrapDmg1 less 1" duration="0" type="bleeding" actions="increment(CTRtrapDmg1, -1, 1, 0, 0)" name_key="trapDamage1EffectName" description_key="trapDamage1EffectDesc" tooltip_key="trapDamage1EffectTooltip" icon="ui_game_symbol_critical">
 <modify id="0" stat="stamina" amount="-1" rate="1"/>  <modify id="1" stat="health" amount="-1" rate="1"/> </buff>
 
-<buff id="trapDamageZombie" mutex="isPlayer" duration="2" stack="reset">
-<modify id="0" stat="health" amount="-33" rate="1"/>  </buff>
+<buff id="trapDamageZombieA" mutex="isPlayer,suicideBomber,zombieStrongRegen" duration="1" stack="reset">
+<modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
+
+<buff id="trapDamageZombieB" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen" duration="1" stack="reset">
+<modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
+
+<buff id="trapDamageZombieC" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen" duration="1" stack="reset">
+<modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
 
 <buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="extend">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>

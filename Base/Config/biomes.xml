@@ -73,21 +73,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -96,7 +95,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -108,19 +107,18 @@
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -194,19 +192,18 @@
 <layer depth="2"  blockname="forestGround">     <resource blockname="snow"              cluster="0" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -319,21 +316,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -342,7 +338,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -354,19 +350,18 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -421,19 +416,18 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -543,19 +537,18 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -704,21 +697,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -727,7 +719,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -739,19 +731,18 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -813,19 +804,18 @@
 <layer depth="2"  blockname="forestGround">   <resource blockname="burntForestGround" cluster="2" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -853,19 +843,19 @@
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="0" prob="0.9"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
+
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -975,21 +965,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="leadDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="leadDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -998,7 +987,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -1010,19 +999,18 @@
 <layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">           <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">           <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1074,19 +1062,18 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="grass"             cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1116,19 +1103,18 @@
 <layer depth="2"  blockname="grass">            <resource blockname="plainsGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1281,21 +1267,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oilDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oilDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1304,7 +1289,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -1316,19 +1301,18 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1361,19 +1345,18 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1397,19 +1380,18 @@
 <layer depth="2"  blockname="desertGround">       <resource blockname="desertGrass"       cluster="1" prob="0.2"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="sandStone">          <resource blockname="clayInSandstone"   cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clayInSandstone">    <resource blockname="sandStone"         cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1551,19 +1533,18 @@
 <layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="10" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1710,21 +1691,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1733,7 +1713,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -1745,19 +1725,18 @@
 <layer depth="2"  blockname="radiated">         <resource blockname="destroyedStone"    cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1915,21 +1894,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="silverDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="silverDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -1938,7 +1916,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -1950,19 +1928,18 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="1" prob="0.7"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2012,19 +1989,18 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.9"    rwgGenerationType="all"/> <resource blockname="asphalt"  cluster="2" prob="0.1"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2141,21 +2117,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="coalDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2164,7 +2139,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -2176,19 +2151,18 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="forestGround"      cluster="0" prob="0.3"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2230,19 +2204,18 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.25"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2271,19 +2244,18 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="grass"             cluster="0" prob="0.35"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2416,21 +2388,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="nitrateDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2439,7 +2410,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -2451,19 +2422,18 @@
 <layer depth="2"  blockname="snow">         <resource blockname="ice"               cluster="2" prob="0.1"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">         <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2505,19 +2475,18 @@
 <layer depth="2"  blockname="snow">             <resource blockname="snow"              cluster="2" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2599,21 +2568,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="goldDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2622,7 +2590,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -2634,19 +2602,18 @@
 <layer depth="2"  blockname="destroyedStone">   <resource blockname="plainsGround"      cluster="1" prob="0.5"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2701,19 +2668,18 @@
 <layer depth="2"  blockname="plainsGround">     <resource blockname="destroyedStone"    cluster="0" prob="0.50"   rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="dirt">             <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2847,21 +2813,20 @@
 <layer depth="3"  blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.35" rwgGenerationType="all"/>
 </layer>
-<layer depth="26" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.3000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="11" blockname="stone">
+<resource blockname="limestone" cluster="1" prob="0.3000" rwgGenerationType="all"/>
+<resource blockname="granite" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="diamondDeposit" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<layer depth="8" blockname="granite">
+<resource blockname="limestone" cluster="1" prob="0.1500" rwgGenerationType="all"/>
+<resource blockname="stone" cluster="1" prob="0.0500" rwgGenerationType="all"/>
+<resource blockname="ironDeposit" cluster="1" prob="0.0750" rwgGenerationType="all"/>
+<resource blockname="oreHelper" cluster="1" prob="0.2500" rwgGenerationType="all"/>
+<resource blockname="oreHelperRare" cluster="1" prob="0.0750" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
@@ -2870,7 +2835,7 @@
 <!-- Lootcontainers -->
 <decoration type="block" blockname="cntBirdnest"                          prob="0.002"/>
 <!-- Rocks & Stones -->
-<decoration type="block" blockname="rockHelper"                           prob="0.075"/>
+<decoration type="block" blockname="rockHelper"                           prob="0.050"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.100"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone01"             prob="0.025"/>
 <decoration type="prefab" name="gnamod_rockform10x10_stone02"             prob="0.025"/>
@@ -2881,19 +2846,18 @@
 <layer depth="2"  blockname="burntForestGround"><resource blockname="radiated"          cluster="0" prob="0.6"    rwgGenerationType="all"/> </layer>
 <layer depth="3"  blockname="radiated">         <resource blockname="clay"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
 <layer depth="2"  blockname="clay">             <resource blockname="radiated"          cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
+<layer depth="7" blockname="stone">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
 <resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
 </layer>
-<layer depth="*" blockname="granite">
+<layer depth="8" blockname="granite">
 <resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
 <resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
 <resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
 </layer>
-<layer depth="2"  blockname="granite"/>
 <layer depth="1"  blockname="harvestLayer"/>
 <layer depth="2"  blockname="bedrock"/>
 </layers>
