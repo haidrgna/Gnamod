@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <buffs>
-<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0);setvar(CTRSpawned,0)"/>
+<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRspikeBleed,0);setvar(CTRbluePill,0);setvar(CTRspawned,0)"/>
 
 <!-- Player Character Buffs -->
 <buff id="isPlayer" buffif="+full > 0" actions="increment(@wellness,-999,1,0,1)"/>
 
-<buff id="died" buffif="health lequal 0" actions="resetvalue(CTRSpawned)"/>
+<buff id="died" buffif="health lequal 0" actions="resetvalue(CTRspawned);resetvalue(CTRspikeBleed)"/>
   
-<buff id="spawnProtected" buffif="+full > 0" debuffif="CTRSpawned greater 2" duration="30" mutex="spawned" onexpired="spawned" icon="ui_game_symbol_character" name_key="spawnProtected" description_key="spawnProtectedDesc" tooltip_key="spawnProtectedTooltip"> <modify id="0" stat="health" setValue="500"/> </buff>
+<buff id="spawnProtected" buffif="+full > 0" debuffif="CTRspawned greater 2" duration="30" mutex="spawned" onexpired="spawned" icon="ui_game_symbol_character" name_key="spawnProtected" description_key="spawnProtectedDesc" tooltip_key="spawnProtectedTooltip"> <modify id="0" stat="health" setValue="500"/> </buff>
 
-<buff id="spawned" actions="debuff(spawnProtected);increment(CTRSpawned,1,100t,0,0)"/>
+<buff id="spawned" actions="debuff(spawnProtected);increment(CTRspawned,1,100t,0,0)"/>
 
-<buff id="survivor1" buffif="CTRSpawned greater 24" debuffif="CTRSpawned greater 48" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor1Tooltip" mutex="survivor2,survivor3,survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor1" buffif="CTRspawned greater 24" debuffif="CTRspawned greater 48" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor1Tooltip" mutex="survivor2,survivor3,survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.050" rate="1"/> </buff>
 
-<buff id="survivor2" buffif="CTRSpawned greater 48" debuffif="CTRSpawned greater 72" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor2Tooltip" mutex="survivor3,survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor2" buffif="CTRspawned greater 48" debuffif="CTRspawned greater 72" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor2Tooltip" mutex="survivor3,survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.075" rate="1"/> </buff>
 
-<buff id="survivor3" buffif="CTRSpawned greater 72" debuffif="CTRSpawned greater 96" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor3Tooltip" mutex="survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor3" buffif="CTRspawned greater 72" debuffif="CTRspawned greater 96" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor3Tooltip" mutex="survivor4,survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.100" rate="1"/> </buff>
 
-<buff id="survivor4" buffif="CTRSpawned greater 96" debuffif="CTRSpawned greater 120" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor4Tooltip" mutex="survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor4" buffif="CTRspawned greater 96" debuffif="CTRspawned greater 120" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor4Tooltip" mutex="survivor5,survivor6,survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.125" rate="1"/> </buff>
 
-<buff id="survivor5" buffif="CTRSpawned greater 120" debuffif="CTRSpawned greater 144" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor5Tooltip" mutex="survivor6,survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor5" buffif="CTRspawned greater 120" debuffif="CTRspawned greater 144" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor5Tooltip" mutex="survivor6,survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.150" rate="1"/> </buff>
 
-<buff id="survivor6" buffif="CTRSpawned greater 144" debuffif="CTRSpawned greater 168" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor6Tooltip" mutex="survivor7,survivor8,survivor9,survivor10">
+<buff id="survivor6" buffif="CTRspawned greater 144" debuffif="CTRspawned greater 168" actions="increment(@wellness,0.050,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor" description_key="survivorDesc" tooltip_key="survivor6Tooltip" mutex="survivor7,survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.175" rate="1"/> </buff>
 
-<buff id="survivor7" buffif="CTRSpawned greater 168" debuffif="CTRSpawned greater 336" actions="increment(@wellness,0.075,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor7Tooltip" mutex="survivor8,survivor9,survivor10">
+<buff id="survivor7" buffif="CTRspawned greater 168" debuffif="CTRspawned greater 336" actions="increment(@wellness,0.075,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor7Tooltip" mutex="survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.200" rate="1"/> <modify id="1" stat="health" amount="0.025" rate="1"/> </buff>
 
-<buff id="survivor8" buffif="CTRSpawned greater 336" debuffif="CTRSpawned greater 672" actions="increment(@wellness,0.100,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor8Tooltip" mutex="survivor9,survivor10">
+<buff id="survivor8" buffif="CTRspawned greater 336" debuffif="CTRspawned greater 672" actions="increment(@wellness,0.100,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor8Tooltip" mutex="survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.300" rate="1"/> <modify id="1" stat="health" amount="0.050" rate="1"/> </buff>
 
-<buff id="survivor9" buffif="CTRSpawned greater 672" debuffif="CTRSpawned greater 1176" actions="increment(@wellness,0.150,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor9Tooltip" mutex="survivor10">
+<buff id="survivor9" buffif="CTRspawned greater 672" debuffif="CTRspawned greater 1176" actions="increment(@wellness,0.150,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor9Tooltip" mutex="survivor10">
 <modify id="0" stat="stamina" amount="0.400" rate="1"/> <modify id="1" stat="health" amount="0.075" rate="1"/> </buff>
   
-<buff id="survivor10" buffif="CTRSpawned greater 1176" actions="increment(@wellness,0.2,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor10" description_key="survivor10Desc" tooltip_key="survivor10Tooltip" overrides="survivor9">
+<buff id="survivor10" buffif="CTRspawned greater 1176" actions="increment(@wellness,0.2,100t,0,0)" icon="ui_game_symbol_trophy" name_key="survivor10" description_key="survivor10Desc" tooltip_key="survivor10Tooltip" overrides="survivor9">
 <modify id="0" stat="stamina" amount="0.500" rate="1"/> <modify id="1" stat="health" amount="0.100" rate="1"/> </buff>
 
-<buff id="naturalHealing" mutex="bleeding,fullBuff,painkillerBuff,firstAid,stuntedHealing,snakeBite" buffif="+full > 0.25" debuffif="+starve > 1" icon="ui_game_symbol_natural_healing" name_key="naturalHealing" description_key="naturalHealingDesc" tooltip_key="naturalHealingTooltip">
+<buff id="naturalHealing" mutex="bleeding,fullBuff,painkillerBuff,minorAid,firstAid,stuntedHealing,snakeBite,spikeBleedTriggerA,spikeBleedTriggerB,spikeBleedStage1,spikeBleedStage2,spikeBleedStage3" buffif="+full > 0.25" debuffif="+starve > 1" icon="ui_game_symbol_natural_healing" name_key="naturalHealing" description_key="naturalHealingDesc" tooltip_key="naturalHealingTooltip">
 <modify id="0" stat="health" amount="0.1" rate="3"/>  </buff>
 
 <buff id="hungry" mutex="hungry2" buffif="+starve > 1" debuffif="+full > 1" actions="increment(@wellness, -0.1, 50t, 0, 0)" notificationClass="FoodBuffNotification" icon="ui_game_symbol_hunger" name_key="hungry" description_key="hungryDesc" tooltip_key="hungryTooltip" cures="shamSandwich,corn,canBeef,grilledMeat,baconAndEggs">
@@ -135,21 +135,40 @@
 <buff id="railZap" duration="1" stack="extend"> <modify id="0" stat="health" amount="-10" rate="1" castsound="metalhitmetal"/> </buff>
 
 <!-- Trap or Enviroment Buffs -->
-<buff id="trapDamage1Trigger" mutex="spawnProtected" duration="1" type="bleeding" actions="setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)"/>
+<buff id="spikeBleedTriggerA" mutex="spawnProtected" duration="1" stack="extend" type="bleeding" actions="increment(CTRspikeBleed, 3, 1, 0, 0);debuff(naturalHealing)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
 
-<buff id="trapDamage1Effect" buffif="CTRtrapDmg1 greater 0" debuffif="CTRtrapDmg1 less 1" duration="0" type="bleeding" actions="increment(CTRtrapDmg1, -1, 1, 0, 0)" name_key="trapDamage1EffectName" description_key="trapDamage1EffectDesc" tooltip_key="trapDamage1EffectTooltip" icon="ui_game_symbol_critical">
-<modify id="0" stat="stamina" amount="-1" rate="1"/>  <modify id="1" stat="health" amount="-1" rate="1"/> </buff>
+<buff id="spikeBleedTriggerB" mutex="spawnProtected" duration="1" stack="extend" type="bleeding" actions="increment(CTRspikeBleed, 2, 1, 0, 0);debuff(naturalHealing)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
 
-<buff id="trapDamageZombieA" mutex="isPlayer,suicideBomber,zombieStrongRegen" duration="2" stack="reset">
+<buff id="spikeBleedCounter" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed less 1" actions="increment(CTRspikeBleed, -1, 1, 0, 0)"/>
+
+<buff id="spikeBleedStage1" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="debuff(naturalHealing);damage(0,1,0,0)" mutex="spikeBleedStage2,spikeBleedStage3" type="bleeding" name_key="spikeWound1" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
+<modify id="0" stat="health" amount="-2" rate="2"/> </buff>
+
+<buff id="spikeBleedStage2" buffif="CTRspikeBleed greater 5" debuffif="CTRspikeBleed lequal 5" actions="debuff(naturalHealing);debuff(spikeBleedStage1);damage(0,1,0,0)" mutex="spikeBleedStage3" type="bleeding" name_key="spikeWound2" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
+<modify id="0" stat="stamina" amount="-2" rate="2"/>  <modify id="1" stat="health" amount="-3" rate="2"/> </buff>
+
+<buff id="spikeBleedStage3" buffif="CTRspikeBleed greater 15" debuffif="CTRspikeBleed lequal 15" actions="debuff(naturalHealing);debuff(spikeBleedStage2);debuff(spikeBleedStage1);damage(0,1,0,0)" type="bleeding" name_key="spikeWound3" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
+<modify id="0" stat="stamina" amount="-2" rate="1"/>  <modify id="1" stat="health" amount="-2" rate="1"/> </buff>
+
+<buff id="spikeDamageZombieA" mutex="isPlayer,suicideBomber,zombieStrongRegen" duration="2" stack="reset">
 <modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
 
-<buff id="trapDamageZombieB" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen" duration="2" stack="reset">
+<buff id="spikeDamageZombieB" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen" duration="2" stack="reset">
 <modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
 
-<buff id="trapDamageZombieC" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen" duration="2" stack="reset">
+<buff id="spikeDamageZombieC" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen" duration="2" stack="reset">
 <modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
 
-<buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="extend">
+<buff id="spikeDamageZombieD" mutex="isPlayer,suicideBomber" duration="2" stack="reset">
+<modify id="0" stat="health" amount="-3" rate="1"/>  </buff>
+
+<buff id="spikeDamageZombieE" mutex="isPlayer,suicideBomber,zombieStrongRegen" duration="2" stack="reset">
+<modify id="0" stat="health" amount="-3" rate="1"/>  </buff>
+
+<buff id="spikeDamageZombieF" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen" duration="2" stack="reset">
+<modify id="0" stat="health" amount="-3" rate="1"/>  </buff>
+
+<buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="reset">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
 
 <buff id="triggerWarmByFire" duration="3" mutex="overheated,heat1,heat2" stack="discard" debuffif="+heatSource less 1" actions="buff(warmByFire);"/>
@@ -249,7 +268,12 @@
 <!-- Medical Buffs -->
 <buff id="cured" duration="3600t" stack="reset" icon="ui_game_symbol_chemistry" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip"/>
 
-<buff id="firstAid" duration="50t" actions="debuff(naturalHealing)" mutex="stuntedHealing,snakeBite" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAid" description_key="firstAidDesc" tooltip_key="firstAidTooltip" causes="firstAidBandage, firstAidKit">
+<buff id="stopBleed" duration="2" stack="reset" actions="debuff(spikeBleedStage1);debuff(spikeBleedStage2);debuff(spikeBleedStage3);setvar(CTRspikeBleed,0)"/>
+
+<buff id="minorAid" duration="50t" actions="debuff(naturalHealing)" mutex="stuntedHealing,snakeBite,firstAid" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="minorAid" description_key="minorAidDesc" tooltip_key="firstAidTooltip" causes="bandage">
+<modify id="1" stat="health" amount="0.10" rate="1"/>  </buff>
+
+<buff id="firstAid" duration="50t" actions="debuff(naturalHealing);debuff(minorAid)" mutex="stuntedHealing,snakeBite" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAid" description_key="firstAidDesc" tooltip_key="firstAidTooltip" causes="firstAidBandage, firstAidKit">
 <modify id="1" stat="health" amount="0.55" rate="1"/>  </buff>
 
 <buff id="firstAidLarge" duration="5" stack="extend" type="healthup" mutex="stuntedHealing" name_key="firstAidLarge" description_key="firstAidLargeDesc" tooltip_key="firstAidLargeTooltip" causes="firstAidKit">
@@ -381,7 +405,7 @@
 <buff id="deadAnimal" duration="5" actions="kill"> <modify id="0" stat="health" amount="-9999" rate="1" /> </buff>
 
 <!-- Admin Buffs -->  
-<buff id="redPillBuff" duration="1" actions="debuff(bluePillBuff);setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
+<buff id="redPillBuff" duration="1" actions="debuff(bluePillBuff);setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRspikeBleed,0);setvar(CTRbluePill,0)"/>
 
 <buff id="bluePillBuff" duration="0" actions="increment(CTRbluePill, 1, 1, 0, 0)" icon="ui_game_symbol_hammer"
 name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="bluePillBuffTooltip" causes="bluePill">

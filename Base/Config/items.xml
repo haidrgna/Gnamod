@@ -124,7 +124,7 @@ Mesh files no longer used:
 <property name="CritChance" value="0.2"/>
 <property name="Group" value="Ammo/Weapons"/>
 <property name="DescriptionKey" value="clubIronDesc"/>
-<property name="EconomicValue" value="350"/>
+<property name="EconomicValue" value="30"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -149,7 +149,7 @@ Mesh files no longer used:
 <property name="CritChance" value="0.3"/>
 <property name="Group" value="Ammo/Weapons"/>
 <property name="DescriptionKey" value="clubBarbedDesc"/>
-<property name="EconomicValue" value="1000"/>
+<property name="EconomicValue" value="100"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -172,7 +172,7 @@ Mesh files no longer used:
 </property>
 <property name="CritChance" value="0.4"/>
 <property name="DescriptionKey" value="clubSpikedDesc"/>
-<property name="EconomicValue" value="1250"/>
+<property name="EconomicValue" value="150"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -212,7 +212,7 @@ Mesh files no longer used:
 <property name="Group" value="Ammo/Weapons"/>
 <property name="ActionSkillGroup" value="Blunt Weapons"/>
 <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-<property name="EconomicValue" value="1500"/>
+<property name="EconomicValue" value="115"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1128,7 +1128,7 @@ Mesh files no longer used:
 <property name="ActionSkillGroup" value="Mining Tools"/>
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="600"/>
+<property name="EconomicValue" value="60"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1149,7 +1149,7 @@ Mesh files no longer used:
 <property name="BlockDamage" value="30,72"/>
 <property name="DegradationMax" value="500,1400"/>
 </property>
-<property name="EconomicValue" value="1600"/>
+<property name="EconomicValue" value="220"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1192,7 +1192,7 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="PickupJournalEntry" value="miningTip"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="600"/>
+<property name="EconomicValue" value="60"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1214,7 +1214,7 @@ Mesh files no longer used:
 <property name="BlockDamage" value="55,137"/> <!-- up to x4 from skills -->
 <property name="DegradationMax" value="500,1400"/>
 </property>
-<property name="EconomicValue" value="1600"/>
+<property name="EconomicValue" value="220"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1301,7 +1301,7 @@ Mesh files no longer used:
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="PickupJournalEntry" value="miningTip"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="600"/>
+<property name="EconomicValue" value="48"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1323,7 +1323,7 @@ Mesh files no longer used:
 <property name="EntityDamage" value="8,19"/>
 <property name="DegradationMax" value="500,1400"/>
 </property>
-<property name="EconomicValue" value="1600"/>
+<property name="EconomicValue" value="220"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1378,7 +1378,7 @@ Mesh files no longer used:
 <property name="ActionSkillGroup" value="Mining Tools"/>
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="650"/>
+<property name="EconomicValue" value="62"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1430,7 +1430,7 @@ Mesh files no longer used:
 <property name="ActionSkillGroup" value="Construction Tools"/>
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="1750"/>
+<property name="EconomicValue" value="450"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -1481,7 +1481,7 @@ Mesh files no longer used:
 <property name="ActionSkillGroup" value="Construction Tools"/>
 <property name="CraftingSkillGroup" value="craftSkillTools"/>
 <property name="RepairExpMultiplier" value="5.5"/>
-<property name="EconomicValue" value="400"/>
+<property name="EconomicValue" value="40"/>
 <property name="EconomicBundleSize" value="1"/>
 <property name="SellableToTrader" value="true"/>
 </item>
@@ -4935,6 +4935,7 @@ Mesh files no longer used:
 <property name="Gain_food" value="0"/>
 <property name="Gain_water" value="0"/>
 <property name="Sound_start" value="player_bandage"/>
+<property name="Buff" value="minorAid,stopBleed"/>
 <property name="Debuff" value="bleeding,arrowCriticalBleedout"/>
 </property>
 <property class="Action1">
@@ -4945,6 +4946,7 @@ Mesh files no longer used:
 <property name="Gain_food" value="0"/>
 <property name="Gain_water" value="0"/>
 <property name="Sound_start" value="player_bandage"/>
+<property name="Buff" value="minorAid,stopBleed"/>
 <property name="Debuff" value="bleeding,arrowCriticalBleedout"/>
 </property>
 <property name="Group" value="Science,Basics"/>
@@ -4962,10 +4964,10 @@ Mesh files no longer used:
 <item id="657" name="firstAidBandage">
 <property name="Extends" value="bandage"/>
 <property class="Action0">
-<property name="Buff" value="firstAid"/>
+<property name="Buff" value="firstAid,stopBleed"/>
 </property>
 <property class="Action1">
-<property name="Buff" value="firstAid"/>
+<property name="Buff" value="firstAid,stopBleed"/>
 </property>
 <property name="DescriptionKey" value="firstAidBandageDesc"/>
 <property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -4979,11 +4981,11 @@ Mesh files no longer used:
 <property name="Extends" value="bandage"/>
 <property class="Action0">
 <property name="Sound_start" value="player_firstAidKit"/>
-<property name="Buff" value="firstAid,firstAidLarge"/>
+<property name="Buff" value="stopBleed,firstAid,firstAidLarge"/>
 </property>
 <property class="Action1">
 <property name="Sound_start" value="player_firstAidKit"/>
-<property name="Buff" value="firstAid,firstAidLarge"/>
+<property name="Buff" value="stopBleed,firstAid,firstAidLarge"/>
 </property>
 <property name="DescriptionKey" value="firstAidKitDesc"/>
 <property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -8241,6 +8243,30 @@ Mesh files no longer used:
 <property name="RepairAmount" value="50"/>
 <property name="FuelValue" value="1"/>
 <property name="Weight" value="5"/>
+<property class="Action0">
+<property name="Class" value="UseOther"/>
+<property name="Delay" value="1.0"/>
+<property name="Use_time" value="..."/>
+<property name="Gain_health" value="0"/>
+<property name="Gain_food" value="0"/>
+<property name="Gain_water" value="0"/>
+<property name="Sound_start" value="player_bandage"/>
+<property name="Buff" value="stopBleed,infection"/>
+<property name="Buff_chance" value="1,0.10"/>
+<property name="Debuff" value="bleeding,arrowCriticalBleedout"/>
+</property>
+<property class="Action1">
+<property name="Class" value="Eat"/>
+<property name="Delay" value="1.0"/>
+<property name="Use_time" value="..."/>
+<property name="Gain_health" value="0"/>
+<property name="Gain_food" value="0"/>
+<property name="Gain_water" value="0"/>
+<property name="Sound_start" value="player_bandage"/>
+<property name="Buff" value="stopBleed,infection"/>
+<property name="Buff_chance" value="1,0.10"/>
+<property name="Debuff" value="bleeding,arrowCriticalBleedout"/>
+</property>
 <property name="Group" value="Resources,Clothing"/>
 <property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 <property name="EconomicValue" value="1"/>
@@ -8465,7 +8491,7 @@ Mesh files no longer used:
 <property name="Stacknumber" value="2500"/> 
 <property name="Group" value="Resources,Chemicals"/>
 <property name="CraftingSkillGroup" value="craftSkillScience"/>
-<property name="EconomicValue" value="50"/>
+<property name="EconomicValue" value="250"/>
 <property name="EconomicBundleSize" value="1"/>
 </item>
  

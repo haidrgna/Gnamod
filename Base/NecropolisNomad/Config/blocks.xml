@@ -811,19 +811,11 @@
 <drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
 
-<block id="58" name="airPocket">
+<block id="58" name="beaconTerrain">
 <property name="CreativeMode" value="Dev"/>
-<property name="Extends" value="terrainMaster"/>
-<property name="CustomIcon" value="stone"/>
-<property name="Class" value="PlantGrowing"/>
-<property name="PlantGrowing.Next" value="airPocket"/>
-<property name="PlantGrowing.GrowthRate" value="60"/>
-<property name="PlantGrowing.FertileLevel" value="0"/>
-<property name="PlantGrowing.IsRandom" value="false"/>
-<property name="PlantGrowing.LightLevelGrow" value="100"/>
-<property name="PlantGrowing.LightLevelStay" value="100"/>
-<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
-<drop event="Destroy" count="0"/>
+<property name="Extends" value="concrete"/>
+<property name="CustomIcon" value="concreteTerrain"/>
+<drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
 
 <block id="59" name="imposterBlock"> <!-- Do not move. Code references this block ID. -->
@@ -1956,6 +1948,8 @@
 <property name="Texture" value="267"/>
 <property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedSteel" value="2"/> </property>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <drop event="Harvest" name="steelPlates" count="0,1"/>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Fall" name="steelPlates" count="2" prob="0.25" stick_chance="0"/>
@@ -4412,7 +4406,7 @@
 
 <block id="408" name="trapSpikesNew">
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="7"/>
+<property name="Damage" value="1"/>
 <property name="Damage_received" value="33"/>
 <property name="Material" value="MtrapSpikes1"/>
 <property name="Shape" value="Ext3dModel"/>
@@ -4421,7 +4415,7 @@
 <property name="Model" value="Traps/trap_spikes01" param1="main_mesh"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property name="FuelValue" value="300"/>
-<property name="BuffsWhenWalkedOn" value="trapDamageZombieA;trapDamageZombieB;trapDamageZombieC"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieA;spikeDamageZombieB;spikeDamageZombieC;spikeDamageZombieD"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property name="DowngradeBlock" value="trapSpikesDamage1"/>
 <property name="Group" value="Tools/Traps,Basics"/>
@@ -4439,7 +4433,7 @@
 
 <block id="409" name="trapSpikesDamage1">
 <property name="Extends" value="trapSpikesNew"/>
-<property name="Damage" value="6"/>
+<property name="Damage" value="1"/>
 <property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage2"/>
 <property class="UpgradeBlock">
@@ -4453,7 +4447,7 @@
 
 <block id="410" name="trapSpikesDamage2">
 <property name="Extends" value="trapSpikesDamage1"/>
-<property name="Damage" value="5"/>
+<property name="Damage" value="1"/>
 <property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage3"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
@@ -4461,23 +4455,24 @@
 
 <block id="411" name="trapSpikesDamage3">
 <property name="Extends" value="trapSpikesDamage1"/>
-<property name="Damage" value="4"/>
+<property name="Damage" value="1"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieA;spikeDamageZombieB;spikeDamageZombieC"/>
 <property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage4"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="6"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
 </block>
 
 <block id="412" name="trapSpikesDamage4">
-<property name="Extends" value="trapSpikesDamage1"/>
-<property name="Damage" value="3"/>
+<property name="Extends" value="trapSpikesDamage3"/>
+<property name="Damage" value="1"/>
 <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage5"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="8"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
 </block>
 
 <block id="413" name="trapSpikesDamage5">
-<property name="Damage" value="2"/>
-<property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock"/>
+<property name="Damage" value="1"/>
+<property name="Extends" value="trapSpikesDamage3" param1="DowngradeBlock"/>
 <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="10"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
 </block>
@@ -4521,7 +4516,7 @@
 <property name="Extends" value="woodMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="1"/>
+<property name="Damage" value="2"/>
 <property name="Damage_received" value="10"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
@@ -4529,7 +4524,7 @@
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rWoodSpike"/> </property>
 <property name="Group" value="Tools/Traps,Science"/>
 <property name="EconomicValue" value="2"/>
@@ -4663,7 +4658,7 @@
 <property name="Texture" value="518"/>
 <property name="OnlySimpleRotations" value="true"/>
 <property name="FuelValue" value="150"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/>
 <property class="RepairItems"> <property name="wood" value="3"/> <property name="forgedIron" value="1"/> </property>
 <property name="CanPlayersSpawnOn" value="false"/>
 <property name="Group" value="Tools/Traps,Science"/>
@@ -4989,7 +4984,9 @@
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267"/>
 <property name="LootList" value="155"/>
-<property name="StabilitySupport" value="false"/>
+<property name="StabilitySupport" value="true"/>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property class="RepairItems"> <property name="casinoCoin" value="2500"/> </property>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
@@ -5118,7 +5115,9 @@
 <property name="UseGlobalUV" value="Global"/>
 <property name="Texture" value="267"/>
 <property name="LootList" value="156"/>
-<property name="StabilitySupport" value="false"/>
+<property name="StabilitySupport" value="true"/>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <property class="RepairItems"> <property name="casinoCoin" value="2500"/> </property>
 <drop event="Fall" name="nuclearTurd" count="1" prob="1" stick_chance="0"/>
 <drop event="Destroy" count="0"/>
@@ -5318,12 +5317,12 @@
 <property name="Model" value="Signs/sign_no_hazardous_waste" param1="main_mesh"/>
 </block>
 
-<!-- Free
-<block id="484" name="signRoadRightOnly">
-<property name="Extends" value="signRoadArrowheadApache"/>
-<property name="Model" value="Signs/sign_right_only" param1="main_mesh"/>
+<block id="484" name="randomWorkstation">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomWorkstation"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
--->
 
 <block id="485" name="signRoadWork">
 <property name="Extends" value="signRoadArrowheadApache"/>
@@ -6421,22 +6420,12 @@
 <property name="Texture" value="377"/>
 </block>
 
-<!-- Free
-<block id="592" name="cntBackpackDropped">
-<property name="CreativeMode" value="None"/>
-<property name="CustomIcon" value="cntBackpack01"/>
-<property name="Class" value="Backpack"/>
-<property name="Material" value="MdroppedBackpack"/>
-<property name="LightOpacity" value="0"/>
-<property name="Shape" value="ModelEntity"/>
-<property name="Model" value="Entities/LootContainers/backpack_droppedPrefab"/>
-<property name="ImposterDontBlock" value="true"/>
-<property name="IsTerrainDecoration" value="true"/>
-<property name="Collide" value="melee,bullet,arrow,rocket"/>
-<property name="LootList" value="41"/>
-<drop event="Destroy" count="0"/>
+<block id="592" name="randomLastStandCrate">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomLastStandCrate"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
--->
 
 <block id="593" name="looseBoardsTrapBlock1x1">
 <property name="Extends" value="woodWeakNoUpgradeMaster"/>
@@ -7711,15 +7700,15 @@
 <property name="Extends" value="rWoodMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="2"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="4"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalSpike"/> </property>
 </block>
 
@@ -7727,7 +7716,7 @@
 <property name="Extends" value="rWoodMetalMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="3"/>
+<property name="Damage" value="1"/>
 <property name="Damage_received" value="10"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
@@ -7735,7 +7724,7 @@
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronSpike"/> </property>
 </block>
 
@@ -9218,17 +9207,35 @@
 
 <block id="865" name="cntCrateLastStand">
 <property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="Dev"/>
 <property name="CustomIcon" value="cntShippingCrateShamway"/>
-<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>
-<property name="Texture" value="423"/>
-<drop event="Destroy" count="0"/>
-<property name="DowngradeBlock" value="cntLootLastStand"/>
+<property name="Texture" value="549,423,423,423,423,423"/>
+<property name="DowngradeBlock" value="randomLastStandLoot"/>
 </block>
 
-<block id="866" name="cntLootLastStand">
-<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
-<property name="LootList" value="157"/>
+<block id="866" name="randomLastStandLoot">
+<property name="Extends" value="lootWastelandHelper"/>
+<property name="CreativeMode" value="Dev"/>
+<property name="PlantGrowing.Next" value="randomLastStandLoot"/>
+<property name="PlantGrowing.GrowthRate" value="0.025"/>
 </block>
+
+<block id="867" name="cntLSRawMats">
+<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="None"/>
+<property name="Texture" value="549,572,419,419,419,419"/>
+<property name="Class" value="Loot"/>
+<property name="LootList" value="160"/>
+</block>
+
+<block id="868" name="cntLSBlocks">
+<property name="Extends" value="woodNoUpgradeMaster"/>
+<property name="CreativeMode" value="None"/>
+<property name="Texture" value="549,572,419,419,419,419"/>
+<property name="Class" value="Loot"/>
+<property name="LootList" value="161"/>
+</block>
+
 
 <!-- Free-->
 
@@ -11268,7 +11275,7 @@
 <property name="ImposterExclude" value="true"/>
 <property name="ShapeMinBB" value="0.3,0,0.3"/>
 <property name="Group" value="Tools/Traps,Science"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/>
 <property class="RepairItems"> <property name="scrapIron" value="15"/> </property>
 <drop event="Harvest" name="scrapIron" count="1,12"/>
 <drop event="Destroy" count="0"/>
@@ -14590,15 +14597,15 @@
 <property name="Extends" value="scrapIronMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="4"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="8"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieD;spikeDamageZombieE"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronSpike"/> </property>
 </block>
 
@@ -14606,15 +14613,15 @@
 <property name="Extends" value="rScrapIronMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="5"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="24"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieD;spikeDamageZombieE"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="steelSpike"/> </property>
 </block>
 
@@ -14656,15 +14663,15 @@
 <block id="1441" name="steelSpike">
 <property name="Extends" value="steelMaster"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="7"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="48"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieD;spikeDamageZombieE;spikeDamageZombieF"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelSpike"/> </property>
 </block>
 
@@ -16414,14 +16421,14 @@
 <property name="Extends" value="flagstoneMaster"/>
 <property name="Class" value="TrunkTip"/>
 <property name="Damage" value="1"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage_received" value="4"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneSpike"/> </property>
 <property name="Group" value="Tools/Traps,Science"/>
 <property name="EconomicValue" value="2"/>
@@ -16432,15 +16439,15 @@
 <property name="Extends" value="cobblestoneMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="2"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="8"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="brickSpike"/> </property>
 </block>
 
@@ -16473,15 +16480,15 @@
 <block id="1594" name="brickSpike">
 <property name="Extends" value="brickMaster"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="3"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="16"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD;spikeDamageZombieE"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteSpike"/> </property>
 </block>
 
@@ -16500,15 +16507,15 @@
 <property name="Extends" value="concreteMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="4"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="24"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB;spikeDamageZombieD;spikeDamageZombieE"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteSpike"/> </property>
 </block>
 
@@ -16527,15 +16534,15 @@
 <property name="Extends" value="rConcreteMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="5"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="40"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieD;spikeDamageZombieE"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="steelSpike"/> </property>
 </block>
 
@@ -16543,15 +16550,15 @@
 <property name="Extends" value="stainlessSteelMaster"/>
 <property name="CreativeMode" value="Dev"/>
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="10"/>
-<property name="Damage_received" value="10"/>
+<property name="Damage" value="1"/>
+<property name="Damage_received" value="64"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="6"/>
 <property name="Model" value="cone1m"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 <property name="ImposterDontBlock" value="true"/>
-<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerA;spikeDamageZombieD;spikeDamageZombieE;spikeDamageZombieF"/>
 </block>
 
 <block id="1600" name="rScrapIronGable">

@@ -77,7 +77,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="herbalAntibiotics" craft_area="chemistryStation">                                             <ingredient name="nitratePowder" count="3"/> <ingredient name="blueberries" count="2"/> <ingredient name="mushrooms" count="2"/> <ingredient name="chrysanthemumPlant" count="2"/> <ingredient name="bottledRiverWater"/> </recipe>
 <recipe name="moldyBread" craft_area="campfire" craft_tool="beaker">                                        <ingredient name="shamSandwich" count="10"/> <ingredient name="bottledWater"/> </recipe>
 <recipe name="moldyBread" craft_area="chemistryStation">                                                    <ingredient name="shamSandwich" count="5"/> <ingredient name="bottledRiverWater"/> </recipe>
-<recipe name="bandage" count="1">                                                                           <ingredient name="cloth" count="2"/> </recipe>
+<recipe name="bandage" count="1" craft_area="campfire" craft_tool="cookingPot">                             <ingredient name="cloth" count="2"/> <ingredient name="bottledWater"/>  </recipe>
 <recipe name="aloeCream" count="1">                                                                         <ingredient name="aloePlant" count="4"/> </recipe>
 <recipe name="firstAidBandage" count="1">                                                                   <ingredient name="aloeCream"/> <ingredient name="bandage"/> </recipe>
 <recipe name="firstAidKit" count="1">                                                                       <ingredient name="bloodBag"/> <ingredient name="grainAlcohol"/> <ingredient name="bandage"/> <ingredient name="ductTape"/> </recipe>
