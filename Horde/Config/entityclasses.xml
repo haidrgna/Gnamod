@@ -1903,6 +1903,7 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="ExperienceGain"                     value="2500"/>
 <property name="HandItem"                           value="handZombieBuffedFeral"/>
+<property name="TintMaterial1"                      value="242,172,172"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1922,6 +1923,7 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
+<property name="TintMaterial1"                      value="172,242,172"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
@@ -1948,6 +1950,7 @@
 <property name="MaxHealth"                          value="900"/>
 <property name="SleeperSmellWakeThreshold"          value="20,50"/>
 <property name="SmellAlertThreshold"                value="20"/>
+<property name="TintMaterial1"                      value="172,242,172"/>
 <property name="ExperienceGain"                     value="3500"/>
 <property name="HeadDismemberThreshold"             value="0"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
@@ -1989,6 +1992,7 @@
 <property name="MaxHealth"                          value="2700"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="HandItem"                           value="handZombieBuffedRadiated"/>
+<property name="TintMaterial1"                      value="172,242,172"/>
 <property name="ReplaceMaterial2"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
 <!-- Movement -->
