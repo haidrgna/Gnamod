@@ -1013,7 +1013,7 @@
 <!-- Blinds Base Group -->
 <lootgroup name="blocksBlinds"          count="all">  <item name="miniblindTopSheet" count="5"/>  <item name="miniblindBottomSheet" count="5"/>                          </lootgroup>
 <!-- Block Frames Base Group -->
-<lootgroup name="blocksFrames">                       <item name="woodFrameBlock" count="25,75" prob="50"/> <item name="scrapIronFrameBlock" count="25,75" prob="30"/> <item name="rebarFrameBlock" count="25,75" prob="20"/>                   </lootgroup>
+<lootgroup name="blocksFrames">                       <item name="woodFrameBlock" count="25,75" prob="50"/> <item name="scrapIronFrameBlock" count="25,75" prob="30"/> <!-- <item name="rebarFrameBlock" count="25,75" prob="20"/>  -->                 </lootgroup>
 <!-- Workstations Base Group -->
 <lootgroup name="blocksWorkstation">                  <item name="forge" prob="35"/>    <item name="workbench" prob="20"/>    <item name="cementMixer" prob="35"/>   <item name="chemistryStation" prob="10"/>             </lootgroup>
 <!-- Electrical Power Base Groups -->
@@ -1757,7 +1757,16 @@ loot_quality_template=  "leveledNormal">
 <!-- Chance of Default Loot -->
 <item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
 </lootcontainer>
-<!-- 6 - 10 Free -->
+<!-- =========================== GREEN DRAWER ================================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt007"> <item group="nothing" prob="100"/>  </lootgroup>
+<lootcontainer id="7" count="1" size="9,9" open_time="0" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_dumpster"
+sound_close=            "UseActions/close_dumpster"
+loot_quality_template=  "leveledNormal">
+<item group="cnt007" count="1" prob="100"/>
+</lootcontainer>
+<!-- 7 - 10 Free -->
   
 <!-- General World Loot  -->
 <!-- =========================== GARBAGE BAGS ================================================================================================================================================================================================================================================================================================================================== -->
