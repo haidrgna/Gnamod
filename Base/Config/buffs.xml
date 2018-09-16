@@ -135,20 +135,20 @@
 <buff id="railZap" duration="1" stack="extend"> <modify id="0" stat="health" amount="-10" rate="1" castsound="metalhitmetal"/> </buff>
 
 <!-- Trap or Enviroment Buffs -->
-<buff id="spikeBleedTriggerA" mutex="spawnProtected" duration="1" stack="extend" type="bleeding" actions="increment(CTRspikeBleed, 3, 1, 0, 0);debuff(naturalHealing)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
+<buff id="spikeBleedTriggerA" mutex="spawnProtected,firstAidLarge" duration="1" stack="reset" type="bleeding" actions="max(CTRspikeBleed,40);increment(CTRspikeBleed, 2, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
 
-<buff id="spikeBleedTriggerB" mutex="spawnProtected" duration="1" stack="extend" type="bleeding" actions="increment(CTRspikeBleed, 2, 1, 0, 0);debuff(naturalHealing)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
+<buff id="spikeBleedTriggerB" mutex="spawnProtected,firstAidLarge" duration="1" stack="reset" type="bleeding" actions="max(CTRspikeBleed,40);increment(CTRspikeBleed, 1, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull"/>
 
-<buff id="spikeBleedCounter" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed less 1" actions="increment(CTRspikeBleed, -1, 1, 0, 0)"/>
+<buff id="spikeBleedCounter" mutex="spikeBleedTriggerA,spikeBleedTriggerB" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="increment(CTRspikeBleed, -1, 1, 0, 0)"/>
 
-<buff id="spikeBleedStage1" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="debuff(naturalHealing);damage(0,1,0,0)" mutex="spikeBleedStage2,spikeBleedStage3" type="bleeding" name_key="spikeWound1" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
-<modify id="0" stat="health" amount="-2" rate="2"/> </buff>
+<buff id="spikeBleedStage1" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" actions="debuff(naturalHealing);damage(1,2,0,0)" mutex="spikeBleedStage2,spikeBleedStage3" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
+<modify id="0" stat="stamina" amount="-0.5" rate="1"/> </buff>
 
-<buff id="spikeBleedStage2" buffif="CTRspikeBleed greater 5" debuffif="CTRspikeBleed lequal 5" actions="debuff(naturalHealing);debuff(spikeBleedStage1);damage(0,1,0,0)" mutex="spikeBleedStage3" type="bleeding" name_key="spikeWound2" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
-<modify id="0" stat="stamina" amount="-2" rate="2"/>  <modify id="1" stat="health" amount="-3" rate="2"/> </buff>
+<buff id="spikeBleedStage2" buffif="CTRspikeBleed greater 10" debuffif="CTRspikeBleed lequal 10" actions="debuff(naturalHealing);debuff(spikeBleedStage1);damage(2,2,0,0)" mutex="spikeBleedStage3" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc" icon="ui_game_symbol_critical">
+<modify id="0" stat="stamina" amount="-1" rate="1"/> </buff>
 
-<buff id="spikeBleedStage3" buffif="CTRspikeBleed greater 15" debuffif="CTRspikeBleed lequal 15" actions="debuff(naturalHealing);debuff(spikeBleedStage2);debuff(spikeBleedStage1);damage(0,1,0,0)" type="bleeding" name_key="spikeWound3" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
-<modify id="0" stat="stamina" amount="-2" rate="1"/>  <modify id="1" stat="health" amount="-2" rate="1"/> </buff>
+<buff id="spikeBleedStage3" buffif="CTRspikeBleed greater 20" debuffif="CTRspikeBleed lequal 20" actions="debuff(naturalHealing);debuff(spikeBleedStage2);debuff(spikeBleedStage1);damage(3,2,0,0)" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc"  icon="ui_game_symbol_critical">
+<modify id="0" stat="stamina" amount="-2" rate="1"/> </buff>
 
 <buff id="spikeDamageZombieA" mutex="isPlayer,suicideBomber,zombieStrongRegen" duration="2" stack="reset">
 <modify id="0" stat="health" amount="-10" rate="1"/>  </buff>
