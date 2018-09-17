@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <gamestages>
 <config
-startingWeight ="1"
-scavengerGameDifficultyBonus="0.1"
-adventurerGameDifficultyBonus="0.3"
-nomadGameDifficultyBonus="0.5"
-warriorGameDifficultyBonus="0.8"
-survivalistGameDifficultyBonus="1.2"
-insaneGameDifficultyBonus="1.5"
-daysAliveDifficultyBonus="0.1"
-daysAliveChangeWhenKilled ="2"
+startingWeight ="25"
+scavengerGameDifficultyBonus="0.50"
+adventurerGameDifficultyBonus="0.75"
+nomadGameDifficultyBonus="1.0"
+warriorGameDifficultyBonus="1.25"
+survivalistGameDifficultyBonus="1.50"
+insaneGameDifficultyBonus="2.00"
+daysAliveDifficultyBonus="0.2"
+daysAliveChangeWhenKilled ="0"
 diminishingReturns ="0.2"/>
 
 <difficultyModifier name="easy" amount="100"/>
@@ -82,56 +82,56 @@ diminishingReturns ="0.2"/>
 
 <!-- Wandering Hordes -->
 <spawner name="WanderingHorde">
-<gamestage stage="01"><spawn group="ZombiesGreenBiomes"	    num="30" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="02"><spawn group="ZombiesGnahordeStage1"	num="30" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="03"><spawn group="ZombiesGnahordeStage1"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="04"><spawn group="ZombiesGnahordeStage1"	num="10" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="05"><spawn group="ZombiesGnahordeStage1"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="06"><spawn group="ZombiesGnahordeStage1"	num="30" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="07"><spawn group="ZombiesGnahordeStage1"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="08"><spawn group="AnimalsWolfpack"	      num="10" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="09"><spawn group="ZombiesGnahordeStage1"	num="30" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="10"><spawn group="ZombiesGnahordeStage1"	num="34" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="11"><spawn group="ZombiesGnahordeStage1"	num="26" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="12"><spawn group="ZombiesFeral"	          num="08" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="13"><spawn group="ZombiesBadassRad"	      num="90" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="14"><spawn group="ZombiesGnahordeStage1"	num="34" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="15"><spawn group="ZombiesGnahordeStage1"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="16"><spawn group="ZombiesGnahordeStage1"	num="34" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="17"><spawn group="ZombiesBadassAll"	      num="24" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="18"><spawn group="ZombiesGnahordeStage1"	num="36" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="19"><spawn group="ZombiesGnahordeStage1"	num="36" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="20"><spawn group="ZombiesFeral"	          num="16" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="21"><spawn group="ZombiesGnahordeStage2"	num="38" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="22"><spawn group="ZombiesGnahordeStage2"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="23"><spawn group="ZombiesGnahordeStage2"	num="34" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="24"><spawn group="ZombiesGnahordeStage2"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="25"><spawn group="ZombiesGnahordeStage2"	num="34" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="26"><spawn group="ZombiesGnahordeStage2"	num="30" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="27"><spawn group="ZombiesJack"	          num="18" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="28"><spawn group="ZombiesGnahordeStage2"	num="36" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="29"><spawn group="ZombiesGnahordeStage2"	num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="30"><spawn group="ZombiesGnahordeStage2"	num="40" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="31"><spawn group="ZombiesBadassAll"	      num="24" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="32"><spawn group="ZombiesGnahordeStage2"	num="36" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="33"><spawn group="ZombiesGnahordeStage3"	num="42" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="34"><spawn group="ZombiesDogs"	          num="24" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="35"><spawn group="ZombiesGnahordeStage3"	num="40" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="36"><spawn group="ZombiesGnahordeStage3"	num="38" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="37"><spawn group="ZombiesGnahordeStage3"	num="42" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="38"><spawn group="ZombiesFootball"	      num="14" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="39"><spawn group="ZombiesGnahordeStage3"	num="42" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="40"><spawn group="ZombiesGnahordeStage3"	num="38" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="41"><spawn group="ZombiesAnimals"	        num="16" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="42"><spawn group="ZombiesGnahordeStage3"	num="42" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="43"><spawn group="ZombiesGnahordeStage3"	num="38" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="44"><spawn group="ZombiesMilitary"	      num="42" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="45"><spawn group="ZombiesGnahordeStage4"	num="40" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="46"><spawn group="ZombiesGnahordeStage4"	num="48" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="47"><spawn group="AnimalsWolfpack"	      num="20" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="48"><spawn group="ZombiesGnahordeStage4"	num="40" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="49"><spawn group="ZombiesBadass"	        num="32" maxAlive="60" duration="12"/></gamestage>
-<gamestage stage="50"><spawn group="ZombiesFeral"           num="12" maxAlive="60" duration="12"/></gamestage>
+<gamestage stage="01"><spawn group="ZombiesBadass"	        num="40" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="02"><spawn group="ZombiesGnahordeStage7"	num="30" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="03"><spawn group="ZombiesGnahordeStage7"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="04"><spawn group="ZombiesGnahordeStage7"	num="10" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="05"><spawn group="ZombiesGnahordeStage7"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="06"><spawn group="ZombiesGnahordeStage7"	num="30" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="07"><spawn group="ZombiesGnahordeStage7"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="08"><spawn group="AnimalsWolfpack"	      num="10" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="09"><spawn group="ZombiesGnahordeStage3"	num="30" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="10"><spawn group="ZombiesGnahordeStage3"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="11"><spawn group="ZombiesGnahordeStage3"	num="26" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="12"><spawn group="ZombiesFeral"	          num="16" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="13"><spawn group="ZombiesGnahordeStage3"	num="30" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="14"><spawn group="ZombiesGnahordeStage3"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="15"><spawn group="ZombiesGnahordeStage3"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="16"><spawn group="ZombiesBadass"	        num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="17"><spawn group="ZombiesGnahordeStage3"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="18"><spawn group="ZombiesGnahordeStage3"	num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="19"><spawn group="ZombiesGnahordeStage3"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="20"><spawn group="ZombiesFeral"	          num="16" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="21"><spawn group="ZombiesGnahordeStage4"	num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="22"><spawn group="ZombiesGnahordeStage4"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="23"><spawn group="ZombiesGnahordeStage4"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="24"><spawn group="ZombiesGnahordeStage4"	num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="25"><spawn group="ZombiesGnahordeStage4"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="26"><spawn group="ZombiesGnahordeStage4"	num="30" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="27"><spawn group="ZombiesJack"	          num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="28"><spawn group="ZombiesGnahordeStage4"	num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="29"><spawn group="ZombiesGnahordeStage4"	num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="30"><spawn group="ZombiesGnahordeStage4"	num="40" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="31"><spawn group="ZombiesBadass"	        num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="32"><spawn group="ZombiesGnahordeStage4"	num="36" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="33"><spawn group="ZombiesGnahordeStage5"	num="42" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="34"><spawn group="ZombiesDogs"	          num="24" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="35"><spawn group="ZombiesGnahordeStage5"	num="38" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="36"><spawn group="ZombiesGnahordeStage5"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="37"><spawn group="ZombiesGnahordeStage5"	num="38" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="38"><spawn group="ZombiesFootball"	      num="14" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="39"><spawn group="ZombiesGnahordeStage5"	num="42" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="40"><spawn group="ZombiesGnahordeStage5"	num="38" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="41"><spawn group="ZombiesAnimals"	        num="16" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="42"><spawn group="ZombiesGnahordeStage5"	num="42" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="43"><spawn group="ZombiesGnahordeStage5"	num="34" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="44"><spawn group="ZombiesMilitary"	      num="42" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="45"><spawn group="ZombiesGnahordeStage6"	num="40" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="46"><spawn group="ZombiesGnahordeStage6"	num="48" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="47"><spawn group="AnimalsWolfpack"	      num="20" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="48"><spawn group="ZombiesGnahordeStage6"	num="40" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="49"><spawn group="ZombiesBadass"	        num="32" maxAlive="160" duration="06"/></gamestage>
+<gamestage stage="50"><spawn group="ZombiesFeral"           num="12" maxAlive="160" duration="06"/></gamestage>
 </spawner>
 
 <!-- Sleeper Spawn List -->
@@ -163,137 +163,197 @@ diminishingReturns ="0.2"/>
 
 <!-- Blood Moon Horde -->
 <spawner name="BloodMoonHorde">
-<gamestage stage="1">
-<spawn group="ZombiesGnahordeStage6"  num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="999" maxAlive="256" duration="2" interval="12"/>
+<gamestage stage="25">
+<spawn group="ZombiesBadass"          num="40"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage4"  num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadass"          num="40"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage4"  num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadass"          num="40"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
+</gamestage>
+<gamestage stage="50">
+<spawn group="ZombiesBadass"          num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage4"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadass"          num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage4"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadass"          num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
+</gamestage>
+<gamestage stage="75">
+<spawn group="ZombiesBadass"          num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="100">
-<spawn group="ZombiesGnahordeStage6"  num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage6"  num="999" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesBadass"          num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage5"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveAll"    num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
+</gamestage>
+<gamestage stage="150">
+<spawn group="ZombiesBadassAll"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="60"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="140"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="200">
-<spawn group="ZombiesGnahordeStage7"  num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="120" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="200" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="999" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesExplosiveAll"    num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveAll"    num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
-<gamestage stage="300">
-<spawn group="ZombiesGnahordeStage7"  num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="130" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="130" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="999" maxAlive="256" duration="2" interval="12"/>
+<gamestage stage="250">
+<spawn group="ZombiesBadassAll"       num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="70"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="100"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="500">
-<spawn group="ZombiesBadassAll"       num="40" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="130" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage7"  num="130" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="999" maxAlive="256" duration="2" interval="12"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage6"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="120"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="1000">
-<spawn group="ZombiesGnahordeStage8"  num="50" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="100" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="240" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="140" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="140" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="240" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="100" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassAll"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="1500">
-<spawn group="ZombiesGnahordeStage8"  num="60" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="110" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="260" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="150" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="150" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="260" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="110" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage8"  num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesBadassRad"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="2000">
-<spawn group="ZombiesGnahordeStage9"  num="70" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="120" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="280" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="160" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="160" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="280" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassAll"       num="120" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage7"  num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="2500">
-<spawn group="ZombiesGnahordeStage9"  num="80" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesExplosiveRad"    num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage8"  num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="80"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="160"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="3000">
-<spawn group="ZombiesGnahordeStage9"  num="80" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage9"  num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesExplosiveRad"    num="250"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="250"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="250"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="250"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="250"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="4000">
-<spawn group="ZombiesGnahordeStage10" num="80" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesExplosiveRad"    num="350"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="350"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="350"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="350"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="350"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="5000">
-<spawn group="ZombiesGnahordeStage10" num="80" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="220" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="180" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="320" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="140" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="999" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesExplosiveRad"    num="450"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="450"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="450"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="450"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="50"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="450"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 <gamestage stage="10000">
-<spawn group="ZombiesGnahordeStage10" num="100" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="999" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="999" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="100" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="999" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="100" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="999" maxAlive="256" duration="2" interval="12"/>
-<spawn group="ZombiesBadassRad"       num="999" maxAlive="256" duration="1" interval="12"/>
-<spawn group="ZombiesGnahordeStage10" num="100" maxAlive="256" duration="1" interval="12"/>
+<spawn group="ZombiesExplosiveRad"    num="999"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage9"  num="99"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="999"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="99"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesExplosiveRad"    num="999"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="99"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="999"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesGnahordeStage10" num="99"    maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="999"   maxAlive="256" duration="2" interval="6"/>
+<spawn group="ZombiesBadassRad"       num="9999"  maxAlive="256" duration="2" interval="6"/>
 </gamestage>
 </spawner>
 </gamestages>

@@ -364,15 +364,15 @@
 
 <trader_item_group name="Weapons">
 <item name="flashlight02"               prob="0.150"/>
-<item name="clubIron"                   prob="0.150"/>
-<item name="clubBarbed"                 prob="0.150"/>
+<item name="clubIron"                   prob="0.125"/>
+<item name="clubBarbed"                 prob="0.125"/>
 <item name="clubSpiked"                 prob="0.050"/>
-<item name="sledgehammer"               prob="0.100"/>
+<item name="sledgehammer"               prob="0.075"/>
 <item name="huntingKnife"               prob="0.150"/>
 <item name="machete"                    prob="0.050"/>
-<item name="crossbow"                   prob="0.050"/>
-<item name="compoundBow"                prob="0.100"/>
-<item name="blunderbuss"                prob="0.050"/>
+<item name="crossbow"                   prob="0.125"/>
+<item name="compoundBow"                prob="0.125"/>
+<item name="blunderbuss"                prob="0.025"/>
 </trader_item_group>
 
 <trader_item_group name="Tools">
@@ -602,8 +602,8 @@
 <item name="flagstoneBlock"             count="25,250"      prob="0.250"/>
 <item name="scrapIronFrameBlock"        count="15,150"      prob="0.250"/>
 <item name="brickBlock"                 count="15,150"      prob="0.100"/>
-<item name="woodBars"                   count="5,50"        prob="0.075"/>
-<item name="woodGate"                   count="5,50"        prob="0.075"/>
+<item name="woodBars"                   count="25,100"      prob="0.075"/>
+<item name="woodGate"                   count="25,100"      prob="0.075"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksUncommon">
@@ -611,16 +611,16 @@
 <item name="brickBlock"                 count="25,250"      prob="0.300"/>
 <item name="pouredConcreteBlock"        count="15,150"      prob="0.250"/>
 <item name="pouredRConcreteBlock"       count="15,150"      prob="0.100"/>
-<item name="ironBars"                   count="5,50"        prob="0.075"/>
-<item name="ironGate"                   count="5,50"        prob="0.075"/>
+<item name="ironBars"                   count="25,100"      prob="0.075"/>
+<item name="ironGate"                   count="25,100"      prob="0.075"/>
 </trader_item_group>
 
 <trader_item_group name="BuildingBlocksRare">
 <item name="pouredConcreteBlock"        count="25,250"      prob="0.400"/>
 <item name="pouredRConcreteBlock"       count="25,250"      prob="0.300"/>
 <item name="steelBlock"                 count="15,150"      prob="0.150"/>
-<item name="steelBars"                  count="5,25"        prob="0.075"/>
-<item name="steelGate"                  count="5,25"        prob="0.075"/>  
+<item name="steelBars"                  count="25,100"      prob="0.075"/>
+<item name="steelGate"                  count="25,100"      prob="0.075"/>  
 </trader_item_group>
 
 <trader_item_group name="BasicMaterials">
@@ -1405,8 +1405,8 @@
 <tier_items level="400,499"           count="all">
 <item group="MaterialsBasic"          count="5"/>
 <item group="MaterialsCommon"         count="5"/>
-<item group="MaterialsUncommon"       count="5"/>
-<item group="MaterialsRare"           count="2"/>
+<item group="MaterialsUncommon"       count="6"/>
+<item group="MaterialsRare"           count="1"/>
 <item group="BuildingBlocksCommon"    count="5"/>
 <item group="BuildingBlocksUncommon"  count="2"/>
 <item group="BuildingBlocksRare"      count="1"/>
@@ -1419,8 +1419,8 @@
 <tier_items level="500,599"           count="all">
 <item group="MaterialsBasic"          count="4"/>
 <item group="MaterialsCommon"         count="4"/>
-<item group="MaterialsUncommon"       count="3"/>
-<item group="MaterialsRare"           count="2"/>
+<item group="MaterialsUncommon"       count="4"/>
+<item group="MaterialsRare"           count="1"/>
 <item group="BuildingBlocksCommon"    count="5"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingBlocksRare"      count="2"/>
@@ -1433,8 +1433,8 @@
 <tier_items level="600,699"           count="all">
 <item group="MaterialsBasic"          count="4"/>
 <item group="MaterialsCommon"         count="4"/>
-<item group="MaterialsUncommon"       count="4"/>
-<item group="MaterialsRare"           count="3"/>
+<item group="MaterialsUncommon"       count="5"/>
+<item group="MaterialsRare"           count="2"/>
 <item group="BuildingBlocksCommon"    count="4"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingBlocksRare"      count="3"/>
@@ -1446,9 +1446,9 @@
 
 <tier_items level="700,799"           count="all">
 <item group="MaterialsBasic"          count="3"/>
-<item group="MaterialsCommon"         count="3"/>
+<item group="MaterialsCommon"         count="5"/>
 <item group="MaterialsUncommon"       count="8"/>
-<item group="MaterialsRare"           count="5"/>
+<item group="MaterialsRare"           count="3"/>
 <item group="BuildingBlocksCommon"    count="5"/>
 <item group="BuildingBlocksUncommon"  count="5"/>
 <item group="BuildingBlocksRare"      count="4"/>
@@ -1460,9 +1460,9 @@
 
 <tier_items level="800,899"           count="all">
 <item group="MaterialsBasic"          count="3"/>
-<item group="MaterialsCommon"         count="4"/>
-<item group="MaterialsUncommon"       count="6"/>
-<item group="MaterialsRare"           count="5"/>
+<item group="MaterialsCommon"         count="5"/>
+<item group="MaterialsUncommon"       count="7"/>
+<item group="MaterialsRare"           count="3"/>
 <item group="BuildingBlocksCommon"    count="4"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingBlocksRare"      count="4"/>
@@ -1473,10 +1473,10 @@
 </tier_items>
 
 <tier_items level="900,999"           count="all">
-<item group="MaterialsBasic"          count="3"/>
-<item group="MaterialsCommon"         count="3"/>
-<item group="MaterialsUncommon"       count="5"/>
-<item group="MaterialsRare"           count="7"/>
+<item group="MaterialsBasic"          count="4"/>
+<item group="MaterialsCommon"         count="4"/>
+<item group="MaterialsUncommon"       count="6"/>
+<item group="MaterialsRare"           count="4"/>
 <item group="BuildingBlocksCommon"    count="4"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingBlocksRare"      count="6"/>
@@ -1487,10 +1487,10 @@
 </tier_items>
 
 <tier_items level="1000,-1"           count="all">
-<item group="MaterialsBasic"          count="2"/>
-<item group="MaterialsCommon"         count="2"/>
-<item group="MaterialsUncommon"       count="6"/>
-<item group="MaterialsRare"           count="8"/>
+<item group="MaterialsBasic"          count="3"/>
+<item group="MaterialsCommon"         count="3"/>
+<item group="MaterialsUncommon"       count="8"/>
+<item group="MaterialsRare"           count="4"/>
 <item group="BuildingBlocksCommon"    count="4"/>
 <item group="BuildingBlocksUncommon"  count="4"/>
 <item group="BuildingBlocksRare"      count="8"/>
