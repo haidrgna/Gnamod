@@ -5,8 +5,8 @@
 <!-- Player Character Buffs -->
 <buff id="isPlayer" buffif="+full > 0" actions="increment(@wellness,-999,1,0,1)"/>
 
-<buff id="died" buffif="health lequal 0" actions="resetvalue(CTRspawned);resetvalue(CTRspikeBleed)"/>
-  
+<buff id="died" buffif="health lequal 0" actions="setvar(CTRspawned, 0);setvar(CTRspikeBleed, 0)"/>
+
 <buff id="spawnProtected" buffif="+full > 0" debuffif="CTRspawned greater 2" duration="30" mutex="spawned" onexpired="spawned" icon="ui_game_symbol_character" name_key="spawnProtected" description_key="spawnProtectedDesc" tooltip_key="spawnProtectedTooltip"> <modify id="0" stat="health" setValue="500"/> </buff>
 
 <buff id="spawned" actions="debuff(spawnProtected);increment(CTRspawned,1,100t,0,0)"/>
@@ -113,7 +113,7 @@
 <modify id="0" stat="speedmodifier" mulValue="0.20"/>  </buff>
 <buff id="stunCooldown" duration="4" stack="discard"/>
 
-<buff id="stuntedHealing" duration="25t" stack="reset" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);debuff(naturalHealing);debuff(painkillerBuff);damage(0,5,0,0);increment(@wellness,-0.5,5t,0,0);attach(ParticleEffects/RadiatedParticlesOnMesh, @impact)" icon="ui_game_symbol_radiation" name_key="stuntedHealing" description_key="stuntedHealingDesc" tooltip_key="stuntedHealingTooltip"/>
+<buff id="stuntedHealing" duration="25t" mutex="spawnProtected" stack="reset" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);debuff(naturalHealing);debuff(painkillerBuff);damage(0,5,0,0);increment(@wellness,-0.5,5t,0,0);attach(ParticleEffects/RadiatedParticlesOnMesh, @impact)" icon="ui_game_symbol_radiation" name_key="stuntedHealing" description_key="stuntedHealingDesc" tooltip_key="stuntedHealingTooltip"/>
 
 <buff id="snakeBite" duration="50t" stack="reset" mutex="spawnProtected" type="bleeding" actions="debuff(fullBuff);debuff(naturalHealing);damage(0,5,0,0)" icon="ui_game_symbol_smell" name_key="snakeBite" description_key="snakeBiteDesc" tooltip_key="snakeBiteTooltip">
 <modify id="0" stat="stamina" amount="-3" rate="1"/>  <modify id="1" stat="health" amount="-0.5" rate="1"/> </buff>
