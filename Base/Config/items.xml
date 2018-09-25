@@ -732,7 +732,7 @@ Mesh files no longer used:
 <property name="Sound_empty"                    value=""/>
 <property name="Sound_reload"                   value=""/>
 <property name="Particles_muzzle_fire"          value="blockdestroy_organic"/>
-<property name="Hitmask_override"               value="Bullet"/>
+<property name="Hitmask_override"               value="Arrow"/>
 </property>
 </item>
 <item id="88" name="handZombiePukeRadiated">
@@ -766,6 +766,7 @@ Mesh files no longer used:
 <property name="Range"                          value="250"/>
 <property name="Magazine_items"                 value="projectileZombieFire"/>
 <property name="Rays_spread"                    value="0.4"/>
+<property name="Hitmask_override"               value="Bullet"/>
 </property>
 </item>
 <item id="90" name="handZombieBossRadiated">
@@ -782,6 +783,7 @@ Mesh files no longer used:
 <property name="Range"                          value="250"/>
 <property name="Magazine_items"                 value="projectileZombieExplosive"/>
 <property name="Rays_spread"                    value="0.3"/>
+<property name="Hitmask_override"               value="Bullet"/>
 </property>
 </item>
 <!-- Zombie Projectiles -->
@@ -799,8 +801,8 @@ Mesh files no longer used:
 <property name="LifeTime"                       value="4"/>
 <property name="CollisionRadius"                value="0.5"/>
 <property name="DamageBonus.earth"              value="0.25"/>
-<property name="DamageBonus.stone"              value="1.25"/>
-<property name="DamageBonus.metal"              value="1.25"/>
+<property name="DamageBonus.stone"              value="1.00"/>
+<property name="DamageBonus.metal"              value="1.50"/>
 </property>
 </item>
 <item id="92" name="projectileZombieVomitStrong">
@@ -812,8 +814,8 @@ Mesh files no longer used:
 <property name="LifeTime"                       value="8"/>
 <property name="DamageEntity"                   value="20"/>
 <property name="DamageBlock"                    value="400"/>
-<property name="DamageBonus.stone"              value="1.5"/>
-<property name="DamageBonus.metal"              value="1.5"/>
+<property name="DamageBonus.stone"              value="1.0"/>
+<property name="DamageBonus.metal"              value="1.75"/>
 </property>
 </item>
 <item id="93" name="projectileZombieFire">
@@ -1049,6 +1051,7 @@ Mesh files no longer used:
 <property name="DamageBonus.wood" value="1"/>
 <property name="DamageBonus.earth" value="0.2083"/>
 <property name="DamageBonus.stone" value="0.625"/>
+<property name="DamageBonus.granite" value="0.325"/>
 <property name="DamageBonus.metal" value="0.4167"/>
 <property name="DamageBonus.organic" value="0.8334"/>
 <property name="ActionExp" value="2"/>
@@ -1176,6 +1179,7 @@ Mesh files no longer used:
 <property name="DamageBonus.wood" value="0.2"/>
 <property name="DamageBonus.earth" value="0.2"/>
 <property name="DamageBonus.organic" value="0.2"/>
+<property name="DamageBonus.granite" value="0.8"/>
 <property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
 <property name="ActionExp" value="4"/>
 <property name="ToolCategory.Butcher" value="0" param1="10"/>
