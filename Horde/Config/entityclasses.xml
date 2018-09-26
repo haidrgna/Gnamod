@@ -4759,4 +4759,16 @@
 <drop event="Harvest"                               name="feather"      tool_category="Butcher" prob="0.75" count="30"/>
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>
+
+<!-- Zombie Gina -->     
+<entity_class name="zombieGina"                     extends="zombieArleneMoaner">
+<property name="HandItem"                           value="handZombieGina"/>
+<property name="MaxHealth"                          value="9999999"/>
+<property name="TintMaterial0"                      value="242,63,63"/>
+<property name="TintMaterial2"                      value="186,13,13"/>
+<!-- Movement -->
+<property name="WalkType"                           value="3"/>
+<!-- Harvest -->
+<drop event="Harvest"                               name="rottingFlesh"		tool_category="Butcher" count="0"/>
+</entity_class>
 </entity_classes>
