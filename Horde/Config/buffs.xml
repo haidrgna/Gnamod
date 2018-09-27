@@ -141,7 +141,7 @@
 
 <buff id="spikeBleedCounter" mutex="spikeTriggerWood,spikeTriggerTrunk" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="increment(CTRspikeBleed, -1, 1, 0, 0)"/>
 
-<buff id="spikeBleedZombieStop" mutex="isPlayer,spikeTriggerWood,spikeTriggerTrunk" actions="setvar(CTRspikeBleed, 1)"/>
+<buff id="spikeBleedZombieStop" mutex="isPlayer,spikeTriggerWood,spikeTriggerTrunk" actions="setvar(CTRspikeBleed, 0)"/>
 
 <buff id="spikeBleedStage1" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" actions="debuff(naturalHealing);damage(1,2,0,0)" mutex="spawnProtected,spikeBleedStage2,spikeBleedStage3" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
 <modify id="0" stat="stamina" amount="-0.5" rate="1"/> </buff>

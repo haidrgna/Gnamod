@@ -147,7 +147,7 @@
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.00"/>
+<property name="CorpseBlockChance"                  value="0.05"/>
 <property name="ExperienceGain"                     value="1000"/>
 <property name="DeadBodyHitPoints"                  value="100"/>
 <!-- Attack Settings -->
@@ -197,7 +197,7 @@
 <property name="NightApproachSpeed"                 value="1.75"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="DeadBodyHitPoints"                  value="100"/>
 <!-- Stealth Settings -->
@@ -245,7 +245,7 @@
 <property name="NightApproachSpeed"                 value="1.60"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.2"/>
 <property name="ExperienceGain"                     value="2500"/>
 <property name="DeadBodyHitPoints"                  value="100"/>
 <!-- Radiated Effect -->
@@ -293,7 +293,7 @@
 <property name="NightApproachSpeed"                 value="2.00"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.3"/>
 <property name="ExperienceGain"                     value="3500"/>
 <property name="DeadBodyHitPoints"                  value="100"/>
 <!-- Dismemberment -->
@@ -428,6 +428,8 @@
 <property name="HandItem"                           value="handAnimalBear"/>
 <property name="AttackTimeoutDay"                   value="2"/>
 <property name="AttackTimeoutNight"                 value="2"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff"/>
 </entity_class>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= VEHICLES +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
@@ -568,7 +570,7 @@
 <property name="LootListAlive"                      value="101"/>
 <property name="LootListOnDeath"                    value="101"/>
 <property name="CorpseBlock"                        value="GoreBlock1Prefab"/>
-<property name="CorpseBlockChance"                  value="0"/>
+<property name="CorpseBlockChance"                  value="1"/>
 <property name="ExperienceGain"                     value="5000"/>
 <property name="DeadBodyHitPoints"                  value="350"/>
 <property name="HasDeathAnim"                       value="true"/>
@@ -611,7 +613,6 @@
 <property name="SoundSense"                         value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 <property name="Mesh"                               value="Zombies/zombieStandardBoeRagdoll"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/Z_eye1"/>
-
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -2711,7 +2712,7 @@
 <property name="CanClimbVertical"                   value="true"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
-
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -2759,7 +2760,7 @@
 <property name="Explosion.BlockDamage"              value="1250"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <property name="Explosion.DamageBonus.earth"        value="0.75"/>
-
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
 </entity_class>
@@ -2782,7 +2783,7 @@
 <property name="UpperLegDismemberThreshold"         value="0"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -3851,7 +3852,7 @@
 <property name="MaxHealth"                          value="500"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        <property name="state1" value="AttackStandingStill"/> </property>
@@ -3900,7 +3901,7 @@
 <property name="MaxHealth"                          value="2500"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.3"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/>       </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Base Layer.Attack"/>   </property>
@@ -3959,7 +3960,7 @@
 <property name="MaxHealth"                          value="300"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        <property name="state1" value="AttackStandingStill"/>   </property>
@@ -4010,7 +4011,7 @@
 <property name="ReplaceMaterial1"                   value="entities/animals/wolf/materials/wolfEyeFeral"/>
 <property name="DeadBodyHitPoints"                  value="450"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.2"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rawMeat"    tool_category="Butcher" prob="0.75" count="6"/>
 <drop event="Harvest"                               name="animalHide" tool_category="Butcher" prob="0.75" count="12"/>
@@ -4084,7 +4085,7 @@
 <property name="DeadBodyHitPoints"                  value="500"/>
 <property name="MaxHealth"                          value="750"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4129,8 +4130,9 @@
 <property name="MaxHealth"                          value="200"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- Attack -->
 <property name="HandItem"                           value="handAnimalZombieDog"/>
 <property name="AttackTimeoutDay"                   value="1.5"/>
@@ -4197,7 +4199,8 @@
 <property name="ExperienceGain"                     value="1500"/>
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.1"/>
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        </property>
@@ -4237,17 +4240,37 @@
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 </entity_class>
 <!-- ============================== Zombie Bear ============================================================================================================================================================================ -->
-<entity_class name="animalZombieBear"               extends="animalBear">
-<property name="MaxHealth"                          value="4000"/>
-<property name="ExperienceGain"                     value="4000"/>
+<entity_class name="animalZombieBear"               extends="animalTemplateHostile">
+<property name="Mesh"                               value="Animals/Bear/animalBearStandardRagdoll"/>
+<property name="PhysicsBody"                        value="bear"/>
 <property name="HandItem"                           value="handAnimalZombieBear"/>
 <property name="ReplaceMaterial0"                   value="Materials/UMAFur_ZombieBear"/>
+<property name="HasRagdoll"                         value="true"/>
+<property name="HasDeathAnim"                       value="true"/>
+<property name="RootMotion"                         value="true"/>
+<property name="RagdollOnDeathChance"               value=".5"/>
+<property name="WalkType"                           value="0"/>
+<property name="ApproachSpeed"                      value="1.35"/>
+<property name="NightApproachSpeed"                 value="1.45"/>
+<property name="ExperienceGain"                     value="4000"/>
 <property name="DeadBodyHitPoints"                  value="1000"/>
+<property name="MaxHealth"                          value="4000"/>
+<property name="SmellAlertThreshold"                value="5"/>
 <property name="EntityType"                         value="Zombie"/>
 <property name="Faction"                            value="undead"/>
 <property name="Parent"                             value="Enemies"/>
+<property name="Class"                              value="EntityZombieDog"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<!-- Mechanim -->
+<property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/>       </property>
+<property class="MechanimAttackStates">   <property name="state0" value="Base Layer.Attack"/>   </property>
+<property class="MechanimPainTriggers">   <property name="state0" value="PainTrigger"/>         </property>
+<property class="MechanimPainStates">     <property name="state0" value="Base Layer.Pain"/>     </property>
+<property class="MechanimDeathTriggers">  <property name="state0" value="DeathTrigger"/>        </property>
+<property class="MechanimDeathStates">    <property name="state0" value="Base Layer.Death"/>    </property>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4259,23 +4282,31 @@
 <property name="AITask-8"                           value="ApproachSpot"/>
 <property name="AITask-9"                           value="Wander"/>
 <!-- AI Targets -->
-<property name="AITarget-1"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
-<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
-<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
-<property name="AITarget-4"                         value="BlockingTargetTask"/>
+<property name="AITarget-1"                         value="BlockingTargetTask"/>  
+<property name="AITarget-2"                         value="SetAsTargetIfHurt"           param1="EntityPlayer"/>
+<property name="AITarget-3"                         value="SetAsTargetIfHurt"           param1="EntityEnemyAnimal"/>
+<property name="AITarget-4"                         value="SetAsTargetIfHurt"           param1="EntityNPC"/>
 <property name="AITarget-5"                         value="SetNearestEntityAsTarget"    param1="EntityPlayer"/>
 <property name="AITarget-6"                         value="SetNearestEntityAsTarget"    param1="EntityAnimalStag"/>
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
-<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/>
+<property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
+<!-- Sounds -->
+<property name="SoundHurt"                          value="Animals/Bear/bearpain"/>
+<property name="SoundDeath"                         value="Animals/Bear/beardeath"/>
+<property name="SoundRandom"                        value="Animals/Bear/bearroam"/>
+<property name="SoundSense"                         value="Animals/Bear/bearsense"/>
+<property name="SoundAlert"                         value="Animals/Bear/bearalert"/>
+<property name="SoundAttack"                        value="Animals/Bear/bearattack"/>
+<property name="SoundGiveUp"                        value="Animals/Bear/beargiveup"/>
 <!-- Stealth -->
 <property name="SightRange"                         value="180"/>
 <property name="SightScale"                         value="-25,25"/>
 <!-- Harvesting -->
-<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" prob="0.75" count="6"/>
-<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" prob="0.75" count="12"/>
-<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Harvest"                               name="femur"        tool_category="Butcher" prob="0.75" count="4"/>
-<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="2"/>
+<drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="4,6"/>
+<drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="9,12"/>
+<drop event="Harvest"                               name="animalFat"    tool_category="Butcher" count="2,4"/>
+<drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2,4"/>
+<drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1,2"/>
 </entity_class>
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= RADIATED ANIMALS +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ -->
 <!-- ============================== Radiated Zombie Dog =================================================================================================================================================================== -->
@@ -4287,7 +4318,7 @@
 <property name="MaxHealth"                          value="500"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
 <!-- Explosion -->
@@ -4311,7 +4342,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="5000"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.25"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieStrongRegen"/>
 <!-- Explosion -->
@@ -4335,7 +4366,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="3000"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
 <!-- Harvesting -->
@@ -4355,7 +4386,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.20"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- AI Tasks -->
@@ -4401,7 +4432,7 @@
 <property name="RightHandJointName"                 value="Jaw"/>
 <property name="ExperienceGain"                     value="4500"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.25"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
 <!-- AI Tasks -->
@@ -4448,7 +4479,7 @@
 <property name="ApproachSpeed"                      value="1.35"/>
 <property name="NightApproachSpeed"                 value="1.5"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
-<property name="CorpseBlockChance"                  value="0.0"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
 <!-- AI Tasks -->
@@ -4759,5 +4790,17 @@
 <drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
 <drop event="Harvest"                               name="feather"      tool_category="Butcher" prob="0.75" count="30"/>
 <drop event="Destroy"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
+</entity_class>
+
+<!-- Zombie Gina -->     
+<entity_class name="zombieGina"                     extends="zombieArleneMoaner">
+<property name="HandItem"                           value="handZombieGina"/>
+<property name="MaxHealth"                          value="9999999"/>
+<property name="TintMaterial0"                      value="242,63,63"/>
+<property name="TintMaterial2"                      value="186,13,13"/>
+<!-- Movement -->
+<property name="WalkType"                           value="3"/>
+<!-- Harvest -->
+<drop event="Harvest"                               name="rottingFlesh"		tool_category="Butcher" count="0"/>
 </entity_class>
 </entity_classes>

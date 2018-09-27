@@ -438,6 +438,8 @@
 <property name="HandItem"                           value="handAnimalBear"/>
 <property name="AttackTimeoutDay"                   value="2"/>
 <property name="AttackTimeoutNight"                 value="2"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff"/>
 </entity_class>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= VEHICLES +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
@@ -2766,6 +2768,7 @@
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -2815,6 +2818,7 @@
 <property name="Explosion.EntityDamage"             value="250"/>
 <property name="Explosion.DamageBonus.earth"        value="0.75"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
 </entity_class>
@@ -2836,6 +2840,7 @@
 <property name="CanClimbVertical"                   value="true"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -4207,6 +4212,7 @@
 <property name="ExperienceGain"                     value="2000"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- Attack -->
 <property name="HandItem"                           value="handAnimalZombieDog"/>
 <property name="AttackTimeoutDay"                   value="1.5"/>
@@ -4273,6 +4279,7 @@
 <property name="ExperienceGain"                     value="1500"/>
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
 <property name="CorpseBlockChance"                  value="0"/>
+<property name="Buffs"                              value="zombieDefaultBuff;zombieWeakRegen"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        </property>
@@ -4334,6 +4341,8 @@
 <property name="Parent"                             value="Enemies"/>
 <property name="Class"                              value="EntityZombieDog"/>
 <property name="CorpseBlockChance"                  value="0"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieDefaultBuff;zombieNormalRegen"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/>       </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Base Layer.Attack"/>   </property>
