@@ -12550,7 +12550,7 @@ Mesh files no longer used:
 </property>
 </item>
 
-<item id="1901" name="handAnimalSnakeRad">
+<item id="1902" name="handAnimalSnakeRad">
 <property name="Extends"                        value="handMaster"/>
 <property name="CreativeMode"                   value="None"/>
 <property name="HoldType"                       value="35"/>
@@ -12566,7 +12566,7 @@ Mesh files no longer used:
 </property>
 </item>
 
-<item id="101" name="handAnimalZombieVultureRad">
+<item id="1903" name="handAnimalZombieVultureRad">
 <property name="Extends"                        value="handMaster"/>
 <property name="CreativeMode"                   value="None"/>
 <property name="HoldType"                       value="35"/>
@@ -12578,5 +12578,41 @@ Mesh files no longer used:
 <property name="Buff_chance"                    value="0.25,0.4,0.1,0.5"/>
 </property>
 </item>
-
+<!--
+<item id="1910" name="projectileSnake">
+<property name="Extends"                        value="projectileZombieExplosive"/>
+<property name="CreativeMode"                   value="None"/>
+  <property name="Meshfile"                       value="entities/animals/wolf/materials/wolfEyeFeral"/>
+  
+  <! - -<property name="Meshfile"                       value="Animals/Snake/snakeRagdoll"/>- - >
+<property name="Material"                       value="organic"/>
+<property class="Attributes">
+<property name="EntityDamage"                   value="10"/>
+<property name="BlockDamage"                    value="200"/>
+<property name="DamageBonus.earth"              value="0.25"/>
+<property name="DamageBonus.wood"               value="1.0"/>
+<property name="DamageBonus.stone"              value="1.75"/>
+<property name="DamageBonus.metal"              value="1.75"/>
+</property>    
+<property class="Action1">
+<property name="Class"                          value="Projectile"/>
+<property name="Explosion.ParticleIndex"        value="1"/>
+<property name="Explosion.RadiusBlocks"         value="5"/>
+<property name="Explosion.BlockDamage"          value="200"/>
+<property name="Explosion.RadiusEntities"       value="5"/>
+<property name="Explosion.EntityDamage"         value="25"/>
+<property name="Velocity"                       value="20"/>
+<property name="FlyTime"                        value="0.25"/>
+<property name="LifeTime"                       value="12"/>
+<property name="Explosion.RadiusBuffs"          value="3"/>
+<property name="Explosion.BlastPower"           value="70"/>
+<property name="Explosion.Buff"                 value="stunned"/>
+<property name="Explosion.Buff_chance"          value="0.75"/>
+<property name="Explosion.DamageBonus.earth"    value="0.25"/>
+<property name="Explosion.DamageBonus.wood"     value="1.0"/>
+<property name="Explosion.DamageBonus.stone"    value="1.75"/>
+<property name="Explosion.DamageBonus.metal"    value="1.75"/>
+</property>
+</item>
+-->
 </items>

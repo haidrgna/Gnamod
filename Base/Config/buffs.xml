@@ -5,8 +5,6 @@
 <!-- Player Character Buffs -->
 <buff id="isPlayer" buffif="+full > 0" actions="increment(@wellness,-999,1,0,1)"/>
 
-<!--<buff id="died" buffif="health lequal 0" actions="setvar(CTRspawned, 0);setvar(CTRspikeBleed, 0)"/> -->
-
 <buff id="spawnProtected" buffif="+full > 0" debuffif="CTRspawned greater 2" duration="30" mutex="spawned" onexpired="spawned" icon="ui_game_symbol_character" name_key="spawnProtected" description_key="spawnProtectedDesc" tooltip_key="spawnProtectedTooltip"> <modify id="0" stat="health" setValue="500"/> </buff>
 
 <buff id="spawned" actions="debuff(spawnProtected);increment(CTRspawned,1,100t,0,0)"/>
@@ -188,6 +186,13 @@
 
 <buff id="shockedBuff" duration="4.5" stack="discard" debuffif="ShockAmount equals 0" buffif="ShockAmount greater 0" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact" icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
 <modify id="0" stat="health" amount="-3" rate="0.5"/>  <modify id="1" stat="speedmodifier" mulValue="0.1" duration="3.2"/>  </buff>
+
+<buff id="explosiveTrap1" duration="25" stack="discard" mutex="trapImmunity" actions="attach(ParticleEffects/p_hotembersZombie, @impact);damage(5,0.1,0,1);buff(trapImmunity)" castsound="explosion1" icon="ui_game_symbol_loot_sack" name_key="explosiveTrap" description_key="explosiveTrapDesc" tooltip_key="explosiveTrapTooltip"/>
+<buff id="explosiveTrap2" duration="25" stack="discard" mutex="trapImmunity" actions="attach(ParticleEffects/p_hotembersZombie, @impact);damage(10,0.1,0,1);buff(trapImmunity)" castsound="explosion3" icon="ui_game_symbol_loot_sack" name_key="explosiveTrap" description_key="explosiveTrapDesc" tooltip_key="explosiveTrapTooltip"/>
+<buff id="explosiveTrap3" duration="25" stack="discard" mutex="trapImmunity" actions="attach(ParticleEffects/p_hotembersZombie, @impact);damage(25,0.1,0,1);buff(trapImmunity)" castsound="explosion2" icon="ui_game_symbol_loot_sack" name_key="explosiveTrap" description_key="explosiveTrapDesc" tooltip_key="explosiveTrapTooltip"/> 
+<buff id="explosiveTrap4" duration="25" stack="discard" mutex="trapImmunity" actions="attach(ParticleEffects/p_hotembersZombie, @impact);damage(5,0.1,0,1);buff(trapImmunity);buff(burningMolotov)" castsound="molotov_explosion" icon="ui_game_symbol_loot_sack" name_key="explosiveTrap" description_key="explosiveTrapDesc" tooltip_key="explosiveTrapTooltip"/> 
+
+<buff id="trapImmunity" duration="1200t"/>
 
 <!-- Alcohol Buffs -->
 <buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
