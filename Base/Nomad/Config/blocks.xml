@@ -4407,13 +4407,13 @@
 <block id="408" name="trapSpikesNew">
 <property name="Class" value="TrunkTip"/>
 <property name="Damage" value="1"/>
-<property name="Damage_received" value="33"/>
+<property name="Damage_received" value="25"/>
 <property name="Material" value="MtrapSpikes1"/>
 <property name="Shape" value="Ext3dModel"/>
 <property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="Traps/trap_spikes01" param1="main_mesh"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<property name="Collide" value="movement,melee,bullet,rocket"/>
 <property name="FuelValue" value="300"/>
 <property name="BuffsWhenWalkedOn" value="spikeTriggerWood"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
@@ -4427,6 +4427,7 @@
 </property>
 <drop event="Harvest" name="wood" count="0,1"/>
 <drop event="Destroy" name="wood" count="0,1"/>
+<property name="PassThroughDamage" value="true"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
@@ -12899,7 +12900,7 @@
 <property name="CreativeMode" value="Player"/>
 <property name="CustomIcon" value="cntStorageHealth"/>
 <property name="Class" value="Loot"/>
-<property name="LootList" value="1"/>
+<property name="LootList" value="2"/>
 <property name="Texture" value="572"/>
 <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
 <property class="UpgradeBlock">
