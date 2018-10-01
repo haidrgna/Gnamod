@@ -430,7 +430,7 @@ name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="blue
 <modify id="0" stat="wellness" modifyMaxValue="500"/>  </buff>
 
 <buff id="ginaBuff" duration="25t" stack="extend" type="bleeding" icon="ui_game_symbol_critical" tooltip_key="Gina loves you">
-<modify id="0" stat="stamina" amount="-20" rate="5"/> <modify id="1" stat="health" amount="1" rate="5"/>  <modify id="2" stat="speedmodifier" mulValue="0.10"/> </buff>
+<modify id="0" stat="stamina" amount="-20" rate="5"/> <modify id="1" stat="health" amount="5" rate="5"/>  <modify id="2" stat="speedmodifier" mulValue="0.10"/> </buff>
 
 <buff id="ginaBoost" actions="attach(ParticleEffects/p_hotembersZombie, @impact)">
 <modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>  <modify id="1" stat="speedmodifier" modifyValue="1.2"/> </buff>
