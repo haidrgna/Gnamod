@@ -137,7 +137,7 @@
 
 <!-- Trap or Enviroment Buffs -->
 <buff id="spikeTriggerWood" mutex="spawnProtected,firstAidLarge,suicideBomber" onexpired="spikeBleedZombieStop" duration="2" stack="reset" actions="max(CTRspikeBleed,20);increment(CTRspikeBleed, 2, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull">
-<modify id="0" stat="speedmodifier" mulValue="0.10"/> </buff>
+<modify id="0" stat="speedmodifier" mulValue="0.15"/> </buff>
 
 <buff id="spikeTriggerTrunk" mutex="spawnProtected,firstAidLarge,suicideBomber" onexpired="spikeBleedZombieStop" duration="2" stack="reset" actions="max(CTRspikeBleed,20);increment(CTRspikeBleed, 1, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull">
 <modify id="0" stat="speedmodifier" mulValue="0.50"/> </buff>
