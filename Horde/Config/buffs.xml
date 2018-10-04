@@ -137,14 +137,14 @@
 
 <!-- Trap or Enviroment Buffs -->
 <buff id="spikeTriggerWood" mutex="spawnProtected,firstAidLarge,suicideBomber" onexpired="spikeBleedZombieStop" duration="2" stack="reset" actions="max(CTRspikeBleed,20);increment(CTRspikeBleed, 2, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull">
-<modify id="0" stat="speedmodifier" mulValue="0.25"/> </buff>
+<modify id="0" stat="speedmodifier" mulValue="0.10"/> </buff>
 
 <buff id="spikeTriggerTrunk" mutex="spawnProtected,firstAidLarge,suicideBomber" onexpired="spikeBleedZombieStop" duration="2" stack="reset" actions="max(CTRspikeBleed,20);increment(CTRspikeBleed, 1, 1, 0, 0);debuff(naturalHealing);debuff(minorAid);debuff(firstAid)" name_key="spikeTrigger" description_key="spikeTriggerDesc" tooltip_key="spikeTriggerTooltip" icon="ui_game_symbol_skull">
-<modify id="0" stat="speedmodifier" mulValue="0.75"/> </buff>
+<modify id="0" stat="speedmodifier" mulValue="0.50"/> </buff>
 
 <buff id="spikeBleedCounter" mutex="spikeTriggerWood,spikeTriggerTrunk" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="increment(CTRspikeBleed, -1, 1, 0, 0)"/>
 
-<buff id="spikeBleedZombieStop" mutex="isPlayer,spikeTriggerWood,spikeTriggerTrunk" actions="setvar(CTRspikeBleed, 0)"/>
+<buff id="spikeBleedCounterZombie" mutex="isPlayer,spikeTriggerWood,spikeTriggerTrunk" buffif="CTRspikeBleed greater 0" debuffif="CTRspikeBleed lequal 0" actions="setvar(CTRspikeBleed, 1)"/>
 
 <buff id="spikeBleedStage1" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" actions="debuff(naturalHealing);damage(1,2,0,0)" mutex="spawnProtected,spikeBleedStage2,spikeBleedStage3" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc" tooltip_key="spikeWoundTooltip" icon="ui_game_symbol_critical">
 <modify id="0" stat="stamina" amount="-0.5" rate="1"/> </buff>
@@ -155,31 +155,31 @@
 <buff id="spikeBleedStage3" buffif="CTRspikeBleed greater 20" debuffif="CTRspikeBleed lequal 20" actions="debuff(naturalHealing);debuff(spikeBleedStage2);debuff(spikeBleedStage1);damage(3,2,0,0)" mutex="spawnProtected" type="bleeding" name_key="spikeWound" description_key="spikeWoundDesc"  icon="ui_game_symbol_critical">
 <modify id="0" stat="stamina" amount="-2" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieHigh" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerWood" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieHigh" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerWood" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-30" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieMed" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerWood,zombieWeakRegen" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieMed" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerWood,zombieWeakRegen" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-20" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieLow" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerWood,zombieNormalRegen"  mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieLow" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerWood,zombieNormalRegen"  mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-10" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieAll" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerWood" mutex="isPlayer,suicideBomber">
+<buff id="spikeDamageZombieAll" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerWood" mutex="isPlayer,suicideBomber">
 <modify id="0" stat="health" amount="-3" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieTrunkHigh" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerTrunk" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieTrunkHigh" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerTrunk" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieNormalRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-6" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieTrunkMed" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerTrunk,zombieWeakRegen" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieTrunkMed" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerTrunk,zombieWeakRegen" mutex="isPlayer,suicideBomber,zombieNormalRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-4" rate="1"/> </buff>
 
-<buff id="spikeDamageZombieTrunkWeak" buffif="CTRspikeBleed gequal 1" debuffif="CTRspikeBleed less 1" requires="spikeTriggerTrunk,zombieNormalRegen" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieStrongRegen">
+<buff id="spikeDamageZombieTrunkWeak" buffif="CTRspikeBleed greater 2" debuffif="CTRspikeBleed lequal 0" requires="spikeTriggerTrunk,zombieNormalRegen" mutex="isPlayer,suicideBomber,zombieWeakRegen,zombieStrongRegen">
 <modify id="0" stat="health" amount="-2" rate="1"/> </buff>
 
 <buff id="enemyWaterSpeed" mutex="isPlayer" duration="1" stack="reset">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>  <modify id="1" stat="speedmodifier" modifyValue="2"/> </buff>
 
-<buff id="triggerWarmByFire" duration="3" mutex="overheated,heat1,heat2" stack="discard" debuffif="+heatSource less 1" actions="buff(warmByFire);"/>
+<buff id="triggerWarmByFire" duration="3" mutex="overheated,heat1,heat2" stack="discard" debuffif="+heatSource less 1" actions="buff(warmByFire)"/>
 
 <buff id="warmByFire" duration="0" mutex="overheated,heat1,heat2" stack="discard" actions="debuff(waterCool1);debuff(waterCool2);debuff(waterCool3)" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 <modify id="0" stat="coretemp" amount="0.5" rate="1"/>  </buff>
