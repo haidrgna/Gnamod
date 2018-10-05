@@ -236,7 +236,7 @@
 
 <wilderness_rules>
 <wilderness_rule name="wildernessBase"          spawn_min_max="2,5">  <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
-<wilderness_rule name="wildernessNomad"         spawn_min_max="3,10"> <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
+<wilderness_rule name="wildernessNomad"         spawn_min_max="7,14"> <path_material value="asphalt" /> <path_radius value="3" /> <path_adjust_terrain value="false"/>   <prefab_rule name="wildernessBase" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNecropolis"    spawn_min_max="3,5">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="cityNecropolis" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessHorde"         spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="5" /> <path_adjust_terrain value="false"/>   <prefab_rule name="none" prob="1"/>  </wilderness_rule>
 <wilderness_rule name="wildernessNone"          spawn_min_max="0,0">  <path_material value="asphalt" /> <path_radius value="0" /> <path_adjust_terrain value="false"/>   <prefab_rule name="none" prob="1"/>  </wilderness_rule>
@@ -280,6 +280,7 @@
 </prefab_rule>     
 
 <prefab_rule name="cityRural">
+<prefab rule="campsNomad" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsOldWest" prob="0.9"/>
 <prefab rule="buildingsRural" prob="0.09"/>
 <prefab rule="housing" max_count="8" prob="0.01"/>
@@ -287,6 +288,7 @@
 </prefab_rule>      
 
 <prefab_rule name="cityHotel">
+<prefab rule="campsNomad" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsCars" min_count="1" max_count="1" prob="0.25"/>
 <prefab rule="buildingsHotel" min_count="1" max_count="1" prob="0.35"/>
 <prefab rule="buildingsStores" min_count="1" max_count="1" prob="0.25"/>
@@ -296,12 +298,14 @@
 </prefab_rule>      
   
 <prefab_rule name="cityMilitary">
+<prefab rule="campsNomad" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsMilitary" prob="0.95"/>
 <prefab rule="housesAverage" max_count="5" prob="0.025"/>
 <prefab rule="buildingsBroken" max_count="5" prob="0.025"/>
 </prefab_rule>     
 
 <prefab_rule name="cityMassive">
+<prefab rule="campsNomad" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsCars" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsHotel" max_count="2" prob="10"/>
 <prefab rule="buildingsNightlife" min_count="2" prob="15"/>
@@ -360,6 +364,7 @@
 </prefab_rule>
 
 <prefab_rule name="wildernessBase">
+<prefab rule="campsNomad" min_count="1" max_count="2" prob="10"/>
 <prefab rule="buildingsBusiness"/>
 <prefab rule="buildingsBroken" prob="30"/>
 <prefab rule="buildingsSettlements" max_count="1" prob="0.1"/>
@@ -370,7 +375,20 @@
 <prefab rule="housesTrailers" prob="10"/>
 <prefab rule="housesAverage" prob="5"/>
 <prefab rule="caves" prob="5"/>
-</prefab_rule>   
+</prefab_rule>
+
+<prefab_rule name="campsNomad">
+<prefab name="gnamod_BaseCamp_nomad"/>
+<prefab name="gnamod_Campsite1_nomad"/>
+<prefab name="gnamod_Campsite2_nomad"/>
+<prefab name="gnamod_Campsite3_nomad"/>
+<prefab name="gnamod_Campsite4_nomad"/>
+<prefab name="gnamod_Campsite5_nomad"/>
+<prefab name="gnamod_Campsite6_nomad"/>
+<prefab name="gnamod_Campsite7_nomad"/>
+<prefab name="gnamod_Campsite8_nomad"/>
+<prefab name="gnamod_Campsite9_nomad"/>
+</prefab_rule>
 
 <prefab_rule name="buildingsOldWest">
 <prefab name="oldwest_stables"/>

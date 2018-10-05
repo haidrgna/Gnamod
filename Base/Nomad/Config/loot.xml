@@ -3427,16 +3427,16 @@ loot_quality_template=  "startingKit">
 <item group="startingKitFood" count="1" prob="100"/>
 </lootcontainer>
 <!-- =========================== QUEST BAG ======================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="questBag1"                count="all">  <item group="lootBackpacks"/>   <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootgroup name="questBag2"                count="all">  <item group="lootBackpacks"/>   <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootgroup name="questBag3"                count="all">  <item group="lootBackpacks"/>   <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootgroup name="questBag4"                count="all">  <item group="lootBackpacks"/>   <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootgroup name="questBag5"                count="all">  <item group="lootBackpacks"/>   <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootcontainer id="154" count="1" size="5,5" open_time="15" 
+<lootgroup name="questBag1"                count="all">  <item group="lootBackpacks"/>   <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
+<lootgroup name="questBag2"                count="all">  <item group="lootBackpacks"/>   <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
+<lootgroup name="questBag3"                count="all">  <item group="lootBackpacks"/>   <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
+<lootgroup name="questBag4"                count="all">  <item group="lootBackpacks"/>   <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
+<lootgroup name="questBag5"                count="all">  <item group="lootBackpacks"/>   <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
+<lootcontainer id="154" count="2,3" size="9,9" open_time="15" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "unleveled">
+loot_quality_template=  "startingKit">
 
 <item group="ammoGuns" count="10,20"    prob="5"/>
 <item group="kitExplosives" count="10"  prob="5"/>

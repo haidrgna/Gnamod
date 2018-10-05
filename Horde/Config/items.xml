@@ -12308,7 +12308,7 @@ Mesh files no longer used:
 <property name="Auto_fire"                    value="true"/>
 <property name="Single_magazine_usage"        value="true"/>
 <property name="Infinite_ammo"                value="true"/>
-<property name="Magazine_items"               value="adminRocket,adminTorchRocket,projectileZombieVomit,projectileZombieVomitStrong,projectileZombieFire,projectileZombieExplosive"/>
+<property name="Magazine_items"               value="adminRocket,adminTorchRocket,projectileZombieVomit,projectileZombieVomitStrong,projectileZombieFire,projectileZombieExplosive,projectileTest1,projectileTest2"/>
 <property name="Magazine_item_ray_counts"     value="1,1,1,1,1,1"/>
 <property name="Rays_spread"                  value="0.10"/>
 </property>
@@ -12509,7 +12509,7 @@ Mesh files no longer used:
 </item>
   
 <item id="1854" name="q_GnamodNomadTrail"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
-<property class="Action1">  <property name="QuestGiven" value="quest_GnamodNomadTrail"/> </property>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodNomad3"/> </property>
 </item>
 
 <item id="1855" name="q_GnamodZombieKilling"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
@@ -12524,7 +12524,7 @@ Mesh files no longer used:
 <property class="Action1">  <property name="QuestGiven" value="quest_GnamodTheLastStand"/> </property>
 </item>
   
-<item id="1900" name="handZombieGina">
+<item id="1899" name="handZombieGina">
 <property name="Extends"                        value="handMaster"/>
 <property name="CreativeMode"                   value="None"/>
 <property class="Action0">
@@ -12535,6 +12535,27 @@ Mesh files no longer used:
 <property name="DamageBonus.stone"              value="1.2"/>
 <property name="DamageBonus.metal"              value="1.2"/>
 <property name="DamageBonus.wood"               value="0.5"/>
+</property>
+</item>
+
+<item id="1900" name="handZombieGinaPuke">
+<property name="Extends"                        value="handZombiePuke"/>
+<property name="CreativeMode"                   value="None"/>
+<property class="Action0">
+<property name="DamageEntity"                   value="0"/>
+<property name="DamageBlock"                    value="0"/>
+<property name="Buff"                           value="ginaBuff"/>
+<property name="Buff_chance"                    value="0.25"/>
+<property name="DamageBonus.stone"              value="1.2"/>
+<property name="DamageBonus.metal"              value="1.2"/>
+<property name="DamageBonus.wood"               value="0.5"/>
+</property>
+<property class="Action1">
+<property name="Delay"                          value="0.5"/>
+<property name="Range"                          value="250"/>
+<property name="Magazine_items"                 value="projectileZombieTest1"/>
+<property name="Rays_spread"                    value="0.1"/>
+<property name="Hitmask_override"               value="Bullet"/>
 </property>
 </item>
 
@@ -12582,13 +12603,12 @@ Mesh files no longer used:
 <property name="Buff_chance"                    value="0.25,0.4,0.1,0.5"/>
 </property>
 </item>
-<!--
-<item id="1910" name="projectileSnake">
+
+<item id="1910" name="projectileTest1">
 <property name="Extends"                        value="projectileZombieExplosive"/>
 <property name="CreativeMode"                   value="None"/>
-  <property name="Meshfile"                       value="entities/animals/wolf/materials/wolfEyeFeral"/>
-  
-  <! - -<property name="Meshfile"                       value="Animals/Snake/snakeRagdoll"/>- - >
+<!--<property name="Meshfile"                       value="ParticleEffects/p_impact_metal_on_metal"/>
+<property name="ModelOffset"                    value="50,0,0"/>-->
 <property name="Material"                       value="organic"/>
 <property class="Attributes">
 <property name="EntityDamage"                   value="10"/>
@@ -12605,9 +12625,9 @@ Mesh files no longer used:
 <property name="Explosion.BlockDamage"          value="200"/>
 <property name="Explosion.RadiusEntities"       value="5"/>
 <property name="Explosion.EntityDamage"         value="25"/>
-<property name="Velocity"                       value="20"/>
-<property name="FlyTime"                        value="0.25"/>
-<property name="LifeTime"                       value="12"/>
+<property name="Velocity"                       value="200"/>
+<property name="FlyTime"                        value="1.25"/>
+<property name="LifeTime"                       value="120"/>
 <property name="Explosion.RadiusBuffs"          value="3"/>
 <property name="Explosion.BlastPower"           value="70"/>
 <property name="Explosion.Buff"                 value="stunned"/>
@@ -12618,5 +12638,40 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.metal"    value="1.75"/>
 </property>
 </item>
--->
+
+<item id="1911" name="projectileTest2">
+<property name="Extends"                        value="projectileZombieExplosive"/>
+<property name="CreativeMode"                   value="None"/>
+<property name="Meshfile"                       value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
+<!--<property name="ModelOffset"                    value="0,0,50"/>-->
+<property name="Material"                       value="organic"/>
+<property class="Attributes">
+<property name="EntityDamage"                   value="10"/>
+<property name="BlockDamage"                    value="200"/>
+<property name="DamageBonus.earth"              value="0.25"/>
+<property name="DamageBonus.wood"               value="1.0"/>
+<property name="DamageBonus.stone"              value="1.75"/>
+<property name="DamageBonus.metal"              value="1.75"/>
+</property>    
+<property class="Action1">
+<property name="Class"                          value="Projectile"/>
+<property name="Explosion.ParticleIndex"        value="1"/>
+<property name="Explosion.RadiusBlocks"         value="5"/>
+<property name="Explosion.BlockDamage"          value="200"/>
+<property name="Explosion.RadiusEntities"       value="5"/>
+<property name="Explosion.EntityDamage"         value="50"/>
+<property name="Velocity"                       value="5"/>
+<property name="FlyTime"                        value="0.75"/>
+<property name="LifeTime"                       value="120"/>
+<property name="Explosion.RadiusBuffs"          value="3"/>
+<property name="Explosion.BlastPower"           value="70"/>
+<property name="Explosion.Buff"                 value="stunned"/>
+<property name="Explosion.Buff_chance"          value="0.75"/>
+<property name="Explosion.DamageBonus.earth"    value="0.05"/>
+<property name="Explosion.DamageBonus.wood"     value="1.0"/>
+<property name="Explosion.DamageBonus.stone"    value="5.0"/>
+<property name="Explosion.DamageBonus.metal"    value="5.0"/>
+</property>
+</item>
+
 </items>

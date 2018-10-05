@@ -4895,7 +4895,7 @@
 <drop event="Destroy"                               name="rottingFlesh" count="1"/>
 </entity_class>
   
-<!-- Zombie Gina -->     
+<!-- ===== Zombie Gina ===== -->     
 <entity_class name="zombieGina"                     extends="zombieArleneMoaner">
 <property name="HandItem"                           value="handZombieGina"/>
 <property name="MaxHealth"                          value="9999999"/>
@@ -4904,9 +4904,36 @@
 <property name="Buffs"                              value="ginaBoost"/>
 <!-- Movement -->
 <property name="WalkType"                           value="3"/>
-<!-- Harvest -->
-<drop event="Harvest"                               name="rottingFlesh"		tool_category="Butcher" count="0"/>
 </entity_class>
+  
+<entity_class name="zombieGinaPuke"                 extends="zombieGhoulPuke">
+<property name="HandItem"                           value="handZombieGinaPuke"/>
+<property name="MaxHealth"                          value="99999"/>
+<property name="TintMaterial0"                      value="242,63,63"/>
+<property name="TintMaterial2"                      value="186,13,13"/>
+<property name="Buffs"                              value="ginaBoost"/>
+<property name="Mesh"                               value="Zombies/zombieStandardStripperRagdoll"/>
+<property name="SoundRandom"                        value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+<property name="SoundAlert"                         value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+<property name="SoundAttack"                        value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+<property name="SoundHurt"                          value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+<property name="SoundDeath"                         value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+<property name="SoundSense"                         value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+<property name="PhysicsBody"                        value="zombieStandardFemale"/>
+<property name="PhysicsBody"                        value="zombieStandardFemale"/>
+<!-- AI Tasks -->
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
+<!-- Movement -->
+<property name="WalkType"                           value="3"/>
 </entity_class>
 </entity_classes>
 
