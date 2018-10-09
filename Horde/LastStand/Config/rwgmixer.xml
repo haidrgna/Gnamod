@@ -1519,8 +1519,8 @@
 <!-- Gnamod Horde Mode Biome Spawning -->
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="plains">          <distance_from_center range="0,200"/>         </biome_spawn_rule>
-<biome_spawn_rule name="forest">          <distance_from_center range="200,300"/>       </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <distance_from_center range="0,150"/>         </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <distance_from_center range="1500,300"/>       </biome_spawn_rule>
 <biome_spawn_rule name="burnt_forest">    <distance_from_center range="300,500"/>       </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 <biome_spawn_rule name="wasteland">       <distance_from_center range="500,750"/>       </biome_spawn_rule>

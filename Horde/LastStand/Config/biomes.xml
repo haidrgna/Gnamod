@@ -116,22 +116,6 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.01"> <!-- Lake -->
-<layers>
-<layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
-</layers>
-
-<decorations>
-<!-- Grass & Shrubs -->
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
-</decorations>
-</subbiome> 
-
 <subbiome prob="0.20"> <!-- Open Space -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="forestGround"      cluster="2" prob="0.3"    rwgGenerationType="all"/> </layer>
@@ -193,6 +177,8 @@
 <decoration type="prefab" name="cave_02"                                  prob="0.01"/>
 <decoration type="prefab" name="cave_03"                                  prob="0.01"/>
 <decoration type="prefab" name="cave_04"                                  prob="0.01"/>
+<!-- Other -->
+<!--<decoration type="block" blockname="crater"                               prob="0.005"/>-->
 </decorations>
 </subbiome>
 
@@ -310,6 +296,8 @@
 <decoration type="prefab" name="cave_02"                                  prob="0.001"/>
 <decoration type="prefab" name="cave_03"                                  prob="0.001"/>
 <decoration type="prefab" name="cave_04"                                  prob="0.001"/>
+<!-- Other -->
+<!--<decoration type="block" blockname="crater"                               prob="0.005"/>-->
 </decorations>
 </subbiome>
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
@@ -425,6 +413,8 @@
 <decoration type="prefab" name="cave_02"                                  prob="0.001"/>
 <decoration type="prefab" name="cave_03"                                  prob="0.001"/>
 <decoration type="prefab" name="cave_04"                                  prob="0.001"/>
+<!-- Other -->
+<!--<decoration type="block" blockname="crater"                               prob="0.005"/>-->
 </decorations>
 
 <terrain class="Forest" />
@@ -513,22 +503,6 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.01"> <!-- Lake -->
-<layers>
-<layer depth="2"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">     <resource blockname="harvestLayer"      cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="harvestLayer"/>
-<layer depth="19" blockname="bedrock"/>
-</layers>
-
-<decorations>
-<!-- Grass & Shrubs -->
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
-</decorations>
-</subbiome> 
-
 <subbiome prob="0.30"> <!-- Rock Cluster -->
 <layers>
 <layer depth="2"  blockname="grass">          <resource blockname="plainsGround"      cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>
@@ -571,6 +545,8 @@
 <decoration type="prefab" name="rock_form02"                              prob="0.0005"/>
 <decoration type="prefab" name="rock_form01"                              prob="0.005"/>
 <decoration type="prefab" name="resource_lead_pile"                       prob="0.00035"/>
+<!-- Other -->
+<!--<decoration type="block" blockname="crater"                               prob="0.005"/>-->
 </decorations>
 </subbiome>
   
@@ -638,6 +614,8 @@
 <!-- Rocks & Stones -->
 <decoration type="block" blockname="rockHelper"                           prob="0.012"/>
 <decoration type="block" blockname="boulderHelper"                        prob="0.002"/>
+<!-- Other -->
+<!--<decoration type="block" blockname="crater"                               prob="0.005"/>-->
 </decorations>
 
 <terrain class="Forest"/>
