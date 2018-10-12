@@ -30,10 +30,10 @@
 <buff id="survivor7" buffif="CTRspawned greater 168" debuffif="CTRspawned greater 336" actions="increment(@wellness,0.075,100t,0,0)" icon="ui_game_symbol_trophy7" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor7Tooltip" mutex="survivor8,survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.200" rate="1"/> <modify id="1" stat="health" amount="0.025" rate="1"/> </buff>
 
-<buff id="survivor8" buffif="CTRspawned greater 336" debuffif="CTRspawned greater 672" actions="increment(@wellness,0.100,100t,0,0)" icon="ui_game_symbol_trophy14" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor8Tooltip" mutex="survivor9,survivor10">
+<buff id="survivor8" buffif="CTRspawned greater 336" debuffif="CTRspawned greater 672" actions="increment(@wellness,0.100,100t,0,0)" icon="ui_game_symbol_trophy50" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor8Tooltip" mutex="survivor9,survivor10">
 <modify id="0" stat="stamina" amount="0.300" rate="1"/> <modify id="1" stat="health" amount="0.050" rate="1"/> </buff>
 
-<buff id="survivor9" buffif="CTRspawned greater 672" debuffif="CTRspawned greater 1176" actions="increment(@wellness,0.150,100t,0,0)" icon="ui_game_symbol_trophy28" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor9Tooltip" mutex="survivor10">
+<buff id="survivor9" buffif="CTRspawned greater 672" debuffif="CTRspawned greater 1176" actions="increment(@wellness,0.150,100t,0,0)" icon="ui_game_symbol_trophy50" name_key="survivor7" description_key="survivor7Desc" tooltip_key="survivor9Tooltip" mutex="survivor10">
 <modify id="0" stat="stamina" amount="0.400" rate="1"/> <modify id="1" stat="health" amount="0.075" rate="1"/> </buff>
   
 <buff id="survivor10" buffif="CTRspawned greater 1176" actions="increment(@wellness,0.2,100t,0,0)" icon="ui_game_symbol_trophy50" name_key="survivor10" description_key="survivor10Desc" tooltip_key="survivor10Tooltip" overrides="survivor9">
@@ -440,5 +440,5 @@ name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="blue
 <buff id="ginaBoost" actions="attach(ParticleEffects/p_hotembersZombie, @impact)" icon="ui_game_symbol_zombie" name_key="ginaBoost" description_key="ginaBoostDesc" tooltip_key="ginaBoostTooltip">
 <modify id="0" stat="speedmodifier" modifyMaxValue="5.0"/>  <modify id="1" stat="speedmodifier" modifyValue="1.2"/> </buff>
 
-<buff id="asshole" duration="1" stack="discard" actions="attach(ParticleEffects/p_hotembersZombie, @impact);damage(1,0.1,0,1)" castsound="traderdislikegreeting"/> 
+<buff id="asshole" duration="1" stack="discard" actions="damage(1,0.1,0,1)" castsound="traderdislikegreeting"/> 
 </buffs>
