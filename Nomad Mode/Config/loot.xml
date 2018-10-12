@@ -1204,13 +1204,13 @@
 <lootgroup name="matsConstruction">
 <item name="cement"                     count="150,300" prob="15"/>
 <item name="bricks"                     count="150,300" prob="18"/>
-<item name="boardAndNails"              count="150,300" prob="16"/>
-<item name="mortarMix"                  count="150,300" prob="15"/>
-<item name="brickAndMortar"             count="75,150"  prob="12"/>
+<item name="boardAndNails"              count="150,300" prob="15"/>
+<item name="mortarMix"                  count="150,300" prob="13"/>
+<item name="brickAndMortar"             count="75,150"  prob="10"/>
 <item name="steelPolish"                count="1,50"    prob="1"/>
-<item name="cobblestones"               count="300,600" prob="12"/>
-<item name="concreteMix"                count="150,300" prob="10"/>
-<item name="paint"                      count="30,3000" prob="1"/>
+<item name="cobblestones"               count="300,600" prob="10"/>
+<item name="concreteMix"                count="150,300" prob="8"/>
+<item name="paint"                      count="150,300" prob="10"/>
 </lootgroup>
 <!-- Forged Materials Base Group -->
 <lootgroup name="matsForged">
@@ -1282,7 +1282,6 @@
 <item name="switch"                     count="1,2"/>
 <item name="electrictimerrelay"         count="1"/>
 <item name="electricwirerelay"          count="2,6"/>
-<item name="motionsensor"               count="1,2"/>
 <item name="dartTrap"                   count="1,4"/>
 <item name="shotgunTurret"              count="1,3"/>
 <item name="autoTurret"                 count="1,3"/>
@@ -2068,7 +2067,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_garbage"
 sound_close=            "UseActions/close_garbage"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap1,explosiveTrap2,explosiveTrap3,explosiveTrap4"
+buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Loot: 80 -->
 <item group="cnt011" count="1" prob="40"/>
 <item group="cnt011" count="2" prob="35"/>
@@ -2082,7 +2083,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap1,explosiveTrap2,explosiveTrap3,explosiveTrap4"
+buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Loot: 80 -->
 <item group="cnt012" count="0,1" prob="19"/>
 <item group="cnt012" count="1" prob="60"/>
@@ -2096,7 +2099,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap1,explosiveTrap2,explosiveTrap3,explosiveTrap4"
+buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Loot: 80 -->
 <item group="cnt013" count="0,1" prob="19"/>
 <item group="cnt013" count="1" prob="60"/>
@@ -2210,7 +2215,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_cardboard"
 sound_close=            "UseActions/close_cardboard"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap1,explosiveTrap2,explosiveTrap3,explosiveTrap4"
+buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Loot: 80 -->
 <item group="cnt021" count="1" prob="20"/>
 <item group="cnt021" count="2" prob="45"/>
@@ -2407,7 +2414,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_mailbox"
 sound_close=            "UseActions/close_mailbox"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap4"
+buff_chance=            "0.1">
 <!-- Chance of Loot: 80 -->
 <item group="cnt035" count="1,2" prob="40"/>
 <item group="cnt035" count="2" prob="35"/>
@@ -2421,7 +2430,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_mailbox"
 sound_close=            "UseActions/close_mailbox"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap4"
+buff_chance=            "0.1">
 <!-- Chance of Loot: 80 -->
 <item group="cnt036" count="1" prob="20"/>
 <item group="cnt036" count="2" prob="45"/>
@@ -3427,16 +3438,16 @@ loot_quality_template=  "startingKit">
 <item group="startingKitFood" count="1" prob="100"/>
 </lootcontainer>
 <!-- =========================== QUEST BAG ======================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="questBag1"                count="all">  <item group="lootBackpacks"/>   <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
-<lootgroup name="questBag2"                count="all">  <item group="lootBackpacks"/>   <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
-<lootgroup name="questBag3"                count="all">  <item group="lootBackpacks"/>   <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
-<lootgroup name="questBag4"                count="all">  <item group="lootBackpacks"/>   <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
-<lootgroup name="questBag5"                count="all">  <item group="lootBackpacks"/>   <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/>  <item group="ammoGuns" count="10"/>  </lootgroup>
-<lootcontainer id="154" count="2,3" size="9,9" open_time="15" 
+<lootgroup name="questBag1"                count="all">  <item group="lootBackpacks"/>   <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
+<lootgroup name="questBag2"                count="all">  <item group="lootBackpacks"/>   <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
+<lootgroup name="questBag3"                count="all">  <item group="lootBackpacks"/>   <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
+<lootgroup name="questBag4"                count="all">  <item group="lootBackpacks"/>   <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
+<lootgroup name="questBag5"                count="all">  <item group="lootBackpacks"/>   <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
+<lootcontainer id="154" count="1" size="5,5" open_time="15" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "startingKit">
+loot_quality_template=  "unleveled">
 
 <item group="ammoGuns" count="10,20"    prob="5"/>
 <item group="kitExplosives" count="10"  prob="5"/>
@@ -3450,7 +3461,7 @@ loot_quality_template=  "startingKit">
 <item group="startingKitBase"           prob="5"/>
 </lootcontainer>  
 <!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="cnt155"> <item group="blocksBase" count="2,3" prob="10"/>  <item group="blocksWorkstation" prob="5"/> <item group="blocksElectric" prob="10"/> <item group="lootHWMats" count="3,4" prob="50"/>  <item group="lootHWTools" count="1,3" prob="25"/>  </lootgroup>
+<lootgroup name="cnt155"> <item group="blocksBase" count="1,2" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="10"/> <item group="lootHWMats" count="3,4" prob="52"/>  <item group="lootHWTools" prob="25"/>  </lootgroup>
 <lootcontainer id="155" count="1" size="9,9" open_time="0" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_dumpster"
@@ -3459,7 +3470,7 @@ loot_quality_template=  "hordeTreasure">
 <item group="cnt155" count="3,10" prob="100"/>
 </lootcontainer>
 <!-- =========================== LAST STAND LOOT =============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt156a"> <item name="firstAidKit" count="2,5" prob="19.9"/> <item group="medicalBandage" count="2,5" prob="20"/> <item group="medicalPills" count="3,6" prob="20"/> <item group="medicalSupply" count="2,5" prob="40"/> <item name="beaker" count="1" prob="0.1"/> </lootgroup>
+<lootgroup name="cnt156a"> <item name="firstAidKit" count="2,5" prob="20"/> <item group="medicalBandage" count="2,5" prob="20"/> <item group="medicalPills" count="3,6" prob="20"/> <item group="medicalSupply" count="2,5" prob="40"/> </lootgroup>
 <lootgroup name="cnt156b"> <item group="foodMeat" count="5" prob="20"/> <item group="foodStock" count="5" prob="20"/> <item group="foodPrepared" count="5" prob="10"/> <item group="foodDrinks" count="5" prob="20"/> <item group="foodCanned" count="5" prob="30"/> </lootgroup>
 <lootgroup name="cnt156c"> <item group="clothGeneral" prob="50"/> <item group="armorRS" prob="50"/> </lootgroup>
 <lootgroup name="cnt156d"> <item group="lootHWTools" prob="95"/> <item name="repairKit" count="3,7" prob="5"/>  </lootgroup>
@@ -3499,23 +3510,5 @@ sound_open=             "UseActions/open_safe"
 sound_close=            "UseActions/close_safe"
 loot_quality_template=  "hordeTreasure">
 <item group="cnt159" count="100" prob="100"/>
-</lootcontainer>
-<!-- =========================== LAST STAND MATS =============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt160"> <item group="lootHWMats" count="25" prob="100"/>  </lootgroup>
-<lootcontainer id="160" count="1" size="7,7" open_time="1"
-destroy_on_close=       "false"
-sound_open=             "UseActions/open_cardboard"
-sound_close=            "UseActions/close_cardboard"
-loot_quality_template=  "hordeTreasure">
-<item group="cnt160" count="100" prob="100"/>
-</lootcontainer>
-<!-- =========================== LAST STAND BUILD ============================================================================================================================================================================================================================================================================================================================== -->
-<lootgroup name="cnt161"> <item group="blocksBase" count="5" prob="35"/> <item group="blocksOther" count="5" prob="20"/> <item group="blocksWorkstation" count="1" prob="15"/> <item group="blocksElectric" count="5" prob="30"/> <item name="keystoneBlock" count="1" prob="1"/>  </lootgroup>
-<lootcontainer id="161" count="1" size="7,7" open_time="1"
-destroy_on_close=       "false"
-sound_open=             "UseActions/open_cardboard"
-sound_close=            "UseActions/close_cardboard"
-loot_quality_template=  "hordeTreasure">
-<item group="cnt161" count="100" prob="100"/>
 </lootcontainer>
 </lootcontainers>
