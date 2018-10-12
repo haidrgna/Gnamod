@@ -8,6 +8,7 @@
 
 <block id="2047" name="terrainMaster">
 <property name="CreativeMode" value="None"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="stone"/>
 <property name="Shape" value="Terrain"/>
 <property name="Mesh" value="terrain"/>
@@ -20,7 +21,6 @@
 <property name="HarvestOverdamage" value="false"/>
 <property name="CanMobsSpawnOn" value="true"/>
 <property name="Group" value="Building"/>
-<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
 <drop event="Destroy" count="0"/>
 <property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
@@ -248,8 +248,6 @@
 </property>
 <drop event="Harvest" name="rockSmall" count="15,30" tool_category="harvestingTools"/>
 <drop event="Fall" name="destroyedAsphalt" count="1" prob="0.10" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="16" name="gravel">
@@ -702,9 +700,7 @@
 <drop event="Harvest" name="rockSmall" count="3,17" tool_category="harvestingTools"/>
 <drop event="Harvest" name="scrapIron" count="9,27" tool_category="harvestingTools"/>
 <drop event="Fall" name="concrete" count="1" prob="0.25" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-</block>  
+</block>
 
 <block id="50" name="granite">
 <property name="CreativeMode" value="Dev"/>
@@ -818,7 +814,8 @@
 <drop event="Fall" name="harvestLayer" count="1" stick_chance="1"/>
 </block>
 
-<block id="59" name="imposterBlock"> <!-- Do not move. Code references this block ID. -->
+<!-- Code references ID 59 for imposterBlock. -->
+<block id="59" name="imposterBlock"> 
 <property name="CustomIcon" value="woodBlock"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="Cube"/>
@@ -982,13 +979,35 @@
 <property name="CreativeMode" value="None"/>
 </block>
 
-<!-- DO NOT DEFINE TERRAIN BLOCKS OVER ID 127. Just don't. -->
+<block id="76" name="asphaltPlayer">
+<property name="CreativeMode" value="Player"/>
+<property name="Extends" value="asphalt"/>
+<property name="CustomIcon" value="asphalt"/>
+</block>
 
+<block id="77" name="concretePlayer">
+<property name="CreativeMode" value="Player"/>
+<property name="Extends" value="concrete"/>
+<property name="CustomIcon" value="concrete"/>
+</block>
+
+<!-- Free Terrain 78 - 89 -->
+  
 <!-- Master Blocks -->
-<block id="90" name="treeGrassMaster">
+<block id="90" name="buildingBlockMaster">
 <property name="CreativeMode" value="None"/>
-<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
-<property name="CustomIcon" value="treeForestGrassDiagonal"/>
+<property name="Group" value="Building"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
+<property name="Material" value="Mwood"/>
+<property name="Texture" value="241"/>
+<drop event="Destroy" name="wood" count="0"/>
+<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+</block>
+
+<block id="91" name="treeGrassMaster">
+<property name="CreativeMode" value="None"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Class" value="Deadgrass"/>
 <property name="Material" value="Mtallgrass"/>
 <property name="StabilitySupport" value="false"/>
@@ -1006,10 +1025,9 @@
 <drop event="Destroy" name="yuccaFibers" count="1,2"/>
 </block>
 
-<block id="91" name="cropsGrowingMaster">
+<block id="92" name="cropsGrowingMaster">
 <property name="CreativeMode" value="None"/>
-<property name="DescriptionKey" value="devOnlyGroupDesc"/>
-<property name="CustomIcon" value="blueberrySeed"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="plants"/>
 <property name="LightOpacity" value="0"/>
 <property name="StabilitySupport" value="false"/>
@@ -1037,7 +1055,7 @@
 <property name="PickupJournalEntry" value="farmingTip"/>
 </block>
 
-<block id="92" name="cropsHarvestableMaster">
+<block id="93" name="cropsHarvestableMaster">
 <property name="CreativeMode" value="None"/>
 <property name="Material" value="plants"/>
 <property name="LightOpacity" value="0"/>
@@ -1058,7 +1076,7 @@
 <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
 </block>
 
-<block id="93" name="treeMaster">
+<block id="94" name="treeMaster">
 <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
 <property name="Class" value="ModelTree"/>
 <property name="Shape" value="ModelTree"/>
@@ -1082,9 +1100,9 @@
 <drop event="Destroy" name="feather" count="3,7" prob="0.25"/>
 </block>
 
-<block id="94" name="treeMasterGrowing">
+<block id="95" name="treeMasterGrowing">
 <property name="Extends" value="treeMaster"/>
-<property name="DescriptionKey" value="devOnlyGroupDesc"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="MultiBlockDim" value="1,2,1"/>
 <property name="PlantGrowing.Next" value="treePlantedMountainPine8m"/>
 <property name="PlantGrowing.GrowthRate" value="63"/>
@@ -1097,45 +1115,47 @@
 <drop event="Destroy" name="feather" count="1,4" prob="0.25"/>
 </block>
 
-<block id="95" name="awningMaster">
+<block id="96" name="awningMaster">
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="awningGroupDesc"/>
 <property name="Material" value="clothStable"/>
 <property name="FallDamage" value="false"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="Cube"/>
 <property name="Texture" value="14"/>
-<property name="DescriptionKey" value="awningGroupDesc"/>
 <property name="FuelValue" value="150"/>
-<property class="RepairItems"> <property name="cloth" value="3"/> <property name="wood" value="3"/> </property>
-<drop event="Harvest" name="cloth" count="1,6"/>
-<drop event="Destroy" count="0"/>
-<drop event="Fall" name="cloth" count="1,6" prob="0.25" stick_chance="0"/>
 <property name="EconomicValue" value="5"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<property class="RepairItems"> <property name="cloth" value="3"/> <property name="wood" value="3"/> </property>
+<drop event="Harvest" name="cloth" count="1,3"/>
+<drop event="Harvest" name="wood" count="1,2"/>
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="cloth" count="1,3" prob="0.25" stick_chance="0"/>
 </block>
 
-<block id="96" name="metalNoUpgradeMaster">
+<block id="97" name="metalNoUpgradeMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 <property name="Group" value="Building"/>
 <property name="Material" value="MmetalWeak"/>
 <property name="Texture" value="194"/>
 <property name="Weight" value="25"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="10"/>
 <drop event="Harvest" name="scrapIron" count="6,32"/>
 <drop event="Destroy" name="scrapIron" count="4"/>
 <drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="10"/>
-<property name="DescriptionKey" value="scrapIronGroupDesc"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="97" name="metalMaster">
+<block id="98" name="metalMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Group" value="Building"/>
-<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
 <property name="Material" value="Mmetal"/>
 <property name="Texture" value="194"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="15"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
 <property class="RepairItems"> <property name="scrapIron" value="18"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="scrapIronMaster"/>
@@ -1143,56 +1163,48 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="scrapIron" count="12,44"/>
 <drop event="Destroy" name="scrapIron" count="4"/>
 <drop event="Fall" name="scrapIron" count="48" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="15"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="98" name="woodWeakNoUpgradeMaster">
+<block id="99" name="woodWeakNoUpgradeMaster">
 <property name="CreativeMode" value="None"/>
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="MwoodThin"/>
 <property name="Texture" value="241"/>
 <property name="Weight" value="30"/>
 <property name="FuelValue" value="200"/>
 <property name="PassThroughDamage" value="false"/>
 <property name="CustomUpgradeSound" value="place_block_wood"/>
+<property name="EconomicValue" value="1"/>
 <drop event="Harvest" name="wood" count="4,7"/>
 <drop event="Harvest" name="nail" count="1,3"/>
 <drop event="Destroy" name="wood" count="1"/>
 <drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="99" name="woodNoUpgradeMaster">
+<block id="100" name="woodNoUpgradeMaster">
 <property name="CreativeMode" value="None"/>
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="Mwood"/>
 <property name="Texture" value="241"/>
 <property name="Weight" value="60"/>
 <property name="FuelValue" value="400"/>
 <property name="PassThroughDamage" value="false"/>
+<property name="EconomicValue" value="1"/>
 <drop event="Harvest" name="wood" count="4,15"/>
 <drop event="Harvest" name="nail" count="2,6"/>
 <drop event="Destroy" name="wood" count="1"/>
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="10"/>
-<property name="EconomicBundleSize" value="20"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="100" name="woodFrameMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+<block id="101" name="woodFrameMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="woodBlockGroupDesc"/>
 <property name="Material" value="Mwood"/>
 <property name="MaxDamage" value="5"/>
 <property name="Shape" value="New"/>
@@ -1210,6 +1222,8 @@
 <property name="RequiredPower" value="0"/>
 <property name="TakeDelay" value="0.1"/>
 <property name="Weight" value="10"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="20"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="woodMaster"/>
@@ -1221,45 +1235,44 @@
 <drop event="Harvest" name="wood" count="1,3"/>
 <drop event="Destroy" name="wood" count="1"/>
 <drop event="Fall" name="wood" count="4" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="20"/>
 </block>
 
-<block id="101" name="woodFrameMasterStrong">
-<property name="Extends" value="woodFrameMaster"/>
+<block id="102" name="woodFrameMasterStrong">
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="woodFrameMaster"/>
 <property name="FuelValue" value="315"/>
 <property name="Weight" value="15"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="10"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="wood" count="1,5"/>
 <drop event="Destroy" name="wood" count="1"/>
 <drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="10"/>
 </block>
 
-<block id="102" name="woodFrameMasterWeak">
-<property name="Extends" value="woodFrameMaster"/>
+<block id="103" name="woodFrameMasterWeak">
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="woodFrameMaster"/>
 <property name="FuelValue" value="105"/>
 <property name="Weight" value="5"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="30"/>
 <property class="RepairItems"> <property name="wood" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="wood" count="1,2"/>
 <drop event="Destroy" name="wood" count="0"/>
 <drop event="Fall" name="wood" count="2" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="30"/>
 </block>  
   
-<block id="103" name="woodMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+<block id="104" name="woodMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="Mwood"/>
 <property name="PassThroughDamage" value="false"/>
 <property name="Texture" value="241"/>
-<property name="CreativeMode" value="None"/>
+<property name="CustomUpgradeSound" value="place_block_wood"/>
 <property class="RepairItems"> <property name="wood" value="4"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="rWoodMaster"/>
@@ -1267,19 +1280,16 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_wood"/>
 <drop event="Harvest" name="wood" count="4,8"/>
 <drop event="Harvest" name="nail" count="1,2"/>
 <drop event="Destroy" name="wood" count="0"/>
 <drop event="Fall" name="wood" count="8" prob="0.25" stick_chance="0"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="104" name="woodMasterStrong">
+<block id="105" name="woodMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="woodMaster"/>
 <property name="Material" value="MwoodStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="6"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="wood" count="4,12"/>
@@ -1288,11 +1298,11 @@
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
 </block>
 
-<block id="105" name="woodMasterWeak">
+<block id="106" name="woodMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="woodMaster"/>
 <property name="Material" value="MwoodWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="2"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="wood" count="2,4"/>
@@ -1301,13 +1311,13 @@
 <drop event="Fall" name="wood" count="4" prob="0.25" stick_chance="0"/>
 </block>
 
-<block id="106" name="rWoodMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+<block id="107" name="rWoodMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="MrWood"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="379"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="6"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="rWoodMetalMaster"/>
@@ -1320,14 +1330,12 @@
 <drop event="Harvest" name="nail" count="2,4"/>
 <drop event="Destroy" name="wood" count="0"/>
 <drop event="Fall" name="wood" count="12" prob="0.25" stick_chance="0"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="107" name="rWoodMasterStrong">
+<block id="108" name="rWoodMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rWoodMaster"/>
 <property name="Material" value="MrWoodStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="9"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="36"/> </property>
 <drop event="Harvest" name="wood" count="8,18"/>
@@ -1336,11 +1344,11 @@
 <drop event="Fall" name="wood" count="18" prob="0.25" stick_chance="0"/>
 </block>
 
-<block id="108" name="rWoodMasterWeak">
+<block id="109" name="rWoodMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rWoodMaster"/>
 <property name="Material" value="MrWoodWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
 <drop event="Harvest" name="wood" count="3,6"/>
@@ -1349,13 +1357,14 @@
 <drop event="Fall" name="wood" count="6" prob="0.25" stick_chance="0"/>
 </block>
 
-<block id="109" name="rWoodMetalMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
+<block id="110" name="rWoodMetalMaster">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="MironRWood"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="380"/>
-<property name="CreativeMode" value="None"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
 <property class="RepairItems"> <property name="wood" value="6"/> <property name="scrapIron" value="12"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="scrapIronMaster"/>
@@ -1363,20 +1372,17 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="wood" count="4,12"/>
 <drop event="Harvest" name="scrapIron" count="6,24"/>
 <drop event="Destroy" name="wood" count="0"/>
 <drop event="Fall" name="wood" count="12" prob="0.125" stick_chance="0"/>
 <drop event="Fall" name="scrapIron" count="24" prob="0.125" stick_chance="0"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
-<block id="110" name="rWoodMetalMasterStrong">
+<block id="111" name="rWoodMetalMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rWoodMetalMaster"/>
 <property name="Material" value="MironRWoodStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="9"/> <property name="scrapIron" value="18"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="wood" count="8,18"/>
@@ -1386,11 +1392,11 @@
 <drop event="Fall" name="scrapIron" count="36" prob="0.125" stick_chance="0"/>
 </block>
 
-<block id="111" name="rWoodMetalMasterWeak">
+<block id="112" name="rWoodMetalMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rWoodMetalMaster"/>
 <property name="Material" value="MironRWoodWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="wood" value="3"/> <property name="scrapIron" value="6"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="wood" count="3,6"/>
@@ -1400,25 +1406,10 @@
 <drop event="Fall" name="scrapIron" count="12" prob="0.125" stick_chance="0"/>
 </block>
 
-<block id="112" name="forgedIronNoUpgradeMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="scrapIronGroupDesc"/>
-<property name="Material" value="MforgedIron"/>
-<property name="Texture" value="307"/>
-<property name="CreativeMode" value="None"/>
-<property class="RepairItems"> <property name="forgedIron" value="3"/> </property>
-<drop event="Harvest" name="scrapIron" count="6,18"/>
-<drop event="Harvest" name="forgedIron" count="1,3"/>
-<drop event="Destroy" name="scrapIron" count="0"/>
-<drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="20"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-</block>
-
 <block id="113" name="scrapIronFrameMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="ironBlockGroupDesc"/>
 <property name="Material" value="MforgedIron"/>
 <property name="MaxDamage" value="5"/>
 <property name="Shape" value="New"/>
@@ -1430,10 +1421,12 @@
 <property name="ImposterExclude" value="true"/>
 <property name="ImposterDontBlock" value="true"/>
 <property name="Collide" value="movement,melee,rocket"/>
-<property name="CreativeMode" value="None"/>
 <property name="TakeDelay" value="0.1"/>
 <property name="Class" value="Light"/>
 <property name="Weight" value="10"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="scrapIronMaster"/>
@@ -1441,46 +1434,44 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="scrapIron" count="3,12"/>
 <drop event="Destroy" name="scrapIron" count="0"/>
 <drop event="Fall" name="scrapIron" count="12" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="6"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="114" name="scrapIronFrameMasterStrong">
-<property name="Extends" value="scrapIronFrameMaster"/>
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="scrapIronFrameMaster"/>
 <property name="Weight" value="15"/>
+<property name="EconomicValue" value="9"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Destroy" name="scrapIron" count="0"/>
 <drop event="Fall" name="scrapIron" count="18" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="9"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>  
 
 <block id="115" name="scrapIronFrameMasterWeak">
-<property name="Extends" value="scrapIronFrameMaster"/>
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="scrapIronFrameMaster"/>
 <property name="Weight" value="5"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="scrapIron" count="2,6"/>
 <drop event="Destroy" name="scrapIron" count="0"/>
 <drop event="Fall" name="scrapIron" count="6" prob="0.25" stick_chance="0"/>
-<property name="EconomicValue" value="3"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>    
   
 <block id="116" name="scrapIronMaster">
-<property name="Group" value="Building"/>
-<property name="Material" value="MforgedIron"/>
-<property name="PassThroughDamage" value="true"/>
-<property name="Texture" value="307"/>
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
+<property name="Material" value="MforgedIron"/>
+<property name="Texture" value="307"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
 <property class="RepairItems"> <property name="forgedIron" value="3"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="rScrapIronMaster"/>
@@ -1488,20 +1479,17 @@
 <property name="ItemCount" value="4"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="scrapIron" count="6,12"/>
 <drop event="Harvest" name="ironPlates" count="0,2"/>
 <drop event="Destroy" name="scrapIron" count="0"/>
 <drop event="Fall" name="scrapIron" count="36" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapMetalPile" count="1" prob="0.25" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="117" name="scrapIronMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="scrapIronMaster"/>
 <property name="Material" value="MforgedIronStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedIron" value="4"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="6"/> </property>
 <drop event="Harvest" name="scrapIron" count="8,18"/>
@@ -1512,10 +1500,10 @@
 </block>
 
 <block id="118" name="scrapIronMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="scrapIronMaster"/>
 <property name="Material" value="MforgedIronWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedIron" value="2"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="2"/> </property>
 <drop event="Harvest" name="scrapIron" count="3,6"/>
@@ -1526,11 +1514,12 @@
 </block>
 
 <block id="119" name="rScrapIronMaster">
-<property name="Group" value="Building"/>
-<property name="Material" value="MrForgedIron"/>
-<property name="PassThroughDamage" value="true"/>
-<property name="Texture" value="523"/>
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
+<property name="Material" value="MrForgedIron"/>
+<property name="Texture" value="523"/>
+<property name="CustomUpgradeSound" value="place_block_wood"/>
 <property class="RepairItems"> <property name="forgedIron" value="7"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelMaster"/>
@@ -1538,20 +1527,17 @@
 <property name="ItemCount" value="4"/>
 <property name="UpgradeHitCount" value="8"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_wood"/>
 <drop event="Harvest" name="scrapIron" count="6,12"/>
 <drop event="Harvest" name="ironPlates" count="2,6"/>
 <drop event="Destroy" name="scrapIron" count="0"/>
 <drop event="Fall" name="scrapIron" count="84" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapMetalPile" count="1" prob="0.25" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="120" name="rScrapIronMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rScrapIronMaster"/>
 <property name="Material" value="MrForgedIronStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedIron" value="9"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="6"/> </property>
 <drop event="Harvest" name="scrapIron" count="8,18"/>
@@ -1562,10 +1548,10 @@
 </block>
 
 <block id="121" name="rScrapIronMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rScrapIronMaster"/>
 <property name="Material" value="MrForgedIronWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedIron" value="5"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="2"/> </property>
 <drop event="Harvest" name="scrapIron" count="3,6"/>
@@ -1577,27 +1563,28 @@
 
 <block id="122" name="stoneNoUpgradeMaster">
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Group" value="Building"/>
 <property name="Material" value="Mconcrete"/>
 <property name="Texture" value="8"/>
 <property name="SellableToTrader" value="false"/>
-<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
+<property name="EconomicValue" value="25"/>
 <drop event="Harvest" name="rockSmall" count="3,17"/>
 <drop event="Harvest" name="scrapIron" count="9,27"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="concrete" count="1" prob="0.10" stick_chance="1"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.15" stick_chance="1"/>
-<property name="EconomicValue" value="25"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="123" name="flagstoneMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="flagstoneGroupDesc"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="flagstoneBlockGroupDesc"/>
 <property name="Material" value="Mflagstone"/>
 <property name="Texture" value="226"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="cobblestones" value="2"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="cobblestoneMaster"/>
@@ -1609,46 +1596,43 @@
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="4" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="124" name="flagstoneMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="flagstoneMaster"/>
 <property name="Material" value="MflagstoneStrong"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="3"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="9"/> </property>
 <drop event="Harvest" name="cobblestones" count="2,6"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="6" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="3"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="125" name="flagstoneMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="flagstoneMaster"/>
 <property name="Material" value="MflagstoneWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="1"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="cobblestones" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="cobblestones" count="1,2"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="2" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="1"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="126" name="cobblestoneMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="Mcobblestone"/>
 <property name="Texture" value="26"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="cobblestones" value="5"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="brickMaster"/>
@@ -1660,14 +1644,12 @@
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="cobblestones" count="10" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="127" name="cobblestoneMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="cobblestoneMaster"/>
 <property name="Material" value="McobblestoneStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="cobblestones" value="8"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="cobblestones" count="6,15"/>
@@ -1677,10 +1659,10 @@
 </block>
 
 <block id="128" name="cobblestoneMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="cobblestoneMaster"/>
 <property name="Material" value="McobblestoneWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="cobblestones" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="cobblestones" count="2,5"/>
@@ -1690,12 +1672,14 @@
 </block>
 
 <block id="129" name="brickMaster">
-<property name="Group" value="Building"/>
-<property name="DescriptionKey" value="brickGroupDesc"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="brickBlockGroupDesc"/>
 <property name="Material" value="Mbrick"/>
 <property name="Weight" value="70"/>
 <property name="Texture" value="7"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="4"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="mortarMix" value="2"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="pouredConcreteMaster"/>
@@ -1707,91 +1691,82 @@
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="bricks" count="6" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="4"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="130" name="brickMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="brickMaster"/>
 <property name="Material" value="MbrickStrong"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="6"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="mortarMix" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
 <drop event="Harvest" name="bricks" count="3,9"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="bricks" count="9" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="6"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="131" name="brickMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="brickMaster"/>
 <property name="Material" value="MbrickWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="2"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="mortarMix" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> </property>
 <drop event="Harvest" name="bricks" count="1,3"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="bricks" count="3" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="2"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="132" name="pouredConcreteMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="concreteBlockGroupDesc"/>
 <property name="Material" value="Mconcrete"/>
 <property name="MaxDamage" value="500"/>
 <property name="Texture" value="176"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="concreteMix" value="3"/> </property>
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="concreteMaster"/>
 <property name="UpgradeRated.Rate" value="4"/>
-<property name="DescriptionKey" value="concreteGroupDesc"/>
-<property name="Group" value="Building"/>
+<property name="EconomicValue" value="30"/>
+<property name="EconomicBundleSize" value="1"/>
 <drop event="Harvest" name="concreteMix" count="1,4"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="rockSmall" count="18" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="30"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="133" name="pouredRConcreteMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="rConcreteBlockGroupDesc"/>
 <property name="Material" value="Mconcrete"/>
 <property name="MaxDamage" value="500"/>
 <property name="Texture" value="545"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="60"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="concreteMix" value="6"/> </property>
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="rConcreteMaster"/>
 <property name="UpgradeRated.Rate" value="5"/>
-<property name="DescriptionKey" value="concreteGroupDesc"/>
-<property name="Group" value="Building"/>
 <drop event="Harvest" name="concreteMix" count="2,6"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="rockSmall" count="18" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="60"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="134" name="concreteMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
 <property name="DescriptionKey" value="concreteGroupDesc"/>
 <property name="Material" value="Mconcrete"/>
 <property name="Texture" value="8"/>
-<property name="CreativeMode" value="None"/>
+<property name="CustomUpgradeSound" value="place_block_concrete"/>
 <property class="RepairItems"> <property name="concreteMix" value="2"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="pouredRConcreteMaster"/>
@@ -1799,20 +1774,17 @@
 <property name="ItemCount" value="8"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_concrete"/>
 <drop event="Harvest" name="rockSmall" count="3,17"/>
 <drop event="Harvest" name="scrapIron" count="9,27"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="concrete" count="1" prob="0.10" stick_chance="1"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.15" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="135" name="concreteMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="concreteMaster"/>
 <property name="Material" value="MconcreteStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="concreteMix" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="12"/> </property>
 <drop event="Harvest" name="rockSmall" count="4,26"/>
@@ -1823,10 +1795,10 @@
 </block>
 
 <block id="136" name="concreteMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="concreteMaster"/>
 <property name="Material" value="MconcreteWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="concreteMix" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> </property>
 <drop event="Harvest" name="rockSmall" count="1,9"/>
@@ -1837,11 +1809,13 @@
 </block>
 
 <block id="137" name="rConcreteMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="concreteGroupDesc"/>
 <property name="Material" value="MrConcrete"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="315"/>
-<property name="CreativeMode" value="None"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
 <property class="RepairItems"> <property name="concreteMix" value="4"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="steelMaster"/>
@@ -1849,20 +1823,17 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
 <drop event="Harvest" name="rockSmall" count="6,34"/>
 <drop event="Harvest" name="scrapIron" count="9,27"/>
 <drop event="Destroy" name="rockSmall" count="0"/>
 <drop event="Fall" name="concrete" count="1" prob="0.10" stick_chance="1"/>
 <drop event="Fall" name="destoyedStone" count="1" prob="0.15" stick_chance="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="138" name="rConcreteMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rConcreteMaster"/>
 <property name="Material" value="MrConcreteStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="concreteMix" value="6"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="rockSmall" count="8,52"/>
@@ -1873,10 +1844,10 @@
 </block>
 
 <block id="139" name="rConcreteMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="rConcreteMaster"/>
 <property name="Material" value="MrConcreteWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="concreteMix" value="2"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="rockSmall" count="2,18"/>
@@ -1887,11 +1858,15 @@
 </block>
 
 <block id="140" name="steelMaster">
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 <property name="Material" value="Msteel"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="312"/>
-<property name="CreativeMode" value="None"/>
+<property name="CustomUpgradeSound" value="place_block_metal"/>
+<property name="EconomicValue" value="80"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedSteel" value="2"/> </property>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="stainlessSteelMaster"/>
@@ -1899,57 +1874,49 @@
 <property name="ItemCount" value="2"/>
 <property name="UpgradeHitCount" value="4"/>
 </property>
-<property name="CustomUpgradeSound" value="place_block_metal"/>
-<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 <drop event="Harvest" name="steelPlates" count="0,1"/>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Fall" name="steelPlates" count="2" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapSteelPile" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="80"/>
-<property name="EconomicBundleSize" value="1"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 </block>
 
 <block id="141" name="steelMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="steelMaster"/>
 <property name="Material" value="MsteelStrong"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="120"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedSteel" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="steelPlates" count="0,2"/>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Fall" name="steelPlates" count="3" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapSteelPile" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="120"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="142" name="steelMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="steelMaster"/>
 <property name="Material" value="MsteelWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
+<property name="EconomicValue" value="40"/>
+<property name="EconomicBundleSize" value="1"/>
 <property class="RepairItems"> <property name="forgedSteel" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="steelPlates" count="0,1" prob="0.5"/>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Fall" name="steelPlates" count="1" prob="0.25" stick_chance="0"/>
 <drop event="Fall" name="scrapSteelPile" count="1" prob="0.25" stick_chance="1"/>
-<property name="EconomicValue" value="40"/>
-<property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="143" name="stainlessSteelMaster">
-<property name="CustomIcon" value="stainlessSteelBlock"/>
-<property name="Group" value="Building"/>
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 <property name="Material" value="MstainlessSteel"/>
 <property name="PassThroughDamage" value="true"/>
 <property name="Texture" value="267"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedSteel" value="2"/> </property>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 <drop event="Harvest" name="steelPlates" count="0,1"/>
 <drop event="Harvest" name="scrapIron" count="6,18"/>
 <drop event="Fall" name="steelPlates" count="2" prob="0.25" stick_chance="0"/>
@@ -1957,9 +1924,9 @@
 </block>
 
 <block id="144" name="stainlessSteelMasterStrong">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="stainlessSteelMaster"/>
 <property name="Material" value="MstainlessSteelStrong"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedSteel" value="3"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="3"/> </property>
 <drop event="Harvest" name="steelPlates" count="0,2"/>
@@ -1969,10 +1936,10 @@
 </block>
 
 <block id="145" name="stainlessSteelMasterWeak">
+<property name="CreativeMode" value="None"/>
 <property name="Extends" value="stainlessSteelMaster"/>
 <property name="Material" value="MstainlessSteelWeak"/>
 <property name="LightOpacity" value="0"/>
-<property name="CreativeMode" value="None"/>
 <property class="RepairItems"> <property name="forgedSteel" value="1"/> </property>
 <property class="UpgradeBlock"> <property name="ItemCount" value="1"/> </property>
 <drop event="Harvest" name="steelPlates" count="0,1" prob="0.5"/>
@@ -1982,20 +1949,20 @@
 </block>
 
 <block id="146" name="glassBulletproofMaster">
-<property name="Group" value="Building"/>
 <property name="CreativeMode" value="None"/>
+<property name="Extends" value="buildingBlockMaster"/>
+<property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
 <property name="Material" value="MglassBulletproof"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="2"/>
 <property name="Model" value="cube_glass"/>
 <property name="Mesh" value="transparent"/>
 <property name="Texture" value="333"/>
-<property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
+<property name="EconomicValue" value="120"/>
 <drop event="Harvest" name="brokenGlass" count="25,100"/>
 <drop event="Harvest" name="scrapIron" count="1,6"/>
 <drop event="Harvest" name="scrapLead" count="1,6"/>
 <drop event="Destroy" name="brokenGlass" count="0"/>
-<property name="EconomicValue" value="120"/>
 </block>
 
 <!-- 147 glassBulletproofMasterStrong-->  
@@ -2915,7 +2882,7 @@
 </block>
 
 <block id="257" name="plantedBlueberry1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Shape" value="ModelEntity"/>
 <property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 <property name="PlantGrowing.Next" value="plantedBlueberry2"/>
@@ -2931,7 +2898,7 @@
 </block>
 
 <block id="259" name="plantedPotato1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Shape" value="ModelEntity"/>
 <property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
 <property name="Collide" value="melee"/>
@@ -3091,7 +3058,7 @@
 </block>
 
 <block id="276" name="treeSnowyGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Texture" value="350,368,369,370,350,368"/>
 </block>
 
@@ -4658,7 +4625,7 @@
 <property name="Texture" value="518"/>
 <property name="OnlySimpleRotations" value="true"/>
 <property name="FuelValue" value="150"/>
-<!-- <property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/> -->
+<!--<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/>-->
 <property class="RepairItems"> <property name="wood" value="3"/> <property name="forgedIron" value="1"/> </property>
 <property name="CanPlayersSpawnOn" value="false"/>
 <property name="Group" value="Tools/Traps,Science"/>
@@ -5639,7 +5606,7 @@
 </block>
 
 <block id="527" name="plantedHop1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Texture" value="447"/>
 <property name="PlantGrowing.Next" value="plantedHop2"/>
 <property name="EconomicValue" value="250"/>
@@ -5667,18 +5634,22 @@
 <block id="530" name="plantedMushroom1">
 <property name="Material" value="Mmushrooms"/>
 <property name="LightOpacity" value="0"/>
-<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+<property name="Shape" value="Ext3dModel"/>
+<property name="Texture" value="293"/>
 <property name="Mesh" value="models"/>
 <property name="Model" value="OutdoorDecor/mushroom_sprout" param1="main_mesh"/>
 <property name="MultiBlockDim" value="1,2,1"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-<property name="IsTerrainDecoration" value="true"/>
 <property name="HandleFace" value="Bottom"/>
 <property name="PlantGrowing.FertileLevel" value="0"/>
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="plantedMushroom2"/>
 <property name="UpgradeRated.Rate" value="63"/>
 <property name="HarvestOverdamage" value="false"/>
+<property name="IsTerrainDecoration" value="true"/>
+<property name="IsDecoration" value="true"/>
+<property name="CanDecorateOnSlopes" value="true"/>
+<property name="OnlySimpleRotations" value="true"/>
 <drop event="Destroy" name="plantedMushroom1" count="1"/>
 <property name="EconomicValue" value="12"/>
 <property name="EconomicBundleSize" value="5"/>
@@ -5713,7 +5684,7 @@
 </block>
 
 <block id="533" name="plantedYucca1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="CustomIcon" value="plantedYucca3Harvest"/>
 <property name="Material" value="Mcorn"/>
 <property name="Shape" value="ModelEntity"/>
@@ -6416,7 +6387,7 @@
 </block>
 
 <block id="591" name="treeDesertShrub">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Texture" value="377"/>
 </block>
 
@@ -6685,7 +6656,7 @@
 <property name="EconomicValue" value="300"/>
 <drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 <drop event="Harvest" name="scrapPlastics" count="1,5"/>
-<drop event="Harvest" name="mechanicalParts" count="1"/>
+<drop event="Harvest" name="mechanicalParts" count="0,1"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -7281,7 +7252,7 @@
 </block>
 
 <block id="674" name="treePlantedMountainPine1m">
-<property name="Extends" value="treeMasterGrowing" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="treeMasterGrowing" param1="DescriptionKey"/>
 <property name="MaxDamage" value="10"/>
 <property name="Material" value="plants"/>
 <property name="StabilitySupport" value="false"/>
@@ -7803,7 +7774,7 @@
 </block>
 
 <block id="713" name="plantedCotton1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Texture" value="392"/>
 <property name="PlantGrowing.Next" value="plantedCotton2"/>
 <property name="Group" value="Resources"/>
@@ -8223,7 +8194,7 @@
 </block>
 
 <block id="759" name="plantedCoffee1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Texture" value="393"/>
 <property name="PlantGrowing.Next" value="plantedCoffee2"/>
 <property name="CraftingIngredientTime" value="5"/>
@@ -8247,7 +8218,7 @@
 </block>
 
 <block id="762" name="plantedGoldenrod1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Texture" value="401"/>
 <property name="PlantGrowing.Next" value="plantedGoldenrod2"/>
 <property name="Group" value="Food/Cooking"/>
@@ -8285,12 +8256,12 @@
 </block>
 
 <block id="767" name="treeBrownGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Texture" value="201,306,371,201,306,371"/>
 </block>
 
 <block id="768" name="treeTallGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Class" value="Tallgrass"/>
 <property name="Texture" value="39,40,364,365,39,364"/>
 </block>
@@ -8313,7 +8284,7 @@
 <property name="FuelValue" value="300"/>
 <property name="DescriptionKey" value="woodLogPillar100Desc"/>
 <property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPillar100"/> </property>
-<drop event="Harvest" name="wood" count="8,32" tool_category="harvestingTools"/>
+<drop event="Harvest" name="wood" count="24,48" tool_category="harvestingTools"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -8327,7 +8298,7 @@
 </block>
 
 <block id="772" name="treePlainsGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Texture" value="397,397,399,400,398,398"/>
 </block>
 
@@ -9007,7 +8978,7 @@
 </block>
 
 <block id="842" name="treeForestGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Class" value="Tallgrass"/>
 <property name="Texture" value="561,562,563,564,565,563"/>
 </block>
@@ -9093,7 +9064,7 @@
 </block>
 
 <block id="852" name="forestFlower">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Class" value="Tallgrass"/>
 <property name="Texture" value="567"/>
 <drop event="Destroy" count="1"/>
@@ -9119,7 +9090,7 @@
 </block>
 
 <block id="855" name="plantedAloe1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Material" value="Mcorn"/>
 <property name="Shape" value="ModelEntity"/>
 <property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
@@ -9201,7 +9172,7 @@
 </block>
 
 <block id="864" name="treeGreenBrownGrassDiagonal">
-<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+<property name="Extends" value="treeGrassMaster"/>
 <property name="Texture" value="306"/>
 </block>
 
@@ -9236,11 +9207,8 @@
 <property name="LootList" value="161"/>
 </block>
 
-
-<!-- Free-->
-
 <block id="869" name="plantedChrysanthemum1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Texture" value="550"/>
 <property name="PlantGrowing.Next" value="plantedChrysanthemum2"/>
 <property name="Group" value="Food/Cooking"/>
@@ -9526,7 +9494,7 @@
 </block>
 
 <block id="900" name="plantedCorn1">
-<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+<property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
 <property name="Material" value="Mcorn"/>
 <property name="Shape" value="New"/>
 <property name="Model" value="corn_sprout_shape"/>
@@ -11275,7 +11243,7 @@
 <property name="ImposterExclude" value="true"/>
 <property name="ShapeMinBB" value="0.3,0,0.3"/>
 <property name="Group" value="Tools/Traps,Science"/>
-<!-- <property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/> -->
+<!--<property name="BuffsWhenWalkedOn" value="spikeBleedTriggerB"/>-->
 <property class="RepairItems"> <property name="scrapIron" value="15"/> </property>
 <drop event="Harvest" name="scrapIron" count="1,12"/>
 <drop event="Destroy" count="0"/>
@@ -12142,7 +12110,7 @@
 </block>
 
 <block id="1184" name="scrapIronPoleSupport">
-<property name="Extends" value="forgedIronNoUpgradeMaster"/>
+<property name="Extends" value="metalNoUpgradeMaster"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="pole_diagonal"/>
@@ -12154,7 +12122,7 @@
 </block>
 
 <block id="1185" name="scrapIronPoleSupport2">
-<property name="Extends" value="forgedIronNoUpgradeMaster"/>
+<property name="Extends" value="metalNoUpgradeMaster"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="pole_diagonal_2"/>
@@ -12166,7 +12134,7 @@
 </block>
 
 <block id="1186" name="scrapIronCross">
-<property name="Extends" value="forgedIronNoUpgradeMaster"/>
+<property name="Extends" value="metalNoUpgradeMaster"/>
 <property name="Shape" value="New"/>
 <property name="LightOpacity" value="0"/>
 <property name="Model" value="pole_diagonal_cross"/>
@@ -16875,8 +16843,8 @@
 <property name="ImposterExchange" value="imposterPlate" param1="112"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<!--<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
 </block>
 
 <block id="1635" name="steelCatwalkRailing">
@@ -16888,8 +16856,8 @@
 <property name="ImposterExchange" value="imposterPlate" param1="112"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<!--<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
 </block>
 
 <block id="1636" name="steelRailing">
@@ -16901,8 +16869,8 @@
 <property name="ImposterExclude" value="true"/>
 <property name="UseGlobalUV" value="Local"/>
 <property name="DescriptionKey" value="metalCatwalkGroupDesc"/>
-<property name="LightOpacity" value="0"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<!--<property name="LightOpacity" value="0"/>
+<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
 </block>
 
 <block id="1637" name="steelCatwalkRailingCNR">
@@ -17393,6 +17361,8 @@
 <property name="Extends" value="cntGunSafeInsecure"/>
 <property name="LootList" value="159"/>
 </block>
+
+
 
 <!-- n Free -->
 
