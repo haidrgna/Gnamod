@@ -2060,7 +2060,21 @@ buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Default Loot -->
 <item group="itemsTrash" count="1,2" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
-<!-- 6 - 10 Free -->
+<!-- =========================== STORAGE BACKPACK =============================================================================================================================================================================================================================================================================================================================== -->
+<lootgroup name="cnt006"> <item group="lootBackpacks" prob="65"/> <item group="lootHousehold" count="0,2" prob="35"/>  </lootgroup>
+<lootcontainer id="6" count="1" size="7,7" open_time="3" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "leveledNormal">
+<!-- Chance of Loot: 80 -->
+<item group="cnt006" count="0,1" prob="19"/>
+<item group="cnt006" count="1" prob="60"/>
+<item group="cnt006" count="2,3" prob="1"/>
+<!-- Chance of Default Loot -->
+<item group="itemsTrash" count="1,2" loot_prob_template="nothing50"/>
+</lootcontainer>
+<!-- 7 - 10 Free -->
 
 <!-- General World Loot  -->
 <!-- =========================== GARBAGE BAGS ================================================================================================================================================================================================================================================================================================================================== -->
