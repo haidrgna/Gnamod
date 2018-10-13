@@ -4373,8 +4373,8 @@
 
 <block id="408" name="trapSpikesNew">
 <property name="Class" value="TrunkTip"/>
-<property name="Damage" value="1"/>
-<property name="Damage_received" value="25"/>
+<property name="Damage" value="3"/>
+<property name="Damage_received" value="50"/>
 <property name="Material" value="MtrapSpikes1"/>
 <property name="Shape" value="Ext3dModel"/>
 <property name="Texture" value="293"/>
@@ -4401,7 +4401,7 @@
 
 <block id="409" name="trapSpikesDamage1">
 <property name="Extends" value="trapSpikesNew"/>
-<property name="Damage" value="1"/>
+<property name="Damage" value="3"/>
 <property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage2"/>
 <property class="UpgradeBlock">
@@ -4415,7 +4415,7 @@
 
 <block id="410" name="trapSpikesDamage2">
 <property name="Extends" value="trapSpikesDamage1"/>
-<property name="Damage" value="1"/>
+<property name="Damage" value="2"/>
 <property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage3"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="4"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
@@ -4423,14 +4423,14 @@
 
 <block id="411" name="trapSpikesDamage3">
 <property name="Extends" value="trapSpikesDamage1"/>
-<property name="Damage" value="1"/>
+<property name="Damage" value="2"/>
 <property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage4"/>
 <property class="UpgradeBlock"> <property name="ItemCount" value="6"/> <property name="ToBlock" value="trapSpikesNew"/> </property>
 </block>
 
 <block id="412" name="trapSpikesDamage4">
-<property name="Extends" value="trapSpikesDamage3"/>
+<property name="Extends" value="trapSpikesDamage1"/>
 <property name="Damage" value="1"/>
 <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
 <property name="DowngradeBlock" value="trapSpikesDamage5"/>
@@ -13924,7 +13924,6 @@
 <property name="Model" value="plate_centered"/>
 <property name="Texture" value="408"/>
 <property name="IsDecoration" value="true"/>
-<property name="StabilitySupport" value="false"/>
 <property class="UpgradeBlock">
 <property name="ToBlock" value="WindowPlug03"/>
 <property name="Item" value="boardAndNails"/>
@@ -14244,7 +14243,7 @@
 <property name="UpgradeHitCount" value="4"/>
 </property>
 <property name="CustomUpgradeSound" value="place_block_wood"/>
-<property name="DowngradeBlock" value="window03WoodFrame"/>
+<property name="DowngradeBlock" value="window03WoodBroke2"/>
 <drop event="Harvest" name="brokenGlass" count="5,15"/>
 <drop event="Destroy" count="0"/>
 </block>
@@ -14293,25 +14292,12 @@
 <property name="DowngradeBlock" value="window03WoodBroke1"/>
 <drop event="Harvest" name="brokenGlass" count="5,15"/>
 <drop event="Destroy" count="0"/>
-<property name="Group" value="Building"/>
 <property name="EconomicValue" value="1"/>
 <property name="EconomicBundleSize" value="1"/>
 </block>
 
 <block id="1414" name="window03WoodFrame">
-<property name="Extends" value="woodMasterWeak"/>
-<property name="LightOpacity" value="1"/>
-<property name="Shape" value="Ext3dModel"/>
-<property name="Model" value="Buildings/window03_wood_frame" param1="main_mesh"/>
-<property name="Place" value="TowardsPlacer"/>
-<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-<property class="UpgradeBlock">
-<property name="ToBlock" value="plainWoodWindowPlug"/>
-<property name="Item" value="boardAndNails"/>
-<property name="ItemCount" value="1"/>
-<property name="UpgradeHitCount" value="4"/>
-</property>
-<property name="Group" value="Building"/>
+<property name="Extends" value="window03Wood"/>
 </block>
 
 <block id="1415" name="scrapIronFrameHalf">
@@ -18708,10 +18694,12 @@
 
 <block id="2037" name="treasureChestNomad">
 <property name="CreativeMode" value="None"/>
-<property name="CustomIcon" value="cntBackpack02"/>
 <property name="Extends" value="StartingKitBase"/>
+<property name="Material" value="MTreasureBags"/>
+<property name="MaxDamage" value="1000"/>
 <property name="LootList" value="154"/>
 <drop event="Destroy" name="cloth" count="3"/>
+<drop event="Fall" name="treasureChestNomad" count="1" prob="1" stick_chance="1"/>
 </block>
 
 <block id="2038" name="treasureChestHorde">
@@ -18720,6 +18708,7 @@
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="72"/>
 <drop event="Destroy" name="cloth" count="3"/>
+<drop event="Fall" name="treasureChestHorde" count="1" prob="1" stick_chance="1"/>
 </block>
 
 <block id="2039" name="HordeLoot">
@@ -18769,6 +18758,13 @@
 <property name="Texture" value="285"/>
 <property name="DescriptionKey" value="glassGroupDesc"/>
 <drop event="Destroy" name="brokenGlass" count="5,20"/>
+</block>
+
+<block id="2042" name="cntStorageBag">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="4"/>
+<drop event="Destroy" name="cloth" count="3"/>
 </block>
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

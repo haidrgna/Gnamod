@@ -2050,7 +2050,9 @@ loot_quality_template=  "leveledNormal">
 destroy_on_close=       "true"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
-loot_quality_template=  "leveledNormal">
+loot_quality_template=  "leveledNormal"
+buff=                   "explosiveTrap1,explosiveTrap2,explosiveTrap3,explosiveTrap4"
+buff_chance=            "0.05,0.03,0.01,0.01">
 <!-- Chance of Loot: 80 -->
 <item group="cnt005" count="0,1" prob="19"/>
 <item group="cnt005" count="1" prob="60"/>

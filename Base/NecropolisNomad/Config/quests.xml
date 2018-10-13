@@ -69,7 +69,7 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 </quest>
 
 <!-- Necropolis -->
-<quest id="quest_BasicSurvival1b" group_name="Gnamod Necropolis" category_key="quest"
+<quest id="quest_BasicSurvival1" group_name="Gnamod Necropolis" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
 description="Welcome to Gnamod. This is the Necropolis start."
 offer="Welcome to Gnamod!"
@@ -83,7 +83,7 @@ icon="ui_game_symbol_zombie" difficulty="insane">
 </quest>
 
 <!-- Nomad Mode -->
-<quest id="quest_BasicSurvival1" group_name="Gnamod Nomad Mode" category_key="quest"
+<quest id="quest_BasicSurvival1c" group_name="Gnamod Nomad Mode" category_key="quest"
 name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
 description="Welcome to Gnamod. This is the Nomad Mode start."
 offer="Welcome to Gnamod!"
@@ -110,6 +110,17 @@ icon="ui_game_symbol_zombie" difficulty="veryeasy">
 <reward type="Item" id="q_GnamodZombieKilling" value="1"/>
 </quest>
 
+<!-- Last Stand -->
+<quest id="quest_BasicSurvival1e" group_name="The Last Stand" category_key="quest"
+name="Welcome to Gnamod" subtitle="Gnamod - By HaidrGna."
+description="Welcome to Gnamod. The Last Stand!"
+offer="Welcome to Gnamod!"
+icon="ui_game_symbol_zombie" difficulty="veryeasy">
+
+<reward type="Item" id="bedroll" value="1"/>
+<reward type="Item" id="q_GnamodTheLastStand" value="1"/>
+</quest>
+
 <!-- Gnamod Advanced Quest (No Tutorial Mission) -->
 <quest id="quest_GnamodExpert" group_name="Seven Days to Live" category="quest"
 name="Gnamod Expert" subtitle="You dont need a survival guide! (But you still get the rewards.)"
@@ -130,7 +141,7 @@ icon="ui_game_symbol_hammer" difficulty="veryeasy">
 <action type="TrackQuest" />
 
 <objective type="FetchKeep" id="yuccaFibers" value="15"/>
-<objective type="FetchKeep" id="rock" value="2"/>
+<objective type="FetchKeep" id="rockSmall" value="10"/>
 <objective type="FetchKeep" id="wood" value="15"/>
 
 <objective type="Craft" id="stoneAxe" value="1"/>
@@ -147,7 +158,7 @@ description="Now that you have your basic tools and weapons made you will need t
 icon="ui_game_symbol_hammer" difficulty="easy">
 <action type="TrackQuest" />
 
-<objective type="FetchKeep" id="yuccaFibers" value="200"/>
+<objective type="FetchKeep" id="yuccaFibers" value="100"/>
 <objective type="FetchKeep" id="wood" value="100"/>
 <objective type="FetchKeep" id="rockSmall" value="50"/>
 <objective type="FetchKeep" id="feather" value="50"/>
@@ -602,4 +613,18 @@ icon="ui_game_symbol_zombie" repeatable="true" difficulty="insane">
 <reward type="Item" id="casinoCoin" value="20000"/>
 </quest>
 
+<!-- The Last Stand -->
+<quest id="quest_GnamodTheLastStand" group_name="The Last Stand" category="quest"
+name="The Last Stand" subtitle="Finale"
+description="The first thing you need to do is gather the most basic materials from around you, materials that if you look carefully can be found almost everywhere: Wood, Plant Fibers, Stone and Feathers. Look for birdnests on the ground as they may contain feathers you need to fletch arrows from. The following instructions will teach you how to craft basic tools and weapons from these materials, tools you will need if you want to gather larger quantities of these materials."
+offer="Soldier, \nWe barely managed to escape to this last post. The enemy is inbound from all directions. Build up a perimeter and fortify the area as best as you can. Equip yourself with whatever supplies we have left. May Haidr bless us all and may we live to see the next dawn.\n\nHail Haidr!"
+icon="ui_game_symbol_critical" difficulty="insane">
+<action type="TrackQuest" />
+
+<objective type="FetchKeep" id="firstAidKit" value="1"/>
+<objective type="FetchKeep" id="repairKit" value="1"/>
+<objective type="BlockPlace" id="bedroll" value="1" />
+
+<reward type="SkillPoints" value="20"/>
+</quest>
 </quests>
