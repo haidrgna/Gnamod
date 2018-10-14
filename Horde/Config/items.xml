@@ -732,7 +732,6 @@ Mesh files no longer used:
 <property name="Sound_empty"                    value=""/>
 <property name="Sound_reload"                   value=""/>
 <property name="Particles_muzzle_fire"          value="blockdestroy_organic"/>
-<property name="Hitmask_override"               value="Arrow"/>
 </property>
 </item>
 <item id="88" name="handZombiePukeRadiated">
@@ -766,7 +765,7 @@ Mesh files no longer used:
 <property name="Range"                          value="250"/>
 <property name="Magazine_items"                 value="projectileZombieFire"/>
 <property name="Rays_spread"                    value="0.4"/>
-<property name="Hitmask_override"               value="Bullet"/>
+<property name="Hitmask_override"               value="Melee"/>
 </property>
 </item>
 <item id="90" name="handZombieBossRadiated">
@@ -783,7 +782,7 @@ Mesh files no longer used:
 <property name="Range"                          value="250"/>
 <property name="Magazine_items"                 value="projectileZombieExplosive"/>
 <property name="Rays_spread"                    value="0.3"/>
-<property name="Hitmask_override"               value="Bullet"/>
+<property name="Hitmask_override"               value="Melee"/>
 </property>
 </item>
 <!-- Zombie Projectiles -->
@@ -12167,6 +12166,7 @@ Mesh files no longer used:
 <property name="Magazine_items"             value="rocket,APRocket,INRocket,heavyRocket,heavyAPRocket,heavyINRocket,No Ammo"/>
 <property name="Magazine_item_ray_counts"   value="1,1,1,1,1,1,1"/>
 <property name="Rays_spread"                value="0.05"/>
+<property name="Hitmask_override"           value="Melee"/>
 </property>
 <property class="Action1">
 <property name="Class"                        value="Zoom"/>
@@ -12311,6 +12311,7 @@ Mesh files no longer used:
 <property name="Magazine_items"               value="adminRocket,adminTorchRocket,projectileZombieVomit,projectileZombieVomitStrong,projectileZombieFire,projectileZombieExplosive,projectileTest1,projectileTest2"/>
 <property name="Magazine_item_ray_counts"     value="1,1,1,1,1,1"/>
 <property name="Rays_spread"                  value="0.10"/>
+<property name="Hitmask_override"             value="Melee"/>
 </property>
 <property class="Action1">
 <property name="Class"                        value="Zoom"/>
