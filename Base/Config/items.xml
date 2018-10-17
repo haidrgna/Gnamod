@@ -12570,7 +12570,14 @@ Mesh files no longer used:
 <item id="1857" name="q_GnamodTheLastStand"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
 <property class="Action1">  <property name="QuestGiven" value="quest_GnamodTheLastStand"/> </property>
 </item>
-  
+
+<item id="1858" name="q_GnamodNoteDucky"> <property name="Extends" value="questMaster"/> <property name="CustomIcon" value="questMaster"/> <property name="Material" value="organic"/>
+<property class="Action1">  <property name="QuestGiven" value="quest_GnamodNoteFromDucky"/> </property>
+</item>
+
+<item id="1859" name="ClosedNote"> <property name="Extends" value="paper"/> <property name="Material" value="paper"/>
+</item>
+
 <item id="1899" name="handZombieGina">
 <property name="Extends"                        value="handMaster"/>
 <property name="CreativeMode"                   value="None"/>

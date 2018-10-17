@@ -18769,4 +18769,31 @@
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
-</blocks><!-- Block limit: No block can have an ID greater 2047. -->
+<block id="2043" name="BonusBag">
+<property name="CreativeMode" value="Player"/>
+<property name="Extends" value="StartingKit"/>
+<property name="PlantGrowing.Next" value="BonusBagSelector"/>
+</block>
+
+<block id="2044" name="BonusBagSelector">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="StartingKitSelector"/>
+<property name="DowngradeBlock" value="BonusBagSelector"/>
+<drop event="Fall" name="BonusBagSelector" count="1" prob="1" stick_chance="1"/>
+</block>
+
+<block id="2045" name="BonusBagBase">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="148"/>
+<drop event="Destroy" name="cloth" count="3"/>
+</block>
+
+<block id="2046" name="BonusBagLucky">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="StartingKitBase"/>
+<property name="LootList" value="149"/>
+<drop event="Destroy" name="cloth" count="3"/>
+</block>
+
+</blocks><!-- Block limit: No block can have an ID greater 2047. 2047 Taken -->

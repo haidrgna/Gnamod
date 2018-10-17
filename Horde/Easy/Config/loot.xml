@@ -570,6 +570,11 @@
 <block name="StartingKitBase"                   prob="0.90"/>
 <block name="StartingKitFood"                   prob="0.05"/>
 </placeholder>
+
+<placeholder name="BonusBagSelector">
+<block name="BonusBagLucky"                     prob="0.05"/>
+<block name="BonusBagBase"                      prob="0.95"/>
+</placeholder>
 </lootplaceholders>
 
 <!-- Lootchance Templates (Loot MAGIC) -->
@@ -3430,7 +3435,28 @@ loot_quality_template=  "leveledLight">
 <!-- Chance of Default Loot -->
 <item group="cnt123" count="1" loot_prob_template="nothing50"/>
 </lootcontainer>
-  
+
+<!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
+<!-- =========================== BONUSBAG (BASE) ============================================================================================================================================================================================================================================================================================================================ -->
+<lootgroup name="cnt148" count="all"> <item group="kitFood"/> <item group="kitDrink"/> <item group="kitMedicine" count="0,1"/> <item group="kitHealing"/> <item group="kitRepair"/> </lootgroup>
+<lootcontainer id="148" count="1" size="4,4" open_time="5" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "startingKit">
+
+<item group="cnt148"  count="1" prob="95"/>
+<item group="cnt148"  count="2" prob="5"/>
+</lootcontainer>
+<!-- =========================== BONUSBAG (LUCKY) ============================================================================================================================================================================================================================================================================================================================ -->
+<lootcontainer id="149" count="1" size="4,4" open_time="5" 
+destroy_on_close=       "false"
+sound_open=             "UseActions/open_backpack"
+sound_close=            "UseActions/close_backpack"
+loot_quality_template=  "startingKit">
+
+<item group="startingKitBasics"  count="1" prob="100"/>
+</lootcontainer>
 <!-- =========================== TREASURE ZOMBIES ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt150">  <item name="casinoCoin" count="1332,2674" prob="10"/> <item group="lootBaseZombie" prob="4.5"/>  <item group="lootStrongZombie" prob="25"/>  <item group="lootSoldierZombie" prob="15"/> <item group="lootSurvivor" prob="10"/>  <item group="lootTreasureBasic" prob="15"/> <item group="lootSafesRich" prob="15"/> <item group="lootADStock" prob="5"/> <item name="Railgun" prob="0.5"/> </lootgroup>
 <lootcontainer id="150" count="1" size="5,5" open_time="1" 
@@ -3445,8 +3471,6 @@ loot_quality_template=  "hordeTreasure">
 <!-- Chance of Default Loot -->
 <item name="casinoCoin" count="666,1337" loot_prob_template="nothing66Ex"/>
 </lootcontainer>
-<!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
-
 <!-- =========================== STARTERKIT (BASE) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootcontainer id="151" count="1" size="9,9" open_time="5" 
 destroy_on_close=       "false"
@@ -3480,7 +3504,7 @@ loot_quality_template=  "startingKit">
 <lootgroup name="questBag3"                count="all">  <item group="lootBackpacks"/>   <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
 <lootgroup name="questBag4"                count="all">  <item group="lootBackpacks"/>   <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
 <lootgroup name="questBag5"                count="all">  <item group="lootBackpacks"/>   <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/>  <item group="ammoGuns" count="5"/>  </lootgroup>
-<lootcontainer id="154" count="1" size="5,5" open_time="15" 
+<lootcontainer id="154" count="1" size="7,7" open_time="15" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
