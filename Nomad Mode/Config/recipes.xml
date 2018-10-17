@@ -772,14 +772,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- ============================== Other Block Recipes ============================================================================================================================================================================================================================================================================================================================================= -->
 <!-- Wood Catwalks -->
-<recipe name="woodCatwalk" count="1">                                                                       <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
-<recipe name="woodCatwalkRailing" count="1">                                                                <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodCatwalkRailingCNR" count="1">                                                             <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodCatwalkWedgeRailing" count="1">                                                           <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodStairsBoard" count="1">                                                                   <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
-<recipe name="woodStairsBoardRailing" count="1">                                                            <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
-<recipe name="woodRailing" count="1">                                                                       <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
-<recipe name="woodCatwalkWedge" count="1">                                                                  <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodCatwalk" count="1" craft_area="workbench">                                                            <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodCatwalkRailing" count="1" craft_area="workbench">                                                     <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkRailingCNR" count="1" craft_area="workbench">                                                  <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodCatwalkWedgeRailing" count="1" craft_area="workbench">                                                <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodStairsBoard" count="1" craft_area="workbench">                                                        <ingredient name="wood" count="10"/> <ingredient name="nail" count="2"/> </recipe>
+<recipe name="woodStairsBoardRailing" count="1" craft_area="workbench">                                                 <ingredient name="wood" count="12"/> <ingredient name="nail" count="3"/> </recipe>
+<recipe name="woodRailing" count="1" craft_area="workbench">                                                            <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodCatwalkWedge" count="1" craft_area="workbench">                                                       <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <!-- Forged Iron Catwalks -->
 <recipe name="metalCatwalk" count="1" craft_area="forge" craft_tool="anvil" material_based="true">                      <ingredient name="unit_iron" count="42"/> <ingredient name="unit_clay" count="19"/> </recipe>
 <recipe name="metalCatwalkRailing" count="1" craft_area="forge" craft_tool="anvil" material_based="true">               <ingredient name="unit_iron" count="84"/> <ingredient name="unit_clay" count="38"/> </recipe>
@@ -799,10 +799,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelRailing" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">              <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
 <recipe name="steelCatwalkWedge" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">         <ingredient name="unit_iron" count="72"/> <ingredient name="unit_clay" count="36"/> <ingredient name="unit_lime" count="18"/> </recipe>
 <!-- Wood Bars and Gates -->
-<recipe name="woodBars" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodBars" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodBars" count="1">                                                                          <ingredient name="woodBarsCTR" count="1"/> </recipe>
 <recipe name="woodBarsCTR" count="1">                                                                       <ingredient name="woodBars" count="1"/> </recipe>
-<recipe name="woodGate" count="1">                                                                          <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
+<recipe name="woodGate" count="1" craft_area="workbench">                                                   <ingredient name="wood" count="8"/> <ingredient name="nail" count="1"/> </recipe>
 <recipe name="woodGate" count="1">                                                                          <ingredient name="woodGateCTR" count="1"/> </recipe>
 <recipe name="woodGateCTR" count="1">                                                                       <ingredient name="woodGate" count="1"/> </recipe>
 <!-- Iron Bars and Gates -->
