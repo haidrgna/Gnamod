@@ -1954,7 +1954,7 @@
 <property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
 <property name="Material" value="MglassBulletproof"/>
 <property name="Shape" value="New"/>
-<property name="LightOpacity" value="2"/>
+<property name="LightOpacity" value="0"/>
 <property name="Model" value="cube_glass"/>
 <property name="Mesh" value="transparent"/>
 <property name="Texture" value="333"/>
@@ -5961,6 +5961,7 @@
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="66"/>
 <property name="DowngradeBlock" value="cntMunitionsBoxInsecure"/>
+<drop event="Fall" name="cntMunitionsBox" count="1" prob="1" stick_chance="1"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -6687,6 +6688,7 @@
 <property name="IsTerrainDecoration" value="true"/>
 <property name="LootList" value="68"/>
 <property name="DowngradeBlock" value="cntLockersInsecure"/>
+<drop event="Fall" name="cntLockersInsecure" count="1" prob="1" stick_chance="1"/>
 <drop event="Destroy" count="0"/>
 </block>
 
@@ -6718,6 +6720,7 @@
 <property name="Place" value="TowardsPlacerInverted"/>
 <property name="LootList" value="67"/>
 <property name="DowngradeBlock" value="cntGunSafeInsecure"/>
+<drop event="Fall" name="cntGunSafe" count="1" prob="1" stick_chance="1"/>
 </block>
 
 <block id="629" name="cntGraniteSink">
