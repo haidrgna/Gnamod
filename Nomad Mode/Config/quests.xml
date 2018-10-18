@@ -282,179 +282,170 @@ description="I have marked on this map the route we are taking and a spot where 
 offer="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="BaseCamp" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad4"/>
-</quest>
-
-<quest id="quest_GnamodNomad4" group_name="Nomading Around" category="quest"
-name="Digging for a cache 1" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad5"/>
 </quest>
 
-<quest id="quest_GnamodNomad5" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad4" group_name="Nomading Around" category="quest"
 name="Following the trail 1" subtitle="Finding Campsite 1"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
+<action type="TrackQuest"/>
 <objective type="Goto" id="Campsite1" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad6"/>
-</quest>
-
-<quest id="quest_GnamodNomad6" group_name="Nomading Around" category="quest"
-name="Digging for a cache 2" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad7"/>
 </quest>
 
-<quest id="quest_GnamodNomad7" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad5" group_name="Nomading Around" category="quest"
+name="Digging for a cache 1" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad6" group_name="Nomading Around" category="quest"
 name="Following the trail 2" subtitle="Finding Campsite 2"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite2" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad8"/>
-</quest>
-
-<quest id="quest_GnamodNomad8" group_name="Nomading Around" category="quest"
-name="Digging for a cache 3" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad9"/>
 </quest>
 
-<quest id="quest_GnamodNomad9" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad7" group_name="Nomading Around" category="quest"
+name="Digging for a cache 2" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad8" group_name="Nomading Around" category="quest"
 name="Following the trail 3" subtitle="Finding Campsite 3"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite3" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad10"/>
-</quest>
-
-<quest id="quest_GnamodNomad10" group_name="Nomading Around" category="quest"
-name="Digging for a cache 4" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad11"/>
 </quest>
 
-<quest id="quest_GnamodNomad11" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad9" group_name="Nomading Around" category="quest"
+name="Digging for a cache 3" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad10" group_name="Nomading Around" category="quest"
 name="Following the trail 4" subtitle="Finding Campsite 4"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite4" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad12"/>
-</quest>
-
-<quest id="quest_GnamodNomad12" group_name="Nomading Around" category="quest"
-name="Digging for a cache 5" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad13"/>
 </quest>
 
-<quest id="quest_GnamodNomad13" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad11" group_name="Nomading Around" category="quest"
+name="Digging for a cache 4" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad12" group_name="Nomading Around" category="quest"
 name="Following the trail 5" subtitle="Finding Campsite 5"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite5" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad14"/>
-</quest>
-
-<quest id="quest_GnamodNomad14" group_name="Nomading Around" category="quest"
-name="Digging for a cache 6" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad15"/>
 </quest>
 
-<quest id="quest_GnamodNomad15" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad13" group_name="Nomading Around" category="quest"
+name="Digging for a cache 5" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad14" group_name="Nomading Around" category="quest"
 name="Following the trail 6" subtitle="Finding campsite 6"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite6" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad16"/>
-</quest>
-
-<quest id="quest_GnamodNomad16" group_name="Nomading Around" category="quest"
-name="Digging for a cache 7" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad17"/>
 </quest>
 
-<quest id="quest_GnamodNomad17" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad15" group_name="Nomading Around" category="quest"
+name="Digging for a cache 6" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad16" group_name="Nomading Around" category="quest"
 name="Following the trail 7" subtitle="Finding campsite 7"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite7" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad18"/>
-</quest>
-
-<quest id="quest_GnamodNomad18" group_name="Nomading Around" category="quest"
-name="Digging for a cache 8" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad19"/>
 </quest>
 
-<quest id="quest_GnamodNomad19" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad17" group_name="Nomading Around" category="quest"
+name="Digging for a cache 7" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad18" group_name="Nomading Around" category="quest"
 name="Following the trail 8" subtitle="Finding campsite 8"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite8" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad20"/>
-</quest>
-
-<quest id="quest_GnamodNomad20" group_name="Nomading Around" category="quest"
-name="Digging for a cache 9" subtitle="Finding a hidden cache"
-description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
-icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad21"/>
 </quest>
 
-<quest id="quest_GnamodNomad21" group_name="Nomading Around" category="quest"
+<quest id="quest_GnamodNomad19" group_name="Nomading Around" category="quest"
+name="Digging for a cache 8" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
+</quest>
+
+<quest id="quest_GnamodNomad20" group_name="Nomading Around" category="quest"
 name="Following the trail 9" subtitle="Finding campsite 9"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_map_campsite" difficulty="hard">
 <objective type="Goto" id="Campsite9" value="5"/>
-<reward type="Item" id="ClosedNote" value="1"/>
+<reward type="Item" id="q_GnamodNoteDucky" value="1"/>
 <reward type="Quest" id="quest_GnamodNomad22"/>
+<reward type="Item" id="q_GnamodNomadTrail" value="1"/>
+</quest>
+
+<quest id="quest_GnamodNomad21" group_name="Nomading Around" category="quest"
+name="Digging for a cache 9" subtitle="Finding a hidden cache"
+description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
+icon="ui_game_symbol_treasure" difficulty="hard">
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
 </quest>
 
 <quest id="quest_GnamodNomad22" group_name="Nomading Around" category="quest"
 name="Digging for a cache 10" subtitle="Finding a hidden cache"
 description="I have marked on this map the route we are taking and a spot where I will bury some supplies we can miss a few meters down. I will do my best to leave clues behind so that you can keep following us."
 icon="ui_game_symbol_treasure" difficulty="hard">
-<objective type="TreasureChest" id="treasureChestNomad" value="10-25" optional="true"/>
-<objective type="Craft" id="q_GnamodNoteDucky" value="1"/>
-<reward type="Item" id="q_GnamodNomadTrail" value="1"/>
+<objective type="TreasureChest" id="treasureChestNomad" value="10-25"/>
 </quest>
 
 <quest id="quest_GnamodNomadTrail" group_name="The Nomad Trail" category="quest"
