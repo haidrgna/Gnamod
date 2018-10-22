@@ -107,6 +107,8 @@
 <modify id="0" stat="speedmodifier" mulValue="0.30"/>  </buff>
 <buff id="stunned"       duration="6" mutex="stunCooldown,painkillerBuff,Drunk,megaCrushBuff,Buzzed,spawnProtected" actions="increment(@wellness, -1.0, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 <modify id="0" stat="speedmodifier" mulValue="0.25"/>  </buff>
+<buff id="Stunned"       duration="6" mutex="stunCooldown,painkillerBuff,Drunk,megaCrushBuff,Buzzed,spawnProtected" actions="increment(@wellness, -1.0, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+<modify id="0" stat="speedmodifier" mulValue="0.25"/>  </buff>
 <buff id="stunnedStrong" duration="8" mutex="stunCooldown,painkillerBuff,Drunk,megaCrushBuff,spawnProtected" actions="increment(@wellness, -1.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 <modify id="0" stat="speedmodifier" mulValue="0.20"/>  </buff>
 <buff id="stunCooldown" duration="4" stack="discard"/>
