@@ -355,8 +355,8 @@
 <property name="MaxTurnSpeed"                       value="360"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>
 <!-- Stealth settings -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <property name="NoiseAlertThreshold"                value="20"/>
 <property name="SmellAlertThreshold"                value="20"/>
 <!-- Sound Settings -->
@@ -419,8 +419,8 @@
 <property name="MaxTurnSpeed"                       value="450"/>
 <property name="SoundFootstepModifier"              value="Animals/Bear/bear_footstep"/>  
 <!-- Stealth settings -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <property name="NoiseAlertThreshold"                value="20"/>
 <property name="SmellAlertThreshold"                value="20"/>
 <!-- Sound Settings -->
@@ -4252,8 +4252,8 @@
 <property name="AITarget-7"                         value="SetNearestEntityAsTarget"    param1="EntityEnemyAnimal"/>  
 <property name="AITarget-8"                         value="SetNearestEntityAsTarget"    param1="EntityNPC"/> 
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <property name="SleeperSmellSenseThreshold"         value="5,30"/>
 <property name="SleeperSmellWakeThreshold"          value="10,40"/>
 <property name="SmellAlertThreshold"                value="5"/>
@@ -4311,8 +4311,8 @@
 <property name="SoundSense"                         value="Animals/Vulture/vulturesense"/>
 <property name="SoundGiveUp"                        value="Animals/Vulture/vulturegiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,3"/>
 <drop event="Harvest"                               name="femur"        tool_category="Butcher" count="1,2"/>
@@ -4378,8 +4378,8 @@
 <property name="SoundAttack"                        value="Animals/Bear/bearattack"/>
 <property name="SoundGiveUp"                        value="Animals/Bear/beargiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="4,6"/>
 <drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="9,12"/>
@@ -4506,8 +4506,8 @@
 <property name="SoundSense"                         value="Animals/Wolf/wolfsense"/>
 <property name="SoundGiveUp"                        value="Animals/Wolf/wolfgiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4608,8 +4608,8 @@
 <property name="Explosion.BlockDamage"              value="0"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="1"/>
 <drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="1,2"/>
@@ -4678,8 +4678,8 @@
 <property name="SoundSense"                         value="Animals/Boar/boarsense"/>
 <property name="SoundGiveUp"                        value="Animals/Boar/boargiveup"/>
 <!-- Stealth -->
-<property name="SightRange"                         value="180"/>
-<property name="SightScale"                         value="-25,25"/>
+<property name="SightRange"                         value="90"/>
+<property name="SightScale"                         value="-15,35"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="2,4"/>
 <drop event="Harvest"                               name="animalHide"   tool_category="Butcher" count="4,6"/>
