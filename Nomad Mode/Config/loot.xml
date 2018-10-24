@@ -1863,7 +1863,7 @@
 <lootgroup name="kitGunPair44"          count="all">  <item group="kitSPShotgun"/>              <item group="kitDBShotgun"/>    </lootgroup>
 <lootgroup name="kitGunPair45"          count="all">  <item group="kitLPShotgun"/>              <item group="kitDBShotgun"/>    </lootgroup>
 <lootgroup name="kitGunPair46"          count="all">  <item name="gunRocketLauncher"/>          <item group="ammoRocket" count="10,20"/>  </lootgroup>
-<lootgroup name="kitGunPair47"          count="all">  <item name="Railgun"/>                    <item name="repairKit" count="5,20"/>  </lootgroup>
+<lootgroup name="kitGunPair47"          count="all">  <item name="Railgun"/>                    <item name="repairKit" count="15,30"/>  </lootgroup>
 
 <!-- Final Gun Groups -->
 <lootgroup name="kitGunBase">
@@ -1983,7 +1983,7 @@
 </lootgroup>
 <!-- Starting Kits Base Groups -->
 <lootgroup name="startingKitBasics"     count="all">  <item name="flashlight02"/>                 <item group="kitFood"/>                           <item group="kitDrink"/>                    <item group="kitMedicine"/>             <item group="kitHealing"/>
-                                                      <item group="kitRepair"/>                   <item group="kitClub"/>                           <item group="clothGeneralRS"/>              <item group="kitArmors"/>               </lootgroup>
+                                                      <item group="kitRepair"/>                   <item group="kitClub"/>                           <item group="clothGeneralRS"/>              <item group="kitArmors"/>               <item name="repairKit" count="5"/> </lootgroup>
 <lootgroup name="startingKitGunsBase"   count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunPairs"/>                       <item group="kitExplosives" count="0,2"/>   </lootgroup>
 <lootgroup name="startingKitGunsLucky"  count="all">  <item group="kitRanged" count="1"/>         <item group="kitGunPairs"/>                       <item group="kitExplosives" count="2,3"/>   </lootgroup>
 <lootgroup name="startingKitToolsBase"  count="all">  <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>        <item group="kitBonusToolsC" count="0,1"/>  <item group="kitKnife" count="0,1"/>    </lootgroup>
@@ -3419,20 +3419,23 @@ loot_quality_template=  "leveledLight">
 <!-- =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= GNAMOD NOMAD Containers =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
 <!-- =========================== BONUSBAG (BASE) ============================================================================================================================================================================================================================================================================================================================ -->
 <lootgroup name="cnt148a" count="all"> <item group="kitFood"/> <item group="kitDrink"/> <item group="kitMedicine" count="0,1"/> <item group="kitHealing"/> <item group="kitRepair"/> </lootgroup>
-<lootgroup name="cnt148b" count="all"> <item group="ammoGuns" count="5,15"/> </lootgroup>
+<lootgroup name="cnt148b" count="all"> <item group="ammoGuns" count="8,16"/> <item name="repairKit" count="2,6"/> </lootgroup>
+<lootgroup name="cnt148c" count="all"> <item group="ammoGuns" count="8,16"/> <item group="kitFood"/> <item group="kitDrink"/> <item group="kitMedicine" count="1"/> <item group="kitHealing"/> <item group="kitRepair"/> </lootgroup>
 <lootcontainer id="148" count="1" size="4,4" open_time="5" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "startingKit">
 
-<item group="cnt148a"  count="1" prob="60"/>
-<item group="cnt148b"  count="1" prob="30"/>
+<item group="cnt148a"  count="1" prob="50"/>
+<item group="cnt148b"  count="1" prob="20"/>
+<item group="cnt148c"  count="1" prob="18"/>
 <item group="cnt148a"  count="2" prob="5"/>
 <item group="cnt148b"  count="2" prob="5"/>
+<item group="cnt148c"  count="2" prob="2"/>
 </lootcontainer>
 <!-- =========================== BONUSBAG (LUCKY) ============================================================================================================================================================================================================================================================================================================================ -->
-<lootcontainer id="149" count="1" size="4,4" open_time="5" 
+<lootcontainer id="149" count="1" size="7,7" open_time="5" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
@@ -3482,28 +3485,27 @@ loot_quality_template=  "startingKit">
 <item group="startingKitFood" count="1" prob="100"/>
 </lootcontainer>
 <!-- =========================== QUEST BAG ======================================================================================================================================================================================================================================================================================================================================= -->
-<lootgroup name="questBag1" count="all"> <item group="ammoGuns" count="5,10"/> <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="0,1"/>  <item group="kitBonusToolsC" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
-<lootgroup name="questBag2" count="all"> <item group="ammoGuns" count="5,10"/> <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
-<lootgroup name="questBag3" count="all"> <item group="ammoGuns" count="5,10"/> <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="0,1"/>  <item group="kitExplosives" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
-<lootgroup name="questBag4" count="all"> <item group="ammoGuns" count="5,10"/> <item group="kitRepair" count="0,1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
-<lootgroup name="questBag5" count="all"> <item group="ammoGuns" count="5,10"/> <item group="kitRanged" count="0,1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
-<lootcontainer id="154" count="1,2" size="7,7" open_time="15" 
+<lootgroup name="questBag1" count="all"> <item group="ammoGuns" count="7,10"/> <item group="kitBonusToolsA" count="0,1"/>  <item group="kitBonusToolsB" count="1"/>  <item group="kitBonusToolsC" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
+<lootgroup name="questBag2" count="all"> <item group="ammoGuns" count="7,10"/> <item group="kitDrink" count="0,1"/>  <item group="kitFood" count="0,1"/>  <item group="kitHealing" count="1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
+<lootgroup name="questBag3" count="all"> <item group="ammoGuns" count="7,10"/> <item group="kitMedicine" count="0,1"/>  <item group="kitGunBonus" count="1"/>  <item group="kitExplosives" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
+<lootgroup name="questBag4" count="all"> <item group="ammoGuns" count="7,10"/> <item group="kitRepair" count="1"/>  <item group="kitClub" count="0,1"/>  <item group="kitKnife" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
+<lootgroup name="questBag5" count="all"> <item group="ammoGuns" count="7,10"/> <item group="kitRanged" count="1"/>  <item group="kitArrows" count="0,1"/>  <item group="kitBolts" count="0,1"/> <item group="lootBackpacks" count="0,1"/> </lootgroup>
+<lootcontainer id="154" count="2" size="7,7" open_time="15" 
 destroy_on_close=       "false"
 sound_open=             "UseActions/open_backpack"
 sound_close=            "UseActions/close_backpack"
 loot_quality_template=  "hordeTreasure">
 
-<item group="ammoGuns" count="10,20"    prob="24"/>
-<item group="kitExplosives" count="10"  prob="5"/>
-<item group="questBag1"                 prob="10"/>
-<item group="questBag2"                 prob="10"/>
-<item group="questBag3"                 prob="10"/>
-<item group="questBag4"                 prob="10"/>
-<item group="questBag5"                 prob="10"/>
-<item group="kitGunPairs"               prob="10"/>
-<item group="startingKitBasics"         prob="5"/>
-<item group="startingKitBase"           prob="5"/>
-<item name="Railgun"                    prob="1"/>
+<item group="kitAllAmmo" count="2,4"     prob="20"/>
+<item group="kitExplosives" count="9,18" prob="10"/>
+<item group="questBag1"                  prob="10"/>
+<item group="questBag2"                  prob="10"/>
+<item group="questBag3"                  prob="10"/>
+<item group="questBag4"                  prob="10"/>
+<item group="questBag5"                  prob="10"/>
+<item group="kitGunPairs"                prob="10"/>
+<item group="startingKitBasics"          prob="7"/>
+<item group="startingKitBase"            prob="3"/>
 </lootcontainer>
 <!-- =========================== BEACON BASICS ================================================================================================================================================================================================================================================================================================================================= -->
 <lootgroup name="cnt155"> <item group="blocksBase" count="1,2" prob="10"/>  <item group="blocksWorkstation" prob="3"/> <item group="blocksElectric" prob="10"/> <item group="lootHWMats" count="3,4" prob="52"/>  <item group="lootHWTools" prob="25"/>  </lootgroup>
