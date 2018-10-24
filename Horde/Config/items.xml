@@ -12240,6 +12240,10 @@ Mesh files no longer used:
 <property name="SoundJammed"                  value="weapon_jam"/>
 <property name="CrosshairUpAfterShot"         value="false"/>
 <property name="Stacknumber"                  value="1"/>
+<property name="LightSource"                  value="lightSource"/>
+<property name="ActivateObject"               value="Attachments/flashlight/lightSource"/>
+<property name="AttachmentFlashlight"         value="flashlight02"/>
+<property name="LightValue"                   value="0.45"/>
 <property class="Action0">
 <property name="Class"                        value="Launcher"/>
 <property name="Delay"                        value="0.01"/>
@@ -12269,9 +12273,10 @@ Mesh files no longer used:
 </property>
 <property class="Attributes">
 <property name="DegradationMax"               value="50000,100000"/>
-<property name="DegradationRate"              value="15,15"/>
+<property name="DegradationRate"              value="10,5"/>
 <property name="DismembermentBaseChance"      value="0.025,0.1"/>
 </property>
+<property name="Group"                        value="Science"/>
 <property name="EconomicValue"                value="25000"/>
 </item>
 
