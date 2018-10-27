@@ -1499,35 +1499,6 @@
 <!-- ===== Particles ============================== -->
 </weather>
 <!-- ============================== Sub Biomes =========================================================================================================================================================================================== -->
-<subbiome prob="0.005"> <!-- Lake -->
-<layers>
-<layer depth="3"  blockname="terrainWater"/>
-<layer depth="1"  blockname="terrainWater">   <resource blockname="dirt"              cluster="0" prob="0.45"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">   <resource blockname="clay"              cluster="0" prob="0.55"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">   <resource blockname="clay"              cluster="0" prob="0.65"    rwgGenerationType="all"/> </layer>
-<layer depth="1"  blockname="terrainWater">   <resource blockname="dirt"              cluster="0" prob="0.75"    rwgGenerationType="all"/> </layer>
-<layer depth="23" blockname="stone">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="granite" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.1000" rwgGenerationType="all"/>
-<resource blockname="oreHelperCommon" cluster="1" prob="0.0250" rwgGenerationType="all"/>
-</layer>
-<layer depth="*" blockname="granite">
-<resource blockname="limestone" cluster="0" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="stone" cluster="0" prob="0.0500" rwgGenerationType="all"/>
-<resource blockname="oreHelper" cluster="1" prob="0.2000" rwgGenerationType="all"/>
-<resource blockname="oreHelperRare" cluster="1" prob="0.0500" rwgGenerationType="all"/>
-</layer>
-<layer depth="2"  blockname="granite"/>
-<layer depth="1"  blockname="harvestLayer"/>
-<layer depth="2"  blockname="bedrock"/>
-</layers>
-
-<decorations>
-<!-- Grass & Shrubs -->
-<decoration type="block" blockname="treePlainsGrassDiagonal"              prob="0.0001"/>
-</decorations>
-</subbiome> 
 <!-- ============================== Main Biome =========================================================================================================================================================================================== -->
 <layers>                <layer filluptorg="58" blockname="water" />
 <layer depth="2"  blockname="grass">            <resource blockname="dirt"              cluster="0" prob="0.4"    rwgGenerationType="all"/> </layer>

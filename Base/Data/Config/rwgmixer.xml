@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rwgmixer><world ruleset="base"/>
+<rwgmixer><world ruleset="test"/>
 
 <rulesets>
 <!-- Base -->               <ruleset name="base"              cell_cache_size="8" cell_size="1200"    cell_offset="0.30"  generation_distance="12000"  terrain_generator="gnamodBase"     biome_generator="gnamod"> <cell_rule name="baseHub" prob="1"/> </ruleset>
@@ -7,7 +7,7 @@
 <!-- Necropolis -->         <ruleset name="necropolis"        cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisHub" prob="1"/>  </ruleset>
 <!-- Necropolis Nomad -->   <ruleset name="necropolisNomad"   cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="3600"   terrain_generator="necropolis"     biome_generator="gnamod"> <cell_rule name="necropolisSmallHub" prob="1"/> <cell_rule name="necropolisHub" position="0,0" prob="1"/>  </ruleset>
 <!-- Horde Mode -->         <ruleset name="horde"             cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="2000"   terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="hordeHub" prob="1"/> <cell_rule name="hordeHubEmpty" position="0,0" prob="1"/>  </ruleset>
-<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="1200"    cell_offset="0"     generation_distance="2000"   terrain_generator="gnamodHorde"    biome_generator="gnamod"> <cell_rule name="emptyHub" prob="1"/>  </ruleset>
+<!-- Test -->               <ruleset name="test"              cell_cache_size="8" cell_size="1200"    cell_offset="0"  generation_distance="12000"  terrain_generator="experimental"   biome_generator="gnamod"> <cell_rule name="emptyHub" prob="1"/>  </ruleset>
 </rulesets>
 
 <!-- Cell Rules (Big chunks of the map with a hub near the center. Biggest city size = 1500) -->
@@ -1484,6 +1484,311 @@
 <!-- Final Output -->
 <output module="WorldBuilding"/>
 </terrain_generator>
+
+<terrain_generator                        name="experimental" use_old_final="false">
+<!-- Modules -->
+<module name="Base"                       type="FastBillow" seed_additive="2"> 
+<property name="frequency"                value="0.035"/>
+</module>
+<module name="BaseFilter"                 type="ScaleBiasOutput">
+<property name="sourceModule"             value="Base"/>
+<property name="scale"                    value="0.22"/>
+<property name="bias"                     value="0.38"/>  
+</module>
+<module name="WorldBase"                  type="FastTurbulence">
+<property name="sourceModule"             value="BaseFilter"/>
+<property name="power"                    value="1"/>
+<property name="frequency"                value="0.05"/>
+<property name="roughness"                value="5"/>
+</module>
+<module name="RidgeLakesBase"             type="RidgedMultifractal">
+<property name="frequency"                value="0.40"/>
+<property name="roughness"                value="5"/>
+</module>
+<module name="RidgeLakes"                 type="ScaleBiasOutput">
+<property name="sourceModule"             value="RidgeLakesBase"/>
+<property name="scale"                    value="0.25"/>
+<property name="bias"                     value="0.05"/>
+</module>
+<module name="RidgeLakesBase2"            type="RidgedMultifractal">
+<property name="frequency"                value="0.60"/>
+<property name="roughness"                value="5"/>
+</module>
+<module name="RidgeLakes2"                type="ScaleBiasOutput">
+<property name="sourceModule"             value="RidgeLakesBase2"/>
+<property name="scale"                    value="0.05"/>
+<property name="bias"                     value="0.05"/>
+</module> 
+<module name="LakeDeltaBase"              type="FastBillow">
+<property name="frequency"                value="0.035"/>
+</module>
+<module name="LakeDeltaMod"               type="ScaleBiasOutput">
+<property name="sourceModule"             value="LakeDeltaBase"/>
+<property name="scale"                    value="0.22"/>
+<property name="bias"                     value="0.12"/>
+</module>
+<module name="LakeDelta"                  type="FastTurbulence">
+<property name="sourceModule"             value="LakeDeltaMod"/>
+<property name="power"                    value="15"/>
+<property name="frequency"                value="0.40"/>
+<property name="roughness"                value="5"/>
+</module>  
+<module name="MountainsBase"              type="FastNoise">
+<property name="frequency"                value="1.10"/>
+</module>
+<module name="MountainsMod"               type="FastBillow">
+<property name="sourceModule"             value="MountainsBase"/>
+<property name="frequency"                value="0.60"/>
+</module>
+<module name="Mountains"                  type="ScaleBiasOutput">
+<property name="sourceModule"             value="MountainsMod"/>
+<property name="scale"                    value="0.25"/>
+<property name="bias"                     value="0.40"/>
+</module>
+<module name="Mountains2Base"             type="FastNoise">
+<property name="frequency"                value="1.10"/>
+</module>
+<module name="Mountains2Mod"              type="FastBillow">
+<property name="sourceModule"             value="Mountains2Base"/>
+<property name="frequency"                value="0.30"/>
+</module>
+<module name="Mountains2"                 type="ScaleBiasOutput">
+<property name="sourceModule"             value="Mountains2Mod"/>
+<property name="scale"                    value="1.70"/>
+<property name="bias"                     value="1.40"/>
+</module>
+<module name="RockyRiverBase"             type="FastBillow">
+<property name="frequency"                value="0.075"/>
+</module>
+<module name="RockyRiverMod"              type="ScaleBiasOutput">
+<property name="sourceModule"             value="RockyRiverBase"/>
+<property name="scale"                    value="0.30"/>
+<property name="bias"                     value="0.22"/>  
+</module>
+<module name="RockyRiver"                 type="FastTurbulence" seed_additive="5">
+<property name="sourceModule"             value="RockyRiverMod"/>
+<property name="power"                    value="5"/>
+<property name="frequency"                value="1.10"/>
+<property name="roughness"                value="1"/>
+</module>
+<module name="ContinentsBase"             type="FastBillow">
+<property name="frequency"                value="0.075"/>
+</module>
+<module name="ContinentsMod"              type="ScaleBiasOutput">
+<property name="sourceModule"             value="ContinentsBase"/>
+<property name="scale"                    value="0.22"/>
+<property name="bias"                     value="0.15"/>  
+</module>
+<module name="Continents"                 type="FastTurbulence">
+<property name="sourceModule"             value="ContinentsMod"/>
+<property name="power"                    value="2"/>
+<property name="frequency"                value="0.40"/>
+<property name="roughness"                value="5"/>
+</module>
+
+<!-- Selectors and Blenders  -->
+<module name="Addition1"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="RidgeLakes"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition2"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition1"/>
+<property name="sourceModule2"            value="LakeDelta"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition3"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition2"/>
+<property name="sourceModule2"            value="Mountains"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition4"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition3"/>
+<property name="sourceModule2"            value="RidgeLakes"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition5"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition4"/>
+<property name="sourceModule2"            value="RockyRiver"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition6"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition5"/>
+<property name="sourceModule2"            value="Continents"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Addition7"                  type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition6"/>
+<property name="sourceModule2"            value="RidgeLakes2"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Selector1"                  type="Select">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Addition7"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="GreenWorld"                 type="Blend">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="Mountains2"/>
+<property name="sourceModule2"            value="Selector1"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+
+<!--Experimental Biomes -->
+<module name="SwampBase"                  type="FastBillow">
+<property name="frequency"                value="0.110"/>
+</module>
+<module name="SwampMod"                   type="ScaleBiasOutput">
+<property name="sourceModule"             value="SwampBase"/>
+<property name="scale"                    value="0.30"/>
+<property name="bias"                     value="0.05"/>
+</module>
+<module name="SwampOut"                   type="FastTurbulence">
+<property name="sourceModule"             value="SwampMod"/>
+<property name="power"                    value="16"/>
+<property name="frequency"                value="0.25"/>
+<property name="roughness"                value="4"/>
+</module>  
+<module name="Swamp"                      type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="SwampOut"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+
+<!-- Biome Mimic (Credit to Alphado-Jaki for this idea) -->
+<module name="BiomeVoronoi"               type="Voronoi">
+<property name="frequency"                value="0.00085"/>
+<property name="displacement"             value="1.25"/>
+</module>
+<module name="BiomeBiasOutput"            type="BiasOutput">
+<property name="sourceModule"             value="BiomeVoronoi"/>
+<property name="bias"                     value="0.55"/>
+</module>
+<module name="BiomeDither"                type="FastTurbulence">
+<property name="sourceModule"             value="BiomeBiasOutput"/>
+<property name="frequency"                value="0.25"/>
+<property name="power"                    value="8"/>
+<property name="roughness"                value="5"/>
+</module>
+<module name="BiomeJiggle"                type="FastTurbulence">
+<property name="sourceModule"             value="BiomeDither"/>
+<property name="frequency"                value="0.0015"/>
+<property name="power"                    value="400"/>
+<property name="roughness"                value="1"/>
+</module>
+<module name="BiomeClampOutput"           type="ClampOutput">
+<property name="sourceModule"             value="BiomeJiggle"/>
+<property name="bounds"                   value="0,1"/>
+</module>
+<module name="BiomeCtrl"                  type="ScaleInput">
+<property name="sourceModule"             value="BiomeClampOutput"/>
+<property name="x"                        value="512"/>
+<property name="z"                        value="512"/>
+</module>
+
+<module name="BiomeSelectStart"           type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="WorldBase"/>
+<property name="sourceModule2"            value="GreenWorld"/>
+<property name="bounds"                   value="0,0.4"/>
+</module>
+
+<module name="BiomeSelectA"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectStart"/>
+<property name="sourceModule2"            value="GreenWorld"/>
+<property name="bounds"                   value="0.1,0.2"/>
+</module>
+
+<module name="BiomeSelectB"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectA"/>
+<property name="sourceModule2"            value="GreenWorld"/>
+<property name="bounds"                   value="0.2,0.3"/>
+</module>
+
+<module name="BiomeSelectC"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectB"/>
+<property name="sourceModule2"            value="GreenWorld"/>
+<property name="bounds"                   value="0.3,0.4"/>
+</module>
+
+<module name="BiomeSelectD"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectC"/>
+<property name="sourceModule2"            value="GreenWorld"/>
+<property name="bounds"                   value="0.4,0.5"/>
+</module>
+
+<module name="BiomeSelectE"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectD"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0.5,0.6"/>
+</module>
+
+<module name="BiomeSelectF"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectE"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0.6,0.7"/>
+</module>
+
+<module name="BiomeSelectG"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectF"/>
+<property name="sourceModule2"            value="Continents"/>
+<property name="bounds"                   value="0.7,0.8"/>
+</module>
+
+<module name="BiomeSelectH"               type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectG"/>
+<property name="sourceModule2"            value="Continents"/>
+<property name="bounds"                   value="0.8,0.9"/>
+</module>
+
+<module name="BiomeSelectEnd"             type="Select">
+<property name="controlModule"            value="BiomeCtrl"/>
+<property name="sourceModule1"            value="BiomeSelectH"/>
+<property name="sourceModule2"            value="Continents"/>
+<property name="bounds"                   value="0.9,1.0"/>
+</module>
+
+<!-- Final Processing-->
+<module name="FinalScale"                 type="ScaleBiasOutput">
+<property name="sourceModule"             value="Swamp"/>
+<property name="scale"                    value="80"/>
+<property name="bias"                     value="-15"/>
+</module>
+<module name="WorldBuilding"              type="ClampOutput">
+<property name="sourceModule"             value="FinalScale"/>
+<property name="bounds"                   value="-26,255"/>
+</module>
+<!-- Final Output -->
+<output module="WorldBuilding"/>
+
+</terrain_generator>
 </terrain_generators>
 
 <!-- Biome Distribution -->
@@ -1549,7 +1854,7 @@
 </biome_intensity_generator>
 </biome_intensity_generators>
 
-<!-- Gnamod Base Biome Spawning -->
+<!-- Gnamod Base Biome Spawning
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,0.001"/>         </biome_spawn_rule>
 <biome_spawn_rule name="forest">          <biome_generator range="0.999,1.00"/>         </biome_spawn_rule>
@@ -1585,6 +1890,7 @@
 
 <biome_spawn_rule name="water">           <terrain_generator range="-60,-5"/>           </biome_spawn_rule>
 </biome_spawn_rules>
+-->
 
 <!-- Gnamod Horde Mode Biome Spawning 
 <biome_spawn_rules>
@@ -1626,12 +1932,30 @@
 </biome_spawn_rules>
 -->
 
-<!-- Biome Test
+<biome_spawn_rules>
+<biome_spawn_rule name="plains">          <biome_generator range="0.000,0.400"/>         </biome_spawn_rule>
+<biome_spawn_rule name="burnt_forest">    <biome_generator range="0.400,0.500"/>         </biome_spawn_rule>
+
+<biome_spawn_rule name="forest">          <terrain_generator range="40,255"/>            </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="80,255"/>            </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <terrain_generator range="105,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city">            <terrain_generator range="145,255"/>          </biome_spawn_rule>
+
+<biome_spawn_rule name="desert">          <biome_generator range="0.500,0.700"/>         </biome_spawn_rule>
+<biome_spawn_rule name="wasteland">       <biome_generator range="0.700,0.800"/>         </biome_spawn_rule>
+<biome_spawn_rule name="city_wasteland">  <biome_generator range="0.800,0.900"/>         </biome_spawn_rule>
+<biome_spawn_rule name="wasteland_hub">   <biome_generator range="0.900,0.950"/>         </biome_spawn_rule>
+<biome_spawn_rule name="radiated">        <biome_generator range="0.950,1.000"/>         </biome_spawn_rule>
+
+<biome_spawn_rule name="radiated">        <distance_from_center range="12000,15000"/>    </biome_spawn_rule>
+<biome_spawn_rule name="water">           <terrain_generator range="-60, -5"/>           </biome_spawn_rule>
+</biome_spawn_rules>
+
+<!-- Biome Test -->
 <biome_spawn_rules>
 <biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
 <biome_spawn_rule name="snow">            <terrain_generator range="-60,255"/>          </biome_spawn_rule>
 <biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
 </biome_spawn_rules>
--->
 
  </rwgmixer>
