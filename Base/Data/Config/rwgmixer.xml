@@ -1651,28 +1651,56 @@
 <property name="edgeFalloff"              value="2.5"/>
 </module>
 
-<!--Experimental Biomes -->
-<module name="SwampBase"                  type="FastBillow">
+<!--Experimental Standalone Terrain -->
+<module name="DeltaBase"                  type="FastBillow">
 <property name="frequency"                value="0.110"/>
 </module>
-<module name="SwampMod"                   type="ScaleBiasOutput">
-<property name="sourceModule"             value="SwampBase"/>
+<module name="DeltaMod"                   type="ScaleBiasOutput">
+<property name="sourceModule"             value="DeltaBase"/>
 <property name="scale"                    value="0.30"/>
-<property name="bias"                     value="0.05"/>
+<property name="bias"                     value="0.00"/>
 </module>
-<module name="SwampOut"                   type="FastTurbulence">
-<property name="sourceModule"             value="SwampMod"/>
+<module name="DeltaOut"                   type="FastTurbulence">
+<property name="sourceModule"             value="DeltaMod"/>
 <property name="power"                    value="16"/>
 <property name="frequency"                value="0.25"/>
 <property name="roughness"                value="4"/>
 </module>  
-<module name="Swamp"                      type="Add">
+<module name="Delta"                      type="Add">
 <property name="controlModule"            value="WorldBase"/>
-<property name="sourceModule1"            value="SwampOut"/>
+<property name="sourceModule1"            value="DeltaOut"/>
 <property name="sourceModule2"            value="WorldBase"/>
 <property name="bounds"                   value="0, 1"/>
 <property name="edgeFalloff"              value="2.5"/>
 </module>
+
+<module name="PeaksBase"                  type="FastNoise">
+<property name="frequency"                value="0.10"/>
+</module>
+<module name="PeaksMod"                   type="FastRidgedMultifractal">
+<property name="sourceModule"             value="PeaksBase"/>
+<property name="frequency"                value="0.80"/>
+</module>
+<module name="PeaksOut"                   type="ScaleBiasOutput">
+<property name="sourceModule"             value="PeaksMod"/>
+<property name="scale"                    value="2.80"/>
+<property name="bias"                     value="2.60"/>
+</module>
+<module name="PeaksThinning"              type="Add">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="WorldBase"/>
+<property name="sourceModule2"            value="PeaksOut"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+<module name="Peaks"                      type="Blend">
+<property name="controlModule"            value="WorldBase"/>
+<property name="sourceModule1"            value="PeaksThinning"/>
+<property name="sourceModule2"            value="WorldBase"/>
+<property name="bounds"                   value="0, 1"/>
+<property name="edgeFalloff"              value="2.5"/>
+</module>
+
 
 <!-- Biome Mimic (Credit to Alphado-Jaki for this idea) -->
 <module name="BiomeVoronoi"               type="Voronoi">
@@ -1777,7 +1805,7 @@
 
 <!-- Final Processing-->
 <module name="FinalScale"                 type="ScaleBiasOutput">
-<property name="sourceModule"             value="Swamp"/>
+<property name="sourceModule"             value="Peaks"/>
 <property name="scale"                    value="80"/>
 <property name="bias"                     value="-15"/>
 </module>
@@ -1953,9 +1981,14 @@
 
 <!-- Biome Test -->
 <biome_spawn_rules>
-<biome_spawn_rule name="forest">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
-<biome_spawn_rule name="snow">            <terrain_generator range="-60,255"/>          </biome_spawn_rule>
-<biome_spawn_rule name="water">           <terrain_generator range="-60,5"/>            </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <biome_generator range="0.00,1.0"/>           </biome_spawn_rule>
+<biome_spawn_rule name="plains">          <terrain_generator range="30,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="forest">          <terrain_generator range="40,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="pine_forest">     <terrain_generator range="80,255"/>           </biome_spawn_rule>
+<biome_spawn_rule name="snow">            <terrain_generator range="105,255"/>          </biome_spawn_rule>
+<biome_spawn_rule name="city">            <terrain_generator range="145,255"/>          </biome_spawn_rule>
+
+<biome_spawn_rule name="water">           <terrain_generator range="-60,0"/>            </biome_spawn_rule>
 </biome_spawn_rules>
 
  </rwgmixer>
