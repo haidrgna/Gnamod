@@ -21,9 +21,9 @@
 <property name="HarvestOverdamage" value="false"/>
 <property name="CanMobsSpawnOn" value="true"/>
 <property name="Group" value="Building"/>
-<drop event="Destroy" count="0"/>
 <property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1" name="stone">
@@ -545,6 +545,12 @@
 <property name="PlaceAltBlockValue" value="grassFromDirt,fertileDirtGrass"/> 
 <property name="CanMobsSpawnOn" value="false"/>
 <property name="DescriptionKey" value="grassDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="grassPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -557,6 +563,12 @@
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="fertileGrass"/>
 <property name="UpgradeRated.Rate" value="3"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 </block>
 
 <block id="38" name="fertileGrass">
@@ -590,6 +602,12 @@
 <property name="PlaceAltBlockValue" value="plainsFromDirt,fertileDirtPlains"/> 
 <property name="CanMobsSpawnOn" value="false"/>
 <property name="DescriptionKey" value="plainsGroundDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="plainsPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -602,6 +620,12 @@
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="fertilePlains"/>
 <property name="UpgradeRated.Rate" value="3"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 </block>
 
 <block id="42" name="fertilePlains">
@@ -635,6 +659,12 @@
 <property name="PlaceAltBlockValue" value="forestFromDirt,fertileDirtForest"/> 
 <property name="CanMobsSpawnOn" value="false"/>
 <property name="DescriptionKey" value="forestGroundDesc"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 <drop event="Harvest" name="dirtFragment" count="3,6"/>
 <drop event="Fall" name="plainsPlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -647,6 +677,12 @@
 <property name="Class" value="UpgradeRated"/>
 <property name="UpgradeRated.ToBlock" value="fertileForest"/>
 <property name="UpgradeRated.Rate" value="3"/>
+<property class="UpgradeBlock">
+<property name="ToBlock" value="fertileFarmland"/>
+<property name="Item" value="hoeIron"/>
+<property name="ItemCount" value="0"/>
+<property name="UpgradeHitCount" value="4"/>
+</property>
 </block>
 
 <block id="46" name="fertileForest">
@@ -677,6 +713,7 @@
 <property name="Texture" value="1"/>
 <property name="Map.Color" value="100,100,100"/>
 <property name="ImposterExchange" value="imposterBlock" param1="97"/>
+<property name="CanMobsSpawnOn" value="false"/>
 <drop event="Harvest" name="rockSmall" count="6,12"/>
 <drop event="Fall" name="stonePlayer" count="1" prob="0.10" stick_chance="1"/>
 </block>
@@ -983,12 +1020,14 @@
 <property name="CreativeMode" value="Player"/>
 <property name="Extends" value="asphalt"/>
 <property name="CustomIcon" value="asphalt"/>
+<property name="CanMobsSpawnOn" value="false"/>
 </block>
 
 <block id="77" name="concretePlayer">
 <property name="CreativeMode" value="Player"/>
 <property name="Extends" value="concrete"/>
 <property name="CustomIcon" value="concrete"/>
+<property name="CanMobsSpawnOn" value="false"/>
 </block>
 
 <!-- Free Terrain 78 - 89 -->
@@ -1000,9 +1039,9 @@
 <property name="DescriptionKey" value="generalBlockGroupDesc"/>
 <property name="Material" value="Mwood"/>
 <property name="Texture" value="241"/>
-<drop event="Destroy" name="wood" count="0"/>
 <property name="LightOpacity" value="0"/>
 <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+<drop event="Destroy" name="wood" count="0"/>
 </block>
 
 <block id="91" name="treeGrassMaster">
@@ -1954,7 +1993,7 @@
 <property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
 <property name="Material" value="MglassBulletproof"/>
 <property name="Shape" value="New"/>
-<property name="LightOpacity" value="2"/>
+<property name="LightOpacity" value="0"/>
 <property name="Model" value="cube_glass"/>
 <property name="Mesh" value="transparent"/>
 <property name="Texture" value="333"/>
@@ -18772,14 +18811,12 @@
 <block id="2043" name="BonusBag">
 <property name="CreativeMode" value="Player"/>
 <property name="Extends" value="StartingKit"/>
-<property name="Model" value="LootContainers/backpack02" param1="main_mesh"/>
 <property name="PlantGrowing.Next" value="BonusBagSelector"/>
 </block>
 
 <block id="2044" name="BonusBagSelector">
 <property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitSelector"/>
-<property name="Model" value="LootContainers/backpack02" param1="main_mesh"/>
 <property name="DowngradeBlock" value="BonusBagSelector"/>
 <drop event="Fall" name="BonusBagSelector" count="1" prob="1" stick_chance="1"/>
 </block>
@@ -18787,7 +18824,6 @@
 <block id="2045" name="BonusBagBase">
 <property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
-<property name="Model" value="LootContainers/backpack02" param1="main_mesh"/>
 <property name="LootList" value="148"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
@@ -18795,7 +18831,6 @@
 <block id="2046" name="BonusBagLucky">
 <property name="CreativeMode" value="None"/>
 <property name="Extends" value="StartingKitBase"/>
-<property name="Model" value="LootContainers/backpack02" param1="main_mesh"/>
 <property name="LootList" value="149"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
