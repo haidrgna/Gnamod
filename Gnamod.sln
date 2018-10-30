@@ -1209,6 +1209,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemIcons", "ItemIcons", "{
 		Mods\UIAtlasItemIcons\ItemIcons\ui_game_symbol_zombie.png = Mods\UIAtlasItemIcons\ItemIcons\ui_game_symbol_zombie.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Romero", "Romero", "{5C17ED2F-CC8A-4912-817C-D4458B038D96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B81F0BB2-F21C-4EE1-A119-325B81D86CFA}"
+	ProjectSection(SolutionItems) = preProject
+		Horde\Romero\Config\buffs.xml = Horde\Romero\Config\buffs.xml
+		Horde\Romero\Config\entityclasses.xml = Horde\Romero\Config\entityclasses.xml
+		Horde\Romero\Config\gamestages.xml = Horde\Romero\Config\gamestages.xml
+		Horde\Romero\Config\items.xml = Horde\Romero\Config\items.xml
+		Horde\Romero\Config\spawning.xml = Horde\Romero\Config\spawning.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1234,6 +1245,8 @@ Global
 		{9473743B-4A29-4EC8-B70B-D4FC971ACF84} = {43DB69B1-6B1E-4A65-8717-FC0E57C22E59}
 		{354843BA-BADA-4B29-AED9-6964BFB0C147} = {EB8C54AF-F487-4EEF-95D6-937122A2F95B}
 		{2AE069E4-72C1-49DD-BAF3-3A038F1E90E2} = {354843BA-BADA-4B29-AED9-6964BFB0C147}
+		{5C17ED2F-CC8A-4912-817C-D4458B038D96} = {FED3BCB2-22C1-4A2B-95D2-C2317C363F7D}
+		{B81F0BB2-F21C-4EE1-A119-325B81D86CFA} = {5C17ED2F-CC8A-4912-817C-D4458B038D96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16EFF306-1B45-4D72-9C41-97F84205D2EB}
