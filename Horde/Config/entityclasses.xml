@@ -4536,7 +4536,8 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="CorpseBlockChance"                  value="0"/>
+<property name="CorpseBlock"                        value="HordeLoot"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
 <property name="ParticleOnSpawn"			              value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
