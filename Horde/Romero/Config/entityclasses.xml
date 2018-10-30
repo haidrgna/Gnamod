@@ -193,9 +193,6 @@
 <property name="MaxHealth"                          value="500"/>
 <property name="HandItem"                           value="handZombieFeral"/>
 <property name="TintMaterial0"                      value="242,172,172"/>
-<!-- Movement -->
-<property name="ApproachSpeed"                      value="1.40"/>
-<property name="NightApproachSpeed"                 value="1.75"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
 <property name="CorpseBlockChance"                  value="0"/>
@@ -241,9 +238,6 @@
 <!-- Statistics -->
 <property name="MaxHealth"                          value="500"/>
 <property name="HandItem"                           value="handZombieRadiated"/>
-<!-- Movement -->
-<property name="ApproachSpeed"                      value="0.50"/>
-<property name="NightApproachSpeed"                 value="1.60"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
 <property name="CorpseBlockChance"                  value="0"/>
@@ -289,9 +283,6 @@
 <!-- Statistics -->
 <property name="MaxHealth"                          value="750"/>
 <property name="HandItem"                           value="handZombieRadiated"/>
-<!-- Movement -->
-<property name="ApproachSpeed"                      value="1.50"/>
-<property name="NightApproachSpeed"                 value="2.00"/>
 <!-- Loot and Experience -->
 <property name="TimeStayAfterDeath"                 value="5"/>
 <property name="CorpseBlockChance"                  value="0"/>
@@ -3551,7 +3542,6 @@
 <property name="MaxHealth"                          value="800"/>
 <property name="ExperienceGain"                     value="2000"/>
 <property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="NightApproachSpeed"                 value="0.80"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="6"/>
@@ -3650,7 +3640,6 @@
 <property name="MaxHealth"                          value="1600"/>
 <property name="ExperienceGain"                     value="4000"/>
 <property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
-<property name="NightApproachSpeed"                 value="0.80"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="8"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
