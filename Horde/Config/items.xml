@@ -9466,6 +9466,7 @@ Mesh files no longer used:
 <property name="Velocity"                     value="55"/>
 <property name="Gravity"                      value="-4"/>
 <property name="LifeTime"                     value="12"/>
+<property name="DamageBonus.body"             value="0.75"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="20,40"/>
@@ -9483,6 +9484,7 @@ Mesh files no longer used:
 <property name="Velocity"                     value="75"/>
 <property name="Gravity"                      value="-4"/>
 <property name="LifeTime"                     value="12"/>
+<property name="DamageBonus.body"             value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="30,50"/>
@@ -9608,7 +9610,8 @@ Mesh files no longer used:
 <property class="Action1">
 <property name="Class"                        value="Projectile"/>
 <property name="Explosion.ParticleIndex"      value="0"/>
-<property name="Velocity"                     value="75"/>
+<property name="Velocity"                     value="65"/>
+<property name="Gravity"                      value="-4"/>
 <property name="FlyTime"                      value="0.25"/>
 <property name="LifeTime"                     value="17"/>
 <property name="DamageBonus.wood"             value="0.1"/>
@@ -9629,26 +9632,16 @@ Mesh files no longer used:
 </item>
 
 <item id="1578"                               name="ironCrossbowBolt">
+<property name="Extends"                      value="crossbowBolt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/crossbow_bolt_droppedPrefab"/>
 <property name="HandMeshfile"                 value="Items/Misc/crossbow_bolt_handPrefab"/>
-<property name="HoldType"                     value="32"/>
 <property name="Material"                     value="metal"/>
-<property name="Stacknumber"                  value="500"/>
-<property name="FuelValue"                    value="8"/>
 <property class="Action1">
-<property name="Class"                        value="Projectile"/>
-<property name="Explosion.ParticleIndex"      value="0"/>
-<property name="Velocity"                     value="80"/>
-<property name="FlyTime"                      value="0"/>
+<property name="Velocity"                     value="75"/>
 <property name="Gravity"                      value="-4"/>
-<property name="LifeTime"                     value="12"/>
-<property name="DamageBonus.wood"             value="0.1"/>
-<property name="DamageBonus.earth"            value="0"/>
-<property name="DamageBonus.metal"            value="0"/>
-<property name="DamageBonus.cloth"            value="0"/>
-<property name="DamageBonus.head"             value="5"/>
-<property name="DamageBonus.body"            value="1"/>
+<property name="LifeTime"                     value="19"/>
+<property name="DamageBonus.body"             value="0.75"/>
 </property>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"         value="true"/>
@@ -9664,14 +9657,15 @@ Mesh files no longer used:
 </item>
 
 <item id="1579"                               name="steelCrossbowBolt">
-<property name="Extends"                      value="ironCrossbowBolt"/>
+<property name="Extends"                      value="crossbowBolt"/>
 <property name="Meshfile"                     value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
 <property name="DropMeshfile"                 value="Items/Misc/crossbow_bolt_dropped_steelPrefab"/>
 <property name="HandMeshfile"                 value="Items/Misc/crossbow_bolt_hand_steelPrefab"/>
 <property class="Action1">
 <property name="Velocity"                     value="85"/>
-<property name="Gravity"                      value="-4"/>
-<property name="LifeTime"                     value="12"/>
+<property name="Gravity"                      value="-3.5"/>
+<property name="LifeTime"                     value="21"/>
+<property name="DamageBonus.body"             value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="30,50"/>
@@ -9822,7 +9816,7 @@ Mesh files no longer used:
 <property name="FlyTime"                      value="1"/>
 <property name="LifeTime"                     value="2"/>
 <property name="DamageBonus.head"             value="5"/>
-<property name="DamageBonus.body"            value="5"/>
+<property name="DamageBonus.torso"            value="5"/>
 </property>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"         value="true"/>
@@ -10166,7 +10160,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.body"          value="0.5"/>
+<property name="DamageBonus.torso"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10366,7 +10360,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.12,0.12,0.12,0.12,0.12,0.12,0.12,0.12"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.body"          value="0.5"/>
+<property name="DamageBonus.torso"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10566,7 +10560,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.body"          value="0.5"/>
+<property name="DamageBonus.torso"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10769,7 +10763,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.body"          value="1.25"/>
+<property name="DamageBonus.torso"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10970,7 +10964,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.body"          value="1.25"/>
+<property name="DamageBonus.torso"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11174,7 +11168,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.07,0.07,0.07,0.07,0.07,0.07,0.07,0.07"/>
 <!-- Damage Behavior-->
 <property name="DamageBonus.head"           value="5.5"/>
-<property name="DamageBonus.body"          value="0.5"/>
+<property name="DamageBonus.torso"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11380,7 +11374,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.015,0.015,0.015,0.015,0.015,0.015,0.015,0.015"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="5.5"/>
-<property name="DamageBonus.body"          value="0.5"/>
+<property name="DamageBonus.torso"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11579,7 +11573,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.15,0.50,0.50,0.50,0.50,0.20,0.20,0.20,0.50"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2"/>
-<property name="DamageBonus.body"          value="1.5"/>
+<property name="DamageBonus.torso"          value="1.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11647,7 +11641,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.45,0.45,0.45,0.20,0.20,0.20,0.45"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.body"          value="1.75"/>
+<property name="DamageBonus.torso"          value="1.75"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11739,7 +11733,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.45,0.45,0.45,0.17,0.17,0.17,0.45"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.0"/>
-<property name="DamageBonus.body"          value="1.25"/>
+<property name="DamageBonus.torso"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11973,7 +11967,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.40,0.40,0.40,0.40,0.15,0.15,0.15,0.40"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3"/>
-<property name="DamageBonus.body"          value="1.5"/>
+<property name="DamageBonus.torso"          value="1.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
