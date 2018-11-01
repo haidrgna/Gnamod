@@ -93,7 +93,7 @@ Mesh files no longer used:
 <property name="ActionExp" value="2"/>
 <property name="ActionExpBonusMultiplier" value="10"/>
 <property name="ToolCategory.Butcher" value="0" param1="10"/>
-<property name="Buff" value="criticalBlunt"/>
+<property name="Buff" value="criticalBluntRomero"/>
 <property name="Buff_chance" value="0.1"/>
 </property>
 <property name="CritChance" value="0.10"/>
@@ -113,7 +113,7 @@ Mesh files no longer used:
 <property name="SoundJammed" value="ItemNeedsRepair"/>
 <property class="Action0">
 <property name="Stamina_usage" value="8"/>
-<property name="Buff" value="criticalBlunt"/>
+<property name="Buff" value="criticalBluntRomero"/>
 <property name="Buff_chance" value="0.2"/>
 <property name="DamageBonus.head" value="5"/>
 </property>
@@ -137,7 +137,7 @@ Mesh files no longer used:
 <property class="Action0"> <!-- AttackAction -->
 <property name="Stamina_usage" value="6.5"/>
 <property name="Delay" value="1.15"/>
-<property name="Buff" value="bleeding,criticalBlunt"/>
+<property name="Buff" value="bleeding,criticalBluntRomero"/>
 <property name="Buff_chance" value="0.3,0.3"/>
 <property name="DamageBonus.head" value="6"/>
 </property>
@@ -161,7 +161,7 @@ Mesh files no longer used:
 <property name="RepairTools" value="forgedSteel"/>
 <property class="Action0"> <!-- AttackAction -->
 <property name="Stamina_usage" value="8.5"/>
-<property name="Buff" value="bleeding,criticalBlunt"/>
+<property name="Buff" value="bleeding,criticalBluntRomero"/>
 <property name="Buff_chance" value="0.5,0.4"/>
 <property name="DamageBonus.head" value="7"/>
 </property>
@@ -196,7 +196,7 @@ Mesh files no longer used:
 <property name="Block_range" value="4"/>
 <property name="Sound_start" value="SlowSwoosh"/>
 <property name="Stamina_usage" value="15"/>
-<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
+<property name="Buff" value="criticalBluntRomero,stunned,sprainedLeg"/>
 <property name="Buff_chance" value="0.5,0.3,0.3"/>
 <property name="DamageBonus.wood" value="0.5"/>
 <property name="DamageBonus.head" value="5"/>
@@ -239,7 +239,7 @@ Mesh files no longer used:
 <property name="DamageBlock" value="1"/>
 <property name="Sound_start" value="torch_swoosh"/>
 <property name="Stamina_usage" value="8"/>
-<property name="Buff" value="burning"/>
+<property name="Buff" value="Burning"/>
 <property name="Buff_chance" value="0.1"/>
 <property name="DamageBonus.head" value="3"/>
 <property name="DamageBonus.body" value="0.001"/>
@@ -595,7 +595,7 @@ Mesh files no longer used:
 <property name="DamageEntity"                   value="10"/>
 <property name="DamageBlock"                    value="25"/>
 <property name="DamageBonus.wood"               value="4"/>
-<property name="Buff"                           value="burningSmall,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningSmall,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.4,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.1"/>
 <property name="DamageBonus.metal"              value="1.1"/>
@@ -608,7 +608,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="15"/>
 <property name="DamageBlock"                    value="50"/>
-<property name="Buff"                           value="burningMolotov,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningMolotov,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.4,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.2"/>
 <property name="DamageBonus.metal"              value="1.2"/>
@@ -621,7 +621,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="20"/>
 <property name="DamageBlock"                    value="75"/>
-<property name="Buff"                           value="burningMolotovStrong,infection1,stunned"/>
+<property name="Buff"                           value="BurningMolotovStrong,infection1,stunned"/>
 <property name="Buff_chance"                    value="0.5,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.3"/>
 <property name="DamageBonus.metal"              value="1.3"/>
@@ -849,7 +849,7 @@ Mesh files no longer used:
 <property name="LifeTime"                       value="12"/>
 <property name="Explosion.RadiusBuffs"          value="3"/>
 <property name="Explosion.BlastPower"           value="70"/>
-<property name="Explosion.Buff"                 value="burningFireball"/>
+<property name="Explosion.Buff"                 value="BurningFireball"/>
 <property name="Explosion.Buff_chance"          value="1"/>
 <property name="Explosion.DamageBonus.earth"    value="0.25"/>
 <property name="Explosion.DamageBonus.wood"     value="2.0"/>
@@ -898,7 +898,7 @@ Mesh files no longer used:
 <property name="Sphere"                         value="0.4"/>
 <property name="DamageEntity"                   value="20"/>
 <property name="DamageBlock"                    value="100"/>
-<property name="Buff"                           value="burningSmall,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningSmall,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.50,0.05,0.5"/>
 </property>
 <property class="Action1">
@@ -8720,7 +8720,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="11,24"/>
 <property name="BlockDamage"              value="6,10"/>
-<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <item id="1502"                           name="22LRBulletNG">
@@ -8730,7 +8730,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="19,31"/>
-<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLightRomero"/>
 </property>
 </item>      
 <item id="1503"                           name="22LRBulletMG">
@@ -8740,7 +8740,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="24,41"/>
-<property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <!-- 1504 Free -->
@@ -8758,7 +8758,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="14,31"/>
 <property name="BlockDamage"              value="8,12"/>
-<property name="ApplyBuff"                value="0.01,0.05" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.01,0.05" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <item id="1506"                           name="9mmBulletNG">
@@ -8768,7 +8768,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="24,36"/>
-<property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <item id="1507"                           name="9mmBulletMG">
@@ -8778,7 +8778,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="31,44"/>
-<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <!-- 1508 Free -->
@@ -8796,7 +8796,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="28,43"/>
 <property name="BlockDamage"              value="12,17"/>
-<property name="ApplyBuff"                value="0.025,0.05" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.025,0.05" param1="critAmmoModerateRomero"/>
 </property>
 </item>
 <item id="1510"                           name="357MagBulletNG">
@@ -8806,7 +8806,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="36,50"/>
-<property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.025,0.075" param1="critAmmoModerateRomero"/>
 </property>
 </item>
 <item id="1511"                           name="357MagBulletMG">
@@ -8816,7 +8816,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="43,58"/>
-<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerateRomero"/>
 </property>
 </item>
 <!-- 1512 Free -->
@@ -8834,7 +8834,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="40,55"/>
 <property name="BlockDamage"              value="13,23"/>
-<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoModerateRomero"/>
 </property>
 </item>
 <item id="1514"                           name="44MagBulletNG">
@@ -8844,7 +8844,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="40,70"/>
-<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <item id="1515"                           name="44MagBulletMG">
@@ -8854,7 +8854,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="55,86"/>
-<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <!-- 1516 Free -->
@@ -8872,7 +8872,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="45,60"/>
 <property name="BlockDamage"              value="16,27"/>
-<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.075" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <item id="1518"                           name="50BMGBulletNG">
@@ -8882,7 +8882,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="49,81"/>
-<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.10" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <item id="1519"                           name="50BMGBulletMG">
@@ -8892,7 +8892,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="60,95"/>
-<property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.15" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <!-- 1520 Free -->
@@ -8910,7 +8910,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="31,44"/>
 <property name="BlockDamage"              value="13,17"/>
-<property name="ApplyBuff"                value="0.10,0.25" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.10,0.25" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <item id="1522"                           name="556mmBulletNG">
@@ -8920,7 +8920,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="39,51"/>
-<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <item id="1523"                           name="556mmBulletMG">
@@ -8930,7 +8930,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="44,52"/>
-<property name="ApplyBuff"                value="0.20,0.25" param1="critAmmoLight"/>
+<property name="ApplyBuff"                value="0.20,0.25" param1="critAmmoLightRomero"/>
 </property>
 </item>
 <!-- 1524 Free -->
@@ -8948,7 +8948,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="38,53"/>
 <property name="BlockDamage"              value="13,23"/>
-<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <item id="1526"                           name="762mmBulletNG">
@@ -8958,7 +8958,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="38,68"/>
-<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <item id="1527"                           name="762mmBulletMG">
@@ -8968,7 +8968,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="51,70"/>
-<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavy"/>
+<property name="ApplyBuff"                value="0.05,0.05" param1="critAmmoHeavyRomero"/>
 </property>
 </item>
 <!-- 1528 Free -->
@@ -8988,7 +8988,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="2.0,4.0"/>
 <property name="BlockDamage"              value="0.7,1.3"/>
-<property name="ApplyBuff"                value="0.75,1.0" param1="shotgunWound"/>
+<property name="ApplyBuff"                value="0.75,1.0" param1="shotgunWoundRomero"/>
 </property>  
 </item>  
 <item id="1530"                           name="Musketshot">
@@ -9006,7 +9006,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="40,70"/>
 <property name="BlockDamage"              value="13,23"/>
-<property name="ApplyBuff"                value="0.25,0.75" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.25,0.75" param1="critAmmoModerateRomero"/>
 </property>  
 </item>    
 <!-- ==================== 20 Gauge Shells ==================== -->
@@ -9023,7 +9023,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="2.0,4.7"/>
 <property name="BlockDamage"              value="1.0,2.1"/>
-<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
+<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWoundRomero"/>
 </property>  
 </item>
 <item id="1532"                           name="20GAShellNG">
@@ -9050,7 +9050,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"             value="45,75"/>
 <property name="BlockDamage"              value="17,37"/>
-<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerateRomero"/>
 </property>  
 </item>  
 <item id="1536"                           name="20GASlugNG">
@@ -9082,7 +9082,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="3.0,5.7"/>
 <property name="BlockDamage"              value="1.3,2.4"/>
-<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
+<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWoundRomero"/>
 </property>  
 </item>
 <item id="1540"                           name="12GAShellNG">
@@ -9109,7 +9109,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"             value="60,90"/>
 <property name="BlockDamage"              value="23,40"/>
-<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerateRomero"/>
 </property>  
 </item>  
 <item id="1544"                           name="12GASlugNG">
@@ -9141,7 +9141,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"     value="true"/>
 <property name="EntityDamage"             value="4.0,6.7"/>
 <property name="BlockDamage"              value="1.5,2.9"/>
-<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWound"/>
+<property name="ApplyBuff"                value="0.25,0.75" param1="shotgunWoundRomero"/>
 </property>  
 </item>
 <item id="1548"                           name="10GAShellNG">
@@ -9166,7 +9166,7 @@ Mesh files no longer used:
 <property class="Attributes">
 <property name="EntityDamage"             value="75,105"/>
 <property name="BlockDamage"              value="30,43"/>
-<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerate"/>
+<property name="ApplyBuff"                value="0.15,0.25" param1="critAmmoModerateRomero"/>
 </property>  
 </item>  
 <item id="1552"                           name="10GASlugNG">
@@ -9246,7 +9246,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0.1"/>
 <property name="Explosion.DamageBonus.water"  value="0.1"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property name="EconomicValue"                value="156"/>
@@ -9300,7 +9300,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0.1"/>
 <property name="Explosion.DamageBonus.water"  value="0.1"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property name="EconomicValue"                value="286"/>
@@ -9406,7 +9406,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.wood"   value="10"/>
 <property name="Explosion.DamageBonus.body"  value="0.001"/>
 <property name="FuseTime"                     value="20000"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 <property name="ExplodeOnHit"                 value="true"/>
 <property class="Action0">
@@ -9439,7 +9439,7 @@ Mesh files no longer used:
 <property name="Explosion.RadiusBlocks"       value="6"/>
 <property name="Explosion.RadiusEntities"     value="6"/>
 <property name="Explosion.RadiusBuffs"        value="6"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="EconomicValue"                value="90"/>
 </item>
 <!-- 1566 - 1569 Free -->
@@ -9538,13 +9538,13 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0"/>
 <property name="Explosion.DamageBonus.water"  value="0"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="CraftingSkillGroup"           value="craftSkillScience"/>
 <property name="EconomicValue"                value="24"/>
@@ -9565,13 +9565,13 @@ Mesh files no longer used:
 <property name="Explosion.RadiusEntities"     value="5"/>
 <property name="Explosion.RadiusBuffs"        value="5"/>
 <property name="Explosion.BlastPower"         value="90"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="52"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9728,13 +9728,13 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0"/>
 <property name="Explosion.DamageBonus.water"  value="0"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="24"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9754,13 +9754,13 @@ Mesh files no longer used:
 <property name="Explosion.RadiusEntities"     value="5"/>
 <property name="Explosion.RadiusBuffs"        value="5"/>
 <property name="Explosion.BlastPower"         value="90"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="52"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9866,7 +9866,7 @@ Mesh files no longer used:
 <property name="GetQualityFromWeapon"         value="true"/>
 <property name="EntityDamage"                 value="8.5,11.5"/>
 <property name="BlockDamage"                  value="22.5,27.5"/>
-<property name="ApplyBuff"                    value="0.5,1.0" param1="railZap"/>
+<property name="ApplyBuff"                    value="0.5,1.0" param1="railZapRomero"/>
 </property>
 <property class="Action1">
 <property name="Class"                        value="Projectile"/>
@@ -10783,7 +10783,7 @@ Mesh files no longer used:
 <property name="Particles_muzzle_fire"        value="nozzleflashuzi"/>
 <property name="Particles_muzzle_smoke"       value="nozzlesmokeuzi"/>
 <property name="ActionExp"                    value="5"/>
-<property name="Buff"                         value="smgSlow"/>
+<property name="Buff"                         value="smgSlowRomero"/>
 <property name="Buff_chance"                  value="1.0"/>
 <!-- Ammo -->
 <property name="Magazine_size"              value="30"/>

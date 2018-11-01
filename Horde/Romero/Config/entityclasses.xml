@@ -182,9 +182,8 @@
 <property name="ArmsExplosionDamageMultiplier"      value="0.75"/>
 <property name="HeadExplosionDamageMultiplier"      value="0.75"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.0"/>
-<!-- Buffs
-<property name="Buffs"                              value="zombieDefaultBuffHorde"/>
--->
+<!-- Buffs -->
+<property name="Buffs"                              value="zombieRomeroBuff"/>
 </entity_class>
 
 <!-- FERAL ZOMBIES                                  *** Always runs, has more HP, harder to dismember and stronger base hand. *** -->
@@ -230,7 +229,7 @@
 <property name="HeadExplosionDamageMultiplier"      value="0.60"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.00"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 </entity_class>
 
 <!-- RADIATED ZOMBIES                               *** Default radiated zonbies, they glow in the dark and are overall tougher. They are not faster but have a special radiated hand. *** -->
@@ -275,7 +274,7 @@
 <property name="HeadExplosionDamageMultiplier"      value=".45"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.00"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 </entity_class>
 
 <!-- FERAL RADIATED ZOMBIES                         *** The most badass zombies, they are fast, super strong and have a powerful hand. *** -->
@@ -294,7 +293,7 @@
 <property name="HeadExplosionDamageMultiplier"      value="0.5"/>
 <property name="ChestExplosionDamageMultiplier"     value="0.0"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieStrongRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieStrongRegen"/>
 </entity_class>
 
 <!-- Basic Non-hostile Animal -->
@@ -351,6 +350,8 @@
 <property name="CorpseBlock"                        value="animalGore"/>
 <property name="CorpseBlockChance"                  value="0.0"/>
 <property name="DeadBodyHitPoints"                  value="1000"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="isAnimal"/>
 </entity_class>
 
 <!-- Basic Hostile Animal -->
@@ -421,7 +422,7 @@
 <property name="AttackTimeoutDay"                   value="2"/>
 <property name="AttackTimeoutNight"                 value="2"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuff"/>
+<property name="Buffs"                              value="isAnimal"/>
 </entity_class>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= VEHICLES +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
@@ -1464,7 +1465,7 @@
 <property name="HandItem"                           value="handZombieBurning"/>
 <property name="ExperienceGain"                     value="1500"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieWeakRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen;fireProtection"/>
 
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1501,7 +1502,7 @@
 <property name="KnockdownProneDamageThreshold"      value="0"/>
 <property name="KnockdownKneelDamageThreshold"      value="0"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieWeakRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen;fireProtection"/>
 <!-- Puking --> 
 <property name="Class"                              value="EntityZombieCop"/>
 <property name="HandItem"                           value="handSuicide"/>
@@ -1515,7 +1516,7 @@
 <property name="Explosion.BlockDamage"              value="500"/>
 <property name="Explosion.EntityDamage"             value="10"/>
 <property name="Explosion.DamageBonus.wood"         value="10"/>
-<property name="Explosion.Buff"                     value="burningFireball"/>
+<property name="Explosion.Buff"                     value="BurningFireball"/>
 <property name="Explosion.Buff_chance"              value="1"/>
 
 <!-- Movement -->
@@ -1535,7 +1536,7 @@
 <property name="HandItem"                           value="handZombieBurningFeral"/>
 <property name="ExperienceGain"                     value="2500"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieWeakRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen;fireProtection"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 
@@ -1557,7 +1558,7 @@
 <property name="ExperienceGain"                     value="3000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieNormalRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen;fireProtection"/>
 
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -1601,7 +1602,7 @@
 <property name="AITask-1"                           value="RangedAttackTarget"          param1="1" param2="5"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieNormalRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen;fireProtection"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="10"/>
 <property name="Explosion.RadiusBlocks"             value="8"/>
@@ -1610,7 +1611,7 @@
 <property name="Explosion.BlockDamage"              value="1000"/>
 <property name="Explosion.EntityDamage"             value="25"/>
 <property name="Explosion.DamageBonus.wood"         value="10"/>
-<property name="Explosion.Buff"                     value="burningFireball"/>
+<property name="Explosion.Buff"                     value="BurningFireball"/>
 <property name="Explosion.Buff_chance"              value="1"/>
 
 <!-- Movement -->
@@ -1631,7 +1632,7 @@
 <property name="ExperienceGain"                     value="4000"/>
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieStrongRegen;fireProtection"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieStrongRegen;fireProtection"/>
 
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
@@ -2684,7 +2685,7 @@
 <property name="CanClimbVertical"                   value="true"/>
 <property name="LowerLegDismemberThreshold"         value="0"/>
 <property name="UpperLegDismemberThreshold"         value="0"/>
-<property name="Buffs"                              value="zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -2732,7 +2733,7 @@
 <property name="Explosion.BlockDamage"              value="1250"/>
 <property name="Explosion.EntityDamage"             value="250"/>
 <property name="Explosion.DamageBonus.earth"        value="0.75"/>
-<property name="Buffs"                              value="zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="6"/>
 </entity_class>
@@ -2755,7 +2756,7 @@
 <property name="UpperLegDismemberThreshold"         value="0"/>
 <!-- Feral Eyes -->
 <property name="ReplaceMaterial1"                   value="entities/zombies/materials/feral_eye"/>
-<property name="Buffs"                              value="zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- Movement -->
 <property name="WalkType"                           value="2"/>
 </entity_class>
@@ -4102,7 +4103,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.1"/>
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 <!-- Attack -->
 <property name="HandItem"                           value="handAnimalZombieDog"/>
 <property name="AttackTimeoutDay"                   value="1.5"/>
@@ -4170,7 +4171,7 @@
 <property name="Immunity"                           value="sickness;disease;bleeding;wellness"/>
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.1"/>
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/> </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Attack"/>        </property>
@@ -4233,7 +4234,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- Mechanim -->
 <property class="MechanimAttackTriggers"> <property name="state0" value="AttackTrigger"/>       </property>
 <property class="MechanimAttackStates">   <property name="state0" value="Base Layer.Attack"/>   </property>
@@ -4290,7 +4291,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4314,7 +4315,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.25"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieStrongRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieStrongRegen"/>
 <!-- Explosion -->
 <property name="Explosion.ParticleIndex"            value="4"/>
 <property name="Explosion.RadiusBlocks"             value="0"/>
@@ -4338,7 +4339,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- Harvesting -->
 <drop event="Harvest"                               name="rottingFlesh" tool_category="Butcher" count="3"/>
 <drop event="Harvest"                               name="femur"        tool_category="Butcher" count="2"/>
@@ -4358,7 +4359,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.20"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieWeakRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieWeakRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4404,7 +4405,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.25"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4451,7 +4452,7 @@
 <property name="CorpseBlock"                        value="HordeLoot"/>
 <property name="CorpseBlockChance"                  value="0.15"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieStrongRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieStrongRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
@@ -4510,7 +4511,7 @@
 <property name="CorpseBlockChance"                  value="0.15"/>
 <property name="ParticleOnSpawn"			              value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>
+<property name="Buffs"                              value="zombieRomeroBuff;zombieNormalRegen"/>
 <!-- AI Tasks -->
 <property name="AITask-1"                           value="BreakDoor"/>
 <property name="AITask-2"                           value="BreakBlock"/>
