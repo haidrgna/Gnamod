@@ -237,7 +237,7 @@ Mesh files no longer used:
 <property name="DamageBlock" value="1"/>
 <property name="Sound_start" value="torch_swoosh"/>
 <property name="Stamina_usage" value="8"/>
-<property name="Buff" value="burning"/>
+<property name="Buff" value="Burning"/>
 <property name="Buff_chance" value="0.1"/>
 <property name="DamageBonus.head" value="2"/>
 <property name="DamageBonus.glass" value="1"/>
@@ -587,7 +587,7 @@ Mesh files no longer used:
 <property name="DamageEntity"                   value="10"/>
 <property name="DamageBlock"                    value="25"/>
 <property name="DamageBonus.wood"               value="4"/>
-<property name="Buff"                           value="burningSmall,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningSmall,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.4,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.1"/>
 <property name="DamageBonus.metal"              value="1.1"/>
@@ -600,7 +600,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="15"/>
 <property name="DamageBlock"                    value="50"/>
-<property name="Buff"                           value="burningMolotov,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningMolotov,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.4,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.2"/>
 <property name="DamageBonus.metal"              value="1.2"/>
@@ -613,7 +613,7 @@ Mesh files no longer used:
 <property class="Action0">
 <property name="DamageEntity"                   value="20"/>
 <property name="DamageBlock"                    value="75"/>
-<property name="Buff"                           value="burningMolotovStrong,infection1,stunned"/>
+<property name="Buff"                           value="BurningMolotovStrong,infection1,stunned"/>
 <property name="Buff_chance"                    value="0.5,0.1,0.4"/>
 <property name="DamageBonus.stone"              value="1.3"/>
 <property name="DamageBonus.metal"              value="1.3"/>
@@ -841,7 +841,7 @@ Mesh files no longer used:
 <property name="LifeTime"                       value="12"/>
 <property name="Explosion.RadiusBuffs"          value="3"/>
 <property name="Explosion.BlastPower"           value="70"/>
-<property name="Explosion.Buff"                 value="burningFireball"/>
+<property name="Explosion.Buff"                 value="BurningFireball"/>
 <property name="Explosion.Buff_chance"          value="1"/>
 <property name="Explosion.DamageBonus.earth"    value="0.25"/>
 <property name="Explosion.DamageBonus.wood"     value="2.0"/>
@@ -890,7 +890,7 @@ Mesh files no longer used:
 <property name="Sphere"                         value="0.4"/>
 <property name="DamageEntity"                   value="20"/>
 <property name="DamageBlock"                    value="100"/>
-<property name="Buff"                           value="burningSmall,infection,stunnedLight"/>
+<property name="Buff"                           value="BurningSmall,infection,stunnedLight"/>
 <property name="Buff_chance"                    value="0.50,0.05,0.5"/>
 </property>
 <property class="Action1">
@@ -9227,7 +9227,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0.1"/>
 <property name="Explosion.DamageBonus.water"  value="0.1"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property name="EconomicValue"                value="156"/>
@@ -9281,7 +9281,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0.1"/>
 <property name="Explosion.DamageBonus.water"  value="0.1"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property name="EconomicValue"                value="286"/>
@@ -9385,7 +9385,7 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.water"  value="0"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
 <property name="FuseTime"                     value="20000"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 <property name="ExplodeOnHit"                 value="true"/>
 <property class="Action0">
@@ -9418,7 +9418,7 @@ Mesh files no longer used:
 <property name="Explosion.RadiusBlocks"       value="6"/>
 <property name="Explosion.RadiusEntities"     value="6"/>
 <property name="Explosion.RadiusBuffs"        value="6"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="EconomicValue"                value="90"/>
 </item>
 <!-- 1566 - 1569 Free -->
@@ -9519,13 +9519,13 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0"/>
 <property name="Explosion.DamageBonus.water"  value="0"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="CraftingSkillGroup"           value="craftSkillScience"/>
 <property name="EconomicValue"                value="24"/>
@@ -9546,13 +9546,13 @@ Mesh files no longer used:
 <property name="Explosion.RadiusEntities"     value="5"/>
 <property name="Explosion.RadiusBuffs"        value="5"/>
 <property name="Explosion.BlastPower"         value="90"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="52"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9701,13 +9701,13 @@ Mesh files no longer used:
 <property name="Explosion.DamageBonus.earth"  value="0"/>
 <property name="Explosion.DamageBonus.water"  value="0"/>
 <property name="Explosion.DamageBonus.wood"   value="10"/>
-<property name="Explosion.Buff"               value="burningMolotov"/>
+<property name="Explosion.Buff"               value="BurningMolotov"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="24"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9727,13 +9727,13 @@ Mesh files no longer used:
 <property name="Explosion.RadiusEntities"     value="5"/>
 <property name="Explosion.RadiusBuffs"        value="5"/>
 <property name="Explosion.BlastPower"         value="90"/>
-<property name="Explosion.Buff"               value="burningMolotovStrong"/>
+<property name="Explosion.Buff"               value="BurningMolotovStrong"/>
 <property name="Explosion.Buff_chance"        value="1"/>
 </property>
 <property class="Attributes">
 <property name="EntityDamage"                 value="35,60"/>
 <property name="BlockDamage"                  value="10,10"/>
-<property name="ApplyBuff"                    value="1,1" param1="burning"/>
+<property name="ApplyBuff"                    value="1,1" param1="Burning"/>
 </property>
 <property name="EconomicValue"                value="52"/>
 <property name="EconomicBundleSize"           value="1"/>
@@ -9816,7 +9816,7 @@ Mesh files no longer used:
 <property name="FlyTime"                      value="1"/>
 <property name="LifeTime"                     value="2"/>
 <property name="DamageBonus.head"             value="5"/>
-<property name="DamageBonus.torso"            value="5"/>
+<property name="DamageBonus.body"            value="5"/>
 </property>
 <property class="Attributes">
 <property name="GetQualityFromWeapon"         value="true"/>
@@ -10160,7 +10160,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.torso"          value="0.5"/>
+<property name="DamageBonus.body"          value="0.75"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10360,7 +10360,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.12,0.12,0.12,0.12,0.12,0.12,0.12,0.12"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.torso"          value="0.5"/>
+<property name="DamageBonus.body"          value="0.75"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10560,7 +10560,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.30,0.30,0.30,0.30,0.30,0.30,0.30,0.30"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3.5"/>
-<property name="DamageBonus.torso"          value="0.5"/>
+<property name="DamageBonus.body"           value="0.75"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10763,7 +10763,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.torso"          value="1.25"/>
+<property name="DamageBonus.body"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -10964,7 +10964,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.torso"          value="1.25"/>
+<property name="DamageBonus.body"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11168,7 +11168,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.07,0.07,0.07,0.07,0.07,0.07,0.07,0.07"/>
 <!-- Damage Behavior-->
 <property name="DamageBonus.head"           value="5.5"/>
-<property name="DamageBonus.torso"          value="0.5"/>
+<property name="DamageBonus.body"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11374,7 +11374,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.015,0.015,0.015,0.015,0.015,0.015,0.015,0.015"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="5.5"/>
-<property name="DamageBonus.torso"          value="0.5"/>
+<property name="DamageBonus.body"          value="0.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11573,7 +11573,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.15,0.50,0.50,0.50,0.50,0.20,0.20,0.20,0.50"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2"/>
-<property name="DamageBonus.torso"          value="1.5"/>
+<property name="DamageBonus.body"          value="1.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11641,7 +11641,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.45,0.45,0.45,0.20,0.20,0.20,0.45"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.5"/>
-<property name="DamageBonus.torso"          value="1.75"/>
+<property name="DamageBonus.body"          value="1.75"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11733,7 +11733,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.45,0.45,0.45,0.45,0.17,0.17,0.17,0.45"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="2.0"/>
-<property name="DamageBonus.torso"          value="1.25"/>
+<property name="DamageBonus.body"          value="1.25"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>
@@ -11967,7 +11967,7 @@ Mesh files no longer used:
 <property name="Magazine_item_ray_spreads"  value="0.40,0.40,0.40,0.40,0.15,0.15,0.15,0.40"/>
 <!-- Damage Behavior -->
 <property name="DamageBonus.head"           value="3"/>
-<property name="DamageBonus.torso"          value="1.5"/>
+<property name="DamageBonus.body"          value="1.5"/>
 <property name="DamageBonus.wood"           value="1.5"/>
 <property name="DamageBonus.earth"          value="0"/>
 </property>

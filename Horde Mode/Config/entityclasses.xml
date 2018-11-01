@@ -359,6 +359,8 @@
 <property name="CorpseBlock"                        value="animalGore"/>
 <property name="CorpseBlockChance"                  value="0"/>
 <property name="DeadBodyHitPoints"                  value="1000"/>
+<!-- Buffs -->
+<property name="Buffs"                              value="isAnimal"/>
 </entity_class>
 
 <!-- Basic Hostile Animal -->
@@ -429,7 +431,7 @@
 <property name="AttackTimeoutDay"                   value="2"/>
 <property name="AttackTimeoutNight"                 value="2"/>
 <!-- Buffs -->
-<property name="Buffs"                              value="zombieDefaultBuff"/>
+<property name="Buffs"                              value="isAnimal"/>
 </entity_class>
 
 <!-- +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= VEHICLES +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+==+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+= -->
@@ -1523,7 +1525,7 @@
 <property name="Explosion.BlockDamage"              value="500"/>
 <property name="Explosion.EntityDamage"             value="10"/>
 <property name="Explosion.DamageBonus.wood"         value="10"/>
-<property name="Explosion.Buff"                     value="burningFireball"/>
+<property name="Explosion.Buff"                     value="BurningFireball"/>
 <property name="Explosion.Buff_chance"              value="1"/>
 
 <!-- Movement -->
@@ -1618,7 +1620,7 @@
 <property name="Explosion.BlockDamage"              value="1000"/>
 <property name="Explosion.EntityDamage"             value="25"/>
 <property name="Explosion.DamageBonus.wood"         value="10"/>
-<property name="Explosion.Buff"                     value="burningFireball"/>
+<property name="Explosion.Buff"                     value="BurningFireball"/>
 <property name="Explosion.Buff_chance"              value="1"/>
 
 <!-- Movement -->
@@ -4536,7 +4538,8 @@
 <property name="MaxHealth"                          value="1800"/>
 <property name="SmellAlertThreshold"                value="5"/>
 <property name="RightHandJointName"                 value="Jaw"/>
-<property name="CorpseBlockChance"                  value="0"/>
+<property name="CorpseBlock"                        value="HordeLoot"/>
+<property name="CorpseBlockChance"                  value="0.15"/>
 <property name="ParticleOnSpawn"			              value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 <!-- Buffs -->
 <property name="Buffs"                              value="zombieDefaultBuffHorde;zombieNormalRegen"/>

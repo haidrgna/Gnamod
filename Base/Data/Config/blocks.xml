@@ -5639,7 +5639,7 @@
 <property name="Explosion.DamageBonus.earth" value="0"/>
 <property name="Explosion.DamageBonus.water" value="0"/>
 <property name="Explosion.DamageBonus.wood" value="10"/>
-<property name="BuffsWhenWalkedOn" value="burningMolotov"/>
+<property name="BuffsWhenWalkedOn" value="BurningMolotov"/>
 <property name="CanPickup" value="true" param1="cookingPot"/>
 <property name="EconomicValue" value="40"/>
 <property name="EconomicBundleSize" value="1"/>
@@ -18807,6 +18807,7 @@
 <property name="CreativeMode" value="Player"/>
 <property name="Extends" value="StartingKitBase"/>
 <property name="LootList" value="6"/>
+<property name="Group" value="Basics,Building"/>
 <drop event="Destroy" name="cloth" count="3"/>
 </block>
 
